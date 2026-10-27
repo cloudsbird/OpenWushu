@@ -1,0 +1,27 @@
+<% if routine.published? %>
+  <%= link_to routine_path(routine), class: "panel card" do %>
+    <span class="card__cover">
+      <%= routine.card_zh %>
+      <span class="card__time"><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1 L9 5 L2 9 Z" fill="currentColor"/></svg><%= clock(routine.duration_sec) %></span>
+    </span>
+    <span class="card__body">
+      <span class="card__zh"><%= routine.name_zh %></span>
+      <span class="py"><%= routine.name_pinyin %></span>
+      <span class="card__tr"><%= routine.name_tr %></span>
+      <span class="card__meta"><%= t("routines.count.movements", count: routine.movements.size) %></span>
+    </span>
+  <% end %>
+<% else %>
+  <div class="card card--pending">
+    <% if cover %><span class="card__cover"><%= routine.card_zh %></span><% end %>
+    <div class="card__body">
+      <span class="card__zh"><%= routine.name_zh %><% unless cover %><small> <%= t("routines.index.competition_routine") %></small><% end %></span>
+      <span class="py"><%= routine.name_pinyin %></span>
+      <span class="card__tr"><%= routine.name_tr %></span>
+      <span class="card__meta">
+        <span class="badge badge--amber"><%= t(routine.status == "in_progress" ? "routines.index.in_progress" : "routines.index.awaiting") %></span>
+        <% if routine.reference_page %><span class="mono" style="font-size: 12px"><%= t("routines.index.ref_short") %> p.<%= routine.reference_page %> · 图 <%= routine.reference_figure %></span><% end %>
+      </span>
+    </div>
+  </div>
+<% end %>

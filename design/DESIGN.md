@@ -6,7 +6,7 @@ Status: first clickable prototype, for discussion. No app code yet; the tech sta
 
 An educational, community-maintained web app listing wushu **规定套路 (guīdìng tàolù — compulsory routines)**. Each routine has a video, a top-down carpet path diagram and the list of movements. Selecting a movement (e.g. #12) shows its details, seeks the video to that movement and highlights it on the carpet. Members open threads to tell contributors when something is wrong or has changed.
 
-Sample content: **二十四式简化太极拳 (24-Form Simplified Taijiquan)**, with 42式 as the next routine.
+Sample content: **四十二式太极拳 (42-Form Competition Taijiquan)** from the main reference, with **#2 右揽雀尾** as the fully worked example (steps, key points, mistakes, illustrations, threads, revisions). The library lists the reference's other nine competition routines.
 
 ## Decisions so far
 
@@ -17,10 +17,10 @@ Sample content: **二十四式简化太极拳 (24-Form Simplified Taijiquan)**, 
 | Map | Top-down diagram of the 14 m × 8 m competition carpet showing the athlete's path, the front edge (正面), and the judges' table (裁判席) below it with the head judge (裁判长) in the centre. Seat count is configurable per competition rules |
 | Languages | **Chinese (characters + pinyin) is always shown** — it is the source. The switcher only changes the translation: English ↔ Bahasa Indonesia. Chinese terms stay inline in descriptions, e.g. 左虚步 zuǒ xūbù |
 | Colors | Blue `#50A0FF` + white. Navy `#06152B` text on the blue (white on `#50A0FF` is only ~2.6:1). Deeper `#1766C7` for blue text on white. White paper background; seal and blue text `#1766C7`. Amber only for warning badges, red only for error labels |
-| Visual style | **拳谱 training manual × 青花 blue-and-white porcelain**: reads like a printed manual, not a generic app. Square corners, hairline rules, a 3 px ink rule on top of each panel and a double rule under the header; page titles set vertically in Chinese (规定套路, 讨论, 贡献…) beside the English title; movements numbered 十二 over 12, "第十二式" in the detail; steps numbered 一 二 三; logo is a blue seal stamp (印章) reading 武术; avatars and markers are square like small seals (only the judges' seats stay round) |
-| Type | **Ma Shan Zheng** 楷书 brush script for vertical page titles, the seal and 第十二式; **Noto Serif SC** 宋体 for movement names, Chinese headings and numerals (brush for titles, printed Song for text, as in Chinese books); **Alegreya** for English headings and *italic pinyin*; **Alegreya Sans** for body/UI (16 px); **IBM Plex Mono** for timestamps and counts |
+| Visual style | **拳谱 training manual × 青花 blue-and-white porcelain**: reads like a printed manual, not a generic app. Square corners, hairline rules, a 3 px ink rule on top of each panel and a double rule under the header; page titles set vertically in Chinese (规定套路, 讨论, 贡献…) beside the English title; movements numbered 十二 over 12, "第二式" in the detail; steps numbered 一 二 三; logo is a blue seal stamp (印章) reading 武术; avatars and markers are square like small seals (only the judges' seats stay round) |
+| Type | **Ma Shan Zheng** 楷书 brush script for vertical page titles, the seal and 第二式; **Noto Serif SC** 宋体 for movement names, Chinese headings and numerals (brush for titles, printed Song for text, as in Chinese books); **Alegreya** for English headings and *italic pinyin*; **Alegreya Sans** for body/UI (16 px); **IBM Plex Mono** for timestamps and counts |
 | Pinyin rule | Every Latin font must contain all tone-marked vowels (ā á ǎ à … ǖ ǘ ǚ ǜ), or the browser mixes in a fallback mid-word. Checked against Google Fonts: Alegreya, Alegreya Sans, IBM Plex Mono, Noto, Source Serif 4, EB Garamond pass; Newsreader, Spectral, Crimson Pro, Lora, Fraunces, Work Sans, Public Sans, JetBrains Mono fail |
-| Footer | Educational disclaimer + "Content licensed CC BY-SA 4.0" link, always pinned to the bottom of the screen |
+| Footer | Educational disclaimer + "Content licensed CC BY-SA 4.0" + "Source code on GitHub" links, always pinned to the bottom of the screen. The Contribute page also has an "Are you a developer?" box linking to the repo |
 | License | Code: **AGPL-3.0** (`LICENSE`) — modified versions run as a public website must share their source. Content — descriptions, translations, carpet paths, threads and uploaded videos: **CC BY-SA 4.0** (`LICENSE-CONTENT`) |
 
 ## Licensing in the product
@@ -33,8 +33,8 @@ Sample content: **二十四式简化太极拳 (24-Form Simplified Taijiquan)**, 
 
 ## Screens
 
-1. **Library (规定套路)** — routines grouped by style (太极拳, 长拳, 南拳, 器械). Search matches Chinese, pinyin with or without tones, English and Indonesian ("gao tan ma" → 高探马).
-2. **Routine page** — video, movement timeline (one segment per movement), carpet map and movement list, all kept in sync. Controls: play/pause, previous/next movement, loop movement, 0.5× / 0.75× / 1×.
+1. **Library (规定套路)** — routines grouped by style (太极拳, 长拳, 南拳, 器械). Search matches Chinese, pinyin with or without tones, English and Indonesian ("lan que wei" → 揽雀尾).
+2. **Routine page** — all tabs share one **4-column grid** so edges line up when switching (Learn: video + carpet span 3 columns, movement list 1; Movements: one column per section; Discussion: threads 3, help 1), and the scrollbar space is reserved so the page never shifts. Three tabs: **学习 Learn**, **动作名称 Movements** and **讨论 Discussion**. The *Movements* tab is a book-style index of every movement by section (第一段 … 第四段), numbered （一）（二）… with Chinese, pinyin and translation, the current movement highlighted; clicking one opens it in Learn (video, carpet and detail panel). The Learn tab: video, movement timeline (one segment per movement), carpet map and movement list, all kept in sync. Controls: play/pause, previous/next movement, loop movement, 0.5× / 0.75× / 1×.
 3. **Movement detail** — steps (动作过程), key points (要点), common mistakes (易犯错误), facing direction, "Draft · needs expert review" badge, link to the movement's threads. Empty state invites a contributor to write it.
 4. **Discussions (讨论)** — list of routines with thread counts by status; each opens the routine's Discussion tab. Thread types: Error, Suggest change, Question, Rule update. Status: Open → Under review → Accepted / Rejected.
    - **Thread page**: opening a thread shows the original post, replies (each author with their role badge: Member, Verified · Judge / coach, Verified · School owner, Maintainer), status changes inline in the timeline, and an "Accepted answer" marker. Signed-in members can reply (replies are public, CC BY-SA 4.0) and **Watch** the thread to get emails; posting a reply watches it automatically. Signed-out visitors see "Sign in to reply".
@@ -51,6 +51,33 @@ Sample content: **二十四式简化太极拳 (24-Form Simplified Taijiquan)**, 
 10. **Video timings & path editor** — a Contribute task for verified contributors. Play the video (±0.5 s), select a movement, **Set start to [current time]** (must fall between the previous and next movement), then **click on the carpet** where the movement ends; x / y fields give a keyboard alternative, plus facing direction. Shows start times and how many path points are placed; submitted for review.
 11. **Profile (个人)** — seal-style avatar, badge, email; **my contributions** with status (in review / changes requested / published) linking to history; **watched threads** with unwatch; **email notifications** (switches for replies, status changes, reviews, new threads on maintained routines, monthly news), frequency (right away / daily digest) and email language; **your data** (download / delete under UU PDP). The prototype adds a "view as" role switcher (member / verified judge / verified school owner / maintainer).
 12. **Email templates** (separate artboard `prototype/Emails.dc.html`, EN/ID): verify email, new reply in a watched thread (quotes the reply in the thread's language), change published (with reviewer note), contributor approved (badge + documents deleted). Each has a reason line, "Manage email settings" and an unsubscribe/stop link.
+
+13. **图解 Illustrations** — in the movement detail, between the name and the steps: line-drawing figures in the classic textbook style (clean figure, dashed curved arrows for the motion path), one per step, captioned 图 2-1, 2-2… Clicking a figure enlarges it, highlights the matching step (一 二 三 四) and jumps the video to that moment. Each figure shows how it was made and who reviewed it; a **Reference** line cites the source book and page. Verified contributors add figures through the **Upload illustrations** task (movement, how it was made, license, one file per step, reference used); the review queue shows figure submissions with their provenance.
+
+14. **3D-rendered figures (demo)** — the 图解 figures come from **one 3D figure** (17 joints) posed per step and drawn as **a person in a loose 太极 uniform**, in the textbook's line-art style: tapered sleeves and flared trousers, hands and shoes, a jacket whose width and depth come from 3D points (so it stays solid from the side) with a centre line and frog buttons when facing the viewer, and hair (a cap from the front, the back of the head when facing away); parts are drawn far-to-near so they overlap correctly, a ground shadow, and a dashed motion arrow computed from the next pose (whichever hand or foot moves most). Because it is 3D, the enlarged figure has **Front · ¾ · Side** camera buttons. In the prototype #1 起势 and #2 右揽雀尾 have figures (poses illustrative). In the real app a contributor poses the mannequin in a 3D tool (e.g. Blender) using the reference and our video, and a coach reviews it; "Rendered from the OpenWushu 3D model" is a provenance option. Later step: an interactive 3D viewer (rotate freely, judges' view, animate between poses).
+
+## Sources and illustrations
+
+OpenWushu uses **one modern wushu reference as its only source**: a collection of **competition routines (竞赛套路)**, available to the project only as a 720-page scan (PDF created July 2008). The scan has no title page or 版权页, so the title, publisher, year and ISBN are unknown; cite it as **"Competition routines collection (scan)"** with routine, page and figure. Each routine has 动作名称 (movement names), 动作说明 (steps with 要点 and 教法提示) and line-drawing figures numbered by a routine letter:
+
+| Book page | Routine | Figures |
+|---|---|---|
+| 1 | 长拳 Changquan (58 movements + 起势/收势, 4 sections) | 图 A-… |
+| 69 | 刀术 Broadsword | 图 B-… |
+| 153 | 剑术 Straight sword | 图 C-… |
+| 233 | 棍术 Staff | 图 D-… |
+| 325 | 枪术 Spear | 图 E-… |
+| 420 | 南拳 Southern fist | 图 F-… |
+| 482 | 南刀 Southern broadsword | 图 G-… |
+| 535 | 南棍 Southern staff | 图 H-… |
+| 596 | 太极拳 42-form competition Taijiquan (4 sections) | 图 I-… |
+| 660 | 太极剑 Taiji sword | 图 J-… |
+
+Book page *n* is PDF page *n + 1*. The scan itself is never committed (`*.pdf` is in `.gitignore`). It is a modern publication and must be treated as copyrighted, so:
+
+- **Allowed:** using it for facts (movement order, directions, the idea behind a key point), writing descriptions in our own words, citing it ("Reference: [title], p. 280, 图 D-95"), and imitating its *style* of line drawings.
+- **Not allowed without the publisher's written permission:** scans, crops or tracings of its figures; its 要点 / 教法提示 text copied word for word or translated as-is; AI redraws of its figures.
+- **Illustrations** are therefore drawn new — preferably rendered from the OpenWushu 3D mannequin, or generated from OpenWushu's own videos (frame at each step → pose detection → clean line figure → motion arrows), or hand-drawn / traced from contributors' own photos. Every figure records **how it was made** (hand-drawn · traced from own photo/video · generated from own video · AI-assisted from own images · public-domain scan), its **license** (CC BY-SA 4.0 own work · public domain · used with written permission) and the reference used, and is checked in the review queue.
 
 ## Content model (draft)
 

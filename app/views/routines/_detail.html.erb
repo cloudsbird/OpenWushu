@@ -1,0 +1,93 @@
+<% figures = movement.figures %>
+<article class="detail" data-routine-player-target="detail" data-n="<%= movement.number %>" <%= "hidden" unless open %>
+  <% if figures.any? %>
+    data-controller="figure-viewer"
+    data-figure-viewer-poses-value="<%= figures.to_json %>"
+    data-figure-viewer-start-value="<%= movement.start_sec %>"
+    data-figure-viewer-duration-value="<%= movement.duration_sec %>"
+    data-figure-viewer-number-value="<%= movement.number %>"
+  <% end %>>
+  <div class="detail__bar">
+    <button type="button" class="btn" data-action="routine-player#close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 L5 8 L10 13"/></svg><%= t("routines.list.all") %></button>
+    <span class="controls__spacer"></span>
+    <button type="button" class="btn btn--icon" data-action="routine-player#prev" aria-label="<%= t("routines.player.prev") %>"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 L5 8 L10 13"/></svg></button>
+    <button type="button" class="btn btn--icon" data-action="routine-player#next" aria-label="<%= t("routines.player.next") %>"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 L11 8 L6 13"/></svg></button>
+  </div>
+  <div class="detail__body">
+    <div class="detail__title">
+      <span class="detail__vnum" aria-hidden="true">第<%= movement.cn_number %>式</span>
+      <div class="detail__names">
+        <span class="detail__meta"><%= movement.number %> / <%= total_count %> · <%= clock(movement.start_sec) %>–<%= clock(movement.end_sec) %></span>
+        <h2><%= movement.name_zh %></h2>
+        <span class="detail__py"><%= movement.name_pinyin %></span>
+        <span class="detail__tr"><%= movement.name_tr %></span>
+      </div>
+    </div>
+    <div class="detail__actions">
+      <button type="button" class="btn btn--accent" data-action="routine-player#playThis"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5 L12 7 L3 12.5 Z" fill="currentColor"/></svg><%= t("routines.detail.play_this") %></button>
+      <button type="button" class="btn" data-routine-player-target="loopButton" data-action="routine-player#toggleLoop" aria-pressed="false"><%= t("routines.player.loop") %></button>
+    </div>
+
+    <% if movement.described? %>
+      <div class="detail__block">
+        <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px">
+          <h3>图解 · <%= t("routines.detail.figures") %></h3>
+          <% if figures.any? %><span class="note"><%= t("routines.detail.figures_hint") %></span><% end %>
+        </div>
+        <% if figures.any? %>
+          <figure class="figures__view">
+            <svg viewBox="0 0 120 180" role="img" data-figure-viewer-target="view"></svg>
+            <figcaption>
+              <span><span class="zh" style="font-weight: 700" data-figure-viewer-target="caption"></span> · <span data-figure-viewer-target="step"></span></span>
+              <span class="note"><%= t("routines.detail.figure_made") %> · <%= t("routines.detail.camera") %>: <span data-figure-viewer-target="angleName"></span> · <%= t("routines.detail.figure_placeholder") %></span>
+            </figcaption>
+          </figure>
+          <div class="segmented" role="group" aria-label="<%= t("routines.detail.camera") %>" style="align-self: flex-start">
+            <% { 0 => :angle_front, -35 => :angle_34, -90 => :angle_side }.each do |az, key| %>
+              <button type="button" class="segmented__item" data-figure-viewer-target="angle" data-action="figure-viewer#setAngle" data-az="<%= az %>" aria-pressed="<%= az == -35 %>"><%= t("routines.detail.#{key}") %></button>
+            <% end %>
+          </div>
+          <div class="figures__thumbs" role="group" aria-label="<%= t("routines.detail.figures") %>">
+            <% figures.each_index do |k| %>
+              <button type="button" class="figures__thumb" data-figure-viewer-target="thumb" data-action="figure-viewer#pick" data-k="<%= k %>" aria-pressed="<%= k.zero? %>" aria-label="图 <%= movement.number %>-<%= k + 1 %>">
+                <svg viewBox="0 0 120 180" aria-hidden="true"></svg>
+                图 <%= movement.number %>-<%= k + 1 %>
+              </button>
+            <% end %>
+          </div>
+        <% else %>
+          <p class="pending" style="font-size: 14px"><%= t("routines.detail.no_figures") %></p>
+        <% end %>
+        <% if movement.reference %><p class="note"><%= t("routines.detail.reference") %>: <%= movement.reference %></p><% end %>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
+        <span class="badge badge--amber"><%= t("routines.detail.draft") %></span>
+        <% if movement.facing_tr.present? %>
+          <span class="muted" style="font-size: 13px"><%= t("routines.detail.facing") %>: <strong style="color: var(--ink)"><%= movement.facing_tr %></strong></span>
+        <% end %>
+      </div>
+      <div class="detail__block">
+        <h3>动作过程 · <%= t("routines.detail.steps") %></h3>
+        <ol class="steps">
+          <% movement.steps_tr.each_with_index do |text, i| %>
+            <li data-figure-viewer-target="stepItem"><span class="steps__cn" aria-hidden="true"><%= ChineseNumeral.call(i + 1) %></span><span data-figure-viewer-target="stepText"><%= text %></span></li>
+          <% end %>
+        </ol>
+      </div>
+      <div class="detail__block">
+        <h3>要点 · <%= t("routines.detail.key_points") %></h3>
+        <ul><% movement.key_points_tr.each do |text| %><li><%= text %></li><% end %></ul>
+      </div>
+      <div class="detail__block">
+        <h3>易犯错误 · <%= t("routines.detail.mistakes") %></h3>
+        <ul><% movement.mistakes_tr.each do |text| %><li><%= text %></li><% end %></ul>
+      </div>
+    <% else %>
+      <div class="pending">
+        <h3 style="font-family: var(--font-body)"><%= t("routines.detail.pending_title") %></h3>
+        <p><%= t("routines.detail.pending_body") %></p>
+      </div>
+    <% end %>
+  </div>
+</article>

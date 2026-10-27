@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <%# Email clients drop <style> blocks, so every style is inline (design/prototype/Emails.dc.html) %>
+  <body style="margin: 0; padding: 24px 12px; background: #E9EFF7; color: #0E1A2B; font-family: 'Alegreya Sans', 'Noto Sans SC', Arial, sans-serif; font-size: 16px; line-height: 1.55">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width: 600px; margin: 0 auto; background: #FFFFFF; border: 1px solid #D3DEEC; border-top: 3px solid #0E1A2B; border-collapse: separate">
+      <tr>
+        <td style="padding: 20px 32px; border-bottom: 3px double #0E1A2B">
+          <span style="display: inline-block; vertical-align: middle; width: 36px; padding: 2px 0; background: #1766C7; color: #FFFFFF; text-align: center; font-family: 'Noto Serif SC', serif; font-size: 15px; line-height: 1.05">武<br>术</span>
+          <span style="display: inline-block; vertical-align: middle; margin-left: 10px; line-height: 1.1"><span style="font-family: Alegreya, Georgia, serif; font-weight: 700; font-size: 20px">OpenWushu</span><br><span style="font-size: 11px; letter-spacing: 0.24em; color: #4E5D72">开放武术</span></span>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 28px 32px 32px">
+          <%= yield %>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 18px 32px; font-size: 13px; color: #4E5D72; background: #F5F8FC; border-top: 1px solid #D3DEEC">
+          <% if content_for?(:why) %><p style="margin: 0 0 6px"><%= yield :why %></p><% end %>
+          <p style="margin: 0"><%= t("mailer.legal") %></p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

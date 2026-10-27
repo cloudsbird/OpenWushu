@@ -1,0 +1,43 @@
+<% content_for :title, "注册 · #{t("registrations.new.title")}" %>
+<% errors = ->(attr) { @user.errors.messages_for(attr).first&.then { |m| m.upcase_first } } %>
+<%= render layout: "shared/auth" do %>
+  <%= render "shared/auth_title", zh: "注册", py: "Zhùcè", title: t("registrations.new.title"), lead: t("registrations.new.lead") %>
+  <%= form_with model: @user, url: registration_path, class: "form" do |form| %>
+    <div class="field">
+      <%= form.label :display_name, t("registrations.new.display_name") %>
+      <%= form.text_field :display_name, class: "input", required: true, autofocus: true, maxlength: 40, autocomplete: "nickname", "aria-invalid": (errors.(:display_name) && true), "aria-describedby": ("user_display_name_error" if errors.(:display_name)) %>
+      <% if (e = errors.(:display_name)) %><span id="user_display_name_error" class="field__error"><%= e %></span><% end %>
+    </div>
+    <div class="field">
+      <%= form.label :email_address, t("auth.email") %>
+      <%= form.email_field :email_address, class: "input", required: true, autocomplete: "email", "aria-invalid": (errors.(:email_address) && true), "aria-describedby": ("user_email_address_error" if errors.(:email_address)) %>
+      <% if (e = errors.(:email_address)) %><span id="user_email_address_error" class="field__error"><%= e %></span><% end %>
+    </div>
+    <%= render "shared/password_field", form: form, name: :password, id: "user_password", autocomplete: "new-password", hint: t("registrations.new.password_hint"), error: errors.(:password) do %>
+      <%= form.label :password, t("auth.password") %>
+    <% end %>
+    <div class="form__pair">
+      <fieldset class="field">
+        <legend><%= t("registrations.new.locale") %></legend>
+        <div class="segmented segmented--radio">
+          <% { "en" => "English", "id" => "Bahasa Indonesia" }.each do |code, label| %>
+            <label class="segmented__item" lang="<%= code %>"><%= form.radio_button :locale, code %><%= label %></label>
+          <% end %>
+        </div>
+      </fieldset>
+      <div class="field">
+        <%= form.label :club, t("registrations.new.club") %>
+        <%= form.text_field :club, class: "input", maxlength: 80, autocomplete: "organization" %>
+      </div>
+    </div>
+    <div class="field">
+      <label class="check">
+        <%= form.check_box :accept_guidelines, { checked: @user.guidelines_accepted_at.present?, "aria-invalid": (errors.(:guidelines_accepted_at) && true), "aria-describedby": ("user_guidelines_error" if errors.(:guidelines_accepted_at)) } %>
+        <span><%= t("registrations.new.agree") %></span>
+      </label>
+      <% if (e = errors.(:guidelines_accepted_at)) %><span id="user_guidelines_error" class="field__error"><%= e %></span><% end %>
+    </div>
+    <%= form.submit t("registrations.new.submit"), class: "btn btn--accent btn--block" %>
+  <% end %>
+  <p class="muted"><%= t("registrations.new.have_account") %> <%= link_to t("layout.sign_in"), new_session_path %></p>
+<% end %>

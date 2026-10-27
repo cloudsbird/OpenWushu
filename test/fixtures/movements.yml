@@ -1,0 +1,30 @@
+commencing:
+  routine: taiji
+  number: 1
+  section: 1
+  name_zh: 起势
+  name_pinyin: Qǐshì
+  name_en: Commencing Form
+  name_id: Sikap Pembuka
+  start_sec: 0
+  end_sec: 8
+  end_x: 3.0
+  end_y: 4.7
+  steps: <%= { en: ["Stand naturally."], id: ["Berdiri wajar."] }.to_json %>
+  key_points: <%= { en: ["Head held up."], id: ["Kepala tegak."] }.to_json %>
+  mistakes: <%= { en: ["Raising the shoulders."], id: ["Bahu terangkat."] }.to_json %>
+  figures: <%= [{ yaw: 0, j: Array.new(17) { [0, 100, 0] } }].to_json %>
+  reference: Competition routines collection (scan), Taijiquan, p. 598
+
+grasp_right:
+  routine: taiji
+  number: 2
+  section: 1
+  name_zh: 右揽雀尾
+  name_pinyin: Yòu lǎn què wěi
+  name_en: Grasp the Bird’s Tail (Right)
+  name_id: Menangkap Ekor Burung (Kanan)
+  start_sec: 8
+  end_sec: 18
+  end_x: 3.2
+  end_y: 5.3

@@ -1,0 +1,9 @@
+<%= t(".heading") %>
+
+<%= t(".body", name: @user.display_name) %>
+
+<%= t(".cta") %>: <%= edit_password_url(@user.password_reset_token) %>
+
+<%= t(".small", minutes: @user.password_reset_token_expires_in.in_minutes.round) %>
+
+<%= t(".why") %>

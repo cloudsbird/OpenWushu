@@ -16,6 +16,11 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 .ow-btn:focus-visible,.ow-in:focus-visible{outline:2px solid #1766C7;outline-offset:2px}
 .ow-in{font:inherit;box-sizing:border-box;width:100%}
 .ow-row:hover{filter:brightness(0.97)}
+html{scrollbar-gutter:stable}
+.ow-grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;align-items:start}
+.ow-grid4>.ow-main{grid-column:span 3}
+@media (max-width:960px){.ow-grid4{grid-template-columns:repeat(2,minmax(0,1fr))}.ow-grid4>.ow-main{grid-column:1 / -1}.ow-grid4>.ow-side{grid-column:1 / -1}}
+@media (max-width:600px){.ow-grid4{grid-template-columns:minmax(0,1fr)}}
 </style>
 </helmet>
 <div style="min-height: 100vh; display: flex; flex-direction: column; background: {{t.bg}}; color: {{t.ink}}; font-family: 'Alegreya Sans', 'Noto Sans SC', system-ui, sans-serif; font-size: 16px; line-height: 1.55">
@@ -188,7 +193,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <span style="font-size: 13px; font-weight: 700; color: {{t.accentInk}}; min-width: 22px">{{r.num}}</span>
 <span style="display: flex; flex-direction: column">
 <span style="font-family: 'Noto Serif SC', serif; font-weight: 600; font-size: 17px">{{r.zh}} <span style="font-family: 'Alegreya', serif; font-style: italic; font-weight: 400; font-size: 14px; color: {{t.muted}}">{{r.py}}</span></span>
-<span style="font-size: 13px; color: {{t.muted}}">{{r.tr}} · 24式</span>
+<span style="font-size: 13px; color: {{t.muted}}">{{r.tr}} · 42式</span>
 </span>
 </button>
 </sc-for>
@@ -201,47 +206,45 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px">
 <button type="button" class="ow-btn ow-row" onClick="{{openRoutine}}" style="display: flex; flex-direction: column; border-radius: 0; overflow: hidden; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}; background: {{t.surface}}">
 <span style="position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: {{t.video}}; color: #F2F6FC">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 64px; font-weight: 700; letter-spacing: 0.04em">廿四</span>
-<span style="position: absolute; left: 12px; bottom: 12px; display: flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 0; background: rgba(255,255,255,0.14); font-size: 12px; font-weight: 600"><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1 L9 5 L2 9 Z" fill="currentColor"></path></svg>5:10</span>
+<span style="font-family: 'Noto Serif SC', serif; font-size: 64px; font-weight: 700; letter-spacing: 0.04em">四二</span>
+<span style="position: absolute; left: 12px; bottom: 12px; display: flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 0; background: rgba(255,255,255,0.14); font-size: 12px; font-weight: 600"><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1 L9 5 L2 9 Z" fill="currentColor"></path></svg>5:28</span>
 </span>
 <span style="display: flex; flex-direction: column; gap: 2px; padding: 16px 18px 18px">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">二十四式简化太极拳</span>
-<span style="font-size: 14px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán</span>
+<span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">四十二式太极拳</span>
+<span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíquán</span>
 <span style="font-size: 14px; font-weight: 500">{{s.r24}}</span>
-<span style="margin-top: 10px; font-size: 13px; color: {{t.muted}}">24 {{s.moves}} · 3 {{s.threads}}</span>
+<span style="margin-top: 10px; font-size: 13px; color: {{t.muted}}">42 {{s.moves}} · 3 {{s.threads}}</span>
 </span>
 </button>
 <div style="display: flex; flex-direction: column; border-radius: 0; overflow: hidden; border: 1px dashed {{t.line2}}; background: {{t.surface}}">
 <div style="display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: {{t.chip}}; color: {{t.muted}}">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 64px; font-weight: 700">四二</span>
+<span style="font-family: 'Noto Serif SC', serif; font-size: 64px; font-weight: 700">剑</span>
 </div>
 <div style="display: flex; flex-direction: column; gap: 2px; padding: 16px 18px 18px">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">四十二式太极拳</span>
-<span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíquán</span>
-<span style="font-size: 14px; font-weight: 500">{{s.r42}}</span>
+<span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">四十二式太极剑</span>
+<span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíjiàn</span>
+<span style="font-size: 14px; font-weight: 500">{{s.r42s}}</span>
 <span style="margin-top: 10px; align-self: flex-start; padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.inProgress}}</span>
 </div>
 </div>
 </div>
 </section>
 
-<section style="display: flex; flex-wrap: wrap; gap: 20px">
-<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 0; border: 1px dashed {{t.line2}}">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">长拳</span>
-<span style="font-size: 14px; color: {{t.muted}}">Chángquán · {{s.changquan}}</span>
-<span style="font-size: 13px; color: {{t.muted}}">{{s.comingSoon}}</span>
+<sc-for list="{{routineGroups}}" as="gr" hint-placeholder-count="2">
+<section style="display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; padding-bottom: 8px; border-bottom: 1px solid {{t.ink}}"><span style="font-family: 'Noto Serif SC', serif; font-size: 24px">{{gr.zh}}</span><span style="font-size: 15px; font-weight: 400; color: {{t.muted}}">{{gr.py}} · {{gr.tr}}</span></h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px">
+<sc-for list="{{gr.items}}" as="r" hint-placeholder-count="4">
+<div style="display: flex; flex-direction: column; gap: 4px; padding: 16px 18px; border: 1px dashed {{t.line2}}; background: {{t.surface}}">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">{{r.zh}}<span style="font-size: 13px; font-weight: 500; color: {{t.muted}}"> 竞赛套路</span></span>
+<span style="font-family: 'Alegreya', serif; font-style: italic; font-size: 15px; color: {{t.muted}}">{{r.py}}</span>
+<span style="font-size: 14px; font-weight: 500">{{r.tr}}</span>
+<span style="margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center"><span style="padding: 2px 10px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.comingSoon}}</span><span style="font-size: 12px; color: {{t.muted}}; font-family: 'IBM Plex Mono', monospace">{{s.refShort}} p.{{r.page}} · 图 {{r.fig}}</span></span>
 </div>
-<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 0; border: 1px dashed {{t.line2}}">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">南拳</span>
-<span style="font-size: 14px; color: {{t.muted}}">Nánquán · {{s.nanquan}}</span>
-<span style="font-size: 13px; color: {{t.muted}}">{{s.comingSoon}}</span>
-</div>
-<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 0; border: 1px dashed {{t.line2}}">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">器械</span>
-<span style="font-size: 14px; color: {{t.muted}}">Qìxiè · {{s.weapons}}</span>
-<span style="font-size: 13px; color: {{t.muted}}">{{s.comingSoon}}</span>
+</sc-for>
 </div>
 </section>
+</sc-for>
 </main>
 </sc-if>
 
@@ -249,34 +252,35 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <main style="max-width: 1280px; margin: 0 auto; padding: 20px 24px 64px; display: flex; flex-direction: column; gap: 20px">
 <nav aria-label="Breadcrumb" style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; color: {{t.muted}}">
 <button type="button" class="ow-btn" onClick="{{goLibrary}}" style="min-height: 32px; text-decoration: underline">{{s.library}}</button>
-<span aria-hidden="true">/</span><span>太极拳 {{s.taiji}}</span><span aria-hidden="true">/</span><span style="color: {{t.ink}}">24式</span>
+<span aria-hidden="true">/</span><span>太极拳 {{s.taiji}}</span><span aria-hidden="true">/</span><span style="color: {{t.ink}}">42式</span>
 </nav>
 
 <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
 <div style="display: flex; gap: 18px; align-items: stretch">
 <span aria-hidden="true" style="writing-mode: vertical-rl; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 20px; line-height: 1; letter-spacing: 0.14em; font-weight: 400; padding-left: 10px; border-left: 4px solid {{t.accent}}">太极拳</span>
 <div style="display: flex; flex-direction: column; gap: 2px">
-<h1 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 36px; line-height: 1.2; font-weight: 700">二十四式简化太极拳</h1>
-<p style="margin: 0; font-size: 16px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán · <span style="color: {{t.ink}}; font-weight: 600">{{s.r24}}</span></p>
-<p style="margin: 4px 0 0; font-size: 13px; color: {{t.muted}}">24 {{s.moves}} · 5:10 · {{s.std}}</p>
+<h1 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 36px; line-height: 1.2; font-weight: 700">四十二式太极拳</h1>
+<p style="margin: 0; font-size: 16px; color: {{t.muted}}">Sìshí'èr shì tàijíquán · <span style="color: {{t.ink}}; font-weight: 600">{{s.r24}}</span></p>
+<p style="margin: 4px 0 0; font-size: 13px; color: {{t.muted}}">42 {{s.moves}} · 5:28 · {{s.std}}</p>
 </div>
 </div>
 <div role="tablist" aria-label="Routine sections" style="display: flex; gap: 4px; padding: 4px; border-radius: 0; background: {{t.chip}}">
 <button type="button" role="tab" aria-selected="{{isLearn}}" class="ow-btn" onClick="{{tabLearn}}" style="min-height: 40px; padding: 0 16px; border-radius: 0; font-weight: 600; background: {{learnBg}}; color: {{learnFg}}">学习 · {{s.learn}}</button>
+<button type="button" role="tab" aria-selected="{{isIndex}}" class="ow-btn" onClick="{{tabIndex}}" style="min-height: 40px; padding: 0 16px; font-weight: 600; background: {{indexBg}}; color: {{indexFg}}">动作名称 · {{s.movements}}</button>
 <button type="button" role="tab" aria-selected="{{isDiscuss}}" class="ow-btn" onClick="{{tabDiscuss}}" style="min-height: 40px; padding: 0 16px; border-radius: 0; font-weight: 600; background: {{discBg}}; color: {{discFg}}">讨论 · {{s.discussion}} ({{threadTotal}})</button>
 </div>
 </div>
 
 <sc-if value="{{isLearn}}" hint-placeholder-val="{{ true }}">
-<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<div class="ow-grid4">
 
-<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<div class="ow-main" style="min-width: 0; display: flex; flex-direction: column; gap: 16px">
 <section aria-label="Video" style="display: flex; flex-direction: column; gap: 10px; padding: 12px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <div style="position: relative; aspect-ratio: 16 / 9; border-radius: 0; overflow: hidden; background: {{t.video}}; display: flex; align-items: center; justify-content: center">
 <span style="position: absolute; left: 14px; top: 14px; padding: 4px 10px; border-radius: 0; background: rgba(255,255,255,0.12); color: #DCE6F5; font-size: 12px; font-weight: 500">{{s.sampleVideo}}</span>
-<span style="position: absolute; right: 14px; top: 14px; padding: 4px 10px; border-radius: 0; background: rgba(0,0,0,0.35); color: #F2F6FC; font-size: 12px; font-weight: 600; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{curTime}} / 5:10</span>
+<span style="position: absolute; right: 14px; top: 14px; padding: 4px 10px; border-radius: 0; background: rgba(0,0,0,0.35); color: #F2F6FC; font-size: 12px; font-weight: 600; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{curTime}} / 5:28</span>
 <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; padding: 0 24px">
-<span style="font-size: 13px; letter-spacing: 0.12em; color: #A9BAD3; font-weight: 600">第{{active.cn}}式 · {{active.num}} / 24</span>
+<span style="font-size: 13px; letter-spacing: 0.12em; color: #A9BAD3; font-weight: 600">第{{active.cn}}式 · {{active.num}} / 42</span>
 <span style="font-family: 'Noto Serif SC', serif; font-size: 56px; line-height: 1.15; font-weight: 700; color: #FFFFFF">{{active.zh}}</span>
 <span style="font-family: 'Alegreya', serif; font-style: italic; font-size: 20px; color: #DCE6F5">{{active.py}}</span>
 <span style="font-size: 15px; color: #A9BAD3">{{active.tr}}</span>
@@ -289,7 +293,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <div style="position: relative">
 <div role="group" aria-label="Movement timeline" style="display: flex; gap: 2px; height: 36px">
-<sc-for list="{{moves}}" as="m" hint-placeholder-count="24">
+<sc-for list="{{moves}}" as="m" hint-placeholder-count="42">
 <button type="button" class="ow-btn" onClick="{{m.seek}}" aria-label="{{m.aria}}" title="{{m.aria}}" style="flex: {{m.dur}} 1 0px; min-width: 0; overflow: hidden; border-radius: 0; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; background: {{m.segBg}}; color: {{m.segFg}}">{{m.n}}</button>
 </sc-for>
 </div>
@@ -341,7 +345,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <circle cx="{{dotX}}" cy="{{dotY}}" r="34" fill="{{t.accent}}" opacity="0.22"></circle>
 <circle cx="{{dotX}}" cy="{{dotY}}" r="16" fill="{{t.accent}}" stroke="#FFFFFF" stroke-width="5"></circle>
 </svg>
-<sc-for list="{{pts}}" as="p" hint-placeholder-count="24">
+<sc-for list="{{pts}}" as="p" hint-placeholder-count="42">
 <span aria-hidden="true" style="position: absolute; width: 22px; height: 22px; margin-left: -11px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; pointer-events: none; left: {{p.left}}; top: {{p.top}}; margin-top: {{p.dy}}; background: {{p.bg}}; color: {{p.fg}}; border: 1px solid {{p.bd}}">{{p.n}}</span>
 </sc-for>
 </div>
@@ -356,14 +360,15 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </section>
 </div>
 
-<aside style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}; overflow: hidden">
+<aside class="ow-side" style="min-width: 0; display: flex; flex-direction: column; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}; overflow: hidden">
 <sc-if value="{{listMode}}" hint-placeholder-val="{{ false }}">
 <div style="padding: 16px 16px 10px; border-bottom: 1px solid {{t.line}}">
-<h2 style="margin: 0; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Noto Serif SC', serif; font-size: 20px">动作</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">Dòngzuò · {{s.movements}} (24)</span></h2>
+<h2 style="margin: 0; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Noto Serif SC', serif; font-size: 20px">动作</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">Dòngzuò · {{s.movements}} (42)</span></h2>
 </div>
 <ol style="list-style: none; margin: 0; padding: 6px; max-height: 860px; overflow-y: auto">
-<sc-for list="{{moves}}" as="m" hint-placeholder-count="24">
+<sc-for list="{{moves}}" as="m" hint-placeholder-count="42">
 <li>
+<sc-if value="{{m.isSec}}" hint-placeholder-val="{{ false }}"><div style="margin-top: 6px; padding: 8px 10px 4px; font-family: 'Noto Serif SC', serif; font-weight: 700; color: {{t.accentInk}}; border-top: 1px solid {{t.ink}}">{{m.secLabel}}</div></sc-if>
 <button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-current="{{m.isActive}}" style="width: 100%; display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 8px 10px; border-radius: 0; background: {{m.rowBg}}">
 <span style="flex: none; width: 46px; display: flex; flex-direction: column; align-items: center; line-height: 1.15"><span style="font-family: 'Noto Serif SC', serif; font-size: 17px; font-weight: 900; color: {{m.numFg}}">{{m.cn}}</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: {{t.muted}}">{{m.num}}</span></span>
 <span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column">
@@ -389,7 +394,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <div style="display: flex; gap: 16px; align-items: flex-start; padding-bottom: 14px; border-bottom: 1px solid {{t.ink}}">
 <span aria-hidden="true" style="writing-mode: vertical-rl; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 28px; line-height: 1; letter-spacing: 0.06em; font-weight: 400; color: {{t.accentInk}}">第{{active.cn}}式</span>
 <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: {{t.muted}}">{{active.num}} / 24 · {{active.startTxt}}–{{active.endTxt}}</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: {{t.muted}}">{{active.num}} / 42 · {{active.startTxt}}–{{active.endTxt}}</span>
 <h2 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 40px; line-height: 1.2; font-weight: 700">{{active.zh}}</h2>
 <span style="font-family: 'Alegreya', serif; font-style: italic; font-size: 18px; color: {{t.muted}}">{{active.py}}</span>
 <span style="font-size: 16px; font-weight: 600">{{active.tr}}</span>
@@ -401,6 +406,30 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 
 <sc-if value="{{hasDetail}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px">
+<h3 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 15px; font-weight: 700; letter-spacing: 0.04em">图解 · {{s.figTitle}}</h3>
+<span style="font-size: 12px; color: {{t.muted}}">{{s.figHint}}</span>
+</div>
+<sc-if value="{{hasFigs}}" hint-placeholder-val="{{ true }}">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 1px solid {{t.ink}}; background: {{t.surface}}">
+<svg viewBox="0 0 120 180" width="100%" role="img" aria-label="{{fv.cap}}" style="display: block; max-height: 280px"><ellipse cx="60" cy="{{fv.gy}}" rx="30" ry="4" fill="{{t.chip}}"></ellipse><path d="{{fv.s0}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.s1}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.s2}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.s3}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.s4}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.s5}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.s6}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.s7}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.s8}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.s9}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.s10}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.s11}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.s12}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.s13}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{fv.btn}}" fill="none" stroke="{{t.ink}}" stroke-width="1" stroke-linecap="round"></path><ellipse cx="{{fv.hx}}" cy="{{fv.hy}}" rx="{{fv.hrx}}" ry="{{fv.hry}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3"></ellipse><path d="{{fv.hair}}" fill="{{t.ink}}"></path><path d="{{fv.arc}}" fill="none" stroke="{{t.accentInk}}" stroke-width="1.4" stroke-dasharray="4 3" stroke-linecap="round"></path><path d="{{fv.tip}}" fill="{{t.accentInk}}"></path></svg>
+<figcaption style="display: flex; flex-direction: column; gap: 4px; font-size: 14px">
+<span><span style="font-family: 'Noto Serif SC', serif; font-weight: 700">{{fv.cap}}</span> · {{fv.step}}</span>
+<span style="font-size: 12px; color: {{t.muted}}">{{fv.made}} · {{s.figCamera}}: {{fv.angleLabel}} · {{s.figReviewed}} coach_sby · {{s.figPlaceholder}}</span>
+</figcaption>
+</figure>
+<div role="group" aria-label="{{s.figCamera}}" style="display: flex; align-self: flex-start; padding: 3px; background: {{t.chip}}"><sc-for list="{{figAngles}}" as="a" hint-placeholder-count="3"><button type="button" class="ow-btn" onClick="{{a.pick}}" aria-pressed="{{a.on}}" style="min-height: 38px; padding: 0 12px; font-size: 13px; font-weight: 600; background: {{a.bg}}; color: {{a.fg}}">{{a.label}}</button></sc-for></div>
+<div role="group" aria-label="{{s.figTitle}}" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px">
+<sc-for list="{{figs}}" as="f" hint-placeholder-count="4"><button type="button" class="ow-btn" onClick="{{f.pick}}" aria-pressed="{{f.on}}" aria-label="{{f.cap}}" style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px; border: 2px solid {{f.bd}}; background: {{t.surface}}"><svg viewBox="0 0 120 180" width="100%" aria-hidden="true" style="display: block; max-height: 280px"><ellipse cx="60" cy="{{f.gy}}" rx="30" ry="4" fill="{{t.chip}}"></ellipse><path d="{{f.s0}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s1}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s2}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s3}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s4}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s5}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s6}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s7}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s8}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s9}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s10}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s11}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s12}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s13}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.btn}}" fill="none" stroke="{{t.ink}}" stroke-width="1" stroke-linecap="round"></path><ellipse cx="{{f.hx}}" cy="{{f.hy}}" rx="{{f.hrx}}" ry="{{f.hry}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3"></ellipse><path d="{{f.hair}}" fill="{{t.ink}}"></path><path d="{{f.arc}}" fill="none" stroke="{{t.accentInk}}" stroke-width="1.4" stroke-dasharray="4 3" stroke-linecap="round"></path><path d="{{f.tip}}" fill="{{t.accentInk}}"></path></svg><span style="font-family: 'Noto Serif SC', serif; font-size: 12px; font-weight: 600">{{f.cap}}</span></button></sc-for>
+</div>
+</sc-if>
+<sc-if value="{{noFigs}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 12px 14px; font-size: 14px; color: {{t.muted}}; border: 1px dashed {{t.line2}}">{{s.figNone}}</p>
+</sc-if>
+<p style="margin: 0; font-size: 12px; color: {{t.muted}}">{{s.figRef}}: {{detail.ref}}</p>
+</div>
+
 <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
 <span style="padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.draft}}</span>
 <span style="font-size: 13px; color: {{t.muted}}">{{s.facing}}: <span style="color: {{t.ink}}; font-weight: 600">{{detail.facing}}</span></span>
@@ -408,7 +437,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <div style="display: flex; flex-direction: column; gap: 6px">
 <h3 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 15px; font-weight: 700; letter-spacing: 0.04em">动作过程 · {{s.steps}}</h3>
 <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
-<sc-for list="{{detail.stepsN}}" as="st" hint-placeholder-count="4"><li style="display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 8px; padding: 8px 0; border-top: 1px solid {{t.line}}"><span aria-hidden="true" style="font-family: 'Noto Serif SC', serif; font-size: 18px; font-weight: 900; line-height: 1.3; color: {{t.accentInk}}">{{st.cn}}</span><span>{{st.text}}</span></li></sc-for>
+<sc-for list="{{detail.stepsN}}" as="st" hint-placeholder-count="4"><li style="display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 8px; padding: 8px 6px; border-top: 1px solid {{t.line}}; background: {{st.bg}}"><span aria-hidden="true" style="font-family: 'Noto Serif SC', serif; font-size: 18px; font-weight: 900; line-height: 1.3; color: {{t.accentInk}}">{{st.cn}}</span><span>{{st.text}}</span></li></sc-for>
 </ol>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
@@ -451,9 +480,27 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 </sc-if>
 
+<sc-if value="{{isIndex}}" hint-placeholder-val="{{ false }}">
+<div class="ow-grid4" role="group" aria-label="{{s.libSeqAria}}">
+<sc-for list="{{libSections}}" as="sec" hint-placeholder-count="4">
+<section aria-label="{{sec.label}}" style="min-width: 0; display: flex; flex-direction: column; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<h3 style="margin: 0; padding: 12px 14px 10px; font-family: 'Noto Serif SC', serif; font-size: 16px; font-weight: 700; color: {{t.accentInk}}; border-bottom: 1px solid {{t.line}}">{{sec.label}}</h3>
+<ol style="list-style: none; margin: 0; padding: 4px 8px 8px">
+<sc-for list="{{sec.items}}" as="m" hint-placeholder-count="10">
+<li><button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-label="{{m.aria}}" aria-current="{{m.on}}" style="width: 100%; display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 8px; align-items: start; min-height: 52px; padding: 8px 4px; border-bottom: 1px solid {{t.line}}; background: {{m.bg}}">
+<span aria-hidden="true" style="font-family: 'Noto Serif SC', serif; font-size: 14px; font-weight: 600; color: {{t.accentInk}}; white-space: nowrap">（{{m.cn}}）</span>
+<span style="display: flex; flex-direction: column; min-width: 0; line-height: 1.35"><span style="font-family: 'Noto Serif SC', serif; font-weight: 600">{{m.zh}}</span><span style="font-family: 'Alegreya', serif; font-style: italic; font-size: 13px; color: {{t.muted}}">{{m.py}}</span><span style="font-size: 13px">{{m.tr}}</span></span>
+</button></li>
+</sc-for>
+</ol>
+</section>
+</sc-for>
+</div>
+</sc-if>
+
 <sc-if value="{{isDiscuss}}" hint-placeholder-val="{{ false }}">
-<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
-<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<div class="ow-grid4">
+<div class="ow-main" style="min-width: 0; display: flex; flex-direction: column; gap: 12px">
 
 <sc-if value="{{reportOpen}}" hint-placeholder-val="{{ false }}">
 <section aria-label="{{s.formTitle}}" style="display: flex; flex-direction: column; gap: 16px; padding: 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line2}}">
@@ -618,7 +665,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </sc-if>
 </div>
 
-<aside style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 18px 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<aside class="ow-side" style="min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 18px 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <h2 style="margin: 0; font-size: 16px">{{s.howTitle}}</h2>
 <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px">
 <li>{{s.how1}}</li>
@@ -656,8 +703,8 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <div style="display: flex; flex-direction: column; gap: 12px">
 <button type="button" class="ow-btn ow-row" onClick="{{open24Discuss}}" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; padding: 20px 22px; border-radius: 0; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}; background: {{t.surface}}">
 <span style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">二十四式简化太极拳</span>
-<span style="font-size: 14px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán · <span style="color: {{t.ink}}; font-weight: 500">{{s.r24}}</span></span>
+<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">四十二式太极拳</span>
+<span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíquán · <span style="color: {{t.ink}}; font-weight: 500">{{s.r24}}</span></span>
 <span style="margin-top: 8px; font-size: 14px; color: {{t.muted}}">{{s.latest}}: <span style="color: {{t.ink}}; font-weight: 600">{{latestTitle}}</span> · {{latestLang}}</span>
 <span style="margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px">
 <sc-for list="{{langCounts}}" as="lc" hint-placeholder-count="3"><span style="padding: 1px 10px; border-radius: 0; font-size: 12px; font-weight: 600; border: 1px solid {{t.line2}}; color: {{t.ink}}">{{lc.label}} · {{lc.count}}</span></sc-for>
@@ -672,8 +719,8 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </button>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; padding: 20px 22px; border-radius: 0; border: 1px dashed {{t.line2}}; background: {{t.surface}}">
 <span style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">四十二式太极拳</span>
-<span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíquán · <span style="color: {{t.ink}}; font-weight: 500">{{s.r42}}</span></span>
+<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">四十二式太极剑</span>
+<span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíjiàn · <span style="color: {{t.ink}}; font-weight: 500">{{s.r42s}}</span></span>
 <span style="margin-top: 8px; font-size: 14px; color: {{t.muted}}">{{s.dPending}}</span>
 </span>
 <span style="flex: none; padding: 3px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.inProgress}}</span>
@@ -681,19 +728,9 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 </section>
 
-<section style="display: flex; flex-wrap: wrap; gap: 12px">
-<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 0; border: 1px dashed {{t.line2}}">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">长拳</span>
-<span style="font-size: 14px; color: {{t.muted}}">Chángquán · {{s.changquan}} · {{s.comingSoon}}</span>
-</div>
-<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 0; border: 1px dashed {{t.line2}}">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">南拳</span>
-<span style="font-size: 14px; color: {{t.muted}}">Nánquán · {{s.nanquan}} · {{s.comingSoon}}</span>
-</div>
-<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 0; border: 1px dashed {{t.line2}}">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">器械</span>
-<span style="font-size: 14px; color: {{t.muted}}">Qìxiè · {{s.weapons}} · {{s.comingSoon}}</span>
-</div>
+<section style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{s.dOthers}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><sc-for list="{{otherRoutines}}" as="r" hint-placeholder-count="8"><span style="padding: 4px 10px; font-size: 14px; border: 1px dashed {{t.line2}}"><span style="font-family: 'Noto Serif SC', serif; font-weight: 700">{{r.zh}}</span> <span style="color: {{t.muted}}">{{r.tr}}</span></span></sc-for></div>
 </section>
 </main>
 </sc-if>
@@ -750,6 +787,15 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <p style="margin: 0; padding: 12px 14px; line-height: 1.75; border: 1px solid {{t.line}}; background: {{t.bg}}"><sc-for list="{{rv.after}}" as="g" hint-placeholder-count="2"><span style="background: {{g.bg}}; text-decoration: {{g.dec}}">{{g.t}}</span></sc-for></p>
 </div>
 </div>
+</sc-if>
+<sc-if value="{{rv.isFigure}}" hint-placeholder-val="{{ false }}">
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 120px)); gap: 8px">
+<sc-for list="{{rv.figs}}" as="f" hint-placeholder-count="4"><div style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px; border: 1px solid {{t.line2}}"><svg viewBox="0 0 120 180" width="100%" aria-hidden="true" style="display: block; max-height: 280px"><ellipse cx="60" cy="{{f.gy}}" rx="30" ry="4" fill="{{t.chip}}"></ellipse><path d="{{f.s0}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s1}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s2}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s3}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s4}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s5}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s6}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s7}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s8}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s9}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s10}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s11}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s12}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.s13}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3" stroke-linejoin="round"></path><path d="{{f.btn}}" fill="none" stroke="{{t.ink}}" stroke-width="1" stroke-linecap="round"></path><ellipse cx="{{f.hx}}" cy="{{f.hy}}" rx="{{f.hrx}}" ry="{{f.hry}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.3"></ellipse><path d="{{f.hair}}" fill="{{t.ink}}"></path><path d="{{f.arc}}" fill="none" stroke="{{t.accentInk}}" stroke-width="1.4" stroke-dasharray="4 3" stroke-linecap="round"></path><path d="{{f.tip}}" fill="{{t.accentInk}}"></path></svg><span style="font-family: 'Noto Serif SC', serif; font-size: 12px; font-weight: 600">{{f.cap}}</span></div></sc-for>
+</div>
+<dl style="margin: 0; display: grid; grid-template-columns: minmax(0, 160px) minmax(0, 1fr); gap: 6px 16px; font-size: 14px">
+<dt style="color: {{t.muted}}">{{s.fgMade}}</dt><dd style="margin: 0; font-weight: 600">{{rv.madeLabel}}</dd>
+<dt style="color: {{t.muted}}">{{s.fgLic}}</dt><dd style="margin: 0; font-weight: 600">{{rv.licLabel}}</dd>
+</dl>
 </sc-if>
 <sc-if value="{{rv.isVideo}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; aspect-ratio: 16 / 9; max-width: 560px; background: {{t.video}}; color: #DCE6F5">
@@ -847,7 +893,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <main style="max-width: 1180px; margin: 0 auto; padding: 24px 24px 64px; display: flex; flex-direction: column; gap: 24px">
 <nav aria-label="Breadcrumb" style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; color: {{t.muted}}">
 <button type="button" class="ow-btn" onClick="{{goLibrary}}" style="min-height: 32px; text-decoration: underline">{{s.library}}</button><span aria-hidden="true">/</span>
-<button type="button" class="ow-btn" onClick="{{openRoutine}}" style="min-height: 32px; text-decoration: underline">24式</button><span aria-hidden="true">/</span>
+<button type="button" class="ow-btn" onClick="{{openRoutine}}" style="min-height: 32px; text-decoration: underline">42式</button><span aria-hidden="true">/</span>
 <button type="button" class="ow-btn" onClick="{{hiBackMove}}" style="min-height: 32px; text-decoration: underline">{{hiMoveShort}}</button><span aria-hidden="true">/</span>
 <span style="color: {{t.ink}}">{{s.history}}</span>
 </nav>
@@ -1227,19 +1273,19 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <h3 style="margin: 4px 0 0; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Noto Serif SC', serif; font-size: 20px">太极拳</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">Tàijíquán · {{s.taiji}}</span></h3>
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px">
 <button type="button" class="ow-btn ow-row" onClick="{{pick24}}" style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 0; border: 2px solid {{t.accent}}; background: {{t.surface}}">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">二十四式简化太极拳</span>
-<span style="font-size: 14px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán</span>
+<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">四十二式太极拳</span>
+<span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíquán</span>
 <span style="font-size: 14px; font-weight: 500">{{s.r24}}</span>
 <span style="margin-top: 10px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 13px; color: {{t.muted}}">{{descDone}} / 24 · {{s.pDesc}}</span>
+<span style="font-size: 13px; color: {{t.muted}}">{{descDone}} / 42 · {{s.pDesc}}</span>
 <span aria-hidden="true" style="height: 6px; border-radius: 0; overflow: hidden; background: {{t.chip}}"><span style="display: block; height: 6px; width: {{descPct}}; background: {{t.accent}}"></span></span>
 </span>
 <span style="margin-top: 8px; align-self: flex-start; min-height: 36px; padding: 0 14px; border-radius: 0; display: flex; align-items: center; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.choose}}</span>
 </button>
 <div style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 0; border: 1px dashed {{t.line2}}; background: {{t.surface}}">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">四十二式太极拳</span>
-<span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíquán</span>
-<span style="font-size: 14px; font-weight: 500">{{s.r42}}</span>
+<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">四十二式太极剑</span>
+<span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíjiàn</span>
+<span style="font-size: 14px; font-weight: 500">{{s.r42s}}</span>
 <span style="margin-top: 10px; align-self: flex-start; padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.listPending}}</span>
 </div>
 </div>
@@ -1254,7 +1300,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 0; background: {{t.accentSoft}}">
 <span style="display: flex; flex-direction: column; flex: 1 1 260px">
 <span style="font-size: 12px; font-weight: 600; color: {{t.accentInk}}">{{s.routineLabel}}</span>
-<span><span style="font-family: 'Noto Serif SC', serif; font-size: 18px; font-weight: 700">二十四式简化太极拳</span> <span style="font-size: 14px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán · {{s.r24}}</span></span>
+<span><span style="font-family: 'Noto Serif SC', serif; font-size: 18px; font-weight: 700">四十二式太极拳</span> <span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíquán · {{s.r24}}</span></span>
 </span>
 <button type="button" class="ow-btn" onClick="{{changeRoutine}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 600; font-size: 14px; background: {{t.surface}}; border: 1px solid {{t.line2}}">{{s.changeRoutine}}</button>
 </div>
@@ -1264,7 +1310,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <sc-for list="{{progress}}" as="pr" hint-placeholder-count="5">
 <div style="display: flex; flex-direction: column; gap: 8px; padding: 16px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <span style="font-size: 13px; font-weight: 600">{{pr.label}}</span>
-<span style="font-size: 26px; font-weight: 700; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{pr.done}} <span style="font-size: 15px; font-weight: 500; color: {{t.muted}}">/ 24</span></span>
+<span style="font-size: 26px; font-weight: 700; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{pr.done}} <span style="font-size: 15px; font-weight: 500; color: {{t.muted}}">/ 42</span></span>
 <div aria-hidden="true" style="height: 6px; border-radius: 0; overflow: hidden; background: {{t.chip}}"><div style="height: 6px; width: {{pr.pct}}; background: {{t.accent}}"></div></div>
 <span style="font-size: 12px; color: {{t.muted}}">{{pr.note}}</span>
 </div>
@@ -1300,9 +1346,9 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <sc-if value="{{cShowDescribe}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
 <aside style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; border-radius: 0; overflow: hidden; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
-<h2 style="margin: 0; padding: 16px 16px 10px; display: flex; align-items: baseline; gap: 8px; border-bottom: 1px solid {{t.line}}"><span style="font-family: 'Noto Serif SC', serif; font-size: 18px">动作</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">{{s.needsDesc}} · 24式</span></h2>
+<h2 style="margin: 0; padding: 16px 16px 10px; display: flex; align-items: baseline; gap: 8px; border-bottom: 1px solid {{t.line}}"><span style="font-family: 'Noto Serif SC', serif; font-size: 18px">动作</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">{{s.needsDesc}} · 42式</span></h2>
 <ol style="list-style: none; margin: 0; padding: 6px; max-height: 640px; overflow-y: auto">
-<sc-for list="{{cMoves}}" as="m" hint-placeholder-count="24">
+<sc-for list="{{cMoves}}" as="m" hint-placeholder-count="42">
 <li>
 <button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-current="{{m.on}}" style="width: 100%; display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 6px 10px; border-radius: 0; background: {{m.rowBg}}">
 <span style="flex: none; width: 30px; font-size: 12px; font-weight: 700; color: {{t.muted}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{m.num}}</span>
@@ -1320,7 +1366,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <section aria-label="{{s.editing}}" style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px; padding: 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px">
 <div style="display: flex; flex-direction: column; gap: 2px">
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: {{t.accentInk}}">{{s.editing}} · {{cm.num}} / 24</span>
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: {{t.accentInk}}">{{s.editing}} · {{cm.num}} / 42</span>
 <h2 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 34px; line-height: 1.2">{{cm.zh}}</h2>
 <span style="color: {{t.muted}}">{{cm.py}} · <span style="color: {{t.ink}}; font-weight: 600">{{cm.tr}}</span></span>
 </div>
@@ -1373,7 +1419,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 </div>
 <div role="group" aria-label="{{s.edStarts}}" style="display: flex; gap: 2px; height: 32px">
-<sc-for list="{{edSegs}}" as="g" hint-placeholder-count="24"><button type="button" class="ow-btn" onClick="{{g.pick}}" aria-label="{{g.aria}}" title="{{g.aria}}" style="flex: {{g.dur}} 1 0px; min-width: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; background: {{g.bg}}; color: {{g.fg}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{g.n}}</button></sc-for>
+<sc-for list="{{edSegs}}" as="g" hint-placeholder-count="42"><button type="button" class="ow-btn" onClick="{{g.pick}}" aria-label="{{g.aria}}" title="{{g.aria}}" style="flex: {{g.dur}} 1 0px; min-width: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; background: {{g.bg}}; color: {{g.fg}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{g.n}}</button></sc-for>
 </div>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
 <button type="button" class="ow-btn" onClick="{{togglePlay}}" aria-label="{{playLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: {{t.accent}}; color: {{t.onAccent}}">
@@ -1402,7 +1448,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <path d="{{edFullD}}" fill="none" stroke="{{t.rest}}" stroke-width="6" stroke-dasharray="14 12" stroke-linecap="round" stroke-linejoin="round"></path>
 <path d="{{edSelD}}" fill="none" stroke="{{t.accent}}" stroke-width="14" stroke-linecap="round"></path>
 </svg>
-<sc-for list="{{edPtsView}}" as="p" hint-placeholder-count="24"><span aria-hidden="true" style="position: absolute; width: 22px; height: 22px; margin-left: -11px; margin-top: -11px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; pointer-events: none; left: {{p.left}}; top: {{p.top}}; background: {{p.bg}}; color: {{p.fg}}; border: 1px solid {{p.bd}}">{{p.n}}</span></sc-for>
+<sc-for list="{{edPtsView}}" as="p" hint-placeholder-count="42"><span aria-hidden="true" style="position: absolute; width: 22px; height: 22px; margin-left: -11px; margin-top: -11px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; pointer-events: none; left: {{p.left}}; top: {{p.top}}; background: {{p.bg}}; color: {{p.fg}}; border: 1px solid {{p.bd}}">{{p.n}}</span></sc-for>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end">
 <div style="flex: 1 1 120px; display: flex; flex-direction: column; gap: 6px"><label for="ow-edx" style="font-size: 13px; font-weight: 600">{{s.edX}}</label><input id="ow-edx" class="ow-in" type="text" inputmode="decimal" value="{{edX}}" onChange="{{onEdX}}" style="min-height: 46px; padding: 0 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums"></div>
@@ -1415,11 +1461,11 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <aside style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <div style="display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-bottom: 1px solid {{t.line}}; font-size: 13px">
-<span><span style="color: {{t.muted}}">{{s.edStarts}}:</span> <span style="font-weight: 700; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">24 / 24</span></span>
-<span><span style="color: {{t.muted}}">{{s.edPoints}}:</span> <span style="font-weight: 700; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{edPlacedCount}} / 24</span></span>
+<span><span style="color: {{t.muted}}">{{s.edStarts}}:</span> <span style="font-weight: 700; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">42 / 42</span></span>
+<span><span style="color: {{t.muted}}">{{s.edPoints}}:</span> <span style="font-weight: 700; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{edPlacedCount}} / 42</span></span>
 </div>
 <ol style="list-style: none; margin: 0; padding: 0; max-height: 720px; overflow-y: auto">
-<sc-for list="{{edMoves}}" as="m" hint-placeholder-count="24">
+<sc-for list="{{edMoves}}" as="m" hint-placeholder-count="42">
 <li><button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-current="{{m.on}}" style="width: 100%; display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 6px 12px; border-bottom: 1px solid {{t.line}}; background: {{m.bg}}">
 <span style="flex: none; width: 40px; text-align: center; font-family: 'Noto Serif SC', serif; font-weight: 900; color: {{t.accentInk}}">{{m.cn}}</span>
 <span style="flex: 1 1 auto; min-width: 0; font-family: 'Noto Serif SC', serif; font-weight: 600">{{m.zh}}</span>
@@ -1435,12 +1481,38 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 </sc-if>
 
+<sc-if value="{{cShowFigures}}" hint-placeholder-val="{{ false }}">
+<section aria-label="{{s.tFigures}}" style="display: flex; flex-direction: column; gap: 16px; max-width: 900px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<p style="margin: 0; color: {{t.muted}}">{{s.fgLead}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 2 1 240px; display: flex; flex-direction: column; gap: 6px"><label for="ow-fgmove" style="font-size: 13px; font-weight: 600">{{s.fgMove}}</label>
+<select id="ow-fgmove" class="ow-in" value="{{fgMove}}" onChange="{{onFgMove}}" style="min-height: 46px; padding: 0 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><sc-for list="{{fgMoveOpts}}" as="o" hint-placeholder-count="42"><option value="{{o.v}}">{{o.label}}</option></sc-for></select></div>
+<div style="flex: 2 1 240px; display: flex; flex-direction: column; gap: 6px"><label for="ow-fgmade" style="font-size: 13px; font-weight: 600">{{s.fgMade}}</label>
+<select id="ow-fgmade" class="ow-in" style="min-height: 46px; padding: 0 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><sc-for list="{{s.madeOpts}}" as="o" hint-placeholder-count="5"><option>{{o}}</option></sc-for></select></div>
+<div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px"><label for="ow-fglic" style="font-size: 13px; font-weight: 600">{{s.fgLic}}</label>
+<select id="ow-fglic" class="ow-in" style="min-height: 46px; padding: 0 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><sc-for list="{{s.licOpts}}" as="o" hint-placeholder-count="3"><option>{{o}}</option></sc-for></select></div>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+<sc-for list="{{fgSteps}}" as="st" hint-placeholder-count="4">
+<li style="display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: 8px 12px; align-items: center; padding: 10px 0; border-top: 1px solid {{t.line}}">
+<span style="font-family: 'Noto Serif SC', serif; font-weight: 700; color: {{t.accentInk}}">{{st.cap}}</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0"><span style="font-size: 14px">{{st.text}}</span><input class="ow-in" type="file" accept="image/png,image/svg+xml,image/jpeg" aria-label="{{st.aria}}" style="padding: 8px; border: 1px dashed {{t.line2}}; background: {{t.bg}}; color: {{t.ink}}"></span>
+</li>
+</sc-for>
+</ol>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="ow-fgsrc" style="font-size: 13px; font-weight: 600">{{s.fgSource}}</label>
+<input id="ow-fgsrc" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"></div>
+<p role="note" style="margin: 0; padding: 12px 14px; font-size: 14px; border: 1px solid {{t.amber}}; background: {{t.amberSoft}}; color: {{t.ink}}">{{s.fgWarn}}</p>
+<button type="button" class="ow-btn" onClick="{{cSubmit}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.fgSubmit}}</button>
+</section>
+</sc-if>
+
 <sc-if value="{{cShowVideo}}" hint-placeholder-val="{{ false }}">
 <section aria-label="{{s.tVideo}}" style="display: flex; flex-direction: column; gap: 16px; max-width: 760px; padding: 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-vroutine" style="font-size: 13px; font-weight: 600">{{s.vRoutine}}</label>
-<select id="ow-vroutine" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><option>二十四式简化太极拳 · {{s.r24}}</option><option>四十二式太极拳 · {{s.r42}}</option></select>
+<select id="ow-vroutine" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><option>四十二式太极拳 · {{s.r24}}</option><option>四十二式太极剑 · {{s.r42s}}</option></select>
 </div>
 <div style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-vview" style="font-size: 13px; font-weight: 600">{{s.vView}}</label>
@@ -1476,7 +1548,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </tr>
 </thead>
 <tbody>
-<sc-for list="{{trRows}}" as="r" hint-placeholder-count="24">
+<sc-for list="{{trRows}}" as="r" hint-placeholder-count="42">
 <tr>
 <th scope="row" style="padding: 6px 8px; text-align: left; font-weight: 400; border-bottom: 1px solid {{t.line}}"><span style="font-size: 12px; font-weight: 700; color: {{t.muted}}">{{r.num}}</span> <span style="font-family: 'Noto Serif SC', serif; font-weight: 600">{{r.zh}}</span> <span style="font-family: 'Alegreya', serif; font-style: italic; font-size: 12px; color: {{t.muted}}">{{r.py}}</span></th>
 <td style="padding: 6px 8px; border-bottom: 1px solid {{t.line}}"><input class="ow-in" type="text" aria-label="{{r.enLabel}}" defaultValue="{{r.en}}" style="min-height: 40px; padding: 0 10px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"></td>
@@ -1491,78 +1563,122 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </section>
 </sc-if>
 </sc-if>
+
+<section aria-label="{{s.devTitle}}" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<span aria-hidden="true" style="flex: none; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: {{t.chip}}; color: {{t.accentInk}}"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7 L3 12 L8 17"></path><path d="M16 7 L21 12 L16 17"></path><path d="M14 4 L10 20"></path></svg></span>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 4px">
+<h2 style="margin: 0; font-family: 'Alegreya', serif; font-size: 20px; font-weight: 700">{{s.devTitle}}</h2>
+<p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{s.devBody}}</p>
+</div>
+<a href="https://github.com/cloudsbird/OpenWushu" target="_blank" rel="noopener" style="min-height: 46px; padding: 0 18px; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; text-decoration: none; background: {{t.ink}}; color: {{t.surface}}">{{s.devCta}} <span aria-hidden="true">↗</span></a>
+</section>
 </main>
 </sc-if>
 
 <span style="flex: 1 1 auto"></span>
 <footer style="position: sticky; bottom: 0; z-index: 10; border-top: 1px solid {{t.line}}; background: {{t.surface}}">
-<p style="max-width: 1280px; margin: 0 auto; padding: 10px 24px; font-size: 13px; color: {{t.muted}}">{{s.footer}} · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener" style="color: {{t.accentInk}}">{{s.license}}</a></p>
+<p style="max-width: 1280px; margin: 0 auto; padding: 10px 24px; font-size: 13px; color: {{t.muted}}">{{s.footer}} · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener" style="color: {{t.accentInk}}">{{s.license}}</a> · <a href="https://github.com/cloudsbird/OpenWushu" target="_blank" rel="noopener" style="color: {{t.accentInk}}">{{s.sourceCode}}</a></p>
 </footer>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props='{"dark":{"editor":"boolean","default":false},"$preview":{"width":1440,"height":1240}}'>
 var MOVES = [
-  ['起势', 'Qǐshì', 'Commencing Form', 'Sikap Pembuka', 10],
-  ['左右野马分鬃', 'Zuǒyòu yěmǎ fēn zōng', 'Part the Wild Horse’s Mane', 'Membelah Surai Kuda Liar', 18],
-  ['白鹤亮翅', 'Báihè liàng chì', 'White Crane Spreads Its Wings', 'Bangau Putih Membentangkan Sayap', 9],
-  ['左右搂膝拗步', 'Zuǒyòu lōu xī ào bù', 'Brush Knee and Twist Step', 'Menyapu Lutut dan Melangkah', 20],
-  ['手挥琵琶', 'Shǒu huī pípá', 'Play the Pipa', 'Memetik Pipa', 9],
-  ['左右倒卷肱', 'Zuǒyòu dào juǎn gōng', 'Repulse the Monkey', 'Mundur Menggulung Lengan', 18],
-  ['左揽雀尾', 'Zuǒ lǎn què wěi', 'Grasp the Bird’s Tail (Left)', 'Menangkap Ekor Burung (Kiri)', 16],
-  ['右揽雀尾', 'Yòu lǎn què wěi', 'Grasp the Bird’s Tail (Right)', 'Menangkap Ekor Burung (Kanan)', 16],
-  ['单鞭', 'Dān biān', 'Single Whip', 'Cambuk Tunggal', 10],
-  ['云手', 'Yún shǒu', 'Cloud Hands', 'Tangan Awan', 20],
-  ['单鞭', 'Dān biān', 'Single Whip', 'Cambuk Tunggal', 10],
-  ['高探马', 'Gāo tàn mǎ', 'High Pat on Horse', 'Menepuk Kuda Tinggi', 9],
-  ['右蹬脚', 'Yòu dēng jiǎo', 'Right Heel Kick', 'Tendangan Tumit Kanan', 12],
-  ['双峰贯耳', 'Shuāng fēng guàn ěr', 'Strike the Ears with Both Fists', 'Dua Puncak Menembus Telinga', 10],
-  ['转身左蹬脚', 'Zhuǎnshēn zuǒ dēng jiǎo', 'Turn and Left Heel Kick', 'Berbalik, Tendangan Tumit Kiri', 12],
-  ['左下势独立', 'Zuǒ xiàshì dúlì', 'Push Down and Stand on One Leg (Left)', 'Sikap Rendah dan Berdiri Satu Kaki (Kiri)', 16],
-  ['右下势独立', 'Yòu xiàshì dúlì', 'Push Down and Stand on One Leg (Right)', 'Sikap Rendah dan Berdiri Satu Kaki (Kanan)', 16],
-  ['左右穿梭', 'Zuǒyòu chuānsuō', 'Work the Shuttles', 'Menenun Bolak-balik', 18],
-  ['海底针', 'Hǎidǐ zhēn', 'Needle at the Sea Bottom', 'Jarum di Dasar Laut', 8],
-  ['闪通臂', 'Shǎn tōng bì', 'Fan Through the Back', 'Lengan Menembus Punggung', 9],
-  ['转身搬拦捶', 'Zhuǎnshēn bān lán chuí', 'Turn, Deflect, Parry and Punch', 'Berbalik, Menangkis, Menghadang dan Memukul', 16],
-  ['如封似闭', 'Rú fēng sì bì', 'Apparent Close-Up', 'Seolah Menutup', 10],
-  ['十字手', 'Shízì shǒu', 'Cross Hands', 'Tangan Menyilang', 8],
-  ['收势', 'Shōushì', 'Closing Form', 'Sikap Penutup', 10]
+  // 第一段
+  ['起势', 'Qǐshì', 'Commencing Form', 'Sikap Pembuka', 8],
+  ['右揽雀尾', 'Yòu lǎn què wěi', 'Grasp the Bird’s Tail (Right)', 'Menangkap Ekor Burung (Kanan)', 10],
+  ['左单鞭', 'Zuǒ dān biān', 'Single Whip (Left)', 'Cambuk Tunggal (Kiri)', 7],
+  ['提手', 'Tí shǒu', 'Raise Hands', 'Mengangkat Tangan', 6],
+  ['白鹤亮翅', 'Báihè liàng chì', 'White Crane Spreads Its Wings', 'Bangau Putih Membentangkan Sayap', 6],
+  ['搂膝拗步', 'Lōu xī ào bù', 'Brush Knee and Twist Step', 'Menyapu Lutut dan Melangkah', 8],
+  ['撇身捶', 'Piē shēn chuí', 'Turn Body and Strike', 'Memutar Badan dan Memukul', 7],
+  ['捋挤势', 'Lǚ jǐ shì', 'Roll Back and Press', 'Menarik dan Mendorong', 9],
+  ['进步搬拦捶', 'Jìnbù bān lán chuí', 'Step Forward, Deflect, Parry and Punch', 'Maju, Menangkis, Menghadang dan Memukul', 9],
+  ['如封似闭', 'Rú fēng sì bì', 'Apparent Close-Up', 'Seolah Menutup', 7],
+  // 第二段
+  ['开合手', 'Kāi hé shǒu', 'Open and Close Hands', 'Tangan Membuka dan Menutup', 6],
+  ['右单鞭', 'Yòu dān biān', 'Single Whip (Right)', 'Cambuk Tunggal (Kanan)', 7],
+  ['肘底捶', 'Zhǒu dǐ chuí', 'Fist Under Elbow', 'Kepalan di Bawah Siku', 7],
+  ['转身推掌', 'Zhuǎnshēn tuī zhǎng', 'Turn and Push Palm', 'Berbalik dan Mendorong Telapak', 8],
+  ['玉女穿梭', 'Yùnǚ chuān suō', 'Fair Lady Works the Shuttles', 'Gadis Menenun', 10],
+  ['左右蹬脚', 'Zuǒyòu dēng jiǎo', 'Left and Right Heel Kicks', 'Tendangan Tumit Kiri dan Kanan', 10],
+  ['掩手肱捶', 'Yǎn shǒu gōng chuí', 'Hidden-Hand Punch', 'Pukulan Tangan Tersembunyi', 8],
+  ['野马分鬃', 'Yěmǎ fēn zōng', 'Part the Wild Horse’s Mane', 'Membelah Surai Kuda Liar', 9],
+  // 第三段
+  ['云手', 'Yún shǒu', 'Cloud Hands', 'Tangan Awan', 10],
+  ['独立打虎', 'Dúlì dǎ hǔ', 'Stand on One Leg and Strike the Tiger', 'Berdiri Satu Kaki Memukul Harimau', 8],
+  ['右分脚', 'Yòu fēn jiǎo', 'Right Separate Kick', 'Tendangan Pisah Kanan', 7],
+  ['双峰贯耳', 'Shuāng fēng guàn ěr', 'Strike the Ears with Both Fists', 'Dua Puncak Menembus Telinga', 7],
+  ['左分脚', 'Zuǒ fēn jiǎo', 'Left Separate Kick', 'Tendangan Pisah Kiri', 7],
+  ['转身拍脚', 'Zhuǎnshēn pāi jiǎo', 'Turn and Slap Foot', 'Berbalik dan Menepuk Kaki', 7],
+  ['进步栽捶', 'Jìnbù zāi chuí', 'Step Forward and Punch Down', 'Maju dan Memukul ke Bawah', 7],
+  ['斜飞势', 'Xié fēi shì', 'Diagonal Flying', 'Terbang Menyamping', 8],
+  ['单鞭下势', 'Dān biān xià shì', 'Single Whip, Push Down', 'Cambuk Tunggal, Sikap Rendah', 9],
+  ['金鸡独立', 'Jīnjī dúlì', 'Golden Rooster Stands on One Leg', 'Ayam Emas Berdiri Satu Kaki', 8],
+  ['退步穿掌', 'Tuìbù chuān zhǎng', 'Step Back and Thread Palm', 'Mundur dan Menusuk Telapak', 7],
+  // 第四段
+  ['虚步压掌', 'Xūbù yā zhǎng', 'Empty Stance, Press Palm', 'Kuda-kuda Kosong, Menekan Telapak', 7],
+  ['独立托掌', 'Dúlì tuō zhǎng', 'Stand on One Leg, Lift Palm', 'Berdiri Satu Kaki, Mengangkat Telapak', 7],
+  ['马步靠', 'Mǎbù kào', 'Horse Stance Shoulder Strike', 'Kuda-kuda Menyerang Bahu', 7],
+  ['转身大捋', 'Zhuǎnshēn dà lǚ', 'Turn and Large Roll Back', 'Berbalik dan Menarik Besar', 8],
+  ['歇步擒打', 'Xiēbù qín dǎ', 'Rest Stance, Seize and Strike', 'Kuda-kuda Duduk, Menangkap dan Memukul', 8],
+  ['穿掌下势', 'Chuān zhǎng xià shì', 'Thread Palm, Push Down', 'Menusuk Telapak, Sikap Rendah', 8],
+  ['上步七星', 'Shàngbù qī xīng', 'Step Up to Seven Stars', 'Maju ke Tujuh Bintang', 7],
+  ['退步跨虎', 'Tuìbù kuà hǔ', 'Step Back to Ride the Tiger', 'Mundur Menunggang Harimau', 8],
+  ['转身摆莲', 'Zhuǎnshēn bǎi lián', 'Turn and Lotus Kick', 'Berbalik dan Tendangan Teratai', 9],
+  ['弯弓射虎', 'Wān gōng shè hǔ', 'Bend the Bow to Shoot the Tiger', 'Melengkungkan Busur Memanah Harimau', 8],
+  ['左揽雀尾', 'Zuǒ lǎn què wěi', 'Grasp the Bird’s Tail (Left)', 'Menangkap Ekor Burung (Kiri)', 10],
+  ['十字手', 'Shízì shǒu', 'Cross Hands', 'Tangan Menyilang', 6],
+  ['收势', 'Shōushì', 'Closing Form', 'Sikap Penutup', 8]
 ];
+// Section (段) starts, as in the reference book
+var SECTIONS = { 0: ['第一段', 1], 10: ['第二段', 2], 18: ['第三段', 3], 29: ['第四段', 4] };
+// The fully worked sample movement (#2 右揽雀尾)
+var SAMPLE = 1;
 var START = [], TOTAL = 0;
 MOVES.forEach(function (m) { START.push(TOTAL); TOTAL += m[4]; });
 
 // Illustrative end position of each movement on the 14 m × 8 m carpet (metres)
-var STARTPT = [3.2, 5.2];
-var PTS = [[3.2,5.2],[5.8,5.0],[6.3,5.0],[8.9,5.0],[9.1,5.0],[6.9,5.0],[7.8,4.4],[7.4,3.7],[6.4,3.7],[8.8,3.7],[9.6,3.7],[10.0,3.7],[10.7,3.2],[11.2,2.6],[10.4,2.6],[8.9,2.6],[7.3,2.6],[8.8,3.2],[9.1,3.2],[10.0,3.2],[8.8,3.8],[7.9,4.2],[6.2,4.8],[3.8,5.2]];
+var STARTPT = [2.8, 4.2];
+var PTS = [[3.0,4.7],[3.2,5.3],[3.5,5.8],[3.8,6.2],[4.2,6.3],[4.5,6.1],[4.8,5.7],[5.2,5.3],[5.7,4.9],[6.2,4.7],[6.8,4.4],[7.5,4.2],[8.2,3.9],[8.9,3.5],[9.5,3.1],[10.1,2.8],[10.6,2.8],[11.0,3.0],[11.2,3.4],[11.3,4.0],[11.3,4.6],[11.1,5.0],[10.9,5.3],[10.6,5.4],[10.3,5.5],[10.0,5.7],[9.7,5.8],[9.3,5.9],[9.0,5.9],[8.5,5.7],[8.1,5.3],[7.5,4.7],[6.9,4.0],[6.2,3.5],[5.5,3.1],[4.8,3.0],[4.1,3.1],[3.6,3.3],[3.2,3.4],[2.9,3.5],[2.7,3.6],[2.7,3.8]];
 
 var DETAILS = {
+  // Descriptions are written in our own words; facts checked against the reference (cited in ref)
   0: {
-    facing: { en: 'South', id: 'Selatan' },
+    figs: ['qs1', 'qs2', 'qs3', 'qs4'], ref: 'Competition routines collection (scan), Taijiquan, p. 598–599, 图 I-1 to I-4',
+    facing: { en: 'South (towards the judges)', id: 'Selatan (menghadap juri)' },
     steps: {
-      en: ['Stand naturally, feet together, arms relaxed at the sides.', 'Left foot steps out to shoulder width, toes forward.', 'Raise both arms slowly forward to shoulder height, palms down.', 'Bend the knees and press both palms down to hip level.'],
-      id: ['Berdiri wajar, kaki rapat, lengan rileks di samping badan.', 'Kaki kiri melangkah ke samping selebar bahu, ujung kaki ke depan.', 'Angkat kedua lengan perlahan ke depan setinggi bahu, telapak menghadap bawah.', 'Tekuk lutut dan tekan kedua telapak ke bawah setinggi pinggul.']
+      en: ['Stand naturally with the feet together and the arms relaxed at the sides.', 'Step the left foot out lightly to shoulder width, toes pointing forward.', 'Raise both arms slowly forward to shoulder height, shoulder-width apart, elbows slightly bent.', 'Keep the upper body upright, bend the knees into a half squat and press both palms down in front of the abdomen.'],
+      id: ['Berdiri wajar dengan kaki rapat dan lengan rileks di samping badan.', 'Langkahkan kaki kiri ke samping dengan ringan selebar bahu, ujung kaki ke depan.', 'Angkat kedua lengan perlahan ke depan setinggi bahu, selebar bahu, siku sedikit ditekuk.', 'Jaga badan atas tetap tegak, tekuk lutut setengah jongkok dan tekan kedua telapak ke bawah di depan perut.']
     },
     keys: {
-      en: ['Head lifted as if suspended (虚领顶劲 xūlǐng dǐngjìn).', 'Shoulders and elbows sink; breathe naturally.'],
-      id: ['Kepala tegak seolah tergantung (虚领顶劲 xūlǐng dǐngjìn).', 'Bahu dan siku diturunkan; bernapas secara alami.']
+      en: ['When stepping out, lift the heel first, then the toes; put the toes down first, then the heel.', 'Head held up, chin slightly tucked; breathe naturally.'],
+      id: ['Saat melangkah, angkat tumit dulu lalu ujung kaki; turunkan ujung kaki dulu lalu tumit.', 'Kepala tegak, dagu sedikit ditarik; bernapas secara alami.']
     },
     mistakes: {
-      en: ['Raising the shoulders with the arms.', 'Locking the knees or sticking the hips out.'],
-      id: ['Bahu ikut terangkat bersama lengan.', 'Lutut terkunci atau pinggul menonjol ke belakang.']
+      en: ['Raising the shoulders with the arms.', 'Leaning forward or sticking the hips out in the squat.'],
+      id: ['Bahu ikut terangkat bersama lengan.', 'Badan condong atau pinggul menonjol saat jongkok.']
     }
   },
-  11: {
-    facing: { en: 'East', id: 'Timur' },
+  1: {
+    figs: ['lq1', 'lq2', 'lq3', 'lq4'], ref: 'Competition routines collection (scan), Taijiquan, p. 599, 图 I-5 to I-8',
+    facing: { en: '[to be filled in from the reference]', id: '[diisi dari referensi]' },
     steps: {
-      en: ['Right foot follows forward a half step; shift the weight back onto the right leg.', 'Open both palms to face up, elbows slightly bent; turn the body slightly right.', 'Turn the body to face east; lift the left heel into 左虚步 zuǒ xūbù (left empty stance).', 'Right palm passes beside the right ear and pushes forward at eye height; left palm draws back to the left waist, palm up.'],
-      id: ['Kaki kanan menyusul setengah langkah ke depan; pindahkan berat badan ke kaki kanan.', 'Buka kedua telapak menghadap ke atas, siku sedikit ditekuk; putar badan sedikit ke kanan.', 'Putar badan menghadap timur; angkat tumit kiri menjadi 左虚步 zuǒ xūbù (kuda-kuda kosong kiri).', 'Telapak kanan melewati samping telinga kanan dan mendorong ke depan setinggi mata; telapak kiri ditarik ke pinggang kiri, menghadap ke atas.']
+      en: ['Turn the right toes slightly out and the body slightly right. Bend the right arm in front of the chest, palm down; circle the left hand to the right of the abdomen, palm up, as if holding a ball. Shift the weight onto the right leg and draw the left foot beside the right foot.',
+           'Turn the body slightly left and step the left foot forward to the left, placing the heel down lightly.',
+           'Keep turning left into a left bow stance. The left arm wards off forward, left hand at shoulder height; the right hand drops beside the right hip, palm down.',
+           'Turn slightly left and draw the right foot beside the left foot. Bend the left arm in front of the chest, palm down, and circle the right hand to the left of the abdomen, palm up: holding a ball on the left.'],
+      id: ['Putar ujung kaki kanan sedikit keluar dan badan sedikit ke kanan. Tekuk lengan kanan di depan dada, telapak menghadap bawah; lingkarkan tangan kiri ke sisi kanan perut, telapak menghadap atas, seperti memeluk bola. Pindahkan berat badan ke kaki kanan dan tarik kaki kiri ke samping kaki kanan.',
+           'Putar badan sedikit ke kiri dan langkahkan kaki kiri ke depan kiri, tumit menyentuh lantai dengan ringan.',
+           'Terus berputar ke kiri menjadi kuda-kuda busur kiri. Lengan kiri menangkis ke depan, tangan kiri setinggi bahu; tangan kanan turun di samping pinggul kanan, telapak menghadap bawah.',
+           'Putar sedikit ke kiri dan tarik kaki kanan ke samping kaki kiri. Tekuk lengan kiri di depan dada, telapak menghadap bawah, dan lingkarkan tangan kanan ke sisi kiri perut, telapak menghadap atas: memeluk bola di kiri.']
     },
     keys: {
-      en: ['Upper body upright, shoulders sunk (沉肩 chén jiān).', 'Do not rise up while shifting the weight.', 'Right fingertips at eye level.'],
-      id: ['Badan atas tegak, bahu diturunkan (沉肩 chén jiān).', 'Jangan naik saat memindahkan berat badan.', 'Ujung jari kanan setinggi mata.']
+      en: ['Turn from the waist; the arms follow the body.', 'Keep the shoulders and elbows sunk (沉肩坠肘 chén jiān zhuì zhǒu).', 'Shift the weight fully before stepping.'],
+      id: ['Putar dari pinggang; lengan mengikuti badan.', 'Bahu dan siku tetap turun (沉肩坠肘 chén jiān zhuì zhǒu).', 'Pindahkan berat badan sepenuhnya sebelum melangkah.']
     },
     mistakes: {
-      en: ['Leaning forward on the push.', 'Lifting the shoulders.', 'Putting weight on the left foot.'],
-      id: ['Condong ke depan saat mendorong.', 'Bahu terangkat.', 'Berat badan bertumpu pada kaki kiri.']
+      en: ['Ward-off arm too straight or too low.', 'Leaning forward in the bow stance.', 'Stepping before the weight has shifted.'],
+      id: ['Lengan menangkis terlalu lurus atau terlalu rendah.', 'Badan condong ke depan saat kuda-kuda busur.', 'Melangkah sebelum berat badan berpindah.']
     }
   }
 };
@@ -1573,27 +1689,27 @@ function W(en, id) { return { en: en, id: id }; }
 var LANGS = { zh: '中文', en: 'English', id: 'Bahasa Indonesia' };
 // Sample threads; usernames are fictional. role: member | judge | school | maintainer
 var THREADS = [
-  { lang: 'id', type: 'error', move: 11, field: 'steps', st: 'open', title: 'Tinggi tangan kanan: setinggi mata atau kepala?', posts: [
-    { op: true, by: 'taiji_learner', role: 'member', when: W('3 days ago', '3 hari lalu'), body: 'Deskripsi menyebut ujung jari kanan berakhir setinggi mata, tetapi di video peragaan tangan terlihat lebih dekat ke tinggi kepala. Mana yang benar untuk kompetisi?' },
-    { by: 'wushu_rio', role: 'member', when: W('3 days ago', '3 hari lalu'), body: 'Di klub saya diajarkan setinggi mata. Mungkin sudut kamera membuatnya terlihat lebih tinggi.' },
-    { by: 'coach_sby', role: 'maintainer', when: W('2 days ago', '2 hari lalu'), body: 'Setinggi mata adalah standarnya. Video direkam sedikit dari bawah, jadi tangan terlihat lebih tinggi. Saya sarankan menambahkan klip tampak samping agar lebih jelas.' },
+  { lang: 'id', type: 'error', move: 1, field: 'steps', st: 'open', title: 'Tinggi lengan saat menangkis: setinggi bahu atau dada?', posts: [
+    { op: true, by: 'taiji_learner', role: 'member', when: W('3 days ago', '3 hari lalu'), body: 'Deskripsi menyebut tangan kiri setinggi bahu saat menangkis ke depan, tetapi di video terlihat lebih rendah, kira-kira setinggi dada. Mana yang benar untuk kompetisi?' },
+    { by: 'wushu_rio', role: 'member', when: W('3 days ago', '3 hari lalu'), body: 'Di klub saya diajarkan setinggi bahu. Mungkin sudut kamera membuatnya terlihat lebih rendah.' },
+    { by: 'coach_sby', role: 'maintainer', when: W('2 days ago', '2 hari lalu'), body: 'Setinggi bahu sesuai referensi kita. Video direkam sedikit dari atas, jadi lengan terlihat lebih rendah. Saya sarankan menambahkan klip tampak samping agar lebih jelas.' },
     { by: 'taiji_learner', role: 'member', when: W('2 days ago', '2 hari lalu'), body: 'Terima kasih! Masuk akal.' },
-    { by: 'sifu_lim', role: 'school', when: W('1 day ago', '1 hari lalu'), body: 'Di garis perguruan kami, tangan berakhir sedikit lebih tinggi, sekitar alis. Itu bisa masuk Catatan tradisional, tetapi untuk kompetisi ikuti setinggi mata.' }
+    { by: 'sifu_lim', role: 'school', when: W('1 day ago', '1 hari lalu'), body: 'Di garis perguruan kami, lengan menangkis sedikit lebih rendah dan lebih bulat. Itu bisa masuk Catatan tradisional, tetapi untuk kompetisi ikuti setinggi bahu.' }
   ] },
-  { lang: 'en', type: 'suggest', move: 5, field: 'video', st: 'review', title: 'Add a side-view video for Repulse the Monkey', posts: [
-    { op: true, by: 'wushu_rio', role: 'member', when: W('1 week ago', '1 minggu lalu'), body: 'Repulse the Monkey is hard to follow from the front because the steps go backwards. Could we add a side-view video?' },
+  { lang: 'en', type: 'suggest', move: 14, field: 'video', st: 'review', title: 'Add a side-view video for Fair Lady Works the Shuttles', posts: [
+    { op: true, by: 'wushu_rio', role: 'member', when: W('1 week ago', '1 minggu lalu'), body: 'Fair Lady Works the Shuttles is hard to follow from the front because of all the turns. Could we add a side-view video?' },
     { by: 'coach_sby', role: 'maintainer', when: W('6 days ago', '6 hari lalu'), body: 'Agreed. I can record one at our training hall next week.' },
     { event: true, when: W('6 days ago', '6 hari lalu'), text: W('coach_sby changed the status to Under review', 'coach_sby mengubah status menjadi Sedang ditinjau') },
     { by: 'wushu_rio', role: 'member', when: W('5 days ago', '5 hari lalu'), body: 'Great, thank you!' }
   ] },
-  { lang: 'zh', type: 'question', move: 9, field: 'steps', st: 'accepted', title: '云手标准做几次？', posts: [
-    { op: true, by: 'xiao_ming', role: 'member', when: W('2 weeks ago', '2 minggu lalu'), body: '二十四式里的云手，标准是做几次？' },
-    { by: 'coach_sby', role: 'maintainer', accepted: true, when: W('2 weeks ago', '2 minggu lalu'), body: '三次，向左移动，然后接第二个单鞭。' },
+  { lang: 'zh', type: 'question', move: 0, field: 'steps', st: 'accepted', title: '起势开步时，先提脚跟还是脚尖？', posts: [
+    { op: true, by: 'xiao_ming', role: 'member', when: W('2 weeks ago', '2 minggu lalu'), body: '起势左脚开步的时候，应该先提脚跟还是先提脚尖？' },
+    { by: 'coach_sby', role: 'maintainer', accepted: true, when: W('2 weeks ago', '2 minggu lalu'), body: '先提脚跟，再提脚尖；落地时先落脚尖，再落脚跟，全脚踏实。' },
     { event: true, when: W('13 days ago', '13 hari lalu'), text: W('coach_sby marked this as the accepted answer and changed the status to Accepted', 'coach_sby menandai ini sebagai jawaban diterima dan mengubah status menjadi Diterima') },
     { by: 'xiao_ming', role: 'member', when: W('13 days ago', '13 hari lalu'), body: '谢谢，很有帮助！' }
   ] },
-  { lang: 'en', type: 'question', move: 11, field: 'video', st: 'open', title: 'Where does High Pat on Horse start in the video?', posts: [
-    { op: true, by: 'lena_k', role: 'member', when: W('5 hours ago', '5 jam lalu'), body: 'When I click #12 the video starts a little early, still in the end of Single Whip. Is the timestamp right?' },
+  { lang: 'en', type: 'question', move: 1, field: 'video', st: 'open', title: 'Where does Grasp the Bird’s Tail (Right) start in the video?', posts: [
+    { op: true, by: 'lena_k', role: 'member', when: W('5 hours ago', '5 jam lalu'), body: 'When I click #2 the video starts a little early, still at the end of the Commencing Form. Is the timestamp right?' },
     { by: 'wushu_rio', role: 'member', when: W('2 hours ago', '2 jam lalu'), body: 'Same for me, it looks about one second early.' }
   ] }
 ];
@@ -1601,8 +1717,19 @@ var THREADS = [
 var S = {
   en: {
     library: 'Library', discussions: 'Discussions', contribute: 'Contribute', translation: 'translation',
+    libSeqAria: 'All movements of the 42-form', libSeqHint: 'Click a movement to open it in Learn.',
+    dOthers: 'Other routines from the reference open for discussion once their movement lists are added:',
     dLead: 'Pick a routine to read its threads, ask a question or report a mistake. Each thread is linked to a movement so contributors know exactly what to check.', latest: 'Latest', dPending: 'Discussion opens once the movement list is added.',
     cTitle: 'Contribute', cLead: 'Help build an accurate, open reference. Every edit is saved as a revision and reviewed by a moderator before it is published. To report a mistake instead, open a thread in Discussions.',
+    figTitle: 'Illustrations', figHint: 'Rendered from one 3D model: click a figure to enlarge it and jump the video there, or change the camera angle', figReviewed: 'reviewed by', figPlaceholder: 'illustrative poses', figCamera: 'Camera', angFront: 'Front', ang34: '¾ view', angSide: 'Side', figRef: 'Reference',
+    figNone: 'No illustrations yet. Verified contributors can add them under Contribute.',
+    tFigures: 'Upload illustrations', fgLead: 'Add one figure per step in the line-drawing style: a clean figure with curved arrows for the motion path. Captions are numbered automatically (图 12-1, 12-2…).',
+    fgMove: 'Movement', fgMade: 'How it was made', fgLic: 'License', fgStep: 'Step', fgUpload: 'Figure for', fgSource: 'Reference used (book title, page, figure)',
+    fgWarn: 'Do not upload scans, crops or tracings of copyrighted books, or AI copies of them. Use books as a reference for facts and draw from your own photos or video.',
+    fgSubmit: 'Submit illustrations for review', rvKindFigure: 'Illustrations',
+    madeOpts: ['Hand-drawn by me', 'Traced from my own photo or video', 'Generated from my own video (pose detection)', 'AI-assisted from my own images', 'Public-domain book scan', 'Rendered from the OpenWushu 3D model'],
+    licOpts: ['CC BY-SA 4.0 (my own work)', 'Public domain', 'Used with written permission'],
+    sourceCode: 'Source code on GitHub', devTitle: 'Are you a developer?', devBody: 'OpenWushu is open source (AGPL-3.0). Report bugs, suggest features or send a pull request on GitHub.', devCta: 'View on GitHub',
     review: 'Review', profile: 'Profile', history: 'History', revisions: 'revisions', before: 'Before', after: 'After', newContent: '(new)', fieldLang: 'Language', source: 'Source',
     rvTitle: 'Review queue', rvLead: 'Approve, request changes or reject submitted content and contributor applications. Every decision emails the contributor.',
     rvTabContent: 'Content changes', rvTabApps: 'Contributor applications', rvSelfNote: 'You never review your own submissions; they go to another maintainer.',
@@ -1669,7 +1796,7 @@ var S = {
     step1: 'Choose a routine', step2: 'Choose a task', pickTitle: 'Which routine do you want to work on?', pickLead: 'Your edits, videos and translations are linked to this routine and reviewed by its maintainers.',
     choose: 'Choose this routine', listPending: 'Movement list not added yet', newRoutine: 'Routine not in the library?', newRoutineBody: 'Open a thread in Discussions with an official source. Moderators add new routines after review.',
     routineLabel: 'Contributing to', changeRoutine: 'Change routine',
-    progressFor: 'Progress', pDesc: 'Movement descriptions', pEn: 'English names', pId: 'Indonesian names', pTime: 'Video timings', pPath: 'Measured carpet path',
+    progressFor: 'Progress · 42-form', pDesc: 'Movement descriptions', pEn: 'English names', pId: 'Indonesian names', pTime: 'Video timings', pPath: 'Measured carpet path',
     nReview: 'Drafts, need review', nSample: 'Sample video only', nNone: 'Not started',
     tDescribe: 'Write descriptions', tVideo: 'Upload video', tTranslate: 'Check translations',
     needsDesc: 'Movements', hasDraft: 'Draft', missing: 'Missing', editing: 'Editing', draftExists: 'A draft already exists for this movement. Your edit will be reviewed against it.',
@@ -1680,10 +1807,10 @@ var S = {
     vNext: 'After uploading, you mark where each movement starts on the timeline, so clicking a movement jumps straight to it.', upload: 'Upload video',
     trIntro: 'Chinese and pinyin are the source and are not translated. Check the English and Indonesian names.', colMove: 'Movement', submitTr: 'Submit translations',
     libTitle: 'Compulsory routines', libLead: 'An open, community-maintained study reference for standard wushu routines. Names are always kept in Chinese with pinyin; translations in English or Bahasa Indonesia.',
-    search: 'Search routines and movements', searchPh: 'Try “gao tan ma”, 高探马 or “high pat”', results: 'Movements found', noResults: 'No matches yet.',
+    search: 'Search routines and movements', searchPh: 'Try “lan que wei”, 揽雀尾 or “bird’s tail”', results: 'Movements found', noResults: 'No matches yet.',
     moves: 'movements', threads: 'threads', inProgress: 'In progress', comingSoon: 'Awaiting contributors',
-    r24: '24-Form Simplified Taijiquan', r42: '42-Form Competition Taijiquan', taiji: 'Taijiquan', changquan: 'Changquan', nanquan: 'Nanquan', weapons: 'Weapons',
-    std: 'Standard routine (1956)', learn: 'Learn', discussion: 'Discussion',
+    r24: '42-Form Competition Taijiquan', r42s: '42-Form Competition Taiji Sword', refShort: 'Ref.', grChang: 'Changquan & weapons', grNan: 'Southern styles', section: 'Section', taiji: 'Taijiquan', changquan: 'Changquan', nanquan: 'Nanquan', weapons: 'Weapons',
+    std: 'Competition routine · 4 sections', learn: 'Learn', discussion: 'Discussion',
     sampleVideo: 'Sample video · self-hosted upload', play: 'Play', pause: 'Pause', prev: 'Previous movement', next: 'Next movement', loop: 'Loop movement', speed: 'Speed',
     carpet: 'Carpet path', illustrative: 'Illustrative path, not measured', judges: 'Judges', headJudge: 'Head judge', judgesTable: 'Judges’ table', front: 'Front (facing the judges)', legendStart: 'Start', legendDone: 'Completed', legendNow: 'Current', legendRest: 'Remaining',
     movements: 'Movements', allMoves: 'All movements', playThis: 'Play this movement', draft: 'Draft · needs expert review', facing: 'Facing',
@@ -1702,8 +1829,19 @@ var S = {
   },
   id: {
     library: 'Pustaka', discussions: 'Diskusi', contribute: 'Kontribusi', translation: 'terjemahan',
+    libSeqAria: 'Semua gerakan 42 jurus', libSeqHint: 'Klik gerakan untuk membukanya di Belajar.',
+    dOthers: 'Rangkaian lain dari referensi dibuka untuk diskusi setelah daftar gerakannya ditambahkan:',
     dLead: 'Pilih rangkaian untuk membaca diskusinya, bertanya, atau melaporkan kesalahan. Setiap diskusi terhubung ke gerakan agar kontributor tahu persis apa yang perlu diperiksa.', latest: 'Terbaru', dPending: 'Diskusi dibuka setelah daftar gerakan ditambahkan.',
     cTitle: 'Kontribusi', cLead: 'Bantu membangun referensi terbuka yang akurat. Setiap suntingan disimpan sebagai revisi dan ditinjau moderator sebelum diterbitkan. Untuk melaporkan kesalahan, buka diskusi di halaman Diskusi.',
+    figTitle: 'Ilustrasi', figHint: 'Dirender dari satu model 3D: klik gambar untuk memperbesar dan melompatkan video, atau ubah sudut kamera', figReviewed: 'ditinjau oleh', figPlaceholder: 'pose ilustrasi', figCamera: 'Kamera', angFront: 'Depan', ang34: 'Tampak ¾', angSide: 'Samping', figRef: 'Referensi',
+    figNone: 'Belum ada ilustrasi. Kontributor terverifikasi dapat menambahkannya di halaman Kontribusi.',
+    tFigures: 'Unggah ilustrasi', fgLead: 'Tambahkan satu gambar per langkah dengan gaya gambar garis: figur bersih dengan panah melengkung untuk jalur gerakan. Keterangan diberi nomor otomatis (图 12-1, 12-2…).',
+    fgMove: 'Gerakan', fgMade: 'Cara pembuatan', fgLic: 'Lisensi', fgStep: 'Langkah', fgUpload: 'Gambar untuk', fgSource: 'Referensi yang dipakai (judul buku, halaman, gambar)',
+    fgWarn: 'Jangan mengunggah pindaian, potongan, atau jiplakan dari buku berhak cipta, atau salinan AI darinya. Gunakan buku sebagai referensi fakta dan gambar dari foto atau video Anda sendiri.',
+    fgSubmit: 'Kirim ilustrasi untuk ditinjau', rvKindFigure: 'Ilustrasi',
+    madeOpts: ['Digambar tangan oleh saya', 'Dijiplak dari foto atau video saya sendiri', 'Dibuat dari video saya sendiri (deteksi pose)', 'Dibantu AI dari gambar saya sendiri', 'Pindaian buku domain publik', 'Dirender dari model 3D OpenWushu'],
+    licOpts: ['CC BY-SA 4.0 (karya saya sendiri)', 'Domain publik', 'Dipakai dengan izin tertulis'],
+    sourceCode: 'Kode sumber di GitHub', devTitle: 'Anda seorang pengembang?', devBody: 'OpenWushu bersifat sumber terbuka (AGPL-3.0). Laporkan bug, usulkan fitur, atau kirim pull request di GitHub.', devCta: 'Lihat di GitHub',
     review: 'Tinjauan', profile: 'Profil', history: 'Riwayat', revisions: 'revisi', before: 'Sebelum', after: 'Sesudah', newContent: '(baru)', fieldLang: 'Bahasa', source: 'Sumber',
     rvTitle: 'Antrean tinjauan', rvLead: 'Setujui, minta perubahan, atau tolak konten dan pengajuan kontributor yang masuk. Setiap keputusan dikirim ke kontributor lewat email.',
     rvTabContent: 'Perubahan konten', rvTabApps: 'Pengajuan kontributor', rvSelfNote: 'Anda tidak pernah meninjau kiriman sendiri; kiriman itu diteruskan ke pengelola lain.',
@@ -1770,7 +1908,7 @@ var S = {
     step1: 'Pilih rangkaian', step2: 'Pilih tugas', pickTitle: 'Rangkaian mana yang ingin Anda kerjakan?', pickLead: 'Suntingan, video, dan terjemahan Anda terhubung ke rangkaian ini dan ditinjau oleh pengelolanya.',
     choose: 'Pilih rangkaian ini', listPending: 'Daftar gerakan belum ditambahkan', newRoutine: 'Rangkaian tidak ada di pustaka?', newRoutineBody: 'Buka diskusi di halaman Diskusi dengan sumber resmi. Moderator menambahkan rangkaian baru setelah ditinjau.',
     routineLabel: 'Berkontribusi untuk', changeRoutine: 'Ganti rangkaian',
-    progressFor: 'Progres', pDesc: 'Deskripsi gerakan', pEn: 'Nama bahasa Inggris', pId: 'Nama bahasa Indonesia', pTime: 'Waktu video', pPath: 'Jalur karpet terukur',
+    progressFor: 'Progres · 42 jurus', pDesc: 'Deskripsi gerakan', pEn: 'Nama bahasa Inggris', pId: 'Nama bahasa Indonesia', pTime: 'Waktu video', pPath: 'Jalur karpet terukur',
     nReview: 'Draf, perlu ditinjau', nSample: 'Baru video contoh', nNone: 'Belum dimulai',
     tDescribe: 'Tulis deskripsi', tVideo: 'Unggah video', tTranslate: 'Periksa terjemahan',
     needsDesc: 'Gerakan', hasDraft: 'Draf', missing: 'Belum ada', editing: 'Menyunting', draftExists: 'Sudah ada draf untuk gerakan ini. Suntingan Anda akan ditinjau terhadap draf tersebut.',
@@ -1781,10 +1919,10 @@ var S = {
     vNext: 'Setelah mengunggah, Anda menandai awal setiap gerakan di garis waktu, sehingga klik gerakan langsung melompat ke sana.', upload: 'Unggah video',
     trIntro: 'Bahasa Tionghoa dan pinyin adalah sumber dan tidak diterjemahkan. Periksa nama dalam bahasa Inggris dan Indonesia.', colMove: 'Gerakan', submitTr: 'Kirim terjemahan',
     libTitle: 'Rangkaian wajib', libLead: 'Referensi belajar terbuka yang dikelola komunitas untuk rangkaian standar wushu. Nama selalu ditulis dalam bahasa Tionghoa beserta pinyin; terjemahan dalam bahasa Inggris atau Bahasa Indonesia.',
-    search: 'Cari rangkaian dan gerakan', searchPh: 'Coba “gao tan ma”, 高探马 atau “menepuk kuda”', results: 'Gerakan ditemukan', noResults: 'Belum ada hasil.',
+    search: 'Cari rangkaian dan gerakan', searchPh: 'Coba “lan que wei”, 揽雀尾 atau “ekor burung”', results: 'Gerakan ditemukan', noResults: 'Belum ada hasil.',
     moves: 'gerakan', threads: 'diskusi', inProgress: 'Sedang dikerjakan', comingSoon: 'Menunggu kontributor',
-    r24: '24 Jurus Taijiquan Sederhana', r42: '42 Jurus Taijiquan Kompetisi', taiji: 'Taijiquan', changquan: 'Changquan', nanquan: 'Nanquan', weapons: 'Senjata',
-    std: 'Rangkaian standar (1956)', learn: 'Belajar', discussion: 'Diskusi',
+    r24: '42 Jurus Taijiquan Kompetisi', r42s: '42 Jurus Pedang Taiji Kompetisi', refShort: 'Ref.', grChang: 'Changquan & senjata', grNan: 'Gaya selatan', section: 'Bagian', taiji: 'Taijiquan', changquan: 'Changquan', nanquan: 'Nanquan', weapons: 'Senjata',
+    std: 'Rangkaian kompetisi · 4 bagian', learn: 'Belajar', discussion: 'Diskusi',
     sampleVideo: 'Contoh video · unggahan sendiri', play: 'Putar', pause: 'Jeda', prev: 'Gerakan sebelumnya', next: 'Gerakan berikutnya', loop: 'Ulangi gerakan', speed: 'Kecepatan',
     carpet: 'Jalur di karpet', illustrative: 'Jalur ilustrasi, belum diukur', judges: 'Juri', headJudge: 'Ketua juri', judgesTable: 'Meja juri', front: 'Depan (menghadap juri)', legendStart: 'Mulai', legendDone: 'Selesai', legendNow: 'Sekarang', legendRest: 'Sisa',
     movements: 'Gerakan', allMoves: 'Semua gerakan', playThis: 'Putar gerakan ini', draft: 'Draf · perlu ditinjau ahli', facing: 'Arah hadap',
@@ -1822,24 +1960,138 @@ var FULL = [STARTPT].concat(PTS);
 
 // ---- Review queue, revision history, profile: sample data (usernames are fictional) ----
 // Diff segments: [text, kind] where kind -1 = removed, 1 = added, 0 = unchanged
+// ---- 3D figure for the 图解 illustrations ----
+// Joints in centimetres: x = athlete's left, y = up, z = forward (towards the judges). yaw turns the whole body (deg, + = left).
+// Poses are illustrative: in the real app a contributor poses them in a 3D tool and a coach checks them.
+var JN = ['head', 'neck', 'shL', 'shR', 'elbL', 'elbR', 'hndL', 'hndR', 'pelvis', 'hipL', 'hipR', 'kneeL', 'kneeR', 'ankL', 'ankR', 'toeL', 'toeR'];
+var FIG3D = {
+  // 起势 Commencing Form
+  qs1: { yaw: 0, j: [[0,160,0],[0,145,0],[18,140,0],[-18,140,0],[21,112,0],[-21,112,0],[22,86,2],[-22,86,2],[0,95,0],[9,93,0],[-9,93,0],[8,51,2],[-8,51,2],[7,8,0],[-7,8,0],[8,2,13],[-8,2,13]] },
+  qs2: { yaw: 0, j: [[0,160,0],[0,145,0],[18,140,0],[-18,140,0],[21,112,0],[-21,112,0],[22,86,2],[-22,86,2],[0,95,0],[9,93,0],[-9,93,0],[17,51,2],[-8,51,2],[19,8,0],[-7,8,0],[20,2,13],[-8,2,13]] },
+  qs3: { yaw: 0, j: [[0,160,0],[0,145,0],[18,140,0],[-18,140,0],[19,133,22],[-19,133,22],[18,137,48],[-18,137,48],[0,95,0],[9,93,0],[-9,93,0],[17,51,2],[-8,51,2],[19,8,0],[-7,8,0],[20,2,13],[-8,2,13]] },
+  qs4: { yaw: 0, j: [[0,146,-3],[0,131,-3],[18,126,-3],[-18,126,-3],[22,106,12],[-22,106,12],[18,93,28],[-18,93,28],[0,81,-6],[9,79,-6],[-9,79,-6],[18,43,12],[-8,43,12],[19,8,0],[-7,8,0],[20,2,13],[-8,2,13]] },
+  // 右揽雀尾 Grasp the Bird's Tail (Right)
+  lq1: { yaw: -30, j: [[-2,154,0],[-2,139,0],[16,134,0],[-20,134,0],[12,108,12],[-27,122,14],[-6,100,22],[-8,124,26],[-4,88,0],[5,86,0],[-13,86,0],[0,48,10],[-13,47,10],[-3,12,-2],[-12,8,0],[-2,3,10],[-14,2,13]] },
+  lq2: { yaw: -10, j: [[-2,154,0],[-2,139,0],[16,134,0],[-20,134,0],[12,108,12],[-27,122,14],[-6,100,22],[-8,124,26],[-4,88,0],[5,86,0],[-13,86,0],[12,50,20],[-13,47,10],[17,10,36],[-12,8,0],[19,13,48],[-14,2,13]] },
+  lq3: { yaw: 0, j: [[4,145,14],[4,130,14],[22,126,14],[-14,126,14],[27,120,36],[-20,104,16],[7,125,50],[-18,84,22],[4,84,14],[13,82,14],[-5,82,14],[17,46,36],[-11,46,-2],[18,8,40],[-18,8,-20],[20,2,53],[-26,2,-11]] },
+  lq4: { yaw: 20, j: [[6,150,24],[6,135,24],[24,130,24],[-12,130,24],[30,120,38],[-6,106,36],[10,122,48],[10,98,44],[6,86,24],[15,84,24],[-3,84,24],[18,46,34],[2,47,34],[18,8,40],[4,12,28],[20,2,53],[6,3,40]] }
+};
+// Drawn as a person in a loose 太极 uniform: tapered sleeves and trousers, hands, shoes, jacket with frog buttons, hair.
+function f1(n) { return n.toFixed(1); }
+function project3(q, a) {
+  var e = 10 * Math.PI / 180, x = q[0] * Math.cos(a) + q[2] * Math.sin(a), z = -q[0] * Math.sin(a) + q[2] * Math.cos(a);
+  return { x: x, y: q[1] * Math.cos(e) - z * Math.sin(e), z: q[1] * Math.sin(e) + z * Math.cos(e) };
+}
+// Orthographic camera: az = camera angle around the athlete (deg), slight elevation
+function projectPose(pose, az) {
+  var a = (pose.yaw + az) * Math.PI / 180, out = { a: a };
+  JN.forEach(function (name, k) { out[name] = project3(pose.j[k], a); });
+  var n = out.neck, h = out.head;
+  out.headBase = { x: n.x + 0.4 * (h.x - n.x), y: n.y + 0.4 * (h.y - n.y), z: n.z + 0.4 * (h.z - n.z) };
+  return out;
+}
+// Tapered capsule between two screen points (radius r1 at A, r2 at B), with rounded ends
+function capsule(A, B, r1, r2) {
+  var dx = B.x - A.x, dy = B.y - A.y, L = Math.hypot(dx, dy);
+  if (L < 0.01) { dx = 0; dy = 1; L = 1; }
+  var ux = dx / L, uy = dy / L, nx = -uy, ny = ux, k = 1.33;
+  var P = function (x, y) { return f1(x) + ' ' + f1(y); };
+  return 'M' + P(A.x + nx * r1, A.y + ny * r1) + ' L' + P(B.x + nx * r2, B.y + ny * r2) +
+    ' C' + P(B.x + nx * r2 + ux * r2 * k, B.y + ny * r2 + uy * r2 * k) + ' ' + P(B.x - nx * r2 + ux * r2 * k, B.y - ny * r2 + uy * r2 * k) + ' ' + P(B.x - nx * r2, B.y - ny * r2) +
+    ' L' + P(A.x - nx * r1, A.y - ny * r1) +
+    ' C' + P(A.x - nx * r1 - ux * r1 * k, A.y - ny * r1 - uy * r1 * k) + ' ' + P(A.x + nx * r1 - ux * r1 * k, A.y + ny * r1 - uy * r1 * k) + ' ' + P(A.x + nx * r1, A.y + ny * r1) + ' Z';
+}
+function hull(pts) {
+  pts = pts.slice().sort(function (p, q) { return p.x - q.x || p.y - q.y; });
+  var cross = function (o, a, b) { return (a.x - o.x) * (b.y - o.y) - (a.y - o.y) * (b.x - o.x); }, lo = [], up = [];
+  pts.forEach(function (p) { while (lo.length > 1 && cross(lo[lo.length - 2], lo[lo.length - 1], p) <= 0) lo.pop(); lo.push(p); });
+  pts.slice().reverse().forEach(function (p) { while (up.length > 1 && cross(up[up.length - 2], up[up.length - 1], p) <= 0) up.pop(); up.push(p); });
+  return lo.slice(0, -1).concat(up.slice(0, -1));
+}
+// Renders a pose as a clothed figure (painter's algorithm, far parts first) plus a motion arrow towards the next pose
+function render3d(pose, az, next) {
+  var P = projectPose(pose, az), K = 0.9, a = P.a, J = function (n) { return pose.j[JN.indexOf(n)]; };
+  var xs = JN.map(function (n) { return P[n].x; }), cx = (Math.min.apply(null, xs) + Math.max.apply(null, xs)) / 2;
+  var S = function (q) { return { x: 60 + (q.x - cx) * K, y: 171 - q.y * K, z: q.z }; }, Q = {};
+  JN.concat(['headBase']).forEach(function (n) { Q[n] = S(P[n]); });
+  var shapes = [];
+  var add = function (d, z) { shapes.push({ d: d, z: z }); };
+  var limb = function (A, B, r1, r2, dz) { add(capsule(Q[A], Q[B], r1 * K, r2 * K), (Q[A].z + Q[B].z) / 2 + (dz || 0)); };
+  ['L', 'R'].forEach(function (sd) {
+    limb('hip' + sd, 'knee' + sd, 9.5, 7.6);          // loose trousers
+    limb('knee' + sd, 'ank' + sd, 7.4, 8.8);          // flared trouser leg
+    limb('ank' + sd, 'toe' + sd, 3.8, 3.2, 1);        // shoe
+    limb('sh' + sd, 'elb' + sd, 6.2, 5.4);            // sleeve
+    limb('elb' + sd, 'hnd' + sd, 5.4, 5.0);           // sleeve to the cuff
+    var W = Q['hnd' + sd], E = Q['elb' + sd], L = Math.hypot(W.x - E.x, W.y - E.y) || 1;
+    var tipPt = { x: W.x + (W.x - E.x) / L * 7 * K, y: W.y + (W.y - E.y) / L * 7 * K, z: W.z };
+    add(capsule(W, tipPt, 3.2 * K, 2.6 * K), W.z + 2);  // hand
+  });
+  limb('neck', 'headBase', 4, 4, -1);
+  // jacket: hull of the shoulders and hem, given 3D depth so it stays solid from the side
+  var box = [];
+  [['shL', -3, 9], ['shR', -3, 9], ['hipL', 8, 11], ['hipR', 8, 11]].forEach(function (c) {
+    var q = J(c[0]), hem = c[0].indexOf('hip') === 0 ? -8 : 0;
+    [-c[2], c[2]].forEach(function (dz) { box.push(S(project3([q[0] + (q[0] > 0 ? c[1] > 0 ? 6 : 4 : c[1] > 0 ? -6 : -4), q[1] + hem, q[2] + dz], a))); });
+  });
+  var hp = hull(box), torsoZ = (Q.shL.z + Q.shR.z + Q.hipL.z + Q.hipR.z) / 4;
+  add('M' + hp.map(function (q) { return f1(q.x) + ' ' + f1(q.y); }).join(' L') + ' Z', torsoZ);
+  shapes.sort(function (u, v) { return u.z - v.z; });
+  var r = { gy: 172, arc: '', tip: '', btn: '' };
+  shapes.forEach(function (g, i) { r['s' + i] = g.d; });
+  // jacket centre line and frog buttons, only when the front faces the viewer
+  var facing = Math.cos(a);
+  if (facing > 0.35) {
+    var ms = J('shL'), mr = J('shR'), hl = J('hipL'), hr = J('hipR');
+    var top = S(project3([(ms[0] + mr[0]) / 2, (ms[1] + mr[1]) / 2 - 4, (ms[2] + mr[2]) / 2 + 9], a));
+    var bot = S(project3([(hl[0] + hr[0]) / 2, (hl[1] + hr[1]) / 2 - 7, (hl[2] + hr[2]) / 2 + 11], a));
+    var bx = bot.x - top.x, by = bot.y - top.y, bl = Math.hypot(bx, by) || 1, px = -by / bl * 3, py = bx / bl * 3;
+    r.btn = 'M' + f1(top.x) + ' ' + f1(top.y) + ' L' + f1(bot.x) + ' ' + f1(bot.y);
+    [0.15, 0.35, 0.55, 0.75].forEach(function (u) { var mx = top.x + bx * u, my = top.y + by * u; r.btn += ' M' + f1(mx - px) + ' ' + f1(my - py) + ' L' + f1(mx + px) + ' ' + f1(my + py); });
+  }
+  // head and hair: a cap from the front, the back of the head when facing away
+  var H = Q.head, rx = 8.2 * K, ry = 9.6 * K, back = -Math.sin(a) * 3 * K;
+  r.hx = f1(H.x); r.hy = f1(H.y); r.hrx = f1(rx); r.hry = f1(ry);
+  r.hair = facing < -0.3
+    ? 'M' + f1(H.x - rx) + ' ' + f1(H.y) + ' A' + f1(rx) + ' ' + f1(ry) + ' 0 1 0 ' + f1(H.x + rx) + ' ' + f1(H.y) + ' A' + f1(rx) + ' ' + f1(ry) + ' 0 1 0 ' + f1(H.x - rx) + ' ' + f1(H.y) + ' Z'
+    : 'M' + f1(H.x - rx) + ' ' + f1(H.y - 1) + ' Q' + f1(H.x + back) + ' ' + f1(H.y - ry * 2.05) + ' ' + f1(H.x + rx) + ' ' + f1(H.y - 1) + ' Q' + f1(H.x + back * 2) + ' ' + f1(H.y - ry * 0.8) + ' ' + f1(H.x - rx) + ' ' + f1(H.y - 1) + ' Z';
+  if (next) {
+    var N = projectPose(next, az), best = null, sxN = function (q) { return { x: 60 + (q.x - cx) * K, y: 171 - q.y * K }; };
+    ['hndL', 'hndR', 'toeL', 'toeR'].forEach(function (k) {
+      var A = Q[k], B = sxN(N[k]), dist = Math.hypot(B.x - A.x, B.y - A.y);
+      if (!best || dist > best.dist) best = { x1: A.x, y1: A.y, x2: B.x, y2: B.y, dist: dist };
+    });
+    if (best && best.dist > 6) {
+      var mx = (best.x1 + best.x2) / 2, my = (best.y1 + best.y2) / 2, dx = best.x2 - best.x1, dy = best.y2 - best.y1;
+      var c = { x: mx - dy * 0.35, y: my + dx * 0.35 }, ux = best.x2 - c.x, uy = best.y2 - c.y, ul = Math.hypot(ux, uy) || 1;
+      ux /= ul; uy /= ul;
+      r.arc = 'M' + f1(best.x1) + ' ' + f1(best.y1) + ' Q' + f1(c.x) + ' ' + f1(c.y) + ' ' + f1(best.x2) + ' ' + f1(best.y2);
+      r.tip = 'M' + f1(best.x2 + ux * 3) + ' ' + f1(best.y2 + uy * 3) + ' L' + f1(best.x2 - ux * 4 - uy * 3) + ' ' + f1(best.y2 - uy * 4 + ux * 3) + ' L' + f1(best.x2 - ux * 4 + uy * 3) + ' ' + f1(best.y2 - uy * 4 - ux * 3) + ' Z';
+    }
+  }
+  return r;
+}
 var CHANGES = [
-  { id: 'c1', kind: 'text', move: 11, field: 'steps', flang: 'en', by: 'dewi_taiji', role: 'judge', thread: 0,
-    when: W('3 hours ago', '3 jam lalu'), title: W('Clarify the hand height in step 4', 'Perjelas tinggi tangan di langkah 4'),
-    source: '[Competition rulebook, Taijiquan section]',
-    before: [['Right palm passes beside the right ear and pushes forward ', 0], ['at eye height', -1], ['; left palm draws back to the left waist, palm up.', 0]],
-    after: [['Right palm passes beside the right ear and pushes forward ', 0], ['with the fingertips at eye level, not higher', 1], ['; left palm draws back to the left waist, palm up.', 0]] },
-  { id: 'c2', kind: 'video', move: 5, field: 'video', flang: 'en', by: 'hendra_wushu', role: 'judge', thread: 1,
-    when: W('1 day ago', '1 hari lalu'), title: W('Side-view video for Repulse the Monkey', 'Video tampak samping untuk Dao Juan Gong'),
-    source: W('Recorded by the contributor at their club', 'Direkam oleh kontributor di klubnya').en,
-    videoInfo: W('Side view · 5:12 · start times marked for 24 of 24 movements', 'Tampak samping · 5:12 · waktu mulai ditandai untuk 24 dari 24 gerakan') },
-  { id: 'c3', kind: 'text', move: 19, field: 'name', flang: 'id', by: 'nadia_id', role: 'member', thread: null,
-    when: W('2 days ago', '2 hari lalu'), title: W('Indonesian name for Fan Through the Back', 'Nama Indonesia untuk Shan Tong Bi'),
-    source: 'English name “Fan Through the Back” (扇通背)',
-    before: [['Lengan', -1], [' Menembus Punggung', 0]], after: [['Kipas', 1], [' Menembus Punggung', 0]] },
-  { id: 'c4', kind: 'text', move: 11, field: 'trad', flang: 'en', by: 'sifu_lim', role: 'school', thread: 0,
-    when: W('1 day ago', '1 hari lalu'), title: W('Traditional note for High Pat on Horse', 'Catatan tradisional untuk Gao Tan Ma'),
+  { id: 'c1', kind: 'text', move: 1, field: 'steps', flang: 'en', by: 'dewi_taiji', role: 'judge', thread: 0,
+    when: W('3 hours ago', '3 jam lalu'), title: W('Add palm and elbow detail to step 3', 'Tambahkan detail telapak dan siku di langkah 3'),
+    source: 'Competition routines collection (scan), Taijiquan, p. 599, 图 I-7',
+    before: [['The left arm wards off forward, left hand at shoulder height', 0], ['.', -1]],
+    after: [['The left arm wards off forward, left hand at shoulder height', 0], [', palm facing in and the elbow slightly bent, not locked.', 1]] },
+  { id: 'c2', kind: 'video', move: 14, field: 'video', flang: 'en', by: 'hendra_wushu', role: 'judge', thread: 1,
+    when: W('1 day ago', '1 hari lalu'), title: W('Side-view video for Fair Lady Works the Shuttles', 'Video tampak samping untuk Yu Nü Chuan Suo'),
+    source: 'Recorded by the contributor at their club',
+    videoInfo: W('Side view · 5:41 · start times marked for 42 of 42 movements', 'Tampak samping · 5:41 · waktu mulai ditandai untuk 42 dari 42 gerakan') },
+  { id: 'c3', kind: 'text', move: 25, field: 'name', flang: 'id', by: 'nadia_id', role: 'member', thread: null,
+    when: W('2 days ago', '2 hari lalu'), title: W('Indonesian name for Diagonal Flying', 'Nama Indonesia untuk Xie Fei Shi'),
+    source: 'Literal meaning of 斜飞 (diagonal flying)',
+    before: [['Terbang ', 0], ['Menyamping', -1]], after: [['Terbang ', 0], ['Miring', 1]] },
+  { id: 'c4', kind: 'text', move: 1, field: 'trad', flang: 'en', by: 'sifu_lim', role: 'school', thread: 0,
+    when: W('1 day ago', '1 hari lalu'), title: W('Traditional note for Grasp the Bird’s Tail', 'Catatan tradisional untuk Lan Que Wei'),
     source: '[Lineage teaching, school notes]',
-    before: [], after: [['In our lineage the hand finishes a little higher, around the eyebrows. For competition, follow eye level.', 1]] }
+    before: [], after: [['In our lineage the ward-off arm is a little lower and more rounded. For competition, follow shoulder height.', 1]] },
+  { id: 'c5', kind: 'figure', move: 1, field: 'figs', flang: 'en', by: 'hendra_wushu', role: 'judge', thread: null, made: 5, lic: 0,
+    when: W('5 hours ago', '5 jam lalu'), title: W('Illustrations for Grasp the Bird’s Tail (4 figures)', 'Ilustrasi untuk Lan Que Wei (4 gambar)'),
+    source: 'Rendered from the OpenWushu 3D model; poses checked against our 0:08–0:18 video and Competition routines collection (scan), Taijiquan, p. 599' }
 ];
 var APPS = [
   { id: 'a1', path: 'a', by: 'rina_coach', name: 'Rina S.', when: W('1 day ago', '1 hari lalu'),
@@ -1848,23 +2100,30 @@ var APPS = [
     school: '陈氏太极拳馆 · [School name]', lineage: W('Chen-style Taijiquan', 'Taijiquan gaya Chen'), founded: '1998', city: '[City], Indonesia',
     evidence: [W('School registration permit (photo)', 'Izin pendaftaran sekolah (foto)'), W('Public presence: website and map listing since 2012', 'Keberadaan publik: situs web dan peta sejak 2012'), W('Vouching: sifu_lim confirmed, coach_sby waiting', 'Jaminan: sifu_lim sudah konfirmasi, coach_sby menunggu')] }
 ];
-// Revision history of movement 12 (index 11), newest first
-var REVS12 = [
+// Revision history of the sample movement, newest first
+var REVS_S = [
   { n: 5, summary: W('Added a traditional note', 'Menambahkan catatan tradisional'), by: 'sifu_lim', role: 'school', reviewer: 'coach_sby', when: W('1 day ago', '1 hari lalu'), field: 'trad', flang: 'en', source: '[Lineage teaching, school notes]',
-    before: [], after: [['In our lineage the hand finishes a little higher, around the eyebrows. For competition, follow eye level.', 1]] },
-  { n: 4, summary: W('Corrected the hand height in step 4', 'Mengoreksi tinggi tangan di langkah 4'), by: 'dewi_taiji', role: 'judge', reviewer: 'coach_sby', when: W('5 days ago', '5 hari lalu'), field: 'steps', flang: 'en', source: '[Competition rulebook, Taijiquan section]',
-    before: [['Right palm passes beside the right ear and pushes forward ', 0], ['at head height', -1], ['.', 0]], after: [['Right palm passes beside the right ear and pushes forward ', 0], ['at eye height', 1], ['.', 0]] },
+    before: [], after: [['In our lineage the ward-off arm is a little lower and more rounded. For competition, follow shoulder height.', 1]] },
+  { n: 4, summary: W('Corrected the left hand height in step 3', 'Mengoreksi tinggi tangan kiri di langkah 3'), by: 'dewi_taiji', role: 'judge', reviewer: 'coach_sby', when: W('5 days ago', '5 hari lalu'), field: 'steps', flang: 'en', source: 'Competition routines collection (scan), Taijiquan, p. 599, 图 I-7',
+    before: [['The left arm wards off forward, left hand at ', 0], ['chest height', -1], ['.', 0]], after: [['The left arm wards off forward, left hand at ', 0], ['shoulder height', 1], ['.', 0]] },
   { n: 3, summary: W('Indonesian translation of the steps', 'Terjemahan langkah ke Bahasa Indonesia'), by: 'nadia_id', role: 'member', reviewer: 'coach_sby', when: W('2 weeks ago', '2 minggu lalu'), field: 'steps', flang: 'id', source: '—',
-    before: [], after: [['Kaki kanan menyusul setengah langkah ke depan; pindahkan berat badan ke kaki kanan.', 1]] },
+    before: [], after: [['Putar badan sedikit ke kiri dan langkahkan kaki kiri ke depan kiri, tumit menyentuh lantai dengan ringan.', 1]] },
   { n: 2, summary: W('Added key points and common mistakes', 'Menambahkan poin penting dan kesalahan umum'), by: 'coach_sby', role: 'maintainer', reviewer: 'openwushu_admin', when: W('3 weeks ago', '3 minggu lalu'), field: 'keys', flang: 'en', source: '[Coaching notes]',
-    before: [], after: [['Upper body upright, shoulders sunk (沉肩 chén jiān). Do not rise up while shifting the weight.', 1]] },
-  { n: 1, summary: W('Created from the official movement list', 'Dibuat dari daftar gerakan resmi'), by: 'openwushu_admin', role: 'admin', reviewer: null, when: W('1 month ago', '1 bulan lalu'), field: 'name', flang: 'zh', source: '[Official 24-form movement list]',
-    before: [], after: [['高探马 · Gāo tàn mǎ · High Pat on Horse', 1]] }
+    before: [], after: [['Turn from the waist; the arms follow the body. Keep the shoulders and elbows sunk (沉肩坠肘 chén jiān zhuì zhǒu).', 1]] },
+  { n: 1, summary: W('Created from the reference movement list', 'Dibuat dari daftar gerakan referensi'), by: 'openwushu_admin', role: 'admin', reviewer: null, when: W('1 month ago', '1 bulan lalu'), field: 'name', flang: 'zh', source: 'Competition routines collection (scan), Taijiquan, p. 597',
+    before: [], after: [['右揽雀尾 · Yòu lǎn què wěi · Grasp the Bird’s Tail (Right)', 1]] }
 ];
 var PR_CONTRIB = [
-  { st: 'review', move: 11, when: W('3 hours ago', '3 jam lalu'), title: W('Clarify the hand height in step 4', 'Perjelas tinggi tangan di langkah 4') },
-  { st: 'changes', move: 9, when: W('4 days ago', '4 hari lalu'), title: W('Key points for Cloud Hands', 'Poin penting untuk Tangan Awan') },
-  { st: 'approved', move: 2, when: W('2 weeks ago', '2 minggu lalu'), title: W('Fixed the Indonesian name of White Crane', 'Memperbaiki nama Indonesia Bangau Putih') }
+  { st: 'review', move: 1, when: W('3 hours ago', '3 jam lalu'), title: W('Add palm and elbow detail to step 3', 'Tambahkan detail telapak dan siku di langkah 3') },
+  { st: 'changes', move: 18, when: W('4 days ago', '4 hari lalu'), title: W('Key points for Cloud Hands', 'Poin penting untuk Tangan Awan') },
+  { st: 'approved', move: 4, when: W('2 weeks ago', '2 minggu lalu'), title: W('Fixed the Indonesian name of White Crane', 'Memperbaiki nama Indonesia Bangau Putih') }
+];
+// The reference book's other nine competition routines (page and figure series in the reference)
+var OTHER_ROUTINES = [
+  ['长拳', 'Chángquán', 'Changquan', 'Changquan', 1, 'A', 'chang'], ['刀术', 'Dāoshù', 'Broadsword', 'Golok', 69, 'B', 'chang'],
+  ['剑术', 'Jiànshù', 'Straight Sword', 'Pedang', 153, 'C', 'chang'], ['棍术', 'Gùnshù', 'Staff', 'Toya', 233, 'D', 'chang'],
+  ['枪术', 'Qiāngshù', 'Spear', 'Tombak', 325, 'E', 'chang'], ['南拳', 'Nánquán', 'Southern Fist', 'Nanquan', 420, 'F', 'nan'],
+  ['南刀', 'Nándāo', 'Southern Broadsword', 'Golok Selatan', 482, 'G', 'nan'], ['南棍', 'Nángùn', 'Southern Staff', 'Toya Selatan', 535, 'H', 'nan']
 ];
 var PR_TOGGLES = ['replies', 'status', 'reviewed', 'newThreads', 'news'];
 function fmtP(t) { var m = Math.floor(t / 60), sec = t - m * 60; return m + ':' + (sec < 10 ? '0' : '') + sec.toFixed(1); }
@@ -1873,14 +2132,14 @@ function idxFrom(times, t) { var i = 0; for (var k = 0; k < times.length; k++) {
 class Component extends DCLogic {
   constructor(props) {
     super(props);
-    this.state = { screen: 'routine', tab: 'learn', lang: 'en', t: START[11] + 2, playing: false, loop: false, speed: 1, detailOpen: true, q: '', reportOpen: false, submitted: false, formType: 'error', formMove: '11', threadFilter: 'all', cTask: 'describe', cMove: 1, cSubmitted: false, cRoutine: null,
+    this.state = { screen: 'routine', tab: 'learn', lang: 'en', t: START[SAMPLE] + 2, playing: false, loop: false, speed: 1, detailOpen: true, q: '', reportOpen: false, submitted: false, formType: 'error', formMove: String(SAMPLE), threadFilter: 'all', cTask: 'describe', cMove: 1, cSubmitted: false, cRoutine: null,
       user: null, authReturn: 'routine', authMsg: null, authErr: null, showPw: false, siEmail: '', suName: '', suEmail: '', suAgree: false, pendingUser: null,
       apStep: 1, apPath: 'a', apEv: [], apName: '', apConsent: false, apErr: null,
       openThread: null, extra: {}, replyText: '', watch: { 0: true }, dLang: null, formLang: null,
       rvTab: 'content', rvSel: 0, apSel2: 0, rvDec: {}, rvNote: '', rvErr: null, rvChecks: {},
-      hiMove: 11, hiSel: 0, hiConfirm: false, hiRestored: false,
-      edTimes: START.slice(), edPts: PTS.map(function (q) { return q.slice(); }), edSet: {}, edSel: 11, edFacing: {}, edWarn: null, edRaw: {},
-      prefs: { replies: true, status: true, reviewed: true, newThreads: true, news: false }, prFreq: 'instant', prEmailLang: null, prMsg: null };
+      hiMove: SAMPLE, hiSel: 0, hiConfirm: false, hiRestored: false,
+      edTimes: START.slice(), edPts: PTS.map(function (q) { return q.slice(); }), edSet: {}, edSel: SAMPLE, edFacing: {}, edWarn: null, edRaw: {},
+      prefs: { replies: true, status: true, reviewed: true, newThreads: true, news: false }, prFreq: 'instant', prEmailLang: null, prMsg: null, figSel: null, figAz: -35, fgMove: String(SAMPLE) };
   }
   componentDidMount() {
     var self = this;
@@ -1953,6 +2212,7 @@ class Component extends DCLogic {
     var moves = MOVES.map(function (m, i) {
       var on = i === ai, done = i < ai;
       return {
+        isSec: !!SECTIONS[i], secLabel: SECTIONS[i] ? SECTIONS[i][0] + ' · ' + L.section + ' ' + SECTIONS[i][1] : '',
         n: i + 1, num: pad(i + 1), cn: cn(i + 1), zh: m[0], py: m[1], tr: tr(m), dur: m[4],
         startTxt: fmt(START[i]), endTxt: fmt(START[i] + m[4]),
         aria: pad(i + 1) + ' ' + m[0] + ' ' + m[1] + ' · ' + tr(m),
@@ -1978,8 +2238,19 @@ class Component extends DCLogic {
     var sp = px(STARTPT);
 
     var d = DETAILS[ai];
-    var detail = d ? { facing: d.facing[s.lang], steps: d.steps[s.lang], stepsN: d.steps[s.lang].map(function (x, i) { return { cn: cn(i + 1), text: x }; }), keys: d.keys[s.lang], mistakes: d.mistakes[s.lang] } : { facing: '', steps: [], stepsN: [], keys: [], mistakes: [] };
+    var detail = d ? { ref: d.ref || '—', facing: d.facing[s.lang], steps: d.steps[s.lang], stepsN: d.steps[s.lang].map(function (x, i) { return { cn: cn(i + 1), text: x, bg: s.figSel && s.figSel.move === ai && s.figSel.k === i ? t.accentSoft : 'transparent' }; }), keys: d.keys[s.lang], mistakes: d.mistakes[s.lang] } : { ref: '—', facing: '', steps: [], stepsN: [], keys: [], mistakes: [] };
 
+    var figK = s.figSel && s.figSel.move === ai ? s.figSel.k : 0;
+    var figKeys = d && d.figs ? d.figs : [];
+    var figList = figKeys.map(function (key, k) {
+      var on = s.figSel && s.figSel.move === ai && s.figSel.k === k;
+      return Object.assign(render3d(FIG3D[key], s.figAz, figKeys[k + 1] ? FIG3D[figKeys[k + 1]] : null), {
+        cap: '图 ' + (ai + 1) + '-' + (k + 1), on: !!on, bd: on ? t.accent : t.line2,
+        pick: function () { self.setState({ figSel: { move: ai, k: k }, t: START[ai] + MOVES[ai][4] * k / figKeys.length + 0.05 }); } });
+    });
+    var figAngles = [[0, L.angFront], [-35, L.ang34], [-90, L.angSide]];
+    var figView = figList.length ? Object.assign({}, figList[figK], { step: detail.steps[figK] || '', made: L.madeOpts[5],
+      angleLabel: (figAngles.filter(function (a) { return a[0] === s.figAz; })[0] || [0, L.ang34])[1] }) : {};
     var typeLabel = { error: L.typeError, suggest: L.typeSuggest, question: L.typeQuestion, rule: L.typeRule };
     var typeCol = { error: [t.redSoft, t.red], suggest: [t.blueSoft, t.blue], question: [t.chip, t.muted], rule: [t.amberSoft, t.amber] };
     var stCol = { open: [t.accent, t.onAccent, L.stOpen], review: [t.blue, '#FFFFFF', L.stReview], accepted: [t.green, '#FFFFFF', L.stAccepted] };
@@ -2030,7 +2301,7 @@ class Component extends DCLogic {
     var stMeta = { pending: [t.amberSoft, t.amber, L.rvWaiting], approved: [t.green, '#FFFFFF', L.rvPublished], changes: [t.blue, '#FFFFFF', L.rvChangesReq],
       rejected: [t.red, '#FFFFFF', L.rvRejected], call: [t.blue, '#FFFFFF', L.rvCall], review: [t.amberSoft, t.amber, L.prInReview] };
     var segs = function (arr) { return arr.map(function (x) { return { t: x[0], bg: x[1] < 0 ? t.redSoft : (x[1] > 0 ? t.accentSoft : 'transparent'), dec: x[1] < 0 ? 'line-through' : (x[1] > 0 ? 'underline' : 'none') }; }); };
-    var fieldLabel = function (k) { return k === 'trad' ? L.tradNotes : L.fields[fieldIdx[k]]; };
+    var fieldLabel = function (k) { return k === 'trad' ? L.tradNotes : (k === 'figs' ? L.figTitle : L.fields[fieldIdx[k]]); };
     var roleB = { member: L.member, judge: L.badgeJudge, school: L.badgeSchool, maintainer: L.maintainerBadge, admin: 'Admin' };
     var mvLabel = function (i) { return pad(i + 1) + ' ' + MOVES[i][0] + ' ' + MOVES[i][1]; };
     var decOf = function (id) { return s.rvDec[id] || 'pending'; };
@@ -2041,14 +2312,16 @@ class Component extends DCLogic {
     var undo = function (id) { var x = Object.assign({}, s.rvDec); delete x[id]; self.setState({ rvDec: x }); };
     var rvItems = CHANGES.map(function (c, i) {
       var d = decOf(c.id), on = i === s.rvSel;
-      return { title: c.title[s.lang], target: mvLabel(c.move), by: c.by, when: c.when[s.lang], kindLabel: c.kind === 'video' ? L.rvKindVideo : L.rvKindText,
+      return { title: c.title[s.lang], target: mvLabel(c.move), by: c.by, when: c.when[s.lang], kindLabel: c.kind === 'video' ? L.rvKindVideo : (c.kind === 'figure' ? L.rvKindFigure : L.rvKindText),
         stLabel: stMeta[d][2], stBg: stMeta[d][0], stFg: stMeta[d][1], on: on, bg: on ? t.accentSoft : 'transparent',
         pick: function () { self.setState({ rvSel: i, rvNote: '', rvErr: null }); } };
     });
     var cs = CHANGES[s.rvSel], cd = decOf(cs.id);
     var rv = { title: cs.title[s.lang], target: mvLabel(cs.move), field: fieldLabel(cs.field), flang: LANGS[cs.flang], by: cs.by, initial: cs.by.charAt(0).toUpperCase(),
       badge: roleB[cs.role], when: cs.when[s.lang], kindLabel: rvItems[s.rvSel].kindLabel, stLabel: stMeta[cd][2], stBg: stMeta[cd][0], stFg: stMeta[cd][1],
-      isText: cs.kind === 'text', isVideo: cs.kind === 'video', before: segs(cs.before || []), after: segs(cs.after || []), beforeEmpty: !(cs.before && cs.before.length),
+      isText: cs.kind === 'text', isVideo: cs.kind === 'video', isFigure: cs.kind === 'figure',
+      figs: cs.kind === 'figure' ? DETAILS[cs.move].figs.map(function (key, k, all) { return Object.assign(render3d(FIG3D[key], -35, all[k + 1] ? FIG3D[all[k + 1]] : null), { cap: '图 ' + (cs.move + 1) + '-' + (k + 1) }); }) : [],
+      madeLabel: cs.made != null ? L.madeOpts[cs.made] : '', licLabel: cs.lic != null ? L.licOpts[cs.lic] : '', before: segs(cs.before || []), after: segs(cs.after || []), beforeEmpty: !(cs.before && cs.before.length),
       videoInfo: cs.videoInfo ? cs.videoInfo[s.lang] : '', source: cs.source, hasThread: cs.thread != null, threadTitle: cs.thread != null ? THREADS[cs.thread].title : '',
       openThread: function () { self.setState({ screen: 'routine', tab: 'discuss', openThread: cs.thread }); },
       pending: cd === 'pending', decided: cd !== 'pending', resultText: { approved: L.rvApprovedTxt, changes: L.rvChangesTxt, rejected: L.rvRejectedTxt }[cd] || '',
@@ -2079,8 +2352,8 @@ class Component extends DCLogic {
     var pendingA = APPS.filter(function (a) { return decOf(a.id) === 'pending'; }).length;
 
     var hm = s.hiMove;
-    var revs = hm === 11 ? REVS12 : [{ n: 1, summary: REVS12[4].summary, by: 'openwushu_admin', role: 'admin', reviewer: null, when: REVS12[4].when, field: 'name', flang: 'zh',
-      source: REVS12[4].source, before: [], after: [[MOVES[hm][0] + ' · ' + MOVES[hm][1] + ' · ' + MOVES[hm][2], 1]] }];
+    var revs = hm === SAMPLE ? REVS_S : [{ n: 1, summary: REVS_S[4].summary, by: 'openwushu_admin', role: 'admin', reviewer: null, when: REVS_S[4].when, field: 'name', flang: 'zh',
+      source: REVS_S[4].source, before: [], after: [[MOVES[hm][0] + ' · ' + MOVES[hm][1] + ' · ' + MOVES[hm][2], 1]] }];
     var hsel = Math.min(s.hiSel, revs.length - 1), hr = revs[hsel];
     var hiRevs = revs.map(function (r, i) { var on = i === hsel; return { label: 'r' + r.n, summary: r.summary[s.lang], by: r.by, when: r.when[s.lang], isCurrent: i === 0, on: on,
       bg: on ? t.accentSoft : 'transparent', pick: function () { self.setState({ hiSel: i, hiConfirm: false, hiRestored: false }); } }; });
@@ -2108,11 +2381,11 @@ class Component extends DCLogic {
     var cm = MOVES[s.cMove];
     var progress = [
       { label: L.pDesc, done: Object.keys(DETAILS).length, note: L.nReview },
-      { label: L.pEn, done: 24, note: L.nReview },
-      { label: L.pId, done: 24, note: L.nReview },
-      { label: L.pTime, done: 24, note: L.nSample },
+      { label: L.pEn, done: 42, note: L.nReview },
+      { label: L.pId, done: 42, note: L.nReview },
+      { label: L.pTime, done: 42, note: L.nSample },
       { label: L.pPath, done: 0, note: L.nNone }
-    ].map(function (p) { p.pct = (p.done / 24 * 100) + '%'; return p; });
+    ].map(function (p) { p.pct = (p.done / MOVES.length * 100) + '%'; return p; });
 
     return {
       t: t, s: L,
@@ -2155,19 +2428,26 @@ class Component extends DCLogic {
       rvItems: rvItems, rv: rv, apItems: apItems, ap2: ap2,
       rvNote: s.rvNote, onRvNote: function (e) { self.setState({ rvNote: e.target.value, rvErr: null }); },
       hasRvErr: !!s.rvErr, rvErrText: s.rvErr ? L[s.rvErr] : '',
-      histCount: ai === 11 ? REVS12.length : 1,
+      histCount: ai === SAMPLE ? REVS_S.length : 1,
       openHistory: function () { self.setState({ screen: 'history', hiMove: ai, hiSel: 0, hiConfirm: false, hiRestored: false, playing: false }); },
       hiRevs: hiRevs, hv: hv, hiMoveShort: mvLabel(hm), hiMoveZh: '第' + cn(hm + 1) + '式 ' + MOVES[hm][0], hiMovePy: MOVES[hm][1], hiMoveTr: tr(MOVES[hm]),
       hiBackMove: function () { self.select(s.hiMove); },
       hiAskRestore: function () { self.setState({ hiConfirm: true }); }, hiCancelRestore: function () { self.setState({ hiConfirm: false }); },
       hiConfirmRestore: function () { self.setState({ hiConfirm: false, hiRestored: true }); },
       cShowTiming: !s.cSubmitted && s.cTask === 'timing' && isVer,
+      cShowFigures: !s.cSubmitted && s.cTask === 'figures' && isVer,
+      fgMove: s.fgMove, onFgMove: function (e) { self.setState({ fgMove: e.target.value }); },
+      fgMoveOpts: MOVES.map(function (m, i) { return { v: String(i), label: mvLabel(i) + ' · ' + tr(m) }; }),
+      fgSteps: (function () { var mi = +s.fgMove, dd = DETAILS[mi], st = dd ? dd.steps[s.lang] : [1, 2, 3, 4].map(function (k) { return L.fgStep + ' ' + k; });
+        return st.map(function (x, k) { var cap = '图 ' + (mi + 1) + '-' + (k + 1); return { cap: cap, text: x, aria: L.fgUpload + ' ' + cap }; }); })(),
+      hasFigs: figList.length > 0, noFigs: figList.length === 0, figs: figList, fv: figView,
+      figAngles: figAngles.map(function (a) { var on = s.figAz === a[0]; return { label: a[1], on: on, bg: seg(on)[0], fg: seg(on)[1], pick: function () { self.setState({ figAz: a[0] }); } }; }),
       edTime: fmtP(s.t), edVideoCn: cn(edIdx + 1), edVideoZh: MOVES[edIdx][0], edVideoPy: MOVES[edIdx][1],
-      edSegs: MOVES.map(function (m, i) { var end = i < 23 ? eT[i + 1] : TOTAL, on = i === es; return { n: i + 1, dur: Math.max(0.5, end - eT[i]), aria: mvLabel(i),
+      edSegs: MOVES.map(function (m, i) { var end = i < MOVES.length - 1 ? eT[i + 1] : TOTAL, on = i === es; return { n: i + 1, dur: Math.max(0.5, end - eT[i]), aria: mvLabel(i),
         bg: on ? t.accent : (i === edIdx ? t.accentMid : t.chip), fg: on ? t.onAccent : t.muted, pick: function () { self.setState({ edSel: i, t: eT[i], edWarn: null, edRaw: {} }); } }; }),
       edSelLabel: '第' + cn(es + 1) + '式 ' + MOVES[es][0], edSelStart: fmtP(eT[es]),
       edSetStart: function () {
-        var tt = Math.round(s.t * 10) / 10, prev = es ? eT[es - 1] : -1, next = es < 23 ? eT[es + 1] : TOTAL + 1;
+        var tt = Math.round(s.t * 10) / 10, prev = es ? eT[es - 1] : -1, next = es < MOVES.length - 1 ? eT[es + 1] : TOTAL + 1;
         if (tt <= prev || tt >= next) { self.setState({ edWarn: 'edWarnOrder' }); return; }
         var nt = eT.slice(); nt[es] = tt; self.setState({ edTimes: nt, edWarn: null });
       },
@@ -2210,6 +2490,20 @@ class Component extends DCLogic {
       prEmailLang: s.prEmailLang || s.lang, onPrEmailLang: function (e) { self.setState({ prEmailLang: e.target.value }); },
       prDownload: function () { self.setState({ prMsg: 'prDownloadMsg' }); }, prDelete: function () { self.setState({ prMsg: 'prDeleteMsg' }); },
       hasPrMsg: !!s.prMsg, prMsgText: s.prMsg ? L[s.prMsg] : '',
+      isIndex: s.tab === 'index', indexBg: seg(s.tab === 'index')[0], indexFg: seg(s.tab === 'index')[1],
+      tabIndex: function () { self.setState({ tab: 'index', playing: false }); },
+      libSections: Object.keys(SECTIONS).map(Number).map(function (start, j, starts) {
+        var end = j + 1 < starts.length ? starts[j + 1] : MOVES.length, items = [];
+        for (var i = start; i < end; i++) (function (i) {
+          var m = MOVES[i];
+          items.push({ cn: cn(i + 1), zh: m[0], py: m[1], tr: tr(m), on: i === ai, bg: i === ai ? t.accentSoft : 'transparent', aria: '第' + cn(i + 1) + '式 ' + m[0] + ' ' + m[1] + ' · ' + tr(m), pick: function () { self.select(i); } });
+        })(i);
+        return { label: SECTIONS[start][0] + ' · ' + L.section + ' ' + SECTIONS[start][1], items: items };
+      }),
+      routineGroups: [['chang', '长拳', 'Chángquán', L.grChang], ['nan', '南拳', 'Nánquán', L.grNan]].map(function (g) {
+        return { zh: g[1], py: g[2], tr: g[3], items: OTHER_ROUTINES.filter(function (r) { return r[6] === g[0]; }).map(function (r) { return { zh: r[0], py: r[1], tr: en ? r[2] : r[3], page: r[4], fig: r[5] }; }) };
+      }),
+      otherRoutines: OTHER_ROUTINES.concat([['太极剑', 'Tàijíjiàn', 'Taiji Sword', 'Pedang Taiji']]).map(function (r) { return { zh: r[0], tr: en ? r[2] : r[3] }; }),
       isDiscussions: isDiscs, latestTitle: THREADS[THREADS.length - 1].title, latestLang: LANGS[THREADS[THREADS.length - 1].lang],
       countOpen: countSt('open'), countReview: countSt('review'), countAccepted: countSt('accepted'),
       open24Discuss: function () { self.setState({ screen: 'routine', tab: 'discuss', threadFilter: 'all', reportOpen: false, openThread: null }); },
@@ -2245,10 +2539,10 @@ class Component extends DCLogic {
       cNoRoutine: !s.cRoutine, cHasRoutine: !!s.cRoutine,
       step1Bg: s.cRoutine ? t.accentSoft : t.accent, step1Fg: s.cRoutine ? t.accentInk : t.onAccent,
       step2Bg: s.cRoutine ? t.accent : t.chip, step2Fg: s.cRoutine ? t.onAccent : t.muted, step2Text: s.cRoutine ? t.ink : t.muted,
-      descDone: Object.keys(DETAILS).length, descPct: (Object.keys(DETAILS).length / 24 * 100) + '%',
+      descDone: Object.keys(DETAILS).length, descPct: (Object.keys(DETAILS).length / MOVES.length * 100) + '%',
       pick24: function () { self.setState({ cRoutine: '24', cSubmitted: false }); },
       changeRoutine: function () { self.setState({ cRoutine: null, cSubmitted: false }); },
-      cTabs: [['describe', L.tDescribe], ['timing', L.tTiming], ['video', L.tVideo], ['translate', L.tTranslate]].map(function (x) { var on = s.cTask === x[0]; return { label: x[1], on: on, bg: seg(on)[0], fg: seg(on)[1], pick: function () { self.openContribute(x[0]); } }; }),
+      cTabs: [['describe', L.tDescribe], ['timing', L.tTiming], ['figures', L.tFigures], ['video', L.tVideo], ['translate', L.tTranslate]].map(function (x) { var on = s.cTask === x[0]; return { label: x[1], on: on, bg: seg(on)[0], fg: seg(on)[1], pick: function () { self.openContribute(x[0]); } }; }),
       cSubmitted: s.cSubmitted,
       cShowDescribe: !s.cSubmitted && s.cTask === 'describe' && isVer, cShowVideo: !s.cSubmitted && s.cTask === 'video' && isVer,
       cLocked: !s.cSubmitted && s.cTask !== 'translate' && !isVer, cShowTranslate: !s.cSubmitted && s.cTask === 'translate',
@@ -2313,7 +2607,7 @@ class Component extends DCLogic {
       reportOpen: s.reportOpen, submitted: s.submitted, notSubmitted: !s.submitted,
       typeOpts: ['error', 'suggest', 'question', 'rule'].map(function (k) { var on = s.formType === k; return { label: typeLabel[k], on: on, bg: on ? typeCol[k][0] : 'transparent', fg: on ? typeCol[k][1] : t.ink, bd: on ? typeCol[k][1] : t.line2, pick: function () { self.setState({ formType: k }); } }; }),
       formMove: s.formMove, onFormMove: function (e) { self.setState({ formMove: e.target.value }); },
-      targetOpts: [{ v: 'r', label: '24式 · ' + L.routineWide }].concat(MOVES.map(function (m, i) { return { v: String(i), label: pad(i + 1) + ' ' + m[0] + ' ' + m[1] + ' · ' + tr(m) }; })),
+      targetOpts: [{ v: 'r', label: '42式 · ' + L.routineWide }].concat(MOVES.map(function (m, i) { return { v: String(i), label: pad(i + 1) + ' ' + m[0] + ' ' + m[1] + ' · ' + tr(m) }; })),
       fieldOpts: L.fields,
       submit: function () { self.setState({ submitted: true }); },
       closeReport: function () { self.setState({ reportOpen: false, submitted: false }); }

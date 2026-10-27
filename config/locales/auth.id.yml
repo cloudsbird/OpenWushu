@@ -1,0 +1,113 @@
+# Akun: daftar, masuk, verifikasi email, atur ulang kata sandi, dan email-emailnya
+id:
+  layout:
+    sign_in: Masuk
+    sign_up: Daftar
+    sign_out: Keluar
+    account: Akun Anda
+    unverified: Email belum diverifikasi
+  auth:
+    email: Email
+    password: Kata sandi
+    show: Tampilkan
+    hide: Sembunyikan
+    panel:
+      lead: Referensi terbuka yang dikelola komunitas untuk rangkaian wajib wushu.
+      visitor: Pengunjung membaca dan menonton, tanpa akun.
+      member: Anggota ikut berdiskusi dan mengusulkan perubahan.
+      contributor: Kontributor menyunting dan mengunggah; pengelola meninjau sebelum diterbitkan.
+  sessions:
+    rate_limited: Terlalu banyak percobaan. Tunggu beberapa menit lalu coba lagi.
+    new:
+      title: Selamat datang kembali
+      lead: Masuk untuk ikut berdiskusi dan berkontribusi.
+      forgot: Lupa kata sandi?
+      submit: Masuk
+      no_account: Baru di OpenWushu?
+      create_account: Buat akun
+    create:
+      invalid: Email dan kata sandi itu tidak cocok dengan akun mana pun.
+    destroy:
+      signed_out: Anda sudah keluar.
+  registrations:
+    new:
+      title: Buat akun Anda
+      lead: Gratis untuk semua. Membaca dan menonton tidak memerlukan akun.
+      display_name: Nama tampilan
+      password_hint: Minimal 8 karakter.
+      locale: Terjemahan pilihan
+      club: Klub atau sekolah (opsional)
+      agree: "Saya setuju dengan pedoman komunitas: konten untuk edukasi, perubahan menyertakan sumber, saya akan bersikap sopan, dan kontribusi saya diterbitkan di bawah lisensi CC BY-SA 4.0."
+      submit: Buat akun
+      have_account: Sudah punya akun?
+  email_verifications:
+    show:
+      title: Periksa email Anda
+      body_html: Kami mengirim tautan verifikasi ke %{email}. Buka tautan itu untuk mengaktifkan akun. Sebelum itu Anda bisa membaca tetapi belum bisa memposting.
+      resend: Kirim ulang email
+    create:
+      sent: Kami sudah mengirim tautan verifikasi baru.
+    update:
+      verified: Email Anda sudah terverifikasi. Selamat datang di OpenWushu!
+      invalid: Tautan verifikasi tidak valid atau sudah kedaluwarsa. Masuk dan minta tautan baru.
+  passwords:
+    invalid_link: Tautan atur ulang kata sandi tidak valid atau sudah kedaluwarsa.
+    new:
+      title: Lupa kata sandi?
+      lead: Masukkan email akun Anda dan kami akan mengirim tautan untuk membuat kata sandi baru.
+      submit: Kirim tautan atur ulang
+      back: Kembali ke halaman masuk
+    create:
+      sent: Jika ada akun dengan email itu, tautan atur ulang sedang dikirim.
+    edit:
+      title: Buat kata sandi baru
+      password: Kata sandi baru
+      confirmation: Ulangi kata sandi baru
+      submit: Simpan kata sandi
+    update:
+      updated: Kata sandi Anda sudah diganti. Masuk dengan kata sandi baru.
+  mailer:
+    legal: OpenWushu · hanya untuk tujuan edukasi · Konten berlisensi CC BY-SA 4.0
+  email_verification_mailer:
+    verify:
+      subject: Verifikasi email Anda untuk OpenWushu
+      heading: Konfirmasi email Anda
+      body: Halo %{name}, selamat datang di OpenWushu. Konfirmasi bahwa ini email Anda untuk mulai ikut berdiskusi dan melaporkan masalah.
+      cta: Verifikasi email
+      small: Tautan ini berlaku 24 jam. Jika Anda tidak mendaftar, abaikan email ini.
+      why: Anda menerima email ini karena seseorang mendaftar dengan alamat ini.
+  passwords_mailer:
+    reset:
+      subject: Atur ulang kata sandi OpenWushu Anda
+      heading: Buat kata sandi baru
+      body: Halo %{name}, seseorang meminta untuk mengatur ulang kata sandi akun OpenWushu Anda.
+      cta: Buat kata sandi baru
+      small: Tautan ini berlaku %{minutes} menit. Jika Anda tidak memintanya, abaikan email ini; kata sandi Anda tetap sama.
+      why: Anda menerima email ini karena ada permintaan atur ulang kata sandi untuk alamat ini.
+  # Rails ships only English messages; these cover the validations the app uses
+  errors:
+    messages:
+      accept_guidelines: Harap setujui pedoman komunitas.
+      blank: wajib diisi
+      taken: sudah digunakan
+      invalid: tidak valid
+      inclusion: tidak termasuk dalam pilihan
+      too_long: terlalu panjang (maksimal %{count} karakter)
+      too_short: terlalu pendek (minimal %{count} karakter)
+      confirmation: tidak cocok
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            display_name:
+              blank: Masukkan nama tampilan.
+            email_address:
+              blank: Masukkan alamat email yang valid.
+              invalid: Masukkan alamat email yang valid.
+              taken: Email ini sudah dipakai sebuah akun. Coba masuk saja.
+            password:
+              blank: Masukkan kata sandi.
+              too_short: Gunakan minimal %{count} karakter.
+            password_confirmation:
+              confirmation: Kedua kata sandi tidak cocok.

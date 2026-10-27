@@ -1,0 +1,83 @@
+id:
+  lang_name: Bahasa Indonesia
+  layout:
+    home: Beranda OpenWushu
+    library: Pustaka
+    translation: terjemahan
+    translation_group: Bahasa terjemahan
+    footer: "OpenWushu · hanya untuk tujuan edukasi. Konten dikelola komunitas dan mungkin mengandung kesalahan; selalu belajar dengan pelatih yang berkualifikasi."
+    license: Konten berlisensi CC BY-SA 4.0
+    source_code: Kode sumber di GitHub
+  routines:
+    index:
+      title: Rangkaian wajib
+      lead: Referensi belajar terbuka yang dikelola komunitas untuk rangkaian standar wushu. Nama selalu ditulis dalam bahasa Tionghoa beserta pinyin; terjemahan dalam bahasa Inggris atau Bahasa Indonesia.
+      search: Cari rangkaian dan gerakan
+      search_placeholder: Coba “lan que wei”, 揽雀尾 atau “ekor burung”
+      search_button: Cari
+      results: Gerakan ditemukan
+      no_results: Belum ada hasil.
+      in_progress: Sedang dikerjakan
+      awaiting: Menunggu kontributor
+      ref_short: Ref.
+      competition_routine: 竞赛套路
+    styles:
+      taiji: Taijiquan
+      chang: Changquan & senjata
+      nan: Gaya selatan
+    header:
+      breadcrumb: Navigasi
+      sections: Bagian rangkaian
+      summary: "%{count} gerakan · %{duration} · Rangkaian kompetisi · %{sections} bagian"
+      learn: Belajar
+      movements: Gerakan
+    count:
+      movements: "%{count} gerakan"
+    player:
+      video: Video
+      sample_video: Belum ada video · jam latihan
+      play: Putar
+      pause: Jeda
+      prev: Gerakan sebelumnya
+      next: Gerakan berikutnya
+      loop: Ulangi gerakan
+      speed: Kecepatan
+      timeline: Linimasa gerakan
+      seek: "Gerakan %{n}: %{name}, mulai pada %{time}"
+    carpet:
+      title: Jalur di karpet
+      illustrative: Jalur ilustrasi, belum diukur
+      front: Depan (menghadap juri)
+      judges_table: Meja juri
+      judges: Juri
+      head_judge: Ketua juri
+      start: Mulai
+      done: Selesai
+      current: Sekarang
+      remaining: Sisa
+      aria: "Jalur karpet %{routine}, gerakan saat ini disorot"
+    list:
+      all: Semua gerakan
+    detail:
+      play_this: Putar gerakan ini
+      figures: Ilustrasi
+      figures_hint: "Dirender dari satu model 3D: klik gambar untuk memperbesar dan melompatkan video, atau ubah sudut kamera"
+      figure_made: Dirender dari model 3D OpenWushu
+      figure_placeholder: pose ilustrasi
+      camera: Kamera
+      angle_front: Depan
+      angle_34: Tampak ¾
+      angle_side: Samping
+      no_figures: Belum ada ilustrasi. Kontributor terverifikasi nantinya dapat menambahkannya.
+      reference: Referensi
+      draft: Draf · perlu ditinjau ahli
+      facing: Arah hadap
+      steps: Langkah
+      key_points: Poin penting
+      mistakes: Kesalahan umum
+      pending_title: Deskripsi belum ditulis
+      pending_body: Nama dan waktu video sudah ada. Kontributor terverifikasi nantinya dapat menulis langkah, poin penting, dan kesalahan umum.
+    movements:
+      lead: Semua gerakan secara berurutan, dikelompokkan per bagian. Pilih satu untuk membukanya di Belajar.
+      described: Sudah dideskripsikan
+      open: Buka di Belajar

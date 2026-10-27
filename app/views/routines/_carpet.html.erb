@@ -1,0 +1,50 @@
+<% points = carpet_points(routine, movements) %>
+<% start = points.first %>
+<section class="panel carpet" aria-label="<%= t("routines.carpet.title") %>">
+  <div class="carpet__top">
+    <h2 class="heading"><span class="heading__zh">场地路线</span><span class="heading__tr">Chǎngdì lùxiàn · <%= t("routines.carpet.title") %> · <%= Routine::CARPET_WIDTH %> m × <%= Routine::CARPET_DEPTH %> m</span></h2>
+    <span class="badge badge--amber"><%= t("routines.carpet.illustrative") %></span>
+  </div>
+  <svg class="carpet__svg" viewBox="0 0 1400 1000" role="img" aria-label="<%= t("routines.carpet.aria", routine: routine.name_zh) %>">
+    <rect x="0" y="0" width="1400" height="800" fill="var(--carpet)"/>
+    <path d="<%= carpet_grid %>" fill="none" stroke="var(--grid)" stroke-width="2"/>
+    <rect x="3" y="3" width="1394" height="794" fill="none" stroke="var(--line2)" stroke-width="6"/>
+    <text x="1360" y="50" text-anchor="middle" font-size="30" font-weight="700" fill="var(--muted)">N</text>
+    <path d="M1360 60 L1360 110 M1348 74 L1360 60 L1372 74" fill="none" stroke="var(--muted)" stroke-width="4" stroke-linecap="round"/>
+    <text x="700" y="780" text-anchor="middle" font-size="24" font-weight="600" fill="var(--muted)">正面 · <%= t("routines.carpet.front") %></text>
+
+    <%# Judges' table below the front edge: head judge (长) in the middle %>
+    <rect x="240" y="858" width="920" height="40" fill="var(--chip)" stroke="var(--line2)" stroke-width="2"/>
+    <% RoutinesHelper::JUDGE_XS.each_with_index do |x, i| %>
+      <circle cx="<%= x %>" cy="932" r="18" fill="var(--surface)" stroke="var(--ink)" stroke-width="3"/>
+      <text x="<%= x %>" y="939" text-anchor="middle" font-size="18" font-weight="700" fill="var(--ink)"><%= i + 1 %></text>
+    <% end %>
+    <circle cx="700" cy="932" r="26" fill="var(--accent)" stroke="var(--ink)" stroke-width="3"/>
+    <text x="700" y="941" text-anchor="middle" font-size="24" font-weight="700" fill="var(--on-accent)">长</text>
+    <text x="700" y="988" text-anchor="middle" font-size="22" fill="var(--muted)">裁判席 · <%= t("routines.carpet.judges_table") %></text>
+
+    <path d="<%= carpet_path(points) %>" fill="none" stroke="var(--rest)" stroke-width="6" stroke-dasharray="14 12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path data-routine-player-target="donePath" d="" fill="none" stroke="var(--accent-mid)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path data-routine-player-target="activePath" d="" fill="none" stroke="var(--accent)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <% if start %><rect x="<%= start[0] - 14 %>" y="<%= start[1] - 14 %>" width="28" height="28" fill="var(--ink)"/><% end %>
+
+    <% movements.select(&:end_x).each do |m| %>
+      <% x, y = carpet_point(m.end_x, m.end_y) %>
+      <g class="carpet__label" data-routine-player-target="label" data-n="<%= m.number %>" aria-hidden="true">
+        <rect x="<%= x - 17 %>" y="<%= y - 52 %>" width="34" height="30" stroke-width="1.5"/>
+        <text x="<%= x %>" y="<%= y - 31 %>" text-anchor="middle" font-size="16" font-weight="700"><%= m.number %></text>
+      </g>
+    <% end %>
+
+    <circle data-routine-player-target="halo" cx="<%= start&.first %>" cy="<%= start&.last %>" r="34" fill="var(--accent)" opacity="0.22"/>
+    <circle data-routine-player-target="dot" cx="<%= start&.first %>" cy="<%= start&.last %>" r="16" fill="var(--accent)" stroke="#FFFFFF" stroke-width="5"/>
+  </svg>
+  <div class="legend">
+    <span><i style="width: 12px; height: 12px; background: var(--ink)"></i><%= t("routines.carpet.start") %></span>
+    <span><i style="width: 22px; height: 5px; background: var(--accent-mid)"></i><%= t("routines.carpet.done") %></span>
+    <span><i style="width: 22px; height: 7px; background: var(--accent)"></i><%= t("routines.carpet.current") %> · <span data-routine-player-target="legendNow"><%= first.number %> <%= first.name_zh %></span></span>
+    <span><i style="width: 22px; border-top: 3px dashed var(--rest)"></i><%= t("routines.carpet.remaining") %></span>
+    <span><i style="width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--ink)"></i>裁判员 · <%= t("routines.carpet.judges") %></span>
+    <span><i style="width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--ink); background: var(--accent)"></i>裁判长 · <%= t("routines.carpet.head_judge") %></span>
+  </div>
+</section>

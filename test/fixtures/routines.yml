@@ -1,0 +1,24 @@
+taiji:
+  slug: taiji-42
+  style: taiji
+  name_zh: 四十二式太极拳
+  name_pinyin: Sìshí'èr shì tàijíquán
+  name_en: 42-Form Competition Taijiquan
+  name_id: 42 Jurus Taijiquan Kompetisi
+  card_zh: 四二
+  status: published
+  position: 1
+  start_x: 2.8
+  start_y: 4.2
+
+changquan:
+  slug: changquan
+  style: chang
+  name_zh: 长拳
+  name_pinyin: Chángquán
+  name_en: Changquan
+  name_id: Changquan
+  status: awaiting
+  position: 10
+  reference_page: 1
+  reference_figure: A

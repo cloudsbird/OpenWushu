@@ -1,0 +1,16 @@
+<nav class="breadcrumb" aria-label="<%= t("routines.header.breadcrumb") %>">
+  <%= link_to t("layout.library"), root_path %>
+  <span aria-hidden="true">/</span><span><%= RoutinesHelper::STYLE_NAMES[routine.style].first %> <%= t("routines.styles.#{routine.style}") %></span>
+  <span aria-hidden="true">/</span><span aria-current="page"><%= routine.name_zh %></span>
+</nav>
+<div class="routine-head">
+  <div class="routine-head__title">
+    <span class="vtitle" aria-hidden="true"><%= RoutinesHelper::STYLE_NAMES[routine.style].first %></span>
+    <div>
+      <h1><%= routine.name_zh %></h1>
+      <p><%= routine.name_pinyin %> · <strong><%= routine.name_tr %></strong></p>
+      <p style="margin-top: 4px; font-size: 13px"><%= t("routines.header.summary", count: routine.movements.size, duration: clock(routine.duration_sec), sections: routine.section_count) %></p>
+    </div>
+  </div>
+  <%= routine_tabs(routine, tab) %>
+</div>

@@ -1,0 +1,39 @@
+# PostgreSQL 18. Connection details come from the standard libpq variables when set
+# (PGHOST, PGPORT, PGUSER, PGPASSWORD); otherwise the local server's socket and your user name.
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: openwushu_development
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: openwushu_test
+
+# Production runs four databases on one server: the app's own, plus Solid Cache, Solid Queue and
+# Solid Cable. bin/rails db:prepare creates them. With Kamal, the server is the "db" accessory.
+production:
+  primary: &primary_production
+    <<: *default
+    host: <%= ENV["DB_HOST"] %>
+    database: openwushu_production
+    username: openwushu
+    password: <%= ENV["POSTGRES_PASSWORD"] %>
+  cache:
+    <<: *primary_production
+    database: openwushu_production_cache
+    migrations_paths: db/cache_migrate
+  queue:
+    <<: *primary_production
+    database: openwushu_production_queue
+    migrations_paths: db/queue_migrate
+  cable:
+    <<: *primary_production
+    database: openwushu_production_cable
+    migrations_paths: db/cable_migrate

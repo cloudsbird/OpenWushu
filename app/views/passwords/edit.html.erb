@@ -1,0 +1,13 @@
+<% content_for :title, "重设密码 · #{t("passwords.edit.title")}" %>
+<%= render layout: "shared/auth" do %>
+  <%= render "shared/auth_title", zh: "重设密码", py: "Chóngshè mìmǎ", title: t("passwords.edit.title") %>
+  <%= form_with url: password_path(params[:token]), method: :put, class: "form" do |form| %>
+    <%= render "shared/password_field", form: form, name: :password, id: "new-password", autocomplete: "new-password", hint: t("registrations.new.password_hint"), error: @user.errors.messages_for(:password).first&.upcase_first do %>
+      <%= form.label :password, t("passwords.edit.password"), for: "new-password" %>
+    <% end %>
+    <%= render "shared/password_field", form: form, name: :password_confirmation, id: "confirm-password", autocomplete: "new-password", error: @user.errors.messages_for(:password_confirmation).first&.upcase_first do %>
+      <%= form.label :password_confirmation, t("passwords.edit.confirmation"), for: "confirm-password" %>
+    <% end %>
+    <%= form.submit t("passwords.edit.submit"), class: "btn btn--accent btn--block" %>
+  <% end %>
+<% end %>
