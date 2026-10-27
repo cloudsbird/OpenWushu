@@ -1,0 +1,52 @@
+<% content_for :title, "规定套路 · #{t(".title")}" %>
+<main class="container container--library">
+  <section class="lib-hero">
+    <div class="lib-hero__title">
+      <h1 class="vtitle">规定套路</h1>
+      <div class="lib-hero__text">
+        <p class="lib-hero__en"><%= t(".title") %></p>
+        <p class="py">Guīdìng tàolù</p>
+        <p class="lib-hero__lead"><%= t(".lead") %></p>
+      </div>
+    </div>
+    <%= form_with url: routines_path, method: :get, class: "search", role: "search" do |f| %>
+      <%= f.label :q, t(".search") %>
+      <div class="search__row">
+        <%= f.search_field :q, value: @query, class: "input", placeholder: t(".search_placeholder") %>
+        <%= f.submit t(".search_button"), name: nil, class: "btn btn--accent" %>
+      </div>
+    <% end %>
+  </section>
+
+  <% if @results %>
+    <section class="lib-section" aria-live="polite">
+      <h2 class="muted" style="font-size: 14px"><%= t(".results") %> · <%= @results.size %></h2>
+      <% if @results.empty? %>
+        <p class="muted"><%= t(".no_results") %></p>
+      <% end %>
+      <div class="results">
+        <% @results.each do |m| %>
+          <%= link_to routine_path(m.routine, m: m.number), class: "panel result" do %>
+            <span class="result__num"><%= m.number %></span>
+            <span style="display: flex; flex-direction: column">
+              <span class="zh" style="font-weight: 600; font-size: 17px"><%= m.name_zh %> <span class="py" style="font-size: 14px; font-weight: 400"><%= m.name_pinyin %></span></span>
+              <span class="muted" style="font-size: 13px"><%= m.name_tr %> · <%= m.routine.name_zh %></span>
+            </span>
+          <% end %>
+        <% end %>
+      </div>
+    </section>
+  <% end %>
+
+  <% RoutinesHelper::STYLE_NAMES.each do |style, (zh, py)| %>
+    <% next unless @routines[style] %>
+    <section class="lib-section">
+      <h2 class="heading heading--ruled"><span class="heading__zh"><%= zh %></span><span class="heading__tr"><%= py %> · <%= t("routines.styles.#{style}") %></span></h2>
+      <div class="cards <%= "cards--small" unless style == "taiji" %>">
+        <% @routines[style].each do |routine| %>
+          <%= render "card", routine: routine, cover: style == "taiji" %>
+        <% end %>
+      </div>
+    </section>
+  <% end %>
+</main>

@@ -1,0 +1,93 @@
+<% content_for :title, "#{@routine.name_zh} · #{@routine.name_tr}" %>
+<% total = @routine.duration_sec %>
+<% first = @selected || @movements.first %>
+<main class="container">
+  <%= render "header", routine: @routine, tab: :learn %>
+
+  <div class="grid4" data-controller="routine-player"
+       data-routine-player-moves-value="<%= @movements.map(&:player_data).to_json %>"
+       data-routine-player-total-value="<%= total %>"
+       data-routine-player-selected-value="<%= @selected&.number.to_i %>"
+       data-routine-player-start-value="<%= carpet_points(@routine, []).first.to_json %>"
+       data-routine-player-play-label-value="<%= t("routines.player.play") %>"
+       data-routine-player-pause-label-value="<%= t("routines.player.pause") %>"
+       data-action="figure-viewer:seek->routine-player#seekTo keydown.left@window->routine-player#prevKey keydown.right@window->routine-player#nextKey">
+
+    <div class="grid4__main">
+      <section class="panel player" aria-label="<%= t("routines.player.video") %>">
+        <div class="stage <%= "has-video" if @routine.video.attached? %>">
+          <% if @routine.video.attached? %>
+            <video data-routine-player-target="video" src="<%= url_for(@routine.video) %>" preload="metadata" playsinline></video>
+          <% end %>
+          <span class="stage__tag"><%= t("routines.player.sample_video") %></span>
+          <span class="stage__clock mono"><span data-routine-player-target="clock">0:00</span> / <%= clock(total) %></span>
+          <div class="stage__now" aria-live="polite">
+            <span class="stage__count">第<span data-routine-player-target="nowCn"><%= first.cn_number %></span>式 · <span data-routine-player-target="nowNum"><%= first.number %></span> / <%= @movements.size %></span>
+            <span class="stage__zh" data-routine-player-target="nowZh"><%= first.name_zh %></span>
+            <span class="stage__py" data-routine-player-target="nowPy"><%= first.name_pinyin %></span>
+            <span class="stage__tr" data-routine-player-target="nowTr"><%= first.name_tr %></span>
+          </div>
+          <button type="button" class="btn btn--accent btn--icon stage__play" data-routine-player-target="playButton" data-action="routine-player#toggle" aria-label="<%= t("routines.player.play") %>">
+            <svg data-routine-player-target="playIcon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3 L17 10 L6 17 Z" fill="currentColor"/></svg>
+            <svg data-routine-player-target="pauseIcon" hidden width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="3" width="4" height="14" fill="currentColor"/><rect x="12" y="3" width="4" height="14" fill="currentColor"/></svg>
+          </button>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__segs" role="group" aria-label="<%= t("routines.player.timeline") %>">
+            <% @movements.each do |m| %>
+              <% label = t("routines.player.seek", n: m.number, name: "#{m.name_zh} #{m.name_tr}", time: clock(m.start_sec)) %>
+              <button type="button" class="timeline__seg" style="flex-grow: <%= m.duration_sec %>" data-routine-player-target="segment" data-action="routine-player#select" data-n="<%= m.number %>" aria-label="<%= label %>" title="<%= label %>"><%= m.number %></button>
+            <% end %>
+          </div>
+          <div class="timeline__head" data-routine-player-target="playhead" aria-hidden="true"></div>
+        </div>
+
+        <div class="controls">
+          <button type="button" class="btn btn--icon" data-action="routine-player#prev" aria-label="<%= t("routines.player.prev") %>"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3 V15"/><path d="M14 3 L7 9 L14 15"/></svg></button>
+          <button type="button" class="btn btn--icon" data-action="routine-player#next" aria-label="<%= t("routines.player.next") %>"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3 V15"/><path d="M4 3 L11 9 L4 15"/></svg></button>
+          <button type="button" class="btn" data-routine-player-target="loopButton" data-action="routine-player#toggleLoop" aria-pressed="false"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9 A6 6 0 0 1 14 5.5"/><path d="M14 2 V6 H10"/><path d="M15 9 A6 6 0 0 1 4 12.5"/><path d="M4 16 V12 H8"/></svg><%= t("routines.player.loop") %></button>
+          <span class="controls__spacer"></span>
+          <span id="speed-label" class="controls__label"><%= t("routines.player.speed") %></span>
+          <div class="segmented" role="group" aria-labelledby="speed-label">
+            <% [ 0.5, 0.75, 1 ].each do |rate| %>
+              <button type="button" class="segmented__item" data-routine-player-target="speed" data-action="routine-player#setSpeed" data-rate="<%= rate %>" aria-pressed="<%= rate == 1 %>"><%= rate.to_s.sub(/\.0\z/, "") %>×</button>
+            <% end %>
+          </div>
+        </div>
+      </section>
+
+      <%= render "carpet", routine: @routine, movements: @movements, first: first %>
+    </div>
+
+    <aside class="panel side grid4__side">
+      <div data-routine-player-target="list" <%= "hidden" if @selected %>>
+        <div class="side__head">
+          <h2 class="heading"><span class="heading__zh">动作</span><span class="heading__tr">Dòngzuò · <%= t("routines.header.movements") %> (<%= @movements.size %>)</span></h2>
+        </div>
+        <ol class="move-list">
+          <% @movements.each_with_index do |m, i| %>
+            <li>
+              <% if i.zero? || @movements[i - 1].section != m.section %>
+                <div class="move-list__section"><%= m.section_name %></div>
+              <% end %>
+              <button type="button" class="move-row" data-routine-player-target="row" data-action="routine-player#open" data-n="<%= m.number %>">
+                <span class="move-row__num"><span class="move-row__cn"><%= m.cn_number %></span><span class="move-row__n"><%= m.number %></span></span>
+                <span class="move-row__names">
+                  <span class="move-row__zh"><%= m.name_zh %></span>
+                  <span class="move-row__py"><%= m.name_pinyin %></span>
+                  <span class="move-row__tr"><%= m.name_tr %></span>
+                </span>
+                <span class="move-row__time"><%= clock(m.start_sec) %></span>
+              </button>
+            </li>
+          <% end %>
+        </ol>
+      </div>
+
+      <% @movements.each do |m| %>
+        <%= render "detail", movement: m, total_count: @movements.size, open: m == @selected %>
+      <% end %>
+    </aside>
+  </div>
+</main>

@@ -1,0 +1,1436 @@
+{
+ "routine": {
+  "slug": "taiji-42",
+  "style": "taiji",
+  "name_zh": "四十二式太极拳",
+  "name_pinyin": "Sìshí'èr shì tàijíquán",
+  "name_en": "42-Form Competition Taijiquan",
+  "name_id": "42 Jurus Taijiquan Kompetisi",
+  "card_zh": "四二",
+  "status": "published",
+  "position": 1,
+  "reference_page": 596,
+  "reference_figure": "I",
+  "start_x": 2.8,
+  "start_y": 4.2
+ },
+ "movements": [
+  {
+   "number": 1,
+   "section": 1,
+   "name_zh": "起势",
+   "name_pinyin": "Qǐshì",
+   "name_en": "Commencing Form",
+   "name_id": "Sikap Pembuka",
+   "start_sec": 0,
+   "end_sec": 8,
+   "end_x": 3,
+   "end_y": 4.7,
+   "facing_en": "South (towards the judges)",
+   "facing_id": "Selatan (menghadap juri)",
+   "steps": {
+    "en": [
+     "Stand naturally with the feet together and the arms relaxed at the sides.",
+     "Step the left foot out lightly to shoulder width, toes pointing forward.",
+     "Raise both arms slowly forward to shoulder height, shoulder-width apart, elbows slightly bent.",
+     "Keep the upper body upright, bend the knees into a half squat and press both palms down in front of the abdomen."
+    ],
+    "id": [
+     "Berdiri wajar dengan kaki rapat dan lengan rileks di samping badan.",
+     "Langkahkan kaki kiri ke samping dengan ringan selebar bahu, ujung kaki ke depan.",
+     "Angkat kedua lengan perlahan ke depan setinggi bahu, selebar bahu, siku sedikit ditekuk.",
+     "Jaga badan atas tetap tegak, tekuk lutut setengah jongkok dan tekan kedua telapak ke bawah di depan perut."
+    ]
+   },
+   "key_points": {
+    "en": [
+     "When stepping out, lift the heel first, then the toes; put the toes down first, then the heel.",
+     "Head held up, chin slightly tucked; breathe naturally."
+    ],
+    "id": [
+     "Saat melangkah, angkat tumit dulu lalu ujung kaki; turunkan ujung kaki dulu lalu tumit.",
+     "Kepala tegak, dagu sedikit ditarik; bernapas secara alami."
+    ]
+   },
+   "mistakes": {
+    "en": [
+     "Raising the shoulders with the arms.",
+     "Leaning forward or sticking the hips out in the squat."
+    ],
+    "id": [
+     "Bahu ikut terangkat bersama lengan.",
+     "Badan condong atau pinggul menonjol saat jongkok."
+    ]
+   },
+   "reference": "Competition routines collection (scan), Taijiquan, p. 598–599, 图 I-1 to I-4",
+   "figures": [
+    {
+     "yaw": 0,
+     "j": [
+      [
+       0,
+       160,
+       0
+      ],
+      [
+       0,
+       145,
+       0
+      ],
+      [
+       18,
+       140,
+       0
+      ],
+      [
+       -18,
+       140,
+       0
+      ],
+      [
+       21,
+       112,
+       0
+      ],
+      [
+       -21,
+       112,
+       0
+      ],
+      [
+       22,
+       86,
+       2
+      ],
+      [
+       -22,
+       86,
+       2
+      ],
+      [
+       0,
+       95,
+       0
+      ],
+      [
+       9,
+       93,
+       0
+      ],
+      [
+       -9,
+       93,
+       0
+      ],
+      [
+       8,
+       51,
+       2
+      ],
+      [
+       -8,
+       51,
+       2
+      ],
+      [
+       7,
+       8,
+       0
+      ],
+      [
+       -7,
+       8,
+       0
+      ],
+      [
+       8,
+       2,
+       13
+      ],
+      [
+       -8,
+       2,
+       13
+      ]
+     ]
+    },
+    {
+     "yaw": 0,
+     "j": [
+      [
+       0,
+       160,
+       0
+      ],
+      [
+       0,
+       145,
+       0
+      ],
+      [
+       18,
+       140,
+       0
+      ],
+      [
+       -18,
+       140,
+       0
+      ],
+      [
+       21,
+       112,
+       0
+      ],
+      [
+       -21,
+       112,
+       0
+      ],
+      [
+       22,
+       86,
+       2
+      ],
+      [
+       -22,
+       86,
+       2
+      ],
+      [
+       0,
+       95,
+       0
+      ],
+      [
+       9,
+       93,
+       0
+      ],
+      [
+       -9,
+       93,
+       0
+      ],
+      [
+       17,
+       51,
+       2
+      ],
+      [
+       -8,
+       51,
+       2
+      ],
+      [
+       19,
+       8,
+       0
+      ],
+      [
+       -7,
+       8,
+       0
+      ],
+      [
+       20,
+       2,
+       13
+      ],
+      [
+       -8,
+       2,
+       13
+      ]
+     ]
+    },
+    {
+     "yaw": 0,
+     "j": [
+      [
+       0,
+       160,
+       0
+      ],
+      [
+       0,
+       145,
+       0
+      ],
+      [
+       18,
+       140,
+       0
+      ],
+      [
+       -18,
+       140,
+       0
+      ],
+      [
+       19,
+       133,
+       22
+      ],
+      [
+       -19,
+       133,
+       22
+      ],
+      [
+       18,
+       137,
+       48
+      ],
+      [
+       -18,
+       137,
+       48
+      ],
+      [
+       0,
+       95,
+       0
+      ],
+      [
+       9,
+       93,
+       0
+      ],
+      [
+       -9,
+       93,
+       0
+      ],
+      [
+       17,
+       51,
+       2
+      ],
+      [
+       -8,
+       51,
+       2
+      ],
+      [
+       19,
+       8,
+       0
+      ],
+      [
+       -7,
+       8,
+       0
+      ],
+      [
+       20,
+       2,
+       13
+      ],
+      [
+       -8,
+       2,
+       13
+      ]
+     ]
+    },
+    {
+     "yaw": 0,
+     "j": [
+      [
+       0,
+       146,
+       -3
+      ],
+      [
+       0,
+       131,
+       -3
+      ],
+      [
+       18,
+       126,
+       -3
+      ],
+      [
+       -18,
+       126,
+       -3
+      ],
+      [
+       22,
+       106,
+       12
+      ],
+      [
+       -22,
+       106,
+       12
+      ],
+      [
+       18,
+       93,
+       28
+      ],
+      [
+       -18,
+       93,
+       28
+      ],
+      [
+       0,
+       81,
+       -6
+      ],
+      [
+       9,
+       79,
+       -6
+      ],
+      [
+       -9,
+       79,
+       -6
+      ],
+      [
+       18,
+       43,
+       12
+      ],
+      [
+       -8,
+       43,
+       12
+      ],
+      [
+       19,
+       8,
+       0
+      ],
+      [
+       -7,
+       8,
+       0
+      ],
+      [
+       20,
+       2,
+       13
+      ],
+      [
+       -8,
+       2,
+       13
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "number": 2,
+   "section": 1,
+   "name_zh": "右揽雀尾",
+   "name_pinyin": "Yòu lǎn què wěi",
+   "name_en": "Grasp the Bird’s Tail (Right)",
+   "name_id": "Menangkap Ekor Burung (Kanan)",
+   "start_sec": 8,
+   "end_sec": 18,
+   "end_x": 3.2,
+   "end_y": 5.3,
+   "facing_en": "[to be filled in from the reference]",
+   "facing_id": "[diisi dari referensi]",
+   "steps": {
+    "en": [
+     "Turn the right toes slightly out and the body slightly right. Bend the right arm in front of the chest, palm down; circle the left hand to the right of the abdomen, palm up, as if holding a ball. Shift the weight onto the right leg and draw the left foot beside the right foot.",
+     "Turn the body slightly left and step the left foot forward to the left, placing the heel down lightly.",
+     "Keep turning left into a left bow stance. The left arm wards off forward, left hand at shoulder height; the right hand drops beside the right hip, palm down.",
+     "Turn slightly left and draw the right foot beside the left foot. Bend the left arm in front of the chest, palm down, and circle the right hand to the left of the abdomen, palm up: holding a ball on the left."
+    ],
+    "id": [
+     "Putar ujung kaki kanan sedikit keluar dan badan sedikit ke kanan. Tekuk lengan kanan di depan dada, telapak menghadap bawah; lingkarkan tangan kiri ke sisi kanan perut, telapak menghadap atas, seperti memeluk bola. Pindahkan berat badan ke kaki kanan dan tarik kaki kiri ke samping kaki kanan.",
+     "Putar badan sedikit ke kiri dan langkahkan kaki kiri ke depan kiri, tumit menyentuh lantai dengan ringan.",
+     "Terus berputar ke kiri menjadi kuda-kuda busur kiri. Lengan kiri menangkis ke depan, tangan kiri setinggi bahu; tangan kanan turun di samping pinggul kanan, telapak menghadap bawah.",
+     "Putar sedikit ke kiri dan tarik kaki kanan ke samping kaki kiri. Tekuk lengan kiri di depan dada, telapak menghadap bawah, dan lingkarkan tangan kanan ke sisi kiri perut, telapak menghadap atas: memeluk bola di kiri."
+    ]
+   },
+   "key_points": {
+    "en": [
+     "Turn from the waist; the arms follow the body.",
+     "Keep the shoulders and elbows sunk (沉肩坠肘 chén jiān zhuì zhǒu).",
+     "Shift the weight fully before stepping."
+    ],
+    "id": [
+     "Putar dari pinggang; lengan mengikuti badan.",
+     "Bahu dan siku tetap turun (沉肩坠肘 chén jiān zhuì zhǒu).",
+     "Pindahkan berat badan sepenuhnya sebelum melangkah."
+    ]
+   },
+   "mistakes": {
+    "en": [
+     "Ward-off arm too straight or too low.",
+     "Leaning forward in the bow stance.",
+     "Stepping before the weight has shifted."
+    ],
+    "id": [
+     "Lengan menangkis terlalu lurus atau terlalu rendah.",
+     "Badan condong ke depan saat kuda-kuda busur.",
+     "Melangkah sebelum berat badan berpindah."
+    ]
+   },
+   "reference": "Competition routines collection (scan), Taijiquan, p. 599, 图 I-5 to I-8",
+   "figures": [
+    {
+     "yaw": -30,
+     "j": [
+      [
+       -2,
+       154,
+       0
+      ],
+      [
+       -2,
+       139,
+       0
+      ],
+      [
+       16,
+       134,
+       0
+      ],
+      [
+       -20,
+       134,
+       0
+      ],
+      [
+       12,
+       108,
+       12
+      ],
+      [
+       -27,
+       122,
+       14
+      ],
+      [
+       -6,
+       100,
+       22
+      ],
+      [
+       -8,
+       124,
+       26
+      ],
+      [
+       -4,
+       88,
+       0
+      ],
+      [
+       5,
+       86,
+       0
+      ],
+      [
+       -13,
+       86,
+       0
+      ],
+      [
+       0,
+       48,
+       10
+      ],
+      [
+       -13,
+       47,
+       10
+      ],
+      [
+       -3,
+       12,
+       -2
+      ],
+      [
+       -12,
+       8,
+       0
+      ],
+      [
+       -2,
+       3,
+       10
+      ],
+      [
+       -14,
+       2,
+       13
+      ]
+     ]
+    },
+    {
+     "yaw": -10,
+     "j": [
+      [
+       -2,
+       154,
+       0
+      ],
+      [
+       -2,
+       139,
+       0
+      ],
+      [
+       16,
+       134,
+       0
+      ],
+      [
+       -20,
+       134,
+       0
+      ],
+      [
+       12,
+       108,
+       12
+      ],
+      [
+       -27,
+       122,
+       14
+      ],
+      [
+       -6,
+       100,
+       22
+      ],
+      [
+       -8,
+       124,
+       26
+      ],
+      [
+       -4,
+       88,
+       0
+      ],
+      [
+       5,
+       86,
+       0
+      ],
+      [
+       -13,
+       86,
+       0
+      ],
+      [
+       12,
+       50,
+       20
+      ],
+      [
+       -13,
+       47,
+       10
+      ],
+      [
+       17,
+       10,
+       36
+      ],
+      [
+       -12,
+       8,
+       0
+      ],
+      [
+       19,
+       13,
+       48
+      ],
+      [
+       -14,
+       2,
+       13
+      ]
+     ]
+    },
+    {
+     "yaw": 0,
+     "j": [
+      [
+       4,
+       145,
+       14
+      ],
+      [
+       4,
+       130,
+       14
+      ],
+      [
+       22,
+       126,
+       14
+      ],
+      [
+       -14,
+       126,
+       14
+      ],
+      [
+       27,
+       120,
+       36
+      ],
+      [
+       -20,
+       104,
+       16
+      ],
+      [
+       7,
+       125,
+       50
+      ],
+      [
+       -18,
+       84,
+       22
+      ],
+      [
+       4,
+       84,
+       14
+      ],
+      [
+       13,
+       82,
+       14
+      ],
+      [
+       -5,
+       82,
+       14
+      ],
+      [
+       17,
+       46,
+       36
+      ],
+      [
+       -11,
+       46,
+       -2
+      ],
+      [
+       18,
+       8,
+       40
+      ],
+      [
+       -18,
+       8,
+       -20
+      ],
+      [
+       20,
+       2,
+       53
+      ],
+      [
+       -26,
+       2,
+       -11
+      ]
+     ]
+    },
+    {
+     "yaw": 20,
+     "j": [
+      [
+       6,
+       150,
+       24
+      ],
+      [
+       6,
+       135,
+       24
+      ],
+      [
+       24,
+       130,
+       24
+      ],
+      [
+       -12,
+       130,
+       24
+      ],
+      [
+       30,
+       120,
+       38
+      ],
+      [
+       -6,
+       106,
+       36
+      ],
+      [
+       10,
+       122,
+       48
+      ],
+      [
+       10,
+       98,
+       44
+      ],
+      [
+       6,
+       86,
+       24
+      ],
+      [
+       15,
+       84,
+       24
+      ],
+      [
+       -3,
+       84,
+       24
+      ],
+      [
+       18,
+       46,
+       34
+      ],
+      [
+       2,
+       47,
+       34
+      ],
+      [
+       18,
+       8,
+       40
+      ],
+      [
+       4,
+       12,
+       28
+      ],
+      [
+       20,
+       2,
+       53
+      ],
+      [
+       6,
+       3,
+       40
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "number": 3,
+   "section": 1,
+   "name_zh": "左单鞭",
+   "name_pinyin": "Zuǒ dān biān",
+   "name_en": "Single Whip (Left)",
+   "name_id": "Cambuk Tunggal (Kiri)",
+   "start_sec": 18,
+   "end_sec": 25,
+   "end_x": 3.5,
+   "end_y": 5.8
+  },
+  {
+   "number": 4,
+   "section": 1,
+   "name_zh": "提手",
+   "name_pinyin": "Tí shǒu",
+   "name_en": "Raise Hands",
+   "name_id": "Mengangkat Tangan",
+   "start_sec": 25,
+   "end_sec": 31,
+   "end_x": 3.8,
+   "end_y": 6.2
+  },
+  {
+   "number": 5,
+   "section": 1,
+   "name_zh": "白鹤亮翅",
+   "name_pinyin": "Báihè liàng chì",
+   "name_en": "White Crane Spreads Its Wings",
+   "name_id": "Bangau Putih Membentangkan Sayap",
+   "start_sec": 31,
+   "end_sec": 37,
+   "end_x": 4.2,
+   "end_y": 6.3
+  },
+  {
+   "number": 6,
+   "section": 1,
+   "name_zh": "搂膝拗步",
+   "name_pinyin": "Lōu xī ào bù",
+   "name_en": "Brush Knee and Twist Step",
+   "name_id": "Menyapu Lutut dan Melangkah",
+   "start_sec": 37,
+   "end_sec": 45,
+   "end_x": 4.5,
+   "end_y": 6.1
+  },
+  {
+   "number": 7,
+   "section": 1,
+   "name_zh": "撇身捶",
+   "name_pinyin": "Piē shēn chuí",
+   "name_en": "Turn Body and Strike",
+   "name_id": "Memutar Badan dan Memukul",
+   "start_sec": 45,
+   "end_sec": 52,
+   "end_x": 4.8,
+   "end_y": 5.7
+  },
+  {
+   "number": 8,
+   "section": 1,
+   "name_zh": "捋挤势",
+   "name_pinyin": "Lǚ jǐ shì",
+   "name_en": "Roll Back and Press",
+   "name_id": "Menarik dan Mendorong",
+   "start_sec": 52,
+   "end_sec": 61,
+   "end_x": 5.2,
+   "end_y": 5.3
+  },
+  {
+   "number": 9,
+   "section": 1,
+   "name_zh": "进步搬拦捶",
+   "name_pinyin": "Jìnbù bān lán chuí",
+   "name_en": "Step Forward, Deflect, Parry and Punch",
+   "name_id": "Maju, Menangkis, Menghadang dan Memukul",
+   "start_sec": 61,
+   "end_sec": 70,
+   "end_x": 5.7,
+   "end_y": 4.9
+  },
+  {
+   "number": 10,
+   "section": 1,
+   "name_zh": "如封似闭",
+   "name_pinyin": "Rú fēng sì bì",
+   "name_en": "Apparent Close-Up",
+   "name_id": "Seolah Menutup",
+   "start_sec": 70,
+   "end_sec": 77,
+   "end_x": 6.2,
+   "end_y": 4.7
+  },
+  {
+   "number": 11,
+   "section": 2,
+   "name_zh": "开合手",
+   "name_pinyin": "Kāi hé shǒu",
+   "name_en": "Open and Close Hands",
+   "name_id": "Tangan Membuka dan Menutup",
+   "start_sec": 77,
+   "end_sec": 83,
+   "end_x": 6.8,
+   "end_y": 4.4
+  },
+  {
+   "number": 12,
+   "section": 2,
+   "name_zh": "右单鞭",
+   "name_pinyin": "Yòu dān biān",
+   "name_en": "Single Whip (Right)",
+   "name_id": "Cambuk Tunggal (Kanan)",
+   "start_sec": 83,
+   "end_sec": 90,
+   "end_x": 7.5,
+   "end_y": 4.2
+  },
+  {
+   "number": 13,
+   "section": 2,
+   "name_zh": "肘底捶",
+   "name_pinyin": "Zhǒu dǐ chuí",
+   "name_en": "Fist Under Elbow",
+   "name_id": "Kepalan di Bawah Siku",
+   "start_sec": 90,
+   "end_sec": 97,
+   "end_x": 8.2,
+   "end_y": 3.9
+  },
+  {
+   "number": 14,
+   "section": 2,
+   "name_zh": "转身推掌",
+   "name_pinyin": "Zhuǎnshēn tuī zhǎng",
+   "name_en": "Turn and Push Palm",
+   "name_id": "Berbalik dan Mendorong Telapak",
+   "start_sec": 97,
+   "end_sec": 105,
+   "end_x": 8.9,
+   "end_y": 3.5
+  },
+  {
+   "number": 15,
+   "section": 2,
+   "name_zh": "玉女穿梭",
+   "name_pinyin": "Yùnǚ chuān suō",
+   "name_en": "Fair Lady Works the Shuttles",
+   "name_id": "Gadis Menenun",
+   "start_sec": 105,
+   "end_sec": 115,
+   "end_x": 9.5,
+   "end_y": 3.1
+  },
+  {
+   "number": 16,
+   "section": 2,
+   "name_zh": "左右蹬脚",
+   "name_pinyin": "Zuǒyòu dēng jiǎo",
+   "name_en": "Left and Right Heel Kicks",
+   "name_id": "Tendangan Tumit Kiri dan Kanan",
+   "start_sec": 115,
+   "end_sec": 125,
+   "end_x": 10.1,
+   "end_y": 2.8
+  },
+  {
+   "number": 17,
+   "section": 2,
+   "name_zh": "掩手肱捶",
+   "name_pinyin": "Yǎn shǒu gōng chuí",
+   "name_en": "Hidden-Hand Punch",
+   "name_id": "Pukulan Tangan Tersembunyi",
+   "start_sec": 125,
+   "end_sec": 133,
+   "end_x": 10.6,
+   "end_y": 2.8
+  },
+  {
+   "number": 18,
+   "section": 2,
+   "name_zh": "野马分鬃",
+   "name_pinyin": "Yěmǎ fēn zōng",
+   "name_en": "Part the Wild Horse’s Mane",
+   "name_id": "Membelah Surai Kuda Liar",
+   "start_sec": 133,
+   "end_sec": 142,
+   "end_x": 11,
+   "end_y": 3
+  },
+  {
+   "number": 19,
+   "section": 3,
+   "name_zh": "云手",
+   "name_pinyin": "Yún shǒu",
+   "name_en": "Cloud Hands",
+   "name_id": "Tangan Awan",
+   "start_sec": 142,
+   "end_sec": 152,
+   "end_x": 11.2,
+   "end_y": 3.4
+  },
+  {
+   "number": 20,
+   "section": 3,
+   "name_zh": "独立打虎",
+   "name_pinyin": "Dúlì dǎ hǔ",
+   "name_en": "Stand on One Leg and Strike the Tiger",
+   "name_id": "Berdiri Satu Kaki Memukul Harimau",
+   "start_sec": 152,
+   "end_sec": 160,
+   "end_x": 11.3,
+   "end_y": 4
+  },
+  {
+   "number": 21,
+   "section": 3,
+   "name_zh": "右分脚",
+   "name_pinyin": "Yòu fēn jiǎo",
+   "name_en": "Right Separate Kick",
+   "name_id": "Tendangan Pisah Kanan",
+   "start_sec": 160,
+   "end_sec": 167,
+   "end_x": 11.3,
+   "end_y": 4.6
+  },
+  {
+   "number": 22,
+   "section": 3,
+   "name_zh": "双峰贯耳",
+   "name_pinyin": "Shuāng fēng guàn ěr",
+   "name_en": "Strike the Ears with Both Fists",
+   "name_id": "Dua Puncak Menembus Telinga",
+   "start_sec": 167,
+   "end_sec": 174,
+   "end_x": 11.1,
+   "end_y": 5
+  },
+  {
+   "number": 23,
+   "section": 3,
+   "name_zh": "左分脚",
+   "name_pinyin": "Zuǒ fēn jiǎo",
+   "name_en": "Left Separate Kick",
+   "name_id": "Tendangan Pisah Kiri",
+   "start_sec": 174,
+   "end_sec": 181,
+   "end_x": 10.9,
+   "end_y": 5.3
+  },
+  {
+   "number": 24,
+   "section": 3,
+   "name_zh": "转身拍脚",
+   "name_pinyin": "Zhuǎnshēn pāi jiǎo",
+   "name_en": "Turn and Slap Foot",
+   "name_id": "Berbalik dan Menepuk Kaki",
+   "start_sec": 181,
+   "end_sec": 188,
+   "end_x": 10.6,
+   "end_y": 5.4
+  },
+  {
+   "number": 25,
+   "section": 3,
+   "name_zh": "进步栽捶",
+   "name_pinyin": "Jìnbù zāi chuí",
+   "name_en": "Step Forward and Punch Down",
+   "name_id": "Maju dan Memukul ke Bawah",
+   "start_sec": 188,
+   "end_sec": 195,
+   "end_x": 10.3,
+   "end_y": 5.5
+  },
+  {
+   "number": 26,
+   "section": 3,
+   "name_zh": "斜飞势",
+   "name_pinyin": "Xié fēi shì",
+   "name_en": "Diagonal Flying",
+   "name_id": "Terbang Menyamping",
+   "start_sec": 195,
+   "end_sec": 203,
+   "end_x": 10,
+   "end_y": 5.7
+  },
+  {
+   "number": 27,
+   "section": 3,
+   "name_zh": "单鞭下势",
+   "name_pinyin": "Dān biān xià shì",
+   "name_en": "Single Whip, Push Down",
+   "name_id": "Cambuk Tunggal, Sikap Rendah",
+   "start_sec": 203,
+   "end_sec": 212,
+   "end_x": 9.7,
+   "end_y": 5.8
+  },
+  {
+   "number": 28,
+   "section": 3,
+   "name_zh": "金鸡独立",
+   "name_pinyin": "Jīnjī dúlì",
+   "name_en": "Golden Rooster Stands on One Leg",
+   "name_id": "Ayam Emas Berdiri Satu Kaki",
+   "start_sec": 212,
+   "end_sec": 220,
+   "end_x": 9.3,
+   "end_y": 5.9
+  },
+  {
+   "number": 29,
+   "section": 3,
+   "name_zh": "退步穿掌",
+   "name_pinyin": "Tuìbù chuān zhǎng",
+   "name_en": "Step Back and Thread Palm",
+   "name_id": "Mundur dan Menusuk Telapak",
+   "start_sec": 220,
+   "end_sec": 227,
+   "end_x": 9,
+   "end_y": 5.9
+  },
+  {
+   "number": 30,
+   "section": 4,
+   "name_zh": "虚步压掌",
+   "name_pinyin": "Xūbù yā zhǎng",
+   "name_en": "Empty Stance, Press Palm",
+   "name_id": "Kuda-kuda Kosong, Menekan Telapak",
+   "start_sec": 227,
+   "end_sec": 234,
+   "end_x": 8.5,
+   "end_y": 5.7
+  },
+  {
+   "number": 31,
+   "section": 4,
+   "name_zh": "独立托掌",
+   "name_pinyin": "Dúlì tuō zhǎng",
+   "name_en": "Stand on One Leg, Lift Palm",
+   "name_id": "Berdiri Satu Kaki, Mengangkat Telapak",
+   "start_sec": 234,
+   "end_sec": 241,
+   "end_x": 8.1,
+   "end_y": 5.3
+  },
+  {
+   "number": 32,
+   "section": 4,
+   "name_zh": "马步靠",
+   "name_pinyin": "Mǎbù kào",
+   "name_en": "Horse Stance Shoulder Strike",
+   "name_id": "Kuda-kuda Menyerang Bahu",
+   "start_sec": 241,
+   "end_sec": 248,
+   "end_x": 7.5,
+   "end_y": 4.7
+  },
+  {
+   "number": 33,
+   "section": 4,
+   "name_zh": "转身大捋",
+   "name_pinyin": "Zhuǎnshēn dà lǚ",
+   "name_en": "Turn and Large Roll Back",
+   "name_id": "Berbalik dan Menarik Besar",
+   "start_sec": 248,
+   "end_sec": 256,
+   "end_x": 6.9,
+   "end_y": 4
+  },
+  {
+   "number": 34,
+   "section": 4,
+   "name_zh": "歇步擒打",
+   "name_pinyin": "Xiēbù qín dǎ",
+   "name_en": "Rest Stance, Seize and Strike",
+   "name_id": "Kuda-kuda Duduk, Menangkap dan Memukul",
+   "start_sec": 256,
+   "end_sec": 264,
+   "end_x": 6.2,
+   "end_y": 3.5
+  },
+  {
+   "number": 35,
+   "section": 4,
+   "name_zh": "穿掌下势",
+   "name_pinyin": "Chuān zhǎng xià shì",
+   "name_en": "Thread Palm, Push Down",
+   "name_id": "Menusuk Telapak, Sikap Rendah",
+   "start_sec": 264,
+   "end_sec": 272,
+   "end_x": 5.5,
+   "end_y": 3.1
+  },
+  {
+   "number": 36,
+   "section": 4,
+   "name_zh": "上步七星",
+   "name_pinyin": "Shàngbù qī xīng",
+   "name_en": "Step Up to Seven Stars",
+   "name_id": "Maju ke Tujuh Bintang",
+   "start_sec": 272,
+   "end_sec": 279,
+   "end_x": 4.8,
+   "end_y": 3
+  },
+  {
+   "number": 37,
+   "section": 4,
+   "name_zh": "退步跨虎",
+   "name_pinyin": "Tuìbù kuà hǔ",
+   "name_en": "Step Back to Ride the Tiger",
+   "name_id": "Mundur Menunggang Harimau",
+   "start_sec": 279,
+   "end_sec": 287,
+   "end_x": 4.1,
+   "end_y": 3.1
+  },
+  {
+   "number": 38,
+   "section": 4,
+   "name_zh": "转身摆莲",
+   "name_pinyin": "Zhuǎnshēn bǎi lián",
+   "name_en": "Turn and Lotus Kick",
+   "name_id": "Berbalik dan Tendangan Teratai",
+   "start_sec": 287,
+   "end_sec": 296,
+   "end_x": 3.6,
+   "end_y": 3.3
+  },
+  {
+   "number": 39,
+   "section": 4,
+   "name_zh": "弯弓射虎",
+   "name_pinyin": "Wān gōng shè hǔ",
+   "name_en": "Bend the Bow to Shoot the Tiger",
+   "name_id": "Melengkungkan Busur Memanah Harimau",
+   "start_sec": 296,
+   "end_sec": 304,
+   "end_x": 3.2,
+   "end_y": 3.4
+  },
+  {
+   "number": 40,
+   "section": 4,
+   "name_zh": "左揽雀尾",
+   "name_pinyin": "Zuǒ lǎn què wěi",
+   "name_en": "Grasp the Bird’s Tail (Left)",
+   "name_id": "Menangkap Ekor Burung (Kiri)",
+   "start_sec": 304,
+   "end_sec": 314,
+   "end_x": 2.9,
+   "end_y": 3.5
+  },
+  {
+   "number": 41,
+   "section": 4,
+   "name_zh": "十字手",
+   "name_pinyin": "Shízì shǒu",
+   "name_en": "Cross Hands",
+   "name_id": "Tangan Menyilang",
+   "start_sec": 314,
+   "end_sec": 320,
+   "end_x": 2.7,
+   "end_y": 3.6
+  },
+  {
+   "number": 42,
+   "section": 4,
+   "name_zh": "收势",
+   "name_pinyin": "Shōushì",
+   "name_en": "Closing Form",
+   "name_id": "Sikap Penutup",
+   "start_sec": 320,
+   "end_sec": 328,
+   "end_x": 2.7,
+   "end_y": 3.8
+  }
+ ],
+ "others": [
+  {
+   "slug": "changquan",
+   "style": "chang",
+   "name_zh": "长拳",
+   "name_pinyin": "Chángquán",
+   "name_en": "Changquan",
+   "name_id": "Changquan",
+   "reference_page": 1,
+   "reference_figure": "A",
+   "position": 10,
+   "status": "awaiting"
+  },
+  {
+   "slug": "broadsword",
+   "style": "chang",
+   "name_zh": "刀术",
+   "name_pinyin": "Dāoshù",
+   "name_en": "Broadsword",
+   "name_id": "Golok",
+   "reference_page": 69,
+   "reference_figure": "B",
+   "position": 11,
+   "status": "awaiting"
+  },
+  {
+   "slug": "straight-sword",
+   "style": "chang",
+   "name_zh": "剑术",
+   "name_pinyin": "Jiànshù",
+   "name_en": "Straight Sword",
+   "name_id": "Pedang",
+   "reference_page": 153,
+   "reference_figure": "C",
+   "position": 12,
+   "status": "awaiting"
+  },
+  {
+   "slug": "staff",
+   "style": "chang",
+   "name_zh": "棍术",
+   "name_pinyin": "Gùnshù",
+   "name_en": "Staff",
+   "name_id": "Toya",
+   "reference_page": 233,
+   "reference_figure": "D",
+   "position": 13,
+   "status": "awaiting"
+  },
+  {
+   "slug": "spear",
+   "style": "chang",
+   "name_zh": "枪术",
+   "name_pinyin": "Qiāngshù",
+   "name_en": "Spear",
+   "name_id": "Tombak",
+   "reference_page": 325,
+   "reference_figure": "E",
+   "position": 14,
+   "status": "awaiting"
+  },
+  {
+   "slug": "southern-fist",
+   "style": "nan",
+   "name_zh": "南拳",
+   "name_pinyin": "Nánquán",
+   "name_en": "Southern Fist",
+   "name_id": "Nanquan",
+   "reference_page": 420,
+   "reference_figure": "F",
+   "position": 15,
+   "status": "awaiting"
+  },
+  {
+   "slug": "southern-broadsword",
+   "style": "nan",
+   "name_zh": "南刀",
+   "name_pinyin": "Nándāo",
+   "name_en": "Southern Broadsword",
+   "name_id": "Golok Selatan",
+   "reference_page": 482,
+   "reference_figure": "G",
+   "position": 16,
+   "status": "awaiting"
+  },
+  {
+   "slug": "southern-staff",
+   "style": "nan",
+   "name_zh": "南棍",
+   "name_pinyin": "Nángùn",
+   "name_en": "Southern Staff",
+   "name_id": "Toya Selatan",
+   "reference_page": 535,
+   "reference_figure": "H",
+   "position": 17,
+   "status": "awaiting"
+  },
+  {
+   "slug": "taiji-sword-42",
+   "style": "taiji",
+   "name_zh": "四十二式太极剑",
+   "name_pinyin": "Sìshí'èr shì tàijíjiàn",
+   "name_en": "42-Form Competition Taiji Sword",
+   "name_id": "42 Jurus Pedang Taiji Kompetisi",
+   "card_zh": "剑",
+   "reference_page": 660,
+   "reference_figure": "J",
+   "position": 2,
+   "status": "in_progress"
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+# UI strings. Chinese labels (学习, 动作, 场地路线 …) are written next to these in the views
+# and never translated: Chinese is always shown, and the viewer picks English or Indonesian beside it.
+en:
+  lang_name: English
+  layout:
+    home: OpenWushu home
+    library: Library
+    translation: translation
+    translation_group: Translation language
+    footer: "OpenWushu · for educational purposes only. Content is community-maintained and may contain errors; always learn under a qualified coach."
+    license: Content licensed CC BY-SA 4.0
+    source_code: Source code on GitHub
+  routines:
+    index:
+      title: Compulsory routines
+      lead: An open, community-maintained study reference for standard wushu routines. Names are always kept in Chinese with pinyin; translations in English or Bahasa Indonesia.
+      search: Search routines and movements
+      search_placeholder: Try “lan que wei”, 揽雀尾 or “bird’s tail”
+      search_button: Search
+      results: Movements found
+      no_results: No matches yet.
+      in_progress: In progress
+      awaiting: Awaiting contributors
+      ref_short: Ref.
+      competition_routine: 竞赛套路
+    styles:
+      taiji: Taijiquan
+      chang: Changquan & weapons
+      nan: Southern styles
+    header:
+      breadcrumb: Breadcrumb
+      sections: Routine sections
+      summary: "%{count} movements · %{duration} · Competition routine · %{sections} sections"
+      learn: Learn
+      movements: Movements
+    count:
+      movements: "%{count} movements"
+    player:
+      video: Video
+      sample_video: No video uploaded yet · practice clock
+      play: Play
+      pause: Pause
+      prev: Previous movement
+      next: Next movement
+      loop: Loop movement
+      speed: Speed
+      timeline: Movement timeline
+      seek: "Movement %{n}: %{name}, starts at %{time}"
+    carpet:
+      title: Carpet path
+      illustrative: Illustrative path, not measured
+      front: Front (facing the judges)
+      judges_table: Judges’ table
+      judges: Judges
+      head_judge: Head judge
+      start: Start
+      done: Completed
+      current: Current
+      remaining: Remaining
+      aria: "Carpet path of %{routine}, current movement highlighted"
+    list:
+      all: All movements
+    detail:
+      play_this: Play this movement
+      figures: Illustrations
+      figures_hint: "Rendered from one 3D model: click a figure to enlarge it and jump the video there, or change the camera angle"
+      figure_made: Rendered from the OpenWushu 3D model
+      figure_placeholder: illustrative poses
+      camera: Camera
+      angle_front: Front
+      angle_34: ¾ view
+      angle_side: Side
+      no_figures: No illustrations yet. Verified contributors will be able to add them.
+      reference: Reference
+      draft: Draft · needs expert review
+      facing: Facing
+      steps: Steps
+      key_points: Key points
+      mistakes: Common mistakes
+      pending_title: Description not written yet
+      pending_body: The name and video timing are in place. Verified contributors will be able to write the steps, key points and common mistakes.
+    movements:
+      lead: Every movement in order, grouped by section. Select one to open it in Learn.
+      described: Described
+      open: Open in Learn

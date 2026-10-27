@@ -1,0 +1,25 @@
+<% content_for :title, "#{@routine.name_zh} · 动作名称" %>
+<main class="container">
+  <%= render "header", routine: @routine, tab: :movements %>
+  <p class="muted" style="margin: 0"><%= t("routines.movements.lead") %></p>
+  <% @movements.group_by(&:section).each do |section, moves| %>
+    <section class="index-section">
+      <h2 class="heading heading--ruled"><span class="heading__zh"><%= moves.first.section_name %></span><span class="heading__tr"><%= moves.first.number %>–<%= moves.last.number %></span></h2>
+      <ol class="index-grid">
+        <% moves.each do |m| %>
+          <li>
+            <%= link_to routine_path(@routine, m: m.number), class: "move-row", "aria-label": "#{m.number}. #{m.name_zh} #{m.name_pinyin} · #{t("routines.movements.open")}" do %>
+              <span class="move-row__num"><span class="move-row__cn"><%= m.cn_number %></span><span class="move-row__n"><%= m.number %></span></span>
+              <span class="move-row__names">
+                <span class="move-row__zh"><%= m.name_zh %></span>
+                <span class="move-row__py"><%= m.name_pinyin %></span>
+                <span class="move-row__tr"><%= m.name_tr %></span>
+              </span>
+              <span class="move-row__time"><%= clock(m.start_sec) %><% if m.described? %><br><span class="badge" title="<%= t("routines.movements.described") %>">✓</span><% end %></span>
+            <% end %>
+          </li>
+        <% end %>
+      </ol>
+    </section>
+  <% end %>
+</main>

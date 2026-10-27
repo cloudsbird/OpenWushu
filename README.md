@@ -23,6 +23,27 @@ OpenWushu is for **educational purposes only**. Content may contain errors; alwa
 
 The first design (screens, decisions, roles and an interactive prototype source) is in [`design/DESIGN.md`](design/DESIGN.md).
 
+## Development
+
+OpenWushu is a Ruby on Rails 8.1 app: SQLite with Solid Queue, Cache and Cable, Hotwire (Turbo and Stimulus) through import maps, and plain CSS. You need only Ruby, with no Node build step and no database server.
+
+```sh
+# Ruby 3.4.4 (see .ruby-version)
+bundle install
+bin/rails db:prepare db:seed   # 42-form Taijiquan plus the other routines from the reference book
+bin/dev                        # http://localhost:3000
+bin/rails test                 # model and integration tests
+bin/rubocop && bin/brakeman    # style and security checks
+```
+
+Where things are:
+
+- `app/models`: `Routine` and `Movement`. Chinese names are plain columns. `name_en` and `name_id` are the translations, and `name_tr` picks the one for the current locale.
+- `app/javascript/controllers/routine_player_controller.js`: keeps the video, timeline, carpet path and movement list in sync. Without an uploaded video it runs a practice clock.
+- `app/javascript/lib/figure3d.js`: draws the 图解 figures from 3D poses.
+- `config/locales/{en,id}.yml`: UI strings. Chinese labels stay in the views and are never translated.
+- `db/seeds/routines.json`: seed content. Movement names and order come from the reference book; descriptions are in our own words and cite its pages.
+
 ## License
 
 - **Code** is licensed under the [GNU Affero General Public License v3.0](LICENSE) (AGPL-3.0). You may use, study, change and share it. If you distribute a modified version, **or let people use a modified version over a network (for example, run it as a website)**, you must make its source available under AGPL-3.0 too.
