@@ -8,7 +8,7 @@
 <body>
 <x-dc>
 <helmet>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;family=Noto+Serif+SC:wght@500;600;700;900&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..800;1,400..700&amp;family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Ma+Shan+Zheng&amp;family=Noto+Sans+SC:wght@400;500;700&amp;family=Noto+Serif+SC:wght@500;600;700;900&amp;display=swap">
 <style>
 body{margin:0}
 a{color:#1766C7}a:hover{color:#0F4F9E}
@@ -18,13 +18,13 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 .ow-row:hover{filter:brightness(0.97)}
 </style>
 </helmet>
-<div style="min-height: 100vh; display: flex; flex-direction: column; background: {{t.bg}}; color: {{t.ink}}; font-family: 'IBM Plex Sans', 'Noto Sans SC', system-ui, sans-serif; font-size: 15px; line-height: 1.5">
+<div style="min-height: 100vh; display: flex; flex-direction: column; background: {{t.bg}}; color: {{t.ink}}; font-family: 'Alegreya Sans', 'Noto Sans SC', system-ui, sans-serif; font-size: 16px; line-height: 1.55">
 
 <header style="border-bottom: 3px double {{t.ink}}; background: {{t.surface}}">
 <div style="max-width: 1280px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px">
 <button type="button" class="ow-btn" onClick="{{goLibrary}}" aria-label="OpenWushu home" style="display: flex; align-items: center; gap: 10px; min-height: 44px">
-<span aria-hidden="true" style="display: flex; flex-direction: column; width: 38px; height: 38px; box-sizing: border-box; align-items: center; justify-content: center; background: {{t.seal}}; color: #FFFFFF; outline: 2px solid {{t.seal}}; outline-offset: 2px; font-family: 'Noto Serif SC', serif; font-size: 14px; line-height: 1.05; font-weight: 900"><span>武</span><span>术</span></span>
-<span style="display: flex; flex-direction: column; line-height: 1.1; margin-left: 4px"><span style="font-family: 'Source Serif 4', serif; font-weight: 700; font-size: 21px">OpenWushu</span><span style="font-size: 11px; letter-spacing: 0.24em; color: {{t.muted}}">开放武术</span></span>
+<span aria-hidden="true" style="display: flex; flex-direction: column; width: 38px; height: 38px; box-sizing: border-box; align-items: center; justify-content: center; background: {{t.seal}}; color: #FFFFFF; outline: 2px solid {{t.seal}}; outline-offset: 2px; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 17px; line-height: 1; font-weight: 400"><span>武</span><span>术</span></span>
+<span style="display: flex; flex-direction: column; line-height: 1.1; margin-left: 4px"><span style="font-family: 'Alegreya', serif; font-weight: 700; font-size: 21px">OpenWushu</span><span style="font-size: 11px; letter-spacing: 0.24em; color: {{t.muted}}">开放武术</span></span>
 </button>
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px; flex: 1 1 auto">
 <button type="button" class="ow-btn" onClick="{{goLibrary}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 500; background: {{navLibBg}}; color: {{navLibFg}}">{{s.library}}</button>
@@ -46,7 +46,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </sc-if>
 <sc-if value="{{signedIn}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; align-items: center; gap: 10px">
-<span aria-hidden="true" style="width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{userInitial}}</span>
+<span aria-hidden="true" style="width: 36px; height: 36px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{userInitial}}</span>
 <span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-weight: 600; font-size: 14px">{{userName}}</span><span style="font-size: 12px; font-weight: 500; color: {{userRoleFg}}">{{userRole}}</span></span>
 <button type="button" class="ow-btn" onClick="{{signOut}}" style="min-height: 44px; padding: 0 12px; border-radius: 0; font-size: 14px; font-weight: 600; color: {{t.muted}}">{{s.signOut}}</button>
 </div>
@@ -65,9 +65,9 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 <p style="margin: 0; font-size: 15px">{{s.panelLead}}</p>
 <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 14px">
-<li style="display: flex; gap: 10px; align-items: flex-start"><span style="flex: none; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; background: rgba(6,21,43,0.12)">1</span><span>{{s.rVisitor}}</span></li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><span style="flex: none; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; background: rgba(6,21,43,0.12)">2</span><span>{{s.rMember}}</span></li>
-<li style="display: flex; gap: 10px; align-items: flex-start"><span style="flex: none; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; background: rgba(6,21,43,0.12)">3</span><span>{{s.rContrib}}</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><span style="flex: none; width: 24px; height: 24px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; background: rgba(6,21,43,0.12)">1</span><span>{{s.rVisitor}}</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><span style="flex: none; width: 24px; height: 24px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; background: rgba(6,21,43,0.12)">2</span><span>{{s.rMember}}</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><span style="flex: none; width: 24px; height: 24px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; background: rgba(6,21,43,0.12)">3</span><span>{{s.rContrib}}</span></li>
 </ul>
 </section>
 
@@ -145,7 +145,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </sc-if>
 
 <sc-if value="{{isVerify}}" hint-placeholder-val="{{ false }}">
-<span aria-hidden="true" style="display: flex; width: 56px; height: 56px; border-radius: 50%; align-items: center; justify-content: center; background: {{t.accentSoft}}; color: {{t.accentInk}}"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="6" width="20" height="14" rx="2"></rect><path d="M3 8 L13 15 L23 8"></path></svg></span>
+<span aria-hidden="true" style="display: flex; width: 56px; height: 56px; border-radius: 0; align-items: center; justify-content: center; background: {{t.accentSoft}}; color: {{t.accentInk}}"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="6" width="20" height="14" rx="2"></rect><path d="M3 8 L13 15 L23 8"></path></svg></span>
 <h1 style="margin: 0; font-size: 28px">{{s.verifyTitle}}</h1>
 <p style="margin: 0; color: {{t.muted}}">{{s.verifyBody}} <span style="font-weight: 600; color: {{t.ink}}">{{suEmail}}</span>{{s.verifyBody2}}</p>
 <div style="display: flex; flex-wrap: wrap; gap: 8px">
@@ -162,10 +162,10 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <main style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 40px">
 <section style="display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-end">
 <div style="flex: 1 1 420px; display: flex; gap: 24px; align-items: stretch">
-<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Noto Serif SC', serif; font-size: 44px; line-height: 1; letter-spacing: 0.14em; font-weight: 900; padding-left: 16px; border-left: 4px solid {{t.accent}}">规定套路</h1>
+<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 44px; line-height: 1; letter-spacing: 0.14em; font-weight: 400; padding-left: 16px; border-left: 4px solid {{t.accent}}">规定套路</h1>
 <div style="display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; min-width: 0">
-<p style="margin: 0; font-family: 'Source Serif 4', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.libTitle}}</p>
-<p style="margin: 0; font-size: 15px; letter-spacing: 0.04em; color: {{t.muted}}">Guīdìng tàolù</p>
+<p style="margin: 0; font-family: 'Alegreya', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.libTitle}}</p>
+<p style="margin: 0; font-family: 'Alegreya', serif; font-style: italic; font-size: 18px; color: {{t.muted}}">Guīdìng tàolù</p>
 <p style="margin: 8px 0 0; max-width: 560px; color: {{t.muted}}">{{s.libLead}}</p>
 </div>
 </div>
@@ -186,7 +186,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <button type="button" class="ow-btn ow-row" onClick="{{r.pick}}" style="display: flex; gap: 12px; align-items: center; min-height: 56px; padding: 10px 14px; border-radius: 0; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}; background: {{t.surface}}">
 <span style="font-size: 13px; font-weight: 700; color: {{t.accentInk}}; min-width: 22px">{{r.num}}</span>
 <span style="display: flex; flex-direction: column">
-<span style="font-family: 'Noto Serif SC', serif; font-weight: 600; font-size: 17px">{{r.zh}} <span style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 400; font-size: 14px; color: {{t.muted}}">{{r.py}}</span></span>
+<span style="font-family: 'Noto Serif SC', serif; font-weight: 600; font-size: 17px">{{r.zh}} <span style="font-family: 'Alegreya', serif; font-style: italic; font-weight: 400; font-size: 14px; color: {{t.muted}}">{{r.py}}</span></span>
 <span style="font-size: 13px; color: {{t.muted}}">{{r.tr}} · 24式</span>
 </span>
 </button>
@@ -253,7 +253,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
 <div style="display: flex; gap: 18px; align-items: stretch">
-<span aria-hidden="true" style="writing-mode: vertical-rl; font-family: 'Noto Serif SC', serif; font-size: 20px; line-height: 1; letter-spacing: 0.14em; font-weight: 900; padding-left: 10px; border-left: 4px solid {{t.accent}}">太极拳</span>
+<span aria-hidden="true" style="writing-mode: vertical-rl; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 20px; line-height: 1; letter-spacing: 0.14em; font-weight: 400; padding-left: 10px; border-left: 4px solid {{t.accent}}">太极拳</span>
 <div style="display: flex; flex-direction: column; gap: 2px">
 <h1 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 36px; line-height: 1.2; font-weight: 700">二十四式简化太极拳</h1>
 <p style="margin: 0; font-size: 16px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán · <span style="color: {{t.ink}}; font-weight: 600">{{s.r24}}</span></p>
@@ -277,10 +277,10 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; padding: 0 24px">
 <span style="font-size: 13px; letter-spacing: 0.12em; color: #A9BAD3; font-weight: 600">第{{active.cn}}式 · {{active.num}} / 24</span>
 <span style="font-family: 'Noto Serif SC', serif; font-size: 56px; line-height: 1.15; font-weight: 700; color: #FFFFFF">{{active.zh}}</span>
-<span style="font-size: 20px; color: #DCE6F5">{{active.py}}</span>
+<span style="font-family: 'Alegreya', serif; font-style: italic; font-size: 20px; color: #DCE6F5">{{active.py}}</span>
 <span style="font-size: 15px; color: #A9BAD3">{{active.tr}}</span>
 </div>
-<button type="button" class="ow-btn" onClick="{{togglePlay}}" aria-label="{{playLabel}}" style="position: absolute; left: 14px; bottom: 14px; width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: {{t.accent}}; color: {{t.onAccent}}">
+<button type="button" class="ow-btn" onClick="{{togglePlay}}" aria-label="{{playLabel}}" style="position: absolute; left: 14px; bottom: 14px; width: 52px; height: 52px; border-radius: 0; display: flex; align-items: center; justify-content: center; background: {{t.accent}}; color: {{t.onAccent}}">
 <sc-if value="{{playing}}" hint-placeholder-val="{{ false }}"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="3" width="4" height="14" rx="1" fill="currentColor"></rect><rect x="12" y="3" width="4" height="14" rx="1" fill="currentColor"></rect></svg></sc-if>
 <sc-if value="{{paused}}" hint-placeholder-val="{{ true }}"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3 L17 10 L6 17 Z" fill="currentColor"></path></svg></sc-if>
 </button>
@@ -341,7 +341,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <circle cx="{{dotX}}" cy="{{dotY}}" r="16" fill="{{t.accent}}" stroke="#FFFFFF" stroke-width="5"></circle>
 </svg>
 <sc-for list="{{pts}}" as="p" hint-placeholder-count="24">
-<span aria-hidden="true" style="position: absolute; width: 22px; height: 22px; margin-left: -11px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; pointer-events: none; left: {{p.left}}; top: {{p.top}}; margin-top: {{p.dy}}; background: {{p.bg}}; color: {{p.fg}}; border: 1px solid {{p.bd}}">{{p.n}}</span>
+<span aria-hidden="true" style="position: absolute; width: 22px; height: 22px; margin-left: -11px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; pointer-events: none; left: {{p.left}}; top: {{p.top}}; margin-top: {{p.dy}}; background: {{p.bg}}; color: {{p.fg}}; border: 1px solid {{p.bd}}">{{p.n}}</span>
 </sc-for>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: {{t.muted}}">
@@ -367,7 +367,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <span style="flex: none; width: 46px; display: flex; flex-direction: column; align-items: center; line-height: 1.15"><span style="font-family: 'Noto Serif SC', serif; font-size: 17px; font-weight: 900; color: {{m.numFg}}">{{m.cn}}</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: {{t.muted}}">{{m.num}}</span></span>
 <span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 16px; font-weight: 600; line-height: 1.3">{{m.zh}}</span>
-<span style="font-size: 12px; color: {{t.muted}}">{{m.py}}</span>
+<span style="font-family: 'Alegreya', serif; font-style: italic; font-size: 12px; color: {{t.muted}}">{{m.py}}</span>
 <span style="font-size: 13px">{{m.tr}}</span>
 </span>
 <span style="flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; font-size: 12px; color: {{t.muted}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{m.startTxt}}<sc-if value="{{m.hasThreads}}" hint-placeholder-val="{{ false }}"><span style="padding: 0 7px; border-radius: 0; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{m.threadCount}}</span></sc-if></span>
@@ -386,11 +386,11 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 <div style="display: flex; flex-direction: column; gap: 18px; padding: 18px 20px 22px">
 <div style="display: flex; gap: 16px; align-items: flex-start; padding-bottom: 14px; border-bottom: 1px solid {{t.ink}}">
-<span aria-hidden="true" style="writing-mode: vertical-rl; font-family: 'Noto Serif SC', serif; font-size: 28px; line-height: 1; letter-spacing: 0.06em; font-weight: 900; color: {{t.accentInk}}">第{{active.cn}}式</span>
+<span aria-hidden="true" style="writing-mode: vertical-rl; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 28px; line-height: 1; letter-spacing: 0.06em; font-weight: 400; color: {{t.accentInk}}">第{{active.cn}}式</span>
 <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
 <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: {{t.muted}}">{{active.num}} / 24 · {{active.startTxt}}–{{active.endTxt}}</span>
 <h2 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 40px; line-height: 1.2; font-weight: 700">{{active.zh}}</h2>
-<span style="font-size: 18px; color: {{t.muted}}">{{active.py}}</span>
+<span style="font-family: 'Alegreya', serif; font-style: italic; font-size: 18px; color: {{t.muted}}">{{active.py}}</span>
 <span style="font-size: 16px; font-weight: 600">{{active.tr}}</span>
 </div>
 </div>
@@ -577,12 +577,12 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <sc-for list="{{thPosts}}" as="p" hint-placeholder-count="4">
 <li>
 <sc-if value="{{p.isEvent}}" hint-placeholder-val="{{ false }}">
-<div style="display: flex; align-items: center; gap: 10px; padding: 2px 16px; font-size: 13px; color: {{t.muted}}"><span aria-hidden="true" style="flex: none; width: 10px; height: 10px; border-radius: 50%; background: {{t.blue}}"></span><span>{{p.text}} · {{p.when}}</span></div>
+<div style="display: flex; align-items: center; gap: 10px; padding: 2px 16px; font-size: 13px; color: {{t.muted}}"><span aria-hidden="true" style="flex: none; width: 10px; height: 10px; border-radius: 0; background: {{t.blue}}"></span><span>{{p.text}} · {{p.when}}</span></div>
 </sc-if>
 <sc-if value="{{p.notEvent}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border-radius: 0; background: {{t.surface}}; border: 2px solid {{p.cardBd}}">
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px">
-<span aria-hidden="true" style="flex: none; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{p.avBg}}; color: {{p.avFg}}">{{p.initial}}</span>
+<span aria-hidden="true" style="flex: none; width: 36px; height: 36px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{p.avBg}}; color: {{p.avFg}}">{{p.initial}}</span>
 <span style="display: flex; flex-direction: column; line-height: 1.25"><span style="font-weight: 600">{{p.by}}</span><span style="font-size: 12px; font-weight: 500; color: {{p.badgeFg}}">{{p.badge}}</span></span>
 <span style="flex: 1 1 auto"></span>
 <sc-if value="{{p.isOp}}" hint-placeholder-val="{{ false }}"><span style="padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.chip}}; color: {{t.muted}}">{{s.original}}</span></sc-if>
@@ -641,10 +641,10 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <sc-if value="{{isDiscussions}}" hint-placeholder-val="{{ false }}">
 <main style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 28px">
 <section style="display: flex; gap: 24px; align-items: stretch">
-<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Noto Serif SC', serif; font-size: 44px; line-height: 1; letter-spacing: 0.14em; font-weight: 900; padding-left: 16px; border-left: 4px solid {{t.accent}}">讨论</h1>
+<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 44px; line-height: 1; letter-spacing: 0.14em; font-weight: 400; padding-left: 16px; border-left: 4px solid {{t.accent}}">讨论</h1>
 <div style="display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; min-width: 0">
-<p style="margin: 0; font-family: 'Source Serif 4', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.discussions}}</p>
-<p style="margin: 0; font-size: 15px; letter-spacing: 0.04em; color: {{t.muted}}">Tǎolùn</p>
+<p style="margin: 0; font-family: 'Alegreya', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.discussions}}</p>
+<p style="margin: 0; font-family: 'Alegreya', serif; font-style: italic; font-size: 18px; color: {{t.muted}}">Tǎolùn</p>
 <p style="margin: 8px 0 0; max-width: 640px; color: {{t.muted}}">{{s.dLead}}</p>
 </div>
 </section>
@@ -699,16 +699,16 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <sc-if value="{{isApply}}" hint-placeholder-val="{{ false }}">
 <main style="max-width: 920px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 24px">
 <section style="display: flex; gap: 24px; align-items: stretch">
-<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Noto Serif SC', serif; font-size: 30px; line-height: 1; letter-spacing: 0.14em; font-weight: 900; padding-left: 16px; border-left: 4px solid {{t.accent}}">申请成为贡献者</h1>
+<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 30px; line-height: 1; letter-spacing: 0.14em; font-weight: 400; padding-left: 16px; border-left: 4px solid {{t.accent}}">申请成为贡献者</h1>
 <div style="display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; min-width: 0">
-<p style="margin: 0; font-family: 'Source Serif 4', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.apTitle}}</p>
-<p style="margin: 0; font-size: 15px; letter-spacing: 0.04em; color: {{t.muted}}">Shēnqǐng chéngwéi gòngxiànzhě</p>
+<p style="margin: 0; font-family: 'Alegreya', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.apTitle}}</p>
+<p style="margin: 0; font-family: 'Alegreya', serif; font-style: italic; font-size: 18px; color: {{t.muted}}">Shēnqǐng chéngwéi gòngxiànzhě</p>
 <p style="margin: 8px 0 0; max-width: 640px; color: {{t.muted}}">{{s.apLead}}</p>
 </div>
 </section>
 <ol aria-label="Steps" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px">
 <sc-for list="{{apSteps}}" as="st" hint-placeholder-count="3">
-<li style="display: flex; align-items: center; gap: 8px"><span style="width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; background: {{st.bg}}; color: {{st.fg}}">{{st.n}}</span><span style="font-weight: 600; color: {{st.txt}}">{{st.label}}</span></li>
+<li style="display: flex; align-items: center; gap: 8px"><span style="width: 26px; height: 26px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; background: {{st.bg}}; color: {{st.fg}}">{{st.n}}</span><span style="font-weight: 600; color: {{st.txt}}">{{st.label}}</span></li>
 </sc-for>
 </ol>
 
@@ -880,7 +880,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <sc-if value="{{ap5}}" hint-placeholder-val="{{ false }}">
 <section role="status" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line2}}">
-<span aria-hidden="true" style="display: flex; width: 52px; height: 52px; border-radius: 50%; align-items: center; justify-content: center; background: {{t.accent}}; color: {{t.onAccent}}"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13.5 L11 17.5 L19 9"></path></svg></span>
+<span aria-hidden="true" style="display: flex; width: 52px; height: 52px; border-radius: 0; align-items: center; justify-content: center; background: {{t.accent}}; color: {{t.onAccent}}"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13.5 L11 17.5 L19 9"></path></svg></span>
 <h2 style="margin: 0; font-size: 22px">{{s.verifiedTitle}}</h2>
 <p style="margin: 0; color: {{t.muted}}">{{s.verifiedBody}}</p>
 <span style="align-self: flex-start; padding: 4px 12px; border-radius: 0; font-size: 13px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{apBadge}}</span>
@@ -893,10 +893,10 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <sc-if value="{{isContribute}}" hint-placeholder-val="{{ false }}">
 <main style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 28px">
 <section style="display: flex; gap: 24px; align-items: stretch">
-<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Noto Serif SC', serif; font-size: 44px; line-height: 1; letter-spacing: 0.14em; font-weight: 900; padding-left: 16px; border-left: 4px solid {{t.accent}}">贡献</h1>
+<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 44px; line-height: 1; letter-spacing: 0.14em; font-weight: 400; padding-left: 16px; border-left: 4px solid {{t.accent}}">贡献</h1>
 <div style="display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; min-width: 0">
-<p style="margin: 0; font-family: 'Source Serif 4', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.cTitle}}</p>
-<p style="margin: 0; font-size: 15px; letter-spacing: 0.04em; color: {{t.muted}}">Gòngxiàn</p>
+<p style="margin: 0; font-family: 'Alegreya', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.cTitle}}</p>
+<p style="margin: 0; font-family: 'Alegreya', serif; font-style: italic; font-size: 18px; color: {{t.muted}}">Gòngxiàn</p>
 <p style="margin: 8px 0 0; max-width: 640px; color: {{t.muted}}">{{s.cLead}}</p>
 </div>
 </section>
@@ -909,9 +909,9 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </sc-if>
 
 <ol aria-label="Steps" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px">
-<li style="display: flex; align-items: center; gap: 8px"><span style="width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; background: {{step1Bg}}; color: {{step1Fg}}">1</span><span style="font-weight: 600">{{s.step1}}</span></li>
+<li style="display: flex; align-items: center; gap: 8px"><span style="width: 26px; height: 26px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; background: {{step1Bg}}; color: {{step1Fg}}">1</span><span style="font-weight: 600">{{s.step1}}</span></li>
 <li aria-hidden="true" style="color: {{t.muted}}">→</li>
-<li style="display: flex; align-items: center; gap: 8px"><span style="width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; background: {{step2Bg}}; color: {{step2Fg}}">2</span><span style="font-weight: 600; color: {{step2Text}}">{{s.step2}}</span></li>
+<li style="display: flex; align-items: center; gap: 8px"><span style="width: 26px; height: 26px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; background: {{step2Bg}}; color: {{step2Fg}}">2</span><span style="font-weight: 600; color: {{step2Text}}">{{s.step2}}</span></li>
 </ol>
 
 <sc-if value="{{cNoRoutine}}" hint-placeholder-val="{{ false }}">
@@ -985,7 +985,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <sc-if value="{{cLocked}}" hint-placeholder-val="{{ false }}">
 <section style="display: flex; flex-direction: column; gap: 10px; max-width: 760px; padding: 24px; border-radius: 0; background: {{t.surface}}; border: 1px dashed {{t.line2}}">
-<span aria-hidden="true" style="display: flex; width: 48px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; background: {{t.accentSoft}}; color: {{t.accentInk}}"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="14" height="9" rx="2"></rect><path d="M7 10 V7 A4 4 0 0 1 15 7 V10"></path></svg></span>
+<span aria-hidden="true" style="display: flex; width: 48px; height: 48px; border-radius: 0; align-items: center; justify-content: center; background: {{t.accentSoft}}; color: {{t.accentInk}}"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="14" height="9" rx="2"></rect><path d="M7 10 V7 A4 4 0 0 1 15 7 V10"></path></svg></span>
 <h2 style="margin: 0; font-size: 20px">{{s.lockedTitle}}</h2>
 <p style="margin: 0; color: {{t.muted}}">{{s.lockedBody}}</p>
 <sc-if value="{{isPlainMember}}" hint-placeholder-val="{{ true }}"><button type="button" class="ow-btn" onClick="{{goApply}}" style="align-self: flex-start; margin-top: 4px; min-height: 46px; padding: 0 18px; border-radius: 0; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.apply}}</button></sc-if>
@@ -1003,7 +1003,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-current="{{m.on}}" style="width: 100%; display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 6px 10px; border-radius: 0; background: {{m.rowBg}}">
 <span style="flex: none; width: 30px; font-size: 12px; font-weight: 700; color: {{t.muted}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{m.num}}</span>
 <span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column">
-<span style="font-family: 'Noto Serif SC', serif; font-weight: 600">{{m.zh}} <span style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 400; font-size: 12px; color: {{t.muted}}">{{m.py}}</span></span>
+<span style="font-family: 'Noto Serif SC', serif; font-weight: 600">{{m.zh}} <span style="font-family: 'Alegreya', serif; font-style: italic; font-weight: 400; font-size: 12px; color: {{t.muted}}">{{m.py}}</span></span>
 <span style="font-size: 12px">{{m.tr}}</span>
 </span>
 <span style="flex: none; padding: 1px 8px; border-radius: 0; font-size: 11px; font-weight: 600; background: {{m.stBg}}; color: {{m.stFg}}">{{m.stLabel}}</span>
@@ -1098,7 +1098,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <tbody>
 <sc-for list="{{trRows}}" as="r" hint-placeholder-count="24">
 <tr>
-<th scope="row" style="padding: 6px 8px; text-align: left; font-weight: 400; border-bottom: 1px solid {{t.line}}"><span style="font-size: 12px; font-weight: 700; color: {{t.muted}}">{{r.num}}</span> <span style="font-family: 'Noto Serif SC', serif; font-weight: 600">{{r.zh}}</span> <span style="font-size: 12px; color: {{t.muted}}">{{r.py}}</span></th>
+<th scope="row" style="padding: 6px 8px; text-align: left; font-weight: 400; border-bottom: 1px solid {{t.line}}"><span style="font-size: 12px; font-weight: 700; color: {{t.muted}}">{{r.num}}</span> <span style="font-family: 'Noto Serif SC', serif; font-weight: 600">{{r.zh}}</span> <span style="font-family: 'Alegreya', serif; font-style: italic; font-size: 12px; color: {{t.muted}}">{{r.py}}</span></th>
 <td style="padding: 6px 8px; border-bottom: 1px solid {{t.line}}"><input class="ow-in" type="text" aria-label="{{r.enLabel}}" defaultValue="{{r.en}}" style="min-height: 40px; padding: 0 10px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"></td>
 <td style="padding: 6px 8px; border-bottom: 1px solid {{t.line}}"><input class="ow-in" type="text" aria-label="{{r.idLabel}}" defaultValue="{{r.id}}" style="min-height: 40px; padding: 0 10px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"></td>
 </tr>
