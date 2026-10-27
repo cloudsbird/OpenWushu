@@ -23,7 +23,7 @@ gem "bcrypt", "~> 3.1.7"
 # i18n 1.15 keeps the locale in fiber storage, which new threads inherit; with Action View's I18nProxy a
 # background job thread started during a request can then reset that request's locale mid-render.
 # Seen with the async job adapter in development (English page after an Indonesian sign-up). Recheck on upgrade.
-gem "i18n", "~> 1.14.8"
+gem "i18n", "~> 1.15.2"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
