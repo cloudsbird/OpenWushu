@@ -16,8 +16,9 @@ Sample content: **二十四式简化太极拳 (24-Form Simplified Taijiquan)**, 
 | Video | Self-hosted uploads; each movement stores a start/end timestamp |
 | Map | Top-down diagram of the 14 m × 8 m competition carpet showing the athlete's path, the front edge (正面), and the judges' table (裁判席) below it with the head judge (裁判长) in the centre. Seat count is configurable per competition rules |
 | Languages | **Chinese (characters + pinyin) is always shown** — it is the source. The switcher only changes the translation: English ↔ Bahasa Indonesia. Chinese terms stay inline in descriptions, e.g. 左虚步 zuǒ xūbù |
-| Colors | Blue `#50A0FF` + white. Navy `#06152B` text on the blue (white on `#50A0FF` is only ~2.6:1). Deeper `#1766C7` for blue text on white. Light tint `#F5F9FF` background. Amber only for warning badges, red only for error labels |
-| Type | Noto Serif SC (Chinese display), Noto Sans SC + Inter (body) |
+| Colors | Blue `#50A0FF` + white. Navy `#06152B` text on the blue (white on `#50A0FF` is only ~2.6:1). Deeper `#1766C7` for blue text on white. White paper background; seal and blue text `#1766C7`. Amber only for warning badges, red only for error labels |
+| Visual style | **拳谱 training manual × 青花 blue-and-white porcelain**: reads like a printed manual, not a generic app. Square corners, hairline rules, a 3 px ink rule on top of each panel and a double rule under the header; page titles set vertically in Chinese (规定套路, 讨论, 贡献…) beside the English title; movements numbered 十二 over 12, "第十二式" in the detail; steps numbered 一 二 三; logo is a blue seal stamp (印章) reading 武术 |
+| Type | Noto Serif SC + Source Serif 4 (headings), IBM Plex Sans + Noto Sans SC (body), IBM Plex Mono (timestamps, counts) |
 | Footer | Educational disclaimer + "Content licensed CC BY-SA 4.0" link, always pinned to the bottom of the screen |
 | License | Code: **AGPL-3.0** (`LICENSE`) — modified versions run as a public website must share their source. Content — descriptions, translations, carpet paths, threads and uploaded videos: **CC BY-SA 4.0** (`LICENSE-CONTENT`) |
 

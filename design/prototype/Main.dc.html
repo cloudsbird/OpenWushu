@@ -8,7 +8,7 @@
 <body>
 <x-dc>
 <helmet>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;family=Noto+Serif+SC:wght@600;700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;family=Noto+Serif+SC:wght@500;600;700;900&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&amp;display=swap">
 <style>
 body{margin:0}
 a{color:#1766C7}a:hover{color:#0F4F9E}
@@ -18,37 +18,37 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 .ow-row:hover{filter:brightness(0.97)}
 </style>
 </helmet>
-<div style="min-height: 100vh; display: flex; flex-direction: column; background: {{t.bg}}; color: {{t.ink}}; font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif; font-size: 15px; line-height: 1.5">
+<div style="min-height: 100vh; display: flex; flex-direction: column; background: {{t.bg}}; color: {{t.ink}}; font-family: 'IBM Plex Sans', 'Noto Sans SC', system-ui, sans-serif; font-size: 15px; line-height: 1.5">
 
-<header style="border-bottom: 1px solid {{t.line}}; background: {{t.surface}}">
+<header style="border-bottom: 3px double {{t.ink}}; background: {{t.surface}}">
 <div style="max-width: 1280px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px">
 <button type="button" class="ow-btn" onClick="{{goLibrary}}" aria-label="OpenWushu home" style="display: flex; align-items: center; gap: 10px; min-height: 44px">
-<span style="display: flex; width: 34px; height: 34px; border-radius: 8px; align-items: center; justify-content: center; background: {{t.accent}}; color: {{t.onAccent}}; font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">武</span>
-<span style="font-weight: 700; font-size: 18px; letter-spacing: -0.01em">OpenWushu</span>
+<span aria-hidden="true" style="display: flex; flex-direction: column; width: 38px; height: 38px; box-sizing: border-box; align-items: center; justify-content: center; background: {{t.seal}}; color: #FFFFFF; outline: 2px solid {{t.seal}}; outline-offset: 2px; font-family: 'Noto Serif SC', serif; font-size: 14px; line-height: 1.05; font-weight: 900"><span>武</span><span>术</span></span>
+<span style="display: flex; flex-direction: column; line-height: 1.1; margin-left: 4px"><span style="font-family: 'Source Serif 4', serif; font-weight: 700; font-size: 21px">OpenWushu</span><span style="font-size: 11px; letter-spacing: 0.24em; color: {{t.muted}}">开放武术</span></span>
 </button>
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px; flex: 1 1 auto">
-<button type="button" class="ow-btn" onClick="{{goLibrary}}" style="min-height: 44px; padding: 0 14px; border-radius: 8px; font-weight: 500; background: {{navLibBg}}; color: {{navLibFg}}">{{s.library}}</button>
-<button type="button" class="ow-btn" onClick="{{goDiscuss}}" style="min-height: 44px; padding: 0 14px; border-radius: 8px; font-weight: 500; background: {{navDisBg}}; color: {{navDisFg}}">{{s.discussions}}</button>
-<button type="button" class="ow-btn" onClick="{{goContribute}}" style="min-height: 44px; padding: 0 14px; border-radius: 8px; font-weight: 500; background: {{navConBg}}; color: {{navConFg}}">{{s.contribute}}</button>
+<button type="button" class="ow-btn" onClick="{{goLibrary}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 500; background: {{navLibBg}}; color: {{navLibFg}}">{{s.library}}</button>
+<button type="button" class="ow-btn" onClick="{{goDiscuss}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 500; background: {{navDisBg}}; color: {{navDisFg}}">{{s.discussions}}</button>
+<button type="button" class="ow-btn" onClick="{{goContribute}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 500; background: {{navConBg}}; color: {{navConFg}}">{{s.contribute}}</button>
 </nav>
 <div style="display: flex; align-items: center; gap: 10px">
 <span style="font-size: 13px; color: {{t.muted}}">中文 + {{s.translation}}</span>
-<div role="group" aria-label="Translation language" style="display: flex; padding: 3px; border-radius: 10px; background: {{t.chip}}">
-<button type="button" class="ow-btn" aria-pressed="{{isEn}}" onClick="{{setEn}}" style="min-height: 38px; min-width: 48px; padding: 0 12px; border-radius: 8px; font-weight: 600; font-size: 14px; text-align: center; background: {{enBg}}; color: {{enFg}}">EN</button>
-<button type="button" class="ow-btn" aria-pressed="{{isId}}" onClick="{{setId}}" style="min-height: 38px; min-width: 48px; padding: 0 12px; border-radius: 8px; font-weight: 600; font-size: 14px; text-align: center; background: {{idBg}}; color: {{idFg}}">ID</button>
+<div role="group" aria-label="Translation language" style="display: flex; padding: 3px; border-radius: 0; background: {{t.chip}}">
+<button type="button" class="ow-btn" aria-pressed="{{isEn}}" onClick="{{setEn}}" style="min-height: 38px; min-width: 48px; padding: 0 12px; border-radius: 0; font-weight: 600; font-size: 14px; text-align: center; background: {{enBg}}; color: {{enFg}}">EN</button>
+<button type="button" class="ow-btn" aria-pressed="{{isId}}" onClick="{{setId}}" style="min-height: 38px; min-width: 48px; padding: 0 12px; border-radius: 0; font-weight: 600; font-size: 14px; text-align: center; background: {{idBg}}; color: {{idFg}}">ID</button>
 </div>
 </div>
 <sc-if value="{{signedOut}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; gap: 6px">
-<button type="button" class="ow-btn" onClick="{{goSignIn}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; font-weight: 600; font-size: 14px">{{s.signIn}}</button>
-<button type="button" class="ow-btn" onClick="{{goSignUp}}" style="min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.signUp}}</button>
+<button type="button" class="ow-btn" onClick="{{goSignIn}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 600; font-size: 14px">{{s.signIn}}</button>
+<button type="button" class="ow-btn" onClick="{{goSignUp}}" style="min-height: 44px; padding: 0 16px; border-radius: 0; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.signUp}}</button>
 </div>
 </sc-if>
 <sc-if value="{{signedIn}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; align-items: center; gap: 10px">
 <span aria-hidden="true" style="width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{userInitial}}</span>
 <span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-weight: 600; font-size: 14px">{{userName}}</span><span style="font-size: 12px; font-weight: 500; color: {{userRoleFg}}">{{userRole}}</span></span>
-<button type="button" class="ow-btn" onClick="{{signOut}}" style="min-height: 44px; padding: 0 12px; border-radius: 10px; font-size: 14px; font-weight: 600; color: {{t.muted}}">{{s.signOut}}</button>
+<button type="button" class="ow-btn" onClick="{{signOut}}" style="min-height: 44px; padding: 0 12px; border-radius: 0; font-size: 14px; font-weight: 600; color: {{t.muted}}">{{s.signOut}}</button>
 </div>
 </sc-if>
 </div>
@@ -56,9 +56,9 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <sc-if value="{{isAuth}}" hint-placeholder-val="{{ false }}">
 <main style="max-width: 1080px; margin: 0 auto; padding: 40px 24px 64px">
-<div style="display: flex; flex-wrap: wrap; border-radius: 20px; overflow: hidden; border: 1px solid {{t.line}}; background: {{t.surface}}">
+<div style="display: flex; flex-wrap: wrap; border-radius: 0; overflow: hidden; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}; background: {{t.surface}}">
 <section style="flex: 1 1 340px; padding: 40px; display: flex; flex-direction: column; gap: 20px; background: {{t.accent}}; color: {{t.onAccent}}">
-<span style="display: flex; width: 56px; height: 56px; border-radius: 14px; align-items: center; justify-content: center; background: {{t.onAccent}}; color: {{t.accent}}; font-family: 'Noto Serif SC', serif; font-size: 32px; font-weight: 700">武</span>
+<span style="display: flex; width: 56px; height: 56px; border-radius: 0; align-items: center; justify-content: center; background: {{t.onAccent}}; color: {{t.accent}}; font-family: 'Noto Serif SC', serif; font-size: 32px; font-weight: 700">武</span>
 <div style="display: flex; flex-direction: column; gap: 4px">
 <h2 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 34px; line-height: 1.2">规定套路</h2>
 <p style="margin: 0; font-size: 16px; font-weight: 500">Guīdìng tàolù · OpenWushu</p>
@@ -73,7 +73,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <section style="flex: 1 1 400px; min-width: 0; padding: 40px; display: flex; flex-direction: column; gap: 18px">
 <sc-if value="{{hasAuthMsg}}" hint-placeholder-val="{{ false }}">
-<p role="status" style="margin: 0; padding: 12px 14px; border-radius: 10px; font-size: 14px; font-weight: 500; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{authMsg}}</p>
+<p role="status" style="margin: 0; padding: 12px 14px; border-radius: 0; font-size: 14px; font-weight: 500; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{authMsg}}</p>
 </sc-if>
 
 <sc-if value="{{isSignIn}}" hint-placeholder-val="{{ true }}">
@@ -81,11 +81,11 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <h1 style="margin: 0; font-size: 28px">{{s.siTitle}}</h1>
 <p style="margin: 0; color: {{t.muted}}">{{s.siLead}}</p>
 </div>
-<button type="button" class="ow-btn" onClick="{{googleSignIn}}" style="min-height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 600; border: 1px solid {{t.line2}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="9" r="7"></circle><path d="M9 9 H15"></path></svg>{{s.google}}</button>
+<button type="button" class="ow-btn" onClick="{{googleSignIn}}" style="min-height: 48px; border-radius: 0; display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 600; border: 1px solid {{t.line2}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="9" r="7"></circle><path d="M9 9 H15"></path></svg>{{s.google}}</button>
 <div aria-hidden="true" style="display: flex; align-items: center; gap: 12px; font-size: 13px; color: {{t.muted}}"><span style="flex: 1; height: 1px; background: {{t.line}}"></span>{{s.or}}<span style="flex: 1; height: 1px; background: {{t.line}}"></span></div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-siemail" style="font-size: 13px; font-weight: 600">{{s.email}}</label>
-<input id="ow-siemail" class="ow-in" type="email" autocomplete="email" value="{{siEmail}}" onChange="{{onSiEmail}}" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-siemail" class="ow-in" type="email" autocomplete="email" value="{{siEmail}}" onChange="{{onSiEmail}}" style="min-height: 48px; padding: 0 14px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
@@ -93,12 +93,12 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <a href="#ow-sipw" style="font-size: 13px">{{s.forgot}}</a>
 </div>
 <div style="display: flex; gap: 6px">
-<input id="ow-sipw" class="ow-in" type="{{pwType}}" autocomplete="current-password" style="flex: 1 1 auto; min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
-<button type="button" class="ow-btn" onClick="{{togglePw}}" aria-pressed="{{showPw}}" style="flex: none; min-height: 48px; padding: 0 14px; border-radius: 10px; font-size: 14px; font-weight: 600; background: {{t.chip}}">{{pwBtn}}</button>
+<input id="ow-sipw" class="ow-in" type="{{pwType}}" autocomplete="current-password" style="flex: 1 1 auto; min-height: 48px; padding: 0 14px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<button type="button" class="ow-btn" onClick="{{togglePw}}" aria-pressed="{{showPw}}" style="flex: none; min-height: 48px; padding: 0 14px; border-radius: 0; font-size: 14px; font-weight: 600; background: {{t.chip}}">{{pwBtn}}</button>
 </div>
 </div>
 <sc-if value="{{hasAuthErr}}" hint-placeholder-val="{{ false }}"><p role="alert" style="margin: 0; font-size: 14px; color: {{t.red}}">{{authErr}}</p></sc-if>
-<button type="button" class="ow-btn" onClick="{{siSubmit}}" style="min-height: 50px; border-radius: 10px; text-align: center; font-weight: 700; background: {{t.accent}}; color: {{t.onAccent}}">{{s.signIn}}</button>
+<button type="button" class="ow-btn" onClick="{{siSubmit}}" style="min-height: 50px; border-radius: 0; text-align: center; font-weight: 700; background: {{t.accent}}; color: {{t.onAccent}}">{{s.signIn}}</button>
 <p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{s.noAccount}} <button type="button" class="ow-btn" onClick="{{goSignUp}}" style="min-height: 32px; font-weight: 600; text-decoration: underline; color: {{t.accentInk}}">{{s.createAcc}}</button></p>
 </sc-if>
 
@@ -107,40 +107,40 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <h1 style="margin: 0; font-size: 28px">{{s.suTitle}}</h1>
 <p style="margin: 0; color: {{t.muted}}">{{s.suLead}}</p>
 </div>
-<button type="button" class="ow-btn" onClick="{{googleSignIn}}" style="min-height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 600; border: 1px solid {{t.line2}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="9" r="7"></circle><path d="M9 9 H15"></path></svg>{{s.google}}</button>
+<button type="button" class="ow-btn" onClick="{{googleSignIn}}" style="min-height: 48px; border-radius: 0; display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 600; border: 1px solid {{t.line2}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="9" r="7"></circle><path d="M9 9 H15"></path></svg>{{s.google}}</button>
 <div aria-hidden="true" style="display: flex; align-items: center; gap: 12px; font-size: 13px; color: {{t.muted}}"><span style="flex: 1; height: 1px; background: {{t.line}}"></span>{{s.or}}<span style="flex: 1; height: 1px; background: {{t.line}}"></span></div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-suname" style="font-size: 13px; font-weight: 600">{{s.name}}</label>
-<input id="ow-suname" class="ow-in" type="text" autocomplete="nickname" value="{{suName}}" onChange="{{onSuName}}" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-suname" class="ow-in" type="text" autocomplete="nickname" value="{{suName}}" onChange="{{onSuName}}" style="min-height: 48px; padding: 0 14px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-suemail" style="font-size: 13px; font-weight: 600">{{s.email}}</label>
-<input id="ow-suemail" class="ow-in" type="email" autocomplete="email" value="{{suEmail}}" onChange="{{onSuEmail}}" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-suemail" class="ow-in" type="email" autocomplete="email" value="{{suEmail}}" onChange="{{onSuEmail}}" style="min-height: 48px; padding: 0 14px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-supw" style="font-size: 13px; font-weight: 600">{{s.password}}</label>
 <div style="display: flex; gap: 6px">
-<input id="ow-supw" class="ow-in" type="{{pwType}}" autocomplete="new-password" aria-describedby="ow-supw-hint" style="flex: 1 1 auto; min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
-<button type="button" class="ow-btn" onClick="{{togglePw}}" aria-pressed="{{showPw}}" style="flex: none; min-height: 48px; padding: 0 14px; border-radius: 10px; font-size: 14px; font-weight: 600; background: {{t.chip}}">{{pwBtn}}</button>
+<input id="ow-supw" class="ow-in" type="{{pwType}}" autocomplete="new-password" aria-describedby="ow-supw-hint" style="flex: 1 1 auto; min-height: 48px; padding: 0 14px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<button type="button" class="ow-btn" onClick="{{togglePw}}" aria-pressed="{{showPw}}" style="flex: none; min-height: 48px; padding: 0 14px; border-radius: 0; font-size: 14px; font-weight: 600; background: {{t.chip}}">{{pwBtn}}</button>
 </div>
 <span id="ow-supw-hint" style="font-size: 12px; color: {{t.muted}}">{{s.pwHint}}</span>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <div style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 6px">
 <span id="ow-sulang" style="font-size: 13px; font-weight: 600">{{s.prefLang}}</span>
-<div role="group" aria-labelledby="ow-sulang" style="display: flex; padding: 3px; border-radius: 10px; align-self: flex-start; background: {{t.chip}}">
-<button type="button" class="ow-btn" aria-pressed="{{isEn}}" onClick="{{setEn}}" style="min-height: 40px; padding: 0 12px; border-radius: 8px; font-size: 14px; font-weight: 600; background: {{enBg}}; color: {{enFg}}">English</button>
-<button type="button" class="ow-btn" aria-pressed="{{isId}}" onClick="{{setId}}" style="min-height: 40px; padding: 0 12px; border-radius: 8px; font-size: 14px; font-weight: 600; background: {{idBg}}; color: {{idFg}}">Bahasa Indonesia</button>
+<div role="group" aria-labelledby="ow-sulang" style="display: flex; padding: 3px; border-radius: 0; align-self: flex-start; background: {{t.chip}}">
+<button type="button" class="ow-btn" aria-pressed="{{isEn}}" onClick="{{setEn}}" style="min-height: 40px; padding: 0 12px; border-radius: 0; font-size: 14px; font-weight: 600; background: {{enBg}}; color: {{enFg}}">English</button>
+<button type="button" class="ow-btn" aria-pressed="{{isId}}" onClick="{{setId}}" style="min-height: 40px; padding: 0 12px; border-radius: 0; font-size: 14px; font-weight: 600; background: {{idBg}}; color: {{idFg}}">Bahasa Indonesia</button>
 </div>
 </div>
 <div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-suclub" style="font-size: 13px; font-weight: 600">{{s.club}}</label>
-<input id="ow-suclub" class="ow-in" type="text" style="min-height: 46px; padding: 0 14px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-suclub" class="ow-in" type="text" style="min-height: 46px; padding: 0 14px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 </div>
 <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px"><input type="checkbox" checked="{{suAgree}}" onChange="{{onSuAgree}}" style="flex: none; margin-top: 2px; width: 18px; height: 18px; accent-color: {{t.accent}}"><span>{{s.agree}}</span></label>
 <sc-if value="{{hasAuthErr}}" hint-placeholder-val="{{ false }}"><p role="alert" style="margin: 0; font-size: 14px; color: {{t.red}}">{{authErr}}</p></sc-if>
-<button type="button" class="ow-btn" onClick="{{suSubmit}}" style="min-height: 50px; border-radius: 10px; text-align: center; font-weight: 700; background: {{t.accent}}; color: {{t.onAccent}}">{{s.create}}</button>
+<button type="button" class="ow-btn" onClick="{{suSubmit}}" style="min-height: 50px; border-radius: 0; text-align: center; font-weight: 700; background: {{t.accent}}; color: {{t.onAccent}}">{{s.create}}</button>
 <p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{s.haveAcc}} <button type="button" class="ow-btn" onClick="{{goSignIn}}" style="min-height: 32px; font-weight: 600; text-decoration: underline; color: {{t.accentInk}}">{{s.signIn}}</button></p>
 </sc-if>
 
@@ -149,8 +149,8 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <h1 style="margin: 0; font-size: 28px">{{s.verifyTitle}}</h1>
 <p style="margin: 0; color: {{t.muted}}">{{s.verifyBody}} <span style="font-weight: 600; color: {{t.ink}}">{{suEmail}}</span>{{s.verifyBody2}}</p>
 <div style="display: flex; flex-wrap: wrap; gap: 8px">
-<button type="button" class="ow-btn" onClick="{{verifyDemo}}" style="min-height: 48px; padding: 0 18px; border-radius: 10px; font-weight: 700; background: {{t.accent}}; color: {{t.onAccent}}">{{s.verifiedDemo}}</button>
-<button type="button" class="ow-btn" style="min-height: 48px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.resend}}</button>
+<button type="button" class="ow-btn" onClick="{{verifyDemo}}" style="min-height: 48px; padding: 0 18px; border-radius: 0; font-weight: 700; background: {{t.accent}}; color: {{t.onAccent}}">{{s.verifiedDemo}}</button>
+<button type="button" class="ow-btn" style="min-height: 48px; padding: 0 16px; border-radius: 0; font-weight: 600; border: 1px solid {{t.line2}}">{{s.resend}}</button>
 </div>
 </sc-if>
 </section>
@@ -161,14 +161,17 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <sc-if value="{{isLibrary}}" hint-placeholder-val="{{ false }}">
 <main style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 40px">
 <section style="display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-end">
-<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 6px">
-<h1 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 52px; line-height: 1.15; font-weight: 700">规定套路</h1>
-<p style="margin: 0; font-size: 18px; color: {{t.muted}}">Guīdìng tàolù · <span style="color: {{t.ink}}; font-weight: 600">{{s.libTitle}}</span></p>
+<div style="flex: 1 1 420px; display: flex; gap: 24px; align-items: stretch">
+<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Noto Serif SC', serif; font-size: 44px; line-height: 1; letter-spacing: 0.14em; font-weight: 900; padding-left: 16px; border-left: 4px solid {{t.accent}}">规定套路</h1>
+<div style="display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; min-width: 0">
+<p style="margin: 0; font-family: 'Source Serif 4', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.libTitle}}</p>
+<p style="margin: 0; font-size: 15px; letter-spacing: 0.04em; color: {{t.muted}}">Guīdìng tàolù</p>
 <p style="margin: 8px 0 0; max-width: 560px; color: {{t.muted}}">{{s.libLead}}</p>
+</div>
 </div>
 <div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-search" style="font-size: 13px; font-weight: 600">{{s.search}}</label>
-<input id="ow-search" class="ow-in" type="search" value="{{q}}" onChange="{{onSearch}}" placeholder="{{s.searchPh}}" style="min-height: 48px; padding: 0 16px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-search" class="ow-in" type="search" value="{{q}}" onChange="{{onSearch}}" placeholder="{{s.searchPh}}" style="min-height: 48px; padding: 0 16px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 </section>
 
@@ -180,10 +183,10 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </sc-if>
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px">
 <sc-for list="{{results}}" as="r" hint-placeholder-count="2">
-<button type="button" class="ow-btn ow-row" onClick="{{r.pick}}" style="display: flex; gap: 12px; align-items: center; min-height: 56px; padding: 10px 14px; border-radius: 10px; border: 1px solid {{t.line}}; background: {{t.surface}}">
+<button type="button" class="ow-btn ow-row" onClick="{{r.pick}}" style="display: flex; gap: 12px; align-items: center; min-height: 56px; padding: 10px 14px; border-radius: 0; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}; background: {{t.surface}}">
 <span style="font-size: 13px; font-weight: 700; color: {{t.accentInk}}; min-width: 22px">{{r.num}}</span>
 <span style="display: flex; flex-direction: column">
-<span style="font-family: 'Noto Serif SC', serif; font-weight: 600; font-size: 17px">{{r.zh}} <span style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; color: {{t.muted}}">{{r.py}}</span></span>
+<span style="font-family: 'Noto Serif SC', serif; font-weight: 600; font-size: 17px">{{r.zh}} <span style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 400; font-size: 14px; color: {{t.muted}}">{{r.py}}</span></span>
 <span style="font-size: 13px; color: {{t.muted}}">{{r.tr}} · 24式</span>
 </span>
 </button>
@@ -193,12 +196,12 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </sc-if>
 
 <section style="display: flex; flex-direction: column; gap: 16px">
-<h2 style="margin: 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap"><span style="font-family: 'Noto Serif SC', serif; font-size: 26px">太极拳</span><span style="font-size: 15px; font-weight: 400; color: {{t.muted}}">Tàijíquán · {{s.taiji}}</span></h2>
+<h2 style="margin: 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; padding-bottom: 8px; border-bottom: 1px solid {{t.ink}}"><span style="font-family: 'Noto Serif SC', serif; font-size: 26px">太极拳</span><span style="font-size: 15px; font-weight: 400; color: {{t.muted}}">Tàijíquán · {{s.taiji}}</span></h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px">
-<button type="button" class="ow-btn ow-row" onClick="{{openRoutine}}" style="display: flex; flex-direction: column; border-radius: 14px; overflow: hidden; border: 1px solid {{t.line}}; background: {{t.surface}}">
+<button type="button" class="ow-btn ow-row" onClick="{{openRoutine}}" style="display: flex; flex-direction: column; border-radius: 0; overflow: hidden; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}; background: {{t.surface}}">
 <span style="position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: {{t.video}}; color: #F2F6FC">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 64px; font-weight: 700; letter-spacing: 0.04em">廿四</span>
-<span style="position: absolute; left: 12px; bottom: 12px; display: flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 99px; background: rgba(255,255,255,0.14); font-size: 12px; font-weight: 600"><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1 L9 5 L2 9 Z" fill="currentColor"></path></svg>5:10</span>
+<span style="position: absolute; left: 12px; bottom: 12px; display: flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 0; background: rgba(255,255,255,0.14); font-size: 12px; font-weight: 600"><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1 L9 5 L2 9 Z" fill="currentColor"></path></svg>5:10</span>
 </span>
 <span style="display: flex; flex-direction: column; gap: 2px; padding: 16px 18px 18px">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">二十四式简化太极拳</span>
@@ -207,7 +210,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <span style="margin-top: 10px; font-size: 13px; color: {{t.muted}}">24 {{s.moves}} · 3 {{s.threads}}</span>
 </span>
 </button>
-<div style="display: flex; flex-direction: column; border-radius: 14px; overflow: hidden; border: 1px dashed {{t.line2}}; background: {{t.surface}}">
+<div style="display: flex; flex-direction: column; border-radius: 0; overflow: hidden; border: 1px dashed {{t.line2}}; background: {{t.surface}}">
 <div style="display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: {{t.chip}}; color: {{t.muted}}">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 64px; font-weight: 700">四二</span>
 </div>
@@ -215,24 +218,24 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">四十二式太极拳</span>
 <span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíquán</span>
 <span style="font-size: 14px; font-weight: 500">{{s.r42}}</span>
-<span style="margin-top: 10px; align-self: flex-start; padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.inProgress}}</span>
+<span style="margin-top: 10px; align-self: flex-start; padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.inProgress}}</span>
 </div>
 </div>
 </div>
 </section>
 
 <section style="display: flex; flex-wrap: wrap; gap: 20px">
-<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 0; border: 1px dashed {{t.line2}}">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">长拳</span>
 <span style="font-size: 14px; color: {{t.muted}}">Chángquán · {{s.changquan}}</span>
 <span style="font-size: 13px; color: {{t.muted}}">{{s.comingSoon}}</span>
 </div>
-<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 0; border: 1px dashed {{t.line2}}">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">南拳</span>
 <span style="font-size: 14px; color: {{t.muted}}">Nánquán · {{s.nanquan}}</span>
 <span style="font-size: 13px; color: {{t.muted}}">{{s.comingSoon}}</span>
 </div>
-<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 0; border: 1px dashed {{t.line2}}">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">器械</span>
 <span style="font-size: 14px; color: {{t.muted}}">Qìxiè · {{s.weapons}}</span>
 <span style="font-size: 13px; color: {{t.muted}}">{{s.comingSoon}}</span>
@@ -249,14 +252,17 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </nav>
 
 <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+<div style="display: flex; gap: 18px; align-items: stretch">
+<span aria-hidden="true" style="writing-mode: vertical-rl; font-family: 'Noto Serif SC', serif; font-size: 20px; line-height: 1; letter-spacing: 0.14em; font-weight: 900; padding-left: 10px; border-left: 4px solid {{t.accent}}">太极拳</span>
 <div style="display: flex; flex-direction: column; gap: 2px">
 <h1 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 36px; line-height: 1.2; font-weight: 700">二十四式简化太极拳</h1>
 <p style="margin: 0; font-size: 16px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán · <span style="color: {{t.ink}}; font-weight: 600">{{s.r24}}</span></p>
 <p style="margin: 4px 0 0; font-size: 13px; color: {{t.muted}}">24 {{s.moves}} · 5:10 · {{s.std}}</p>
 </div>
-<div role="tablist" aria-label="Routine sections" style="display: flex; gap: 4px; padding: 4px; border-radius: 12px; background: {{t.chip}}">
-<button type="button" role="tab" aria-selected="{{isLearn}}" class="ow-btn" onClick="{{tabLearn}}" style="min-height: 40px; padding: 0 16px; border-radius: 9px; font-weight: 600; background: {{learnBg}}; color: {{learnFg}}">学习 · {{s.learn}}</button>
-<button type="button" role="tab" aria-selected="{{isDiscuss}}" class="ow-btn" onClick="{{tabDiscuss}}" style="min-height: 40px; padding: 0 16px; border-radius: 9px; font-weight: 600; background: {{discBg}}; color: {{discFg}}">讨论 · {{s.discussion}} ({{threadTotal}})</button>
+</div>
+<div role="tablist" aria-label="Routine sections" style="display: flex; gap: 4px; padding: 4px; border-radius: 0; background: {{t.chip}}">
+<button type="button" role="tab" aria-selected="{{isLearn}}" class="ow-btn" onClick="{{tabLearn}}" style="min-height: 40px; padding: 0 16px; border-radius: 0; font-weight: 600; background: {{learnBg}}; color: {{learnFg}}">学习 · {{s.learn}}</button>
+<button type="button" role="tab" aria-selected="{{isDiscuss}}" class="ow-btn" onClick="{{tabDiscuss}}" style="min-height: 40px; padding: 0 16px; border-radius: 0; font-weight: 600; background: {{discBg}}; color: {{discFg}}">讨论 · {{s.discussion}} ({{threadTotal}})</button>
 </div>
 </div>
 
@@ -264,12 +270,12 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
 
 <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
-<section aria-label="Video" style="display: flex; flex-direction: column; gap: 10px; padding: 12px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
-<div style="position: relative; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: {{t.video}}; display: flex; align-items: center; justify-content: center">
-<span style="position: absolute; left: 14px; top: 14px; padding: 4px 10px; border-radius: 99px; background: rgba(255,255,255,0.12); color: #DCE6F5; font-size: 12px; font-weight: 500">{{s.sampleVideo}}</span>
-<span style="position: absolute; right: 14px; top: 14px; padding: 4px 10px; border-radius: 99px; background: rgba(0,0,0,0.35); color: #F2F6FC; font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums">{{curTime}} / 5:10</span>
+<section aria-label="Video" style="display: flex; flex-direction: column; gap: 10px; padding: 12px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<div style="position: relative; aspect-ratio: 16 / 9; border-radius: 0; overflow: hidden; background: {{t.video}}; display: flex; align-items: center; justify-content: center">
+<span style="position: absolute; left: 14px; top: 14px; padding: 4px 10px; border-radius: 0; background: rgba(255,255,255,0.12); color: #DCE6F5; font-size: 12px; font-weight: 500">{{s.sampleVideo}}</span>
+<span style="position: absolute; right: 14px; top: 14px; padding: 4px 10px; border-radius: 0; background: rgba(0,0,0,0.35); color: #F2F6FC; font-size: 12px; font-weight: 600; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{curTime}} / 5:10</span>
 <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; padding: 0 24px">
-<span style="font-size: 13px; letter-spacing: 0.12em; color: #A9BAD3; font-weight: 600">{{active.num}} / 24</span>
+<span style="font-size: 13px; letter-spacing: 0.12em; color: #A9BAD3; font-weight: 600">第{{active.cn}}式 · {{active.num}} / 24</span>
 <span style="font-family: 'Noto Serif SC', serif; font-size: 56px; line-height: 1.15; font-weight: 700; color: #FFFFFF">{{active.zh}}</span>
 <span style="font-size: 20px; color: #DCE6F5">{{active.py}}</span>
 <span style="font-size: 15px; color: #A9BAD3">{{active.tr}}</span>
@@ -283,32 +289,32 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <div style="position: relative">
 <div role="group" aria-label="Movement timeline" style="display: flex; gap: 2px; height: 36px">
 <sc-for list="{{moves}}" as="m" hint-placeholder-count="24">
-<button type="button" class="ow-btn" onClick="{{m.seek}}" aria-label="{{m.aria}}" title="{{m.aria}}" style="flex: {{m.dur}} 1 0px; min-width: 0; overflow: hidden; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; font-variant-numeric: tabular-nums; background: {{m.segBg}}; color: {{m.segFg}}">{{m.n}}</button>
+<button type="button" class="ow-btn" onClick="{{m.seek}}" aria-label="{{m.aria}}" title="{{m.aria}}" style="flex: {{m.dur}} 1 0px; min-width: 0; overflow: hidden; border-radius: 0; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; background: {{m.segBg}}; color: {{m.segFg}}">{{m.n}}</button>
 </sc-for>
 </div>
-<div aria-hidden="true" style="position: absolute; top: -4px; bottom: -4px; width: 3px; margin-left: -1px; border-radius: 2px; pointer-events: none; left: {{playPct}}; background: {{t.ink}}"></div>
+<div aria-hidden="true" style="position: absolute; top: -4px; bottom: -4px; width: 3px; margin-left: -1px; border-radius: 0; pointer-events: none; left: {{playPct}}; background: {{t.ink}}"></div>
 </div>
 
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
-<button type="button" class="ow-btn" onClick="{{prevMove}}" aria-label="{{s.prev}}" style="width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: {{t.chip}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3 V15"></path><path d="M14 3 L7 9 L14 15"></path></svg></button>
-<button type="button" class="ow-btn" onClick="{{nextMove}}" aria-label="{{s.next}}" style="width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: {{t.chip}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3 V15"></path><path d="M4 3 L11 9 L4 15"></path></svg></button>
-<button type="button" class="ow-btn" onClick="{{toggleLoop}}" aria-pressed="{{loop}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; background: {{loopBg}}; color: {{loopFg}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9 A6 6 0 0 1 14 5.5"></path><path d="M14 2 V6 H10"></path><path d="M15 9 A6 6 0 0 1 4 12.5"></path><path d="M4 16 V12 H8"></path></svg>{{s.loop}}</button>
+<button type="button" class="ow-btn" onClick="{{prevMove}}" aria-label="{{s.prev}}" style="width: 44px; height: 44px; border-radius: 0; display: flex; align-items: center; justify-content: center; background: {{t.chip}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3 V15"></path><path d="M14 3 L7 9 L14 15"></path></svg></button>
+<button type="button" class="ow-btn" onClick="{{nextMove}}" aria-label="{{s.next}}" style="width: 44px; height: 44px; border-radius: 0; display: flex; align-items: center; justify-content: center; background: {{t.chip}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3 V15"></path><path d="M4 3 L11 9 L4 15"></path></svg></button>
+<button type="button" class="ow-btn" onClick="{{toggleLoop}}" aria-pressed="{{loop}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; background: {{loopBg}}; color: {{loopFg}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9 A6 6 0 0 1 14 5.5"></path><path d="M14 2 V6 H10"></path><path d="M15 9 A6 6 0 0 1 4 12.5"></path><path d="M4 16 V12 H8"></path></svg>{{s.loop}}</button>
 <span style="flex: 1 1 auto"></span>
 <span id="ow-speed" style="font-size: 13px; color: {{t.muted}}">{{s.speed}}</span>
-<div role="group" aria-labelledby="ow-speed" style="display: flex; padding: 3px; border-radius: 10px; background: {{t.chip}}">
+<div role="group" aria-labelledby="ow-speed" style="display: flex; padding: 3px; border-radius: 0; background: {{t.chip}}">
 <sc-for list="{{speeds}}" as="sp" hint-placeholder-count="3">
-<button type="button" class="ow-btn" onClick="{{sp.pick}}" aria-pressed="{{sp.on}}" style="min-height: 38px; min-width: 50px; padding: 0 8px; border-radius: 8px; font-size: 13px; font-weight: 600; text-align: center; background: {{sp.bg}}; color: {{sp.fg}}">{{sp.label}}</button>
+<button type="button" class="ow-btn" onClick="{{sp.pick}}" aria-pressed="{{sp.on}}" style="min-height: 38px; min-width: 50px; padding: 0 8px; border-radius: 0; font-size: 13px; font-weight: 600; text-align: center; background: {{sp.bg}}; color: {{sp.fg}}">{{sp.label}}</button>
 </sc-for>
 </div>
 </div>
 </section>
 
-<section aria-label="Carpet path" style="display: flex; flex-direction: column; gap: 12px; padding: 16px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<section aria-label="Carpet path" style="display: flex; flex-direction: column; gap: 12px; padding: 16px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px">
 <h2 style="margin: 0; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap"><span style="font-family: 'Noto Serif SC', serif; font-size: 20px">场地路线</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">Chǎngdì lùxiàn · {{s.carpet}} · 14 m × 8 m</span></h2>
-<span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.illustrative}}</span>
+<span style="padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.illustrative}}</span>
 </div>
-<div style="position: relative; aspect-ratio: 14 / 10; border-radius: 8px; overflow: hidden">
+<div style="position: relative; aspect-ratio: 14 / 10; border-radius: 0; overflow: hidden">
 <svg viewBox="0 0 1400 1000" width="100%" height="100%" style="position: absolute; inset: 0; display: block" role="img" aria-label="{{carpetAria}}">
 <rect x="0" y="0" width="1400" height="800" fill="{{t.carpet}}"></rect>
 <path d="{{gridD}}" fill="none" stroke="{{t.grid}}" stroke-width="2"></path>
@@ -316,7 +322,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <text x="1360" y="50" text-anchor="middle" font-size="30" font-weight="700" fill="{{t.muted}}">N</text>
 <path d="M1360 60 L1360 110 M1348 74 L1360 60 L1372 74" fill="none" stroke="{{t.muted}}" stroke-width="4" stroke-linecap="round"></path>
 <text x="700" y="780" text-anchor="middle" font-size="24" font-weight="600" fill="{{t.muted}}">正面 · {{s.front}}</text>
-<rect x="240" y="858" width="920" height="40" rx="8" fill="{{t.chip}}" stroke="{{t.line2}}" stroke-width="2"></rect>
+<rect x="240" y="858" width="920" height="40" rx="0" fill="{{t.chip}}" stroke="{{t.line2}}" stroke-width="2"></rect>
 <circle cx="320" cy="932" r="18" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="3"></circle><text x="320" y="939" text-anchor="middle" font-size="18" font-weight="700" fill="{{t.ink}}">1</text>
 <circle cx="410" cy="932" r="18" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="3"></circle><text x="410" y="939" text-anchor="middle" font-size="18" font-weight="700" fill="{{t.ink}}">2</text>
 <circle cx="500" cy="932" r="18" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="3"></circle><text x="500" y="939" text-anchor="middle" font-size="18" font-weight="700" fill="{{t.ink}}">3</text>
@@ -330,7 +336,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <path d="{{fullD}}" fill="none" stroke="{{t.rest}}" stroke-width="6" stroke-dasharray="14 12" stroke-linecap="round" stroke-linejoin="round"></path>
 <path d="{{doneD}}" fill="none" stroke="{{t.accentMid}}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
 <path d="{{activeD}}" fill="none" stroke="{{t.accent}}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"></path>
-<rect x="{{startBox}}" y="{{startBoxY}}" width="28" height="28" rx="4" fill="{{t.ink}}"></rect>
+<rect x="{{startBox}}" y="{{startBoxY}}" width="28" height="28" rx="0" fill="{{t.ink}}"></rect>
 <circle cx="{{dotX}}" cy="{{dotY}}" r="34" fill="{{t.accent}}" opacity="0.22"></circle>
 <circle cx="{{dotX}}" cy="{{dotY}}" r="16" fill="{{t.accent}}" stroke="#FFFFFF" stroke-width="5"></circle>
 </svg>
@@ -339,9 +345,9 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </sc-for>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: {{t.muted}}">
-<span style="display: flex; align-items: center; gap: 6px"><span style="width: 12px; height: 12px; border-radius: 2px; background: {{t.ink}}"></span>{{s.legendStart}}</span>
-<span style="display: flex; align-items: center; gap: 6px"><span style="width: 22px; height: 5px; border-radius: 3px; background: {{t.accentMid}}"></span>{{s.legendDone}}</span>
-<span style="display: flex; align-items: center; gap: 6px"><span style="width: 22px; height: 7px; border-radius: 4px; background: {{t.accent}}"></span>{{s.legendNow}} · {{active.num}} {{active.zh}}</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 12px; height: 12px; border-radius: 0; background: {{t.ink}}"></span>{{s.legendStart}}</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 22px; height: 5px; border-radius: 0; background: {{t.accentMid}}"></span>{{s.legendDone}}</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 22px; height: 7px; border-radius: 0; background: {{t.accent}}"></span>{{s.legendNow}} · {{active.num}} {{active.zh}}</span>
 <span style="display: flex; align-items: center; gap: 6px"><span style="width: 22px; height: 0; border-top: 3px dashed {{t.rest}}"></span>{{s.legendRest}}</span>
 <span style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 50%; border: 2px solid {{t.ink}}; box-sizing: border-box"></span>裁判员 · {{s.judges}}</span>
 <span style="display: flex; align-items: center; gap: 6px"><span style="width: 16px; height: 16px; border-radius: 50%; border: 2px solid {{t.ink}}; box-sizing: border-box; background: {{t.accent}}"></span>裁判长 · {{s.headJudge}}</span>
@@ -349,7 +355,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </section>
 </div>
 
-<aside style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}; overflow: hidden">
+<aside style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}; overflow: hidden">
 <sc-if value="{{listMode}}" hint-placeholder-val="{{ false }}">
 <div style="padding: 16px 16px 10px; border-bottom: 1px solid {{t.line}}">
 <h2 style="margin: 0; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Noto Serif SC', serif; font-size: 20px">动作</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">Dòngzuò · {{s.movements}} (24)</span></h2>
@@ -357,14 +363,14 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <ol style="list-style: none; margin: 0; padding: 6px; max-height: 860px; overflow-y: auto">
 <sc-for list="{{moves}}" as="m" hint-placeholder-count="24">
 <li>
-<button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-current="{{m.isActive}}" style="width: 100%; display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 8px 10px; border-radius: 10px; background: {{m.rowBg}}">
-<span style="flex: none; width: 30px; height: 30px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; background: {{m.numBg}}; color: {{m.numFg}}">{{m.num}}</span>
+<button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-current="{{m.isActive}}" style="width: 100%; display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 8px 10px; border-radius: 0; background: {{m.rowBg}}">
+<span style="flex: none; width: 46px; display: flex; flex-direction: column; align-items: center; line-height: 1.15"><span style="font-family: 'Noto Serif SC', serif; font-size: 17px; font-weight: 900; color: {{m.numFg}}">{{m.cn}}</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: {{t.muted}}">{{m.num}}</span></span>
 <span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 16px; font-weight: 600; line-height: 1.3">{{m.zh}}</span>
 <span style="font-size: 12px; color: {{t.muted}}">{{m.py}}</span>
 <span style="font-size: 13px">{{m.tr}}</span>
 </span>
-<span style="flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; font-size: 12px; color: {{t.muted}}; font-variant-numeric: tabular-nums">{{m.startTxt}}<sc-if value="{{m.hasThreads}}" hint-placeholder-val="{{ false }}"><span style="padding: 0 7px; border-radius: 99px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{m.threadCount}}</span></sc-if></span>
+<span style="flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; font-size: 12px; color: {{t.muted}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{m.startTxt}}<sc-if value="{{m.hasThreads}}" hint-placeholder-val="{{ false }}"><span style="padding: 0 7px; border-radius: 0; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{m.threadCount}}</span></sc-if></span>
 </button>
 </li>
 </sc-for>
@@ -373,64 +379,67 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <sc-if value="{{detailOpen}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; align-items: center; gap: 6px; padding: 10px; border-bottom: 1px solid {{t.line}}">
-<button type="button" class="ow-btn" onClick="{{closeDetail}}" style="min-height: 44px; padding: 0 12px; border-radius: 10px; display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: 14px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 L5 8 L10 13"></path></svg>{{s.allMoves}}</button>
+<button type="button" class="ow-btn" onClick="{{closeDetail}}" style="min-height: 44px; padding: 0 12px; border-radius: 0; display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: 14px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 L5 8 L10 13"></path></svg>{{s.allMoves}}</button>
 <span style="flex: 1 1 auto"></span>
-<button type="button" class="ow-btn" onClick="{{prevDetail}}" aria-label="{{s.prev}}" style="width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: {{t.chip}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 L5 8 L10 13"></path></svg></button>
-<button type="button" class="ow-btn" onClick="{{nextDetail}}" aria-label="{{s.next}}" style="width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: {{t.chip}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 L11 8 L6 13"></path></svg></button>
+<button type="button" class="ow-btn" onClick="{{prevDetail}}" aria-label="{{s.prev}}" style="width: 44px; height: 44px; border-radius: 0; display: flex; align-items: center; justify-content: center; background: {{t.chip}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 L5 8 L10 13"></path></svg></button>
+<button type="button" class="ow-btn" onClick="{{nextDetail}}" aria-label="{{s.next}}" style="width: 44px; height: 44px; border-radius: 0; display: flex; align-items: center; justify-content: center; background: {{t.chip}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 L11 8 L6 13"></path></svg></button>
 </div>
 <div style="display: flex; flex-direction: column; gap: 18px; padding: 18px 20px 22px">
-<div style="display: flex; flex-direction: column; gap: 2px">
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: {{t.accentInk}}">{{active.num}} / 24 · {{active.startTxt}}–{{active.endTxt}}</span>
+<div style="display: flex; gap: 16px; align-items: flex-start; padding-bottom: 14px; border-bottom: 1px solid {{t.ink}}">
+<span aria-hidden="true" style="writing-mode: vertical-rl; font-family: 'Noto Serif SC', serif; font-size: 28px; line-height: 1; letter-spacing: 0.06em; font-weight: 900; color: {{t.accentInk}}">第{{active.cn}}式</span>
+<div style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: {{t.muted}}">{{active.num}} / 24 · {{active.startTxt}}–{{active.endTxt}}</span>
 <h2 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 40px; line-height: 1.2; font-weight: 700">{{active.zh}}</h2>
 <span style="font-size: 18px; color: {{t.muted}}">{{active.py}}</span>
 <span style="font-size: 16px; font-weight: 600">{{active.tr}}</span>
 </div>
+</div>
 <div style="display: flex; flex-wrap: wrap; gap: 8px">
-<button type="button" class="ow-btn" onClick="{{playThis}}" style="min-height: 44px; padding: 0 16px; border-radius: 10px; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5 L12 7 L3 12.5 Z" fill="currentColor"></path></svg>{{s.playThis}}</button>
-<button type="button" class="ow-btn" onClick="{{toggleLoop}}" aria-pressed="{{loop}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{loopBg}}; color: {{loopFg}}">{{s.loop}}</button>
+<button type="button" class="ow-btn" onClick="{{playThis}}" style="min-height: 44px; padding: 0 16px; border-radius: 0; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5 L12 7 L3 12.5 Z" fill="currentColor"></path></svg>{{s.playThis}}</button>
+<button type="button" class="ow-btn" onClick="{{toggleLoop}}" aria-pressed="{{loop}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 600; font-size: 14px; background: {{loopBg}}; color: {{loopFg}}">{{s.loop}}</button>
 </div>
 
 <sc-if value="{{hasDetail}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
-<span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.draft}}</span>
+<span style="padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.draft}}</span>
 <span style="font-size: 13px; color: {{t.muted}}">{{s.facing}}: <span style="color: {{t.ink}}; font-weight: 600">{{detail.facing}}</span></span>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 14px; font-weight: 700">动作过程 · {{s.steps}}</h3>
-<ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px">
-<sc-for list="{{detail.steps}}" as="st" hint-placeholder-count="4"><li>{{st}}</li></sc-for>
+<h3 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 15px; font-weight: 700; letter-spacing: 0.04em">动作过程 · {{s.steps}}</h3>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+<sc-for list="{{detail.stepsN}}" as="st" hint-placeholder-count="4"><li style="display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 8px; padding: 8px 0; border-top: 1px solid {{t.line}}"><span aria-hidden="true" style="font-family: 'Noto Serif SC', serif; font-size: 18px; font-weight: 900; line-height: 1.3; color: {{t.accentInk}}">{{st.cn}}</span><span>{{st.text}}</span></li></sc-for>
 </ol>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 14px; font-weight: 700">要点 · {{s.keyPoints}}</h3>
+<h3 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 15px; font-weight: 700; letter-spacing: 0.04em">要点 · {{s.keyPoints}}</h3>
 <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px">
 <sc-for list="{{detail.keys}}" as="k" hint-placeholder-count="3"><li>{{k}}</li></sc-for>
 </ul>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 14px; font-weight: 700">易犯错误 · {{s.mistakes}}</h3>
+<h3 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 15px; font-weight: 700; letter-spacing: 0.04em">易犯错误 · {{s.mistakes}}</h3>
 <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px">
 <sc-for list="{{detail.mistakes}}" as="k" hint-placeholder-count="3"><li>{{k}}</li></sc-for>
 </ul>
 </div>
-<div style="display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-radius: 12px; background: {{t.bg}}; border: 1px solid {{t.line}}">
-<h3 style="margin: 0; font-size: 14px; font-weight: 700">传统要点 · {{s.tradNotes}}</h3>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-radius: 0; background: {{t.bg}}; border: 1px solid {{t.line}}">
+<h3 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 15px; font-weight: 700; letter-spacing: 0.04em">传统要点 · {{s.tradNotes}}</h3>
 <p style="margin: 0; font-size: 13px; color: {{t.muted}}">{{s.tradLead}}</p>
 <p style="margin: 0; font-size: 14px">{{s.tradSample}}</p>
-<span style="align-self: flex-start; padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{s.badgeSchool}} · {{s.sample}}</span>
+<span style="align-self: flex-start; padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{s.badgeSchool}} · {{s.sample}}</span>
 </div>
 <p style="margin: 0; display: flex; align-items: center; gap: 8px; font-size: 13px; color: {{t.muted}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{t.accentInk}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="6.5"></circle><path d="M5 8.2 L7 10.2 L11 6"></path></svg>{{s.verifiedBy}}</p>
 </sc-if>
 
 <sc-if value="{{noDetail}}" hint-placeholder-val="{{ false }}">
-<div style="display: flex; flex-direction: column; gap: 8px; padding: 18px; border-radius: 12px; border: 1px dashed {{t.line2}}">
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 18px; border-radius: 0; border: 1px dashed {{t.line2}}">
 <h3 style="margin: 0; font-size: 15px; font-weight: 700">{{s.pendingTitle}}</h3>
 <p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{s.pendingBody}}</p>
-<button type="button" class="ow-btn" onClick="{{writeIt}}" style="align-self: flex-start; margin-top: 4px; min-height: 44px; padding: 0 14px; border-radius: 10px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}">{{s.writeIt}}</button>
+<button type="button" class="ow-btn" onClick="{{writeIt}}" style="align-self: flex-start; margin-top: 4px; min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}">{{s.writeIt}}</button>
 </div>
 </sc-if>
 
-<button type="button" class="ow-btn" onClick="{{tabDiscussMove}}" style="min-height: 48px; padding: 0 14px; border-radius: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 14px; background: {{t.chip}}">
+<button type="button" class="ow-btn" onClick="{{tabDiscussMove}}" style="min-height: 48px; padding: 0 14px; border-radius: 0; display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 14px; background: {{t.chip}}">
 <span><span style="font-weight: 700">{{active.threadCount}}</span> {{s.threadsOn}}</span>
 <span style="display: flex; align-items: center; gap: 6px; font-weight: 600; color: {{t.accentInk}}">{{s.discuss}}<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 L11 8 L6 13"></path></svg></span>
 </button>
@@ -445,62 +454,62 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
 
 <sc-if value="{{reportOpen}}" hint-placeholder-val="{{ false }}">
-<section aria-label="{{s.formTitle}}" style="display: flex; flex-direction: column; gap: 16px; padding: 20px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line2}}">
+<section aria-label="{{s.formTitle}}" style="display: flex; flex-direction: column; gap: 16px; padding: 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line2}}">
 <sc-if value="{{notSubmitted}}" hint-placeholder-val="{{ true }}">
 <h2 style="margin: 0; font-size: 20px">{{s.formTitle}}</h2>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <span id="ow-ftype" style="font-size: 13px; font-weight: 600">{{s.fType}}</span>
 <div role="group" aria-labelledby="ow-ftype" style="display: flex; flex-wrap: wrap; gap: 8px">
 <sc-for list="{{typeOpts}}" as="o" hint-placeholder-count="4">
-<button type="button" class="ow-btn" onClick="{{o.pick}}" aria-pressed="{{o.on}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{o.bg}}; color: {{o.fg}}; border: 1px solid {{o.bd}}">{{o.label}}</button>
+<button type="button" class="ow-btn" onClick="{{o.pick}}" aria-pressed="{{o.on}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 600; font-size: 14px; background: {{o.bg}}; color: {{o.fg}}; border: 1px solid {{o.bd}}">{{o.label}}</button>
 </sc-for>
 </div>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-flang" style="font-size: 13px; font-weight: 600">{{s.fLang}}</label>
-<select id="ow-flang" class="ow-in" value="{{formLang}}" onChange="{{onFormLang}}" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<select id="ow-flang" class="ow-in" value="{{formLang}}" onChange="{{onFormLang}}" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 <sc-for list="{{formLangOpts}}" as="o" hint-placeholder-count="3"><option value="{{o.v}}">{{o.label}}</option></sc-for>
 </select>
 </div>
 <div style="flex: 2 1 260px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-ftarget" style="font-size: 13px; font-weight: 600">{{s.fTarget}}</label>
-<select id="ow-ftarget" class="ow-in" value="{{formMove}}" onChange="{{onFormMove}}" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<select id="ow-ftarget" class="ow-in" value="{{formMove}}" onChange="{{onFormMove}}" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 <sc-for list="{{targetOpts}}" as="o" hint-placeholder-count="25"><option value="{{o.v}}">{{o.label}}</option></sc-for>
 </select>
 </div>
 <div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-ffield" style="font-size: 13px; font-weight: 600">{{s.fField}}</label>
-<select id="ow-ffield" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<select id="ow-ffield" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 <sc-for list="{{fieldOpts}}" as="o" hint-placeholder-count="5"><option>{{o}}</option></sc-for>
 </select>
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-fsum" style="font-size: 13px; font-weight: 600">{{s.fSummary}}</label>
-<input id="ow-fsum" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-fsum" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-fdet" style="font-size: 13px; font-weight: 600">{{s.fDetails}}</label>
-<textarea id="ow-fdet" class="ow-in" rows="4" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+<textarea id="ow-fdet" class="ow-in" rows="4" style="padding: 10px 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-fsrc" style="font-size: 13px; font-weight: 600">{{s.fSource}}</label>
-<input id="ow-fsrc" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-fsrc" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <label style="display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px"><input type="checkbox" defaultChecked="{{ true }}" style="width: 18px; height: 18px; accent-color: {{t.accentInk}}">{{s.fNotify}}</label>
 <p style="margin: 0; font-size: 13px; color: {{t.muted}}">{{s.notifyNote}}</p>
 <div style="display: flex; flex-wrap: wrap; gap: 8px">
-<button type="button" class="ow-btn" onClick="{{submit}}" style="min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.submit}}</button>
-<button type="button" class="ow-btn" onClick="{{closeReport}}" style="min-height: 46px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.cancel}}</button>
+<button type="button" class="ow-btn" onClick="{{submit}}" style="min-height: 46px; padding: 0 20px; border-radius: 0; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.submit}}</button>
+<button type="button" class="ow-btn" onClick="{{closeReport}}" style="min-height: 46px; padding: 0 16px; border-radius: 0; font-weight: 600; border: 1px solid {{t.line2}}">{{s.cancel}}</button>
 </div>
 </sc-if>
 <sc-if value="{{submitted}}" hint-placeholder-val="{{ false }}">
 <div role="status" style="display: flex; flex-direction: column; gap: 8px">
-<span style="align-self: flex-start; padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.stOpen}}</span>
+<span style="align-self: flex-start; padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.stOpen}}</span>
 <h2 style="margin: 0; font-size: 20px">{{s.sent}}</h2>
 <p style="margin: 0; color: {{t.muted}}">{{s.sentBody}}</p>
-<button type="button" class="ow-btn" onClick="{{closeReport}}" style="align-self: flex-start; min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.back}}</button>
+<button type="button" class="ow-btn" onClick="{{closeReport}}" style="align-self: flex-start; min-height: 44px; padding: 0 16px; border-radius: 0; font-weight: 600; border: 1px solid {{t.line2}}">{{s.back}}</button>
 </div>
 </sc-if>
 </section>
@@ -508,35 +517,35 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <sc-if value="{{noOpenThread}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
-<div role="group" aria-label="Thread filter" style="display: flex; padding: 3px; border-radius: 10px; background: {{t.chip}}">
-<button type="button" class="ow-btn" onClick="{{filterAll}}" aria-pressed="{{fAll}}" style="min-height: 38px; padding: 0 12px; border-radius: 8px; font-size: 14px; font-weight: 600; background: {{fAllBg}}; color: {{fAllFg}}">{{s.allThreads}} ({{listCount}})</button>
-<button type="button" class="ow-btn" onClick="{{filterMove}}" aria-pressed="{{fMove}}" style="min-height: 38px; padding: 0 12px; border-radius: 8px; font-size: 14px; font-weight: 600; background: {{fMoveBg}}; color: {{fMoveFg}}">{{active.num}} {{active.zh}} ({{moveListCount}})</button>
+<div role="group" aria-label="Thread filter" style="display: flex; padding: 3px; border-radius: 0; background: {{t.chip}}">
+<button type="button" class="ow-btn" onClick="{{filterAll}}" aria-pressed="{{fAll}}" style="min-height: 38px; padding: 0 12px; border-radius: 0; font-size: 14px; font-weight: 600; background: {{fAllBg}}; color: {{fAllFg}}">{{s.allThreads}} ({{listCount}})</button>
+<button type="button" class="ow-btn" onClick="{{filterMove}}" aria-pressed="{{fMove}}" style="min-height: 38px; padding: 0 12px; border-radius: 0; font-size: 14px; font-weight: 600; background: {{fMoveBg}}; color: {{fMoveFg}}">{{active.num}} {{active.zh}} ({{moveListCount}})</button>
 </div>
-<div role="group" aria-label="{{s.langFilter}}" style="display: flex; flex-wrap: wrap; padding: 3px; border-radius: 10px; background: {{t.chip}}">
+<div role="group" aria-label="{{s.langFilter}}" style="display: flex; flex-wrap: wrap; padding: 3px; border-radius: 0; background: {{t.chip}}">
 <sc-for list="{{langTabs}}" as="lt" hint-placeholder-count="4">
-<button type="button" class="ow-btn" onClick="{{lt.pick}}" aria-pressed="{{lt.on}}" style="min-height: 38px; padding: 0 12px; border-radius: 8px; font-size: 14px; font-weight: 600; background: {{lt.bg}}; color: {{lt.fg}}">{{lt.label}} <span style="font-weight: 500; color: {{t.muted}}">{{lt.count}}</span></button>
+<button type="button" class="ow-btn" onClick="{{lt.pick}}" aria-pressed="{{lt.on}}" style="min-height: 38px; padding: 0 12px; border-radius: 0; font-size: 14px; font-weight: 600; background: {{lt.bg}}; color: {{lt.fg}}">{{lt.label}} <span style="font-weight: 500; color: {{t.muted}}">{{lt.count}}</span></button>
 </sc-for>
 </div>
 <span style="flex: 1 1 auto"></span>
-<button type="button" class="ow-btn" onClick="{{reportHere}}" style="min-height: 44px; padding: 0 16px; border-radius: 10px; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 3 V13 M3 8 H13"></path></svg>{{s.report}}</button>
+<button type="button" class="ow-btn" onClick="{{reportHere}}" style="min-height: 44px; padding: 0 16px; border-radius: 0; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 3 V13 M3 8 H13"></path></svg>{{s.report}}</button>
 </div>
 
 <sc-if value="{{noThreads}}" hint-placeholder-val="{{ false }}">
-<p style="margin: 0; padding: 24px; border-radius: 14px; text-align: center; color: {{t.muted}}; border: 1px dashed {{t.line2}}">{{s.noThreads}}</p>
+<p style="margin: 0; padding: 24px; border-radius: 0; text-align: center; color: {{t.muted}}; border: 1px dashed {{t.line2}}">{{s.noThreads}}</p>
 </sc-if>
 <sc-for list="{{threads}}" as="th" hint-placeholder-count="3">
-<article style="display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border-radius: 14px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<article style="display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
-<span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{th.typeBg}}; color: {{th.typeFg}}">{{th.typeLabel}}</span>
-<span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{th.stBg}}; color: {{th.stFg}}">{{th.stLabel}}</span>
-<span style="padding: 1px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; border: 1px solid {{t.line2}}; color: {{t.ink}}">{{th.langLabel}}</span>
+<span style="padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{th.typeBg}}; color: {{th.typeFg}}">{{th.typeLabel}}</span>
+<span style="padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{th.stBg}}; color: {{th.stFg}}">{{th.stLabel}}</span>
+<span style="padding: 1px 10px; border-radius: 0; font-size: 12px; font-weight: 600; border: 1px solid {{t.line2}}; color: {{t.ink}}">{{th.langLabel}}</span>
 <span style="flex: 1 1 auto"></span>
 <button type="button" class="ow-btn" onClick="{{th.goto}}" style="min-height: 32px; font-size: 13px; text-decoration: underline; color: {{t.muted}}">{{th.target}}</button>
 </div>
 <h3 style="margin: 0; font-size: 17px; line-height: 1.35"><button type="button" class="ow-btn" onClick="{{th.open}}" style="min-height: 32px; font-weight: 700; text-align: left; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: {{t.line2}}">{{th.title}}</button></h3>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
 <p style="margin: 0; flex: 1 1 auto; font-size: 14px; color: {{t.muted}}">{{th.field}} · {{th.by}} · {{th.when}}</p>
-<button type="button" class="ow-btn" onClick="{{th.open}}" style="min-height: 40px; padding: 0 14px; border-radius: 10px; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; background: {{t.chip}}; color: {{t.accentInk}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 3.5 H13.5 V10.5 H7 L4 13 V10.5 H2.5 Z"></path></svg>{{th.replies}} {{s.replies}}</button>
+<button type="button" class="ow-btn" onClick="{{th.open}}" style="min-height: 40px; padding: 0 14px; border-radius: 0; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; background: {{t.chip}}; color: {{t.accentInk}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 3.5 H13.5 V10.5 H7 L4 13 V10.5 H2.5 Z"></path></svg>{{th.replies}} {{s.replies}}</button>
 </div>
 </article>
 </sc-for>
@@ -545,18 +554,18 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <sc-if value="{{hasOpenThread}}" hint-placeholder-val="{{ false }}">
 <article style="display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
-<button type="button" class="ow-btn" onClick="{{closeThread}}" style="min-height: 44px; padding: 0 12px; border-radius: 10px; display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: 14px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 L5 8 L10 13"></path></svg>{{s.allThreadsBack}}</button>
+<button type="button" class="ow-btn" onClick="{{closeThread}}" style="min-height: 44px; padding: 0 12px; border-radius: 0; display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: 14px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 L5 8 L10 13"></path></svg>{{s.allThreadsBack}}</button>
 <span style="flex: 1 1 auto"></span>
 <sc-if value="{{signedIn}}" hint-placeholder-val="{{ false }}">
-<button type="button" class="ow-btn" onClick="{{toggleWatch}}" aria-pressed="{{watchOn}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; background: {{watchBg}}; color: {{watchFg}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 11 V7 A4 4 0 0 1 12 7 V11 L13 12 H3 Z"></path><path d="M6.5 14 H9.5"></path></svg>{{watchLabel}}</button>
+<button type="button" class="ow-btn" onClick="{{toggleWatch}}" aria-pressed="{{watchOn}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; background: {{watchBg}}; color: {{watchFg}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 11 V7 A4 4 0 0 1 12 7 V11 L13 12 H3 Z"></path><path d="M6.5 14 H9.5"></path></svg>{{watchLabel}}</button>
 </sc-if>
 </div>
 
-<header style="display: flex; flex-direction: column; gap: 10px; padding: 18px 20px; border-radius: 14px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<header style="display: flex; flex-direction: column; gap: 10px; padding: 18px 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
-<span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{ot.typeBg}}; color: {{ot.typeFg}}">{{ot.typeLabel}}</span>
-<span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{ot.stBg}}; color: {{ot.stFg}}">{{ot.stLabel}}</span>
-<span style="padding: 1px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; border: 1px solid {{t.line2}}; color: {{t.ink}}">{{ot.langLabel}}</span>
+<span style="padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{ot.typeBg}}; color: {{ot.typeFg}}">{{ot.typeLabel}}</span>
+<span style="padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{ot.stBg}}; color: {{ot.stFg}}">{{ot.stLabel}}</span>
+<span style="padding: 1px 10px; border-radius: 0; font-size: 12px; font-weight: 600; border: 1px solid {{t.line2}}; color: {{t.ink}}">{{ot.langLabel}}</span>
 <span style="flex: 1 1 auto"></span>
 <button type="button" class="ow-btn" onClick="{{ot.goto}}" style="min-height: 32px; font-size: 13px; text-decoration: underline; color: {{t.muted}}">{{ot.target}}</button>
 </div>
@@ -571,13 +580,13 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <div style="display: flex; align-items: center; gap: 10px; padding: 2px 16px; font-size: 13px; color: {{t.muted}}"><span aria-hidden="true" style="flex: none; width: 10px; height: 10px; border-radius: 50%; background: {{t.blue}}"></span><span>{{p.text}} · {{p.when}}</span></div>
 </sc-if>
 <sc-if value="{{p.notEvent}}" hint-placeholder-val="{{ true }}">
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border-radius: 14px; background: {{t.surface}}; border: 2px solid {{p.cardBd}}">
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border-radius: 0; background: {{t.surface}}; border: 2px solid {{p.cardBd}}">
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px">
 <span aria-hidden="true" style="flex: none; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{p.avBg}}; color: {{p.avFg}}">{{p.initial}}</span>
 <span style="display: flex; flex-direction: column; line-height: 1.25"><span style="font-weight: 600">{{p.by}}</span><span style="font-size: 12px; font-weight: 500; color: {{p.badgeFg}}">{{p.badge}}</span></span>
 <span style="flex: 1 1 auto"></span>
-<sc-if value="{{p.isOp}}" hint-placeholder-val="{{ false }}"><span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.chip}}; color: {{t.muted}}">{{s.original}}</span></sc-if>
-<sc-if value="{{p.accepted}}" hint-placeholder-val="{{ false }}"><span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.green}}; color: #FFFFFF">✓ {{s.acceptedAnswer}}</span></sc-if>
+<sc-if value="{{p.isOp}}" hint-placeholder-val="{{ false }}"><span style="padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.chip}}; color: {{t.muted}}">{{s.original}}</span></sc-if>
+<sc-if value="{{p.accepted}}" hint-placeholder-val="{{ false }}"><span style="padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.green}}; color: #FFFFFF">✓ {{s.acceptedAnswer}}</span></sc-if>
 <span style="font-size: 12px; color: {{t.muted}}">{{p.when}}</span>
 </div>
 <p style="margin: 0; white-space: pre-line">{{p.body}}</p>
@@ -588,26 +597,26 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </ol>
 
 <sc-if value="{{signedIn}}" hint-placeholder-val="{{ false }}">
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border-radius: 14px; background: {{t.surface}}; border: 1px solid {{t.line2}}">
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line2}}">
 <label for="ow-reply" style="font-size: 13px; font-weight: 600">{{s.replyLabel}}</label>
-<textarea id="ow-reply" class="ow-in" rows="4" value="{{replyText}}" onChange="{{onReply}}" placeholder="{{s.replyPh}}" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+<textarea id="ow-reply" class="ow-in" rows="4" value="{{replyText}}" onChange="{{onReply}}" placeholder="{{s.replyPh}}" style="padding: 10px 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
 <span style="flex: 1 1 240px; font-size: 12px; color: {{t.muted}}"><span style="font-weight: 600; color: {{t.ink}}">{{replyLangNote}}</span> · {{s.replyNote}}</span>
-<button type="button" class="ow-btn" onClick="{{postReply}}" style="min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.postReply}}</button>
+<button type="button" class="ow-btn" onClick="{{postReply}}" style="min-height: 46px; padding: 0 20px; border-radius: 0; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.postReply}}</button>
 </div>
 </div>
 </sc-if>
 <sc-if value="{{signedOut}}" hint-placeholder-val="{{ true }}">
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 16px 18px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 16px 18px; border-radius: 0; border: 1px dashed {{t.line2}}">
 <span style="flex: 1 1 260px; font-size: 14px; color: {{t.muted}}">{{s.gateReply}}</span>
-<button type="button" class="ow-btn" onClick="{{signInReply}}" style="min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.signInReply}}</button>
+<button type="button" class="ow-btn" onClick="{{signInReply}}" style="min-height: 44px; padding: 0 16px; border-radius: 0; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.signInReply}}</button>
 </div>
 </sc-if>
 </article>
 </sc-if>
 </div>
 
-<aside style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 18px 20px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<aside style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 18px 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <h2 style="margin: 0; font-size: 16px">{{s.howTitle}}</h2>
 <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px">
 <li>{{s.how1}}</li>
@@ -618,9 +627,9 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <div style="display: flex; flex-direction: column; gap: 8px">
 <span style="font-size: 13px; font-weight: 600">Status</span>
 <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12px; font-weight: 600">
-<span style="padding: 2px 10px; border-radius: 99px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.stOpen}}</span><span aria-hidden="true">→</span>
-<span style="padding: 2px 10px; border-radius: 99px; background: {{t.blue}}; color: #FFFFFF">{{s.stReview}}</span><span aria-hidden="true">→</span>
-<span style="padding: 2px 10px; border-radius: 99px; background: {{t.green}}; color: #FFFFFF">{{s.stAccepted}}</span>
+<span style="padding: 2px 10px; border-radius: 0; background: {{t.accent}}; color: {{t.onAccent}}">{{s.stOpen}}</span><span aria-hidden="true">→</span>
+<span style="padding: 2px 10px; border-radius: 0; background: {{t.blue}}; color: #FFFFFF">{{s.stReview}}</span><span aria-hidden="true">→</span>
+<span style="padding: 2px 10px; border-radius: 0; background: {{t.green}}; color: #FFFFFF">{{s.stAccepted}}</span>
 </div>
 </div>
 </aside>
@@ -631,52 +640,55 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <sc-if value="{{isDiscussions}}" hint-placeholder-val="{{ false }}">
 <main style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 28px">
-<section style="display: flex; flex-direction: column; gap: 6px">
-<h1 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 48px; line-height: 1.15; font-weight: 700">讨论</h1>
-<p style="margin: 0; font-size: 18px; color: {{t.muted}}">Tǎolùn · <span style="color: {{t.ink}}; font-weight: 600">{{s.discussions}}</span></p>
+<section style="display: flex; gap: 24px; align-items: stretch">
+<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Noto Serif SC', serif; font-size: 44px; line-height: 1; letter-spacing: 0.14em; font-weight: 900; padding-left: 16px; border-left: 4px solid {{t.accent}}">讨论</h1>
+<div style="display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; min-width: 0">
+<p style="margin: 0; font-family: 'Source Serif 4', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.discussions}}</p>
+<p style="margin: 0; font-size: 15px; letter-spacing: 0.04em; color: {{t.muted}}">Tǎolùn</p>
 <p style="margin: 8px 0 0; max-width: 640px; color: {{t.muted}}">{{s.dLead}}</p>
+</div>
 </section>
 
 <section style="display: flex; flex-direction: column; gap: 14px">
-<h2 style="margin: 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap"><span style="font-family: 'Noto Serif SC', serif; font-size: 24px">太极拳</span><span style="font-size: 15px; font-weight: 400; color: {{t.muted}}">Tàijíquán · {{s.taiji}}</span></h2>
+<h2 style="margin: 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; padding-bottom: 8px; border-bottom: 1px solid {{t.ink}}"><span style="font-family: 'Noto Serif SC', serif; font-size: 24px">太极拳</span><span style="font-size: 15px; font-weight: 400; color: {{t.muted}}">Tàijíquán · {{s.taiji}}</span></h2>
 <div style="display: flex; flex-direction: column; gap: 12px">
-<button type="button" class="ow-btn ow-row" onClick="{{open24Discuss}}" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; padding: 20px 22px; border-radius: 16px; border: 1px solid {{t.line}}; background: {{t.surface}}">
+<button type="button" class="ow-btn ow-row" onClick="{{open24Discuss}}" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; padding: 20px 22px; border-radius: 0; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}; background: {{t.surface}}">
 <span style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">二十四式简化太极拳</span>
 <span style="font-size: 14px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán · <span style="color: {{t.ink}}; font-weight: 500">{{s.r24}}</span></span>
 <span style="margin-top: 8px; font-size: 14px; color: {{t.muted}}">{{s.latest}}: <span style="color: {{t.ink}}; font-weight: 600">{{latestTitle}}</span> · {{latestLang}}</span>
 <span style="margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px">
-<sc-for list="{{langCounts}}" as="lc" hint-placeholder-count="3"><span style="padding: 1px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; border: 1px solid {{t.line2}}; color: {{t.ink}}">{{lc.label}} · {{lc.count}}</span></sc-for>
+<sc-for list="{{langCounts}}" as="lc" hint-placeholder-count="3"><span style="padding: 1px 10px; border-radius: 0; font-size: 12px; font-weight: 600; border: 1px solid {{t.line2}}; color: {{t.ink}}">{{lc.label}} · {{lc.count}}</span></sc-for>
 </span>
 </span>
 <span style="flex: 0 1 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 12px; font-weight: 600">
-<span style="padding: 3px 10px; border-radius: 99px; background: {{t.accent}}; color: {{t.onAccent}}">{{countOpen}} {{s.stOpen}}</span>
-<span style="padding: 3px 10px; border-radius: 99px; background: {{t.blue}}; color: #FFFFFF">{{countReview}} {{s.stReview}}</span>
-<span style="padding: 3px 10px; border-radius: 99px; background: {{t.green}}; color: #FFFFFF">{{countAccepted}} {{s.stAccepted}}</span>
+<span style="padding: 3px 10px; border-radius: 0; background: {{t.accent}}; color: {{t.onAccent}}">{{countOpen}} {{s.stOpen}}</span>
+<span style="padding: 3px 10px; border-radius: 0; background: {{t.blue}}; color: #FFFFFF">{{countReview}} {{s.stReview}}</span>
+<span style="padding: 3px 10px; border-radius: 0; background: {{t.green}}; color: #FFFFFF">{{countAccepted}} {{s.stAccepted}}</span>
 </span>
-<span style="flex: none; display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{t.chip}}; color: {{t.accentInk}}">{{threadTotal}} {{s.threads}}<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 L11 8 L6 13"></path></svg></span>
+<span style="flex: none; display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 0; font-weight: 600; font-size: 14px; background: {{t.chip}}; color: {{t.accentInk}}">{{threadTotal}} {{s.threads}}<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 L11 8 L6 13"></path></svg></span>
 </button>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; padding: 20px 22px; border-radius: 16px; border: 1px dashed {{t.line2}}; background: {{t.surface}}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; padding: 20px 22px; border-radius: 0; border: 1px dashed {{t.line2}}; background: {{t.surface}}">
 <span style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">四十二式太极拳</span>
 <span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíquán · <span style="color: {{t.ink}}; font-weight: 500">{{s.r42}}</span></span>
 <span style="margin-top: 8px; font-size: 14px; color: {{t.muted}}">{{s.dPending}}</span>
 </span>
-<span style="flex: none; padding: 3px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.inProgress}}</span>
+<span style="flex: none; padding: 3px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.inProgress}}</span>
 </div>
 </div>
 </section>
 
 <section style="display: flex; flex-wrap: wrap; gap: 12px">
-<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 0; border: 1px dashed {{t.line2}}">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">长拳</span>
 <span style="font-size: 14px; color: {{t.muted}}">Chángquán · {{s.changquan}} · {{s.comingSoon}}</span>
 </div>
-<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 0; border: 1px dashed {{t.line2}}">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">南拳</span>
 <span style="font-size: 14px; color: {{t.muted}}">Nánquán · {{s.nanquan}} · {{s.comingSoon}}</span>
 </div>
-<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 0; border: 1px dashed {{t.line2}}">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">器械</span>
 <span style="font-size: 14px; color: {{t.muted}}">Qìxiè · {{s.weapons}} · {{s.comingSoon}}</span>
 </div>
@@ -686,10 +698,13 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <sc-if value="{{isApply}}" hint-placeholder-val="{{ false }}">
 <main style="max-width: 920px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 24px">
-<section style="display: flex; flex-direction: column; gap: 6px">
-<h1 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 40px; line-height: 1.2; font-weight: 700">申请成为贡献者</h1>
-<p style="margin: 0; font-size: 17px; color: {{t.muted}}">Shēnqǐng chéngwéi gòngxiànzhě · <span style="color: {{t.ink}}; font-weight: 600">{{s.apTitle}}</span></p>
+<section style="display: flex; gap: 24px; align-items: stretch">
+<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Noto Serif SC', serif; font-size: 30px; line-height: 1; letter-spacing: 0.14em; font-weight: 900; padding-left: 16px; border-left: 4px solid {{t.accent}}">申请成为贡献者</h1>
+<div style="display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; min-width: 0">
+<p style="margin: 0; font-family: 'Source Serif 4', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.apTitle}}</p>
+<p style="margin: 0; font-size: 15px; letter-spacing: 0.04em; color: {{t.muted}}">Shēnqǐng chéngwéi gòngxiànzhě</p>
 <p style="margin: 8px 0 0; max-width: 640px; color: {{t.muted}}">{{s.apLead}}</p>
+</div>
 </section>
 <ol aria-label="Steps" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px">
 <sc-for list="{{apSteps}}" as="st" hint-placeholder-count="3">
@@ -699,91 +714,91 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <sc-if value="{{ap1}}" hint-placeholder-val="{{ true }}">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
-<button type="button" class="ow-btn ow-row" onClick="{{pickA}}" style="display: flex; flex-direction: column; gap: 8px; padding: 22px; border-radius: 16px; border: 1px solid {{t.line2}}; background: {{t.surface}}">
-<span style="width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accentSoft}}; color: {{t.accentInk}}">A</span>
+<button type="button" class="ow-btn ow-row" onClick="{{pickA}}" style="display: flex; flex-direction: column; gap: 8px; padding: 22px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}">
+<span style="width: 32px; height: 32px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accentSoft}}; color: {{t.accentInk}}">A</span>
 <span style="font-size: 20px; font-weight: 700">{{s.pathA}}</span>
 <span style="font-size: 14px; color: {{t.muted}}">{{s.pathADesc}}</span>
 <span style="display: flex; flex-direction: column; gap: 4px; margin-top: 4px; font-size: 14px">
 <sc-for list="{{s.pathANeeds}}" as="nd" hint-placeholder-count="3"><span style="display: flex; gap: 8px"><span aria-hidden="true" style="color: {{t.accentInk}}">✓</span>{{nd}}</span></sc-for>
 </span>
-<span style="margin-top: 8px; align-self: flex-start; min-height: 40px; padding: 0 16px; border-radius: 10px; display: flex; align-items: center; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.choosePath}}</span>
+<span style="margin-top: 8px; align-self: flex-start; min-height: 40px; padding: 0 16px; border-radius: 0; display: flex; align-items: center; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.choosePath}}</span>
 </button>
-<button type="button" class="ow-btn ow-row" onClick="{{pickB}}" style="display: flex; flex-direction: column; gap: 8px; padding: 22px; border-radius: 16px; border: 1px solid {{t.line2}}; background: {{t.surface}}">
-<span style="width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accentSoft}}; color: {{t.accentInk}}">B</span>
+<button type="button" class="ow-btn ow-row" onClick="{{pickB}}" style="display: flex; flex-direction: column; gap: 8px; padding: 22px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}">
+<span style="width: 32px; height: 32px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accentSoft}}; color: {{t.accentInk}}">B</span>
 <span style="font-size: 20px; font-weight: 700">{{s.pathB}}</span>
 <span style="font-size: 14px; color: {{t.muted}}">{{s.pathBDesc}}</span>
 <span style="display: flex; flex-direction: column; gap: 4px; margin-top: 4px; font-size: 14px">
 <sc-for list="{{s.pathBNeeds}}" as="nd" hint-placeholder-count="3"><span style="display: flex; gap: 8px"><span aria-hidden="true" style="color: {{t.accentInk}}">✓</span>{{nd}}</span></sc-for>
 </span>
-<span style="margin-top: 8px; align-self: flex-start; min-height: 40px; padding: 0 16px; border-radius: 10px; display: flex; align-items: center; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.choosePath}}</span>
+<span style="margin-top: 8px; align-self: flex-start; min-height: 40px; padding: 0 16px; border-radius: 0; display: flex; align-items: center; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.choosePath}}</span>
 </button>
 </div>
 </sc-if>
 
 <sc-if value="{{ap2}}" hint-placeholder-val="{{ false }}">
-<section aria-label="{{s.apStep2}}" style="display: flex; flex-direction: column; gap: 16px; padding: 22px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
-<span style="align-self: flex-start; padding: 3px 12px; border-radius: 99px; font-size: 13px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{apPathLabel}}</span>
+<section aria-label="{{s.apStep2}}" style="display: flex; flex-direction: column; gap: 16px; padding: 22px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<span style="align-self: flex-start; padding: 3px 12px; border-radius: 0; font-size: 13px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{apPathLabel}}</span>
 
 <sc-if value="{{apA}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-acred" style="font-size: 13px; font-weight: 600">{{s.fCred}}</label>
-<select id="ow-acred" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><sc-for list="{{s.creds}}" as="o" hint-placeholder-count="4"><option>{{o}}</option></sc-for></select>
+<select id="ow-acred" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><sc-for list="{{s.creds}}" as="o" hint-placeholder-count="4"><option>{{o}}</option></sc-for></select>
 </div>
 <div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-alevel" style="font-size: 13px; font-weight: 600">{{s.fLevel}}</label>
-<select id="ow-alevel" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><sc-for list="{{s.levels}}" as="o" hint-placeholder-count="4"><option>{{o}}</option></sc-for></select>
+<select id="ow-alevel" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><sc-for list="{{s.levels}}" as="o" hint-placeholder-count="4"><option>{{o}}</option></sc-for></select>
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-aassoc" style="font-size: 13px; font-weight: 600">{{s.fAssoc}}</label>
-<input id="ow-aassoc" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-aassoc" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-aname" style="font-size: 13px; font-weight: 600">{{s.fName}}</label>
-<input id="ow-aname" class="ow-in" type="text" value="{{apName}}" onChange="{{onApName}}" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-aname" class="ow-in" type="text" value="{{apName}}" onChange="{{onApName}}" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-acert" style="font-size: 13px; font-weight: 600">{{s.fCertNo}}</label>
-<input id="ow-acert" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-acert" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-aexp" style="font-size: 13px; font-weight: 600">{{s.fExpiry}}</label>
-<input id="ow-aexp" class="ow-in" type="date" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-aexp" class="ow-in" type="date" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-afile" style="font-size: 13px; font-weight: 600">{{s.fUpload}}</label>
-<input id="ow-afile" class="ow-in" type="file" accept="image/*,application/pdf" style="padding: 20px 16px; border-radius: 12px; border: 2px dashed {{t.line2}}; background: {{t.bg}}; color: {{t.ink}}">
+<input id="ow-afile" class="ow-in" type="file" accept="image/*,application/pdf" style="padding: 20px 16px; border-radius: 0; border: 2px dashed {{t.line2}}; background: {{t.bg}}; color: {{t.ink}}">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-astyles" style="font-size: 13px; font-weight: 600">{{s.fStyles}}</label>
-<input id="ow-astyles" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-astyles" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 </sc-if>
 
 <sc-if value="{{apB}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-bschool" style="font-size: 13px; font-weight: 600">{{s.fSchool}}</label>
-<input id="ow-bschool" class="ow-in" type="text" value="{{apName}}" onChange="{{onApName}}" placeholder="{{s.fSchoolPh}}" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-bschool" class="ow-in" type="text" value="{{apName}}" onChange="{{onApName}}" placeholder="{{s.fSchoolPh}}" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-blineage" style="font-size: 13px; font-weight: 600">{{s.fLineage}}</label>
-<input id="ow-blineage" class="ow-in" type="text" placeholder="{{s.fLineagePh}}" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-blineage" class="ow-in" type="text" placeholder="{{s.fLineagePh}}" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <div style="flex: 2 1 220px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-bteacher" style="font-size: 13px; font-weight: 600">{{s.fTeacher}}</label>
-<input id="ow-bteacher" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-bteacher" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <div style="flex: 1 1 120px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-bfounded" style="font-size: 13px; font-weight: 600">{{s.fFounded}}</label>
-<input id="ow-bfounded" class="ow-in" type="number" inputmode="numeric" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-bfounded" class="ow-in" type="number" inputmode="numeric" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <div style="flex: 2 1 200px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-bcity" style="font-size: 13px; font-weight: 600">{{s.fCity}}</label>
-<input id="ow-bcity" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-bcity" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px">
@@ -793,7 +808,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 <div role="group" aria-labelledby="ow-bev" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px">
 <sc-for list="{{apEvOpts}}" as="o" hint-placeholder-count="6">
-<button type="button" class="ow-btn" onClick="{{o.pick}}" aria-pressed="{{o.on}}" style="min-height: 52px; padding: 8px 14px; border-radius: 10px; font-size: 14px; font-weight: 500; background: {{o.bg}}; color: {{o.fg}}; border: 1px solid {{o.bd}}">{{o.label}}</button>
+<button type="button" class="ow-btn" onClick="{{o.pick}}" aria-pressed="{{o.on}}" style="min-height: 52px; padding: 8px 14px; border-radius: 0; font-size: 14px; font-weight: 500; background: {{o.bg}}; color: {{o.fg}}; border: 1px solid {{o.bd}}">{{o.label}}</button>
 </sc-for>
 </div>
 </div>
@@ -801,75 +816,75 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <div style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-bv1" style="font-size: 13px; font-weight: 600">{{s.fVouch1}}</label>
-<input id="ow-bv1" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-bv1" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <div style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-bv2" style="font-size: 13px; font-weight: 600">{{s.fVouch2}}</label>
-<input id="ow-bv2" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-bv2" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 </div>
 </sc-if>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-blinks" style="font-size: 13px; font-weight: 600">{{s.fLinks}}</label>
-<textarea id="ow-blinks" class="ow-in" rows="3" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+<textarea id="ow-blinks" class="ow-in" rows="3" style="padding: 10px 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-bfile" style="font-size: 13px; font-weight: 600">{{s.fUploadEv}}</label>
-<input id="ow-bfile" class="ow-in" type="file" multiple accept="image/*,application/pdf,video/*" style="padding: 20px 16px; border-radius: 12px; border: 2px dashed {{t.line2}}; background: {{t.bg}}; color: {{t.ink}}">
+<input id="ow-bfile" class="ow-in" type="file" multiple accept="image/*,application/pdf,video/*" style="padding: 20px 16px; border-radius: 0; border: 2px dashed {{t.line2}}; background: {{t.bg}}; color: {{t.ink}}">
 </div>
 </sc-if>
 
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-awhy" style="font-size: 13px; font-weight: 600">{{s.fWhy}}</label>
-<textarea id="ow-awhy" class="ow-in" rows="3" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+<textarea id="ow-awhy" class="ow-in" rows="3" style="padding: 10px 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
 </div>
 <sc-if value="{{hasApErr}}" hint-placeholder-val="{{ false }}"><p role="alert" style="margin: 0; font-size: 14px; color: {{t.red}}">{{apErr}}</p></sc-if>
 <div style="display: flex; flex-wrap: wrap; gap: 8px">
-<button type="button" class="ow-btn" onClick="{{apBack}}" style="min-height: 46px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.backBtn}}</button>
-<button type="button" class="ow-btn" onClick="{{apNext2}}" style="min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.next}}</button>
+<button type="button" class="ow-btn" onClick="{{apBack}}" style="min-height: 46px; padding: 0 16px; border-radius: 0; font-weight: 600; border: 1px solid {{t.line2}}">{{s.backBtn}}</button>
+<button type="button" class="ow-btn" onClick="{{apNext2}}" style="min-height: 46px; padding: 0 20px; border-radius: 0; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.next}}</button>
 </div>
 </section>
 </sc-if>
 
 <sc-if value="{{ap3}}" hint-placeholder-val="{{ false }}">
-<section aria-label="{{s.apStep3}}" style="display: flex; flex-direction: column; gap: 16px; padding: 22px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<section aria-label="{{s.apStep3}}" style="display: flex; flex-direction: column; gap: 16px; padding: 22px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <h2 style="margin: 0; font-size: 20px">{{s.apStep3}}</h2>
 <dl style="margin: 0; display: grid; grid-template-columns: minmax(0, 160px) minmax(0, 1fr); gap: 8px 16px; font-size: 14px">
 <dt style="color: {{t.muted}}">{{s.reviewPath}}</dt><dd style="margin: 0; font-weight: 600">{{apPathLabel}}</dd>
 <dt style="color: {{t.muted}}">{{s.reviewName}}</dt><dd style="margin: 0; font-weight: 600">{{apNameShown}}</dd>
 </dl>
-<label style="display: flex; align-items: flex-start; gap: 10px; padding: 14px; border-radius: 12px; font-size: 14px; background: {{t.bg}}"><input type="checkbox" checked="{{apConsent}}" onChange="{{onApConsent}}" style="flex: none; margin-top: 2px; width: 18px; height: 18px; accent-color: {{t.accent}}"><span>{{s.consent}}</span></label>
+<label style="display: flex; align-items: flex-start; gap: 10px; padding: 14px; border-radius: 0; font-size: 14px; background: {{t.bg}}"><input type="checkbox" checked="{{apConsent}}" onChange="{{onApConsent}}" style="flex: none; margin-top: 2px; width: 18px; height: 18px; accent-color: {{t.accent}}"><span>{{s.consent}}</span></label>
 <sc-if value="{{hasApErr}}" hint-placeholder-val="{{ false }}"><p role="alert" style="margin: 0; font-size: 14px; color: {{t.red}}">{{apErr}}</p></sc-if>
 <div style="display: flex; flex-wrap: wrap; gap: 8px">
-<button type="button" class="ow-btn" onClick="{{apBack}}" style="min-height: 46px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.backBtn}}</button>
-<button type="button" class="ow-btn" onClick="{{apSubmit}}" style="min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.submitApp}}</button>
+<button type="button" class="ow-btn" onClick="{{apBack}}" style="min-height: 46px; padding: 0 16px; border-radius: 0; font-weight: 600; border: 1px solid {{t.line2}}">{{s.backBtn}}</button>
+<button type="button" class="ow-btn" onClick="{{apSubmit}}" style="min-height: 46px; padding: 0 20px; border-radius: 0; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.submitApp}}</button>
 </div>
 </section>
 </sc-if>
 
 <sc-if value="{{ap4}}" hint-placeholder-val="{{ false }}">
-<section role="status" style="display: flex; flex-direction: column; gap: 14px; padding: 24px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line2}}">
-<span style="align-self: flex-start; padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.pending}}</span>
+<section role="status" style="display: flex; flex-direction: column; gap: 14px; padding: 24px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line2}}">
+<span style="align-self: flex-start; padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.pending}}</span>
 <h2 style="margin: 0; font-size: 22px">{{s.pendingTitle2}}</h2>
 <p style="margin: 0; max-width: 640px; color: {{t.muted}}">{{s.pendingBody2}}</p>
 <ol aria-label="Status" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13px; font-weight: 600">
-<li style="padding: 4px 12px; border-radius: 99px; background: {{t.accentSoft}}; color: {{t.accentInk}}">✓ {{s.tl1}}</li>
+<li style="padding: 4px 12px; border-radius: 0; background: {{t.accentSoft}}; color: {{t.accentInk}}">✓ {{s.tl1}}</li>
 <li aria-hidden="true" style="color: {{t.muted}}">→</li>
-<li style="padding: 4px 12px; border-radius: 99px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.tl2}}</li>
+<li style="padding: 4px 12px; border-radius: 0; background: {{t.accent}}; color: {{t.onAccent}}">{{s.tl2}}</li>
 <li aria-hidden="true" style="color: {{t.muted}}">→</li>
-<li style="padding: 4px 12px; border-radius: 99px; background: {{t.chip}}; color: {{t.muted}}">{{s.tl3}}</li>
+<li style="padding: 4px 12px; border-radius: 0; background: {{t.chip}}; color: {{t.muted}}">{{s.tl3}}</li>
 </ol>
-<button type="button" class="ow-btn" onClick="{{apApprove}}" style="align-self: flex-start; min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px dashed {{t.line2}}">{{s.approveDemo}}</button>
+<button type="button" class="ow-btn" onClick="{{apApprove}}" style="align-self: flex-start; min-height: 44px; padding: 0 16px; border-radius: 0; font-weight: 600; border: 1px dashed {{t.line2}}">{{s.approveDemo}}</button>
 </section>
 </sc-if>
 
 <sc-if value="{{ap5}}" hint-placeholder-val="{{ false }}">
-<section role="status" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line2}}">
+<section role="status" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line2}}">
 <span aria-hidden="true" style="display: flex; width: 52px; height: 52px; border-radius: 50%; align-items: center; justify-content: center; background: {{t.accent}}; color: {{t.onAccent}}"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13.5 L11 17.5 L19 9"></path></svg></span>
 <h2 style="margin: 0; font-size: 22px">{{s.verifiedTitle}}</h2>
 <p style="margin: 0; color: {{t.muted}}">{{s.verifiedBody}}</p>
-<span style="align-self: flex-start; padding: 4px 12px; border-radius: 99px; font-size: 13px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{apBadge}}</span>
-<button type="button" class="ow-btn" onClick="{{goContribFromApply}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.goContrib}}</button>
+<span style="align-self: flex-start; padding: 4px 12px; border-radius: 0; font-size: 13px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{apBadge}}</span>
+<button type="button" class="ow-btn" onClick="{{goContribFromApply}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; border-radius: 0; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.goContrib}}</button>
 </section>
 </sc-if>
 </main>
@@ -877,16 +892,19 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <sc-if value="{{isContribute}}" hint-placeholder-val="{{ false }}">
 <main style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 28px">
-<section style="display: flex; flex-direction: column; gap: 6px">
-<h1 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 48px; line-height: 1.15; font-weight: 700">贡献</h1>
-<p style="margin: 0; font-size: 18px; color: {{t.muted}}">Gòngxiàn · <span style="color: {{t.ink}}; font-weight: 600">{{s.cTitle}}</span></p>
+<section style="display: flex; gap: 24px; align-items: stretch">
+<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Noto Serif SC', serif; font-size: 44px; line-height: 1; letter-spacing: 0.14em; font-weight: 900; padding-left: 16px; border-left: 4px solid {{t.accent}}">贡献</h1>
+<div style="display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; min-width: 0">
+<p style="margin: 0; font-family: 'Source Serif 4', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.cTitle}}</p>
+<p style="margin: 0; font-size: 15px; letter-spacing: 0.04em; color: {{t.muted}}">Gòngxiàn</p>
 <p style="margin: 8px 0 0; max-width: 640px; color: {{t.muted}}">{{s.cLead}}</p>
+</div>
 </section>
 
 <sc-if value="{{showMemberBanner}}" hint-placeholder-val="{{ false }}">
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 14px; border: 1px solid {{t.line2}}; background: {{t.surface}}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}">
 <span style="flex: 1 1 320px; font-size: 14px">{{bannerText}}</span>
-<sc-if value="{{isPlainMember}}" hint-placeholder-val="{{ true }}"><button type="button" class="ow-btn" onClick="{{goApply}}" style="min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.apply}}</button></sc-if>
+<sc-if value="{{isPlainMember}}" hint-placeholder-val="{{ true }}"><button type="button" class="ow-btn" onClick="{{goApply}}" style="min-height: 44px; padding: 0 16px; border-radius: 0; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.apply}}</button></sc-if>
 </div>
 </sc-if>
 
@@ -904,24 +922,24 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 <h3 style="margin: 4px 0 0; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Noto Serif SC', serif; font-size: 20px">太极拳</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">Tàijíquán · {{s.taiji}}</span></h3>
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px">
-<button type="button" class="ow-btn ow-row" onClick="{{pick24}}" style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 14px; border: 2px solid {{t.accent}}; background: {{t.surface}}">
+<button type="button" class="ow-btn ow-row" onClick="{{pick24}}" style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 0; border: 2px solid {{t.accent}}; background: {{t.surface}}">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">二十四式简化太极拳</span>
 <span style="font-size: 14px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán</span>
 <span style="font-size: 14px; font-weight: 500">{{s.r24}}</span>
 <span style="margin-top: 10px; display: flex; flex-direction: column; gap: 6px">
 <span style="font-size: 13px; color: {{t.muted}}">{{descDone}} / 24 · {{s.pDesc}}</span>
-<span aria-hidden="true" style="height: 6px; border-radius: 3px; overflow: hidden; background: {{t.chip}}"><span style="display: block; height: 6px; width: {{descPct}}; background: {{t.accent}}"></span></span>
+<span aria-hidden="true" style="height: 6px; border-radius: 0; overflow: hidden; background: {{t.chip}}"><span style="display: block; height: 6px; width: {{descPct}}; background: {{t.accent}}"></span></span>
 </span>
-<span style="margin-top: 8px; align-self: flex-start; min-height: 36px; padding: 0 14px; border-radius: 10px; display: flex; align-items: center; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.choose}}</span>
+<span style="margin-top: 8px; align-self: flex-start; min-height: 36px; padding: 0 14px; border-radius: 0; display: flex; align-items: center; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.choose}}</span>
 </button>
-<div style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 14px; border: 1px dashed {{t.line2}}; background: {{t.surface}}">
+<div style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 0; border: 1px dashed {{t.line2}}; background: {{t.surface}}">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">四十二式太极拳</span>
 <span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíquán</span>
 <span style="font-size: 14px; font-weight: 500">{{s.r42}}</span>
-<span style="margin-top: 10px; align-self: flex-start; padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.listPending}}</span>
+<span style="margin-top: 10px; align-self: flex-start; padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.listPending}}</span>
 </div>
 </div>
-<div style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<div style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 0; border: 1px dashed {{t.line2}}">
 <span style="font-weight: 700">{{s.newRoutine}}</span>
 <span style="font-size: 14px; color: {{t.muted}}">{{s.newRoutineBody}}</span>
 </div>
@@ -929,144 +947,144 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </sc-if>
 
 <sc-if value="{{cHasRoutine}}" hint-placeholder-val="{{ true }}">
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 14px; background: {{t.accentSoft}}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 0; background: {{t.accentSoft}}">
 <span style="display: flex; flex-direction: column; flex: 1 1 260px">
 <span style="font-size: 12px; font-weight: 600; color: {{t.accentInk}}">{{s.routineLabel}}</span>
 <span><span style="font-family: 'Noto Serif SC', serif; font-size: 18px; font-weight: 700">二十四式简化太极拳</span> <span style="font-size: 14px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán · {{s.r24}}</span></span>
 </span>
-<button type="button" class="ow-btn" onClick="{{changeRoutine}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{t.surface}}; border: 1px solid {{t.line2}}">{{s.changeRoutine}}</button>
+<button type="button" class="ow-btn" onClick="{{changeRoutine}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 600; font-size: 14px; background: {{t.surface}}; border: 1px solid {{t.line2}}">{{s.changeRoutine}}</button>
 </div>
 <section aria-label="{{s.progressFor}}" style="display: flex; flex-direction: column; gap: 12px">
 <h2 style="margin: 0; font-size: 14px; font-weight: 600; color: {{t.muted}}">{{s.progressFor}}</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px">
 <sc-for list="{{progress}}" as="pr" hint-placeholder-count="5">
-<div style="display: flex; flex-direction: column; gap: 8px; padding: 16px; border-radius: 14px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 16px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <span style="font-size: 13px; font-weight: 600">{{pr.label}}</span>
-<span style="font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums">{{pr.done}} <span style="font-size: 15px; font-weight: 500; color: {{t.muted}}">/ 24</span></span>
-<div aria-hidden="true" style="height: 6px; border-radius: 3px; overflow: hidden; background: {{t.chip}}"><div style="height: 6px; width: {{pr.pct}}; background: {{t.accent}}"></div></div>
+<span style="font-size: 26px; font-weight: 700; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{pr.done}} <span style="font-size: 15px; font-weight: 500; color: {{t.muted}}">/ 24</span></span>
+<div aria-hidden="true" style="height: 6px; border-radius: 0; overflow: hidden; background: {{t.chip}}"><div style="height: 6px; width: {{pr.pct}}; background: {{t.accent}}"></div></div>
 <span style="font-size: 12px; color: {{t.muted}}">{{pr.note}}</span>
 </div>
 </sc-for>
 </div>
 </section>
 
-<div role="tablist" aria-label="Contribution tasks" style="display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; border-radius: 12px; align-self: flex-start; background: {{t.chip}}">
+<div role="tablist" aria-label="Contribution tasks" style="display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; border-radius: 0; align-self: flex-start; background: {{t.chip}}">
 <sc-for list="{{cTabs}}" as="ct" hint-placeholder-count="3">
-<button type="button" role="tab" aria-selected="{{ct.on}}" class="ow-btn" onClick="{{ct.pick}}" style="min-height: 40px; padding: 0 16px; border-radius: 9px; font-weight: 600; background: {{ct.bg}}; color: {{ct.fg}}">{{ct.label}}</button>
+<button type="button" role="tab" aria-selected="{{ct.on}}" class="ow-btn" onClick="{{ct.pick}}" style="min-height: 40px; padding: 0 16px; border-radius: 0; font-weight: 600; background: {{ct.bg}}; color: {{ct.fg}}">{{ct.label}}</button>
 </sc-for>
 </div>
 
 <sc-if value="{{cSubmitted}}" hint-placeholder-val="{{ false }}">
-<section role="status" style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line2}}">
-<span style="align-self: flex-start; padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.blue}}; color: #FFFFFF">{{s.stReview}}</span>
+<section role="status" style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line2}}">
+<span style="align-self: flex-start; padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.blue}}; color: #FFFFFF">{{s.stReview}}</span>
 <h2 style="margin: 0; font-size: 20px">{{s.cSent}}</h2>
 <p style="margin: 0; max-width: 640px; color: {{t.muted}}">{{s.cSentBody}}</p>
-<button type="button" class="ow-btn" onClick="{{cAnother}}" style="align-self: flex-start; margin-top: 4px; min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.another}}</button>
+<button type="button" class="ow-btn" onClick="{{cAnother}}" style="align-self: flex-start; margin-top: 4px; min-height: 44px; padding: 0 16px; border-radius: 0; font-weight: 600; border: 1px solid {{t.line2}}">{{s.another}}</button>
 </section>
 </sc-if>
 
 <sc-if value="{{cLocked}}" hint-placeholder-val="{{ false }}">
-<section style="display: flex; flex-direction: column; gap: 10px; max-width: 760px; padding: 24px; border-radius: 16px; background: {{t.surface}}; border: 1px dashed {{t.line2}}">
+<section style="display: flex; flex-direction: column; gap: 10px; max-width: 760px; padding: 24px; border-radius: 0; background: {{t.surface}}; border: 1px dashed {{t.line2}}">
 <span aria-hidden="true" style="display: flex; width: 48px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; background: {{t.accentSoft}}; color: {{t.accentInk}}"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="14" height="9" rx="2"></rect><path d="M7 10 V7 A4 4 0 0 1 15 7 V10"></path></svg></span>
 <h2 style="margin: 0; font-size: 20px">{{s.lockedTitle}}</h2>
 <p style="margin: 0; color: {{t.muted}}">{{s.lockedBody}}</p>
-<sc-if value="{{isPlainMember}}" hint-placeholder-val="{{ true }}"><button type="button" class="ow-btn" onClick="{{goApply}}" style="align-self: flex-start; margin-top: 4px; min-height: 46px; padding: 0 18px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.apply}}</button></sc-if>
-<sc-if value="{{isPendingUser}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; padding: 10px 14px; border-radius: 10px; font-size: 14px; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.lockedPending}}</p></sc-if>
+<sc-if value="{{isPlainMember}}" hint-placeholder-val="{{ true }}"><button type="button" class="ow-btn" onClick="{{goApply}}" style="align-self: flex-start; margin-top: 4px; min-height: 46px; padding: 0 18px; border-radius: 0; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.apply}}</button></sc-if>
+<sc-if value="{{isPendingUser}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; padding: 10px 14px; border-radius: 0; font-size: 14px; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.lockedPending}}</p></sc-if>
 </section>
 </sc-if>
 
 <sc-if value="{{cShowDescribe}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
-<aside style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; border-radius: 16px; overflow: hidden; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<aside style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; border-radius: 0; overflow: hidden; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <h2 style="margin: 0; padding: 16px 16px 10px; display: flex; align-items: baseline; gap: 8px; border-bottom: 1px solid {{t.line}}"><span style="font-family: 'Noto Serif SC', serif; font-size: 18px">动作</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">{{s.needsDesc}} · 24式</span></h2>
 <ol style="list-style: none; margin: 0; padding: 6px; max-height: 640px; overflow-y: auto">
 <sc-for list="{{cMoves}}" as="m" hint-placeholder-count="24">
 <li>
-<button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-current="{{m.on}}" style="width: 100%; display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 6px 10px; border-radius: 10px; background: {{m.rowBg}}">
-<span style="flex: none; width: 30px; font-size: 12px; font-weight: 700; color: {{t.muted}}; font-variant-numeric: tabular-nums">{{m.num}}</span>
+<button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-current="{{m.on}}" style="width: 100%; display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 6px 10px; border-radius: 0; background: {{m.rowBg}}">
+<span style="flex: none; width: 30px; font-size: 12px; font-weight: 700; color: {{t.muted}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{m.num}}</span>
 <span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column">
-<span style="font-family: 'Noto Serif SC', serif; font-weight: 600">{{m.zh}} <span style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; color: {{t.muted}}">{{m.py}}</span></span>
+<span style="font-family: 'Noto Serif SC', serif; font-weight: 600">{{m.zh}} <span style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 400; font-size: 12px; color: {{t.muted}}">{{m.py}}</span></span>
 <span style="font-size: 12px">{{m.tr}}</span>
 </span>
-<span style="flex: none; padding: 1px 8px; border-radius: 99px; font-size: 11px; font-weight: 600; background: {{m.stBg}}; color: {{m.stFg}}">{{m.stLabel}}</span>
+<span style="flex: none; padding: 1px 8px; border-radius: 0; font-size: 11px; font-weight: 600; background: {{m.stBg}}; color: {{m.stFg}}">{{m.stLabel}}</span>
 </button>
 </li>
 </sc-for>
 </ol>
 </aside>
 
-<section aria-label="{{s.editing}}" style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px; padding: 20px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<section aria-label="{{s.editing}}" style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px; padding: 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px">
 <div style="display: flex; flex-direction: column; gap: 2px">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: {{t.accentInk}}">{{s.editing}} · {{cm.num}} / 24</span>
 <h2 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 34px; line-height: 1.2">{{cm.zh}}</h2>
 <span style="color: {{t.muted}}">{{cm.py}} · <span style="color: {{t.ink}}; font-weight: 600">{{cm.tr}}</span></span>
 </div>
-<button type="button" class="ow-btn" onClick="{{cm.view}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}">{{s.viewInRoutine}}</button>
+<button type="button" class="ow-btn" onClick="{{cm.view}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}">{{s.viewInRoutine}}</button>
 </div>
 <sc-if value="{{cm.hasDraft}}" hint-placeholder-val="{{ false }}">
-<p style="margin: 0; padding: 10px 14px; border-radius: 10px; font-size: 14px; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.draftExists}}</p>
+<p style="margin: 0; padding: 10px 14px; border-radius: 0; font-size: 14px; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.draftExists}}</p>
 </sc-if>
 <div style="display: flex; flex-direction: column; gap: 6px; max-width: 280px">
 <label for="ow-cface" style="font-size: 13px; font-weight: 600">{{s.fFacing}}</label>
-<select id="ow-cface" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<select id="ow-cface" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 <sc-for list="{{s.dirs}}" as="o" hint-placeholder-count="4"><option>{{o}}</option></sc-for>
 </select>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-csteps" style="font-size: 13px; font-weight: 600">动作过程 · {{s.fSteps}}</label>
-<textarea id="ow-csteps" class="ow-in" rows="5" placeholder="{{s.phSteps}}" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+<textarea id="ow-csteps" class="ow-in" rows="5" placeholder="{{s.phSteps}}" style="padding: 10px 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-ckeys" style="font-size: 13px; font-weight: 600">要点 · {{s.fKeys}}</label>
-<textarea id="ow-ckeys" class="ow-in" rows="4" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+<textarea id="ow-ckeys" class="ow-in" rows="4" style="padding: 10px 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
 </div>
 <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-cmis" style="font-size: 13px; font-weight: 600">易犯错误 · {{s.fMistakes}}</label>
-<textarea id="ow-cmis" class="ow-in" rows="4" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+<textarea id="ow-cmis" class="ow-in" rows="4" style="padding: 10px 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-csrc" style="font-size: 13px; font-weight: 600">{{s.fSource}}</label>
-<input id="ow-csrc" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-csrc" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <p style="margin: 0; font-size: 13px; color: {{t.muted}}">{{s.reviewNote}}</p>
-<button type="button" class="ow-btn" onClick="{{cSubmit}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.submitReview}}</button>
+<button type="button" class="ow-btn" onClick="{{cSubmit}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; border-radius: 0; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.submitReview}}</button>
 </section>
 </div>
 </sc-if>
 
 <sc-if value="{{cShowVideo}}" hint-placeholder-val="{{ false }}">
-<section aria-label="{{s.tVideo}}" style="display: flex; flex-direction: column; gap: 16px; max-width: 760px; padding: 20px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<section aria-label="{{s.tVideo}}" style="display: flex; flex-direction: column; gap: 16px; max-width: 760px; padding: 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-vroutine" style="font-size: 13px; font-weight: 600">{{s.vRoutine}}</label>
-<select id="ow-vroutine" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><option>二十四式简化太极拳 · {{s.r24}}</option><option>四十二式太极拳 · {{s.r42}}</option></select>
+<select id="ow-vroutine" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><option>二十四式简化太极拳 · {{s.r24}}</option><option>四十二式太极拳 · {{s.r42}}</option></select>
 </div>
 <div style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 6px">
 <label for="ow-vview" style="font-size: 13px; font-weight: 600">{{s.vView}}</label>
-<select id="ow-vview" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<select id="ow-vview" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 <sc-for list="{{s.views}}" as="o" hint-placeholder-count="3"><option>{{o}}</option></sc-for>
 </select>
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-vperf" style="font-size: 13px; font-weight: 600">{{s.vPerformer}}</label>
-<input id="ow-vperf" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<input id="ow-vperf" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="ow-vfile" style="font-size: 13px; font-weight: 600">{{s.vFile}}</label>
-<input id="ow-vfile" class="ow-in" type="file" accept="video/*" style="padding: 22px 16px; border-radius: 12px; border: 2px dashed {{t.line2}}; background: {{t.bg}}; color: {{t.ink}}">
+<input id="ow-vfile" class="ow-in" type="file" accept="video/*" style="padding: 22px 16px; border-radius: 0; border: 2px dashed {{t.line2}}; background: {{t.bg}}; color: {{t.ink}}">
 </div>
 <label style="display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px"><input type="checkbox" style="width: 18px; height: 18px; accent-color: {{t.accent}}">{{s.vRights}}</label>
-<p style="margin: 0; padding: 12px 14px; border-radius: 10px; font-size: 14px; background: {{t.accentSoft}}">{{s.vNext}}</p>
-<button type="button" class="ow-btn" onClick="{{cSubmit}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.upload}}</button>
+<p style="margin: 0; padding: 12px 14px; border-radius: 0; font-size: 14px; background: {{t.accentSoft}}">{{s.vNext}}</p>
+<button type="button" class="ow-btn" onClick="{{cSubmit}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; border-radius: 0; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.upload}}</button>
 </section>
 </sc-if>
 
 <sc-if value="{{cShowTranslate}}" hint-placeholder-val="{{ false }}">
-<section aria-label="{{s.tTranslate}}" style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<section aria-label="{{s.tTranslate}}" style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <p style="margin: 0; color: {{t.muted}}">{{s.trIntro}}</p>
 <div style="overflow-x: auto">
 <table style="width: 100%; min-width: 720px; border-collapse: collapse; font-size: 14px">
@@ -1081,15 +1099,15 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <sc-for list="{{trRows}}" as="r" hint-placeholder-count="24">
 <tr>
 <th scope="row" style="padding: 6px 8px; text-align: left; font-weight: 400; border-bottom: 1px solid {{t.line}}"><span style="font-size: 12px; font-weight: 700; color: {{t.muted}}">{{r.num}}</span> <span style="font-family: 'Noto Serif SC', serif; font-weight: 600">{{r.zh}}</span> <span style="font-size: 12px; color: {{t.muted}}">{{r.py}}</span></th>
-<td style="padding: 6px 8px; border-bottom: 1px solid {{t.line}}"><input class="ow-in" type="text" aria-label="{{r.enLabel}}" defaultValue="{{r.en}}" style="min-height: 40px; padding: 0 10px; border-radius: 8px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"></td>
-<td style="padding: 6px 8px; border-bottom: 1px solid {{t.line}}"><input class="ow-in" type="text" aria-label="{{r.idLabel}}" defaultValue="{{r.id}}" style="min-height: 40px; padding: 0 10px; border-radius: 8px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"></td>
+<td style="padding: 6px 8px; border-bottom: 1px solid {{t.line}}"><input class="ow-in" type="text" aria-label="{{r.enLabel}}" defaultValue="{{r.en}}" style="min-height: 40px; padding: 0 10px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"></td>
+<td style="padding: 6px 8px; border-bottom: 1px solid {{t.line}}"><input class="ow-in" type="text" aria-label="{{r.idLabel}}" defaultValue="{{r.id}}" style="min-height: 40px; padding: 0 10px; border-radius: 0; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"></td>
 </tr>
 </sc-for>
 </tbody>
 </table>
 </div>
 <p style="margin: 0; font-size: 13px; color: {{t.muted}}">{{s.reviewNote}}</p>
-<button type="button" class="ow-btn" onClick="{{cSubmit}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.submitTr}}</button>
+<button type="button" class="ow-btn" onClick="{{cSubmit}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; border-radius: 0; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.submitTr}}</button>
 </section>
 </sc-if>
 </sc-if>
@@ -1350,10 +1368,13 @@ var S = {
 };
 
 // Brand blue #50A0FF for fills (navy text on it); deeper #1766C7 for blue text on white
-var LIGHT = { bg: '#F5F9FF', surface: '#FFFFFF', ink: '#0E1A2B', muted: '#4E5D72', line: '#DDE7F3', line2: '#C3D3E8', chip: '#EAF2FD', accent: '#50A0FF', onAccent: '#06152B', accentInk: '#1766C7', accentSoft: '#E3F0FF', accentMid: '#A8CEFF', rest: '#A3B4CA', video: '#0B1830', carpet: '#F0F6FF', grid: '#DCE8F7', amber: '#7A4B00', amberSoft: '#FBEBCB', blue: '#2F4F8A', blueSoft: '#E1EAF7', green: '#2E6B3F', red: '#B42318', redSoft: '#FDE7E4' };
-var DARK = { bg: '#0B1424', surface: '#111D31', ink: '#EAF2FF', muted: '#9FB0C8', line: '#1F2E46', line2: '#2E4262', chip: '#182740', accent: '#50A0FF', onAccent: '#06152B', accentInk: '#7DB8FF', accentSoft: '#13305A', accentMid: '#2D5E9E', rest: '#3E5170', video: '#050B16', carpet: '#0F1A2C', grid: '#1A2840', amber: '#F2C46D', amberSoft: '#3A2D14', blue: '#4F6FB3', blueSoft: '#1A2540', green: '#3D8752', red: '#FF8A7A', redSoft: '#3A1A17' };
+var LIGHT = { bg: '#FFFFFF', surface: '#FFFFFF', ink: '#0E1A2B', muted: '#4E5D72', line: '#D3DEEC', line2: '#A9BCD4', chip: '#EDF4FE', seal: '#1766C7', accent: '#50A0FF', onAccent: '#06152B', accentInk: '#1766C7', accentSoft: '#E3F0FF', accentMid: '#A8CEFF', rest: '#A3B4CA', video: '#0B1830', carpet: '#F0F6FF', grid: '#DCE8F7', amber: '#7A4B00', amberSoft: '#FBEBCB', blue: '#2F4F8A', blueSoft: '#E1EAF7', green: '#2E6B3F', red: '#B42318', redSoft: '#FDE7E4' };
+var DARK = { seal: '#3D8EF0', bg: '#0B1424', surface: '#0B1424', ink: '#EAF2FF', muted: '#9FB0C8', line: '#1F2E46', line2: '#2E4262', chip: '#182740', accent: '#50A0FF', onAccent: '#06152B', accentInk: '#7DB8FF', accentSoft: '#13305A', accentMid: '#2D5E9E', rest: '#3E5170', video: '#050B16', carpet: '#0F1A2C', grid: '#1A2840', amber: '#F2C46D', amberSoft: '#3A2D14', blue: '#4F6FB3', blueSoft: '#1A2540', green: '#3D8752', red: '#FF8A7A', redSoft: '#3A1A17' };
 
 function pad(n) { return n < 10 ? '0' + n : '' + n; }
+var CN = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
+// 12 -> 十二, 24 -> 二十四 (manual-style movement numbers)
+function cn(n) { if (n <= 10) return CN[n]; if (n < 20) return '十' + CN[n % 10]; return CN[Math.floor(n / 10)] + '十' + (n % 10 ? CN[n % 10] : ''); }
 function fmt(sec) { sec = Math.floor(sec); return Math.floor(sec / 60) + ':' + pad(sec % 60); }
 function norm(x) { return x.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9一-鿿]/g, ''); }
 function activeIndex(t) { var i = 0; for (var k = 0; k < START.length; k++) { if (START[k] <= t) i = k; } return i; }
@@ -1433,13 +1454,13 @@ class Component extends DCLogic {
     var moves = MOVES.map(function (m, i) {
       var on = i === ai, done = i < ai;
       return {
-        n: i + 1, num: pad(i + 1), zh: m[0], py: m[1], tr: tr(m), dur: m[4],
+        n: i + 1, num: pad(i + 1), cn: cn(i + 1), zh: m[0], py: m[1], tr: tr(m), dur: m[4],
         startTxt: fmt(START[i]), endTxt: fmt(START[i] + m[4]),
         aria: pad(i + 1) + ' ' + m[0] + ' ' + m[1] + ' · ' + tr(m),
         isActive: on, threadCount: counts[i], hasThreads: counts[i] > 0,
         rowBg: on ? t.accentSoft : 'transparent',
         numBg: on ? t.accent : (done ? t.accentSoft : t.chip),
-        numFg: on ? t.onAccent : (done ? t.accentInk : t.muted),
+        numFg: on ? t.accentInk : (done ? t.muted : t.ink),
         segBg: on ? t.accent : (done ? t.accentMid : t.chip),
         segFg: on ? t.onAccent : (done ? t.ink : t.muted),
         pick: function () { self.select(i); },
@@ -1458,7 +1479,7 @@ class Component extends DCLogic {
     var sp = px(STARTPT);
 
     var d = DETAILS[ai];
-    var detail = d ? { facing: d.facing[s.lang], steps: d.steps[s.lang], keys: d.keys[s.lang], mistakes: d.mistakes[s.lang] } : { facing: '', steps: [], keys: [], mistakes: [] };
+    var detail = d ? { facing: d.facing[s.lang], steps: d.steps[s.lang], stepsN: d.steps[s.lang].map(function (x, i) { return { cn: cn(i + 1), text: x }; }), keys: d.keys[s.lang], mistakes: d.mistakes[s.lang] } : { facing: '', steps: [], stepsN: [], keys: [], mistakes: [] };
 
     var typeLabel = { error: L.typeError, suggest: L.typeSuggest, question: L.typeQuestion, rule: L.typeRule };
     var typeCol = { error: [t.redSoft, t.red], suggest: [t.blueSoft, t.blue], question: [t.chip, t.muted], rule: [t.amberSoft, t.amber] };
