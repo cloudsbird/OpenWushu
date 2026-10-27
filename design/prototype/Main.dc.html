@@ -47,7 +47,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <sc-if value="{{signedIn}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; align-items: center; gap: 10px">
 <span aria-hidden="true" style="width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{userInitial}}</span>
-<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-weight: 600; font-size: 14px">{{userName}}</span><span style="font-size: 12px; color: {{t.muted}}">{{s.member}}</span></span>
+<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-weight: 600; font-size: 14px">{{userName}}</span><span style="font-size: 12px; font-weight: 500; color: {{userRoleFg}}">{{userRole}}</span></span>
 <button type="button" class="ow-btn" onClick="{{signOut}}" style="min-height: 44px; padding: 0 12px; border-radius: 10px; font-size: 14px; font-weight: 600; color: {{t.muted}}">{{s.signOut}}</button>
 </div>
 </sc-if>
@@ -413,7 +413,13 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <sc-for list="{{detail.mistakes}}" as="k" hint-placeholder-count="3"><li>{{k}}</li></sc-for>
 </ul>
 </div>
-<p style="margin: 0; font-size: 13px; color: {{t.muted}}">{{s.edited}}</p>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-radius: 12px; background: {{t.bg}}; border: 1px solid {{t.line}}">
+<h3 style="margin: 0; font-size: 14px; font-weight: 700">传统要点 · {{s.tradNotes}}</h3>
+<p style="margin: 0; font-size: 13px; color: {{t.muted}}">{{s.tradLead}}</p>
+<p style="margin: 0; font-size: 14px">{{s.tradSample}}</p>
+<span style="align-self: flex-start; padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{s.badgeSchool}} · {{s.sample}}</span>
+</div>
+<p style="margin: 0; display: flex; align-items: center; gap: 8px; font-size: 13px; color: {{t.muted}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{t.accentInk}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="6.5"></circle><path d="M5 8.2 L7 10.2 L11 6"></path></svg>{{s.verifiedBy}}</p>
 </sc-if>
 
 <sc-if value="{{noDetail}}" hint-placeholder-val="{{ false }}">
@@ -593,6 +599,197 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </main>
 </sc-if>
 
+<sc-if value="{{isApply}}" hint-placeholder-val="{{ false }}">
+<main style="max-width: 920px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 24px">
+<section style="display: flex; flex-direction: column; gap: 6px">
+<h1 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 40px; line-height: 1.2; font-weight: 700">申请成为贡献者</h1>
+<p style="margin: 0; font-size: 17px; color: {{t.muted}}">Shēnqǐng chéngwéi gòngxiànzhě · <span style="color: {{t.ink}}; font-weight: 600">{{s.apTitle}}</span></p>
+<p style="margin: 8px 0 0; max-width: 640px; color: {{t.muted}}">{{s.apLead}}</p>
+</section>
+<ol aria-label="Steps" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px">
+<sc-for list="{{apSteps}}" as="st" hint-placeholder-count="3">
+<li style="display: flex; align-items: center; gap: 8px"><span style="width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; background: {{st.bg}}; color: {{st.fg}}">{{st.n}}</span><span style="font-weight: 600; color: {{st.txt}}">{{st.label}}</span></li>
+</sc-for>
+</ol>
+
+<sc-if value="{{ap1}}" hint-placeholder-val="{{ true }}">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px">
+<button type="button" class="ow-btn ow-row" onClick="{{pickA}}" style="display: flex; flex-direction: column; gap: 8px; padding: 22px; border-radius: 16px; border: 1px solid {{t.line2}}; background: {{t.surface}}">
+<span style="width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accentSoft}}; color: {{t.accentInk}}">A</span>
+<span style="font-size: 20px; font-weight: 700">{{s.pathA}}</span>
+<span style="font-size: 14px; color: {{t.muted}}">{{s.pathADesc}}</span>
+<span style="display: flex; flex-direction: column; gap: 4px; margin-top: 4px; font-size: 14px">
+<sc-for list="{{s.pathANeeds}}" as="nd" hint-placeholder-count="3"><span style="display: flex; gap: 8px"><span aria-hidden="true" style="color: {{t.accentInk}}">✓</span>{{nd}}</span></sc-for>
+</span>
+<span style="margin-top: 8px; align-self: flex-start; min-height: 40px; padding: 0 16px; border-radius: 10px; display: flex; align-items: center; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.choosePath}}</span>
+</button>
+<button type="button" class="ow-btn ow-row" onClick="{{pickB}}" style="display: flex; flex-direction: column; gap: 8px; padding: 22px; border-radius: 16px; border: 1px solid {{t.line2}}; background: {{t.surface}}">
+<span style="width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accentSoft}}; color: {{t.accentInk}}">B</span>
+<span style="font-size: 20px; font-weight: 700">{{s.pathB}}</span>
+<span style="font-size: 14px; color: {{t.muted}}">{{s.pathBDesc}}</span>
+<span style="display: flex; flex-direction: column; gap: 4px; margin-top: 4px; font-size: 14px">
+<sc-for list="{{s.pathBNeeds}}" as="nd" hint-placeholder-count="3"><span style="display: flex; gap: 8px"><span aria-hidden="true" style="color: {{t.accentInk}}">✓</span>{{nd}}</span></sc-for>
+</span>
+<span style="margin-top: 8px; align-self: flex-start; min-height: 40px; padding: 0 16px; border-radius: 10px; display: flex; align-items: center; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.choosePath}}</span>
+</button>
+</div>
+</sc-if>
+
+<sc-if value="{{ap2}}" hint-placeholder-val="{{ false }}">
+<section aria-label="{{s.apStep2}}" style="display: flex; flex-direction: column; gap: 16px; padding: 22px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<span style="align-self: flex-start; padding: 3px 12px; border-radius: 99px; font-size: 13px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{apPathLabel}}</span>
+
+<sc-if value="{{apA}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-acred" style="font-size: 13px; font-weight: 600">{{s.fCred}}</label>
+<select id="ow-acred" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><sc-for list="{{s.creds}}" as="o" hint-placeholder-count="4"><option>{{o}}</option></sc-for></select>
+</div>
+<div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-alevel" style="font-size: 13px; font-weight: 600">{{s.fLevel}}</label>
+<select id="ow-alevel" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><sc-for list="{{s.levels}}" as="o" hint-placeholder-count="4"><option>{{o}}</option></sc-for></select>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-aassoc" style="font-size: 13px; font-weight: 600">{{s.fAssoc}}</label>
+<input id="ow-aassoc" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-aname" style="font-size: 13px; font-weight: 600">{{s.fName}}</label>
+<input id="ow-aname" class="ow-in" type="text" value="{{apName}}" onChange="{{onApName}}" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-acert" style="font-size: 13px; font-weight: 600">{{s.fCertNo}}</label>
+<input id="ow-acert" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-aexp" style="font-size: 13px; font-weight: 600">{{s.fExpiry}}</label>
+<input id="ow-aexp" class="ow-in" type="date" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-afile" style="font-size: 13px; font-weight: 600">{{s.fUpload}}</label>
+<input id="ow-afile" class="ow-in" type="file" accept="image/*,application/pdf" style="padding: 20px 16px; border-radius: 12px; border: 2px dashed {{t.line2}}; background: {{t.bg}}; color: {{t.ink}}">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-astyles" style="font-size: 13px; font-weight: 600">{{s.fStyles}}</label>
+<input id="ow-astyles" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+</sc-if>
+
+<sc-if value="{{apB}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-bschool" style="font-size: 13px; font-weight: 600">{{s.fSchool}}</label>
+<input id="ow-bschool" class="ow-in" type="text" value="{{apName}}" onChange="{{onApName}}" placeholder="{{s.fSchoolPh}}" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-blineage" style="font-size: 13px; font-weight: 600">{{s.fLineage}}</label>
+<input id="ow-blineage" class="ow-in" type="text" placeholder="{{s.fLineagePh}}" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 2 1 220px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-bteacher" style="font-size: 13px; font-weight: 600">{{s.fTeacher}}</label>
+<input id="ow-bteacher" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<div style="flex: 1 1 120px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-bfounded" style="font-size: 13px; font-weight: 600">{{s.fFounded}}</label>
+<input id="ow-bfounded" class="ow-in" type="number" inputmode="numeric" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<div style="flex: 2 1 200px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-bcity" style="font-size: 13px; font-weight: 600">{{s.fCity}}</label>
+<input id="ow-bcity" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px">
+<span id="ow-bev" style="font-size: 13px; font-weight: 600">{{s.fEvidence}} <span style="font-weight: 400; color: {{t.muted}}">· {{s.evidenceHint}}</span></span>
+<span aria-live="polite" style="font-size: 13px; font-weight: 600; color: {{t.accentInk}}">{{apEvCount}} {{s.evSelected}}</span>
+</div>
+<div role="group" aria-labelledby="ow-bev" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px">
+<sc-for list="{{apEvOpts}}" as="o" hint-placeholder-count="6">
+<button type="button" class="ow-btn" onClick="{{o.pick}}" aria-pressed="{{o.on}}" style="min-height: 52px; padding: 8px 14px; border-radius: 10px; font-size: 14px; font-weight: 500; background: {{o.bg}}; color: {{o.fg}}; border: 1px solid {{o.bd}}">{{o.label}}</button>
+</sc-for>
+</div>
+</div>
+<sc-if value="{{apVouch}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-bv1" style="font-size: 13px; font-weight: 600">{{s.fVouch1}}</label>
+<input id="ow-bv1" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<div style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-bv2" style="font-size: 13px; font-weight: 600">{{s.fVouch2}}</label>
+<input id="ow-bv2" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+</div>
+</sc-if>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-blinks" style="font-size: 13px; font-weight: 600">{{s.fLinks}}</label>
+<textarea id="ow-blinks" class="ow-in" rows="3" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-bfile" style="font-size: 13px; font-weight: 600">{{s.fUploadEv}}</label>
+<input id="ow-bfile" class="ow-in" type="file" multiple accept="image/*,application/pdf,video/*" style="padding: 20px 16px; border-radius: 12px; border: 2px dashed {{t.line2}}; background: {{t.bg}}; color: {{t.ink}}">
+</div>
+</sc-if>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-awhy" style="font-size: 13px; font-weight: 600">{{s.fWhy}}</label>
+<textarea id="ow-awhy" class="ow-in" rows="3" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+</div>
+<sc-if value="{{hasApErr}}" hint-placeholder-val="{{ false }}"><p role="alert" style="margin: 0; font-size: 14px; color: {{t.red}}">{{apErr}}</p></sc-if>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" class="ow-btn" onClick="{{apBack}}" style="min-height: 46px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.backBtn}}</button>
+<button type="button" class="ow-btn" onClick="{{apNext2}}" style="min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.next}}</button>
+</div>
+</section>
+</sc-if>
+
+<sc-if value="{{ap3}}" hint-placeholder-val="{{ false }}">
+<section aria-label="{{s.apStep3}}" style="display: flex; flex-direction: column; gap: 16px; padding: 22px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<h2 style="margin: 0; font-size: 20px">{{s.apStep3}}</h2>
+<dl style="margin: 0; display: grid; grid-template-columns: minmax(0, 160px) minmax(0, 1fr); gap: 8px 16px; font-size: 14px">
+<dt style="color: {{t.muted}}">{{s.reviewPath}}</dt><dd style="margin: 0; font-weight: 600">{{apPathLabel}}</dd>
+<dt style="color: {{t.muted}}">{{s.reviewName}}</dt><dd style="margin: 0; font-weight: 600">{{apNameShown}}</dd>
+</dl>
+<label style="display: flex; align-items: flex-start; gap: 10px; padding: 14px; border-radius: 12px; font-size: 14px; background: {{t.bg}}"><input type="checkbox" checked="{{apConsent}}" onChange="{{onApConsent}}" style="flex: none; margin-top: 2px; width: 18px; height: 18px; accent-color: {{t.accent}}"><span>{{s.consent}}</span></label>
+<sc-if value="{{hasApErr}}" hint-placeholder-val="{{ false }}"><p role="alert" style="margin: 0; font-size: 14px; color: {{t.red}}">{{apErr}}</p></sc-if>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" class="ow-btn" onClick="{{apBack}}" style="min-height: 46px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.backBtn}}</button>
+<button type="button" class="ow-btn" onClick="{{apSubmit}}" style="min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.submitApp}}</button>
+</div>
+</section>
+</sc-if>
+
+<sc-if value="{{ap4}}" hint-placeholder-val="{{ false }}">
+<section role="status" style="display: flex; flex-direction: column; gap: 14px; padding: 24px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line2}}">
+<span style="align-self: flex-start; padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.pending}}</span>
+<h2 style="margin: 0; font-size: 22px">{{s.pendingTitle2}}</h2>
+<p style="margin: 0; max-width: 640px; color: {{t.muted}}">{{s.pendingBody2}}</p>
+<ol aria-label="Status" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13px; font-weight: 600">
+<li style="padding: 4px 12px; border-radius: 99px; background: {{t.accentSoft}}; color: {{t.accentInk}}">✓ {{s.tl1}}</li>
+<li aria-hidden="true" style="color: {{t.muted}}">→</li>
+<li style="padding: 4px 12px; border-radius: 99px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.tl2}}</li>
+<li aria-hidden="true" style="color: {{t.muted}}">→</li>
+<li style="padding: 4px 12px; border-radius: 99px; background: {{t.chip}}; color: {{t.muted}}">{{s.tl3}}</li>
+</ol>
+<button type="button" class="ow-btn" onClick="{{apApprove}}" style="align-self: flex-start; min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px dashed {{t.line2}}">{{s.approveDemo}}</button>
+</section>
+</sc-if>
+
+<sc-if value="{{ap5}}" hint-placeholder-val="{{ false }}">
+<section role="status" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line2}}">
+<span aria-hidden="true" style="display: flex; width: 52px; height: 52px; border-radius: 50%; align-items: center; justify-content: center; background: {{t.accent}}; color: {{t.onAccent}}"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13.5 L11 17.5 L19 9"></path></svg></span>
+<h2 style="margin: 0; font-size: 22px">{{s.verifiedTitle}}</h2>
+<p style="margin: 0; color: {{t.muted}}">{{s.verifiedBody}}</p>
+<span style="align-self: flex-start; padding: 4px 12px; border-radius: 99px; font-size: 13px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{apBadge}}</span>
+<button type="button" class="ow-btn" onClick="{{goContribFromApply}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.goContrib}}</button>
+</section>
+</sc-if>
+</main>
+</sc-if>
+
 <sc-if value="{{isContribute}}" hint-placeholder-val="{{ false }}">
 <main style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 28px">
 <section style="display: flex; flex-direction: column; gap: 6px">
@@ -600,6 +797,13 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <p style="margin: 0; font-size: 18px; color: {{t.muted}}">Gòngxiàn · <span style="color: {{t.ink}}; font-weight: 600">{{s.cTitle}}</span></p>
 <p style="margin: 8px 0 0; max-width: 640px; color: {{t.muted}}">{{s.cLead}}</p>
 </section>
+
+<sc-if value="{{showMemberBanner}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 14px; border: 1px solid {{t.line2}}; background: {{t.surface}}">
+<span style="flex: 1 1 320px; font-size: 14px">{{bannerText}}</span>
+<sc-if value="{{isPlainMember}}" hint-placeholder-val="{{ true }}"><button type="button" class="ow-btn" onClick="{{goApply}}" style="min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.apply}}</button></sc-if>
+</div>
+</sc-if>
 
 <ol aria-label="Steps" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px">
 <li style="display: flex; align-items: center; gap: 8px"><span style="width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; background: {{step1Bg}}; color: {{step1Fg}}">1</span><span style="font-weight: 600">{{s.step1}}</span></li>
@@ -673,6 +877,16 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <h2 style="margin: 0; font-size: 20px">{{s.cSent}}</h2>
 <p style="margin: 0; max-width: 640px; color: {{t.muted}}">{{s.cSentBody}}</p>
 <button type="button" class="ow-btn" onClick="{{cAnother}}" style="align-self: flex-start; margin-top: 4px; min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.another}}</button>
+</section>
+</sc-if>
+
+<sc-if value="{{cLocked}}" hint-placeholder-val="{{ false }}">
+<section style="display: flex; flex-direction: column; gap: 10px; max-width: 760px; padding: 24px; border-radius: 16px; background: {{t.surface}}; border: 1px dashed {{t.line2}}">
+<span aria-hidden="true" style="display: flex; width: 48px; height: 48px; border-radius: 50%; align-items: center; justify-content: center; background: {{t.accentSoft}}; color: {{t.accentInk}}"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="14" height="9" rx="2"></rect><path d="M7 10 V7 A4 4 0 0 1 15 7 V10"></path></svg></span>
+<h2 style="margin: 0; font-size: 20px">{{s.lockedTitle}}</h2>
+<p style="margin: 0; color: {{t.muted}}">{{s.lockedBody}}</p>
+<sc-if value="{{isPlainMember}}" hint-placeholder-val="{{ true }}"><button type="button" class="ow-btn" onClick="{{goApply}}" style="align-self: flex-start; margin-top: 4px; min-height: 46px; padding: 0 18px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.apply}}</button></sc-if>
+<sc-if value="{{isPendingUser}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; padding: 10px 14px; border-radius: 10px; font-size: 14px; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.lockedPending}}</p></sc-if>
 </section>
 </sc-if>
 
@@ -881,6 +1095,27 @@ var S = {
     library: 'Library', discussions: 'Discussions', contribute: 'Contribute', translation: 'translation',
     dLead: 'Pick a routine to read its threads, ask a question or report a mistake. Each thread is linked to a movement so contributors know exactly what to check.', latest: 'Latest', dPending: 'Discussion opens once the movement list is added.',
     cTitle: 'Contribute', cLead: 'Help build an accurate, open reference. Every edit is saved as a revision and reviewed by a moderator before it is published. To report a mistake instead, open a thread in Discussions.',
+    apply: 'Apply to become a contributor', apTitle: 'Apply to become a contributor', apLead: 'Verified contributors write movement descriptions, upload demonstration videos and help review changes. Choose the path that fits you.',
+    apStep1: 'Choose a path', apStep2: 'Details & evidence', apStep3: 'Review & consent',
+    pathA: 'Association accreditation', pathADesc: 'You hold a judge certificate, coach licence, duan rank (段位) or competition record from a wushu association.', pathANeeds: ['A photo or scan of your certificate', 'The issuing association and level', 'Expiry date, if it has one'],
+    pathB: 'School owner or traditional master', pathBDesc: 'You run a school or teach a lineage without association accreditation. Show at least two kinds of evidence.', pathBNeeds: ['At least two kinds of evidence', 'For example: school registration, lineage, public presence', 'Or two verified contributors who vouch for you'],
+    choosePath: 'Choose', fCred: 'Credential', creds: ['Judge certificate', 'Coach licence', 'Duan rank (段位)', 'Athlete competition record'], fAssoc: 'Issuing association', fLevel: 'Level', levels: ['International', 'National', 'Provincial / regional', 'Club'],
+    fName: 'Full name as on the certificate', fCertNo: 'Certificate number (optional)', fExpiry: 'Valid until', fUpload: 'Upload document (photo or PDF)', fStyles: 'Styles and routines you know well',
+    fSchool: 'School name', fSchoolPh: 'e.g. 陈氏太极拳馆 · Chen Taiji School', fLineage: 'Style and lineage', fLineagePh: 'e.g. Chen-style Taijiquan, 19th generation', fTeacher: 'Your teacher (师父)', fFounded: 'Founded (year)', fCity: 'City and country',
+    fEvidence: 'Evidence', evidenceHint: 'Select at least two.', evSelected: 'selected',
+    ev: ['School registration or permit', 'Public presence (website, social media, map)', 'Lineage / discipleship certificate (拜师帖)', 'Cultural heritage or media recognition', 'Video of you teaching or performing', 'Vouching by two verified contributors'],
+    fVouch1: 'Verified contributor 1 (username)', fVouch2: 'Verified contributor 2 (username)', fLinks: 'Links (one per line)', fUploadEv: 'Upload evidence (photos, PDF, video)',
+    fWhy: 'Why do you want to contribute?', next: 'Continue', backBtn: 'Back', errEvidence: 'Select at least two kinds of evidence.', errConsent: 'Please agree to how we handle your documents.',
+    reviewPath: 'Path', reviewName: 'Name on application',
+    consent: 'I agree that OpenWushu may review these documents to verify me. Documents are deleted after review; only the result (badge, type and date checked) is kept, in line with Indonesia’s personal data protection law (UU PDP).',
+    submitApp: 'Submit application', pendingTitle2: 'Application under review', pendingBody2: 'An admin reviews your evidence, usually within a week, and may ask for a short video call. You will get an email with the result.',
+    tl1: 'Submitted', tl2: 'Reviewing evidence', tl3: 'Verified', approveDemo: 'Approve (demo)', verifiedTitle: 'You are a verified contributor', verifiedBody: 'Your badge is shown on your profile and on every contribution you make.', goContrib: 'Go to Contribute',
+    pending: 'Application pending', badgeJudge: 'Verified · Judge / coach', badgeSchool: 'Verified · School owner',
+    lockedTitle: 'Verified contributors only', lockedBody: 'Writing steps and key points, and uploading demonstration videos, need a verified contributor so learners can trust the content. Translations are open to all members.',
+    lockedPending: 'Your application is under review. You will get an email when it is decided.',
+    memberBanner: 'You are a Member: you can check translations now. To write descriptions or upload videos, apply to become a verified contributor.',
+    verifiedBy: 'Reviewed by a verified national judge (sample)', tradNotes: 'Traditional notes', tradLead: 'From verified traditional schools. These may differ from the competition standard; for competition, follow the key points above.',
+    tradSample: '[Note from a verified school owner: how their lineage teaches this movement, e.g. hand height or stance width compared with the competition standard.]', sample: 'sample', gateApply: 'Sign in to apply as a contributor.',
     signIn: 'Sign in', signUp: 'Sign up', signOut: 'Sign out', member: 'Member', email: 'Email', password: 'Password', forgot: 'Forgot password?', showPw: 'Show', hidePw: 'Hide',
     google: 'Continue with Google', or: 'or', noAccount: 'New to OpenWushu?', createAcc: 'Create an account', haveAcc: 'Already have an account?',
     siTitle: 'Welcome back', siLead: 'Sign in to join discussions and contribute.', suTitle: 'Create your account', suLead: 'Free for everyone. Reading and watching never need an account.',
@@ -928,6 +1163,27 @@ var S = {
     library: 'Pustaka', discussions: 'Diskusi', contribute: 'Kontribusi', translation: 'terjemahan',
     dLead: 'Pilih rangkaian untuk membaca diskusinya, bertanya, atau melaporkan kesalahan. Setiap diskusi terhubung ke gerakan agar kontributor tahu persis apa yang perlu diperiksa.', latest: 'Terbaru', dPending: 'Diskusi dibuka setelah daftar gerakan ditambahkan.',
     cTitle: 'Kontribusi', cLead: 'Bantu membangun referensi terbuka yang akurat. Setiap suntingan disimpan sebagai revisi dan ditinjau moderator sebelum diterbitkan. Untuk melaporkan kesalahan, buka diskusi di halaman Diskusi.',
+    apply: 'Ajukan diri sebagai kontributor', apTitle: 'Ajukan diri sebagai kontributor', apLead: 'Kontributor terverifikasi menulis deskripsi gerakan, mengunggah video peragaan, dan membantu meninjau perubahan. Pilih jalur yang sesuai untuk Anda.',
+    apStep1: 'Pilih jalur', apStep2: 'Detail & bukti', apStep3: 'Tinjau & persetujuan',
+    pathA: 'Akreditasi asosiasi', pathADesc: 'Anda memiliki sertifikat juri, lisensi pelatih, tingkatan duan (段位), atau catatan kompetisi dari asosiasi wushu.', pathANeeds: ['Foto atau pindaian sertifikat', 'Asosiasi penerbit dan tingkatannya', 'Tanggal berlaku, jika ada'],
+    pathB: 'Pemilik sekolah atau guru tradisional', pathBDesc: 'Anda menjalankan sekolah atau mengajarkan aliran tanpa akreditasi asosiasi. Tunjukkan minimal dua jenis bukti.', pathBNeeds: ['Minimal dua jenis bukti', 'Misalnya: izin sekolah, garis perguruan, keberadaan publik', 'Atau dua kontributor terverifikasi yang menjamin Anda'],
+    choosePath: 'Pilih', fCred: 'Kredensial', creds: ['Sertifikat juri', 'Lisensi pelatih', 'Tingkatan duan (段位)', 'Catatan kompetisi atlet'], fAssoc: 'Asosiasi penerbit', fLevel: 'Tingkat', levels: ['Internasional', 'Nasional', 'Provinsi / daerah', 'Klub'],
+    fName: 'Nama lengkap sesuai sertifikat', fCertNo: 'Nomor sertifikat (opsional)', fExpiry: 'Berlaku hingga', fUpload: 'Unggah dokumen (foto atau PDF)', fStyles: 'Aliran dan rangkaian yang Anda kuasai',
+    fSchool: 'Nama sekolah', fSchoolPh: 'mis. 陈氏太极拳馆 · Sekolah Taiji Chen', fLineage: 'Aliran dan garis perguruan', fLineagePh: 'mis. Taijiquan gaya Chen, generasi ke-19', fTeacher: 'Guru Anda (师父)', fFounded: 'Tahun berdiri', fCity: 'Kota dan negara',
+    fEvidence: 'Bukti', evidenceHint: 'Pilih minimal dua.', evSelected: 'dipilih',
+    ev: ['Izin atau pendaftaran sekolah', 'Keberadaan publik (situs web, media sosial, peta)', 'Sertifikat garis perguruan / pengangkatan murid (拜师帖)', 'Pengakuan warisan budaya atau media', 'Video Anda mengajar atau memperagakan', 'Jaminan dari dua kontributor terverifikasi'],
+    fVouch1: 'Kontributor terverifikasi 1 (nama pengguna)', fVouch2: 'Kontributor terverifikasi 2 (nama pengguna)', fLinks: 'Tautan (satu per baris)', fUploadEv: 'Unggah bukti (foto, PDF, video)',
+    fWhy: 'Mengapa Anda ingin berkontribusi?', next: 'Lanjut', backBtn: 'Kembali', errEvidence: 'Pilih minimal dua jenis bukti.', errConsent: 'Harap setujui cara kami menangani dokumen Anda.',
+    reviewPath: 'Jalur', reviewName: 'Nama dalam pengajuan',
+    consent: 'Saya setuju OpenWushu meninjau dokumen ini untuk memverifikasi saya. Dokumen dihapus setelah ditinjau; hanya hasilnya (lencana, jenis, dan tanggal pemeriksaan) yang disimpan, sesuai Undang-Undang Pelindungan Data Pribadi (UU PDP).',
+    submitApp: 'Kirim pengajuan', pendingTitle2: 'Pengajuan sedang ditinjau', pendingBody2: 'Admin meninjau bukti Anda, biasanya dalam seminggu, dan mungkin meminta panggilan video singkat. Anda akan menerima email berisi hasilnya.',
+    tl1: 'Terkirim', tl2: 'Meninjau bukti', tl3: 'Terverifikasi', approveDemo: 'Setujui (demo)', verifiedTitle: 'Anda kontributor terverifikasi', verifiedBody: 'Lencana Anda ditampilkan di profil dan di setiap kontribusi Anda.', goContrib: 'Ke halaman Kontribusi',
+    pending: 'Pengajuan diproses', badgeJudge: 'Terverifikasi · Juri / pelatih', badgeSchool: 'Terverifikasi · Pemilik sekolah',
+    lockedTitle: 'Khusus kontributor terverifikasi', lockedBody: 'Menulis langkah dan poin penting, serta mengunggah video peragaan, memerlukan kontributor terverifikasi agar pelajar dapat memercayai kontennya. Terjemahan terbuka untuk semua anggota.',
+    lockedPending: 'Pengajuan Anda sedang ditinjau. Anda akan menerima email setelah diputuskan.',
+    memberBanner: 'Anda Anggota: Anda sudah bisa memeriksa terjemahan. Untuk menulis deskripsi atau mengunggah video, ajukan diri sebagai kontributor terverifikasi.',
+    verifiedBy: 'Ditinjau oleh juri nasional terverifikasi (contoh)', tradNotes: 'Catatan tradisional', tradLead: 'Dari sekolah tradisional terverifikasi. Bisa berbeda dari standar kompetisi; untuk kompetisi, ikuti poin penting di atas.',
+    tradSample: '[Catatan dari pemilik sekolah terverifikasi: cara garis perguruannya mengajarkan gerakan ini, mis. tinggi tangan atau lebar kuda-kuda dibandingkan standar kompetisi.]', sample: 'contoh', gateApply: 'Masuk untuk mengajukan diri sebagai kontributor.',
     signIn: 'Masuk', signUp: 'Daftar', signOut: 'Keluar', member: 'Anggota', email: 'Email', password: 'Kata sandi', forgot: 'Lupa kata sandi?', showPw: 'Tampilkan', hidePw: 'Sembunyikan',
     google: 'Lanjutkan dengan Google', or: 'atau', noAccount: 'Baru di OpenWushu?', createAcc: 'Buat akun', haveAcc: 'Sudah punya akun?',
     siTitle: 'Selamat datang kembali', siLead: 'Masuk untuk ikut berdiskusi dan berkontribusi.', suTitle: 'Buat akun Anda', suLead: 'Gratis untuk semua. Membaca dan menonton tidak memerlukan akun.',
@@ -990,7 +1246,8 @@ class Component extends DCLogic {
   constructor(props) {
     super(props);
     this.state = { screen: 'routine', tab: 'learn', lang: 'en', t: START[11] + 2, playing: false, loop: false, speed: 1, detailOpen: true, q: '', reportOpen: false, submitted: false, formType: 'error', formMove: '11', threadFilter: 'all', cTask: 'describe', cMove: 1, cSubmitted: false, cRoutine: null,
-      user: null, authReturn: 'routine', authMsg: null, authErr: null, showPw: false, siEmail: '', suName: '', suEmail: '', suAgree: false, pendingUser: null };
+      user: null, authReturn: 'routine', authMsg: null, authErr: null, showPw: false, siEmail: '', suName: '', suEmail: '', suAgree: false, pendingUser: null,
+      apStep: 1, apPath: 'a', apEv: [], apName: '', apConsent: false, apErr: null };
   }
   componentDidMount() {
     var self = this;
@@ -1014,14 +1271,22 @@ class Component extends DCLogic {
     return true;
   }
   goAuth(screen) {
-    var s = this.state, ret = s.screen === 'library' ? 'library' : (s.screen === 'contribute' ? 'contribute' : (s.screen === 'routine' ? 'routine' : s.authReturn));
+    var s = this.state, back = ['library', 'contribute', 'routine', 'discussions', 'apply'];
+    var ret = back.indexOf(s.screen) >= 0 ? s.screen : s.authReturn;
     this.setState({ screen: screen, authReturn: ret, authMsg: screen === s.screen ? s.authMsg : null, authErr: null, playing: false });
   }
   finishAuth(user) {
-    var r = this.state.authReturn, st = { user: user, authMsg: null, authErr: null, showPw: false };
-    if (r === 'contribute') st.screen = 'contribute';
-    else if (r === 'discuss') { st.screen = 'routine'; st.tab = 'discuss'; st.reportOpen = true; st.submitted = false; }
-    else st.screen = r === 'library' ? 'library' : 'routine';
+    var r = this.state.authReturn, st = { user: Object.assign({ role: 'member' }, user), authMsg: null, authErr: null, showPw: false };
+    if (r === 'discuss') { st.screen = 'routine'; st.tab = 'discuss'; st.reportOpen = true; st.submitted = false; }
+    else st.screen = ['library', 'contribute', 'discussions', 'apply'].indexOf(r) >= 0 ? r : 'routine';
+    this.setState(st);
+  }
+  openApply() {
+    if (this.needAuth('apply', 'gateApply')) return;
+    var u = this.state.user, st = { screen: 'apply', playing: false, apErr: null };
+    if (u.role === 'pending') st.apStep = 4;
+    else if (u.role === 'verified') st.apStep = 5;
+    else if (this.state.apStep > 3) st.apStep = 1;
     this.setState(st);
   }
   openContribute(task, move) {
@@ -1099,6 +1364,7 @@ class Component extends DCLogic {
     var isLib = s.screen === 'library', isRout = s.screen === 'routine', isCon = s.screen === 'contribute', isLearn = s.tab === 'learn', isDisc = s.tab === 'discuss';
     var navLib = isLib ? [t.chip, t.ink] : ['transparent', t.muted];
     var isDiscs = s.screen === 'discussions';
+    var role = s.user ? s.user.role : null, isVer = role === 'verified';
     var navDis = isDiscs || (isRout && isDisc) ? [t.chip, t.ink] : ['transparent', t.muted];
     var countSt = function (st) { return THREADS.filter(function (th) { return th.st === st; }).length; };
     var navCon = isCon ? [t.chip, t.ink] : ['transparent', t.muted];
@@ -1114,6 +1380,33 @@ class Component extends DCLogic {
 
     return {
       t: t, s: L,
+      userRole: !s.user ? '' : (isVer ? (s.user.badge === 'school' ? L.badgeSchool : L.badgeJudge) : (role === 'pending' ? L.pending : L.member)),
+      userRoleFg: isVer ? t.accentInk : (role === 'pending' ? t.amber : t.muted),
+      showMemberBanner: !!s.user && !isVer, isPlainMember: role === 'member', isPendingUser: role === 'pending',
+      bannerText: role === 'pending' ? L.lockedPending : L.memberBanner,
+      goApply: function () { self.openApply(); },
+      isApply: s.screen === 'apply',
+      apSteps: [L.apStep1, L.apStep2, L.apStep3].map(function (lb, i) { var n = i + 1, st = Math.min(s.apStep, 4); return { n: n, label: lb, bg: st > n ? t.accentSoft : (st === n ? t.accent : t.chip), fg: st > n ? t.accentInk : (st === n ? t.onAccent : t.muted), txt: st >= n ? t.ink : t.muted }; }),
+      ap1: s.apStep === 1, ap2: s.apStep === 2, ap3: s.apStep === 3, ap4: s.apStep === 4, ap5: s.apStep === 5,
+      apA: s.apPath === 'a', apB: s.apPath === 'b',
+      pickA: function () { self.setState({ apPath: 'a', apStep: 2, apErr: null }); },
+      pickB: function () { self.setState({ apPath: 'b', apStep: 2, apErr: null }); },
+      apEvOpts: L.ev.map(function (lb, i) {
+        var on = s.apEv.indexOf(i) >= 0;
+        return { label: lb, on: on, bg: on ? t.accentSoft : 'transparent', fg: on ? t.accentInk : t.ink, bd: on ? t.accent : t.line2,
+          pick: function () { var ev = s.apEv.slice(), k = ev.indexOf(i); if (k >= 0) ev.splice(k, 1); else ev.push(i); self.setState({ apEv: ev, apErr: null }); } };
+      }),
+      apEvCount: s.apEv.length, apVouch: s.apEv.indexOf(5) >= 0,
+      apName: s.apName, onApName: function (e) { self.setState({ apName: e.target.value }); },
+      apNext2: function () { if (s.apPath === 'b' && s.apEv.length < 2) { self.setState({ apErr: 'errEvidence' }); return; } self.setState({ apStep: 3, apErr: null }); },
+      apBack: function () { self.setState({ apStep: Math.max(1, s.apStep - 1), apErr: null }); },
+      apPathLabel: s.apPath === 'b' ? L.pathB : L.pathA, apNameShown: s.apName || '—',
+      apConsent: s.apConsent, onApConsent: function (e) { self.setState({ apConsent: e.target.checked, apErr: null }); },
+      apSubmit: function () { if (!s.apConsent) { self.setState({ apErr: 'errConsent' }); return; } self.setState({ apStep: 4, apErr: null, user: Object.assign({}, s.user, { role: 'pending' }) }); },
+      apApprove: function () { self.setState({ apStep: 5, user: Object.assign({}, s.user, { role: 'verified', badge: s.apPath === 'b' ? 'school' : 'judge' }) }); },
+      apBadge: s.apPath === 'b' ? L.badgeSchool : L.badgeJudge,
+      goContribFromApply: function () { self.openContribute(s.cTask); },
+      hasApErr: !!s.apErr, apErr: s.apErr ? L[s.apErr] : '',
       isDiscussions: isDiscs, latestTitle: THREADS[0].title[s.lang],
       countOpen: countSt('open'), countReview: countSt('review'), countAccepted: countSt('accepted'),
       open24Discuss: function () { self.setState({ screen: 'routine', tab: 'discuss', threadFilter: 'all', reportOpen: false }); },
@@ -1154,7 +1447,8 @@ class Component extends DCLogic {
       changeRoutine: function () { self.setState({ cRoutine: null, cSubmitted: false }); },
       cTabs: [['describe', L.tDescribe], ['video', L.tVideo], ['translate', L.tTranslate]].map(function (x) { var on = s.cTask === x[0]; return { label: x[1], on: on, bg: seg(on)[0], fg: seg(on)[1], pick: function () { self.openContribute(x[0]); } }; }),
       cSubmitted: s.cSubmitted,
-      cShowDescribe: !s.cSubmitted && s.cTask === 'describe', cShowVideo: !s.cSubmitted && s.cTask === 'video', cShowTranslate: !s.cSubmitted && s.cTask === 'translate',
+      cShowDescribe: !s.cSubmitted && s.cTask === 'describe' && isVer, cShowVideo: !s.cSubmitted && s.cTask === 'video' && isVer,
+      cLocked: !s.cSubmitted && s.cTask !== 'translate' && !isVer, cShowTranslate: !s.cSubmitted && s.cTask === 'translate',
       cMoves: MOVES.map(function (m, i) { var on = i === s.cMove, has = !!DETAILS[i]; return { num: pad(i + 1), zh: m[0], py: m[1], tr: tr(m), on: on, rowBg: on ? t.accentSoft : 'transparent', stLabel: has ? L.hasDraft : L.missing, stBg: has ? t.amberSoft : t.chip, stFg: has ? t.amber : t.muted, pick: function () { self.setState({ cMove: i }); } }; }),
       cm: { num: pad(s.cMove + 1), zh: cm[0], py: cm[1], tr: tr(cm), hasDraft: !!DETAILS[s.cMove], view: function () { self.select(s.cMove); } },
       trRows: MOVES.map(function (m, i) { return { num: pad(i + 1), zh: m[0], py: m[1], en: m[2], id: m[3], enLabel: pad(i + 1) + ' ' + m[0] + ' English', idLabel: pad(i + 1) + ' ' + m[0] + ' Bahasa Indonesia' }; }),

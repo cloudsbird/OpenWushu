@@ -51,12 +51,24 @@ Sample content: **二十四式简化太极拳 (24-Form Simplified Taijiquan)**, 
 | Role | How | Can |
 |---|---|---|
 | Visitor | no account | read, watch |
-| Member | sign up + verify email | discuss, suggest edits (go to review queue) |
-| Contributor | apply, approved by moderator, or after ~5 accepted suggestions | edit text/translations, upload video — still reviewed |
-| Maintainer | appointed per routine (coach / certified judge) | approve or reject changes for that routine |
-| Admin | project owner | appoint maintainers, ban, roll back |
+| Member | sign up + verify email | discuss, report issues, check translations (reviewed) |
+| Verified contributor | apply through Path A or Path B below, approved by an admin | write steps / key points / mistakes, upload demonstration videos, add traditional notes — still reviewed |
+| Maintainer | appointed per routine (accredited judge or senior coach) | approve or reject changes for that routine; final approval for compulsory routines against the official standard |
+| Admin | project owner | verify applications, appoint maintainers, ban, roll back |
 
 Plus: sources required for content changes, rate limits for new accounts, all videos reviewed before publishing, report/ban.
+
+## Becoming a verified contributor
+
+Two paths, because many traditional school owners (师父) never took association exams:
+
+- **Path A: Association accreditation.** Judge certificate, coach licence, duan rank (段位) or athlete competition record. Fields: credential type, level (international / national / provincial / club), issuing association, full name, certificate number (optional), valid until, document upload, styles known.
+- **Path B: School owner or traditional master.** School name, style and lineage, teacher (师父), year founded, city, plus **at least two** kinds of evidence: school registration or permit; public presence (website, social media, map); lineage / discipleship certificate (拜师帖); cultural-heritage or media recognition; video of teaching or performing; vouching by two verified contributors.
+- **Review:** an admin checks the evidence (and public registries where they exist), may do a short video call, then approves or rejects. Status: Submitted → Reviewing evidence → Verified.
+- **Privacy (UU PDP):** documents are used only to verify, deleted after review; only the badge, its type and the date checked are kept. Expiring credentials are re-checked.
+- **Badges** show the kind of expertise, not a ranking: "Verified · Judge / coach", "Verified · School owner". They appear in the header, on profiles and on every contribution ("Reviewed by a verified national judge").
+- **Traditional notes (传统要点):** a section in the movement detail where verified school owners describe how their lineage teaches a movement. It is shown separately from the competition key points, which stay the standard for scoring.
+- **Gating in Contribute:** members can check translations; writing descriptions and uploading videos show a "Verified contributors only" panel with an Apply button (or the pending status).
 
 ## Open questions
 
@@ -64,7 +76,7 @@ Plus: sources required for content changes, rate limits for new accounts, all vi
 - Multiple videos per routine (front/side, different athletes)?
 - Strict invite-only contributors at launch?
 - 讨论 tǎolùn vs 交流 jiāoliú for the Discussions label (avoid confusion with 套路 tàolù)?
-- Next screens: request contributor access, maintainer review queue, profile & notifications.
+- Next screens: maintainer review queue (applications + content changes), profile & notifications.
 
 ## Prototype
 
