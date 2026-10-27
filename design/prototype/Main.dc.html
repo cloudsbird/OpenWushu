@@ -16,6 +16,11 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 .ow-btn:focus-visible,.ow-in:focus-visible{outline:2px solid #1766C7;outline-offset:2px}
 .ow-in{font:inherit;box-sizing:border-box;width:100%}
 .ow-row:hover{filter:brightness(0.97)}
+html{scrollbar-gutter:stable}
+.ow-grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;align-items:start}
+.ow-grid4>.ow-main{grid-column:span 3}
+@media (max-width:960px){.ow-grid4{grid-template-columns:repeat(2,minmax(0,1fr))}.ow-grid4>.ow-main{grid-column:1 / -1}.ow-grid4>.ow-side{grid-column:1 / -1}}
+@media (max-width:600px){.ow-grid4{grid-template-columns:minmax(0,1fr)}}
 </style>
 </helmet>
 <div style="min-height: 100vh; display: flex; flex-direction: column; background: {{t.bg}}; color: {{t.ink}}; font-family: 'Alegreya Sans', 'Noto Sans SC', system-ui, sans-serif; font-size: 16px; line-height: 1.55">
@@ -267,9 +272,9 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 
 <sc-if value="{{isLearn}}" hint-placeholder-val="{{ true }}">
-<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<div class="ow-grid4">
 
-<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<div class="ow-main" style="min-width: 0; display: flex; flex-direction: column; gap: 16px">
 <section aria-label="Video" style="display: flex; flex-direction: column; gap: 10px; padding: 12px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <div style="position: relative; aspect-ratio: 16 / 9; border-radius: 0; overflow: hidden; background: {{t.video}}; display: flex; align-items: center; justify-content: center">
 <span style="position: absolute; left: 14px; top: 14px; padding: 4px 10px; border-radius: 0; background: rgba(255,255,255,0.12); color: #DCE6F5; font-size: 12px; font-weight: 500">{{s.sampleVideo}}</span>
@@ -355,7 +360,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </section>
 </div>
 
-<aside style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}; overflow: hidden">
+<aside class="ow-side" style="min-width: 0; display: flex; flex-direction: column; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}; overflow: hidden">
 <sc-if value="{{listMode}}" hint-placeholder-val="{{ false }}">
 <div style="padding: 16px 16px 10px; border-bottom: 1px solid {{t.line}}">
 <h2 style="margin: 0; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Noto Serif SC', serif; font-size: 20px">动作</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">Dòngzuò · {{s.movements}} (42)</span></h2>
@@ -475,16 +480,11 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </sc-if>
 
 <sc-if value="{{isIndex}}" hint-placeholder-val="{{ false }}">
-<section aria-label="{{s.libSeqAria}}" style="display: flex; flex-direction: column; gap: 16px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px">
-<h2 style="margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px"><span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">动作名称</span><span style="font-size: 15px; font-weight: 400; color: {{t.muted}}">{{s.movements}} (42)</span></h2>
-<span style="flex: 1 1 200px; font-size: 13px; color: {{t.muted}}">{{s.libSeqHint}}</span>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px 24px">
+<div class="ow-grid4" role="group" aria-label="{{s.libSeqAria}}">
 <sc-for list="{{libSections}}" as="sec" hint-placeholder-count="4">
-<div style="display: flex; flex-direction: column; min-width: 0">
-<h3 style="margin: 0; padding: 6px 4px; font-family: 'Noto Serif SC', serif; font-size: 16px; font-weight: 700; color: {{t.accentInk}}; border-bottom: 1px solid {{t.ink}}">{{sec.label}}</h3>
-<ol style="list-style: none; margin: 0; padding: 0">
+<section aria-label="{{sec.label}}" style="min-width: 0; display: flex; flex-direction: column; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<h3 style="margin: 0; padding: 12px 14px 10px; font-family: 'Noto Serif SC', serif; font-size: 16px; font-weight: 700; color: {{t.accentInk}}; border-bottom: 1px solid {{t.line}}">{{sec.label}}</h3>
+<ol style="list-style: none; margin: 0; padding: 4px 8px 8px">
 <sc-for list="{{sec.items}}" as="m" hint-placeholder-count="10">
 <li><button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-label="{{m.aria}}" aria-current="{{m.on}}" style="width: 100%; display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 8px; align-items: start; min-height: 52px; padding: 8px 4px; border-bottom: 1px solid {{t.line}}; background: {{m.bg}}">
 <span aria-hidden="true" style="font-family: 'Noto Serif SC', serif; font-size: 14px; font-weight: 600; color: {{t.accentInk}}; white-space: nowrap">（{{m.cn}}）</span>
@@ -492,15 +492,14 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </button></li>
 </sc-for>
 </ol>
-</div>
+</section>
 </sc-for>
 </div>
-</section>
 </sc-if>
 
 <sc-if value="{{isDiscuss}}" hint-placeholder-val="{{ false }}">
-<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
-<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<div class="ow-grid4">
+<div class="ow-main" style="min-width: 0; display: flex; flex-direction: column; gap: 12px">
 
 <sc-if value="{{reportOpen}}" hint-placeholder-val="{{ false }}">
 <section aria-label="{{s.formTitle}}" style="display: flex; flex-direction: column; gap: 16px; padding: 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line2}}">
@@ -665,7 +664,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </sc-if>
 </div>
 
-<aside style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 18px 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<aside class="ow-side" style="min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 18px 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <h2 style="margin: 0; font-size: 16px">{{s.howTitle}}</h2>
 <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px">
 <li>{{s.how1}}</li>
