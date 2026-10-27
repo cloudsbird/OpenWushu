@@ -35,7 +35,11 @@ registry:
 env:
   secret:
     - RAILS_MASTER_KEY
+    - POSTGRES_PASSWORD
   clear:
+    # The PostgreSQL accessory below, by its container name
+    DB_HOST: openwushu-db
+
     # Run the Solid Queue Supervisor inside the web server's Puma process to do jobs.
     # When you start using multiple servers, you should split out job processing to a dedicated machine.
     SOLID_QUEUE_IN_PUMA: true
@@ -62,7 +66,7 @@ aliases:
   dbc: app exec --interactive --reuse "bin/rails dbconsole"
 
 
-# Use a persistent storage volume for sqlite database files and local Active Storage files.
+# Use a persistent storage volume for local Active Storage files (uploaded videos).
 # Recommended to change this to a mounted volume path that is backed up off server.
 volumes:
   - "openwushu_storage:/rails/storage"
@@ -92,6 +96,22 @@ builder:
 #   user: app
 
 # Use accessory services (secrets come from .kamal/secrets).
+# PostgreSQL 18 on the same server, reachable from the app as "openwushu-db"; data lives in a volume.
+# Back it up off the server (for example a nightly pg_dump).
+accessories:
+  db:
+    image: postgres:18
+    host: 192.168.0.1
+    port: "127.0.0.1:5432:5432"
+    env:
+      clear:
+        POSTGRES_USER: openwushu
+        POSTGRES_DB: openwushu_production
+      secret:
+        - POSTGRES_PASSWORD
+    volumes:
+      - "openwushu_postgres:/var/lib/postgresql"
+
 # accessories:
 #   db:
 #     image: mysql:8.0

@@ -16,11 +16,11 @@ class CreateMovements < ActiveRecord::Migration[8.0]
       t.string :facing_en
       t.string :facing_id
       # Translated lists: { "en" => [...], "id" => [...] }
-      t.json :steps, null: false, default: {}
-      t.json :key_points, null: false, default: {}
-      t.json :mistakes, null: false, default: {}
+      t.jsonb :steps, null: false, default: {}
+      t.jsonb :key_points, null: false, default: {}
+      t.jsonb :mistakes, null: false, default: {}
       # 图解 poses for the 3D figure, one per step: [{ "yaw" => deg, "j" => [[x, y, z], ...] }]
-      t.json :figures, null: false, default: []
+      t.jsonb :figures, null: false, default: []
       t.string :reference
 
       t.timestamps

@@ -25,7 +25,19 @@ The first design (screens, decisions, roles and an interactive prototype source)
 
 ## Development
 
-OpenWushu is a Ruby on Rails 8.1 app: SQLite with Solid Queue, Cache and Cable, Hotwire (Turbo and Stimulus) through import maps, and plain CSS. You need only Ruby, with no Node build step and no database server.
+OpenWushu is a Ruby on Rails 8.1 app: PostgreSQL 18 with Solid Queue, Cache and Cable, Hotwire (Turbo and Stimulus) through import maps, and plain CSS. You need Ruby and PostgreSQL, with no Node build step.
+
+PostgreSQL 18 on Debian or Ubuntu (including WSL), from the PostgreSQL project's own packages:
+
+```sh
+sudo apt install -y postgresql-common
+sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y
+sudo apt install -y postgresql-18 libpq-dev
+sudo service postgresql start          # WSL without systemd starts it this way
+sudo -u postgres createuser -s "$USER" # lets Rails connect as you, without a password
+```
+
+To use another server, set `PGHOST`, `PGPORT`, `PGUSER` and `PGPASSWORD`.
 
 ```sh
 # Ruby 3.4.4 (see .ruby-version)
@@ -38,7 +50,7 @@ bin/rubocop && bin/brakeman    # style and security checks
 
 Emails in development are written to `tmp/mails/<address>` instead of being sent (open the link from there), and can be previewed at http://localhost:3000/rails/mailers.
 
-In production, set `APP_HOST` (the domain used in email links) and `MAIL_FROM`, and add SMTP settings with `bin/rails credentials:edit`:
+In production, Kamal runs PostgreSQL 18 as the `db` accessory on the same server (`config/deploy.yml`); set `POSTGRES_PASSWORD` in your environment before deploying, and back the database up off the server. Also set `APP_HOST` (the domain used in email links) and `MAIL_FROM`, and add SMTP settings with `bin/rails credentials:edit`:
 
 ```yaml
 smtp:

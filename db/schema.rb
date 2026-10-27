@@ -11,6 +11,9 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[8.1].define(version: 2026_10_27_110918) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "pg_catalog.plpgsql"
+
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -40,7 +43,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_10_27_110918) do
   end
 
   create_table "movements", force: :cascade do |t|
-    t.integer "routine_id", null: false
+    t.bigint "routine_id", null: false
     t.integer "number", null: false
     t.integer "section", default: 1, null: false
     t.string "name_zh", null: false
@@ -53,10 +56,10 @@ ActiveRecord::Schema[8.1].define(version: 2026_10_27_110918) do
     t.float "end_y"
     t.string "facing_en"
     t.string "facing_id"
-    t.json "steps", default: {}, null: false
-    t.json "key_points", default: {}, null: false
-    t.json "mistakes", default: {}, null: false
-    t.json "figures", default: [], null: false
+    t.jsonb "steps", default: {}, null: false
+    t.jsonb "key_points", default: {}, null: false
+    t.jsonb "mistakes", default: {}, null: false
+    t.jsonb "figures", default: [], null: false
     t.string "reference"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -84,7 +87,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_10_27_110918) do
   end
 
   create_table "sessions", force: :cascade do |t|
-    t.integer "user_id", null: false
+    t.bigint "user_id", null: false
     t.string "ip_address"
     t.string "user_agent"
     t.datetime "created_at", null: false
