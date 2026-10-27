@@ -37,7 +37,8 @@
             <span class="lang-switch__label">中文 + <%= t("layout.translation") %></span>
             <div class="segmented" role="group" aria-label="<%= t("layout.translation_group") %>">
               <% { en: "EN", id: "ID" }.each do |code, label| %>
-                <%= link_to label, url_for(request.query_parameters.merge(locale: code)), class: "segmented__item", "aria-pressed": (I18n.locale == code).to_s, hreflang: code, lang: code %>
+                <%# Built from the path, not url_for: url_for reads host, protocol and script_name from the query %>
+                <%= link_to label, "#{request.path}?#{request.query_parameters.merge("locale" => code.to_s).to_query}", class: "segmented__item", "aria-pressed": (I18n.locale == code).to_s, hreflang: code, lang: code %>
               <% end %>
             </div>
           </div>

@@ -23,6 +23,19 @@ class RoutinesControllerTest < ActionDispatch::IntegrationTest
     assert_select ".move-row__zh", text: "起势"
   end
 
+  test "locale switch keeps the query but cannot be pointed at another host or a script" do
+    get root_path, params: { q: "lan que wei", host: "evil.example", protocol: "javascript", script_name: "javascript:alert(1)//" }
+    assert_response :success
+    links = css_select(".lang-switch a").map { it["href"] }
+    assert_equal 2, links.size
+    links.each do |href|
+      # A path on this site; the hostile values stay in the query as plain text
+      assert href.start_with?("/?"), href
+      assert_not_includes href, "javascript:"
+      assert_includes href, "q=lan+que+wei"
+    end
+  end
+
   test "learn tab opens the selected movement" do
     get routine_path(routines(:taiji), m: 2)
     assert_response :success
