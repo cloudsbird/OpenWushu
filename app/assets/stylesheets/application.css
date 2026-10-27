@@ -113,10 +113,12 @@ h1, h2, h3 { margin: 0; }
 .brand__text { display: flex; flex-direction: column; line-height: 1.1; margin-left: 4px; }
 .brand__name { font-family: var(--font-head); font-weight: 700; font-size: 21px; }
 .brand__zh { font-size: 11px; letter-spacing: 0.24em; color: var(--muted); }
-.site-nav { display: flex; flex-wrap: wrap; gap: 4px; flex: 1 1 auto; }
+.site-nav { order: 1; display: flex; flex-wrap: wrap; gap: 4px; flex: 1 1 auto; }
 .site-nav__link { display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; font-weight: 500; color: var(--ink); text-decoration: none; }
 .site-nav__link[aria-current="page"] { background: var(--accent); color: var(--on-accent); }
-.lang-switch { display: flex; align-items: center; gap: 10px; }
+.lang-switch { order: 2; display: flex; align-items: center; gap: 10px; }
+.site-menu { display: contents; }
+.menu-toggle { display: none; }
 .lang-switch__label { font-size: 13px; color: var(--muted); }
 
 .site-footer { position: sticky; bottom: 0; z-index: 10; margin-top: auto; border-top: 1px solid var(--line); background: var(--surface); }
@@ -298,11 +300,57 @@ a.card:hover { color: inherit; filter: brightness(0.97); }
   .stage__play { width: 44px; height: 44px; left: 10px; bottom: 10px; }
   .timeline__seg { font-size: 0; }
   .routine-head h1 { font-size: 28px; }
+
+  /* Header: logo, translation switch and menu button on one row; the menu opens below */
+  .site-header__inner { flex-wrap: wrap; gap: 8px; padding: 6px 16px; }
+  .brand { margin-right: auto; min-width: 0; }
+  .seal { width: 34px; height: 34px; font-size: 15px; }
+  .brand__name { font-size: 19px; }
+  .lang-switch__label { display: none; }
+  .lang-switch .segmented__item { min-width: 40px; min-height: 36px; padding: 0 8px; }
+  .menu-toggle { display: inline-flex; order: 3; }
+  .site-menu { display: none; order: 4; flex-basis: 100%; flex-direction: column; gap: 12px; padding: 8px 0 12px; border-top: 1px solid var(--line); }
+  .site-header.is-open .site-menu { display: flex; }
+  .site-header.is-open .menu-toggle { background: var(--accent); color: var(--on-accent); }
+  .site-nav { flex-direction: column; gap: 2px; }
+  .site-nav__link { padding: 0 12px; }
+  .account { gap: 8px; }
+  .account .btn { flex: 1 1 0; }
+  .account__name { flex-basis: 100%; }
+
+  /* Library hero: smaller vertical title so the heading fits */
+  .container--library { padding-top: 20px; gap: 28px; }
+  .lib-hero__title { flex-basis: 100%; gap: 14px; }
+  .lib-hero__title .vtitle { font-size: 30px; padding-left: 10px; }
+  .lib-hero__en { font-size: 26px; }
+  .lib-hero__text { overflow-wrap: anywhere; }
+  .card__cover { font-size: 48px; }
+
+  /* Routine page: full-width tabs, one row of player controls, a shorter list */
+  .routine-head__title .vtitle { font-size: 18px; }
+  .tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; box-sizing: border-box; }
+  .tabs .segmented__item { padding: 0 8px; font-size: 13px; }
+  .player { padding: 8px; }
+  .controls { flex-wrap: nowrap; gap: 6px; }
+  .controls .btn { min-width: 44px; padding: 0 10px; }
+  .controls__text, .controls__label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .controls .segmented__item { min-width: 0; padding: 0 9px; }
+  .carpet { padding: 12px; }
+  .move-list { max-height: 65vh; }
+  /* Video, then the movement list or details, then the carpet: what you tapped stays near the video */
+  .grid4 > .grid4__main { display: contents; }
+  .grid4 .player { order: 1; }
+  .grid4 > .grid4__side { order: 2; }
+  .grid4 .carpet { order: 3; }
+  .grid4 { gap: 16px; }
+  .detail__body { padding: 14px 14px 18px; }
+  .detail__names h2 { font-size: 32px; }
+  .admin-tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 /* ---- Accounts ---- */
 
-.account { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
+.account { order: 3; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
 .account__name { font-weight: 600; font-size: 14px; }
 .account__form { display: contents; }
 .account .badge { align-self: center; }

@@ -5,6 +5,7 @@ en:
   layout:
     home: OpenWushu home
     library: Library
+    menu: Menu
     translation: translation
     translation_group: Translation language
     footer: "OpenWushu · for educational purposes only. Content is community-maintained and may contain errors; always learn under a qualified coach."
