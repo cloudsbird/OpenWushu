@@ -19,7 +19,7 @@ Sample content: **二十四式简化太极拳 (24-Form Simplified Taijiquan)**, 
 | Colors | Blue `#50A0FF` + white. Navy `#06152B` text on the blue (white on `#50A0FF` is only ~2.6:1). Deeper `#1766C7` for blue text on white. Light tint `#F5F9FF` background. Amber only for warning badges, red only for error labels |
 | Type | Noto Serif SC (Chinese display), Noto Sans SC + Inter (body) |
 | Footer | Educational disclaimer + "Content licensed CC BY-SA 4.0" link, always pinned to the bottom of the screen |
-| License | Code: **GPL-3.0** (`LICENSE`). Content — descriptions, translations, carpet paths, threads and uploaded videos: **CC BY-SA 4.0** (`LICENSE-CONTENT`) |
+| License | Code: **AGPL-3.0** (`LICENSE`) — modified versions run as a public website must share their source. Content — descriptions, translations, carpet paths, threads and uploaded videos: **CC BY-SA 4.0** (`LICENSE-CONTENT`) |
 
 ## Licensing in the product
 
