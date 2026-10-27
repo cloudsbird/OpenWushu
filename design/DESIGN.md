@@ -33,7 +33,7 @@ Sample content: **四十二式太极拳 (42-Form Competition Taijiquan)** from t
 
 ## Screens
 
-1. **Library (规定套路)** — routines grouped by style (太极拳, 长拳, 南拳, 器械). Search matches Chinese, pinyin with or without tones, English and Indonesian ("gao tan ma" → 高探马).
+1. **Library (规定套路)** — routines grouped by style (太极拳, 长拳, 南拳, 器械). Search matches Chinese, pinyin with or without tones, English and Indonesian ("lan que wei" → 揽雀尾).
 2. **Routine page** — video, movement timeline (one segment per movement), carpet map and movement list, all kept in sync. Controls: play/pause, previous/next movement, loop movement, 0.5× / 0.75× / 1×.
 3. **Movement detail** — steps (动作过程), key points (要点), common mistakes (易犯错误), facing direction, "Draft · needs expert review" badge, link to the movement's threads. Empty state invites a contributor to write it.
 4. **Discussions (讨论)** — list of routines with thread counts by status; each opens the routine's Discussion tab. Thread types: Error, Suggest change, Question, Rule update. Status: Open → Under review → Accepted / Rejected.
