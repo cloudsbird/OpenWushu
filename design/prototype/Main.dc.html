@@ -500,6 +500,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </section>
 </sc-if>
 
+<sc-if value="{{noOpenThread}}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
 <div role="group" aria-label="Thread filter" style="display: flex; padding: 3px; border-radius: 10px; background: {{t.chip}}">
 <button type="button" class="ow-btn" onClick="{{filterAll}}" aria-pressed="{{fAll}}" style="min-height: 38px; padding: 0 12px; border-radius: 8px; font-size: 14px; font-weight: 600; background: {{fAllBg}}; color: {{fAllFg}}">{{s.allThreads}} ({{threadTotal}})</button>
@@ -520,10 +521,77 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <span style="flex: 1 1 auto"></span>
 <button type="button" class="ow-btn" onClick="{{th.goto}}" style="min-height: 32px; font-size: 13px; text-decoration: underline; color: {{t.muted}}">{{th.target}}</button>
 </div>
-<h3 style="margin: 0; font-size: 17px; line-height: 1.35">{{th.title}}</h3>
-<p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{th.field}} · {{th.replies}} {{s.replies}} · {{th.by}}</p>
+<h3 style="margin: 0; font-size: 17px; line-height: 1.35"><button type="button" class="ow-btn" onClick="{{th.open}}" style="min-height: 32px; font-weight: 700; text-align: left; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: {{t.line2}}">{{th.title}}</button></h3>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px">
+<p style="margin: 0; flex: 1 1 auto; font-size: 14px; color: {{t.muted}}">{{th.field}} · {{th.by}} · {{th.when}}</p>
+<button type="button" class="ow-btn" onClick="{{th.open}}" style="min-height: 40px; padding: 0 14px; border-radius: 10px; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; background: {{t.chip}}; color: {{t.accentInk}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 3.5 H13.5 V10.5 H7 L4 13 V10.5 H2.5 Z"></path></svg>{{th.replies}} {{s.replies}}</button>
+</div>
 </article>
 </sc-for>
+</sc-if>
+
+<sc-if value="{{hasOpenThread}}" hint-placeholder-val="{{ false }}">
+<article style="display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<button type="button" class="ow-btn" onClick="{{closeThread}}" style="min-height: 44px; padding: 0 12px; border-radius: 10px; display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: 14px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 L5 8 L10 13"></path></svg>{{s.allThreadsBack}}</button>
+<span style="flex: 1 1 auto"></span>
+<sc-if value="{{signedIn}}" hint-placeholder-val="{{ false }}">
+<button type="button" class="ow-btn" onClick="{{toggleWatch}}" aria-pressed="{{watchOn}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; background: {{watchBg}}; color: {{watchFg}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 11 V7 A4 4 0 0 1 12 7 V11 L13 12 H3 Z"></path><path d="M6.5 14 H9.5"></path></svg>{{watchLabel}}</button>
+</sc-if>
+</div>
+
+<header style="display: flex; flex-direction: column; gap: 10px; padding: 18px 20px; border-radius: 14px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{ot.typeBg}}; color: {{ot.typeFg}}">{{ot.typeLabel}}</span>
+<span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{ot.stBg}}; color: {{ot.stFg}}">{{ot.stLabel}}</span>
+<span style="flex: 1 1 auto"></span>
+<button type="button" class="ow-btn" onClick="{{ot.goto}}" style="min-height: 32px; font-size: 13px; text-decoration: underline; color: {{t.muted}}">{{ot.target}}</button>
+</div>
+<h2 style="margin: 0; font-size: 22px; line-height: 1.3">{{ot.title}}</h2>
+<p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{ot.field}} · {{ot.replies}} {{s.replies}}</p>
+</header>
+
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+<sc-for list="{{thPosts}}" as="p" hint-placeholder-count="4">
+<li>
+<sc-if value="{{p.isEvent}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; align-items: center; gap: 10px; padding: 2px 16px; font-size: 13px; color: {{t.muted}}"><span aria-hidden="true" style="flex: none; width: 10px; height: 10px; border-radius: 50%; background: {{t.blue}}"></span><span>{{p.text}} · {{p.when}}</span></div>
+</sc-if>
+<sc-if value="{{p.notEvent}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border-radius: 14px; background: {{t.surface}}; border: 2px solid {{p.cardBd}}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px">
+<span aria-hidden="true" style="flex: none; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{p.avBg}}; color: {{p.avFg}}">{{p.initial}}</span>
+<span style="display: flex; flex-direction: column; line-height: 1.25"><span style="font-weight: 600">{{p.by}}</span><span style="font-size: 12px; font-weight: 500; color: {{p.badgeFg}}">{{p.badge}}</span></span>
+<span style="flex: 1 1 auto"></span>
+<sc-if value="{{p.isOp}}" hint-placeholder-val="{{ false }}"><span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.chip}}; color: {{t.muted}}">{{s.original}}</span></sc-if>
+<sc-if value="{{p.accepted}}" hint-placeholder-val="{{ false }}"><span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.green}}; color: #FFFFFF">✓ {{s.acceptedAnswer}}</span></sc-if>
+<span style="font-size: 12px; color: {{t.muted}}">{{p.when}}</span>
+</div>
+<p style="margin: 0; white-space: pre-line">{{p.body}}</p>
+</div>
+</sc-if>
+</li>
+</sc-for>
+</ol>
+
+<sc-if value="{{signedIn}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border-radius: 14px; background: {{t.surface}}; border: 1px solid {{t.line2}}">
+<label for="ow-reply" style="font-size: 13px; font-weight: 600">{{s.replyLabel}}</label>
+<textarea id="ow-reply" class="ow-in" rows="4" value="{{replyText}}" onChange="{{onReply}}" placeholder="{{s.replyPh}}" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<span style="flex: 1 1 240px; font-size: 12px; color: {{t.muted}}">{{s.replyNote}}</span>
+<button type="button" class="ow-btn" onClick="{{postReply}}" style="min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.postReply}}</button>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{signedOut}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 16px 18px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<span style="flex: 1 1 260px; font-size: 14px; color: {{t.muted}}">{{s.gateReply}}</span>
+<button type="button" class="ow-btn" onClick="{{signInReply}}" style="min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.signInReply}}</button>
+</div>
+</sc-if>
+</article>
+</sc-if>
 </div>
 
 <aside style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 18px 20px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
@@ -1084,10 +1152,28 @@ var DETAILS = {
   }
 };
 
+function W(en, id) { return { en: en, id: id }; }
+// Sample threads; usernames are fictional. role: member | judge | school | maintainer
 var THREADS = [
-  { type: 'error', move: 11, field: 'steps', st: 'open', replies: 4, title: { en: 'Right hand height: eye level or head level?', id: 'Tinggi tangan kanan: setinggi mata atau kepala?' } },
-  { type: 'suggest', move: 5, field: 'video', st: 'review', replies: 2, title: { en: 'Add a side-view video for Repulse the Monkey', id: 'Tambahkan video tampak samping untuk Dao Juan Gong' } },
-  { type: 'question', move: 9, field: 'steps', st: 'accepted', replies: 6, title: { en: 'How many Cloud Hands repetitions are standard?', id: 'Berapa kali pengulangan Tangan Awan yang standar?' } }
+  { type: 'error', move: 11, field: 'steps', st: 'open', title: W('Right hand height: eye level or head level?', 'Tinggi tangan kanan: setinggi mata atau kepala?'), posts: [
+    { op: true, by: 'taiji_learner', role: 'member', when: W('3 days ago', '3 hari lalu'), body: W('The description says the right fingertips end at eye level, but in the demo video the hand looks closer to head height. Which is correct for competition?', 'Deskripsi menyebut ujung jari kanan berakhir setinggi mata, tetapi di video peragaan tangan terlihat lebih dekat ke tinggi kepala. Mana yang benar untuk kompetisi?') },
+    { by: 'wushu_rio', role: 'member', when: W('3 days ago', '3 hari lalu'), body: W('In my club we were taught eye level. The camera angle might make it look higher.', 'Di klub saya diajarkan setinggi mata. Mungkin sudut kamera membuatnya terlihat lebih tinggi.') },
+    { by: 'coach_sby', role: 'maintainer', when: W('2 days ago', '2 hari lalu'), body: W('Eye level is the standard. The video is filmed slightly from below, so the hand looks higher. I suggest adding a side-view clip to make this clear.', 'Setinggi mata adalah standarnya. Video direkam sedikit dari bawah, jadi tangan terlihat lebih tinggi. Saya sarankan menambahkan klip tampak samping agar lebih jelas.') },
+    { by: 'taiji_learner', role: 'member', when: W('2 days ago', '2 hari lalu'), body: W('Thanks! That makes sense.', 'Terima kasih! Masuk akal.') },
+    { by: 'sifu_lim', role: 'school', when: W('1 day ago', '1 hari lalu'), body: W('In our lineage the hand finishes a little higher, around the eyebrows. That can go in Traditional notes, but for competition follow eye level.', 'Di garis perguruan kami, tangan berakhir sedikit lebih tinggi, sekitar alis. Itu bisa masuk Catatan tradisional, tetapi untuk kompetisi ikuti setinggi mata.') }
+  ] },
+  { type: 'suggest', move: 5, field: 'video', st: 'review', title: W('Add a side-view video for Repulse the Monkey', 'Tambahkan video tampak samping untuk Dao Juan Gong'), posts: [
+    { op: true, by: 'wushu_rio', role: 'member', when: W('1 week ago', '1 minggu lalu'), body: W('Repulse the Monkey is hard to follow from the front because the steps go backwards. Could we add a side-view video?', 'Dao Juan Gong sulit diikuti dari depan karena langkahnya mundur. Bisakah ditambahkan video tampak samping?') },
+    { by: 'coach_sby', role: 'maintainer', when: W('6 days ago', '6 hari lalu'), body: W('Agreed. I can record one at our training hall next week.', 'Setuju. Saya bisa merekamnya di tempat latihan kami minggu depan.') },
+    { event: true, when: W('6 days ago', '6 hari lalu'), text: W('coach_sby changed the status to Under review', 'coach_sby mengubah status menjadi Sedang ditinjau') },
+    { by: 'wushu_rio', role: 'member', when: W('5 days ago', '5 hari lalu'), body: W('Great, thank you!', 'Mantap, terima kasih!') }
+  ] },
+  { type: 'question', move: 9, field: 'steps', st: 'accepted', title: W('How many Cloud Hands repetitions are standard?', 'Berapa kali pengulangan Tangan Awan yang standar?'), posts: [
+    { op: true, by: 'new_student', role: 'member', when: W('2 weeks ago', '2 minggu lalu'), body: W('How many Cloud Hands repetitions are standard in the 24 form?', 'Berapa kali pengulangan Tangan Awan yang standar dalam 24 jurus?') },
+    { by: 'coach_sby', role: 'maintainer', accepted: true, when: W('2 weeks ago', '2 minggu lalu'), body: W('Three, moving to the left, before the second Single Whip.', 'Tiga kali, bergerak ke kiri, sebelum Cambuk Tunggal yang kedua.') },
+    { event: true, when: W('13 days ago', '13 hari lalu'), text: W('coach_sby marked this as the accepted answer and changed the status to Accepted', 'coach_sby menandai ini sebagai jawaban diterima dan mengubah status menjadi Diterima') },
+    { by: 'new_student', role: 'member', when: W('13 days ago', '13 hari lalu'), body: W('Thank you, that helps!', 'Terima kasih, sangat membantu!') }
+  ] }
 ];
 
 var S = {
@@ -1095,6 +1181,9 @@ var S = {
     library: 'Library', discussions: 'Discussions', contribute: 'Contribute', translation: 'translation',
     dLead: 'Pick a routine to read its threads, ask a question or report a mistake. Each thread is linked to a movement so contributors know exactly what to check.', latest: 'Latest', dPending: 'Discussion opens once the movement list is added.',
     cTitle: 'Contribute', cLead: 'Help build an accurate, open reference. Every edit is saved as a revision and reviewed by a moderator before it is published. To report a mistake instead, open a thread in Discussions.',
+    allThreadsBack: 'All threads', original: 'Original post', acceptedAnswer: 'Accepted answer', maintainerBadge: 'Maintainer · Judge / coach', justNow: 'just now',
+    replyLabel: 'Write a reply', replyPh: 'Be kind, stay on topic, and cite a source when you can.', replyNote: 'Replies are public and licensed CC BY-SA 4.0. Watchers are emailed.', postReply: 'Post reply',
+    watch: 'Watch thread', watching: 'Watching · email on replies', signInReply: 'Sign in to reply', gateReply: 'Sign in to reply to this thread.',
     apply: 'Apply to become a contributor', apTitle: 'Apply to become a contributor', apLead: 'Verified contributors write movement descriptions, upload demonstration videos and help review changes. Choose the path that fits you.',
     apStep1: 'Choose a path', apStep2: 'Details & evidence', apStep3: 'Review & consent',
     pathA: 'Association accreditation', pathADesc: 'You hold a judge certificate, coach licence, duan rank (段位) or competition record from a wushu association.', pathANeeds: ['A photo or scan of your certificate', 'The issuing association and level', 'Expiry date, if it has one'],
@@ -1163,6 +1252,9 @@ var S = {
     library: 'Pustaka', discussions: 'Diskusi', contribute: 'Kontribusi', translation: 'terjemahan',
     dLead: 'Pilih rangkaian untuk membaca diskusinya, bertanya, atau melaporkan kesalahan. Setiap diskusi terhubung ke gerakan agar kontributor tahu persis apa yang perlu diperiksa.', latest: 'Terbaru', dPending: 'Diskusi dibuka setelah daftar gerakan ditambahkan.',
     cTitle: 'Kontribusi', cLead: 'Bantu membangun referensi terbuka yang akurat. Setiap suntingan disimpan sebagai revisi dan ditinjau moderator sebelum diterbitkan. Untuk melaporkan kesalahan, buka diskusi di halaman Diskusi.',
+    allThreadsBack: 'Semua diskusi', original: 'Postingan awal', acceptedAnswer: 'Jawaban diterima', maintainerBadge: 'Pengelola · Juri / pelatih', justNow: 'baru saja',
+    replyLabel: 'Tulis balasan', replyPh: 'Bersikap sopan, tetap pada topik, dan sertakan sumber bila memungkinkan.', replyNote: 'Balasan bersifat publik dan berlisensi CC BY-SA 4.0. Pengikut menerima email.', postReply: 'Kirim balasan',
+    watch: 'Ikuti diskusi', watching: 'Mengikuti · email saat ada balasan', signInReply: 'Masuk untuk membalas', gateReply: 'Masuk untuk membalas diskusi ini.',
     apply: 'Ajukan diri sebagai kontributor', apTitle: 'Ajukan diri sebagai kontributor', apLead: 'Kontributor terverifikasi menulis deskripsi gerakan, mengunggah video peragaan, dan membantu meninjau perubahan. Pilih jalur yang sesuai untuk Anda.',
     apStep1: 'Pilih jalur', apStep2: 'Detail & bukti', apStep3: 'Tinjau & persetujuan',
     pathA: 'Akreditasi asosiasi', pathADesc: 'Anda memiliki sertifikat juri, lisensi pelatih, tingkatan duan (段位), atau catatan kompetisi dari asosiasi wushu.', pathANeeds: ['Foto atau pindaian sertifikat', 'Asosiasi penerbit dan tingkatannya', 'Tanggal berlaku, jika ada'],
@@ -1247,7 +1339,8 @@ class Component extends DCLogic {
     super(props);
     this.state = { screen: 'routine', tab: 'learn', lang: 'en', t: START[11] + 2, playing: false, loop: false, speed: 1, detailOpen: true, q: '', reportOpen: false, submitted: false, formType: 'error', formMove: '11', threadFilter: 'all', cTask: 'describe', cMove: 1, cSubmitted: false, cRoutine: null,
       user: null, authReturn: 'routine', authMsg: null, authErr: null, showPw: false, siEmail: '', suName: '', suEmail: '', suAgree: false, pendingUser: null,
-      apStep: 1, apPath: 'a', apEv: [], apName: '', apConsent: false, apErr: null };
+      apStep: 1, apPath: 'a', apEv: [], apName: '', apConsent: false, apErr: null,
+      openThread: null, extra: {}, replyText: '', watch: {} };
   }
   componentDidMount() {
     var self = this;
@@ -1278,6 +1371,7 @@ class Component extends DCLogic {
   finishAuth(user) {
     var r = this.state.authReturn, st = { user: Object.assign({ role: 'member' }, user), authMsg: null, authErr: null, showPw: false };
     if (r === 'discuss') { st.screen = 'routine'; st.tab = 'discuss'; st.reportOpen = true; st.submitted = false; }
+    else if (r === 'thread') { st.screen = 'routine'; st.tab = 'discuss'; }
     else st.screen = ['library', 'contribute', 'discussions', 'apply'].indexOf(r) >= 0 ? r : 'routine';
     this.setState(st);
   }
@@ -1342,15 +1436,31 @@ class Component extends DCLogic {
     var typeCol = { error: [t.redSoft, t.red], suggest: [t.blueSoft, t.blue], question: [t.chip, t.muted], rule: [t.amberSoft, t.amber] };
     var stCol = { open: [t.accent, t.onAccent, L.stOpen], review: [t.blue, '#FFFFFF', L.stReview], accepted: [t.green, '#FFFFFF', L.stAccepted] };
     var fieldIdx = { name: 0, steps: 1, keys: 2, video: 3, path: 4 };
-    var list = THREADS.filter(function (th) { return s.threadFilter === 'all' || th.move === ai; });
-    var threads = list.map(function (th) {
-      var m = MOVES[th.move];
-      return { title: th.title[s.lang], replies: th.replies, by: L.by, field: L.fields[fieldIdx[th.field]],
+    var postsOf = function (k) { return THREADS[k].posts.concat(s.extra[k] || []); };
+    var replyCount = function (k) { return postsOf(k).filter(function (p) { return !p.event && !p.op; }).length; };
+    var threadVals = function (th) {
+      var k = THREADS.indexOf(th), m = MOVES[th.move];
+      return { title: th.title[s.lang], replies: replyCount(k), by: th.posts[0].by, when: th.posts[0].when[s.lang], field: L.fields[fieldIdx[th.field]],
         typeLabel: typeLabel[th.type], typeBg: typeCol[th.type][0], typeFg: typeCol[th.type][1],
         stBg: stCol[th.st][0], stFg: stCol[th.st][1], stLabel: stCol[th.st][2],
         target: pad(th.move + 1) + ' ' + m[0] + ' ' + m[1],
-        goto: function () { self.select(th.move); } };
-    });
+        goto: function () { self.select(th.move); },
+        open: function () { self.setState({ openThread: k, replyText: '' }); } };
+    };
+    var list = THREADS.filter(function (th) { return s.threadFilter === 'all' || th.move === ai; });
+    var threads = list.map(threadVals);
+    var roleBadge = { member: L.member, judge: L.badgeJudge, school: L.badgeSchool, maintainer: L.maintainerBadge };
+    var hasOT = s.openThread != null;
+    var ot = hasOT ? threadVals(THREADS[s.openThread]) : {};
+    var thPosts = hasOT ? postsOf(s.openThread).map(function (p) {
+      if (p.event) return { isEvent: true, notEvent: false, text: p.text[s.lang], when: p.when[s.lang] };
+      var ver = p.role !== 'member';
+      return { isEvent: false, notEvent: true, by: p.by, initial: p.by.charAt(0).toUpperCase(), badge: roleBadge[p.role],
+        badgeFg: ver ? t.accentInk : t.muted, avBg: ver ? t.accent : t.chip, avFg: ver ? t.onAccent : t.ink,
+        when: p.justNow ? L.justNow : p.when[s.lang], body: typeof p.body === 'string' ? p.body : p.body[s.lang],
+        isOp: !!p.op, accepted: !!p.accepted, cardBd: p.accepted ? t.green : t.line };
+    }) : [];
+    var watchOn = hasOT && !!s.watch[s.openThread];
 
     var results = [];
     var nq = norm(s.q || '');
@@ -1409,7 +1519,7 @@ class Component extends DCLogic {
       hasApErr: !!s.apErr, apErr: s.apErr ? L[s.apErr] : '',
       isDiscussions: isDiscs, latestTitle: THREADS[0].title[s.lang],
       countOpen: countSt('open'), countReview: countSt('review'), countAccepted: countSt('accepted'),
-      open24Discuss: function () { self.setState({ screen: 'routine', tab: 'discuss', threadFilter: 'all', reportOpen: false }); },
+      open24Discuss: function () { self.setState({ screen: 'routine', tab: 'discuss', threadFilter: 'all', reportOpen: false, openThread: null }); },
       isLibrary: isLib, isRoutine: isRout, isContribute: isCon, isLearn: isLearn, isDiscuss: isDisc,
       navLibBg: navLib[0], navLibFg: navLib[1], navDisBg: navDis[0], navDisFg: navDis[1], navConBg: navCon[0], navConFg: navCon[1],
       progress: progress,
@@ -1483,6 +1593,20 @@ class Component extends DCLogic {
       hasDetail: !!d, noDetail: !d, detail: detail,
       writeIt: function () { self.setState({ cRoutine: '24' }); self.openContribute('describe', ai); },
       threadTotal: THREADS.length, threads: threads, noThreads: threads.length === 0,
+      hasOpenThread: hasOT, noOpenThread: !hasOT, ot: ot, thPosts: thPosts,
+      closeThread: function () { self.setState({ openThread: null }); },
+      watchOn: watchOn, watchLabel: watchOn ? L.watching : L.watch, watchBg: watchOn ? t.accentSoft : t.chip, watchFg: watchOn ? t.accentInk : t.ink,
+      toggleWatch: function () { var w = Object.assign({}, s.watch); w[s.openThread] = !w[s.openThread]; self.setState({ watch: w }); },
+      replyText: s.replyText, onReply: function (e) { self.setState({ replyText: e.target.value }); },
+      postReply: function () {
+        var txt = s.replyText.trim(); if (!txt || !s.user) return;
+        var rk = s.user.role === 'verified' ? (s.user.badge === 'school' ? 'school' : 'judge') : 'member';
+        var ex = Object.assign({}, s.extra), w = Object.assign({}, s.watch);
+        ex[s.openThread] = (ex[s.openThread] || []).concat([{ by: s.user.name, role: rk, body: txt, justNow: true }]);
+        w[s.openThread] = true;
+        self.setState({ extra: ex, watch: w, replyText: '' });
+      },
+      signInReply: function () { self.needAuth('thread', 'gateReply'); },
       fAll: s.threadFilter === 'all', fMove: s.threadFilter === 'move',
       fAllBg: seg(s.threadFilter === 'all')[0], fAllFg: seg(s.threadFilter === 'all')[1],
       fMoveBg: seg(s.threadFilter === 'move')[0], fMoveFg: seg(s.threadFilter === 'move')[1],
