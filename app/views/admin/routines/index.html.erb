@@ -1,0 +1,31 @@
+<% content_for :title, "套路 · #{t("admin.tabs.routines")}" %>
+<main class="container">
+  <%= render "admin/shared/header", tab: :routines %>
+  <section class="panel admin-panel">
+    <p class="muted"><%= t("admin.routines.lead") %></p>
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><%= t("admin.routines.columns.routine") %></th>
+            <th scope="col"><%= t("admin.routines.columns.status") %></th>
+            <th scope="col"><%= t("admin.routines.columns.movements") %></th>
+            <th scope="col"><%= t("admin.routines.columns.video") %></th>
+            <th scope="col"><span class="visually-hidden"><%= t("admin.routines.edit") %></span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @routines.each do |routine| %>
+            <tr>
+              <td><span class="zh"><%= routine.name_zh %></span><br><span class="muted"><%= routine.name_tr %></span></td>
+              <td><%= render "admin/routines/status", routine: routine %></td>
+              <td class="mono"><%= routine.movements.size %></td>
+              <td><%= routine.video.attached? ? number_to_human_size(routine.video.blob.byte_size) : "—" %></td>
+              <td><%= link_to t("admin.routines.edit"), edit_admin_routine_path(routine), class: "btn" %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>

@@ -60,12 +60,23 @@ smtp:
   password: ...
 ```
 
+### Admin panel
+
+`/admin` manages users (search, edit, role, verify, suspend, password reset, delete), routines (status and demonstration video) and site settings (sign-ups, site notice, site information, SMTP). Only accounts with the admin role can open it. Make the first admin from an existing account:
+
+```sh
+bin/rails "admin:grant[you@example.com]"
+```
+
+On Dokploy, run it in the app container's terminal. Admins can then promote others from the panel. SMTP details saved in the panel are encrypted with a key derived from `secret_key_base`, and take priority over SMTP settings in credentials.
+
 Where things are:
 
 - `app/models`: `Routine` and `Movement`. Chinese names are plain columns. `name_en` and `name_id` are the translations, and `name_tr` picks the one for the current locale.
 - `app/javascript/controllers/routine_player_controller.js`: keeps the video, timeline, carpet path and movement list in sync. Without an uploaded video it runs a practice clock.
 - `app/javascript/lib/figure3d.js`: draws the 图解 figures from 3D poses.
 - `config/locales/{en,id}.yml`: UI strings. Chinese labels stay in the views and are never translated. `auth.{en,id}.yml` holds the account pages and emails.
+- `app/controllers/admin/` and `app/models/setting.rb`: the admin panel and the one-row site settings.
 - Accounts use Rails' built-in authentication plus sign-up and email verification (`RegistrationsController`, `EmailVerificationsController`). Reading never needs an account. Unverified members can sign in but not post (`User#verified?`).
 - `db/seeds/routines.json`: seed content. Movement names and order come from the reference book; descriptions are in our own words and cite its pages.
 

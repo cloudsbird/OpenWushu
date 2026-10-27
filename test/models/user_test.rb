@@ -30,4 +30,30 @@ class UserTest < ActiveSupport::TestCase
     user.locale = "fr"
     assert_not user.valid?
   end
+
+  test "last_admin? counts only other active admins" do
+    admin = users(:admin)
+    assert admin.last_admin?
+    other = User.create!(display_name: "Dewi", email_address: "dewi@example.com", password: "long enough", accept_guidelines: "1", role: "admin")
+    assert_not admin.last_admin?
+    other.update!(suspended_at: Time.current)
+    assert admin.last_admin?
+    assert_not users(:one).last_admin?
+  end
+
+  test "suspend! ends sessions" do
+    user = users(:one)
+    user.sessions.create!
+    user.suspend!
+    assert user.suspended?
+    assert_empty user.sessions
+  end
+
+  test "changing the email clears verification" do
+    user = users(:one)
+    user.update!(display_name: "Ana B")
+    assert user.verified?
+    user.update!(email_address: "ana.b@example.com")
+    assert_not user.verified?
+  end
 end

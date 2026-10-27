@@ -15,6 +15,11 @@ class Routine < ApplicationRecord
   validates :style, inclusion: { in: STYLES }
   validates :status, inclusion: { in: STATUSES }
   validates :name_zh, :name_pinyin, :name_en, :name_id, presence: true
+  validate :publishable, if: :published?
+  validate :acceptable_video, if: -> { video.attached? && attachment_changes["video"] }
+
+  VIDEO_TYPES = %w[video/mp4 video/webm].freeze
+  VIDEO_MAX_SIZE = 2.gigabytes
 
   scope :ordered, -> { order(:position, :id) }
   scope :published, -> { where(status: "published") }
@@ -26,4 +31,16 @@ class Routine < ApplicationRecord
   def duration_sec = movements.maximum(:end_sec).to_f
 
   def section_count = movements.distinct.count(:section)
+
+  private
+
+  # The Learn tab needs the movement list (names and timings) before a routine can be shown
+  def publishable
+    errors.add(:status, :no_movements) if movements.empty?
+  end
+
+  def acceptable_video
+    errors.add(:video, :video_type) unless VIDEO_TYPES.include?(video.blob.content_type)
+    errors.add(:video, :video_size, max: VIDEO_MAX_SIZE / 1.gigabyte) if video.blob.byte_size > VIDEO_MAX_SIZE
+  end
 end

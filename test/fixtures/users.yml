@@ -14,3 +14,12 @@ unverified:
   display_name: Budi
   locale: id
   guidelines_accepted_at: <%= 1.hour.ago.to_fs(:db) %>
+
+admin:
+  email_address: admin@example.com
+  password_digest: <%= password_digest %>
+  display_name: Sari
+  locale: en
+  role: admin
+  verified_at: <%= 3.days.ago.to_fs(:db) %>
+  guidelines_accepted_at: <%= 3.days.ago.to_fs(:db) %>

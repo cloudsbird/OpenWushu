@@ -1,0 +1,177 @@
+# Panel admin, serta pengaturan situs yang dikendalikannya (pengumuman, pendaftaran ditutup, penangguhan)
+id:
+  layout:
+    admin: Admin
+    contact: Kontak
+  sessions:
+    create:
+      suspended: Akun ini ditangguhkan. Hubungi admin situs jika menurut Anda ini keliru.
+  registrations:
+    closed:
+      title: Pendaftaran ditutup
+      lead: Akun baru belum bisa dibuat saat ini. Membaca dan menonton tetap terbuka untuk semua.
+  admin:
+    title: Admin
+    save: Simpan perubahan
+    tabs:
+      users: Pengguna
+      routines: Rangkaian
+      settings: Pengaturan
+    roles:
+      member: Anggota
+      maintainer: Pengelola (dicadangkan)
+      admin: Admin
+    users:
+      stats:
+        all: Akun
+        week: Baru minggu ini
+        unverified: Belum verifikasi
+        suspended: Ditangguhkan
+      search: Cari
+      search_placeholder: Nama, email, atau klub
+      filter: Tampilkan
+      filters:
+        all: Semua
+        admin: Admin
+        maintainer: Pengelola
+        unverified: Belum verifikasi
+        suspended: Ditangguhkan
+      apply: Terapkan
+      count:
+        one: 1 akun
+        other: "%{count} akun"
+      none: Tidak ada akun yang cocok.
+      pages: Halaman
+      page: Halaman %{page} dari %{pages}
+      prev: Sebelumnya
+      next: Berikutnya
+      columns:
+        name: Nama
+        email: Email
+        role: Peran
+        status: Status
+        joined: Bergabung
+      status:
+        verified: Terverifikasi
+        unverified: Belum verifikasi
+        suspended: Ditangguhkan
+      back: ← Semua pengguna
+      email_hint: Mengganti email membuat anggota harus memverifikasi alamat baru.
+      role_hint: Admin dapat membuka panel ini. Pengelola dicadangkan untuk meninjau kontribusi dan belum punya akses tambahan.
+      verified_at: Email diverifikasi
+      guidelines_at: Menyetujui pedoman
+      sessions: Perangkat yang masuk
+      actions:
+        verify: Tandai email terverifikasi
+        password_reset: Kirim email atur ulang kata sandi
+        sign_out: Keluarkan dari semua perangkat
+        suspend: Tangguhkan akun
+        unsuspend: Cabut penangguhan
+        delete: Hapus akun
+      confirm_suspend: Tangguhkan %{name}? Ia akan dikeluarkan dan tidak bisa masuk sampai penangguhan dicabut.
+      confirm_delete: Hapus akun %{name} secara permanen? Tindakan ini tidak bisa dibatalkan.
+      saved: Perubahan disimpan.
+      suspended: Akun ditangguhkan dan dikeluarkan dari semua perangkat.
+      unsuspended: Penangguhan dicabut.
+      verified: Email ditandai terverifikasi.
+      signed_out: Dikeluarkan dari semua perangkat.
+      reset_sent: Email atur ulang kata sandi dikirim.
+      deleted: Akun %{name} sudah dihapus.
+      not_yourself: Anda tidak bisa menangguhkan, menurunkan peran, atau menghapus akun sendiri.
+      last_admin: Ini satu-satunya admin aktif. Jadikan orang lain admin terlebih dahulu.
+    routines:
+      lead: Hanya rangkaian yang diterbitkan yang tampil dengan tab Belajar di pustaka. Rangkaian perlu daftar gerakannya sebelum bisa diterbitkan.
+      columns:
+        routine: Rangkaian
+        status: Status
+        movements: Gerakan
+        video: Video
+      statuses:
+        published: Diterbitkan
+        in_progress: Sedang dikerjakan
+        awaiting: Menunggu kontributor
+      status_help:
+        published: tampil di pustaka dengan tab Belajar dan Nama Gerakan.
+        in_progress: dicantumkan sebagai sedang disiapkan; halamannya belum dibuka.
+        awaiting: dicantumkan sebagai membutuhkan kontributor.
+      edit: Ubah
+      back: ← Semua rangkaian
+      view: Buka di pustaka
+      video: Video demonstrasi
+      current_video: "Video saat ini: %{name} (%{size}). Memilih berkas baru akan menggantinya."
+      video_hint: MP4 atau WebM, maksimal %{max} GB. Unggahan disimpan di volume penyimpanan server.
+      remove_video: Hapus video
+      confirm_remove_video: Hapus video? Tab Belajar akan memakai jam latihan sebagai gantinya.
+      saved: "%{name} disimpan."
+      video_removed: Video dihapus.
+    settings:
+      saved: Pengaturan disimpan.
+      test_sent: Email uji dikirim ke %{email}.
+      test_failed: "Email uji tidak bisa dikirim: %{error}"
+      password_cleared: Kata sandi SMTP dihapus.
+      signups:
+        title: Pendaftaran dan pengumuman
+        open: Izinkan pendaftaran baru
+        open_help: Jika dimatikan, tombol Daftar disembunyikan dan akun baru tidak bisa dibuat. Anggota lama tetap bisa masuk.
+        verification: Wajib email terverifikasi untuk memposting
+        verification_help: Disimpan sekarang; berlaku saat fitur diskusi dan kontribusi ditambahkan.
+        notice_en: Pengumuman situs (Inggris)
+        notice_id: Pengumuman situs (Indonesia)
+        notice_help: Ditampilkan di atas setiap halaman sesuai terjemahan pengunjung, mis. jadwal pemeliharaan. Kosongkan untuk menyembunyikan.
+      site:
+        title: Informasi situs
+        name: Nama situs
+        contact: Email kontak (opsional)
+        source: Tautan kode sumber
+        footer_en: Teks footer (Inggris)
+        footer_id: Teks footer (Indonesia)
+        footer_help: Kosongkan untuk memakai penafian standar yang tampil sebagai contoh. Tautan lisensi CC BY-SA 4.0 selalu ada.
+      email:
+        title: Email (SMTP)
+        lead: Dipakai untuk email verifikasi dan kata sandi. Kosongkan server untuk memakai pengaturan SMTP dari credentials Rails, jika ada.
+        from: Pengirim
+        from_help: Nama dan alamat pengirim email. Kosong memakai MAIL_FROM.
+        address: Server SMTP
+        port: Port
+        port_help: 587 (STARTTLS) paling umum; 465 memakai TLS sejak awal.
+        username: Nama pengguna
+        password: Kata sandi
+        password_saved: Kata sandi sudah tersimpan (terenkripsi). Kosongkan untuk tetap memakainya.
+        password_none: Belum ada kata sandi tersimpan.
+        tools: Periksa email
+        test_help: Mengirim email uji ke Anda (%{email}) dengan pengaturan yang tersimpan. Simpan perubahan dahulu.
+        test: Kirim email uji
+        clear_password: Hapus kata sandi tersimpan
+        confirm_clear: Hapus kata sandi SMTP yang tersimpan?
+  admin_mailer:
+    test_email:
+      subject: Email uji OpenWushu
+      heading: Email berfungsi
+      body: Halo %{name}, email uji ini dikirim dari Admin > Pengaturan. Jika Anda bisa membacanya, OpenWushu dapat mengirim email verifikasi dan kata sandi.
+      why: Anda menerima email ini karena Anda mengirim uji dari panel admin.
+  activerecord:
+    errors:
+      models:
+        routine:
+          attributes:
+            status:
+              no_movements: Tambahkan daftar gerakan sebelum menerbitkan rangkaian ini.
+            video:
+              video_type: Pilih berkas MP4 atau WebM.
+              video_size: Ukuran video maksimal %{max} GB.
+  # Rails ships only English date formats
+  date:
+    formats:
+      default: "%d-%m-%Y"
+      long: "%d %B %Y"
+    month_names: [~, Januari, Februari, Maret, April, Mei, Juni, Juli, Agustus, September, Oktober, November, Desember]
+    abbr_month_names: [~, Jan, Feb, Mar, Apr, Mei, Jun, Jul, Agu, Sep, Okt, Nov, Des]
+    day_names: [Minggu, Senin, Selasa, Rabu, Kamis, Jumat, Sabtu]
+    abbr_day_names: [Min, Sen, Sel, Rab, Kam, Jum, Sab]
+    order: [day, month, year]
+  time:
+    formats:
+      default: "%d-%m-%Y %H:%M"
+      long: "%d %B %Y %H:%M"
+    am: AM
+    pm: PM

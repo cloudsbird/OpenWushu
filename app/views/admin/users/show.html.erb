@@ -1,0 +1,70 @@
+<% content_for :title, "#{@user.display_name_was || @user.display_name} · #{t("admin.tabs.users")}" %>
+<% error = ->(attr) { @user.errors.messages_for(attr).first&.upcase_first } %>
+<% self_or_last = @user == Current.user || @user.last_admin? %>
+<main class="container">
+  <%= render "admin/shared/header", tab: :users %>
+  <p class="breadcrumb"><%= link_to t("admin.users.back"), admin_users_path %></p>
+
+  <div class="admin-grid">
+    <section class="panel admin-panel">
+      <h2 class="heading heading--ruled"><span class="heading__zh"><%= @user.display_name_was || @user.display_name %></span><span class="heading__tr"><%= render "admin/users/status", user: @user %></span></h2>
+      <%= form_with model: @user, url: admin_user_path(@user), class: "form" do |form| %>
+        <div class="form__pair">
+          <div class="field">
+            <%= form.label :display_name, t("registrations.new.display_name") %>
+            <%= form.text_field :display_name, class: "input", required: true, maxlength: 40, "aria-invalid": (error.(:display_name) && true) %>
+            <% if (e = error.(:display_name)) %><span class="field__error"><%= e %></span><% end %>
+          </div>
+          <div class="field">
+            <%= form.label :email_address, t("auth.email") %>
+            <%= form.email_field :email_address, class: "input", required: true, "aria-invalid": (error.(:email_address) && true), "aria-describedby": "email-hint" %>
+            <span id="email-hint" class="field__hint"><%= t("admin.users.email_hint") %></span>
+            <% if (e = error.(:email_address)) %><span class="field__error"><%= e %></span><% end %>
+          </div>
+        </div>
+        <div class="form__pair">
+          <div class="field">
+            <%= form.label :club, t("registrations.new.club") %>
+            <%= form.text_field :club, class: "input", maxlength: 80 %>
+          </div>
+          <div class="field">
+            <%= form.label :locale, t("registrations.new.locale") %>
+            <%= form.select :locale, { "English" => "en", "Bahasa Indonesia" => "id" }, {}, class: "input" %>
+          </div>
+        </div>
+        <div class="field">
+          <%= form.label :role, t("admin.users.columns.role") %>
+          <%= form.select :role, User::ROLES.map { |r| [ t("admin.roles.#{r}"), r ] }, {}, class: "input", disabled: self_or_last, "aria-describedby": "role-hint" %>
+          <span id="role-hint" class="field__hint"><%= self_or_last ? t(@user == Current.user ? "admin.users.not_yourself" : "admin.users.last_admin") : t("admin.users.role_hint") %></span>
+        </div>
+        <%= form.submit t("admin.save"), class: "btn btn--accent" %>
+      <% end %>
+    </section>
+
+    <aside class="panel admin-panel admin-side">
+      <dl class="facts">
+        <dt><%= t("admin.users.columns.joined") %></dt><dd><%= l(@user.created_at, format: :long) %></dd>
+        <dt><%= t("admin.users.verified_at") %></dt><dd><%= @user.verified_at ? l(@user.verified_at, format: :long) : "—" %></dd>
+        <dt><%= t("admin.users.guidelines_at") %></dt><dd><%= l(@user.guidelines_accepted_at, format: :long) %></dd>
+        <dt><%= t("admin.users.sessions") %></dt><dd><%= @user.sessions.count %></dd>
+        <% if @user.suspended? %><dt><%= t("admin.users.status.suspended") %></dt><dd><%= l(@user.suspended_at, format: :long) %></dd><% end %>
+      </dl>
+
+      <div class="admin-actions">
+        <% unless @user.verified? %>
+          <%= button_to t("admin.users.actions.verify"), verify_admin_user_path(@user), class: "btn" %>
+        <% end %>
+        <%= button_to t("admin.users.actions.password_reset"), password_reset_admin_user_path(@user), class: "btn" %>
+        <%= button_to t("admin.users.actions.sign_out"), sign_out_everywhere_admin_user_path(@user), class: "btn", disabled: @user.sessions.none? %>
+        <% if @user.suspended? %>
+          <%= button_to t("admin.users.actions.unsuspend"), unsuspend_admin_user_path(@user), class: "btn" %>
+        <% elsif !self_or_last %>
+          <%= button_to t("admin.users.actions.suspend"), suspend_admin_user_path(@user), class: "btn btn--danger", form: { data: { turbo_confirm: t("admin.users.confirm_suspend", name: @user.display_name) } } %>
+        <% end %>
+        <% unless self_or_last %>
+          <%= button_to t("admin.users.actions.delete"), admin_user_path(@user), method: :delete, class: "btn btn--danger", form: { data: { turbo_confirm: t("admin.users.confirm_delete", name: @user.display_name) } } %>
+        <% end %>
+      </div>
+    </aside>
+  </div>
+</main>

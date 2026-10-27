@@ -1,0 +1,161 @@
+# Admin panel, plus the site-wide settings it controls (notice, closed sign-ups, suspension)
+en:
+  layout:
+    admin: Admin
+    contact: Contact
+  sessions:
+    create:
+      suspended: This account is suspended. Contact the site admins if you think this is a mistake.
+  registrations:
+    closed:
+      title: Sign-ups are closed
+      lead: New accounts can’t be created right now. Reading and watching are still open to everyone.
+  admin:
+    title: Admin
+    save: Save changes
+    tabs:
+      users: Users
+      routines: Routines
+      settings: Settings
+    roles:
+      member: Member
+      maintainer: Maintainer (reserved)
+      admin: Admin
+    users:
+      stats:
+        all: Accounts
+        week: New this week
+        unverified: Unverified
+        suspended: Suspended
+      search: Search
+      search_placeholder: Name, email or club
+      filter: Show
+      filters:
+        all: Everyone
+        admin: Admins
+        maintainer: Maintainers
+        unverified: Unverified
+        suspended: Suspended
+      apply: Apply
+      count:
+        one: 1 account
+        other: "%{count} accounts"
+      none: No accounts match.
+      pages: Pages
+      page: Page %{page} of %{pages}
+      prev: Previous
+      next: Next
+      columns:
+        name: Name
+        email: Email
+        role: Role
+        status: Status
+        joined: Joined
+      status:
+        verified: Verified
+        unverified: Unverified
+        suspended: Suspended
+      back: ← All users
+      email_hint: Changing the email asks the member to verify the new address.
+      role_hint: Admins can open this panel. Maintainer is reserved for reviewing contributions and has no extra access yet.
+      verified_at: Email verified
+      guidelines_at: Accepted guidelines
+      sessions: Signed-in devices
+      actions:
+        verify: Mark email as verified
+        password_reset: Send password reset email
+        sign_out: Sign out of all devices
+        suspend: Suspend account
+        unsuspend: Lift suspension
+        delete: Delete account
+      confirm_suspend: Suspend %{name}? They will be signed out and can’t sign in until you lift it.
+      confirm_delete: Delete %{name}’s account permanently? This can’t be undone.
+      saved: Changes saved.
+      suspended: Account suspended and signed out everywhere.
+      unsuspended: Suspension lifted.
+      verified: Email marked as verified.
+      signed_out: Signed out of all devices.
+      reset_sent: Password reset email sent.
+      deleted: "%{name}’s account was deleted."
+      not_yourself: You can’t suspend, demote or delete your own account.
+      last_admin: This is the only active admin. Make someone else an admin first.
+    routines:
+      lead: Only published routines are shown in the library’s Learn tab. A routine needs its movement list before it can be published.
+      columns:
+        routine: Routine
+        status: Status
+        movements: Movements
+        video: Video
+      statuses:
+        published: Published
+        in_progress: In progress
+        awaiting: Awaiting contributors
+      status_help:
+        published: shown in the library with the Learn and Movements tabs.
+        in_progress: listed as being prepared; its page is not open yet.
+        awaiting: listed as needing contributors.
+      edit: Edit
+      back: ← All routines
+      view: Open in library
+      video: Demonstration video
+      current_video: "Current video: %{name} (%{size}). Choosing a new file replaces it."
+      video_hint: MP4 or WebM, up to %{max} GB. Uploads are kept on the server’s storage volume.
+      remove_video: Remove video
+      confirm_remove_video: Remove the video? The Learn tab will use the practice clock instead.
+      saved: "%{name} saved."
+      video_removed: Video removed.
+    settings:
+      saved: Settings saved.
+      test_sent: Test email sent to %{email}.
+      test_failed: "The test email could not be sent: %{error}"
+      password_cleared: SMTP password removed.
+      signups:
+        title: Sign-ups and notice
+        open: Allow new sign-ups
+        open_help: When off, the Sign up button is hidden and new accounts can’t be created. Existing members can still sign in.
+        verification: Require a verified email to post
+        verification_help: Saved now; it takes effect when discussions and contributions are added.
+        notice_en: Site notice (English)
+        notice_id: Site notice (Indonesian)
+        notice_help: Shown at the top of every page in the visitor’s translation, e.g. planned maintenance. Leave empty to hide it.
+      site:
+        title: Site information
+        name: Site name
+        contact: Contact email (optional)
+        source: Source code link
+        footer_en: Footer text (English)
+        footer_id: Footer text (Indonesian)
+        footer_help: Leave empty to use the standard disclaimer shown as the placeholder. The CC BY-SA 4.0 licence link always stays.
+      email:
+        title: Email (SMTP)
+        lead: Used for verification and password emails. Leave the server empty to use the SMTP settings from Rails credentials, if any.
+        from: Sender
+        from_help: Name and address emails come from. Empty uses MAIL_FROM.
+        address: SMTP server
+        port: Port
+        port_help: 587 (STARTTLS) is most common; 465 uses TLS from the start.
+        username: Username
+        password: Password
+        password_saved: A password is saved (encrypted). Leave empty to keep it.
+        password_none: No password saved.
+        tools: Check email
+        test_help: Sends a test email to you (%{email}) with the saved settings. Save changes first.
+        test: Send test email
+        clear_password: Remove saved password
+        confirm_clear: Remove the saved SMTP password?
+  admin_mailer:
+    test_email:
+      subject: OpenWushu test email
+      heading: Email is working
+      body: Hi %{name}, this test was sent from Admin > Settings. If you can read it, OpenWushu can send verification and password emails.
+      why: You received this because you sent a test from the admin panel.
+  activerecord:
+    errors:
+      models:
+        routine:
+          attributes:
+            status:
+              no_movements: Add the movement list before publishing this routine.
+            video:
+              video_type: Choose an MP4 or WebM file.
+              video_size: The video must be %{max} GB or smaller.

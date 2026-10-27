@@ -1,0 +1,7 @@
+<% if user.suspended? %>
+  <span class="badge badge--red"><%= t("admin.users.status.suspended") %></span>
+<% elsif user.verified? %>
+  <span class="badge"><%= t("admin.users.status.verified") %></span>
+<% else %>
+  <span class="badge badge--amber"><%= t("admin.users.status.unverified") %></span>
+<% end %>

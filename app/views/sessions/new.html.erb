@@ -14,5 +14,7 @@
     <% end %>
     <%= form.submit t("sessions.new.submit"), class: "btn btn--accent btn--block" %>
   <% end %>
-  <p class="muted"><%= t("sessions.new.no_account") %> <%= link_to t("sessions.new.create_account"), new_registration_path %></p>
+  <% if site_settings.signups_open? %>
+    <p class="muted"><%= t("sessions.new.no_account") %> <%= link_to t("sessions.new.create_account"), new_registration_path %></p>
+  <% end %>
 <% end %>

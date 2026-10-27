@@ -1,0 +1,60 @@
+<% content_for :title, "用户 · #{t("admin.tabs.users")}" %>
+<main class="container">
+  <%= render "admin/shared/header", tab: :users %>
+
+  <dl class="stats">
+    <div><dt><%= t("admin.users.stats.all") %></dt><dd><%= @counts[:all] %></dd></div>
+    <div><dt><%= t("admin.users.stats.week") %></dt><dd><%= @counts[:week] %></dd></div>
+    <div><dt><%= t("admin.users.stats.unverified") %></dt><dd><%= @counts[:unverified] %></dd></div>
+    <div><dt><%= t("admin.users.stats.suspended") %></dt><dd><%= @counts[:suspended] %></dd></div>
+  </dl>
+
+  <section class="panel admin-panel">
+    <%= form_with url: admin_users_path, method: :get, class: "admin-filter" do |form| %>
+      <div class="field admin-filter__search">
+        <%= form.label :q, t("admin.users.search") %>
+        <%= form.search_field :q, value: @query, class: "input", placeholder: t("admin.users.search_placeholder") %>
+      </div>
+      <div class="field">
+        <%= form.label :filter, t("admin.users.filter") %>
+        <%= form.select :filter, [ [ t("admin.users.filters.all"), "" ] ] + Admin::UsersController::FILTERS.map { |f| [ t("admin.users.filters.#{f}"), f ] }, { selected: @filter }, class: "input" %>
+      </div>
+      <%= form.submit t("admin.users.apply"), class: "btn btn--accent", name: nil %>
+    <% end %>
+
+    <p class="muted admin-count"><%= t("admin.users.count", count: @total) %></p>
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><%= t("admin.users.columns.name") %></th>
+            <th scope="col"><%= t("admin.users.columns.email") %></th>
+            <th scope="col"><%= t("admin.users.columns.role") %></th>
+            <th scope="col"><%= t("admin.users.columns.status") %></th>
+            <th scope="col"><%= t("admin.users.columns.joined") %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @users.each do |user| %>
+            <tr>
+              <td><%= link_to user.display_name, admin_user_path(user) %><% if user.club %><br><span class="muted"><%= user.club %></span><% end %></td>
+              <td><%= user.email_address %></td>
+              <td><%= t("admin.roles.#{user.role}") %></td>
+              <td><%= render "admin/users/status", user: user %></td>
+              <td class="mono"><%= l(user.created_at.to_date) %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+    <% if @users.empty? %><p class="muted"><%= t("admin.users.none") %></p><% end %>
+
+    <% if @total > Admin::UsersController::PER_PAGE %>
+      <nav class="pager" aria-label="<%= t("admin.users.pages") %>">
+        <% if @page > 1 %><%= link_to t("admin.users.prev"), admin_users_path(q: @query.presence, filter: @filter, page: @page - 1), class: "btn" %><% end %>
+        <span class="muted"><%= t("admin.users.page", page: @page, pages: (@total.to_f / Admin::UsersController::PER_PAGE).ceil) %></span>
+        <% if @page * Admin::UsersController::PER_PAGE < @total %><%= link_to t("admin.users.next"), admin_users_path(q: @query.presence, filter: @filter, page: @page + 1), class: "btn" %><% end %>
+      </nav>
+    <% end %>
+  </section>
+</main>
