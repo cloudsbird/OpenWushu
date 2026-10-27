@@ -42,8 +42,25 @@
               <% end %>
             </div>
           </div>
+          <div class="account">
+            <% if authenticated? %>
+              <span class="account__name"><%= Current.user.display_name %></span>
+              <% unless Current.user.verified? %>
+                <%= link_to t("layout.unverified"), email_verification_path, class: "badge badge--amber" %>
+              <% end %>
+              <%= button_to t("layout.sign_out"), session_path, method: :delete, class: "btn", form_class: "account__form" %>
+            <% else %>
+              <%= link_to t("layout.sign_in"), new_session_path, class: "btn" %>
+              <%= link_to t("layout.sign_up"), new_registration_path, class: "btn btn--accent" %>
+            <% end %>
+          </div>
         </div>
       </header>
+
+      <%# Account pages show messages inside their form instead %>
+      <% if flash.any? && !content_for?(:auth) %>
+        <div class="flash-bar"><%= render "shared/flash" %></div>
+      <% end %>
 
       <%= yield %>
 

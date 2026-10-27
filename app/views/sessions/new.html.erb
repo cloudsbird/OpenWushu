@@ -1,0 +1,18 @@
+<% content_for :title, "登录 · #{t("sessions.new.title")}" %>
+<%= render layout: "shared/auth" do %>
+  <%= render "shared/auth_title", zh: "登录", py: "Dēnglù", title: t("sessions.new.title"), lead: t("sessions.new.lead") %>
+  <%= form_with url: session_path, class: "form" do |form| %>
+    <div class="field">
+      <%= form.label :email_address, t("auth.email"), for: "signin-email" %>
+      <%= form.email_field :email_address, id: "signin-email", class: "input", required: true, autofocus: true, autocomplete: "username", value: params[:email_address] %>
+    </div>
+    <%= render "shared/password_field", form: form, name: :password, id: "signin-password", autocomplete: "current-password" do %>
+      <div class="field__label-row">
+        <%= form.label :password, t("auth.password"), for: "signin-password" %>
+        <%= link_to t("sessions.new.forgot"), new_password_path %>
+      </div>
+    <% end %>
+    <%= form.submit t("sessions.new.submit"), class: "btn btn--accent btn--block" %>
+  <% end %>
+  <p class="muted"><%= t("sessions.new.no_account") %> <%= link_to t("sessions.new.create_account"), new_registration_path %></p>
+<% end %>

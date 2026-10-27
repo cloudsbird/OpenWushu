@@ -1,0 +1,12 @@
+<% content_for :title, "忘记密码 · #{t("passwords.new.title")}" %>
+<%= render layout: "shared/auth" do %>
+  <%= render "shared/auth_title", zh: "忘记密码", py: "Wàngjì mìmǎ", title: t("passwords.new.title"), lead: t("passwords.new.lead") %>
+  <%= form_with url: passwords_path, class: "form" do |form| %>
+    <div class="field">
+      <%= form.label :email_address, t("auth.email"), for: "reset-email" %>
+      <%= form.email_field :email_address, id: "reset-email", class: "input", required: true, autofocus: true, autocomplete: "username", value: params[:email_address] %>
+    </div>
+    <%= form.submit t("passwords.new.submit"), class: "btn btn--accent btn--block" %>
+  <% end %>
+  <p class="muted"><%= link_to t("passwords.new.back"), new_session_path %></p>
+<% end %>

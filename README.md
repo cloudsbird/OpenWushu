@@ -36,12 +36,25 @@ bin/rails test                 # model and integration tests
 bin/rubocop && bin/brakeman    # style and security checks
 ```
 
+Emails in development are written to `tmp/mails/<address>` instead of being sent (open the link from there), and can be previewed at http://localhost:3000/rails/mailers.
+
+In production, set `APP_HOST` (the domain used in email links) and `MAIL_FROM`, and add SMTP settings with `bin/rails credentials:edit`:
+
+```yaml
+smtp:
+  address: smtp.example.com
+  port: 587
+  user_name: ...
+  password: ...
+```
+
 Where things are:
 
 - `app/models`: `Routine` and `Movement`. Chinese names are plain columns. `name_en` and `name_id` are the translations, and `name_tr` picks the one for the current locale.
 - `app/javascript/controllers/routine_player_controller.js`: keeps the video, timeline, carpet path and movement list in sync. Without an uploaded video it runs a practice clock.
 - `app/javascript/lib/figure3d.js`: draws the 图解 figures from 3D poses.
-- `config/locales/{en,id}.yml`: UI strings. Chinese labels stay in the views and are never translated.
+- `config/locales/{en,id}.yml`: UI strings. Chinese labels stay in the views and are never translated. `auth.{en,id}.yml` holds the account pages and emails.
+- Accounts use Rails' built-in authentication plus sign-up and email verification (`RegistrationsController`, `EmailVerificationsController`). Reading never needs an account. Unverified members can sign in but not post (`User#verified?`).
 - `db/seeds/routines.json`: seed content. Movement names and order come from the reference book; descriptions are in our own words and cite its pages.
 
 ## License

@@ -1,0 +1,5 @@
+<% content_for :why, t(".why") %>
+<h1 style="margin: 0 0 16px; font-family: Alegreya, Georgia, serif; font-size: 26px; line-height: 1.25"><%= t(".heading") %></h1>
+<p style="margin: 0 0 16px"><%= t(".body", name: @user.display_name) %></p>
+<%= render "shared/mail_button", url: edit_password_url(@user.password_reset_token), label: t(".cta") %>
+<p style="margin: 0; font-size: 14px; color: #4E5D72"><%= t(".small", minutes: @user.password_reset_token_expires_in.in_minutes.round) %></p>

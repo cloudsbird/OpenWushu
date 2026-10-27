@@ -1,0 +1,105 @@
+# Accounts: sign up, sign in, email verification, password reset and their emails
+en:
+  layout:
+    sign_in: Sign in
+    sign_up: Sign up
+    sign_out: Sign out
+    account: Your account
+    unverified: Email not verified
+  auth:
+    email: Email
+    password: Password
+    show: Show
+    hide: Hide
+    panel:
+      lead: An open, community-maintained reference for compulsory wushu routines.
+      visitor: Visitors read and watch, no account needed.
+      member: Members join discussions and suggest changes.
+      contributor: Contributors edit and upload; maintainers review before anything is published.
+  sessions:
+    rate_limited: Too many attempts. Please wait a few minutes and try again.
+    new:
+      title: Welcome back
+      lead: Sign in to join discussions and contribute.
+      forgot: Forgot password?
+      submit: Sign in
+      no_account: New to OpenWushu?
+      create_account: Create an account
+    create:
+      invalid: That email and password don’t match an account.
+    destroy:
+      signed_out: You are signed out.
+  registrations:
+    new:
+      title: Create your account
+      lead: Free for everyone. Reading and watching never need an account.
+      display_name: Display name
+      password_hint: At least 8 characters.
+      locale: Preferred translation
+      club: Club or school (optional)
+      agree: "I agree to the community guidelines: content is for education, changes cite a source, I will be respectful, and my contributions are published under CC BY-SA 4.0."
+      submit: Create account
+      have_account: Already have an account?
+  email_verifications:
+    show:
+      title: Check your email
+      body_html: We sent a verification link to %{email}. Open it to activate your account. Until then you can read but not post.
+      resend: Resend email
+    create:
+      sent: We sent a new verification link.
+    update:
+      verified: Your email is verified. Welcome to OpenWushu!
+      invalid: That verification link is invalid or has expired. Sign in and request a new one.
+  passwords:
+    invalid_link: That password reset link is invalid or has expired.
+    new:
+      title: Forgot your password?
+      lead: Enter your account’s email and we’ll send you a link to choose a new password.
+      submit: Email me a reset link
+      back: Back to sign in
+    create:
+      sent: If an account uses that email, a reset link is on its way.
+    edit:
+      title: Choose a new password
+      password: New password
+      confirmation: Repeat new password
+      submit: Save password
+    update:
+      updated: Your password has been changed. Sign in with the new one.
+  mailer:
+    legal: OpenWushu · for educational purposes only · Content licensed CC BY-SA 4.0
+  email_verification_mailer:
+    verify:
+      subject: Verify your email for OpenWushu
+      heading: Confirm your email
+      body: Hi %{name}, welcome to OpenWushu. Confirm this is your email to start joining discussions and reporting issues.
+      cta: Verify email
+      small: This link expires in 24 hours. If you did not sign up, you can ignore this email.
+      why: You received this because someone signed up with this address.
+  passwords_mailer:
+    reset:
+      subject: Reset your OpenWushu password
+      heading: Choose a new password
+      body: Hi %{name}, someone asked to reset the password for your OpenWushu account.
+      cta: Choose a new password
+      small: This link expires in %{minutes} minutes. If you did not ask for this, ignore this email; your password stays the same.
+      why: You received this because a password reset was requested for this address.
+  errors:
+    messages:
+      accept_guidelines: Please accept the community guidelines.
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            display_name:
+              blank: Enter a display name.
+            email_address:
+              blank: Enter a valid email address.
+              invalid: Enter a valid email address.
+              taken: An account already uses this email. Try signing in instead.
+            password:
+              blank: Enter a password.
+              too_short: Use at least %{count} characters.
+            password_confirmation:
+              confirmation: The passwords don’t match.

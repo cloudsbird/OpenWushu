@@ -30,5 +30,8 @@ module Openwushu
     # Chinese (with pinyin) is always shown in content; the UI and translations switch between these.
     config.i18n.available_locales = %i[en id]
     config.i18n.default_locale = :en
+
+    # Forms mark invalid fields themselves (aria-invalid + a message), so skip Rails' field_with_errors wrapper
+    config.action_view.field_error_proc = ->(html_tag, _instance) { html_tag }
   end
 end

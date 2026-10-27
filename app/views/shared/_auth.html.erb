@@ -1,0 +1,23 @@
+<%# Two-column frame for the account pages: what accounts are for on the left, the form on the right %>
+<% content_for :auth, "1" %>
+<main class="container container--auth">
+  <div class="panel auth">
+    <section class="auth__panel">
+      <span class="auth__seal" aria-hidden="true">武</span>
+      <div>
+        <h2 class="auth__zh">规定套路</h2>
+        <p class="auth__py">Guīdìng tàolù · OpenWushu</p>
+      </div>
+      <p><%= t("auth.panel.lead") %></p>
+      <ol class="auth__roles">
+        <li><span>1</span><%= t("auth.panel.visitor") %></li>
+        <li><span>2</span><%= t("auth.panel.member") %></li>
+        <li><span>3</span><%= t("auth.panel.contributor") %></li>
+      </ol>
+    </section>
+    <section class="auth__form">
+      <%= render "shared/flash" %>
+      <%= yield %>
+    </section>
+  </div>
+</main>

@@ -43,4 +43,20 @@ class RoutinesControllerTest < ActionDispatch::IntegrationTest
     get routine_path(routines(:changquan))
     assert_response :not_found
   end
+
+  test "header shows the signed-in member and an unverified badge" do
+    sign_in_as users(:unverified)
+    get root_path
+    assert_response :success
+    assert_select ".account__name", "Budi"
+    assert_select ".account a.badge[href=?]", email_verification_path
+    assert_select "form[action=?] button", session_path
+  end
+
+  test "visitors see sign in and sign up" do
+    get routine_path(routines(:taiji))
+    assert_response :success
+    assert_select ".account a[href=?]", new_session_path
+    assert_select ".account a[href=?]", new_registration_path
+  end
 end

@@ -1,4 +1,5 @@
 class RoutinesController < ApplicationController
+  allow_unauthenticated_access
   before_action :set_routine, only: %i[show movements]
 
   def index
