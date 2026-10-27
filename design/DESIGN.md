@@ -52,6 +52,16 @@ Sample content: **二十四式简化太极拳 (24-Form Simplified Taijiquan)**, 
 11. **Profile (个人)** — seal-style avatar, badge, email; **my contributions** with status (in review / changes requested / published) linking to history; **watched threads** with unwatch; **email notifications** (switches for replies, status changes, reviews, new threads on maintained routines, monthly news), frequency (right away / daily digest) and email language; **your data** (download / delete under UU PDP). The prototype adds a "view as" role switcher (member / verified judge / verified school owner / maintainer).
 12. **Email templates** (separate artboard `prototype/Emails.dc.html`, EN/ID): verify email, new reply in a watched thread (quotes the reply in the thread's language), change published (with reviewer note), contributor approved (badge + documents deleted). Each has a reason line, "Manage email settings" and an unsubscribe/stop link.
 
+13. **图解 Illustrations** — in the movement detail, between the name and the steps: line-drawing figures in the classic textbook style (clean figure, dashed curved arrows for the motion path), one per step, captioned 图 12-1, 12-2… Clicking a figure enlarges it, highlights the matching step (一 二 三 四) and jumps the video to that moment. Each figure shows how it was made and who reviewed it; a **Reference** line cites the source book and page. Verified contributors add figures through the **Upload illustrations** task (movement, how it was made, license, one file per step, reference used); the review queue shows figure submissions with their provenance.
+
+## Sources and illustrations
+
+OpenWushu uses **one modern wushu textbook as its main reference** (title, publisher, year and ISBN to be recorded from its 版权页). It is almost certainly still under copyright, so:
+
+- **Allowed:** using it for facts (movement order, directions, the idea behind a key point), writing descriptions in our own words, citing it ("Reference: [title], p. 280, 图 D-95"), and imitating its *style* of line drawings.
+- **Not allowed without the publisher's written permission:** scans, crops or tracings of its figures; its 要点 / 教法提示 text copied word for word or translated as-is; AI redraws of its figures.
+- **Illustrations** are therefore drawn new — ideally generated from OpenWushu's own videos (frame at each step → pose detection → clean line figure → motion arrows), or hand-drawn / traced from contributors' own photos. Every figure records **how it was made** (hand-drawn · traced from own photo/video · generated from own video · AI-assisted from own images · public-domain scan), its **license** (CC BY-SA 4.0 own work · public domain · used with written permission) and the reference used, and is checked in the review queue.
+
 ## Content model (draft)
 
 - **Routine**: style, name {zh, pinyin, en, id}, description, videos, carpet size, official source

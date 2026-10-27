@@ -401,6 +401,29 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 
 <sc-if value="{{hasDetail}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px">
+<h3 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 15px; font-weight: 700; letter-spacing: 0.04em">图解 · {{s.figTitle}}</h3>
+<span style="font-size: 12px; color: {{t.muted}}">{{s.figHint}}</span>
+</div>
+<sc-if value="{{hasFigs}}" hint-placeholder-val="{{ true }}">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 1px solid {{t.ink}}; background: {{t.surface}}">
+<svg viewBox="0 0 120 160" width="100%" role="img" aria-label="{{fv.cap}}" style="display: block; max-height: 260px"><line x1="8" y1="151" x2="112" y2="151" stroke="{{t.line2}}" stroke-width="2"></line><path d="{{fv.arc}}" fill="none" stroke="{{t.accentInk}}" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"></path><circle cx="60" cy="27" r="10" fill="none" stroke="{{t.ink}}" stroke-width="3"></circle><path d="M60 37 L60 88 {{fv.limbs}}" fill="none" stroke="{{t.ink}}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<figcaption style="display: flex; flex-direction: column; gap: 4px; font-size: 14px">
+<span><span style="font-family: 'Noto Serif SC', serif; font-weight: 700">{{fv.cap}}</span> · {{fv.step}}</span>
+<span style="font-size: 12px; color: {{t.muted}}">{{fv.made}} · {{s.figReviewed}} coach_sby · {{s.figPlaceholder}}</span>
+</figcaption>
+</figure>
+<div role="group" aria-label="{{s.figTitle}}" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px">
+<sc-for list="{{figs}}" as="f" hint-placeholder-count="4"><button type="button" class="ow-btn" onClick="{{f.pick}}" aria-pressed="{{f.on}}" aria-label="{{f.cap}}" style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px; border: 2px solid {{f.bd}}; background: {{t.surface}}"><svg viewBox="0 0 120 160" width="100%" aria-hidden="true" style="display: block; max-height: 260px"><line x1="8" y1="151" x2="112" y2="151" stroke="{{t.line2}}" stroke-width="2"></line><path d="{{f.arc}}" fill="none" stroke="{{t.accentInk}}" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"></path><circle cx="60" cy="27" r="10" fill="none" stroke="{{t.ink}}" stroke-width="3"></circle><path d="M60 37 L60 88 {{f.limbs}}" fill="none" stroke="{{t.ink}}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg><span style="font-family: 'Noto Serif SC', serif; font-size: 12px; font-weight: 600">{{f.cap}}</span></button></sc-for>
+</div>
+</sc-if>
+<sc-if value="{{noFigs}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 12px 14px; font-size: 14px; color: {{t.muted}}; border: 1px dashed {{t.line2}}">{{s.figNone}}</p>
+</sc-if>
+<p style="margin: 0; font-size: 12px; color: {{t.muted}}">{{s.figRef}}: {{detail.ref}}</p>
+</div>
+
 <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
 <span style="padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.draft}}</span>
 <span style="font-size: 13px; color: {{t.muted}}">{{s.facing}}: <span style="color: {{t.ink}}; font-weight: 600">{{detail.facing}}</span></span>
@@ -408,7 +431,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <div style="display: flex; flex-direction: column; gap: 6px">
 <h3 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 15px; font-weight: 700; letter-spacing: 0.04em">动作过程 · {{s.steps}}</h3>
 <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
-<sc-for list="{{detail.stepsN}}" as="st" hint-placeholder-count="4"><li style="display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 8px; padding: 8px 0; border-top: 1px solid {{t.line}}"><span aria-hidden="true" style="font-family: 'Noto Serif SC', serif; font-size: 18px; font-weight: 900; line-height: 1.3; color: {{t.accentInk}}">{{st.cn}}</span><span>{{st.text}}</span></li></sc-for>
+<sc-for list="{{detail.stepsN}}" as="st" hint-placeholder-count="4"><li style="display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 8px; padding: 8px 6px; border-top: 1px solid {{t.line}}; background: {{st.bg}}"><span aria-hidden="true" style="font-family: 'Noto Serif SC', serif; font-size: 18px; font-weight: 900; line-height: 1.3; color: {{t.accentInk}}">{{st.cn}}</span><span>{{st.text}}</span></li></sc-for>
 </ol>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
@@ -750,6 +773,15 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <p style="margin: 0; padding: 12px 14px; line-height: 1.75; border: 1px solid {{t.line}}; background: {{t.bg}}"><sc-for list="{{rv.after}}" as="g" hint-placeholder-count="2"><span style="background: {{g.bg}}; text-decoration: {{g.dec}}">{{g.t}}</span></sc-for></p>
 </div>
 </div>
+</sc-if>
+<sc-if value="{{rv.isFigure}}" hint-placeholder-val="{{ false }}">
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 120px)); gap: 8px">
+<sc-for list="{{rv.figs}}" as="f" hint-placeholder-count="4"><div style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px; border: 1px solid {{t.line2}}"><svg viewBox="0 0 120 160" width="100%" aria-hidden="true" style="display: block; max-height: 260px"><line x1="8" y1="151" x2="112" y2="151" stroke="{{t.line2}}" stroke-width="2"></line><path d="{{f.arc}}" fill="none" stroke="{{t.accentInk}}" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"></path><circle cx="60" cy="27" r="10" fill="none" stroke="{{t.ink}}" stroke-width="3"></circle><path d="M60 37 L60 88 {{f.limbs}}" fill="none" stroke="{{t.ink}}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg><span style="font-family: 'Noto Serif SC', serif; font-size: 12px; font-weight: 600">{{f.cap}}</span></div></sc-for>
+</div>
+<dl style="margin: 0; display: grid; grid-template-columns: minmax(0, 160px) minmax(0, 1fr); gap: 6px 16px; font-size: 14px">
+<dt style="color: {{t.muted}}">{{s.fgMade}}</dt><dd style="margin: 0; font-weight: 600">{{rv.madeLabel}}</dd>
+<dt style="color: {{t.muted}}">{{s.fgLic}}</dt><dd style="margin: 0; font-weight: 600">{{rv.licLabel}}</dd>
+</dl>
 </sc-if>
 <sc-if value="{{rv.isVideo}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; aspect-ratio: 16 / 9; max-width: 560px; background: {{t.video}}; color: #DCE6F5">
@@ -1435,6 +1467,32 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 </sc-if>
 
+<sc-if value="{{cShowFigures}}" hint-placeholder-val="{{ false }}">
+<section aria-label="{{s.tFigures}}" style="display: flex; flex-direction: column; gap: 16px; max-width: 900px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<p style="margin: 0; color: {{t.muted}}">{{s.fgLead}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 2 1 240px; display: flex; flex-direction: column; gap: 6px"><label for="ow-fgmove" style="font-size: 13px; font-weight: 600">{{s.fgMove}}</label>
+<select id="ow-fgmove" class="ow-in" value="{{fgMove}}" onChange="{{onFgMove}}" style="min-height: 46px; padding: 0 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><sc-for list="{{fgMoveOpts}}" as="o" hint-placeholder-count="24"><option value="{{o.v}}">{{o.label}}</option></sc-for></select></div>
+<div style="flex: 2 1 240px; display: flex; flex-direction: column; gap: 6px"><label for="ow-fgmade" style="font-size: 13px; font-weight: 600">{{s.fgMade}}</label>
+<select id="ow-fgmade" class="ow-in" style="min-height: 46px; padding: 0 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><sc-for list="{{s.madeOpts}}" as="o" hint-placeholder-count="5"><option>{{o}}</option></sc-for></select></div>
+<div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px"><label for="ow-fglic" style="font-size: 13px; font-weight: 600">{{s.fgLic}}</label>
+<select id="ow-fglic" class="ow-in" style="min-height: 46px; padding: 0 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><sc-for list="{{s.licOpts}}" as="o" hint-placeholder-count="3"><option>{{o}}</option></sc-for></select></div>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+<sc-for list="{{fgSteps}}" as="st" hint-placeholder-count="4">
+<li style="display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: 8px 12px; align-items: center; padding: 10px 0; border-top: 1px solid {{t.line}}">
+<span style="font-family: 'Noto Serif SC', serif; font-weight: 700; color: {{t.accentInk}}">{{st.cap}}</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0"><span style="font-size: 14px">{{st.text}}</span><input class="ow-in" type="file" accept="image/png,image/svg+xml,image/jpeg" aria-label="{{st.aria}}" style="padding: 8px; border: 1px dashed {{t.line2}}; background: {{t.bg}}; color: {{t.ink}}"></span>
+</li>
+</sc-for>
+</ol>
+<div style="display: flex; flex-direction: column; gap: 6px"><label for="ow-fgsrc" style="font-size: 13px; font-weight: 600">{{s.fgSource}}</label>
+<input id="ow-fgsrc" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"></div>
+<p role="note" style="margin: 0; padding: 12px 14px; font-size: 14px; border: 1px solid {{t.amber}}; background: {{t.amberSoft}}; color: {{t.ink}}">{{s.fgWarn}}</p>
+<button type="button" class="ow-btn" onClick="{{cSubmit}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.fgSubmit}}</button>
+</section>
+</sc-if>
+
 <sc-if value="{{cShowVideo}}" hint-placeholder-val="{{ false }}">
 <section aria-label="{{s.tVideo}}" style="display: flex; flex-direction: column; gap: 16px; max-width: 760px; padding: 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
@@ -1545,6 +1603,7 @@ var PTS = [[3.2,5.2],[5.8,5.0],[6.3,5.0],[8.9,5.0],[9.1,5.0],[6.9,5.0],[7.8,4.4]
 
 var DETAILS = {
   0: {
+    ref: '[Main reference textbook], p. [—]',
     facing: { en: 'South', id: 'Selatan' },
     steps: {
       en: ['Stand naturally, feet together, arms relaxed at the sides.', 'Left foot steps out to shoulder width, toes forward.', 'Raise both arms slowly forward to shoulder height, palms down.', 'Bend the knees and press both palms down to hip level.'],
@@ -1560,6 +1619,7 @@ var DETAILS = {
     }
   },
   11: {
+    figs: [0, 1, 2, 3], ref: '[Main reference textbook], p. [—], 图 [—]',
     facing: { en: 'East', id: 'Timur' },
     steps: {
       en: ['Right foot follows forward a half step; shift the weight back onto the right leg.', 'Open both palms to face up, elbows slightly bent; turn the body slightly right.', 'Turn the body to face east; lift the left heel into 左虚步 zuǒ xūbù (left empty stance).', 'Right palm passes beside the right ear and pushes forward at eye height; left palm draws back to the left waist, palm up.'],
@@ -1612,6 +1672,14 @@ var S = {
     library: 'Library', discussions: 'Discussions', contribute: 'Contribute', translation: 'translation',
     dLead: 'Pick a routine to read its threads, ask a question or report a mistake. Each thread is linked to a movement so contributors know exactly what to check.', latest: 'Latest', dPending: 'Discussion opens once the movement list is added.',
     cTitle: 'Contribute', cLead: 'Help build an accurate, open reference. Every edit is saved as a revision and reviewed by a moderator before it is published. To report a mistake instead, open a thread in Discussions.',
+    figTitle: 'Illustrations', figHint: 'Click a figure to enlarge it and jump the video there', figReviewed: 'reviewed by', figPlaceholder: 'placeholder drawing', figRef: 'Reference',
+    figNone: 'No illustrations yet. Verified contributors can add them under Contribute.',
+    tFigures: 'Upload illustrations', fgLead: 'Add one figure per step in the line-drawing style: a clean figure with curved arrows for the motion path. Captions are numbered automatically (图 12-1, 12-2…).',
+    fgMove: 'Movement', fgMade: 'How it was made', fgLic: 'License', fgStep: 'Step', fgUpload: 'Figure for', fgSource: 'Reference used (book title, page, figure)',
+    fgWarn: 'Do not upload scans, crops or tracings of copyrighted books, or AI copies of them. Use books as a reference for facts and draw from your own photos or video.',
+    fgSubmit: 'Submit illustrations for review', rvKindFigure: 'Illustrations',
+    madeOpts: ['Hand-drawn by me', 'Traced from my own photo or video', 'Generated from my own video (pose detection)', 'AI-assisted from my own images', 'Public-domain book scan'],
+    licOpts: ['CC BY-SA 4.0 (my own work)', 'Public domain', 'Used with written permission'],
     sourceCode: 'Source code on GitHub', devTitle: 'Are you a developer?', devBody: 'OpenWushu is open source (AGPL-3.0). Report bugs, suggest features or send a pull request on GitHub.', devCta: 'View on GitHub',
     review: 'Review', profile: 'Profile', history: 'History', revisions: 'revisions', before: 'Before', after: 'After', newContent: '(new)', fieldLang: 'Language', source: 'Source',
     rvTitle: 'Review queue', rvLead: 'Approve, request changes or reject submitted content and contributor applications. Every decision emails the contributor.',
@@ -1714,6 +1782,14 @@ var S = {
     library: 'Pustaka', discussions: 'Diskusi', contribute: 'Kontribusi', translation: 'terjemahan',
     dLead: 'Pilih rangkaian untuk membaca diskusinya, bertanya, atau melaporkan kesalahan. Setiap diskusi terhubung ke gerakan agar kontributor tahu persis apa yang perlu diperiksa.', latest: 'Terbaru', dPending: 'Diskusi dibuka setelah daftar gerakan ditambahkan.',
     cTitle: 'Kontribusi', cLead: 'Bantu membangun referensi terbuka yang akurat. Setiap suntingan disimpan sebagai revisi dan ditinjau moderator sebelum diterbitkan. Untuk melaporkan kesalahan, buka diskusi di halaman Diskusi.',
+    figTitle: 'Ilustrasi', figHint: 'Klik gambar untuk memperbesar dan melompatkan video ke sana', figReviewed: 'ditinjau oleh', figPlaceholder: 'gambar sementara', figRef: 'Referensi',
+    figNone: 'Belum ada ilustrasi. Kontributor terverifikasi dapat menambahkannya di halaman Kontribusi.',
+    tFigures: 'Unggah ilustrasi', fgLead: 'Tambahkan satu gambar per langkah dengan gaya gambar garis: figur bersih dengan panah melengkung untuk jalur gerakan. Keterangan diberi nomor otomatis (图 12-1, 12-2…).',
+    fgMove: 'Gerakan', fgMade: 'Cara pembuatan', fgLic: 'Lisensi', fgStep: 'Langkah', fgUpload: 'Gambar untuk', fgSource: 'Referensi yang dipakai (judul buku, halaman, gambar)',
+    fgWarn: 'Jangan mengunggah pindaian, potongan, atau jiplakan dari buku berhak cipta, atau salinan AI darinya. Gunakan buku sebagai referensi fakta dan gambar dari foto atau video Anda sendiri.',
+    fgSubmit: 'Kirim ilustrasi untuk ditinjau', rvKindFigure: 'Ilustrasi',
+    madeOpts: ['Digambar tangan oleh saya', 'Dijiplak dari foto atau video saya sendiri', 'Dibuat dari video saya sendiri (deteksi pose)', 'Dibantu AI dari gambar saya sendiri', 'Pindaian buku domain publik'],
+    licOpts: ['CC BY-SA 4.0 (karya saya sendiri)', 'Domain publik', 'Dipakai dengan izin tertulis'],
     sourceCode: 'Kode sumber di GitHub', devTitle: 'Anda seorang pengembang?', devBody: 'OpenWushu bersifat sumber terbuka (AGPL-3.0). Laporkan bug, usulkan fitur, atau kirim pull request di GitHub.', devCta: 'Lihat di GitHub',
     review: 'Tinjauan', profile: 'Profil', history: 'Riwayat', revisions: 'revisi', before: 'Sebelum', after: 'Sesudah', newContent: '(baru)', fieldLang: 'Bahasa', source: 'Sumber',
     rvTitle: 'Antrean tinjauan', rvLead: 'Setujui, minta perubahan, atau tolak konten dan pengajuan kontributor yang masuk. Setiap keputusan dikirim ke kontributor lewat email.',
@@ -1833,6 +1909,13 @@ var FULL = [STARTPT].concat(PTS);
 
 // ---- Review queue, revision history, profile: sample data (usernames are fictional) ----
 // Diff segments: [text, kind] where kind -1 = removed, 1 = added, 0 = unchanged
+// Placeholder line figures for the 图解 strip (illustrative poses, not measured): limbs and dashed motion arc
+var FIG_POSES = [
+  { limbs: 'M60 50 L40 70 L44 90 M60 50 L80 68 L88 86 M60 88 L46 120 L38 150 M60 88 L74 120 L84 150', arc: 'M96 140 Q104 120 86 112' },
+  { limbs: 'M60 50 L34 60 L22 56 M60 50 L86 60 L98 56 M60 88 L46 120 L38 150 M60 88 L74 120 L84 150', arc: 'M20 44 Q60 4 100 44' },
+  { limbs: 'M60 50 L44 66 L50 82 M60 50 L80 42 L90 30 M60 88 L52 120 L42 148 M60 88 L72 120 L76 150', arc: 'M30 150 Q20 132 38 124' },
+  { limbs: 'M60 50 L82 38 L100 30 M60 50 L46 72 L56 86 M60 88 L50 120 L38 150 M60 88 L72 120 L78 150', arc: 'M64 14 Q92 6 104 24' }
+];
 var CHANGES = [
   { id: 'c1', kind: 'text', move: 11, field: 'steps', flang: 'en', by: 'dewi_taiji', role: 'judge', thread: 0,
     when: W('3 hours ago', '3 jam lalu'), title: W('Clarify the hand height in step 4', 'Perjelas tinggi tangan di langkah 4'),
@@ -1850,7 +1933,10 @@ var CHANGES = [
   { id: 'c4', kind: 'text', move: 11, field: 'trad', flang: 'en', by: 'sifu_lim', role: 'school', thread: 0,
     when: W('1 day ago', '1 hari lalu'), title: W('Traditional note for High Pat on Horse', 'Catatan tradisional untuk Gao Tan Ma'),
     source: '[Lineage teaching, school notes]',
-    before: [], after: [['In our lineage the hand finishes a little higher, around the eyebrows. For competition, follow eye level.', 1]] }
+    before: [], after: [['In our lineage the hand finishes a little higher, around the eyebrows. For competition, follow eye level.', 1]] },
+  { id: 'c5', kind: 'figure', move: 11, field: 'figs', flang: 'en', by: 'hendra_wushu', role: 'judge', thread: null, made: 2, lic: 0,
+    when: W('5 hours ago', '5 jam lalu'), title: W('Illustrations for High Pat on Horse (4 figures)', 'Ilustrasi untuk Gao Tan Ma (4 gambar)'),
+    source: 'Own demonstration video, frames 2:41–2:50; facts checked against [Main reference textbook]' }
 ];
 var APPS = [
   { id: 'a1', path: 'a', by: 'rina_coach', name: 'Rina S.', when: W('1 day ago', '1 hari lalu'),
@@ -1891,7 +1977,7 @@ class Component extends DCLogic {
       rvTab: 'content', rvSel: 0, apSel2: 0, rvDec: {}, rvNote: '', rvErr: null, rvChecks: {},
       hiMove: 11, hiSel: 0, hiConfirm: false, hiRestored: false,
       edTimes: START.slice(), edPts: PTS.map(function (q) { return q.slice(); }), edSet: {}, edSel: 11, edFacing: {}, edWarn: null, edRaw: {},
-      prefs: { replies: true, status: true, reviewed: true, newThreads: true, news: false }, prFreq: 'instant', prEmailLang: null, prMsg: null };
+      prefs: { replies: true, status: true, reviewed: true, newThreads: true, news: false }, prFreq: 'instant', prEmailLang: null, prMsg: null, figSel: null, fgMove: '11' };
   }
   componentDidMount() {
     var self = this;
@@ -1989,8 +2075,15 @@ class Component extends DCLogic {
     var sp = px(STARTPT);
 
     var d = DETAILS[ai];
-    var detail = d ? { facing: d.facing[s.lang], steps: d.steps[s.lang], stepsN: d.steps[s.lang].map(function (x, i) { return { cn: cn(i + 1), text: x }; }), keys: d.keys[s.lang], mistakes: d.mistakes[s.lang] } : { facing: '', steps: [], stepsN: [], keys: [], mistakes: [] };
+    var detail = d ? { ref: d.ref || '—', facing: d.facing[s.lang], steps: d.steps[s.lang], stepsN: d.steps[s.lang].map(function (x, i) { return { cn: cn(i + 1), text: x, bg: s.figSel && s.figSel.move === ai && s.figSel.k === i ? t.accentSoft : 'transparent' }; }), keys: d.keys[s.lang], mistakes: d.mistakes[s.lang] } : { ref: '—', facing: '', steps: [], stepsN: [], keys: [], mistakes: [] };
 
+    var figK = s.figSel && s.figSel.move === ai ? s.figSel.k : 0;
+    var figList = d && d.figs ? d.figs.map(function (pi, k) {
+      var on = s.figSel && s.figSel.move === ai && s.figSel.k === k;
+      return { cap: '图 ' + (ai + 1) + '-' + (k + 1), limbs: FIG_POSES[pi].limbs, arc: FIG_POSES[pi].arc, on: !!on, bd: on ? t.accent : t.line2,
+        pick: function () { var n = d.figs.length; self.setState({ figSel: { move: ai, k: k }, t: START[ai] + MOVES[ai][4] * k / n + 0.05 }); } };
+    }) : [];
+    var figView = figList.length ? { cap: figList[figK].cap, limbs: figList[figK].limbs, arc: figList[figK].arc, step: detail.steps[figK] || '', made: L.madeOpts[2] } : {};
     var typeLabel = { error: L.typeError, suggest: L.typeSuggest, question: L.typeQuestion, rule: L.typeRule };
     var typeCol = { error: [t.redSoft, t.red], suggest: [t.blueSoft, t.blue], question: [t.chip, t.muted], rule: [t.amberSoft, t.amber] };
     var stCol = { open: [t.accent, t.onAccent, L.stOpen], review: [t.blue, '#FFFFFF', L.stReview], accepted: [t.green, '#FFFFFF', L.stAccepted] };
@@ -2041,7 +2134,7 @@ class Component extends DCLogic {
     var stMeta = { pending: [t.amberSoft, t.amber, L.rvWaiting], approved: [t.green, '#FFFFFF', L.rvPublished], changes: [t.blue, '#FFFFFF', L.rvChangesReq],
       rejected: [t.red, '#FFFFFF', L.rvRejected], call: [t.blue, '#FFFFFF', L.rvCall], review: [t.amberSoft, t.amber, L.prInReview] };
     var segs = function (arr) { return arr.map(function (x) { return { t: x[0], bg: x[1] < 0 ? t.redSoft : (x[1] > 0 ? t.accentSoft : 'transparent'), dec: x[1] < 0 ? 'line-through' : (x[1] > 0 ? 'underline' : 'none') }; }); };
-    var fieldLabel = function (k) { return k === 'trad' ? L.tradNotes : L.fields[fieldIdx[k]]; };
+    var fieldLabel = function (k) { return k === 'trad' ? L.tradNotes : (k === 'figs' ? L.figTitle : L.fields[fieldIdx[k]]); };
     var roleB = { member: L.member, judge: L.badgeJudge, school: L.badgeSchool, maintainer: L.maintainerBadge, admin: 'Admin' };
     var mvLabel = function (i) { return pad(i + 1) + ' ' + MOVES[i][0] + ' ' + MOVES[i][1]; };
     var decOf = function (id) { return s.rvDec[id] || 'pending'; };
@@ -2052,14 +2145,16 @@ class Component extends DCLogic {
     var undo = function (id) { var x = Object.assign({}, s.rvDec); delete x[id]; self.setState({ rvDec: x }); };
     var rvItems = CHANGES.map(function (c, i) {
       var d = decOf(c.id), on = i === s.rvSel;
-      return { title: c.title[s.lang], target: mvLabel(c.move), by: c.by, when: c.when[s.lang], kindLabel: c.kind === 'video' ? L.rvKindVideo : L.rvKindText,
+      return { title: c.title[s.lang], target: mvLabel(c.move), by: c.by, when: c.when[s.lang], kindLabel: c.kind === 'video' ? L.rvKindVideo : (c.kind === 'figure' ? L.rvKindFigure : L.rvKindText),
         stLabel: stMeta[d][2], stBg: stMeta[d][0], stFg: stMeta[d][1], on: on, bg: on ? t.accentSoft : 'transparent',
         pick: function () { self.setState({ rvSel: i, rvNote: '', rvErr: null }); } };
     });
     var cs = CHANGES[s.rvSel], cd = decOf(cs.id);
     var rv = { title: cs.title[s.lang], target: mvLabel(cs.move), field: fieldLabel(cs.field), flang: LANGS[cs.flang], by: cs.by, initial: cs.by.charAt(0).toUpperCase(),
       badge: roleB[cs.role], when: cs.when[s.lang], kindLabel: rvItems[s.rvSel].kindLabel, stLabel: stMeta[cd][2], stBg: stMeta[cd][0], stFg: stMeta[cd][1],
-      isText: cs.kind === 'text', isVideo: cs.kind === 'video', before: segs(cs.before || []), after: segs(cs.after || []), beforeEmpty: !(cs.before && cs.before.length),
+      isText: cs.kind === 'text', isVideo: cs.kind === 'video', isFigure: cs.kind === 'figure',
+      figs: cs.kind === 'figure' ? FIG_POSES.map(function (f, k) { return { limbs: f.limbs, arc: f.arc, cap: '图 ' + (cs.move + 1) + '-' + (k + 1) }; }) : [],
+      madeLabel: cs.made != null ? L.madeOpts[cs.made] : '', licLabel: cs.lic != null ? L.licOpts[cs.lic] : '', before: segs(cs.before || []), after: segs(cs.after || []), beforeEmpty: !(cs.before && cs.before.length),
       videoInfo: cs.videoInfo ? cs.videoInfo[s.lang] : '', source: cs.source, hasThread: cs.thread != null, threadTitle: cs.thread != null ? THREADS[cs.thread].title : '',
       openThread: function () { self.setState({ screen: 'routine', tab: 'discuss', openThread: cs.thread }); },
       pending: cd === 'pending', decided: cd !== 'pending', resultText: { approved: L.rvApprovedTxt, changes: L.rvChangesTxt, rejected: L.rvRejectedTxt }[cd] || '',
@@ -2173,6 +2268,12 @@ class Component extends DCLogic {
       hiAskRestore: function () { self.setState({ hiConfirm: true }); }, hiCancelRestore: function () { self.setState({ hiConfirm: false }); },
       hiConfirmRestore: function () { self.setState({ hiConfirm: false, hiRestored: true }); },
       cShowTiming: !s.cSubmitted && s.cTask === 'timing' && isVer,
+      cShowFigures: !s.cSubmitted && s.cTask === 'figures' && isVer,
+      fgMove: s.fgMove, onFgMove: function (e) { self.setState({ fgMove: e.target.value }); },
+      fgMoveOpts: MOVES.map(function (m, i) { return { v: String(i), label: mvLabel(i) + ' · ' + tr(m) }; }),
+      fgSteps: (function () { var mi = +s.fgMove, dd = DETAILS[mi], st = dd ? dd.steps[s.lang] : [1, 2, 3, 4].map(function (k) { return L.fgStep + ' ' + k; });
+        return st.map(function (x, k) { var cap = '图 ' + (mi + 1) + '-' + (k + 1); return { cap: cap, text: x, aria: L.fgUpload + ' ' + cap }; }); })(),
+      hasFigs: figList.length > 0, noFigs: figList.length === 0, figs: figList, fv: figView,
       edTime: fmtP(s.t), edVideoCn: cn(edIdx + 1), edVideoZh: MOVES[edIdx][0], edVideoPy: MOVES[edIdx][1],
       edSegs: MOVES.map(function (m, i) { var end = i < 23 ? eT[i + 1] : TOTAL, on = i === es; return { n: i + 1, dur: Math.max(0.5, end - eT[i]), aria: mvLabel(i),
         bg: on ? t.accent : (i === edIdx ? t.accentMid : t.chip), fg: on ? t.onAccent : t.muted, pick: function () { self.setState({ edSel: i, t: eT[i], edWarn: null, edRaw: {} }); } }; }),
@@ -2259,7 +2360,7 @@ class Component extends DCLogic {
       descDone: Object.keys(DETAILS).length, descPct: (Object.keys(DETAILS).length / 24 * 100) + '%',
       pick24: function () { self.setState({ cRoutine: '24', cSubmitted: false }); },
       changeRoutine: function () { self.setState({ cRoutine: null, cSubmitted: false }); },
-      cTabs: [['describe', L.tDescribe], ['timing', L.tTiming], ['video', L.tVideo], ['translate', L.tTranslate]].map(function (x) { var on = s.cTask === x[0]; return { label: x[1], on: on, bg: seg(on)[0], fg: seg(on)[1], pick: function () { self.openContribute(x[0]); } }; }),
+      cTabs: [['describe', L.tDescribe], ['timing', L.tTiming], ['figures', L.tFigures], ['video', L.tVideo], ['translate', L.tTranslate]].map(function (x) { var on = s.cTask === x[0]; return { label: x[1], on: on, bg: seg(on)[0], fg: seg(on)[1], pick: function () { self.openContribute(x[0]); } }; }),
       cSubmitted: s.cSubmitted,
       cShowDescribe: !s.cSubmitted && s.cTask === 'describe' && isVer, cShowVideo: !s.cSubmitted && s.cTask === 'video' && isVer,
       cLocked: !s.cSubmitted && s.cTask !== 'translate' && !isVer, cShowTranslate: !s.cSubmitted && s.cTask === 'translate',
