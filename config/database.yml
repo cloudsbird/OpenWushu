@@ -17,23 +17,30 @@ test:
   database: openwushu_test
 
 # Production runs four databases on one server: the app's own, plus Solid Cache, Solid Queue and
-# Solid Cable. bin/rails db:prepare creates them. With Kamal, the server is the "db" accessory.
+# Solid Cable. bin/rails db:prepare creates them, so the user needs permission to create databases.
+# Either set DATABASE_URL (Dokploy and most hosts): the other three get "_cache", "_queue" and "_cable"
+# added to its database name. Or set DB_HOST and POSTGRES_PASSWORD (Kamal's "db" accessory).
+<% database_url = ->(suffix) { url = ENV["DATABASE_URL"].to_s; URI.parse(url).tap { |u| u.path += suffix }.to_s unless url.empty? } %>
 production:
   primary: &primary_production
     <<: *default
+    url: <%= database_url.("") %>
     host: <%= ENV["DB_HOST"] %>
     database: openwushu_production
     username: openwushu
     password: <%= ENV["POSTGRES_PASSWORD"] %>
   cache:
     <<: *primary_production
+    url: <%= database_url.("_cache") %>
     database: openwushu_production_cache
     migrations_paths: db/cache_migrate
   queue:
     <<: *primary_production
+    url: <%= database_url.("_queue") %>
     database: openwushu_production_queue
     migrations_paths: db/queue_migrate
   cable:
     <<: *primary_production
+    url: <%= database_url.("_cable") %>
     database: openwushu_production_cable
     migrations_paths: db/cable_migrate
