@@ -413,14 +413,15 @@ html{scrollbar-gutter:stable}
 </div>
 <sc-if value="{{hasFigs}}" hint-placeholder-val="{{ true }}">
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 1px solid {{t.ink}}; background: {{t.surface}}">
-<svg viewBox="0 0 120 160" width="100%" role="img" aria-label="{{fv.cap}}" style="display: block; max-height: 260px"><line x1="8" y1="151" x2="112" y2="151" stroke="{{t.line2}}" stroke-width="2"></line><path d="{{fv.arc}}" fill="none" stroke="{{t.accentInk}}" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"></path><circle cx="60" cy="27" r="10" fill="none" stroke="{{t.ink}}" stroke-width="3"></circle><path d="M60 37 L60 88 {{fv.limbs}}" fill="none" stroke="{{t.ink}}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<svg viewBox="0 0 120 180" width="100%" role="img" aria-label="{{fv.cap}}" style="display: block; max-height: 280px"><ellipse cx="60" cy="{{fv.gy}}" rx="30" ry="4" fill="{{t.chip}}"></ellipse><path d="{{fv.p0}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o0}}" stroke-linecap="round"></path><path d="{{fv.p0}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i0}}" stroke-linecap="round"></path><path d="{{fv.p1}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o1}}" stroke-linecap="round"></path><path d="{{fv.p1}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i1}}" stroke-linecap="round"></path><path d="{{fv.p2}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o2}}" stroke-linecap="round"></path><path d="{{fv.p2}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i2}}" stroke-linecap="round"></path><path d="{{fv.p3}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o3}}" stroke-linecap="round"></path><path d="{{fv.p3}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i3}}" stroke-linecap="round"></path><path d="{{fv.p4}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o4}}" stroke-linecap="round"></path><path d="{{fv.p4}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i4}}" stroke-linecap="round"></path><path d="{{fv.p5}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o5}}" stroke-linecap="round"></path><path d="{{fv.p5}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i5}}" stroke-linecap="round"></path><path d="{{fv.p6}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o6}}" stroke-linecap="round"></path><path d="{{fv.p6}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i6}}" stroke-linecap="round"></path><path d="{{fv.p7}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o7}}" stroke-linecap="round"></path><path d="{{fv.p7}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i7}}" stroke-linecap="round"></path><path d="{{fv.p8}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o8}}" stroke-linecap="round"></path><path d="{{fv.p8}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i8}}" stroke-linecap="round"></path><path d="{{fv.p9}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o9}}" stroke-linecap="round"></path><path d="{{fv.p9}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i9}}" stroke-linecap="round"></path><path d="{{fv.p10}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o10}}" stroke-linecap="round"></path><path d="{{fv.p10}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i10}}" stroke-linecap="round"></path><path d="{{fv.p11}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o11}}" stroke-linecap="round"></path><path d="{{fv.p11}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i11}}" stroke-linecap="round"></path><path d="{{fv.p12}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o12}}" stroke-linecap="round"></path><path d="{{fv.p12}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i12}}" stroke-linecap="round"></path><path d="{{fv.p13}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o13}}" stroke-linecap="round"></path><path d="{{fv.p13}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i13}}" stroke-linecap="round"></path><path d="{{fv.p14}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o14}}" stroke-linecap="round"></path><path d="{{fv.p14}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i14}}" stroke-linecap="round"></path><path d="{{fv.p15}}" fill="none" stroke="{{t.ink}}" stroke-width="{{fv.o15}}" stroke-linecap="round"></path><path d="{{fv.p15}}" fill="none" stroke="{{t.surface}}" stroke-width="{{fv.i15}}" stroke-linecap="round"></path><circle cx="{{fv.hx}}" cy="{{fv.hy}}" r="{{fv.hr}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.6"></circle><path d="{{fv.arc}}" fill="none" stroke="{{t.accentInk}}" stroke-width="1.4" stroke-dasharray="4 3" stroke-linecap="round"></path><path d="{{fv.tip}}" fill="{{t.accentInk}}"></path></svg>
 <figcaption style="display: flex; flex-direction: column; gap: 4px; font-size: 14px">
 <span><span style="font-family: 'Noto Serif SC', serif; font-weight: 700">{{fv.cap}}</span> · {{fv.step}}</span>
-<span style="font-size: 12px; color: {{t.muted}}">{{fv.made}} · {{s.figReviewed}} coach_sby · {{s.figPlaceholder}}</span>
+<span style="font-size: 12px; color: {{t.muted}}">{{fv.made}} · {{s.figCamera}}: {{fv.angleLabel}} · {{s.figReviewed}} coach_sby · {{s.figPlaceholder}}</span>
 </figcaption>
 </figure>
+<div role="group" aria-label="{{s.figCamera}}" style="display: flex; align-self: flex-start; padding: 3px; background: {{t.chip}}"><sc-for list="{{figAngles}}" as="a" hint-placeholder-count="3"><button type="button" class="ow-btn" onClick="{{a.pick}}" aria-pressed="{{a.on}}" style="min-height: 38px; padding: 0 12px; font-size: 13px; font-weight: 600; background: {{a.bg}}; color: {{a.fg}}">{{a.label}}</button></sc-for></div>
 <div role="group" aria-label="{{s.figTitle}}" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px">
-<sc-for list="{{figs}}" as="f" hint-placeholder-count="4"><button type="button" class="ow-btn" onClick="{{f.pick}}" aria-pressed="{{f.on}}" aria-label="{{f.cap}}" style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px; border: 2px solid {{f.bd}}; background: {{t.surface}}"><svg viewBox="0 0 120 160" width="100%" aria-hidden="true" style="display: block; max-height: 260px"><line x1="8" y1="151" x2="112" y2="151" stroke="{{t.line2}}" stroke-width="2"></line><path d="{{f.arc}}" fill="none" stroke="{{t.accentInk}}" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"></path><circle cx="60" cy="27" r="10" fill="none" stroke="{{t.ink}}" stroke-width="3"></circle><path d="M60 37 L60 88 {{f.limbs}}" fill="none" stroke="{{t.ink}}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg><span style="font-family: 'Noto Serif SC', serif; font-size: 12px; font-weight: 600">{{f.cap}}</span></button></sc-for>
+<sc-for list="{{figs}}" as="f" hint-placeholder-count="4"><button type="button" class="ow-btn" onClick="{{f.pick}}" aria-pressed="{{f.on}}" aria-label="{{f.cap}}" style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px; border: 2px solid {{f.bd}}; background: {{t.surface}}"><svg viewBox="0 0 120 180" width="100%" aria-hidden="true" style="display: block; max-height: 280px"><ellipse cx="60" cy="{{f.gy}}" rx="30" ry="4" fill="{{t.chip}}"></ellipse><path d="{{f.p0}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o0}}" stroke-linecap="round"></path><path d="{{f.p0}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i0}}" stroke-linecap="round"></path><path d="{{f.p1}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o1}}" stroke-linecap="round"></path><path d="{{f.p1}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i1}}" stroke-linecap="round"></path><path d="{{f.p2}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o2}}" stroke-linecap="round"></path><path d="{{f.p2}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i2}}" stroke-linecap="round"></path><path d="{{f.p3}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o3}}" stroke-linecap="round"></path><path d="{{f.p3}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i3}}" stroke-linecap="round"></path><path d="{{f.p4}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o4}}" stroke-linecap="round"></path><path d="{{f.p4}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i4}}" stroke-linecap="round"></path><path d="{{f.p5}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o5}}" stroke-linecap="round"></path><path d="{{f.p5}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i5}}" stroke-linecap="round"></path><path d="{{f.p6}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o6}}" stroke-linecap="round"></path><path d="{{f.p6}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i6}}" stroke-linecap="round"></path><path d="{{f.p7}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o7}}" stroke-linecap="round"></path><path d="{{f.p7}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i7}}" stroke-linecap="round"></path><path d="{{f.p8}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o8}}" stroke-linecap="round"></path><path d="{{f.p8}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i8}}" stroke-linecap="round"></path><path d="{{f.p9}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o9}}" stroke-linecap="round"></path><path d="{{f.p9}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i9}}" stroke-linecap="round"></path><path d="{{f.p10}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o10}}" stroke-linecap="round"></path><path d="{{f.p10}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i10}}" stroke-linecap="round"></path><path d="{{f.p11}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o11}}" stroke-linecap="round"></path><path d="{{f.p11}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i11}}" stroke-linecap="round"></path><path d="{{f.p12}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o12}}" stroke-linecap="round"></path><path d="{{f.p12}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i12}}" stroke-linecap="round"></path><path d="{{f.p13}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o13}}" stroke-linecap="round"></path><path d="{{f.p13}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i13}}" stroke-linecap="round"></path><path d="{{f.p14}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o14}}" stroke-linecap="round"></path><path d="{{f.p14}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i14}}" stroke-linecap="round"></path><path d="{{f.p15}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o15}}" stroke-linecap="round"></path><path d="{{f.p15}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i15}}" stroke-linecap="round"></path><circle cx="{{f.hx}}" cy="{{f.hy}}" r="{{f.hr}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.6"></circle><path d="{{f.arc}}" fill="none" stroke="{{t.accentInk}}" stroke-width="1.4" stroke-dasharray="4 3" stroke-linecap="round"></path><path d="{{f.tip}}" fill="{{t.accentInk}}"></path></svg><span style="font-family: 'Noto Serif SC', serif; font-size: 12px; font-weight: 600">{{f.cap}}</span></button></sc-for>
 </div>
 </sc-if>
 <sc-if value="{{noFigs}}" hint-placeholder-val="{{ false }}">
@@ -789,7 +790,7 @@ html{scrollbar-gutter:stable}
 </sc-if>
 <sc-if value="{{rv.isFigure}}" hint-placeholder-val="{{ false }}">
 <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 120px)); gap: 8px">
-<sc-for list="{{rv.figs}}" as="f" hint-placeholder-count="4"><div style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px; border: 1px solid {{t.line2}}"><svg viewBox="0 0 120 160" width="100%" aria-hidden="true" style="display: block; max-height: 260px"><line x1="8" y1="151" x2="112" y2="151" stroke="{{t.line2}}" stroke-width="2"></line><path d="{{f.arc}}" fill="none" stroke="{{t.accentInk}}" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"></path><circle cx="60" cy="27" r="10" fill="none" stroke="{{t.ink}}" stroke-width="3"></circle><path d="M60 37 L60 88 {{f.limbs}}" fill="none" stroke="{{t.ink}}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg><span style="font-family: 'Noto Serif SC', serif; font-size: 12px; font-weight: 600">{{f.cap}}</span></div></sc-for>
+<sc-for list="{{rv.figs}}" as="f" hint-placeholder-count="4"><div style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px; border: 1px solid {{t.line2}}"><svg viewBox="0 0 120 180" width="100%" aria-hidden="true" style="display: block; max-height: 280px"><ellipse cx="60" cy="{{f.gy}}" rx="30" ry="4" fill="{{t.chip}}"></ellipse><path d="{{f.p0}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o0}}" stroke-linecap="round"></path><path d="{{f.p0}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i0}}" stroke-linecap="round"></path><path d="{{f.p1}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o1}}" stroke-linecap="round"></path><path d="{{f.p1}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i1}}" stroke-linecap="round"></path><path d="{{f.p2}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o2}}" stroke-linecap="round"></path><path d="{{f.p2}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i2}}" stroke-linecap="round"></path><path d="{{f.p3}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o3}}" stroke-linecap="round"></path><path d="{{f.p3}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i3}}" stroke-linecap="round"></path><path d="{{f.p4}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o4}}" stroke-linecap="round"></path><path d="{{f.p4}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i4}}" stroke-linecap="round"></path><path d="{{f.p5}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o5}}" stroke-linecap="round"></path><path d="{{f.p5}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i5}}" stroke-linecap="round"></path><path d="{{f.p6}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o6}}" stroke-linecap="round"></path><path d="{{f.p6}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i6}}" stroke-linecap="round"></path><path d="{{f.p7}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o7}}" stroke-linecap="round"></path><path d="{{f.p7}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i7}}" stroke-linecap="round"></path><path d="{{f.p8}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o8}}" stroke-linecap="round"></path><path d="{{f.p8}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i8}}" stroke-linecap="round"></path><path d="{{f.p9}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o9}}" stroke-linecap="round"></path><path d="{{f.p9}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i9}}" stroke-linecap="round"></path><path d="{{f.p10}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o10}}" stroke-linecap="round"></path><path d="{{f.p10}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i10}}" stroke-linecap="round"></path><path d="{{f.p11}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o11}}" stroke-linecap="round"></path><path d="{{f.p11}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i11}}" stroke-linecap="round"></path><path d="{{f.p12}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o12}}" stroke-linecap="round"></path><path d="{{f.p12}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i12}}" stroke-linecap="round"></path><path d="{{f.p13}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o13}}" stroke-linecap="round"></path><path d="{{f.p13}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i13}}" stroke-linecap="round"></path><path d="{{f.p14}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o14}}" stroke-linecap="round"></path><path d="{{f.p14}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i14}}" stroke-linecap="round"></path><path d="{{f.p15}}" fill="none" stroke="{{t.ink}}" stroke-width="{{f.o15}}" stroke-linecap="round"></path><path d="{{f.p15}}" fill="none" stroke="{{t.surface}}" stroke-width="{{f.i15}}" stroke-linecap="round"></path><circle cx="{{f.hx}}" cy="{{f.hy}}" r="{{f.hr}}" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="1.6"></circle><path d="{{f.arc}}" fill="none" stroke="{{t.accentInk}}" stroke-width="1.4" stroke-dasharray="4 3" stroke-linecap="round"></path><path d="{{f.tip}}" fill="{{t.accentInk}}"></path></svg><span style="font-family: 'Noto Serif SC', serif; font-size: 12px; font-weight: 600">{{f.cap}}</span></div></sc-for>
 </div>
 <dl style="margin: 0; display: grid; grid-template-columns: minmax(0, 160px) minmax(0, 1fr); gap: 6px 16px; font-size: 14px">
 <dt style="color: {{t.muted}}">{{s.fgMade}}</dt><dd style="margin: 0; font-weight: 600">{{rv.madeLabel}}</dd>
@@ -1643,7 +1644,7 @@ var PTS = [[3.0,4.7],[3.2,5.3],[3.5,5.8],[3.8,6.2],[4.2,6.3],[4.5,6.1],[4.8,5.7]
 var DETAILS = {
   // Descriptions are written in our own words; facts checked against the reference (cited in ref)
   0: {
-    ref: 'Competition routines collection (scan), Taijiquan, p. 598–599, 图 I-1 to I-4',
+    figs: ['qs1', 'qs2', 'qs3', 'qs4'], ref: 'Competition routines collection (scan), Taijiquan, p. 598–599, 图 I-1 to I-4',
     facing: { en: 'South (towards the judges)', id: 'Selatan (menghadap juri)' },
     steps: {
       en: ['Stand naturally with the feet together and the arms relaxed at the sides.', 'Step the left foot out lightly to shoulder width, toes pointing forward.', 'Raise both arms slowly forward to shoulder height, shoulder-width apart, elbows slightly bent.', 'Keep the upper body upright, bend the knees into a half squat and press both palms down in front of the abdomen.'],
@@ -1659,7 +1660,7 @@ var DETAILS = {
     }
   },
   1: {
-    figs: [0, 1, 2, 3], ref: 'Competition routines collection (scan), Taijiquan, p. 599, 图 I-5 to I-8',
+    figs: ['lq1', 'lq2', 'lq3', 'lq4'], ref: 'Competition routines collection (scan), Taijiquan, p. 599, 图 I-5 to I-8',
     facing: { en: '[to be filled in from the reference]', id: '[diisi dari referensi]' },
     steps: {
       en: ['Turn the right toes slightly out and the body slightly right. Bend the right arm in front of the chest, palm down; circle the left hand to the right of the abdomen, palm up, as if holding a ball. Shift the weight onto the right leg and draw the left foot beside the right foot.',
@@ -1720,13 +1721,13 @@ var S = {
     dOthers: 'Other routines from the reference open for discussion once their movement lists are added:',
     dLead: 'Pick a routine to read its threads, ask a question or report a mistake. Each thread is linked to a movement so contributors know exactly what to check.', latest: 'Latest', dPending: 'Discussion opens once the movement list is added.',
     cTitle: 'Contribute', cLead: 'Help build an accurate, open reference. Every edit is saved as a revision and reviewed by a moderator before it is published. To report a mistake instead, open a thread in Discussions.',
-    figTitle: 'Illustrations', figHint: 'Click a figure to enlarge it and jump the video there', figReviewed: 'reviewed by', figPlaceholder: 'placeholder drawing', figRef: 'Reference',
+    figTitle: 'Illustrations', figHint: 'Rendered from one 3D model: click a figure to enlarge it and jump the video there, or change the camera angle', figReviewed: 'reviewed by', figPlaceholder: 'illustrative poses', figCamera: 'Camera', angFront: 'Front', ang34: '¾ view', angSide: 'Side', figRef: 'Reference',
     figNone: 'No illustrations yet. Verified contributors can add them under Contribute.',
     tFigures: 'Upload illustrations', fgLead: 'Add one figure per step in the line-drawing style: a clean figure with curved arrows for the motion path. Captions are numbered automatically (图 12-1, 12-2…).',
     fgMove: 'Movement', fgMade: 'How it was made', fgLic: 'License', fgStep: 'Step', fgUpload: 'Figure for', fgSource: 'Reference used (book title, page, figure)',
     fgWarn: 'Do not upload scans, crops or tracings of copyrighted books, or AI copies of them. Use books as a reference for facts and draw from your own photos or video.',
     fgSubmit: 'Submit illustrations for review', rvKindFigure: 'Illustrations',
-    madeOpts: ['Hand-drawn by me', 'Traced from my own photo or video', 'Generated from my own video (pose detection)', 'AI-assisted from my own images', 'Public-domain book scan'],
+    madeOpts: ['Hand-drawn by me', 'Traced from my own photo or video', 'Generated from my own video (pose detection)', 'AI-assisted from my own images', 'Public-domain book scan', 'Rendered from the OpenWushu 3D model'],
     licOpts: ['CC BY-SA 4.0 (my own work)', 'Public domain', 'Used with written permission'],
     sourceCode: 'Source code on GitHub', devTitle: 'Are you a developer?', devBody: 'OpenWushu is open source (AGPL-3.0). Report bugs, suggest features or send a pull request on GitHub.', devCta: 'View on GitHub',
     review: 'Review', profile: 'Profile', history: 'History', revisions: 'revisions', before: 'Before', after: 'After', newContent: '(new)', fieldLang: 'Language', source: 'Source',
@@ -1832,13 +1833,13 @@ var S = {
     dOthers: 'Rangkaian lain dari referensi dibuka untuk diskusi setelah daftar gerakannya ditambahkan:',
     dLead: 'Pilih rangkaian untuk membaca diskusinya, bertanya, atau melaporkan kesalahan. Setiap diskusi terhubung ke gerakan agar kontributor tahu persis apa yang perlu diperiksa.', latest: 'Terbaru', dPending: 'Diskusi dibuka setelah daftar gerakan ditambahkan.',
     cTitle: 'Kontribusi', cLead: 'Bantu membangun referensi terbuka yang akurat. Setiap suntingan disimpan sebagai revisi dan ditinjau moderator sebelum diterbitkan. Untuk melaporkan kesalahan, buka diskusi di halaman Diskusi.',
-    figTitle: 'Ilustrasi', figHint: 'Klik gambar untuk memperbesar dan melompatkan video ke sana', figReviewed: 'ditinjau oleh', figPlaceholder: 'gambar sementara', figRef: 'Referensi',
+    figTitle: 'Ilustrasi', figHint: 'Dirender dari satu model 3D: klik gambar untuk memperbesar dan melompatkan video, atau ubah sudut kamera', figReviewed: 'ditinjau oleh', figPlaceholder: 'pose ilustrasi', figCamera: 'Kamera', angFront: 'Depan', ang34: 'Tampak ¾', angSide: 'Samping', figRef: 'Referensi',
     figNone: 'Belum ada ilustrasi. Kontributor terverifikasi dapat menambahkannya di halaman Kontribusi.',
     tFigures: 'Unggah ilustrasi', fgLead: 'Tambahkan satu gambar per langkah dengan gaya gambar garis: figur bersih dengan panah melengkung untuk jalur gerakan. Keterangan diberi nomor otomatis (图 12-1, 12-2…).',
     fgMove: 'Gerakan', fgMade: 'Cara pembuatan', fgLic: 'Lisensi', fgStep: 'Langkah', fgUpload: 'Gambar untuk', fgSource: 'Referensi yang dipakai (judul buku, halaman, gambar)',
     fgWarn: 'Jangan mengunggah pindaian, potongan, atau jiplakan dari buku berhak cipta, atau salinan AI darinya. Gunakan buku sebagai referensi fakta dan gambar dari foto atau video Anda sendiri.',
     fgSubmit: 'Kirim ilustrasi untuk ditinjau', rvKindFigure: 'Ilustrasi',
-    madeOpts: ['Digambar tangan oleh saya', 'Dijiplak dari foto atau video saya sendiri', 'Dibuat dari video saya sendiri (deteksi pose)', 'Dibantu AI dari gambar saya sendiri', 'Pindaian buku domain publik'],
+    madeOpts: ['Digambar tangan oleh saya', 'Dijiplak dari foto atau video saya sendiri', 'Dibuat dari video saya sendiri (deteksi pose)', 'Dibantu AI dari gambar saya sendiri', 'Pindaian buku domain publik', 'Dirender dari model 3D OpenWushu'],
     licOpts: ['CC BY-SA 4.0 (karya saya sendiri)', 'Domain publik', 'Dipakai dengan izin tertulis'],
     sourceCode: 'Kode sumber di GitHub', devTitle: 'Anda seorang pengembang?', devBody: 'OpenWushu bersifat sumber terbuka (AGPL-3.0). Laporkan bug, usulkan fitur, atau kirim pull request di GitHub.', devCta: 'Lihat di GitHub',
     review: 'Tinjauan', profile: 'Profil', history: 'Riwayat', revisions: 'revisi', before: 'Sebelum', after: 'Sesudah', newContent: '(baru)', fieldLang: 'Bahasa', source: 'Sumber',
@@ -1959,13 +1960,63 @@ var FULL = [STARTPT].concat(PTS);
 
 // ---- Review queue, revision history, profile: sample data (usernames are fictional) ----
 // Diff segments: [text, kind] where kind -1 = removed, 1 = added, 0 = unchanged
-// Placeholder line figures for the 图解 strip (illustrative poses, not measured): limbs and dashed motion arc
-var FIG_POSES = [
-  { limbs: 'M60 50 L40 70 L44 90 M60 50 L80 68 L88 86 M60 88 L46 120 L38 150 M60 88 L74 120 L84 150', arc: 'M96 140 Q104 120 86 112' },
-  { limbs: 'M60 50 L34 60 L22 56 M60 50 L86 60 L98 56 M60 88 L46 120 L38 150 M60 88 L74 120 L84 150', arc: 'M20 44 Q60 4 100 44' },
-  { limbs: 'M60 50 L44 66 L50 82 M60 50 L80 42 L90 30 M60 88 L52 120 L42 148 M60 88 L72 120 L76 150', arc: 'M30 150 Q20 132 38 124' },
-  { limbs: 'M60 50 L82 38 L100 30 M60 50 L46 72 L56 86 M60 88 L50 120 L38 150 M60 88 L72 120 L78 150', arc: 'M64 14 Q92 6 104 24' }
-];
+// ---- 3D mannequin for the 图解 figures ----
+// Joints in centimetres: x = athlete's left, y = up, z = forward (towards the judges). yaw turns the whole body (deg, + = left).
+// Poses are illustrative: in the real app a contributor poses them in a 3D tool and a coach checks them.
+var JN = ['head', 'neck', 'shL', 'shR', 'elbL', 'elbR', 'hndL', 'hndR', 'pelvis', 'hipL', 'hipR', 'kneeL', 'kneeR', 'ankL', 'ankR', 'toeL', 'toeR'];
+var FIG3D = {
+  // 起势 Commencing Form
+  qs1: { yaw: 0, j: [[0,160,0],[0,145,0],[18,140,0],[-18,140,0],[21,112,0],[-21,112,0],[22,86,2],[-22,86,2],[0,95,0],[9,93,0],[-9,93,0],[8,51,2],[-8,51,2],[7,8,0],[-7,8,0],[8,2,13],[-8,2,13]] },
+  qs2: { yaw: 0, j: [[0,160,0],[0,145,0],[18,140,0],[-18,140,0],[21,112,0],[-21,112,0],[22,86,2],[-22,86,2],[0,95,0],[9,93,0],[-9,93,0],[17,51,2],[-8,51,2],[19,8,0],[-7,8,0],[20,2,13],[-8,2,13]] },
+  qs3: { yaw: 0, j: [[0,160,0],[0,145,0],[18,140,0],[-18,140,0],[19,133,22],[-19,133,22],[18,137,48],[-18,137,48],[0,95,0],[9,93,0],[-9,93,0],[17,51,2],[-8,51,2],[19,8,0],[-7,8,0],[20,2,13],[-8,2,13]] },
+  qs4: { yaw: 0, j: [[0,146,-3],[0,131,-3],[18,126,-3],[-18,126,-3],[22,106,12],[-22,106,12],[18,93,28],[-18,93,28],[0,81,-6],[9,79,-6],[-9,79,-6],[18,43,12],[-8,43,12],[19,8,0],[-7,8,0],[20,2,13],[-8,2,13]] },
+  // 右揽雀尾 Grasp the Bird's Tail (Right)
+  lq1: { yaw: -30, j: [[-2,154,0],[-2,139,0],[16,134,0],[-20,134,0],[12,108,12],[-27,122,14],[-6,100,22],[-8,124,26],[-4,88,0],[5,86,0],[-13,86,0],[0,48,10],[-13,47,10],[-3,12,-2],[-12,8,0],[-2,3,10],[-14,2,13]] },
+  lq2: { yaw: -10, j: [[-2,154,0],[-2,139,0],[16,134,0],[-20,134,0],[12,108,12],[-27,122,14],[-6,100,22],[-8,124,26],[-4,88,0],[5,86,0],[-13,86,0],[12,50,20],[-13,47,10],[17,10,36],[-12,8,0],[19,13,48],[-14,2,13]] },
+  lq3: { yaw: 0, j: [[4,145,14],[4,130,14],[22,126,14],[-14,126,14],[27,120,36],[-20,104,16],[7,125,50],[-18,84,22],[4,84,14],[13,82,14],[-5,82,14],[17,46,36],[-11,46,-2],[18,8,40],[-18,8,-20],[20,2,53],[-26,2,-11]] },
+  lq4: { yaw: 20, j: [[6,150,24],[6,135,24],[24,130,24],[-12,130,24],[30,120,38],[-6,106,36],[10,122,48],[10,98,44],[6,86,24],[15,84,24],[-3,84,24],[18,46,34],[2,47,34],[18,8,40],[4,12,28],[20,2,53],[6,3,40]] }
+};
+// Limbs drawn as outlined tubes: [from, to, width]
+var BONES = [['pelvis','neck',15],['hipL','hipR',10],['shL','shR',9],['neck','headBase',6],
+  ['hipL','kneeL',9],['kneeL','ankL',7],['ankL','toeL',4.5],['hipR','kneeR',9],['kneeR','ankR',7],['ankR','toeR',4.5],
+  ['shL','elbL',6],['elbL','hndL',5],['shR','elbR',6],['elbR','hndR',5],['hndL','hndL',6.5],['hndR','hndR',6.5]];
+function f1(n) { return n.toFixed(1); }
+// Orthographic camera: az = camera angle around the athlete (deg), slight elevation; returns screen joints + depth
+function projectPose(pose, az) {
+  var a = (pose.yaw + az) * Math.PI / 180, e = 10 * Math.PI / 180, out = {};
+  JN.forEach(function (name, k) {
+    var q = pose.j[k], x = q[0] * Math.cos(a) + q[2] * Math.sin(a), z = -q[0] * Math.sin(a) + q[2] * Math.cos(a);
+    out[name] = { x: x, y: q[1] * Math.cos(e) - z * Math.sin(e), z: q[1] * Math.sin(e) + z * Math.cos(e) };
+  });
+  var n = out.neck, h = out.head;
+  out.headBase = { x: n.x + 0.4 * (h.x - n.x), y: n.y + 0.4 * (h.y - n.y), z: n.z + 0.4 * (h.z - n.z) };
+  return out;
+}
+// Renders a pose as line art (painter's algorithm, far limbs first) plus a motion arrow towards the next pose
+function render3d(pose, az, next) {
+  var P = projectPose(pose, az), K = 0.9, xs = JN.map(function (n) { return P[n].x; });
+  var cx = (Math.min.apply(null, xs) + Math.max.apply(null, xs)) / 2;
+  var sx = function (q) { return 60 + (q.x - cx) * K; }, sy = function (q) { return 171 - q.y * K; };
+  var segs = BONES.map(function (b) { var A = P[b[0]], B = P[b[1]]; return { d: 'M' + f1(sx(A)) + ' ' + f1(sy(A)) + ' L' + f1(sx(B)) + ' ' + f1(sy(B)), w: b[2] * K, z: (A.z + B.z) / 2 }; });
+  segs.sort(function (u, v) { return u.z - v.z; });
+  var r = { hx: f1(sx(P.head)), hy: f1(sy(P.head)), hr: f1(11 * K), gy: 172, arc: '', tip: '' };
+  segs.forEach(function (g, i) { r['p' + i] = g.d; r['o' + i] = f1(g.w + 2.6); r['i' + i] = f1(g.w); });
+  if (next) {
+    var N = projectPose(next, az), best = null;
+    ['hndL', 'hndR', 'toeL', 'toeR'].forEach(function (k) {
+      var x1 = sx(P[k]), y1 = sy(P[k]), x2 = sx(N[k]), y2 = sy(N[k]), dist = Math.hypot(x2 - x1, y2 - y1);
+      if (!best || dist > best.dist) best = { x1: x1, y1: y1, x2: x2, y2: y2, dist: dist };
+    });
+    if (best && best.dist > 6) {
+      var mx = (best.x1 + best.x2) / 2, my = (best.y1 + best.y2) / 2, dx = best.x2 - best.x1, dy = best.y2 - best.y1;
+      var c = { x: mx - dy * 0.35, y: my + dx * 0.35 }, ux = best.x2 - c.x, uy = best.y2 - c.y, ul = Math.hypot(ux, uy) || 1;
+      ux /= ul; uy /= ul;
+      r.arc = 'M' + f1(best.x1) + ' ' + f1(best.y1) + ' Q' + f1(c.x) + ' ' + f1(c.y) + ' ' + f1(best.x2) + ' ' + f1(best.y2);
+      r.tip = 'M' + f1(best.x2 + ux * 3) + ' ' + f1(best.y2 + uy * 3) + ' L' + f1(best.x2 - ux * 4 - uy * 3) + ' ' + f1(best.y2 - uy * 4 + ux * 3) + ' L' + f1(best.x2 - ux * 4 + uy * 3) + ' ' + f1(best.y2 - uy * 4 - ux * 3) + ' Z';
+    }
+  }
+  return r;
+}
 var CHANGES = [
   { id: 'c1', kind: 'text', move: 1, field: 'steps', flang: 'en', by: 'dewi_taiji', role: 'judge', thread: 0,
     when: W('3 hours ago', '3 jam lalu'), title: W('Add palm and elbow detail to step 3', 'Tambahkan detail telapak dan siku di langkah 3'),
@@ -1984,9 +2035,9 @@ var CHANGES = [
     when: W('1 day ago', '1 hari lalu'), title: W('Traditional note for Grasp the Bird’s Tail', 'Catatan tradisional untuk Lan Que Wei'),
     source: '[Lineage teaching, school notes]',
     before: [], after: [['In our lineage the ward-off arm is a little lower and more rounded. For competition, follow shoulder height.', 1]] },
-  { id: 'c5', kind: 'figure', move: 1, field: 'figs', flang: 'en', by: 'hendra_wushu', role: 'judge', thread: null, made: 2, lic: 0,
+  { id: 'c5', kind: 'figure', move: 1, field: 'figs', flang: 'en', by: 'hendra_wushu', role: 'judge', thread: null, made: 5, lic: 0,
     when: W('5 hours ago', '5 jam lalu'), title: W('Illustrations for Grasp the Bird’s Tail (4 figures)', 'Ilustrasi untuk Lan Que Wei (4 gambar)'),
-    source: 'Own demonstration video, frames 0:08–0:18; facts checked against Competition routines collection (scan), Taijiquan, p. 599' }
+    source: 'Rendered from the OpenWushu 3D model; poses checked against our 0:08–0:18 video and Competition routines collection (scan), Taijiquan, p. 599' }
 ];
 var APPS = [
   { id: 'a1', path: 'a', by: 'rina_coach', name: 'Rina S.', when: W('1 day ago', '1 hari lalu'),
@@ -2034,7 +2085,7 @@ class Component extends DCLogic {
       rvTab: 'content', rvSel: 0, apSel2: 0, rvDec: {}, rvNote: '', rvErr: null, rvChecks: {},
       hiMove: SAMPLE, hiSel: 0, hiConfirm: false, hiRestored: false,
       edTimes: START.slice(), edPts: PTS.map(function (q) { return q.slice(); }), edSet: {}, edSel: SAMPLE, edFacing: {}, edWarn: null, edRaw: {},
-      prefs: { replies: true, status: true, reviewed: true, newThreads: true, news: false }, prFreq: 'instant', prEmailLang: null, prMsg: null, figSel: null, fgMove: String(SAMPLE) };
+      prefs: { replies: true, status: true, reviewed: true, newThreads: true, news: false }, prFreq: 'instant', prEmailLang: null, prMsg: null, figSel: null, figAz: -35, fgMove: String(SAMPLE) };
   }
   componentDidMount() {
     var self = this;
@@ -2136,12 +2187,16 @@ class Component extends DCLogic {
     var detail = d ? { ref: d.ref || '—', facing: d.facing[s.lang], steps: d.steps[s.lang], stepsN: d.steps[s.lang].map(function (x, i) { return { cn: cn(i + 1), text: x, bg: s.figSel && s.figSel.move === ai && s.figSel.k === i ? t.accentSoft : 'transparent' }; }), keys: d.keys[s.lang], mistakes: d.mistakes[s.lang] } : { ref: '—', facing: '', steps: [], stepsN: [], keys: [], mistakes: [] };
 
     var figK = s.figSel && s.figSel.move === ai ? s.figSel.k : 0;
-    var figList = d && d.figs ? d.figs.map(function (pi, k) {
+    var figKeys = d && d.figs ? d.figs : [];
+    var figList = figKeys.map(function (key, k) {
       var on = s.figSel && s.figSel.move === ai && s.figSel.k === k;
-      return { cap: '图 ' + (ai + 1) + '-' + (k + 1), limbs: FIG_POSES[pi].limbs, arc: FIG_POSES[pi].arc, on: !!on, bd: on ? t.accent : t.line2,
-        pick: function () { var n = d.figs.length; self.setState({ figSel: { move: ai, k: k }, t: START[ai] + MOVES[ai][4] * k / n + 0.05 }); } };
-    }) : [];
-    var figView = figList.length ? { cap: figList[figK].cap, limbs: figList[figK].limbs, arc: figList[figK].arc, step: detail.steps[figK] || '', made: L.madeOpts[2] } : {};
+      return Object.assign(render3d(FIG3D[key], s.figAz, figKeys[k + 1] ? FIG3D[figKeys[k + 1]] : null), {
+        cap: '图 ' + (ai + 1) + '-' + (k + 1), on: !!on, bd: on ? t.accent : t.line2,
+        pick: function () { self.setState({ figSel: { move: ai, k: k }, t: START[ai] + MOVES[ai][4] * k / figKeys.length + 0.05 }); } });
+    });
+    var figAngles = [[0, L.angFront], [-35, L.ang34], [-90, L.angSide]];
+    var figView = figList.length ? Object.assign({}, figList[figK], { step: detail.steps[figK] || '', made: L.madeOpts[5],
+      angleLabel: (figAngles.filter(function (a) { return a[0] === s.figAz; })[0] || [0, L.ang34])[1] }) : {};
     var typeLabel = { error: L.typeError, suggest: L.typeSuggest, question: L.typeQuestion, rule: L.typeRule };
     var typeCol = { error: [t.redSoft, t.red], suggest: [t.blueSoft, t.blue], question: [t.chip, t.muted], rule: [t.amberSoft, t.amber] };
     var stCol = { open: [t.accent, t.onAccent, L.stOpen], review: [t.blue, '#FFFFFF', L.stReview], accepted: [t.green, '#FFFFFF', L.stAccepted] };
@@ -2211,7 +2266,7 @@ class Component extends DCLogic {
     var rv = { title: cs.title[s.lang], target: mvLabel(cs.move), field: fieldLabel(cs.field), flang: LANGS[cs.flang], by: cs.by, initial: cs.by.charAt(0).toUpperCase(),
       badge: roleB[cs.role], when: cs.when[s.lang], kindLabel: rvItems[s.rvSel].kindLabel, stLabel: stMeta[cd][2], stBg: stMeta[cd][0], stFg: stMeta[cd][1],
       isText: cs.kind === 'text', isVideo: cs.kind === 'video', isFigure: cs.kind === 'figure',
-      figs: cs.kind === 'figure' ? FIG_POSES.map(function (f, k) { return { limbs: f.limbs, arc: f.arc, cap: '图 ' + (cs.move + 1) + '-' + (k + 1) }; }) : [],
+      figs: cs.kind === 'figure' ? DETAILS[cs.move].figs.map(function (key, k, all) { return Object.assign(render3d(FIG3D[key], -35, all[k + 1] ? FIG3D[all[k + 1]] : null), { cap: '图 ' + (cs.move + 1) + '-' + (k + 1) }); }) : [],
       madeLabel: cs.made != null ? L.madeOpts[cs.made] : '', licLabel: cs.lic != null ? L.licOpts[cs.lic] : '', before: segs(cs.before || []), after: segs(cs.after || []), beforeEmpty: !(cs.before && cs.before.length),
       videoInfo: cs.videoInfo ? cs.videoInfo[s.lang] : '', source: cs.source, hasThread: cs.thread != null, threadTitle: cs.thread != null ? THREADS[cs.thread].title : '',
       openThread: function () { self.setState({ screen: 'routine', tab: 'discuss', openThread: cs.thread }); },
@@ -2332,6 +2387,7 @@ class Component extends DCLogic {
       fgSteps: (function () { var mi = +s.fgMove, dd = DETAILS[mi], st = dd ? dd.steps[s.lang] : [1, 2, 3, 4].map(function (k) { return L.fgStep + ' ' + k; });
         return st.map(function (x, k) { var cap = '图 ' + (mi + 1) + '-' + (k + 1); return { cap: cap, text: x, aria: L.fgUpload + ' ' + cap }; }); })(),
       hasFigs: figList.length > 0, noFigs: figList.length === 0, figs: figList, fv: figView,
+      figAngles: figAngles.map(function (a) { var on = s.figAz === a[0]; return { label: a[1], on: on, bg: seg(on)[0], fg: seg(on)[1], pick: function () { self.setState({ figAz: a[0] }); } }; }),
       edTime: fmtP(s.t), edVideoCn: cn(edIdx + 1), edVideoZh: MOVES[edIdx][0], edVideoPy: MOVES[edIdx][1],
       edSegs: MOVES.map(function (m, i) { var end = i < MOVES.length - 1 ? eT[i + 1] : TOTAL, on = i === es; return { n: i + 1, dur: Math.max(0.5, end - eT[i]), aria: mvLabel(i),
         bg: on ? t.accent : (i === edIdx ? t.accentMid : t.chip), fg: on ? t.onAccent : t.muted, pick: function () { self.setState({ edSel: i, t: eT[i], edWarn: null, edRaw: {} }); } }; }),
