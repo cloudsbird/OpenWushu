@@ -7,6 +7,5 @@ The first design (screens, decisions, roles and an interactive prototype source)
 
 ## License
 
-Everything in OpenWushu — the code and the content (movement descriptions, translations, carpet paths, discussion threads and uploaded videos) — is licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE).
-
-You may share and adapt it, including commercially, as long as you credit OpenWushu and its contributors and release your changes under the same license.
+- **Code** is licensed under the [GNU General Public License v3.0](LICENSE) (GPL-3.0). You may use, study, change and share it; if you distribute a modified version, you must release its source under GPL-3.0 too.
+- **Content** — movement descriptions, translations, carpet paths, discussion threads and uploaded videos — is licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE-CONTENT). You may share and adapt it, including commercially, as long as you credit OpenWushu and its contributors and release your changes under the same license.
