@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
-  # Only allow modern browsers supporting webp images, web push, badges, import maps, CSS nesting, and CSS :has.
-  allow_browser versions: :modern
+  # Many learners use older Android phones, so require only what the app uses: import maps and class fields.
+  allow_browser versions: { chrome: 89, safari: 16.4, firefox: 108, opera: 75, ie: false }
 
   around_action :switch_locale
 

@@ -28,11 +28,15 @@ export default class extends Controller {
       this.videoTarget.addEventListener("pause", this.onPlayState)
     }
 
-    const selected = this.indexOf(this.selectedValue)
+    // The URL wins over the server value: ?m= changes as you browse, and Turbo restores old snapshots on Back
+    const fromUrl = Number(new URL(window.location.href).searchParams.get("m"))
+    const selected = this.indexOf(fromUrl || this.selectedValue)
     if (selected >= 0) {
       this.seek(this.movesValue[selected].start)
       this.showDetail(selected)
     } else {
+      this.listTarget.hidden = false
+      this.detailTargets.forEach((el) => { el.hidden = true })
       this.tick(0)
     }
   }
@@ -106,7 +110,7 @@ export default class extends Controller {
   play() {
     if (this.time >= this.totalValue) this.seek(0)
     if (this.hasVideoTarget) {
-      this.videoTarget.play()
+      this.videoTarget.play().catch(() => this.showPlaying(false))
     } else {
       this.last = performance.now()
       this.frame = requestAnimationFrame(this.advance)
@@ -162,8 +166,9 @@ export default class extends Controller {
 
   showPlaying(playing) {
     this.playing = playing
-    this.playIconTarget.hidden = playing
-    this.pauseIconTarget.hidden = !playing
+    // SVG elements have no .hidden property, so set the attribute
+    this.playIconTarget.toggleAttribute("hidden", playing)
+    this.pauseIconTarget.toggleAttribute("hidden", !playing)
     this.playButtonTarget.setAttribute("aria-label", playing ? this.pauseLabelValue : this.playLabelValue)
   }
 
