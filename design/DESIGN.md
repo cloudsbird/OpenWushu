@@ -14,7 +14,7 @@ Sample content: **二十四式简化太极拳 (24-Form Simplified Taijiquan)**, 
 |---|---|
 | Platform | Responsive web app (desktop + phone) |
 | Video | Self-hosted uploads; each movement stores a start/end timestamp |
-| Map | Top-down diagram of the 14 m × 8 m competition carpet showing the athlete's path |
+| Map | Top-down diagram of the 14 m × 8 m competition carpet showing the athlete's path, the front edge (正面), and the judges' table (裁判席) below it with the head judge (裁判长) in the centre. Seat count is configurable per competition rules |
 | Languages | **Chinese (characters + pinyin) is always shown** — it is the source. The switcher only changes the translation: English ↔ Bahasa Indonesia. Chinese terms stay inline in descriptions, e.g. 左虚步 zuǒ xūbù |
 | Colors | Blue `#50A0FF` + white. Navy `#06152B` text on the blue (white on `#50A0FF` is only ~2.6:1). Deeper `#1766C7` for blue text on white. Light tint `#F5F9FF` background. Amber only for warning badges, red only for error labels |
 | Type | Noto Serif SC (Chinese display), Noto Sans SC + Inter (body) |

@@ -308,14 +308,25 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <h2 style="margin: 0; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap"><span style="font-family: 'Noto Serif SC', serif; font-size: 20px">场地路线</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">Chǎngdì lùxiàn · {{s.carpet}} · 14 m × 8 m</span></h2>
 <span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.illustrative}}</span>
 </div>
-<div style="position: relative; aspect-ratio: 14 / 8; border-radius: 8px; overflow: hidden">
-<svg viewBox="0 0 1400 800" width="100%" height="100%" style="position: absolute; inset: 0; display: block" role="img" aria-label="{{carpetAria}}">
+<div style="position: relative; aspect-ratio: 14 / 10; border-radius: 8px; overflow: hidden">
+<svg viewBox="0 0 1400 1000" width="100%" height="100%" style="position: absolute; inset: 0; display: block" role="img" aria-label="{{carpetAria}}">
 <rect x="0" y="0" width="1400" height="800" fill="{{t.carpet}}"></rect>
 <path d="{{gridD}}" fill="none" stroke="{{t.grid}}" stroke-width="2"></path>
 <rect x="3" y="3" width="1394" height="794" fill="none" stroke="{{t.line2}}" stroke-width="6"></rect>
 <text x="1360" y="50" text-anchor="middle" font-size="30" font-weight="700" fill="{{t.muted}}">N</text>
 <path d="M1360 60 L1360 110 M1348 74 L1360 60 L1372 74" fill="none" stroke="{{t.muted}}" stroke-width="4" stroke-linecap="round"></path>
-<text x="700" y="780" text-anchor="middle" font-size="26" fill="{{t.muted}}">裁判席 · {{s.judges}}</text>
+<text x="700" y="780" text-anchor="middle" font-size="24" font-weight="600" fill="{{t.muted}}">正面 · {{s.front}}</text>
+<rect x="240" y="858" width="920" height="40" rx="8" fill="{{t.chip}}" stroke="{{t.line2}}" stroke-width="2"></rect>
+<circle cx="320" cy="932" r="18" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="3"></circle><text x="320" y="939" text-anchor="middle" font-size="18" font-weight="700" fill="{{t.ink}}">1</text>
+<circle cx="410" cy="932" r="18" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="3"></circle><text x="410" y="939" text-anchor="middle" font-size="18" font-weight="700" fill="{{t.ink}}">2</text>
+<circle cx="500" cy="932" r="18" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="3"></circle><text x="500" y="939" text-anchor="middle" font-size="18" font-weight="700" fill="{{t.ink}}">3</text>
+<circle cx="590" cy="932" r="18" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="3"></circle><text x="590" y="939" text-anchor="middle" font-size="18" font-weight="700" fill="{{t.ink}}">4</text>
+<circle cx="700" cy="932" r="26" fill="{{t.accent}}" stroke="{{t.ink}}" stroke-width="3"></circle><text x="700" y="941" text-anchor="middle" font-size="24" font-weight="700" fill="{{t.onAccent}}">长</text>
+<circle cx="810" cy="932" r="18" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="3"></circle><text x="810" y="939" text-anchor="middle" font-size="18" font-weight="700" fill="{{t.ink}}">5</text>
+<circle cx="900" cy="932" r="18" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="3"></circle><text x="900" y="939" text-anchor="middle" font-size="18" font-weight="700" fill="{{t.ink}}">6</text>
+<circle cx="990" cy="932" r="18" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="3"></circle><text x="990" y="939" text-anchor="middle" font-size="18" font-weight="700" fill="{{t.ink}}">7</text>
+<circle cx="1080" cy="932" r="18" fill="{{t.surface}}" stroke="{{t.ink}}" stroke-width="3"></circle><text x="1080" y="939" text-anchor="middle" font-size="18" font-weight="700" fill="{{t.ink}}">8</text>
+<text x="700" y="988" text-anchor="middle" font-size="22" fill="{{t.muted}}">裁判席 · {{s.judgesTable}}</text>
 <path d="{{fullD}}" fill="none" stroke="{{t.rest}}" stroke-width="6" stroke-dasharray="14 12" stroke-linecap="round" stroke-linejoin="round"></path>
 <path d="{{doneD}}" fill="none" stroke="{{t.accentMid}}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
 <path d="{{activeD}}" fill="none" stroke="{{t.accent}}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -332,6 +343,8 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <span style="display: flex; align-items: center; gap: 6px"><span style="width: 22px; height: 5px; border-radius: 3px; background: {{t.accentMid}}"></span>{{s.legendDone}}</span>
 <span style="display: flex; align-items: center; gap: 6px"><span style="width: 22px; height: 7px; border-radius: 4px; background: {{t.accent}}"></span>{{s.legendNow}} · {{active.num}} {{active.zh}}</span>
 <span style="display: flex; align-items: center; gap: 6px"><span style="width: 22px; height: 0; border-top: 3px dashed {{t.rest}}"></span>{{s.legendRest}}</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 50%; border: 2px solid {{t.ink}}; box-sizing: border-box"></span>裁判员 · {{s.judges}}</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 16px; height: 16px; border-radius: 50%; border: 2px solid {{t.ink}}; box-sizing: border-box; background: {{t.accent}}"></span>裁判长 · {{s.headJudge}}</span>
 </div>
 </section>
 </div>
@@ -896,7 +909,7 @@ var S = {
     r24: '24-Form Simplified Taijiquan', r42: '42-Form Competition Taijiquan', taiji: 'Taijiquan', changquan: 'Changquan', nanquan: 'Nanquan', weapons: 'Weapons',
     std: 'Standard routine (1956)', learn: 'Learn', discussion: 'Discussion',
     sampleVideo: 'Sample video · self-hosted upload', play: 'Play', pause: 'Pause', prev: 'Previous movement', next: 'Next movement', loop: 'Loop movement', speed: 'Speed',
-    carpet: 'Carpet path', illustrative: 'Illustrative path, not measured', judges: 'Judges', legendStart: 'Start', legendDone: 'Completed', legendNow: 'Current', legendRest: 'Remaining',
+    carpet: 'Carpet path', illustrative: 'Illustrative path, not measured', judges: 'Judges', headJudge: 'Head judge', judgesTable: 'Judges’ table', front: 'Front (facing the judges)', legendStart: 'Start', legendDone: 'Completed', legendNow: 'Current', legendRest: 'Remaining',
     movements: 'Movements', allMoves: 'All movements', playThis: 'Play this movement', draft: 'Draft · needs expert review', facing: 'Facing',
     steps: 'Steps', keyPoints: 'Key points', mistakes: 'Common mistakes', edited: 'Last edited by a contributor (sample)',
     pendingTitle: 'Description not written yet', pendingBody: 'The name and video timing are in place. Help by writing the steps, key points and common mistakes.', writeIt: 'Write this description',
@@ -943,7 +956,7 @@ var S = {
     r24: '24 Jurus Taijiquan Sederhana', r42: '42 Jurus Taijiquan Kompetisi', taiji: 'Taijiquan', changquan: 'Changquan', nanquan: 'Nanquan', weapons: 'Senjata',
     std: 'Rangkaian standar (1956)', learn: 'Belajar', discussion: 'Diskusi',
     sampleVideo: 'Contoh video · unggahan sendiri', play: 'Putar', pause: 'Jeda', prev: 'Gerakan sebelumnya', next: 'Gerakan berikutnya', loop: 'Ulangi gerakan', speed: 'Kecepatan',
-    carpet: 'Jalur di karpet', illustrative: 'Jalur ilustrasi, belum diukur', judges: 'Juri', legendStart: 'Mulai', legendDone: 'Selesai', legendNow: 'Sekarang', legendRest: 'Sisa',
+    carpet: 'Jalur di karpet', illustrative: 'Jalur ilustrasi, belum diukur', judges: 'Juri', headJudge: 'Ketua juri', judgesTable: 'Meja juri', front: 'Depan (menghadap juri)', legendStart: 'Mulai', legendDone: 'Selesai', legendNow: 'Sekarang', legendRest: 'Sisa',
     movements: 'Gerakan', allMoves: 'Semua gerakan', playThis: 'Putar gerakan ini', draft: 'Draf · perlu ditinjau ahli', facing: 'Arah hadap',
     steps: 'Langkah', keyPoints: 'Poin penting', mistakes: 'Kesalahan umum', edited: 'Terakhir diedit oleh kontributor (contoh)',
     pendingTitle: 'Deskripsi belum ditulis', pendingBody: 'Nama dan waktu video sudah ada. Bantu dengan menulis langkah, poin penting, dan kesalahan umum.', writeIt: 'Tulis deskripsi ini',
@@ -1050,7 +1063,7 @@ class Component extends DCLogic {
 
     var pts = PTS.map(function (p, i) {
       var on = i === ai, done = i < ai;
-      return { n: i + 1, left: (p[0] / 14 * 100) + '%', top: (p[1] / 8 * 100) + '%', dy: (i % 2 ? '8px' : '-30px'),
+      return { n: i + 1, left: (p[0] / 14 * 100) + '%', top: (p[1] / 10 * 100) + '%', dy: (i % 2 ? '8px' : '-30px'),
         bg: on ? t.accent : t.surface, fg: on ? t.onAccent : (done ? t.accentInk : t.muted), bd: on ? t.accent : t.line2 };
     });
     var a = FULL[ai], b = FULL[ai + 1];
