@@ -225,6 +225,34 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 </section>
 
+<sc-if value="{{libOpen}}" hint-placeholder-val="{{ true }}">
+<section aria-label="{{s.libSeqAria}}" style="display: flex; flex-direction: column; gap: 16px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px">
+<h2 style="margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px"><span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">动作名称</span><span style="font-size: 15px; font-weight: 400; color: {{t.muted}}">四十二式太极拳 · {{s.movements}} (42)</span></h2>
+<span style="flex: 1 1 200px; font-size: 13px; color: {{t.muted}}">{{s.libSeqHint}}</span>
+<button type="button" class="ow-btn" onClick="{{toggleLib}}" aria-expanded="{{libOpen}}" style="min-height: 40px; padding: 0 12px; font-size: 14px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.libHide}}</button>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px 24px">
+<sc-for list="{{libSections}}" as="sec" hint-placeholder-count="4">
+<div style="display: flex; flex-direction: column; min-width: 0">
+<h3 style="margin: 0; padding: 6px 4px; font-family: 'Noto Serif SC', serif; font-size: 16px; font-weight: 700; color: {{t.accentInk}}; border-bottom: 1px solid {{t.ink}}">{{sec.label}}</h3>
+<ol style="list-style: none; margin: 0; padding: 0">
+<sc-for list="{{sec.items}}" as="m" hint-placeholder-count="10">
+<li><button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-label="{{m.aria}}" style="width: 100%; display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 8px; align-items: start; min-height: 52px; padding: 8px 4px; border-bottom: 1px solid {{t.line}}">
+<span aria-hidden="true" style="font-family: 'Noto Serif SC', serif; font-size: 14px; font-weight: 600; color: {{t.accentInk}}; white-space: nowrap">（{{m.cn}}）</span>
+<span style="display: flex; flex-direction: column; min-width: 0; line-height: 1.35"><span style="font-family: 'Noto Serif SC', serif; font-weight: 600">{{m.zh}}</span><span style="font-family: 'Alegreya', serif; font-style: italic; font-size: 13px; color: {{t.muted}}">{{m.py}}</span><span style="font-size: 13px">{{m.tr}}</span></span>
+</button></li>
+</sc-for>
+</ol>
+</div>
+</sc-for>
+</div>
+</section>
+</sc-if>
+<sc-if value="{{libClosed}}" hint-placeholder-val="{{ false }}">
+<button type="button" class="ow-btn" onClick="{{toggleLib}}" aria-expanded="{{libOpen}}" style="align-self: flex-start; min-height: 44px; padding: 0 16px; font-size: 14px; font-weight: 600; border: 1px solid {{t.line2}}">动作名称 · {{s.libShow}}</button>
+</sc-if>
+
 <sc-for list="{{routineGroups}}" as="gr" hint-placeholder-count="2">
 <section style="display: flex; flex-direction: column; gap: 14px">
 <h2 style="margin: 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; padding-bottom: 8px; border-bottom: 1px solid {{t.ink}}"><span style="font-family: 'Noto Serif SC', serif; font-size: 24px">{{gr.zh}}</span><span style="font-size: 15px; font-weight: 400; color: {{t.muted}}">{{gr.py}} · {{gr.tr}}</span></h2>
@@ -1692,6 +1720,7 @@ var THREADS = [
 var S = {
   en: {
     library: 'Library', discussions: 'Discussions', contribute: 'Contribute', translation: 'translation',
+    libSeqAria: 'All movements of the 42-form', libSeqHint: 'Click a movement to open the routine at that movement.', libShow: 'Show all 42 movements', libHide: 'Hide list',
     dOthers: 'Other routines from the reference open for discussion once their movement lists are added:',
     dLead: 'Pick a routine to read its threads, ask a question or report a mistake. Each thread is linked to a movement so contributors know exactly what to check.', latest: 'Latest', dPending: 'Discussion opens once the movement list is added.',
     cTitle: 'Contribute', cLead: 'Help build an accurate, open reference. Every edit is saved as a revision and reviewed by a moderator before it is published. To report a mistake instead, open a thread in Discussions.',
@@ -1803,6 +1832,7 @@ var S = {
   },
   id: {
     library: 'Pustaka', discussions: 'Diskusi', contribute: 'Kontribusi', translation: 'terjemahan',
+    libSeqAria: 'Semua gerakan 42 jurus', libSeqHint: 'Klik gerakan untuk membuka rangkaian tepat di gerakan itu.', libShow: 'Tampilkan semua 42 gerakan', libHide: 'Sembunyikan daftar',
     dOthers: 'Rangkaian lain dari referensi dibuka untuk diskusi setelah daftar gerakannya ditambahkan:',
     dLead: 'Pilih rangkaian untuk membaca diskusinya, bertanya, atau melaporkan kesalahan. Setiap diskusi terhubung ke gerakan agar kontributor tahu persis apa yang perlu diperiksa.', latest: 'Terbaru', dPending: 'Diskusi dibuka setelah daftar gerakan ditambahkan.',
     cTitle: 'Kontribusi', cLead: 'Bantu membangun referensi terbuka yang akurat. Setiap suntingan disimpan sebagai revisi dan ditinjau moderator sebelum diterbitkan. Untuk melaporkan kesalahan, buka diskusi di halaman Diskusi.',
@@ -2008,7 +2038,7 @@ class Component extends DCLogic {
       rvTab: 'content', rvSel: 0, apSel2: 0, rvDec: {}, rvNote: '', rvErr: null, rvChecks: {},
       hiMove: SAMPLE, hiSel: 0, hiConfirm: false, hiRestored: false,
       edTimes: START.slice(), edPts: PTS.map(function (q) { return q.slice(); }), edSet: {}, edSel: SAMPLE, edFacing: {}, edWarn: null, edRaw: {},
-      prefs: { replies: true, status: true, reviewed: true, newThreads: true, news: false }, prFreq: 'instant', prEmailLang: null, prMsg: null, figSel: null, fgMove: String(SAMPLE) };
+      prefs: { replies: true, status: true, reviewed: true, newThreads: true, news: false }, prFreq: 'instant', prEmailLang: null, prMsg: null, libOpen: true, figSel: null, fgMove: String(SAMPLE) };
   }
   componentDidMount() {
     var self = this;
@@ -2354,6 +2384,15 @@ class Component extends DCLogic {
       prEmailLang: s.prEmailLang || s.lang, onPrEmailLang: function (e) { self.setState({ prEmailLang: e.target.value }); },
       prDownload: function () { self.setState({ prMsg: 'prDownloadMsg' }); }, prDelete: function () { self.setState({ prMsg: 'prDeleteMsg' }); },
       hasPrMsg: !!s.prMsg, prMsgText: s.prMsg ? L[s.prMsg] : '',
+      libOpen: s.libOpen, libClosed: !s.libOpen, toggleLib: function () { self.setState({ libOpen: !s.libOpen }); },
+      libSections: Object.keys(SECTIONS).map(Number).map(function (start, j, starts) {
+        var end = j + 1 < starts.length ? starts[j + 1] : MOVES.length, items = [];
+        for (var i = start; i < end; i++) (function (i) {
+          var m = MOVES[i];
+          items.push({ cn: cn(i + 1), zh: m[0], py: m[1], tr: tr(m), aria: '第' + cn(i + 1) + '式 ' + m[0] + ' ' + m[1] + ' · ' + tr(m), pick: function () { self.select(i); } });
+        })(i);
+        return { label: SECTIONS[start][0] + ' · ' + L.section + ' ' + SECTIONS[start][1], items: items };
+      }),
       routineGroups: [['chang', '长拳', 'Chángquán', L.grChang], ['nan', '南拳', 'Nánquán', L.grNan]].map(function (g) {
         return { zh: g[1], py: g[2], tr: g[3], items: OTHER_ROUTINES.filter(function (r) { return r[6] === g[0]; }).map(function (r) { return { zh: r[0], py: r[1], tr: en ? r[2] : r[3], page: r[4], fig: r[5] }; }) };
       }),
