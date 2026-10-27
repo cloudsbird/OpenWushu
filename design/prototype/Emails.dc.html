@@ -69,17 +69,17 @@ var X = {
   id: { title: 'Templat email', lead: 'Dikirim dalam bahasa email pilihan pengguna (diatur di profil). Judul diskusi dan balasan dikutip dalam bahasa aslinya.',
     subjectL: 'Subjek', fromL: 'Dari', manage: 'Kelola pengaturan email', legal: 'OpenWushu · hanya untuk tujuan edukasi · Konten berlisensi CC BY-SA 4.0' }
 };
-var THREAD_TITLE = 'Tinggi tangan kanan: setinggi mata atau kepala?';
-var REPLY = 'Setinggi mata adalah standarnya. Video direkam sedikit dari bawah, jadi tangan terlihat lebih tinggi. Saya sarankan menambahkan klip tampak samping agar lebih jelas.';
+var THREAD_TITLE = 'Tinggi lengan saat menangkis: setinggi bahu atau dada?';
+var REPLY = 'Setinggi bahu sesuai referensi kita. Video direkam sedikit dari atas, jadi lengan terlihat lebih rendah. Saya sarankan menambahkan klip tampak samping agar lebih jelas.';
 var EMAILS = {
   en: [
     { subject: 'Verify your email for OpenWushu', heading: 'Confirm your email', body: 'Hi Ana, welcome to OpenWushu. Confirm this is your email to start joining discussions and reporting issues.',
       cta: 'Verify email', small: 'This link expires in 24 hours. If you did not sign up, you can ignore this email.', why: 'You received this because someone signed up with this address.' },
-    { subject: 'coach_sby replied: ' + THREAD_TITLE, heading: 'New reply in a thread you watch', body: 'coach_sby replied in a thread about 第十二式 高探马 Gāo tàn mǎ.',
+    { subject: 'coach_sby replied: ' + THREAD_TITLE, heading: 'New reply in a thread you watch', body: 'coach_sby replied in a thread about 第二式 右揽雀尾 Yòu lǎn què wěi.',
       badge: 'Bahasa Indonesia', boxTitle: THREAD_TITLE, boxMeta: 'coach_sby · Maintainer · Judge / coach', boxText: REPLY,
       cta: 'View thread', small: 'Reply on OpenWushu. Replies to this email are not posted.', why: 'You received this because you watch this thread.', stop: 'Stop watching this thread' },
-    { subject: 'Your change was published: Clarify the hand height in step 4', heading: 'Your change is live', body: 'coach_sby approved your change to 第十二式 高探马 Gāo tàn mǎ. Thank you for improving OpenWushu.',
-      boxTitle: 'Clarify the hand height in step 4', boxMeta: 'Steps · English · revision r6', boxText: 'Reviewer note: “Clear and well sourced. Thanks!”',
+    { subject: 'Your change was published: Add palm and elbow detail to step 3', heading: 'Your change is live', body: 'coach_sby approved your change to 第二式 右揽雀尾 Yòu lǎn què wěi. Thank you for improving OpenWushu.',
+      boxTitle: 'Add palm and elbow detail to step 3', boxMeta: 'Steps · English · revision r6', boxText: 'Reviewer note: “Clear and well sourced. Thanks!”',
       cta: 'See the movement', small: 'If a reviewer requests changes instead, you get a similar email with their note and a link to edit.', why: 'You received this because you submitted this change.', stop: 'Turn off review emails' },
     { subject: 'You are now a verified contributor', heading: 'Welcome, verified contributor', body: 'Your application was approved. You can now write movement descriptions, upload demonstration videos and mark video timings.',
       badge: 'Verified · Judge / coach', boxText: 'Your documents have been deleted. We keep only your badge, its type and the date it was checked.',
@@ -88,11 +88,11 @@ var EMAILS = {
   id: [
     { subject: 'Verifikasi email Anda untuk OpenWushu', heading: 'Konfirmasi email Anda', body: 'Halo Ana, selamat datang di OpenWushu. Konfirmasi bahwa ini email Anda untuk mulai ikut berdiskusi dan melaporkan masalah.',
       cta: 'Verifikasi email', small: 'Tautan ini berlaku 24 jam. Jika Anda tidak mendaftar, abaikan email ini.', why: 'Anda menerima email ini karena seseorang mendaftar dengan alamat ini.' },
-    { subject: 'coach_sby membalas: ' + THREAD_TITLE, heading: 'Balasan baru di diskusi yang Anda ikuti', body: 'coach_sby membalas diskusi tentang 第十二式 高探马 Gāo tàn mǎ.',
+    { subject: 'coach_sby membalas: ' + THREAD_TITLE, heading: 'Balasan baru di diskusi yang Anda ikuti', body: 'coach_sby membalas diskusi tentang 第二式 右揽雀尾 Yòu lǎn què wěi.',
       badge: 'Bahasa Indonesia', boxTitle: THREAD_TITLE, boxMeta: 'coach_sby · Pengelola · Juri / pelatih', boxText: REPLY,
       cta: 'Lihat diskusi', small: 'Balas di OpenWushu. Balasan ke email ini tidak diposting.', why: 'Anda menerima email ini karena mengikuti diskusi ini.', stop: 'Berhenti mengikuti diskusi ini' },
-    { subject: 'Perubahan Anda diterbitkan: Perjelas tinggi tangan di langkah 4', heading: 'Perubahan Anda sudah tayang', body: 'coach_sby menyetujui perubahan Anda pada 第十二式 高探马 Gāo tàn mǎ. Terima kasih telah memperbaiki OpenWushu.',
-      boxTitle: 'Perjelas tinggi tangan di langkah 4', boxMeta: 'Langkah · English · revisi r6', boxText: 'Catatan peninjau: “Jelas dan sumbernya lengkap. Terima kasih!”',
+    { subject: 'Perubahan Anda diterbitkan: Tambahkan detail telapak dan siku di langkah 3', heading: 'Perubahan Anda sudah tayang', body: 'coach_sby menyetujui perubahan Anda pada 第二式 右揽雀尾 Yòu lǎn què wěi. Terima kasih telah memperbaiki OpenWushu.',
+      boxTitle: 'Tambahkan detail telapak dan siku di langkah 3', boxMeta: 'Langkah · English · revisi r6', boxText: 'Catatan peninjau: “Jelas dan sumbernya lengkap. Terima kasih!”',
       cta: 'Lihat gerakan', small: 'Jika peninjau meminta perubahan, Anda menerima email serupa berisi catatannya dan tautan untuk menyunting.', why: 'Anda menerima email ini karena mengirim perubahan ini.', stop: 'Matikan email tinjauan' },
     { subject: 'Anda sekarang kontributor terverifikasi', heading: 'Selamat datang, kontributor terverifikasi', body: 'Pengajuan Anda disetujui. Sekarang Anda dapat menulis deskripsi gerakan, mengunggah video peragaan, dan menandai waktu video.',
       badge: 'Terverifikasi · Juri / pelatih', boxText: 'Dokumen Anda telah dihapus. Kami hanya menyimpan lencana, jenisnya, dan tanggal pemeriksaan.',
