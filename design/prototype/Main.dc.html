@@ -1,0 +1,1196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OpenWushu prototype</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;family=Noto+Serif+SC:wght@600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1766C7}a:hover{color:#0F4F9E}
+.ow-btn{font:inherit;border:0;background:none;color:inherit;cursor:pointer;padding:0;text-align:left}
+.ow-btn:focus-visible,.ow-in:focus-visible{outline:2px solid #1766C7;outline-offset:2px}
+.ow-in{font:inherit;box-sizing:border-box;width:100%}
+.ow-row:hover{filter:brightness(0.97)}
+</style>
+</helmet>
+<div style="min-height: 100vh; display: flex; flex-direction: column; background: {{t.bg}}; color: {{t.ink}}; font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif; font-size: 15px; line-height: 1.5">
+
+<header style="border-bottom: 1px solid {{t.line}}; background: {{t.surface}}">
+<div style="max-width: 1280px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px">
+<button type="button" class="ow-btn" onClick="{{goLibrary}}" aria-label="OpenWushu home" style="display: flex; align-items: center; gap: 10px; min-height: 44px">
+<span style="display: flex; width: 34px; height: 34px; border-radius: 8px; align-items: center; justify-content: center; background: {{t.accent}}; color: {{t.onAccent}}; font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">武</span>
+<span style="font-weight: 700; font-size: 18px; letter-spacing: -0.01em">OpenWushu</span>
+</button>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px; flex: 1 1 auto">
+<button type="button" class="ow-btn" onClick="{{goLibrary}}" style="min-height: 44px; padding: 0 14px; border-radius: 8px; font-weight: 500; background: {{navLibBg}}; color: {{navLibFg}}">{{s.library}}</button>
+<button type="button" class="ow-btn" onClick="{{goDiscuss}}" style="min-height: 44px; padding: 0 14px; border-radius: 8px; font-weight: 500; background: {{navDisBg}}; color: {{navDisFg}}">{{s.discussions}}</button>
+<button type="button" class="ow-btn" onClick="{{goContribute}}" style="min-height: 44px; padding: 0 14px; border-radius: 8px; font-weight: 500; background: {{navConBg}}; color: {{navConFg}}">{{s.contribute}}</button>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px">
+<span style="font-size: 13px; color: {{t.muted}}">中文 + {{s.translation}}</span>
+<div role="group" aria-label="Translation language" style="display: flex; padding: 3px; border-radius: 10px; background: {{t.chip}}">
+<button type="button" class="ow-btn" aria-pressed="{{isEn}}" onClick="{{setEn}}" style="min-height: 38px; min-width: 48px; padding: 0 12px; border-radius: 8px; font-weight: 600; font-size: 14px; text-align: center; background: {{enBg}}; color: {{enFg}}">EN</button>
+<button type="button" class="ow-btn" aria-pressed="{{isId}}" onClick="{{setId}}" style="min-height: 38px; min-width: 48px; padding: 0 12px; border-radius: 8px; font-weight: 600; font-size: 14px; text-align: center; background: {{idBg}}; color: {{idFg}}">ID</button>
+</div>
+</div>
+<sc-if value="{{signedOut}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; gap: 6px">
+<button type="button" class="ow-btn" onClick="{{goSignIn}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; font-weight: 600; font-size: 14px">{{s.signIn}}</button>
+<button type="button" class="ow-btn" onClick="{{goSignUp}}" style="min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.signUp}}</button>
+</div>
+</sc-if>
+<sc-if value="{{signedIn}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; align-items: center; gap: 10px">
+<span aria-hidden="true" style="width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{userInitial}}</span>
+<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-weight: 600; font-size: 14px">{{userName}}</span><span style="font-size: 12px; color: {{t.muted}}">{{s.member}}</span></span>
+<button type="button" class="ow-btn" onClick="{{signOut}}" style="min-height: 44px; padding: 0 12px; border-radius: 10px; font-size: 14px; font-weight: 600; color: {{t.muted}}">{{s.signOut}}</button>
+</div>
+</sc-if>
+</div>
+</header>
+
+<sc-if value="{{isAuth}}" hint-placeholder-val="{{ false }}">
+<main style="max-width: 1080px; margin: 0 auto; padding: 40px 24px 64px">
+<div style="display: flex; flex-wrap: wrap; border-radius: 20px; overflow: hidden; border: 1px solid {{t.line}}; background: {{t.surface}}">
+<section style="flex: 1 1 340px; padding: 40px; display: flex; flex-direction: column; gap: 20px; background: {{t.accent}}; color: {{t.onAccent}}">
+<span style="display: flex; width: 56px; height: 56px; border-radius: 14px; align-items: center; justify-content: center; background: {{t.onAccent}}; color: {{t.accent}}; font-family: 'Noto Serif SC', serif; font-size: 32px; font-weight: 700">武</span>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<h2 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 34px; line-height: 1.2">规定套路</h2>
+<p style="margin: 0; font-size: 16px; font-weight: 500">Guīdìng tàolù · OpenWushu</p>
+</div>
+<p style="margin: 0; font-size: 15px">{{s.panelLead}}</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 14px">
+<li style="display: flex; gap: 10px; align-items: flex-start"><span style="flex: none; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; background: rgba(6,21,43,0.12)">1</span><span>{{s.rVisitor}}</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><span style="flex: none; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; background: rgba(6,21,43,0.12)">2</span><span>{{s.rMember}}</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start"><span style="flex: none; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; background: rgba(6,21,43,0.12)">3</span><span>{{s.rContrib}}</span></li>
+</ul>
+</section>
+
+<section style="flex: 1 1 400px; min-width: 0; padding: 40px; display: flex; flex-direction: column; gap: 18px">
+<sc-if value="{{hasAuthMsg}}" hint-placeholder-val="{{ false }}">
+<p role="status" style="margin: 0; padding: 12px 14px; border-radius: 10px; font-size: 14px; font-weight: 500; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{authMsg}}</p>
+</sc-if>
+
+<sc-if value="{{isSignIn}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<h1 style="margin: 0; font-size: 28px">{{s.siTitle}}</h1>
+<p style="margin: 0; color: {{t.muted}}">{{s.siLead}}</p>
+</div>
+<button type="button" class="ow-btn" onClick="{{googleSignIn}}" style="min-height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 600; border: 1px solid {{t.line2}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="9" r="7"></circle><path d="M9 9 H15"></path></svg>{{s.google}}</button>
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 12px; font-size: 13px; color: {{t.muted}}"><span style="flex: 1; height: 1px; background: {{t.line}}"></span>{{s.or}}<span style="flex: 1; height: 1px; background: {{t.line}}"></span></div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-siemail" style="font-size: 13px; font-weight: 600">{{s.email}}</label>
+<input id="ow-siemail" class="ow-in" type="email" autocomplete="email" value="{{siEmail}}" onChange="{{onSiEmail}}" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+<label for="ow-sipw" style="font-size: 13px; font-weight: 600">{{s.password}}</label>
+<a href="#ow-sipw" style="font-size: 13px">{{s.forgot}}</a>
+</div>
+<div style="display: flex; gap: 6px">
+<input id="ow-sipw" class="ow-in" type="{{pwType}}" autocomplete="current-password" style="flex: 1 1 auto; min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<button type="button" class="ow-btn" onClick="{{togglePw}}" aria-pressed="{{showPw}}" style="flex: none; min-height: 48px; padding: 0 14px; border-radius: 10px; font-size: 14px; font-weight: 600; background: {{t.chip}}">{{pwBtn}}</button>
+</div>
+</div>
+<sc-if value="{{hasAuthErr}}" hint-placeholder-val="{{ false }}"><p role="alert" style="margin: 0; font-size: 14px; color: {{t.red}}">{{authErr}}</p></sc-if>
+<button type="button" class="ow-btn" onClick="{{siSubmit}}" style="min-height: 50px; border-radius: 10px; text-align: center; font-weight: 700; background: {{t.accent}}; color: {{t.onAccent}}">{{s.signIn}}</button>
+<p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{s.noAccount}} <button type="button" class="ow-btn" onClick="{{goSignUp}}" style="min-height: 32px; font-weight: 600; text-decoration: underline; color: {{t.accentInk}}">{{s.createAcc}}</button></p>
+</sc-if>
+
+<sc-if value="{{isSignUp}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<h1 style="margin: 0; font-size: 28px">{{s.suTitle}}</h1>
+<p style="margin: 0; color: {{t.muted}}">{{s.suLead}}</p>
+</div>
+<button type="button" class="ow-btn" onClick="{{googleSignIn}}" style="min-height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 600; border: 1px solid {{t.line2}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="9" r="7"></circle><path d="M9 9 H15"></path></svg>{{s.google}}</button>
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 12px; font-size: 13px; color: {{t.muted}}"><span style="flex: 1; height: 1px; background: {{t.line}}"></span>{{s.or}}<span style="flex: 1; height: 1px; background: {{t.line}}"></span></div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-suname" style="font-size: 13px; font-weight: 600">{{s.name}}</label>
+<input id="ow-suname" class="ow-in" type="text" autocomplete="nickname" value="{{suName}}" onChange="{{onSuName}}" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-suemail" style="font-size: 13px; font-weight: 600">{{s.email}}</label>
+<input id="ow-suemail" class="ow-in" type="email" autocomplete="email" value="{{suEmail}}" onChange="{{onSuEmail}}" style="min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-supw" style="font-size: 13px; font-weight: 600">{{s.password}}</label>
+<div style="display: flex; gap: 6px">
+<input id="ow-supw" class="ow-in" type="{{pwType}}" autocomplete="new-password" aria-describedby="ow-supw-hint" style="flex: 1 1 auto; min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<button type="button" class="ow-btn" onClick="{{togglePw}}" aria-pressed="{{showPw}}" style="flex: none; min-height: 48px; padding: 0 14px; border-radius: 10px; font-size: 14px; font-weight: 600; background: {{t.chip}}">{{pwBtn}}</button>
+</div>
+<span id="ow-supw-hint" style="font-size: 12px; color: {{t.muted}}">{{s.pwHint}}</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 6px">
+<span id="ow-sulang" style="font-size: 13px; font-weight: 600">{{s.prefLang}}</span>
+<div role="group" aria-labelledby="ow-sulang" style="display: flex; padding: 3px; border-radius: 10px; align-self: flex-start; background: {{t.chip}}">
+<button type="button" class="ow-btn" aria-pressed="{{isEn}}" onClick="{{setEn}}" style="min-height: 40px; padding: 0 12px; border-radius: 8px; font-size: 14px; font-weight: 600; background: {{enBg}}; color: {{enFg}}">English</button>
+<button type="button" class="ow-btn" aria-pressed="{{isId}}" onClick="{{setId}}" style="min-height: 40px; padding: 0 12px; border-radius: 8px; font-size: 14px; font-weight: 600; background: {{idBg}}; color: {{idFg}}">Bahasa Indonesia</button>
+</div>
+</div>
+<div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-suclub" style="font-size: 13px; font-weight: 600">{{s.club}}</label>
+<input id="ow-suclub" class="ow-in" type="text" style="min-height: 46px; padding: 0 14px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+</div>
+<label style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px"><input type="checkbox" checked="{{suAgree}}" onChange="{{onSuAgree}}" style="flex: none; margin-top: 2px; width: 18px; height: 18px; accent-color: {{t.accent}}"><span>{{s.agree}}</span></label>
+<sc-if value="{{hasAuthErr}}" hint-placeholder-val="{{ false }}"><p role="alert" style="margin: 0; font-size: 14px; color: {{t.red}}">{{authErr}}</p></sc-if>
+<button type="button" class="ow-btn" onClick="{{suSubmit}}" style="min-height: 50px; border-radius: 10px; text-align: center; font-weight: 700; background: {{t.accent}}; color: {{t.onAccent}}">{{s.create}}</button>
+<p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{s.haveAcc}} <button type="button" class="ow-btn" onClick="{{goSignIn}}" style="min-height: 32px; font-weight: 600; text-decoration: underline; color: {{t.accentInk}}">{{s.signIn}}</button></p>
+</sc-if>
+
+<sc-if value="{{isVerify}}" hint-placeholder-val="{{ false }}">
+<span aria-hidden="true" style="display: flex; width: 56px; height: 56px; border-radius: 50%; align-items: center; justify-content: center; background: {{t.accentSoft}}; color: {{t.accentInk}}"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="6" width="20" height="14" rx="2"></rect><path d="M3 8 L13 15 L23 8"></path></svg></span>
+<h1 style="margin: 0; font-size: 28px">{{s.verifyTitle}}</h1>
+<p style="margin: 0; color: {{t.muted}}">{{s.verifyBody}} <span style="font-weight: 600; color: {{t.ink}}">{{suEmail}}</span>{{s.verifyBody2}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" class="ow-btn" onClick="{{verifyDemo}}" style="min-height: 48px; padding: 0 18px; border-radius: 10px; font-weight: 700; background: {{t.accent}}; color: {{t.onAccent}}">{{s.verifiedDemo}}</button>
+<button type="button" class="ow-btn" style="min-height: 48px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.resend}}</button>
+</div>
+</sc-if>
+</section>
+</div>
+</main>
+</sc-if>
+
+<sc-if value="{{isLibrary}}" hint-placeholder-val="{{ false }}">
+<main style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 40px">
+<section style="display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-end">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 6px">
+<h1 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 52px; line-height: 1.15; font-weight: 700">规定套路</h1>
+<p style="margin: 0; font-size: 18px; color: {{t.muted}}">Guīdìng tàolù · <span style="color: {{t.ink}}; font-weight: 600">{{s.libTitle}}</span></p>
+<p style="margin: 8px 0 0; max-width: 560px; color: {{t.muted}}">{{s.libLead}}</p>
+</div>
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-search" style="font-size: 13px; font-weight: 600">{{s.search}}</label>
+<input id="ow-search" class="ow-in" type="search" value="{{q}}" onChange="{{onSearch}}" placeholder="{{s.searchPh}}" style="min-height: 48px; padding: 0 16px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+</section>
+
+<sc-if value="{{hasQuery}}" hint-placeholder-val="{{ false }}">
+<section aria-live="polite" style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 14px; font-weight: 600; color: {{t.muted}}">{{s.results}} · {{resultCount}}</h2>
+<sc-if value="{{noResults}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; color: {{t.muted}}">{{s.noResults}}</p>
+</sc-if>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px">
+<sc-for list="{{results}}" as="r" hint-placeholder-count="2">
+<button type="button" class="ow-btn ow-row" onClick="{{r.pick}}" style="display: flex; gap: 12px; align-items: center; min-height: 56px; padding: 10px 14px; border-radius: 10px; border: 1px solid {{t.line}}; background: {{t.surface}}">
+<span style="font-size: 13px; font-weight: 700; color: {{t.accentInk}}; min-width: 22px">{{r.num}}</span>
+<span style="display: flex; flex-direction: column">
+<span style="font-family: 'Noto Serif SC', serif; font-weight: 600; font-size: 17px">{{r.zh}} <span style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 14px; color: {{t.muted}}">{{r.py}}</span></span>
+<span style="font-size: 13px; color: {{t.muted}}">{{r.tr}} · 24式</span>
+</span>
+</button>
+</sc-for>
+</div>
+</section>
+</sc-if>
+
+<section style="display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap"><span style="font-family: 'Noto Serif SC', serif; font-size: 26px">太极拳</span><span style="font-size: 15px; font-weight: 400; color: {{t.muted}}">Tàijíquán · {{s.taiji}}</span></h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px">
+<button type="button" class="ow-btn ow-row" onClick="{{openRoutine}}" style="display: flex; flex-direction: column; border-radius: 14px; overflow: hidden; border: 1px solid {{t.line}}; background: {{t.surface}}">
+<span style="position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: {{t.video}}; color: #F2F6FC">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 64px; font-weight: 700; letter-spacing: 0.04em">廿四</span>
+<span style="position: absolute; left: 12px; bottom: 12px; display: flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 99px; background: rgba(255,255,255,0.14); font-size: 12px; font-weight: 600"><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1 L9 5 L2 9 Z" fill="currentColor"></path></svg>5:10</span>
+</span>
+<span style="display: flex; flex-direction: column; gap: 2px; padding: 16px 18px 18px">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">二十四式简化太极拳</span>
+<span style="font-size: 14px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán</span>
+<span style="font-size: 14px; font-weight: 500">{{s.r24}}</span>
+<span style="margin-top: 10px; font-size: 13px; color: {{t.muted}}">24 {{s.moves}} · 3 {{s.threads}}</span>
+</span>
+</button>
+<div style="display: flex; flex-direction: column; border-radius: 14px; overflow: hidden; border: 1px dashed {{t.line2}}; background: {{t.surface}}">
+<div style="display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: {{t.chip}}; color: {{t.muted}}">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 64px; font-weight: 700">四二</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px; padding: 16px 18px 18px">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">四十二式太极拳</span>
+<span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíquán</span>
+<span style="font-size: 14px; font-weight: 500">{{s.r42}}</span>
+<span style="margin-top: 10px; align-self: flex-start; padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.inProgress}}</span>
+</div>
+</div>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">长拳</span>
+<span style="font-size: 14px; color: {{t.muted}}">Chángquán · {{s.changquan}}</span>
+<span style="font-size: 13px; color: {{t.muted}}">{{s.comingSoon}}</span>
+</div>
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">南拳</span>
+<span style="font-size: 14px; color: {{t.muted}}">Nánquán · {{s.nanquan}}</span>
+<span style="font-size: 13px; color: {{t.muted}}">{{s.comingSoon}}</span>
+</div>
+<div style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">器械</span>
+<span style="font-size: 14px; color: {{t.muted}}">Qìxiè · {{s.weapons}}</span>
+<span style="font-size: 13px; color: {{t.muted}}">{{s.comingSoon}}</span>
+</div>
+</section>
+</main>
+</sc-if>
+
+<sc-if value="{{isRoutine}}" hint-placeholder-val="{{ true }}">
+<main style="max-width: 1280px; margin: 0 auto; padding: 20px 24px 64px; display: flex; flex-direction: column; gap: 20px">
+<nav aria-label="Breadcrumb" style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; color: {{t.muted}}">
+<button type="button" class="ow-btn" onClick="{{goLibrary}}" style="min-height: 32px; text-decoration: underline">{{s.library}}</button>
+<span aria-hidden="true">/</span><span>太极拳 {{s.taiji}}</span><span aria-hidden="true">/</span><span style="color: {{t.ink}}">24式</span>
+</nav>
+
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h1 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 36px; line-height: 1.2; font-weight: 700">二十四式简化太极拳</h1>
+<p style="margin: 0; font-size: 16px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán · <span style="color: {{t.ink}}; font-weight: 600">{{s.r24}}</span></p>
+<p style="margin: 4px 0 0; font-size: 13px; color: {{t.muted}}">24 {{s.moves}} · 5:10 · {{s.std}}</p>
+</div>
+<div role="tablist" aria-label="Routine sections" style="display: flex; gap: 4px; padding: 4px; border-radius: 12px; background: {{t.chip}}">
+<button type="button" role="tab" aria-selected="{{isLearn}}" class="ow-btn" onClick="{{tabLearn}}" style="min-height: 40px; padding: 0 16px; border-radius: 9px; font-weight: 600; background: {{learnBg}}; color: {{learnFg}}">学习 · {{s.learn}}</button>
+<button type="button" role="tab" aria-selected="{{isDiscuss}}" class="ow-btn" onClick="{{tabDiscuss}}" style="min-height: 40px; padding: 0 16px; border-radius: 9px; font-weight: 600; background: {{discBg}}; color: {{discFg}}">讨论 · {{s.discussion}} ({{threadTotal}})</button>
+</div>
+</div>
+
+<sc-if value="{{isLearn}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section aria-label="Video" style="display: flex; flex-direction: column; gap: 10px; padding: 12px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<div style="position: relative; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: {{t.video}}; display: flex; align-items: center; justify-content: center">
+<span style="position: absolute; left: 14px; top: 14px; padding: 4px 10px; border-radius: 99px; background: rgba(255,255,255,0.12); color: #DCE6F5; font-size: 12px; font-weight: 500">{{s.sampleVideo}}</span>
+<span style="position: absolute; right: 14px; top: 14px; padding: 4px 10px; border-radius: 99px; background: rgba(0,0,0,0.35); color: #F2F6FC; font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums">{{curTime}} / 5:10</span>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; padding: 0 24px">
+<span style="font-size: 13px; letter-spacing: 0.12em; color: #A9BAD3; font-weight: 600">{{active.num}} / 24</span>
+<span style="font-family: 'Noto Serif SC', serif; font-size: 56px; line-height: 1.15; font-weight: 700; color: #FFFFFF">{{active.zh}}</span>
+<span style="font-size: 20px; color: #DCE6F5">{{active.py}}</span>
+<span style="font-size: 15px; color: #A9BAD3">{{active.tr}}</span>
+</div>
+<button type="button" class="ow-btn" onClick="{{togglePlay}}" aria-label="{{playLabel}}" style="position: absolute; left: 14px; bottom: 14px; width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: {{t.accent}}; color: {{t.onAccent}}">
+<sc-if value="{{playing}}" hint-placeholder-val="{{ false }}"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="3" width="4" height="14" rx="1" fill="currentColor"></rect><rect x="12" y="3" width="4" height="14" rx="1" fill="currentColor"></rect></svg></sc-if>
+<sc-if value="{{paused}}" hint-placeholder-val="{{ true }}"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3 L17 10 L6 17 Z" fill="currentColor"></path></svg></sc-if>
+</button>
+</div>
+
+<div style="position: relative">
+<div role="group" aria-label="Movement timeline" style="display: flex; gap: 2px; height: 36px">
+<sc-for list="{{moves}}" as="m" hint-placeholder-count="24">
+<button type="button" class="ow-btn" onClick="{{m.seek}}" aria-label="{{m.aria}}" title="{{m.aria}}" style="flex: {{m.dur}} 1 0px; min-width: 0; overflow: hidden; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; font-variant-numeric: tabular-nums; background: {{m.segBg}}; color: {{m.segFg}}">{{m.n}}</button>
+</sc-for>
+</div>
+<div aria-hidden="true" style="position: absolute; top: -4px; bottom: -4px; width: 3px; margin-left: -1px; border-radius: 2px; pointer-events: none; left: {{playPct}}; background: {{t.ink}}"></div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<button type="button" class="ow-btn" onClick="{{prevMove}}" aria-label="{{s.prev}}" style="width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: {{t.chip}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3 V15"></path><path d="M14 3 L7 9 L14 15"></path></svg></button>
+<button type="button" class="ow-btn" onClick="{{nextMove}}" aria-label="{{s.next}}" style="width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: {{t.chip}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3 V15"></path><path d="M4 3 L11 9 L4 15"></path></svg></button>
+<button type="button" class="ow-btn" onClick="{{toggleLoop}}" aria-pressed="{{loop}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; background: {{loopBg}}; color: {{loopFg}}"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9 A6 6 0 0 1 14 5.5"></path><path d="M14 2 V6 H10"></path><path d="M15 9 A6 6 0 0 1 4 12.5"></path><path d="M4 16 V12 H8"></path></svg>{{s.loop}}</button>
+<span style="flex: 1 1 auto"></span>
+<span id="ow-speed" style="font-size: 13px; color: {{t.muted}}">{{s.speed}}</span>
+<div role="group" aria-labelledby="ow-speed" style="display: flex; padding: 3px; border-radius: 10px; background: {{t.chip}}">
+<sc-for list="{{speeds}}" as="sp" hint-placeholder-count="3">
+<button type="button" class="ow-btn" onClick="{{sp.pick}}" aria-pressed="{{sp.on}}" style="min-height: 38px; min-width: 50px; padding: 0 8px; border-radius: 8px; font-size: 13px; font-weight: 600; text-align: center; background: {{sp.bg}}; color: {{sp.fg}}">{{sp.label}}</button>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section aria-label="Carpet path" style="display: flex; flex-direction: column; gap: 12px; padding: 16px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px">
+<h2 style="margin: 0; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap"><span style="font-family: 'Noto Serif SC', serif; font-size: 20px">场地路线</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">Chǎngdì lùxiàn · {{s.carpet}} · 14 m × 8 m</span></h2>
+<span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.illustrative}}</span>
+</div>
+<div style="position: relative; aspect-ratio: 14 / 8; border-radius: 8px; overflow: hidden">
+<svg viewBox="0 0 1400 800" width="100%" height="100%" style="position: absolute; inset: 0; display: block" role="img" aria-label="{{carpetAria}}">
+<rect x="0" y="0" width="1400" height="800" fill="{{t.carpet}}"></rect>
+<path d="{{gridD}}" fill="none" stroke="{{t.grid}}" stroke-width="2"></path>
+<rect x="3" y="3" width="1394" height="794" fill="none" stroke="{{t.line2}}" stroke-width="6"></rect>
+<text x="1360" y="50" text-anchor="middle" font-size="30" font-weight="700" fill="{{t.muted}}">N</text>
+<path d="M1360 60 L1360 110 M1348 74 L1360 60 L1372 74" fill="none" stroke="{{t.muted}}" stroke-width="4" stroke-linecap="round"></path>
+<text x="700" y="780" text-anchor="middle" font-size="26" fill="{{t.muted}}">裁判席 · {{s.judges}}</text>
+<path d="{{fullD}}" fill="none" stroke="{{t.rest}}" stroke-width="6" stroke-dasharray="14 12" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="{{doneD}}" fill="none" stroke="{{t.accentMid}}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="{{activeD}}" fill="none" stroke="{{t.accent}}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"></path>
+<rect x="{{startBox}}" y="{{startBoxY}}" width="28" height="28" rx="4" fill="{{t.ink}}"></rect>
+<circle cx="{{dotX}}" cy="{{dotY}}" r="34" fill="{{t.accent}}" opacity="0.22"></circle>
+<circle cx="{{dotX}}" cy="{{dotY}}" r="16" fill="{{t.accent}}" stroke="#FFFFFF" stroke-width="5"></circle>
+</svg>
+<sc-for list="{{pts}}" as="p" hint-placeholder-count="24">
+<span aria-hidden="true" style="position: absolute; width: 22px; height: 22px; margin-left: -11px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; pointer-events: none; left: {{p.left}}; top: {{p.top}}; margin-top: {{p.dy}}; background: {{p.bg}}; color: {{p.fg}}; border: 1px solid {{p.bd}}">{{p.n}}</span>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: {{t.muted}}">
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 12px; height: 12px; border-radius: 2px; background: {{t.ink}}"></span>{{s.legendStart}}</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 22px; height: 5px; border-radius: 3px; background: {{t.accentMid}}"></span>{{s.legendDone}}</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 22px; height: 7px; border-radius: 4px; background: {{t.accent}}"></span>{{s.legendNow}} · {{active.num}} {{active.zh}}</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 22px; height: 0; border-top: 3px dashed {{t.rest}}"></span>{{s.legendRest}}</span>
+</div>
+</section>
+</div>
+
+<aside style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}; overflow: hidden">
+<sc-if value="{{listMode}}" hint-placeholder-val="{{ false }}">
+<div style="padding: 16px 16px 10px; border-bottom: 1px solid {{t.line}}">
+<h2 style="margin: 0; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Noto Serif SC', serif; font-size: 20px">动作</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">Dòngzuò · {{s.movements}} (24)</span></h2>
+</div>
+<ol style="list-style: none; margin: 0; padding: 6px; max-height: 860px; overflow-y: auto">
+<sc-for list="{{moves}}" as="m" hint-placeholder-count="24">
+<li>
+<button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-current="{{m.isActive}}" style="width: 100%; display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 8px 10px; border-radius: 10px; background: {{m.rowBg}}">
+<span style="flex: none; width: 30px; height: 30px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; background: {{m.numBg}}; color: {{m.numFg}}">{{m.num}}</span>
+<span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 16px; font-weight: 600; line-height: 1.3">{{m.zh}}</span>
+<span style="font-size: 12px; color: {{t.muted}}">{{m.py}}</span>
+<span style="font-size: 13px">{{m.tr}}</span>
+</span>
+<span style="flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; font-size: 12px; color: {{t.muted}}; font-variant-numeric: tabular-nums">{{m.startTxt}}<sc-if value="{{m.hasThreads}}" hint-placeholder-val="{{ false }}"><span style="padding: 0 7px; border-radius: 99px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{m.threadCount}}</span></sc-if></span>
+</button>
+</li>
+</sc-for>
+</ol>
+</sc-if>
+
+<sc-if value="{{detailOpen}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; align-items: center; gap: 6px; padding: 10px; border-bottom: 1px solid {{t.line}}">
+<button type="button" class="ow-btn" onClick="{{closeDetail}}" style="min-height: 44px; padding: 0 12px; border-radius: 10px; display: flex; align-items: center; gap: 6px; font-weight: 600; font-size: 14px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 L5 8 L10 13"></path></svg>{{s.allMoves}}</button>
+<span style="flex: 1 1 auto"></span>
+<button type="button" class="ow-btn" onClick="{{prevDetail}}" aria-label="{{s.prev}}" style="width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: {{t.chip}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 L5 8 L10 13"></path></svg></button>
+<button type="button" class="ow-btn" onClick="{{nextDetail}}" aria-label="{{s.next}}" style="width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: {{t.chip}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 L11 8 L6 13"></path></svg></button>
+</div>
+<div style="display: flex; flex-direction: column; gap: 18px; padding: 18px 20px 22px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: {{t.accentInk}}">{{active.num}} / 24 · {{active.startTxt}}–{{active.endTxt}}</span>
+<h2 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 40px; line-height: 1.2; font-weight: 700">{{active.zh}}</h2>
+<span style="font-size: 18px; color: {{t.muted}}">{{active.py}}</span>
+<span style="font-size: 16px; font-weight: 600">{{active.tr}}</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" class="ow-btn" onClick="{{playThis}}" style="min-height: 44px; padding: 0 16px; border-radius: 10px; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5 L12 7 L3 12.5 Z" fill="currentColor"></path></svg>{{s.playThis}}</button>
+<button type="button" class="ow-btn" onClick="{{toggleLoop}}" aria-pressed="{{loop}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{loopBg}}; color: {{loopFg}}">{{s.loop}}</button>
+</div>
+
+<sc-if value="{{hasDetail}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center">
+<span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.draft}}</span>
+<span style="font-size: 13px; color: {{t.muted}}">{{s.facing}}: <span style="color: {{t.ink}}; font-weight: 600">{{detail.facing}}</span></span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: 14px; font-weight: 700">动作过程 · {{s.steps}}</h3>
+<ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px">
+<sc-for list="{{detail.steps}}" as="st" hint-placeholder-count="4"><li>{{st}}</li></sc-for>
+</ol>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: 14px; font-weight: 700">要点 · {{s.keyPoints}}</h3>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px">
+<sc-for list="{{detail.keys}}" as="k" hint-placeholder-count="3"><li>{{k}}</li></sc-for>
+</ul>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: 14px; font-weight: 700">易犯错误 · {{s.mistakes}}</h3>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px">
+<sc-for list="{{detail.mistakes}}" as="k" hint-placeholder-count="3"><li>{{k}}</li></sc-for>
+</ul>
+</div>
+<p style="margin: 0; font-size: 13px; color: {{t.muted}}">{{s.edited}}</p>
+</sc-if>
+
+<sc-if value="{{noDetail}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 18px; border-radius: 12px; border: 1px dashed {{t.line2}}">
+<h3 style="margin: 0; font-size: 15px; font-weight: 700">{{s.pendingTitle}}</h3>
+<p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{s.pendingBody}}</p>
+<button type="button" class="ow-btn" onClick="{{writeIt}}" style="align-self: flex-start; margin-top: 4px; min-height: 44px; padding: 0 14px; border-radius: 10px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}">{{s.writeIt}}</button>
+</div>
+</sc-if>
+
+<button type="button" class="ow-btn" onClick="{{tabDiscussMove}}" style="min-height: 48px; padding: 0 14px; border-radius: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 14px; background: {{t.chip}}">
+<span><span style="font-weight: 700">{{active.threadCount}}</span> {{s.threadsOn}}</span>
+<span style="display: flex; align-items: center; gap: 6px; font-weight: 600; color: {{t.accentInk}}">{{s.discuss}}<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 L11 8 L6 13"></path></svg></span>
+</button>
+</div>
+</sc-if>
+</aside>
+</div>
+</sc-if>
+
+<sc-if value="{{isDiscuss}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+
+<sc-if value="{{reportOpen}}" hint-placeholder-val="{{ false }}">
+<section aria-label="{{s.formTitle}}" style="display: flex; flex-direction: column; gap: 16px; padding: 20px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line2}}">
+<sc-if value="{{notSubmitted}}" hint-placeholder-val="{{ true }}">
+<h2 style="margin: 0; font-size: 20px">{{s.formTitle}}</h2>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span id="ow-ftype" style="font-size: 13px; font-weight: 600">{{s.fType}}</span>
+<div role="group" aria-labelledby="ow-ftype" style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{typeOpts}}" as="o" hint-placeholder-count="4">
+<button type="button" class="ow-btn" onClick="{{o.pick}}" aria-pressed="{{o.on}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{o.bg}}; color: {{o.fg}}; border: 1px solid {{o.bd}}">{{o.label}}</button>
+</sc-for>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 2 1 260px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-ftarget" style="font-size: 13px; font-weight: 600">{{s.fTarget}}</label>
+<select id="ow-ftarget" class="ow-in" value="{{formMove}}" onChange="{{onFormMove}}" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<sc-for list="{{targetOpts}}" as="o" hint-placeholder-count="25"><option value="{{o.v}}">{{o.label}}</option></sc-for>
+</select>
+</div>
+<div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-ffield" style="font-size: 13px; font-weight: 600">{{s.fField}}</label>
+<select id="ow-ffield" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<sc-for list="{{fieldOpts}}" as="o" hint-placeholder-count="5"><option>{{o}}</option></sc-for>
+</select>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-fsum" style="font-size: 13px; font-weight: 600">{{s.fSummary}}</label>
+<input id="ow-fsum" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-fdet" style="font-size: 13px; font-weight: 600">{{s.fDetails}}</label>
+<textarea id="ow-fdet" class="ow-in" rows="4" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-fsrc" style="font-size: 13px; font-weight: 600">{{s.fSource}}</label>
+<input id="ow-fsrc" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<label style="display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px"><input type="checkbox" defaultChecked="{{ true }}" style="width: 18px; height: 18px; accent-color: {{t.accentInk}}">{{s.fNotify}}</label>
+<p style="margin: 0; font-size: 13px; color: {{t.muted}}">{{s.notifyNote}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" class="ow-btn" onClick="{{submit}}" style="min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.submit}}</button>
+<button type="button" class="ow-btn" onClick="{{closeReport}}" style="min-height: 46px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.cancel}}</button>
+</div>
+</sc-if>
+<sc-if value="{{submitted}}" hint-placeholder-val="{{ false }}">
+<div role="status" style="display: flex; flex-direction: column; gap: 8px">
+<span style="align-self: flex-start; padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.stOpen}}</span>
+<h2 style="margin: 0; font-size: 20px">{{s.sent}}</h2>
+<p style="margin: 0; color: {{t.muted}}">{{s.sentBody}}</p>
+<button type="button" class="ow-btn" onClick="{{closeReport}}" style="align-self: flex-start; min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.back}}</button>
+</div>
+</sc-if>
+</section>
+</sc-if>
+
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<div role="group" aria-label="Thread filter" style="display: flex; padding: 3px; border-radius: 10px; background: {{t.chip}}">
+<button type="button" class="ow-btn" onClick="{{filterAll}}" aria-pressed="{{fAll}}" style="min-height: 38px; padding: 0 12px; border-radius: 8px; font-size: 14px; font-weight: 600; background: {{fAllBg}}; color: {{fAllFg}}">{{s.allThreads}} ({{threadTotal}})</button>
+<button type="button" class="ow-btn" onClick="{{filterMove}}" aria-pressed="{{fMove}}" style="min-height: 38px; padding: 0 12px; border-radius: 8px; font-size: 14px; font-weight: 600; background: {{fMoveBg}}; color: {{fMoveFg}}">{{active.num}} {{active.zh}} ({{active.threadCount}})</button>
+</div>
+<span style="flex: 1 1 auto"></span>
+<button type="button" class="ow-btn" onClick="{{reportHere}}" style="min-height: 44px; padding: 0 16px; border-radius: 10px; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M8 3 V13 M3 8 H13"></path></svg>{{s.report}}</button>
+</div>
+
+<sc-if value="{{noThreads}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 24px; border-radius: 14px; text-align: center; color: {{t.muted}}; border: 1px dashed {{t.line2}}">{{s.noThreads}}</p>
+</sc-if>
+<sc-for list="{{threads}}" as="th" hint-placeholder-count="3">
+<article style="display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border-radius: 14px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{th.typeBg}}; color: {{th.typeFg}}">{{th.typeLabel}}</span>
+<span style="padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{th.stBg}}; color: {{th.stFg}}">{{th.stLabel}}</span>
+<span style="flex: 1 1 auto"></span>
+<button type="button" class="ow-btn" onClick="{{th.goto}}" style="min-height: 32px; font-size: 13px; text-decoration: underline; color: {{t.muted}}">{{th.target}}</button>
+</div>
+<h3 style="margin: 0; font-size: 17px; line-height: 1.35">{{th.title}}</h3>
+<p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{th.field}} · {{th.replies}} {{s.replies}} · {{th.by}}</p>
+</article>
+</sc-for>
+</div>
+
+<aside style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 18px 20px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<h2 style="margin: 0; font-size: 16px">{{s.howTitle}}</h2>
+<ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px">
+<li>{{s.how1}}</li>
+<li>{{s.how2}}</li>
+<li>{{s.how3}}</li>
+</ol>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 13px; font-weight: 600">Status</span>
+<div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12px; font-weight: 600">
+<span style="padding: 2px 10px; border-radius: 99px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.stOpen}}</span><span aria-hidden="true">→</span>
+<span style="padding: 2px 10px; border-radius: 99px; background: {{t.blue}}; color: #FFFFFF">{{s.stReview}}</span><span aria-hidden="true">→</span>
+<span style="padding: 2px 10px; border-radius: 99px; background: {{t.green}}; color: #FFFFFF">{{s.stAccepted}}</span>
+</div>
+</div>
+</aside>
+</div>
+</sc-if>
+</main>
+</sc-if>
+
+<sc-if value="{{isDiscussions}}" hint-placeholder-val="{{ false }}">
+<main style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 28px">
+<section style="display: flex; flex-direction: column; gap: 6px">
+<h1 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 48px; line-height: 1.15; font-weight: 700">讨论</h1>
+<p style="margin: 0; font-size: 18px; color: {{t.muted}}">Tǎolùn · <span style="color: {{t.ink}}; font-weight: 600">{{s.discussions}}</span></p>
+<p style="margin: 8px 0 0; max-width: 640px; color: {{t.muted}}">{{s.dLead}}</p>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap"><span style="font-family: 'Noto Serif SC', serif; font-size: 24px">太极拳</span><span style="font-size: 15px; font-weight: 400; color: {{t.muted}}">Tàijíquán · {{s.taiji}}</span></h2>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<button type="button" class="ow-btn ow-row" onClick="{{open24Discuss}}" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; padding: 20px 22px; border-radius: 16px; border: 1px solid {{t.line}}; background: {{t.surface}}">
+<span style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">二十四式简化太极拳</span>
+<span style="font-size: 14px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán · <span style="color: {{t.ink}}; font-weight: 500">{{s.r24}}</span></span>
+<span style="margin-top: 8px; font-size: 14px; color: {{t.muted}}">{{s.latest}}: <span style="color: {{t.ink}}; font-weight: 600">{{latestTitle}}</span></span>
+</span>
+<span style="flex: 0 1 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 12px; font-weight: 600">
+<span style="padding: 3px 10px; border-radius: 99px; background: {{t.accent}}; color: {{t.onAccent}}">{{countOpen}} {{s.stOpen}}</span>
+<span style="padding: 3px 10px; border-radius: 99px; background: {{t.blue}}; color: #FFFFFF">{{countReview}} {{s.stReview}}</span>
+<span style="padding: 3px 10px; border-radius: 99px; background: {{t.green}}; color: #FFFFFF">{{countAccepted}} {{s.stAccepted}}</span>
+</span>
+<span style="flex: none; display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{t.chip}}; color: {{t.accentInk}}">{{threadTotal}} {{s.threads}}<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 L11 8 L6 13"></path></svg></span>
+</button>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; padding: 20px 22px; border-radius: 16px; border: 1px dashed {{t.line2}}; background: {{t.surface}}">
+<span style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">四十二式太极拳</span>
+<span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíquán · <span style="color: {{t.ink}}; font-weight: 500">{{s.r42}}</span></span>
+<span style="margin-top: 8px; font-size: 14px; color: {{t.muted}}">{{s.dPending}}</span>
+</span>
+<span style="flex: none; padding: 3px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.inProgress}}</span>
+</div>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">长拳</span>
+<span style="font-size: 14px; color: {{t.muted}}">Chángquán · {{s.changquan}} · {{s.comingSoon}}</span>
+</div>
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">南拳</span>
+<span style="font-size: 14px; color: {{t.muted}}">Nánquán · {{s.nanquan}} · {{s.comingSoon}}</span>
+</div>
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 20px; font-weight: 700">器械</span>
+<span style="font-size: 14px; color: {{t.muted}}">Qìxiè · {{s.weapons}} · {{s.comingSoon}}</span>
+</div>
+</section>
+</main>
+</sc-if>
+
+<sc-if value="{{isContribute}}" hint-placeholder-val="{{ false }}">
+<main style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 28px">
+<section style="display: flex; flex-direction: column; gap: 6px">
+<h1 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 48px; line-height: 1.15; font-weight: 700">贡献</h1>
+<p style="margin: 0; font-size: 18px; color: {{t.muted}}">Gòngxiàn · <span style="color: {{t.ink}}; font-weight: 600">{{s.cTitle}}</span></p>
+<p style="margin: 8px 0 0; max-width: 640px; color: {{t.muted}}">{{s.cLead}}</p>
+</section>
+
+<ol aria-label="Steps" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px">
+<li style="display: flex; align-items: center; gap: 8px"><span style="width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; background: {{step1Bg}}; color: {{step1Fg}}">1</span><span style="font-weight: 600">{{s.step1}}</span></li>
+<li aria-hidden="true" style="color: {{t.muted}}">→</li>
+<li style="display: flex; align-items: center; gap: 8px"><span style="width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; background: {{step2Bg}}; color: {{step2Fg}}">2</span><span style="font-weight: 600; color: {{step2Text}}">{{s.step2}}</span></li>
+</ol>
+
+<sc-if value="{{cNoRoutine}}" hint-placeholder-val="{{ false }}">
+<section aria-label="{{s.step1}}" style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<h2 style="margin: 0; font-size: 22px">{{s.pickTitle}}</h2>
+<p style="margin: 0; color: {{t.muted}}">{{s.pickLead}}</p>
+</div>
+<h3 style="margin: 4px 0 0; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Noto Serif SC', serif; font-size: 20px">太极拳</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">Tàijíquán · {{s.taiji}}</span></h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px">
+<button type="button" class="ow-btn ow-row" onClick="{{pick24}}" style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 14px; border: 2px solid {{t.accent}}; background: {{t.surface}}">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">二十四式简化太极拳</span>
+<span style="font-size: 14px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán</span>
+<span style="font-size: 14px; font-weight: 500">{{s.r24}}</span>
+<span style="margin-top: 10px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 13px; color: {{t.muted}}">{{descDone}} / 24 · {{s.pDesc}}</span>
+<span aria-hidden="true" style="height: 6px; border-radius: 3px; overflow: hidden; background: {{t.chip}}"><span style="display: block; height: 6px; width: {{descPct}}; background: {{t.accent}}"></span></span>
+</span>
+<span style="margin-top: 8px; align-self: flex-start; min-height: 36px; padding: 0 14px; border-radius: 10px; display: flex; align-items: center; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.choose}}</span>
+</button>
+<div style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 14px; border: 1px dashed {{t.line2}}; background: {{t.surface}}">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 700">四十二式太极拳</span>
+<span style="font-size: 14px; color: {{t.muted}}">Sìshí'èr shì tàijíquán</span>
+<span style="font-size: 14px; font-weight: 500">{{s.r42}}</span>
+<span style="margin-top: 10px; align-self: flex-start; padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.listPending}}</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: 14px; border: 1px dashed {{t.line2}}">
+<span style="font-weight: 700">{{s.newRoutine}}</span>
+<span style="font-size: 14px; color: {{t.muted}}">{{s.newRoutineBody}}</span>
+</div>
+</section>
+</sc-if>
+
+<sc-if value="{{cHasRoutine}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 14px; background: {{t.accentSoft}}">
+<span style="display: flex; flex-direction: column; flex: 1 1 260px">
+<span style="font-size: 12px; font-weight: 600; color: {{t.accentInk}}">{{s.routineLabel}}</span>
+<span><span style="font-family: 'Noto Serif SC', serif; font-size: 18px; font-weight: 700">二十四式简化太极拳</span> <span style="font-size: 14px; color: {{t.muted}}">Èrshísì shì jiǎnhuà tàijíquán · {{s.r24}}</span></span>
+</span>
+<button type="button" class="ow-btn" onClick="{{changeRoutine}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; font-weight: 600; font-size: 14px; background: {{t.surface}}; border: 1px solid {{t.line2}}">{{s.changeRoutine}}</button>
+</div>
+<section aria-label="{{s.progressFor}}" style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 14px; font-weight: 600; color: {{t.muted}}">{{s.progressFor}}</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px">
+<sc-for list="{{progress}}" as="pr" hint-placeholder-count="5">
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 16px; border-radius: 14px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<span style="font-size: 13px; font-weight: 600">{{pr.label}}</span>
+<span style="font-size: 26px; font-weight: 700; font-variant-numeric: tabular-nums">{{pr.done}} <span style="font-size: 15px; font-weight: 500; color: {{t.muted}}">/ 24</span></span>
+<div aria-hidden="true" style="height: 6px; border-radius: 3px; overflow: hidden; background: {{t.chip}}"><div style="height: 6px; width: {{pr.pct}}; background: {{t.accent}}"></div></div>
+<span style="font-size: 12px; color: {{t.muted}}">{{pr.note}}</span>
+</div>
+</sc-for>
+</div>
+</section>
+
+<div role="tablist" aria-label="Contribution tasks" style="display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; border-radius: 12px; align-self: flex-start; background: {{t.chip}}">
+<sc-for list="{{cTabs}}" as="ct" hint-placeholder-count="3">
+<button type="button" role="tab" aria-selected="{{ct.on}}" class="ow-btn" onClick="{{ct.pick}}" style="min-height: 40px; padding: 0 16px; border-radius: 9px; font-weight: 600; background: {{ct.bg}}; color: {{ct.fg}}">{{ct.label}}</button>
+</sc-for>
+</div>
+
+<sc-if value="{{cSubmitted}}" hint-placeholder-val="{{ false }}">
+<section role="status" style="display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line2}}">
+<span style="align-self: flex-start; padding: 2px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; background: {{t.blue}}; color: #FFFFFF">{{s.stReview}}</span>
+<h2 style="margin: 0; font-size: 20px">{{s.cSent}}</h2>
+<p style="margin: 0; max-width: 640px; color: {{t.muted}}">{{s.cSentBody}}</p>
+<button type="button" class="ow-btn" onClick="{{cAnother}}" style="align-self: flex-start; margin-top: 4px; min-height: 44px; padding: 0 16px; border-radius: 10px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.another}}</button>
+</section>
+</sc-if>
+
+<sc-if value="{{cShowDescribe}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<aside style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; border-radius: 16px; overflow: hidden; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<h2 style="margin: 0; padding: 16px 16px 10px; display: flex; align-items: baseline; gap: 8px; border-bottom: 1px solid {{t.line}}"><span style="font-family: 'Noto Serif SC', serif; font-size: 18px">动作</span><span style="font-size: 14px; font-weight: 400; color: {{t.muted}}">{{s.needsDesc}} · 24式</span></h2>
+<ol style="list-style: none; margin: 0; padding: 6px; max-height: 640px; overflow-y: auto">
+<sc-for list="{{cMoves}}" as="m" hint-placeholder-count="24">
+<li>
+<button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-current="{{m.on}}" style="width: 100%; display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 6px 10px; border-radius: 10px; background: {{m.rowBg}}">
+<span style="flex: none; width: 30px; font-size: 12px; font-weight: 700; color: {{t.muted}}; font-variant-numeric: tabular-nums">{{m.num}}</span>
+<span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column">
+<span style="font-family: 'Noto Serif SC', serif; font-weight: 600">{{m.zh}} <span style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 12px; color: {{t.muted}}">{{m.py}}</span></span>
+<span style="font-size: 12px">{{m.tr}}</span>
+</span>
+<span style="flex: none; padding: 1px 8px; border-radius: 99px; font-size: 11px; font-weight: 600; background: {{m.stBg}}; color: {{m.stFg}}">{{m.stLabel}}</span>
+</button>
+</li>
+</sc-for>
+</ol>
+</aside>
+
+<section aria-label="{{s.editing}}" style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px; padding: 20px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: {{t.accentInk}}">{{s.editing}} · {{cm.num}} / 24</span>
+<h2 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 34px; line-height: 1.2">{{cm.zh}}</h2>
+<span style="color: {{t.muted}}">{{cm.py}} · <span style="color: {{t.ink}}; font-weight: 600">{{cm.tr}}</span></span>
+</div>
+<button type="button" class="ow-btn" onClick="{{cm.view}}" style="min-height: 44px; padding: 0 14px; border-radius: 10px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}">{{s.viewInRoutine}}</button>
+</div>
+<sc-if value="{{cm.hasDraft}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 10px 14px; border-radius: 10px; font-size: 14px; background: {{t.amberSoft}}; color: {{t.amber}}">{{s.draftExists}}</p>
+</sc-if>
+<div style="display: flex; flex-direction: column; gap: 6px; max-width: 280px">
+<label for="ow-cface" style="font-size: 13px; font-weight: 600">{{s.fFacing}}</label>
+<select id="ow-cface" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<sc-for list="{{s.dirs}}" as="o" hint-placeholder-count="4"><option>{{o}}</option></sc-for>
+</select>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-csteps" style="font-size: 13px; font-weight: 600">动作过程 · {{s.fSteps}}</label>
+<textarea id="ow-csteps" class="ow-in" rows="5" placeholder="{{s.phSteps}}" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-ckeys" style="font-size: 13px; font-weight: 600">要点 · {{s.fKeys}}</label>
+<textarea id="ow-ckeys" class="ow-in" rows="4" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+</div>
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-cmis" style="font-size: 13px; font-weight: 600">易犯错误 · {{s.fMistakes}}</label>
+<textarea id="ow-cmis" class="ow-in" rows="4" style="padding: 10px 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-csrc" style="font-size: 13px; font-weight: 600">{{s.fSource}}</label>
+<input id="ow-csrc" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<p style="margin: 0; font-size: 13px; color: {{t.muted}}">{{s.reviewNote}}</p>
+<button type="button" class="ow-btn" onClick="{{cSubmit}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.submitReview}}</button>
+</section>
+</div>
+</sc-if>
+
+<sc-if value="{{cShowVideo}}" hint-placeholder-val="{{ false }}">
+<section aria-label="{{s.tVideo}}" style="display: flex; flex-direction: column; gap: 16px; max-width: 760px; padding: 20px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-vroutine" style="font-size: 13px; font-weight: 600">{{s.vRoutine}}</label>
+<select id="ow-vroutine" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><option>二十四式简化太极拳 · {{s.r24}}</option><option>四十二式太极拳 · {{s.r42}}</option></select>
+</div>
+<div style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 6px">
+<label for="ow-vview" style="font-size: 13px; font-weight: 600">{{s.vView}}</label>
+<select id="ow-vview" class="ow-in" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<sc-for list="{{s.views}}" as="o" hint-placeholder-count="3"><option>{{o}}</option></sc-for>
+</select>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-vperf" style="font-size: 13px; font-weight: 600">{{s.vPerformer}}</label>
+<input id="ow-vperf" class="ow-in" type="text" style="min-height: 46px; padding: 0 12px; border-radius: 10px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-vfile" style="font-size: 13px; font-weight: 600">{{s.vFile}}</label>
+<input id="ow-vfile" class="ow-in" type="file" accept="video/*" style="padding: 22px 16px; border-radius: 12px; border: 2px dashed {{t.line2}}; background: {{t.bg}}; color: {{t.ink}}">
+</div>
+<label style="display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px"><input type="checkbox" style="width: 18px; height: 18px; accent-color: {{t.accent}}">{{s.vRights}}</label>
+<p style="margin: 0; padding: 12px 14px; border-radius: 10px; font-size: 14px; background: {{t.accentSoft}}">{{s.vNext}}</p>
+<button type="button" class="ow-btn" onClick="{{cSubmit}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.upload}}</button>
+</section>
+</sc-if>
+
+<sc-if value="{{cShowTranslate}}" hint-placeholder-val="{{ false }}">
+<section aria-label="{{s.tTranslate}}" style="display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}">
+<p style="margin: 0; color: {{t.muted}}">{{s.trIntro}}</p>
+<div style="overflow-x: auto">
+<table style="width: 100%; min-width: 720px; border-collapse: collapse; font-size: 14px">
+<thead>
+<tr style="text-align: left; color: {{t.muted}}">
+<th scope="col" style="padding: 8px; font-size: 13px; font-weight: 600; border-bottom: 1px solid {{t.line}}">{{s.colMove}}</th>
+<th scope="col" style="padding: 8px; font-size: 13px; font-weight: 600; border-bottom: 1px solid {{t.line}}">English</th>
+<th scope="col" style="padding: 8px; font-size: 13px; font-weight: 600; border-bottom: 1px solid {{t.line}}">Bahasa Indonesia</th>
+</tr>
+</thead>
+<tbody>
+<sc-for list="{{trRows}}" as="r" hint-placeholder-count="24">
+<tr>
+<th scope="row" style="padding: 6px 8px; text-align: left; font-weight: 400; border-bottom: 1px solid {{t.line}}"><span style="font-size: 12px; font-weight: 700; color: {{t.muted}}">{{r.num}}</span> <span style="font-family: 'Noto Serif SC', serif; font-weight: 600">{{r.zh}}</span> <span style="font-size: 12px; color: {{t.muted}}">{{r.py}}</span></th>
+<td style="padding: 6px 8px; border-bottom: 1px solid {{t.line}}"><input class="ow-in" type="text" aria-label="{{r.enLabel}}" defaultValue="{{r.en}}" style="min-height: 40px; padding: 0 10px; border-radius: 8px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"></td>
+<td style="padding: 6px 8px; border-bottom: 1px solid {{t.line}}"><input class="ow-in" type="text" aria-label="{{r.idLabel}}" defaultValue="{{r.id}}" style="min-height: 40px; padding: 0 10px; border-radius: 8px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"></td>
+</tr>
+</sc-for>
+</tbody>
+</table>
+</div>
+<p style="margin: 0; font-size: 13px; color: {{t.muted}}">{{s.reviewNote}}</p>
+<button type="button" class="ow-btn" onClick="{{cSubmit}}" style="align-self: flex-start; min-height: 46px; padding: 0 20px; border-radius: 10px; font-weight: 600; background: {{t.accent}}; color: {{t.onAccent}}">{{s.submitTr}}</button>
+</section>
+</sc-if>
+</sc-if>
+</main>
+</sc-if>
+
+<span style="flex: 1 1 auto"></span>
+<footer style="position: sticky; bottom: 0; z-index: 10; border-top: 1px solid {{t.line}}; background: {{t.surface}}">
+<p style="max-width: 1280px; margin: 0 auto; padding: 10px 24px; font-size: 13px; color: {{t.muted}}">{{s.footer}}</p>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"dark":{"editor":"boolean","default":false},"$preview":{"width":1440,"height":1240}}'>
+var MOVES = [
+  ['起势', 'Qǐshì', 'Commencing Form', 'Sikap Pembuka', 10],
+  ['左右野马分鬃', 'Zuǒyòu yěmǎ fēn zōng', 'Part the Wild Horse’s Mane', 'Membelah Surai Kuda Liar', 18],
+  ['白鹤亮翅', 'Báihè liàng chì', 'White Crane Spreads Its Wings', 'Bangau Putih Membentangkan Sayap', 9],
+  ['左右搂膝拗步', 'Zuǒyòu lōu xī ào bù', 'Brush Knee and Twist Step', 'Menyapu Lutut dan Melangkah', 20],
+  ['手挥琵琶', 'Shǒu huī pípá', 'Play the Pipa', 'Memetik Pipa', 9],
+  ['左右倒卷肱', 'Zuǒyòu dào juǎn gōng', 'Repulse the Monkey', 'Mundur Menggulung Lengan', 18],
+  ['左揽雀尾', 'Zuǒ lǎn què wěi', 'Grasp the Bird’s Tail (Left)', 'Menangkap Ekor Burung (Kiri)', 16],
+  ['右揽雀尾', 'Yòu lǎn què wěi', 'Grasp the Bird’s Tail (Right)', 'Menangkap Ekor Burung (Kanan)', 16],
+  ['单鞭', 'Dān biān', 'Single Whip', 'Cambuk Tunggal', 10],
+  ['云手', 'Yún shǒu', 'Cloud Hands', 'Tangan Awan', 20],
+  ['单鞭', 'Dān biān', 'Single Whip', 'Cambuk Tunggal', 10],
+  ['高探马', 'Gāo tàn mǎ', 'High Pat on Horse', 'Menepuk Kuda Tinggi', 9],
+  ['右蹬脚', 'Yòu dēng jiǎo', 'Right Heel Kick', 'Tendangan Tumit Kanan', 12],
+  ['双峰贯耳', 'Shuāng fēng guàn ěr', 'Strike the Ears with Both Fists', 'Dua Puncak Menembus Telinga', 10],
+  ['转身左蹬脚', 'Zhuǎnshēn zuǒ dēng jiǎo', 'Turn and Left Heel Kick', 'Berbalik, Tendangan Tumit Kiri', 12],
+  ['左下势独立', 'Zuǒ xiàshì dúlì', 'Push Down and Stand on One Leg (Left)', 'Sikap Rendah dan Berdiri Satu Kaki (Kiri)', 16],
+  ['右下势独立', 'Yòu xiàshì dúlì', 'Push Down and Stand on One Leg (Right)', 'Sikap Rendah dan Berdiri Satu Kaki (Kanan)', 16],
+  ['左右穿梭', 'Zuǒyòu chuānsuō', 'Work the Shuttles', 'Menenun Bolak-balik', 18],
+  ['海底针', 'Hǎidǐ zhēn', 'Needle at the Sea Bottom', 'Jarum di Dasar Laut', 8],
+  ['闪通臂', 'Shǎn tōng bì', 'Fan Through the Back', 'Lengan Menembus Punggung', 9],
+  ['转身搬拦捶', 'Zhuǎnshēn bān lán chuí', 'Turn, Deflect, Parry and Punch', 'Berbalik, Menangkis, Menghadang dan Memukul', 16],
+  ['如封似闭', 'Rú fēng sì bì', 'Apparent Close-Up', 'Seolah Menutup', 10],
+  ['十字手', 'Shízì shǒu', 'Cross Hands', 'Tangan Menyilang', 8],
+  ['收势', 'Shōushì', 'Closing Form', 'Sikap Penutup', 10]
+];
+var START = [], TOTAL = 0;
+MOVES.forEach(function (m) { START.push(TOTAL); TOTAL += m[4]; });
+
+// Illustrative end position of each movement on the 14 m × 8 m carpet (metres)
+var STARTPT = [3.2, 5.2];
+var PTS = [[3.2,5.2],[5.8,5.0],[6.3,5.0],[8.9,5.0],[9.1,5.0],[6.9,5.0],[7.8,4.4],[7.4,3.7],[6.4,3.7],[8.8,3.7],[9.6,3.7],[10.0,3.7],[10.7,3.2],[11.2,2.6],[10.4,2.6],[8.9,2.6],[7.3,2.6],[8.8,3.2],[9.1,3.2],[10.0,3.2],[8.8,3.8],[7.9,4.2],[6.2,4.8],[3.8,5.2]];
+
+var DETAILS = {
+  0: {
+    facing: { en: 'South', id: 'Selatan' },
+    steps: {
+      en: ['Stand naturally, feet together, arms relaxed at the sides.', 'Left foot steps out to shoulder width, toes forward.', 'Raise both arms slowly forward to shoulder height, palms down.', 'Bend the knees and press both palms down to hip level.'],
+      id: ['Berdiri wajar, kaki rapat, lengan rileks di samping badan.', 'Kaki kiri melangkah ke samping selebar bahu, ujung kaki ke depan.', 'Angkat kedua lengan perlahan ke depan setinggi bahu, telapak menghadap bawah.', 'Tekuk lutut dan tekan kedua telapak ke bawah setinggi pinggul.']
+    },
+    keys: {
+      en: ['Head lifted as if suspended (虚领顶劲 xūlǐng dǐngjìn).', 'Shoulders and elbows sink; breathe naturally.'],
+      id: ['Kepala tegak seolah tergantung (虚领顶劲 xūlǐng dǐngjìn).', 'Bahu dan siku diturunkan; bernapas secara alami.']
+    },
+    mistakes: {
+      en: ['Raising the shoulders with the arms.', 'Locking the knees or sticking the hips out.'],
+      id: ['Bahu ikut terangkat bersama lengan.', 'Lutut terkunci atau pinggul menonjol ke belakang.']
+    }
+  },
+  11: {
+    facing: { en: 'East', id: 'Timur' },
+    steps: {
+      en: ['Right foot follows forward a half step; shift the weight back onto the right leg.', 'Open both palms to face up, elbows slightly bent; turn the body slightly right.', 'Turn the body to face east; lift the left heel into 左虚步 zuǒ xūbù (left empty stance).', 'Right palm passes beside the right ear and pushes forward at eye height; left palm draws back to the left waist, palm up.'],
+      id: ['Kaki kanan menyusul setengah langkah ke depan; pindahkan berat badan ke kaki kanan.', 'Buka kedua telapak menghadap ke atas, siku sedikit ditekuk; putar badan sedikit ke kanan.', 'Putar badan menghadap timur; angkat tumit kiri menjadi 左虚步 zuǒ xūbù (kuda-kuda kosong kiri).', 'Telapak kanan melewati samping telinga kanan dan mendorong ke depan setinggi mata; telapak kiri ditarik ke pinggang kiri, menghadap ke atas.']
+    },
+    keys: {
+      en: ['Upper body upright, shoulders sunk (沉肩 chén jiān).', 'Do not rise up while shifting the weight.', 'Right fingertips at eye level.'],
+      id: ['Badan atas tegak, bahu diturunkan (沉肩 chén jiān).', 'Jangan naik saat memindahkan berat badan.', 'Ujung jari kanan setinggi mata.']
+    },
+    mistakes: {
+      en: ['Leaning forward on the push.', 'Lifting the shoulders.', 'Putting weight on the left foot.'],
+      id: ['Condong ke depan saat mendorong.', 'Bahu terangkat.', 'Berat badan bertumpu pada kaki kiri.']
+    }
+  }
+};
+
+var THREADS = [
+  { type: 'error', move: 11, field: 'steps', st: 'open', replies: 4, title: { en: 'Right hand height: eye level or head level?', id: 'Tinggi tangan kanan: setinggi mata atau kepala?' } },
+  { type: 'suggest', move: 5, field: 'video', st: 'review', replies: 2, title: { en: 'Add a side-view video for Repulse the Monkey', id: 'Tambahkan video tampak samping untuk Dao Juan Gong' } },
+  { type: 'question', move: 9, field: 'steps', st: 'accepted', replies: 6, title: { en: 'How many Cloud Hands repetitions are standard?', id: 'Berapa kali pengulangan Tangan Awan yang standar?' } }
+];
+
+var S = {
+  en: {
+    library: 'Library', discussions: 'Discussions', contribute: 'Contribute', translation: 'translation',
+    dLead: 'Pick a routine to read its threads, ask a question or report a mistake. Each thread is linked to a movement so contributors know exactly what to check.', latest: 'Latest', dPending: 'Discussion opens once the movement list is added.',
+    cTitle: 'Contribute', cLead: 'Help build an accurate, open reference. Every edit is saved as a revision and reviewed by a moderator before it is published. To report a mistake instead, open a thread in Discussions.',
+    signIn: 'Sign in', signUp: 'Sign up', signOut: 'Sign out', member: 'Member', email: 'Email', password: 'Password', forgot: 'Forgot password?', showPw: 'Show', hidePw: 'Hide',
+    google: 'Continue with Google', or: 'or', noAccount: 'New to OpenWushu?', createAcc: 'Create an account', haveAcc: 'Already have an account?',
+    siTitle: 'Welcome back', siLead: 'Sign in to join discussions and contribute.', suTitle: 'Create your account', suLead: 'Free for everyone. Reading and watching never need an account.',
+    name: 'Display name', pwHint: 'At least 8 characters.', prefLang: 'Preferred translation', club: 'Club or school (optional)',
+    agree: 'I agree to the community guidelines: content is for education, changes cite a source, and I will be respectful.', create: 'Create account',
+    errEmail: 'Enter a valid email address.', errName: 'Enter a display name.', errAgree: 'Please accept the community guidelines.',
+    verifyTitle: 'Check your email', verifyBody: 'We sent a verification link to', verifyBody2: '. Open it to activate your account. Until then you can read but not post.', verifiedDemo: 'I have verified (demo)', resend: 'Resend email',
+    gateContribute: 'Sign in to contribute. Contributions are linked to your account so maintainers can review and credit them.', gateDiscuss: 'Sign in to open a thread or report an issue.',
+    panelLead: 'An open, community-maintained reference for compulsory wushu routines.', rVisitor: 'Visitors read and watch, no account needed.', rMember: 'Members join discussions and suggest changes.', rContrib: 'Contributors edit and upload; maintainers review before anything is published.',
+    step1: 'Choose a routine', step2: 'Choose a task', pickTitle: 'Which routine do you want to work on?', pickLead: 'Your edits, videos and translations are linked to this routine and reviewed by its maintainers.',
+    choose: 'Choose this routine', listPending: 'Movement list not added yet', newRoutine: 'Routine not in the library?', newRoutineBody: 'Open a thread in Discussions with an official source. Moderators add new routines after review.',
+    routineLabel: 'Contributing to', changeRoutine: 'Change routine',
+    progressFor: 'Progress', pDesc: 'Movement descriptions', pEn: 'English names', pId: 'Indonesian names', pTime: 'Video timings', pPath: 'Measured carpet path',
+    nReview: 'Drafts, need review', nSample: 'Sample video only', nNone: 'Not started',
+    tDescribe: 'Write descriptions', tVideo: 'Upload video', tTranslate: 'Check translations',
+    needsDesc: 'Movements', hasDraft: 'Draft', missing: 'Missing', editing: 'Editing', draftExists: 'A draft already exists for this movement. Your edit will be reviewed against it.',
+    fFacing: 'Facing direction', dirs: ['North', 'East', 'South', 'West'], fSteps: 'Steps (one per line)', fKeys: 'Key points (one per line)', fMistakes: 'Common mistakes (one per line)',
+    phSteps: 'e.g. Right foot follows forward a half step…', reviewNote: 'Saved as a new revision. A moderator reviews it, and contributors watching this routine are emailed.',
+    submitReview: 'Submit for review', viewInRoutine: 'View in routine', cSent: 'Submitted for review', cSentBody: 'Your revision is waiting for a moderator. You will get an email when it is accepted or if changes are requested.', another: 'Contribute more',
+    vRoutine: 'Routine', vView: 'Camera view', views: ['Front', 'Side', 'Back'], vPerformer: 'Performer (optional)', vFile: 'Video file', vRights: 'I have the right to share this video for educational use',
+    vNext: 'After uploading, you mark where each movement starts on the timeline, so clicking a movement jumps straight to it.', upload: 'Upload video',
+    trIntro: 'Chinese and pinyin are the source and are not translated. Check the English and Indonesian names.', colMove: 'Movement', submitTr: 'Submit translations',
+    libTitle: 'Compulsory routines', libLead: 'An open, community-maintained study reference for standard wushu routines. Names are always kept in Chinese with pinyin; translations in English or Bahasa Indonesia.',
+    search: 'Search routines and movements', searchPh: 'Try “gao tan ma”, 高探马 or “high pat”', results: 'Movements found', noResults: 'No matches yet.',
+    moves: 'movements', threads: 'threads', inProgress: 'In progress', comingSoon: 'Awaiting contributors',
+    r24: '24-Form Simplified Taijiquan', r42: '42-Form Competition Taijiquan', taiji: 'Taijiquan', changquan: 'Changquan', nanquan: 'Nanquan', weapons: 'Weapons',
+    std: 'Standard routine (1956)', learn: 'Learn', discussion: 'Discussion',
+    sampleVideo: 'Sample video · self-hosted upload', play: 'Play', pause: 'Pause', prev: 'Previous movement', next: 'Next movement', loop: 'Loop movement', speed: 'Speed',
+    carpet: 'Carpet path', illustrative: 'Illustrative path, not measured', judges: 'Judges', legendStart: 'Start', legendDone: 'Completed', legendNow: 'Current', legendRest: 'Remaining',
+    movements: 'Movements', allMoves: 'All movements', playThis: 'Play this movement', draft: 'Draft · needs expert review', facing: 'Facing',
+    steps: 'Steps', keyPoints: 'Key points', mistakes: 'Common mistakes', edited: 'Last edited by a contributor (sample)',
+    pendingTitle: 'Description not written yet', pendingBody: 'The name and video timing are in place. Help by writing the steps, key points and common mistakes.', writeIt: 'Write this description',
+    threadsOn: 'threads on this movement', discuss: 'Discuss', report: 'Report an issue', allThreads: 'All threads', noThreads: 'No threads on this movement yet.',
+    replies: 'replies', routineWide: 'Whole routine',
+    typeError: 'Error', typeSuggest: 'Suggest change', typeQuestion: 'Question', typeRule: 'Rule update',
+    stOpen: 'Open', stReview: 'Under review', stAccepted: 'Accepted',
+    formTitle: 'Report an issue or suggest a change', fType: 'Type', fTarget: 'About', fField: 'Part', fSummary: 'Summary', fDetails: 'Details', fSource: 'Source (book, rulebook, video link)',
+    fNotify: 'Email me when this thread is updated', notifyNote: 'Contributors who maintain this routine are emailed when you submit.', submit: 'Submit', cancel: 'Cancel',
+    sent: 'Thread opened', sentBody: 'Status: Open. Contributors have been notified by email, and you will get updates on replies and status changes.', back: 'Back to threads',
+    fields: ['Name / translation', 'Steps', 'Key points', 'Video timing', 'Carpet path'], by: 'Member (sample)',
+    howTitle: 'How threads work', how1: 'Anyone signed in can report an error, suggest a change or ask a question, linked to a movement and the part it concerns.', how2: 'Contributors who maintain the routine get an email and review it, citing a source.', how3: 'Accepted changes are applied as a new revision, so every edit can be traced and rolled back.',
+    footer: 'OpenWushu · for educational purposes only. Content is community-maintained and may contain errors; always learn under a qualified coach.'
+  },
+  id: {
+    library: 'Pustaka', discussions: 'Diskusi', contribute: 'Kontribusi', translation: 'terjemahan',
+    dLead: 'Pilih rangkaian untuk membaca diskusinya, bertanya, atau melaporkan kesalahan. Setiap diskusi terhubung ke gerakan agar kontributor tahu persis apa yang perlu diperiksa.', latest: 'Terbaru', dPending: 'Diskusi dibuka setelah daftar gerakan ditambahkan.',
+    cTitle: 'Kontribusi', cLead: 'Bantu membangun referensi terbuka yang akurat. Setiap suntingan disimpan sebagai revisi dan ditinjau moderator sebelum diterbitkan. Untuk melaporkan kesalahan, buka diskusi di halaman Diskusi.',
+    signIn: 'Masuk', signUp: 'Daftar', signOut: 'Keluar', member: 'Anggota', email: 'Email', password: 'Kata sandi', forgot: 'Lupa kata sandi?', showPw: 'Tampilkan', hidePw: 'Sembunyikan',
+    google: 'Lanjutkan dengan Google', or: 'atau', noAccount: 'Baru di OpenWushu?', createAcc: 'Buat akun', haveAcc: 'Sudah punya akun?',
+    siTitle: 'Selamat datang kembali', siLead: 'Masuk untuk ikut berdiskusi dan berkontribusi.', suTitle: 'Buat akun Anda', suLead: 'Gratis untuk semua. Membaca dan menonton tidak memerlukan akun.',
+    name: 'Nama tampilan', pwHint: 'Minimal 8 karakter.', prefLang: 'Terjemahan pilihan', club: 'Klub atau sekolah (opsional)',
+    agree: 'Saya setuju dengan pedoman komunitas: konten untuk edukasi, perubahan menyertakan sumber, dan saya akan bersikap sopan.', create: 'Buat akun',
+    errEmail: 'Masukkan alamat email yang valid.', errName: 'Masukkan nama tampilan.', errAgree: 'Harap setujui pedoman komunitas.',
+    verifyTitle: 'Periksa email Anda', verifyBody: 'Kami mengirim tautan verifikasi ke', verifyBody2: '. Buka tautan itu untuk mengaktifkan akun. Sebelum itu Anda bisa membaca tetapi belum bisa memposting.', verifiedDemo: 'Saya sudah verifikasi (demo)', resend: 'Kirim ulang email',
+    gateContribute: 'Masuk untuk berkontribusi. Kontribusi terhubung ke akun Anda agar pengelola dapat meninjau dan mencantumkan nama Anda.', gateDiscuss: 'Masuk untuk membuka diskusi atau melaporkan masalah.',
+    panelLead: 'Referensi terbuka yang dikelola komunitas untuk rangkaian wajib wushu.', rVisitor: 'Pengunjung membaca dan menonton, tanpa akun.', rMember: 'Anggota ikut berdiskusi dan mengusulkan perubahan.', rContrib: 'Kontributor menyunting dan mengunggah; pengelola meninjau sebelum diterbitkan.',
+    step1: 'Pilih rangkaian', step2: 'Pilih tugas', pickTitle: 'Rangkaian mana yang ingin Anda kerjakan?', pickLead: 'Suntingan, video, dan terjemahan Anda terhubung ke rangkaian ini dan ditinjau oleh pengelolanya.',
+    choose: 'Pilih rangkaian ini', listPending: 'Daftar gerakan belum ditambahkan', newRoutine: 'Rangkaian tidak ada di pustaka?', newRoutineBody: 'Buka diskusi di halaman Diskusi dengan sumber resmi. Moderator menambahkan rangkaian baru setelah ditinjau.',
+    routineLabel: 'Berkontribusi untuk', changeRoutine: 'Ganti rangkaian',
+    progressFor: 'Progres', pDesc: 'Deskripsi gerakan', pEn: 'Nama bahasa Inggris', pId: 'Nama bahasa Indonesia', pTime: 'Waktu video', pPath: 'Jalur karpet terukur',
+    nReview: 'Draf, perlu ditinjau', nSample: 'Baru video contoh', nNone: 'Belum dimulai',
+    tDescribe: 'Tulis deskripsi', tVideo: 'Unggah video', tTranslate: 'Periksa terjemahan',
+    needsDesc: 'Gerakan', hasDraft: 'Draf', missing: 'Belum ada', editing: 'Menyunting', draftExists: 'Sudah ada draf untuk gerakan ini. Suntingan Anda akan ditinjau terhadap draf tersebut.',
+    fFacing: 'Arah hadap', dirs: ['Utara', 'Timur', 'Selatan', 'Barat'], fSteps: 'Langkah (satu per baris)', fKeys: 'Poin penting (satu per baris)', fMistakes: 'Kesalahan umum (satu per baris)',
+    phSteps: 'mis. Kaki kanan menyusul setengah langkah ke depan…', reviewNote: 'Disimpan sebagai revisi baru. Moderator akan meninjaunya, dan kontributor yang mengikuti rangkaian ini menerima email.',
+    submitReview: 'Kirim untuk ditinjau', viewInRoutine: 'Lihat di rangkaian', cSent: 'Terkirim untuk ditinjau', cSentBody: 'Revisi Anda menunggu moderator. Anda akan menerima email saat diterima atau jika perlu perubahan.', another: 'Kontribusi lagi',
+    vRoutine: 'Rangkaian', vView: 'Sudut kamera', views: ['Depan', 'Samping', 'Belakang'], vPerformer: 'Peraga (opsional)', vFile: 'Berkas video', vRights: 'Saya berhak membagikan video ini untuk tujuan edukasi',
+    vNext: 'Setelah mengunggah, Anda menandai awal setiap gerakan di garis waktu, sehingga klik gerakan langsung melompat ke sana.', upload: 'Unggah video',
+    trIntro: 'Bahasa Tionghoa dan pinyin adalah sumber dan tidak diterjemahkan. Periksa nama dalam bahasa Inggris dan Indonesia.', colMove: 'Gerakan', submitTr: 'Kirim terjemahan',
+    libTitle: 'Rangkaian wajib', libLead: 'Referensi belajar terbuka yang dikelola komunitas untuk rangkaian standar wushu. Nama selalu ditulis dalam bahasa Tionghoa beserta pinyin; terjemahan dalam bahasa Inggris atau Bahasa Indonesia.',
+    search: 'Cari rangkaian dan gerakan', searchPh: 'Coba “gao tan ma”, 高探马 atau “menepuk kuda”', results: 'Gerakan ditemukan', noResults: 'Belum ada hasil.',
+    moves: 'gerakan', threads: 'diskusi', inProgress: 'Sedang dikerjakan', comingSoon: 'Menunggu kontributor',
+    r24: '24 Jurus Taijiquan Sederhana', r42: '42 Jurus Taijiquan Kompetisi', taiji: 'Taijiquan', changquan: 'Changquan', nanquan: 'Nanquan', weapons: 'Senjata',
+    std: 'Rangkaian standar (1956)', learn: 'Belajar', discussion: 'Diskusi',
+    sampleVideo: 'Contoh video · unggahan sendiri', play: 'Putar', pause: 'Jeda', prev: 'Gerakan sebelumnya', next: 'Gerakan berikutnya', loop: 'Ulangi gerakan', speed: 'Kecepatan',
+    carpet: 'Jalur di karpet', illustrative: 'Jalur ilustrasi, belum diukur', judges: 'Juri', legendStart: 'Mulai', legendDone: 'Selesai', legendNow: 'Sekarang', legendRest: 'Sisa',
+    movements: 'Gerakan', allMoves: 'Semua gerakan', playThis: 'Putar gerakan ini', draft: 'Draf · perlu ditinjau ahli', facing: 'Arah hadap',
+    steps: 'Langkah', keyPoints: 'Poin penting', mistakes: 'Kesalahan umum', edited: 'Terakhir diedit oleh kontributor (contoh)',
+    pendingTitle: 'Deskripsi belum ditulis', pendingBody: 'Nama dan waktu video sudah ada. Bantu dengan menulis langkah, poin penting, dan kesalahan umum.', writeIt: 'Tulis deskripsi ini',
+    threadsOn: 'diskusi tentang gerakan ini', discuss: 'Diskusikan', report: 'Laporkan masalah', allThreads: 'Semua diskusi', noThreads: 'Belum ada diskusi untuk gerakan ini.',
+    replies: 'balasan', routineWide: 'Seluruh rangkaian',
+    typeError: 'Kesalahan', typeSuggest: 'Usulan perubahan', typeQuestion: 'Pertanyaan', typeRule: 'Pembaruan aturan',
+    stOpen: 'Terbuka', stReview: 'Sedang ditinjau', stAccepted: 'Diterima',
+    formTitle: 'Laporkan masalah atau usulkan perubahan', fType: 'Jenis', fTarget: 'Tentang', fField: 'Bagian', fSummary: 'Ringkasan', fDetails: 'Detail', fSource: 'Sumber (buku, peraturan, tautan video)',
+    fNotify: 'Kirim email saat diskusi ini diperbarui', notifyNote: 'Kontributor yang mengelola rangkaian ini akan menerima email saat Anda mengirim.', submit: 'Kirim', cancel: 'Batal',
+    sent: 'Diskusi dibuka', sentBody: 'Status: Terbuka. Kontributor telah diberi tahu lewat email, dan Anda akan menerima pembaruan balasan dan perubahan status.', back: 'Kembali ke diskusi',
+    fields: ['Nama / terjemahan', 'Langkah', 'Poin penting', 'Waktu video', 'Jalur karpet'], by: 'Anggota (contoh)',
+    howTitle: 'Cara kerja diskusi', how1: 'Siapa pun yang masuk dapat melaporkan kesalahan, mengusulkan perubahan, atau bertanya, terhubung ke gerakan dan bagian terkait.', how2: 'Kontributor yang mengelola rangkaian menerima email dan meninjaunya dengan menyertakan sumber.', how3: 'Perubahan yang diterima disimpan sebagai revisi baru, sehingga setiap suntingan dapat dilacak dan dikembalikan.',
+    footer: 'OpenWushu · hanya untuk tujuan edukasi. Konten dikelola komunitas dan mungkin mengandung kesalahan; selalu belajar dengan pelatih yang berkualifikasi.'
+  }
+};
+
+// Brand blue #50A0FF for fills (navy text on it); deeper #1766C7 for blue text on white
+var LIGHT = { bg: '#F5F9FF', surface: '#FFFFFF', ink: '#0E1A2B', muted: '#4E5D72', line: '#DDE7F3', line2: '#C3D3E8', chip: '#EAF2FD', accent: '#50A0FF', onAccent: '#06152B', accentInk: '#1766C7', accentSoft: '#E3F0FF', accentMid: '#A8CEFF', rest: '#A3B4CA', video: '#0B1830', carpet: '#F0F6FF', grid: '#DCE8F7', amber: '#7A4B00', amberSoft: '#FBEBCB', blue: '#2F4F8A', blueSoft: '#E1EAF7', green: '#2E6B3F', red: '#B42318', redSoft: '#FDE7E4' };
+var DARK = { bg: '#0B1424', surface: '#111D31', ink: '#EAF2FF', muted: '#9FB0C8', line: '#1F2E46', line2: '#2E4262', chip: '#182740', accent: '#50A0FF', onAccent: '#06152B', accentInk: '#7DB8FF', accentSoft: '#13305A', accentMid: '#2D5E9E', rest: '#3E5170', video: '#050B16', carpet: '#0F1A2C', grid: '#1A2840', amber: '#F2C46D', amberSoft: '#3A2D14', blue: '#4F6FB3', blueSoft: '#1A2540', green: '#3D8752', red: '#FF8A7A', redSoft: '#3A1A17' };
+
+function pad(n) { return n < 10 ? '0' + n : '' + n; }
+function fmt(sec) { sec = Math.floor(sec); return Math.floor(sec / 60) + ':' + pad(sec % 60); }
+function norm(x) { return x.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9一-鿿]/g, ''); }
+function activeIndex(t) { var i = 0; for (var k = 0; k < START.length; k++) { if (START[k] <= t) i = k; } return i; }
+function px(p) { return [p[0] * 100, p[1] * 100]; }
+function line(points) { return points.map(function (p, i) { var q = px(p); return (i ? 'L' : 'M') + q[0] + ' ' + q[1]; }).join(' '); }
+var GRID = (function () { var d = ''; for (var x = 100; x < 1400; x += 100) d += 'M' + x + ' 0 V800 '; for (var y = 100; y < 800; y += 100) d += 'M0 ' + y + ' H1400 '; return d; })();
+var FULL = [STARTPT].concat(PTS);
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { screen: 'routine', tab: 'learn', lang: 'en', t: START[11] + 2, playing: false, loop: false, speed: 1, detailOpen: true, q: '', reportOpen: false, submitted: false, formType: 'error', formMove: '11', threadFilter: 'all', cTask: 'describe', cMove: 1, cSubmitted: false, cRoutine: null,
+      user: null, authReturn: 'routine', authMsg: null, authErr: null, showPw: false, siEmail: '', suName: '', suEmail: '', suAgree: false, pendingUser: null };
+  }
+  componentDidMount() {
+    var self = this;
+    this.timer = setInterval(function () {
+      var s = self.state;
+      if (!s.playing) return;
+      var i = activeIndex(s.t);
+      var t = s.t + 0.25 * s.speed;
+      if (s.loop && t >= START[i] + MOVES[i][4]) t = START[i];
+      if (t >= TOTAL) { self.setState({ t: TOTAL - 0.01, playing: false }); return; }
+      self.setState({ t: t });
+    }, 250);
+  }
+  componentWillUnmount() { clearInterval(this.timer); }
+  seek(i) { i = Math.max(0, Math.min(MOVES.length - 1, i)); this.setState({ t: START[i] }); }
+  select(i) { this.seek(i); this.setState({ screen: 'routine', tab: 'learn', detailOpen: true }); }
+  // Signed-out visitors are sent to Sign in, then returned to `ret` afterwards
+  needAuth(ret, msgKey) {
+    if (this.state.user) return false;
+    this.setState({ screen: 'signin', authReturn: ret, authMsg: msgKey, authErr: null, playing: false });
+    return true;
+  }
+  goAuth(screen) {
+    var s = this.state, ret = s.screen === 'library' ? 'library' : (s.screen === 'contribute' ? 'contribute' : (s.screen === 'routine' ? 'routine' : s.authReturn));
+    this.setState({ screen: screen, authReturn: ret, authMsg: screen === s.screen ? s.authMsg : null, authErr: null, playing: false });
+  }
+  finishAuth(user) {
+    var r = this.state.authReturn, st = { user: user, authMsg: null, authErr: null, showPw: false };
+    if (r === 'contribute') st.screen = 'contribute';
+    else if (r === 'discuss') { st.screen = 'routine'; st.tab = 'discuss'; st.reportOpen = true; st.submitted = false; }
+    else st.screen = r === 'library' ? 'library' : 'routine';
+    this.setState(st);
+  }
+  openContribute(task, move) {
+    var st = { cTask: task, cSubmitted: false }; if (move != null) st.cMove = move;
+    this.setState(st);
+    if (this.needAuth('contribute', 'gateContribute')) return;
+    this.setState({ screen: 'contribute', playing: false });
+  }
+  openReport(type, move) {
+    this.setState({ formType: type, formMove: move, submitted: false });
+    if (this.needAuth('discuss', 'gateDiscuss')) return;
+    this.setState({ screen: 'routine', tab: 'discuss', reportOpen: true });
+  }
+  renderVals() {
+    var self = this, s = this.state, L = S[s.lang], t = this.props.dark ? DARK : LIGHT;
+    var en = s.lang === 'en';
+    var ai = activeIndex(s.t);
+    var frac = Math.min(1, (s.t - START[ai]) / MOVES[ai][4]);
+    var tr = function (m) { return en ? m[2] : m[3]; };
+    var counts = MOVES.map(function (_, i) { return THREADS.filter(function (th) { return th.move === i; }).length; });
+
+    var moves = MOVES.map(function (m, i) {
+      var on = i === ai, done = i < ai;
+      return {
+        n: i + 1, num: pad(i + 1), zh: m[0], py: m[1], tr: tr(m), dur: m[4],
+        startTxt: fmt(START[i]), endTxt: fmt(START[i] + m[4]),
+        aria: pad(i + 1) + ' ' + m[0] + ' ' + m[1] + ' · ' + tr(m),
+        isActive: on, threadCount: counts[i], hasThreads: counts[i] > 0,
+        rowBg: on ? t.accentSoft : 'transparent',
+        numBg: on ? t.accent : (done ? t.accentSoft : t.chip),
+        numFg: on ? t.onAccent : (done ? t.accentInk : t.muted),
+        segBg: on ? t.accent : (done ? t.accentMid : t.chip),
+        segFg: on ? t.onAccent : (done ? t.ink : t.muted),
+        pick: function () { self.select(i); },
+        seek: function () { self.seek(i); }
+      };
+    });
+    var active = moves[ai];
+
+    var pts = PTS.map(function (p, i) {
+      var on = i === ai, done = i < ai;
+      return { n: i + 1, left: (p[0] / 14 * 100) + '%', top: (p[1] / 8 * 100) + '%', dy: (i % 2 ? '8px' : '-30px'),
+        bg: on ? t.accent : t.surface, fg: on ? t.onAccent : (done ? t.accentInk : t.muted), bd: on ? t.accent : t.line2 };
+    });
+    var a = FULL[ai], b = FULL[ai + 1];
+    var dot = px([a[0] + (b[0] - a[0]) * frac, a[1] + (b[1] - a[1]) * frac]);
+    var sp = px(STARTPT);
+
+    var d = DETAILS[ai];
+    var detail = d ? { facing: d.facing[s.lang], steps: d.steps[s.lang], keys: d.keys[s.lang], mistakes: d.mistakes[s.lang] } : { facing: '', steps: [], keys: [], mistakes: [] };
+
+    var typeLabel = { error: L.typeError, suggest: L.typeSuggest, question: L.typeQuestion, rule: L.typeRule };
+    var typeCol = { error: [t.redSoft, t.red], suggest: [t.blueSoft, t.blue], question: [t.chip, t.muted], rule: [t.amberSoft, t.amber] };
+    var stCol = { open: [t.accent, t.onAccent, L.stOpen], review: [t.blue, '#FFFFFF', L.stReview], accepted: [t.green, '#FFFFFF', L.stAccepted] };
+    var fieldIdx = { name: 0, steps: 1, keys: 2, video: 3, path: 4 };
+    var list = THREADS.filter(function (th) { return s.threadFilter === 'all' || th.move === ai; });
+    var threads = list.map(function (th) {
+      var m = MOVES[th.move];
+      return { title: th.title[s.lang], replies: th.replies, by: L.by, field: L.fields[fieldIdx[th.field]],
+        typeLabel: typeLabel[th.type], typeBg: typeCol[th.type][0], typeFg: typeCol[th.type][1],
+        stBg: stCol[th.st][0], stFg: stCol[th.st][1], stLabel: stCol[th.st][2],
+        target: pad(th.move + 1) + ' ' + m[0] + ' ' + m[1],
+        goto: function () { self.select(th.move); } };
+    });
+
+    var results = [];
+    var nq = norm(s.q || '');
+    if (nq) {
+      MOVES.forEach(function (m, i) {
+        if (norm(m[0] + m[1] + m[2] + m[3]).indexOf(nq) >= 0) results.push({ num: pad(i + 1), zh: m[0], py: m[1], tr: tr(m), pick: function () { self.select(i); } });
+      });
+    }
+
+    var seg = function (on) { return on ? [t.surface, t.ink] : ['transparent', t.muted]; };
+    var isLib = s.screen === 'library', isRout = s.screen === 'routine', isCon = s.screen === 'contribute', isLearn = s.tab === 'learn', isDisc = s.tab === 'discuss';
+    var navLib = isLib ? [t.chip, t.ink] : ['transparent', t.muted];
+    var isDiscs = s.screen === 'discussions';
+    var navDis = isDiscs || (isRout && isDisc) ? [t.chip, t.ink] : ['transparent', t.muted];
+    var countSt = function (st) { return THREADS.filter(function (th) { return th.st === st; }).length; };
+    var navCon = isCon ? [t.chip, t.ink] : ['transparent', t.muted];
+
+    var cm = MOVES[s.cMove];
+    var progress = [
+      { label: L.pDesc, done: Object.keys(DETAILS).length, note: L.nReview },
+      { label: L.pEn, done: 24, note: L.nReview },
+      { label: L.pId, done: 24, note: L.nReview },
+      { label: L.pTime, done: 24, note: L.nSample },
+      { label: L.pPath, done: 0, note: L.nNone }
+    ].map(function (p) { p.pct = (p.done / 24 * 100) + '%'; return p; });
+
+    return {
+      t: t, s: L,
+      isDiscussions: isDiscs, latestTitle: THREADS[0].title[s.lang],
+      countOpen: countSt('open'), countReview: countSt('review'), countAccepted: countSt('accepted'),
+      open24Discuss: function () { self.setState({ screen: 'routine', tab: 'discuss', threadFilter: 'all', reportOpen: false }); },
+      isLibrary: isLib, isRoutine: isRout, isContribute: isCon, isLearn: isLearn, isDiscuss: isDisc,
+      navLibBg: navLib[0], navLibFg: navLib[1], navDisBg: navDis[0], navDisFg: navDis[1], navConBg: navCon[0], navConFg: navCon[1],
+      progress: progress,
+      isAuth: s.screen === 'signin' || s.screen === 'signup' || s.screen === 'verify',
+      isSignIn: s.screen === 'signin', isSignUp: s.screen === 'signup', isVerify: s.screen === 'verify',
+      signedIn: !!s.user, signedOut: !s.user,
+      userName: s.user ? s.user.name : '', userInitial: s.user ? s.user.name.charAt(0).toUpperCase() : '',
+      hasAuthMsg: !!s.authMsg, authMsg: s.authMsg ? L[s.authMsg] : '', hasAuthErr: !!s.authErr, authErr: s.authErr ? L[s.authErr] : '',
+      showPw: s.showPw, pwType: s.showPw ? 'text' : 'password', pwBtn: s.showPw ? L.hidePw : L.showPw,
+      togglePw: function () { self.setState({ showPw: !s.showPw }); },
+      goSignIn: function () { self.goAuth('signin'); }, goSignUp: function () { self.goAuth('signup'); },
+      siEmail: s.siEmail, onSiEmail: function (e) { self.setState({ siEmail: e.target.value }); },
+      suName: s.suName, onSuName: function (e) { self.setState({ suName: e.target.value }); },
+      suEmail: s.suEmail, onSuEmail: function (e) { self.setState({ suEmail: e.target.value }); },
+      suAgree: s.suAgree, onSuAgree: function (e) { self.setState({ suAgree: e.target.checked }); },
+      siSubmit: function () {
+        var em = s.siEmail.trim();
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { self.setState({ authErr: 'errEmail' }); return; }
+        self.finishAuth({ name: em.split('@')[0], email: em });
+      },
+      googleSignIn: function () { self.finishAuth({ name: 'Demo user', email: '' }); },
+      suSubmit: function () {
+        if (!s.suName.trim()) { self.setState({ authErr: 'errName' }); return; }
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(s.suEmail.trim())) { self.setState({ authErr: 'errEmail' }); return; }
+        if (!s.suAgree) { self.setState({ authErr: 'errAgree' }); return; }
+        self.setState({ screen: 'verify', authErr: null, authMsg: null, pendingUser: { name: s.suName.trim(), email: s.suEmail.trim() } });
+      },
+      verifyDemo: function () { self.finishAuth(s.pendingUser); },
+      signOut: function () { self.setState({ user: null, screen: s.screen === 'contribute' ? 'library' : s.screen, reportOpen: false }); },
+      cNoRoutine: !s.cRoutine, cHasRoutine: !!s.cRoutine,
+      step1Bg: s.cRoutine ? t.accentSoft : t.accent, step1Fg: s.cRoutine ? t.accentInk : t.onAccent,
+      step2Bg: s.cRoutine ? t.accent : t.chip, step2Fg: s.cRoutine ? t.onAccent : t.muted, step2Text: s.cRoutine ? t.ink : t.muted,
+      descDone: Object.keys(DETAILS).length, descPct: (Object.keys(DETAILS).length / 24 * 100) + '%',
+      pick24: function () { self.setState({ cRoutine: '24', cSubmitted: false }); },
+      changeRoutine: function () { self.setState({ cRoutine: null, cSubmitted: false }); },
+      cTabs: [['describe', L.tDescribe], ['video', L.tVideo], ['translate', L.tTranslate]].map(function (x) { var on = s.cTask === x[0]; return { label: x[1], on: on, bg: seg(on)[0], fg: seg(on)[1], pick: function () { self.openContribute(x[0]); } }; }),
+      cSubmitted: s.cSubmitted,
+      cShowDescribe: !s.cSubmitted && s.cTask === 'describe', cShowVideo: !s.cSubmitted && s.cTask === 'video', cShowTranslate: !s.cSubmitted && s.cTask === 'translate',
+      cMoves: MOVES.map(function (m, i) { var on = i === s.cMove, has = !!DETAILS[i]; return { num: pad(i + 1), zh: m[0], py: m[1], tr: tr(m), on: on, rowBg: on ? t.accentSoft : 'transparent', stLabel: has ? L.hasDraft : L.missing, stBg: has ? t.amberSoft : t.chip, stFg: has ? t.amber : t.muted, pick: function () { self.setState({ cMove: i }); } }; }),
+      cm: { num: pad(s.cMove + 1), zh: cm[0], py: cm[1], tr: tr(cm), hasDraft: !!DETAILS[s.cMove], view: function () { self.select(s.cMove); } },
+      trRows: MOVES.map(function (m, i) { return { num: pad(i + 1), zh: m[0], py: m[1], en: m[2], id: m[3], enLabel: pad(i + 1) + ' ' + m[0] + ' English', idLabel: pad(i + 1) + ' ' + m[0] + ' Bahasa Indonesia' }; }),
+      cSubmit: function () { self.setState({ cSubmitted: true }); },
+      cAnother: function () { self.setState({ cSubmitted: false }); },
+      isEn: en, isId: !en, enBg: seg(en)[0], enFg: seg(en)[1], idBg: seg(!en)[0], idFg: seg(!en)[1],
+      setEn: function () { self.setState({ lang: 'en' }); }, setId: function () { self.setState({ lang: 'id' }); },
+      learnBg: seg(isLearn)[0], learnFg: seg(isLearn)[1], discBg: seg(isDisc)[0], discFg: seg(isDisc)[1],
+      goLibrary: function () { self.setState({ screen: 'library', playing: false }); },
+      openRoutine: function () { self.setState({ screen: 'routine', tab: 'learn' }); },
+      goDiscuss: function () { self.setState({ screen: 'discussions', playing: false }); },
+      goContribute: function () { self.openContribute(s.cTask); },
+      tabLearn: function () { self.setState({ tab: 'learn' }); },
+      tabDiscuss: function () { self.setState({ tab: 'discuss', playing: false }); },
+      tabDiscussMove: function () { self.setState({ tab: 'discuss', threadFilter: 'move', playing: false }); },
+      q: s.q, onSearch: function (e) { self.setState({ q: e.target.value }); },
+      hasQuery: !!nq, results: results, resultCount: results.length, noResults: !!nq && results.length === 0,
+      moves: moves, active: active, curTime: fmt(s.t), playPct: (s.t / TOTAL * 100) + '%',
+      playing: s.playing, paused: !s.playing, playLabel: s.playing ? L.pause : L.play,
+      togglePlay: function () { var st = { playing: !s.playing }; if (s.t >= TOTAL - 0.1) st.t = 0; self.setState(st); },
+      prevMove: function () { self.seek(ai - 1); }, nextMove: function () { self.seek(ai + 1); },
+      prevDetail: function () { self.seek(ai - 1); }, nextDetail: function () { self.seek(ai + 1); },
+      loop: s.loop, loopBg: s.loop ? t.accentSoft : t.chip, loopFg: s.loop ? t.accent : t.ink,
+      toggleLoop: function () { self.setState({ loop: !s.loop }); },
+      speeds: [0.5, 0.75, 1].map(function (v) { return { label: v + '×', on: s.speed === v, bg: seg(s.speed === v)[0], fg: seg(s.speed === v)[1], pick: function () { self.setState({ speed: v }); } }; }),
+      gridD: GRID, fullD: line(FULL), doneD: line(FULL.slice(0, ai + 1)), activeD: line([a, [a[0] + (b[0] - a[0]) * frac, a[1] + (b[1] - a[1]) * frac]]),
+      dotX: dot[0], dotY: dot[1], startBox: sp[0] - 14, startBoxY: sp[1] - 14, pts: pts,
+      carpetAria: 'Carpet path, movement ' + active.num + ' ' + active.zh + ' highlighted',
+      listMode: !s.detailOpen, detailOpen: s.detailOpen,
+      closeDetail: function () { self.setState({ detailOpen: false }); },
+      playThis: function () { self.setState({ t: START[ai], playing: true }); },
+      hasDetail: !!d, noDetail: !d, detail: detail,
+      writeIt: function () { self.setState({ cRoutine: '24' }); self.openContribute('describe', ai); },
+      threadTotal: THREADS.length, threads: threads, noThreads: threads.length === 0,
+      fAll: s.threadFilter === 'all', fMove: s.threadFilter === 'move',
+      fAllBg: seg(s.threadFilter === 'all')[0], fAllFg: seg(s.threadFilter === 'all')[1],
+      fMoveBg: seg(s.threadFilter === 'move')[0], fMoveFg: seg(s.threadFilter === 'move')[1],
+      filterAll: function () { self.setState({ threadFilter: 'all' }); }, filterMove: function () { self.setState({ threadFilter: 'move' }); },
+      reportHere: function () { self.openReport('error', String(ai)); },
+      reportOpen: s.reportOpen, submitted: s.submitted, notSubmitted: !s.submitted,
+      typeOpts: ['error', 'suggest', 'question', 'rule'].map(function (k) { var on = s.formType === k; return { label: typeLabel[k], on: on, bg: on ? typeCol[k][0] : 'transparent', fg: on ? typeCol[k][1] : t.ink, bd: on ? typeCol[k][1] : t.line2, pick: function () { self.setState({ formType: k }); } }; }),
+      formMove: s.formMove, onFormMove: function (e) { self.setState({ formMove: e.target.value }); },
+      targetOpts: [{ v: 'r', label: '24式 · ' + L.routineWide }].concat(MOVES.map(function (m, i) { return { v: String(i), label: pad(i + 1) + ' ' + m[0] + ' ' + m[1] + ' · ' + tr(m) }; })),
+      fieldOpts: L.fields,
+      submit: function () { self.setState({ submitted: true }); },
+      closeReport: function () { self.setState({ reportOpen: false, submitted: false }); }
+    };
+  }
+}
+</script>
+</body>
+</html>
