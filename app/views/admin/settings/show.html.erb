@@ -1,0 +1,116 @@
+<% content_for :title, "设置 · #{t("admin.tabs.settings")}" %>
+<% error = ->(attr) { @setting.errors.messages_for(attr).first&.upcase_first } %>
+<% field_error = ->(attr) { (e = error.(attr)) ? tag.span(e, class: "field__error") : "" } %>
+<main class="container">
+  <%= render "admin/shared/header", tab: :settings %>
+
+  <%= form_with model: @setting, url: admin_settings_path, method: :patch, class: "admin-settings" do |form| %>
+    <section class="panel admin-panel" aria-labelledby="signups-heading">
+      <h2 class="heading heading--ruled" id="signups-heading"><span class="heading__zh">注册</span><span class="heading__tr"><%= t("admin.settings.signups.title") %></span></h2>
+      <div class="form">
+        <label class="check"><%= form.check_box :signups_open %><span><strong><%= t("admin.settings.signups.open") %></strong><br><span class="muted"><%= t("admin.settings.signups.open_help") %></span></span></label>
+        <label class="check"><%= form.check_box :verification_required %><span><strong><%= t("admin.settings.signups.verification") %></strong><br><span class="muted"><%= t("admin.settings.signups.verification_help") %></span></span></label>
+        <div class="form__pair">
+          <div class="field">
+            <%= form.label :notice_en, t("admin.settings.signups.notice_en") %>
+            <%= form.text_area :notice_en, class: "input input--area", rows: 2, maxlength: 300, lang: "en" %>
+            <%= field_error.(:notice_en) %>
+          </div>
+          <div class="field">
+            <%= form.label :notice_id, t("admin.settings.signups.notice_id") %>
+            <%= form.text_area :notice_id, class: "input input--area", rows: 2, maxlength: 300, lang: "id" %>
+            <%= field_error.(:notice_id) %>
+          </div>
+        </div>
+        <span class="field__hint"><%= t("admin.settings.signups.notice_help") %></span>
+      </div>
+    </section>
+
+    <section class="panel admin-panel" aria-labelledby="site-heading">
+      <h2 class="heading heading--ruled" id="site-heading"><span class="heading__zh">网站</span><span class="heading__tr"><%= t("admin.settings.site.title") %></span></h2>
+      <div class="form">
+        <div class="form__pair">
+          <div class="field">
+            <%= form.label :site_name, t("admin.settings.site.name") %>
+            <%= form.text_field :site_name, class: "input", required: true, maxlength: 60 %>
+            <%= field_error.(:site_name) %>
+          </div>
+          <div class="field">
+            <%= form.label :contact_email, t("admin.settings.site.contact") %>
+            <%= form.email_field :contact_email, class: "input" %>
+            <%= field_error.(:contact_email) %>
+          </div>
+        </div>
+        <div class="field">
+          <%= form.label :source_url, t("admin.settings.site.source") %>
+          <%= form.url_field :source_url, class: "input", required: true %>
+          <%= field_error.(:source_url) %>
+        </div>
+        <div class="form__pair">
+          <div class="field">
+            <%= form.label :footer_en, t("admin.settings.site.footer_en") %>
+            <%= form.text_area :footer_en, class: "input input--area", rows: 3, maxlength: 500, placeholder: t("layout.footer", locale: :en), lang: "en" %>
+            <%= field_error.(:footer_en) %>
+          </div>
+          <div class="field">
+            <%= form.label :footer_id, t("admin.settings.site.footer_id") %>
+            <%= form.text_area :footer_id, class: "input input--area", rows: 3, maxlength: 500, placeholder: t("layout.footer", locale: :id), lang: "id" %>
+            <%= field_error.(:footer_id) %>
+          </div>
+        </div>
+        <span class="field__hint"><%= t("admin.settings.site.footer_help") %></span>
+      </div>
+    </section>
+
+    <section class="panel admin-panel" id="email" aria-labelledby="email-heading">
+      <h2 class="heading heading--ruled" id="email-heading"><span class="heading__zh">邮件</span><span class="heading__tr"><%= t("admin.settings.email.title") %></span></h2>
+      <div class="form">
+        <p class="muted"><%= t("admin.settings.email.lead") %></p>
+        <div class="field">
+          <%= form.label :mail_from, t("admin.settings.email.from") %>
+          <%= form.text_field :mail_from, class: "input", placeholder: "OpenWushu <noreply@example.org>", "aria-describedby": "from-hint" %>
+          <span id="from-hint" class="field__hint"><%= t("admin.settings.email.from_help") %></span>
+        </div>
+        <div class="form__pair">
+          <div class="field">
+            <%= form.label :smtp_address, t("admin.settings.email.address") %>
+            <%= form.text_field :smtp_address, class: "input", placeholder: "smtp.example.com", autocomplete: "off" %>
+          </div>
+          <div class="field">
+            <%= form.label :smtp_port, t("admin.settings.email.port") %>
+            <%= form.number_field :smtp_port, class: "input", min: 1, max: 65_535, list: "smtp-ports", placeholder: "587", "aria-describedby": "port-hint" %>
+            <datalist id="smtp-ports"><% Setting::SMTP_PORTS.each do |port| %><option value="<%= port %>"></option><% end %></datalist>
+            <span id="port-hint" class="field__hint"><%= t("admin.settings.email.port_help") %></span>
+            <%= field_error.(:smtp_port) %>
+          </div>
+        </div>
+        <div class="form__pair">
+          <div class="field">
+            <%= form.label :smtp_username, t("admin.settings.email.username") %>
+            <%= form.text_field :smtp_username, class: "input", autocomplete: "off" %>
+          </div>
+          <div class="field">
+            <%= form.label :smtp_password, t("admin.settings.email.password") %>
+            <%= form.password_field :smtp_password, value: nil, class: "input", autocomplete: "new-password", "aria-describedby": "password-hint" %>
+            <span id="password-hint" class="field__hint"><%= @setting.smtp_password.present? ? t("admin.settings.email.password_saved") : t("admin.settings.email.password_none") %></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="admin-actions admin-actions--row admin-save">
+      <%= form.submit t("admin.save"), class: "btn btn--accent" %>
+    </div>
+  <% end %>
+
+  <section class="panel admin-panel" aria-labelledby="email-tools">
+    <h2 class="heading" id="email-tools"><span class="heading__tr"><%= t("admin.settings.email.tools") %></span></h2>
+    <p class="muted"><%= t("admin.settings.email.test_help", email: Current.user.email_address) %></p>
+    <div class="admin-actions admin-actions--row">
+      <%= button_to t("admin.settings.email.test"), test_email_admin_settings_path, class: "btn" %>
+      <% if @setting.smtp_password.present? %>
+        <%= button_to t("admin.settings.email.clear_password"), smtp_password_admin_settings_path, method: :delete, class: "btn btn--danger", form: { data: { turbo_confirm: t("admin.settings.email.confirm_clear") } } %>
+      <% end %>
+    </div>
+  </section>
+</main>

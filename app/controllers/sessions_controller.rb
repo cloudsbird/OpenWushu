@@ -7,7 +7,11 @@ class SessionsController < ApplicationController
   end
 
   def create
-    if user = User.authenticate_by(params.permit(:email_address, :password))
+    user = User.authenticate_by(params.permit(:email_address, :password))
+    if user&.suspended?
+      flash.now[:alert] = t(".suspended")
+      render :new, status: :unprocessable_entity
+    elsif user
       start_new_session_for user
       cookies.permanent[:locale] = user.locale
       redirect_to after_authentication_url

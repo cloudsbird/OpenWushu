@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   allow_browser versions: { chrome: 89, safari: 16.4, firefox: 108, opera: 75, ie: false }
 
   around_action :switch_locale
+  helper_method :site_settings
 
   private
 
@@ -14,6 +15,11 @@ class ApplicationController < ActionController::Base
     locale ||= cookies[:locale].presence_in(I18n.available_locales.map(&:to_s))
     locale ||= request.headers["Accept-Language"].to_s.match?(/\A\s*(id|ms)\b/i) ? "id" : "en"
     I18n.with_locale(locale, &action)
+  end
+
+  # Read once per request, never cached, so changes in Admin > Settings show at once
+  def site_settings
+    @site_settings ||= Setting.current
   end
 
   # Sign-in and sign-up pages make no sense once signed in

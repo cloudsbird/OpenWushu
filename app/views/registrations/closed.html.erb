@@ -1,0 +1,5 @@
+<% content_for :title, "注册 · #{t("registrations.closed.title")}" %>
+<%= render layout: "shared/auth" do %>
+  <%= render "shared/auth_title", zh: "注册", py: "Zhùcè", title: t("registrations.closed.title"), lead: t("registrations.closed.lead") %>
+  <p class="muted"><%= t("registrations.new.have_account") %> <%= link_to t("layout.sign_in"), new_session_path %></p>
+<% end %>

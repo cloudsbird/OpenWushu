@@ -3,6 +3,7 @@ id:
   layout:
     home: Beranda OpenWushu
     library: Pustaka
+    menu: Menu
     translation: terjemahan
     translation_group: Bahasa terjemahan
     footer: "OpenWushu · hanya untuk tujuan edukasi. Konten dikelola komunitas dan mungkin mengandung kesalahan; selalu belajar dengan pelatih yang berkualifikasi."

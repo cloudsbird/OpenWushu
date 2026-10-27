@@ -1,0 +1,38 @@
+<% content_for :title, "#{@routine.name_zh} · #{t("admin.tabs.routines")}" %>
+<main class="container">
+  <%= render "admin/shared/header", tab: :routines %>
+  <p class="breadcrumb"><%= link_to t("admin.routines.back"), admin_routines_path %></p>
+
+  <section class="panel admin-panel admin-narrow">
+    <h2 class="heading heading--ruled"><span class="heading__zh"><%= @routine.name_zh %></span><span class="heading__tr"><%= @routine.name_pinyin %> · <%= @routine.name_tr %></span></h2>
+
+    <%= form_with model: @routine, url: admin_routine_path(@routine), class: "form" do |form| %>
+      <fieldset class="field">
+        <legend><%= t("admin.routines.columns.status") %></legend>
+        <% Routine::STATUSES.each do |status| %>
+          <label class="check"><%= form.radio_button :status, status %><span><strong><%= t("admin.routines.statuses.#{status}") %></strong> — <%= t("admin.routines.status_help.#{status}") %></span></label>
+        <% end %>
+        <% @routine.errors.messages_for(:status).each do |message| %><span class="field__error"><%= message %></span><% end %>
+      </fieldset>
+
+      <div class="field">
+        <%= form.label :video, t("admin.routines.video") %>
+        <% if @routine.video.attached? && @routine.video.blob.persisted? %>
+          <p class="muted"><%= t("admin.routines.current_video", name: @routine.video.filename, size: number_to_human_size(@routine.video.blob.byte_size)) %></p>
+        <% end %>
+        <%= form.file_field :video, accept: Routine::VIDEO_TYPES.join(","), class: "input input--file", "aria-describedby": "video-hint" %>
+        <span id="video-hint" class="field__hint"><%= t("admin.routines.video_hint", max: Routine::VIDEO_MAX_SIZE / 1.gigabyte) %></span>
+        <% @routine.errors.messages_for(:video).each do |message| %><span class="field__error"><%= message %></span><% end %>
+      </div>
+
+      <div class="admin-actions admin-actions--row">
+        <%= form.submit t("admin.save"), class: "btn btn--accent" %>
+        <% if @routine.status_was == "published" %><%= link_to t("admin.routines.view"), routine_path(@routine), class: "btn" %><% end %>
+      </div>
+    <% end %>
+
+    <% if @routine.video.attached? && @routine.video.blob.persisted? %>
+      <%= button_to t("admin.routines.remove_video"), video_admin_routine_path(@routine), method: :delete, class: "btn btn--danger", form: { data: { turbo_confirm: t("admin.routines.confirm_remove_video") } } %>
+    <% end %>
+  </section>
+</main>

@@ -1,6 +1,7 @@
 class RegistrationsController < ApplicationController
   allow_unauthenticated_access
   before_action :redirect_if_authenticated
+  before_action :require_open_signups
   rate_limit to: 10, within: 3.minutes, only: :create, with: -> { redirect_to new_registration_path, alert: t("sessions.rate_limited") }
 
   def new
@@ -20,6 +21,10 @@ class RegistrationsController < ApplicationController
   end
 
   private
+
+  def require_open_signups
+    render :closed, status: :forbidden unless site_settings.signups_open?
+  end
 
   def registration_params
     params.expect(user: %i[display_name email_address password locale club accept_guidelines])

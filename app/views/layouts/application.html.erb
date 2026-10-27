@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="<%= I18n.locale == :id ? "id" : "en" %>">
   <head>
-    <title><%= [ content_for(:title), "OpenWushu 开放武术" ].compact.join(" · ") %></title>
+    <title><%= [ content_for(:title), "#{site_settings.site_name} 开放武术" ].compact.join(" · ") %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -25,15 +25,13 @@
 
   <body>
     <div class="page">
-      <header class="site-header">
+      <%# On phones the bar is the logo, the translation switch and a menu button; the menu holds the rest %>
+      <header class="site-header" data-controller="menu" data-action="keydown.esc@window->menu#close click@window->menu#closeOutside">
         <div class="site-header__inner">
           <%= link_to root_path, class: "brand", "aria-label": t("layout.home") do %>
             <span class="seal" aria-hidden="true"><span>武</span><span>术</span></span>
-            <span class="brand__text"><span class="brand__name">OpenWushu</span><span class="brand__zh">开放武术</span></span>
+            <span class="brand__text"><span class="brand__name"><%= site_settings.site_name %></span><span class="brand__zh">开放武术</span></span>
           <% end %>
-          <nav class="site-nav" aria-label="Main">
-            <%= link_to t("layout.library"), root_path, class: "site-nav__link", "aria-current": (controller_name == "routines" ? "page" : nil) %>
-          </nav>
           <div class="lang-switch">
             <span class="lang-switch__label">中文 + <%= t("layout.translation") %></span>
             <div class="segmented" role="group" aria-label="<%= t("layout.translation_group") %>">
@@ -42,20 +40,38 @@
               <% end %>
             </div>
           </div>
-          <div class="account">
-            <% if authenticated? %>
-              <span class="account__name"><%= Current.user.display_name %></span>
-              <% unless Current.user.verified? %>
-                <%= link_to t("layout.unverified"), email_verification_path, class: "badge badge--amber" %>
+          <button type="button" class="btn btn--icon menu-toggle" aria-expanded="false" aria-controls="site-menu" data-menu-target="button" data-action="menu#toggle">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 5 H17 M3 10 H17 M3 15 H17"/></svg>
+            <span class="visually-hidden"><%= t("layout.menu") %></span>
+          </button>
+          <div class="site-menu" id="site-menu" data-menu-target="panel">
+            <nav class="site-nav" aria-label="Main">
+              <%= link_to t("layout.library"), root_path, class: "site-nav__link", "aria-current": (controller_path == "routines" ? "page" : nil) %>
+              <% if authenticated? && Current.user.admin? %>
+                <%= link_to t("layout.admin"), admin_root_path, class: "site-nav__link", "aria-current": (controller_path.start_with?("admin/") ? "page" : nil) %>
               <% end %>
-              <%= button_to t("layout.sign_out"), session_path, method: :delete, class: "btn", form_class: "account__form" %>
-            <% else %>
-              <%= link_to t("layout.sign_in"), new_session_path, class: "btn" %>
-              <%= link_to t("layout.sign_up"), new_registration_path, class: "btn btn--accent" %>
-            <% end %>
+            </nav>
+            <div class="account">
+              <% if authenticated? %>
+                <span class="account__name"><%= Current.user.display_name %></span>
+                <% unless Current.user.verified? %>
+                  <%= link_to t("layout.unverified"), email_verification_path, class: "badge badge--amber" %>
+                <% end %>
+                <%= button_to t("layout.sign_out"), session_path, method: :delete, class: "btn", form_class: "account__form" %>
+              <% else %>
+                <%= link_to t("layout.sign_in"), new_session_path, class: "btn" %>
+                <% if site_settings.signups_open? %>
+                  <%= link_to t("layout.sign_up"), new_registration_path, class: "btn btn--accent" %>
+                <% end %>
+              <% end %>
+            </div>
           </div>
         </div>
       </header>
+
+      <% if site_settings.notice %>
+        <div class="site-notice" role="note"><p><%= site_settings.notice %></p></div>
+      <% end %>
 
       <%# Account pages show messages inside their form instead %>
       <% if flash.any? && !content_for?(:auth) %>
@@ -66,9 +82,11 @@
 
       <footer class="site-footer">
         <p>
-          <%= t("layout.footer") %> ·
+          <%= site_settings.footer || t("layout.footer") %> ·
+          <%# The licence of the content is fixed: changing a link would not relicense contributions %>
           <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noopener" target="_blank"><%= t("layout.license") %></a> ·
-          <a href="https://github.com/cloudsbird/OpenWushu" rel="noopener" target="_blank"><%= t("layout.source_code") %></a>
+          <%= link_to t("layout.source_code"), site_settings.source_url, rel: "noopener", target: "_blank" %>
+          <% if site_settings.contact_email %> · <%= mail_to site_settings.contact_email, t("layout.contact") %><% end %>
         </p>
       </footer>
     </div>

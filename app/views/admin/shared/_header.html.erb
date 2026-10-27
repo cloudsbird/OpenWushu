@@ -1,0 +1,17 @@
+<%# Title and tabs shared by the admin pages %>
+<div class="admin-head">
+  <div class="admin-head__title">
+    <h1 class="vtitle" lang="zh">管理</h1>
+    <div>
+      <p class="py">Guǎnlǐ</p>
+      <p class="admin-head__tr"><%= t("admin.title") %></p>
+    </div>
+  </div>
+  <nav class="tabs admin-tabs" aria-label="<%= t("admin.title") %>">
+    <% { users: [ "用户", admin_users_path ], routines: [ "套路", admin_routines_path ], settings: [ "设置", admin_settings_path ] }.each do |key, (zh, path)| %>
+      <%= link_to path, class: "segmented__item", "aria-current": (tab == key ? "page" : nil) do %>
+        <span lang="zh"><%= zh %></span>&nbsp;<%= t("admin.tabs.#{key}") %>
+      <% end %>
+    <% end %>
+  </nav>
+</div>
