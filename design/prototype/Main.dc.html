@@ -1491,12 +1491,21 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </section>
 </sc-if>
 </sc-if>
+
+<section aria-label="{{s.devTitle}}" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<span aria-hidden="true" style="flex: none; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: {{t.chip}}; color: {{t.accentInk}}"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7 L3 12 L8 17"></path><path d="M16 7 L21 12 L16 17"></path><path d="M14 4 L10 20"></path></svg></span>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 4px">
+<h2 style="margin: 0; font-family: 'Alegreya', serif; font-size: 20px; font-weight: 700">{{s.devTitle}}</h2>
+<p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{s.devBody}}</p>
+</div>
+<a href="https://github.com/cloudsbird/OpenWushu" target="_blank" rel="noopener" style="min-height: 46px; padding: 0 18px; display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; text-decoration: none; background: {{t.ink}}; color: {{t.surface}}">{{s.devCta}} <span aria-hidden="true">↗</span></a>
+</section>
 </main>
 </sc-if>
 
 <span style="flex: 1 1 auto"></span>
 <footer style="position: sticky; bottom: 0; z-index: 10; border-top: 1px solid {{t.line}}; background: {{t.surface}}">
-<p style="max-width: 1280px; margin: 0 auto; padding: 10px 24px; font-size: 13px; color: {{t.muted}}">{{s.footer}} · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener" style="color: {{t.accentInk}}">{{s.license}}</a></p>
+<p style="max-width: 1280px; margin: 0 auto; padding: 10px 24px; font-size: 13px; color: {{t.muted}}">{{s.footer}} · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener" style="color: {{t.accentInk}}">{{s.license}}</a> · <a href="https://github.com/cloudsbird/OpenWushu" target="_blank" rel="noopener" style="color: {{t.accentInk}}">{{s.sourceCode}}</a></p>
 </footer>
 </div>
 </x-dc>
@@ -1603,6 +1612,7 @@ var S = {
     library: 'Library', discussions: 'Discussions', contribute: 'Contribute', translation: 'translation',
     dLead: 'Pick a routine to read its threads, ask a question or report a mistake. Each thread is linked to a movement so contributors know exactly what to check.', latest: 'Latest', dPending: 'Discussion opens once the movement list is added.',
     cTitle: 'Contribute', cLead: 'Help build an accurate, open reference. Every edit is saved as a revision and reviewed by a moderator before it is published. To report a mistake instead, open a thread in Discussions.',
+    sourceCode: 'Source code on GitHub', devTitle: 'Are you a developer?', devBody: 'OpenWushu is open source (AGPL-3.0). Report bugs, suggest features or send a pull request on GitHub.', devCta: 'View on GitHub',
     review: 'Review', profile: 'Profile', history: 'History', revisions: 'revisions', before: 'Before', after: 'After', newContent: '(new)', fieldLang: 'Language', source: 'Source',
     rvTitle: 'Review queue', rvLead: 'Approve, request changes or reject submitted content and contributor applications. Every decision emails the contributor.',
     rvTabContent: 'Content changes', rvTabApps: 'Contributor applications', rvSelfNote: 'You never review your own submissions; they go to another maintainer.',
@@ -1704,6 +1714,7 @@ var S = {
     library: 'Pustaka', discussions: 'Diskusi', contribute: 'Kontribusi', translation: 'terjemahan',
     dLead: 'Pilih rangkaian untuk membaca diskusinya, bertanya, atau melaporkan kesalahan. Setiap diskusi terhubung ke gerakan agar kontributor tahu persis apa yang perlu diperiksa.', latest: 'Terbaru', dPending: 'Diskusi dibuka setelah daftar gerakan ditambahkan.',
     cTitle: 'Kontribusi', cLead: 'Bantu membangun referensi terbuka yang akurat. Setiap suntingan disimpan sebagai revisi dan ditinjau moderator sebelum diterbitkan. Untuk melaporkan kesalahan, buka diskusi di halaman Diskusi.',
+    sourceCode: 'Kode sumber di GitHub', devTitle: 'Anda seorang pengembang?', devBody: 'OpenWushu bersifat sumber terbuka (AGPL-3.0). Laporkan bug, usulkan fitur, atau kirim pull request di GitHub.', devCta: 'Lihat di GitHub',
     review: 'Tinjauan', profile: 'Profil', history: 'Riwayat', revisions: 'revisi', before: 'Sebelum', after: 'Sesudah', newContent: '(baru)', fieldLang: 'Bahasa', source: 'Sumber',
     rvTitle: 'Antrean tinjauan', rvLead: 'Setujui, minta perubahan, atau tolak konten dan pengajuan kontributor yang masuk. Setiap keputusan dikirim ke kontributor lewat email.',
     rvTabContent: 'Perubahan konten', rvTabApps: 'Pengajuan kontributor', rvSelfNote: 'Anda tidak pernah meninjau kiriman sendiri; kiriman itu diteruskan ke pengelola lain.',
