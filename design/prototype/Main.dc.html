@@ -786,7 +786,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 
 <span style="flex: 1 1 auto"></span>
 <footer style="position: sticky; bottom: 0; z-index: 10; border-top: 1px solid {{t.line}}; background: {{t.surface}}">
-<p style="max-width: 1280px; margin: 0 auto; padding: 10px 24px; font-size: 13px; color: {{t.muted}}">{{s.footer}}</p>
+<p style="max-width: 1280px; margin: 0 auto; padding: 10px 24px; font-size: 13px; color: {{t.muted}}">{{s.footer}} · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener" style="color: {{t.accentInk}}">{{s.license}}</a></p>
 </footer>
 </div>
 </x-dc>
@@ -872,7 +872,7 @@ var S = {
     google: 'Continue with Google', or: 'or', noAccount: 'New to OpenWushu?', createAcc: 'Create an account', haveAcc: 'Already have an account?',
     siTitle: 'Welcome back', siLead: 'Sign in to join discussions and contribute.', suTitle: 'Create your account', suLead: 'Free for everyone. Reading and watching never need an account.',
     name: 'Display name', pwHint: 'At least 8 characters.', prefLang: 'Preferred translation', club: 'Club or school (optional)',
-    agree: 'I agree to the community guidelines: content is for education, changes cite a source, and I will be respectful.', create: 'Create account',
+    agree: 'I agree to the community guidelines: content is for education, changes cite a source, I will be respectful, and my contributions are published under CC BY-SA 4.0.', create: 'Create account', license: 'Content licensed CC BY-SA 4.0',
     errEmail: 'Enter a valid email address.', errName: 'Enter a display name.', errAgree: 'Please accept the community guidelines.',
     verifyTitle: 'Check your email', verifyBody: 'We sent a verification link to', verifyBody2: '. Open it to activate your account. Until then you can read but not post.', verifiedDemo: 'I have verified (demo)', resend: 'Resend email',
     gateContribute: 'Sign in to contribute. Contributions are linked to your account so maintainers can review and credit them.', gateDiscuss: 'Sign in to open a thread or report an issue.',
@@ -885,9 +885,9 @@ var S = {
     tDescribe: 'Write descriptions', tVideo: 'Upload video', tTranslate: 'Check translations',
     needsDesc: 'Movements', hasDraft: 'Draft', missing: 'Missing', editing: 'Editing', draftExists: 'A draft already exists for this movement. Your edit will be reviewed against it.',
     fFacing: 'Facing direction', dirs: ['North', 'East', 'South', 'West'], fSteps: 'Steps (one per line)', fKeys: 'Key points (one per line)', fMistakes: 'Common mistakes (one per line)',
-    phSteps: 'e.g. Right foot follows forward a half step…', reviewNote: 'Saved as a new revision. A moderator reviews it, and contributors watching this routine are emailed.',
+    phSteps: 'e.g. Right foot follows forward a half step…', reviewNote: 'Saved as a new revision. A moderator reviews it, and contributors watching this routine are emailed. Published content is licensed CC BY-SA 4.0.',
     submitReview: 'Submit for review', viewInRoutine: 'View in routine', cSent: 'Submitted for review', cSentBody: 'Your revision is waiting for a moderator. You will get an email when it is accepted or if changes are requested.', another: 'Contribute more',
-    vRoutine: 'Routine', vView: 'Camera view', views: ['Front', 'Side', 'Back'], vPerformer: 'Performer (optional)', vFile: 'Video file', vRights: 'I have the right to share this video for educational use',
+    vRoutine: 'Routine', vView: 'Camera view', views: ['Front', 'Side', 'Back'], vPerformer: 'Performer (optional)', vFile: 'Video file', vRights: 'I have the right to share this video and agree to publish it under CC BY-SA 4.0',
     vNext: 'After uploading, you mark where each movement starts on the timeline, so clicking a movement jumps straight to it.', upload: 'Upload video',
     trIntro: 'Chinese and pinyin are the source and are not translated. Check the English and Indonesian names.', colMove: 'Movement', submitTr: 'Submit translations',
     libTitle: 'Compulsory routines', libLead: 'An open, community-maintained study reference for standard wushu routines. Names are always kept in Chinese with pinyin; translations in English or Bahasa Indonesia.',
@@ -919,7 +919,7 @@ var S = {
     google: 'Lanjutkan dengan Google', or: 'atau', noAccount: 'Baru di OpenWushu?', createAcc: 'Buat akun', haveAcc: 'Sudah punya akun?',
     siTitle: 'Selamat datang kembali', siLead: 'Masuk untuk ikut berdiskusi dan berkontribusi.', suTitle: 'Buat akun Anda', suLead: 'Gratis untuk semua. Membaca dan menonton tidak memerlukan akun.',
     name: 'Nama tampilan', pwHint: 'Minimal 8 karakter.', prefLang: 'Terjemahan pilihan', club: 'Klub atau sekolah (opsional)',
-    agree: 'Saya setuju dengan pedoman komunitas: konten untuk edukasi, perubahan menyertakan sumber, dan saya akan bersikap sopan.', create: 'Buat akun',
+    agree: 'Saya setuju dengan pedoman komunitas: konten untuk edukasi, perubahan menyertakan sumber, saya akan bersikap sopan, dan kontribusi saya diterbitkan di bawah lisensi CC BY-SA 4.0.', create: 'Buat akun', license: 'Konten berlisensi CC BY-SA 4.0',
     errEmail: 'Masukkan alamat email yang valid.', errName: 'Masukkan nama tampilan.', errAgree: 'Harap setujui pedoman komunitas.',
     verifyTitle: 'Periksa email Anda', verifyBody: 'Kami mengirim tautan verifikasi ke', verifyBody2: '. Buka tautan itu untuk mengaktifkan akun. Sebelum itu Anda bisa membaca tetapi belum bisa memposting.', verifiedDemo: 'Saya sudah verifikasi (demo)', resend: 'Kirim ulang email',
     gateContribute: 'Masuk untuk berkontribusi. Kontribusi terhubung ke akun Anda agar pengelola dapat meninjau dan mencantumkan nama Anda.', gateDiscuss: 'Masuk untuk membuka diskusi atau melaporkan masalah.',
@@ -932,9 +932,9 @@ var S = {
     tDescribe: 'Tulis deskripsi', tVideo: 'Unggah video', tTranslate: 'Periksa terjemahan',
     needsDesc: 'Gerakan', hasDraft: 'Draf', missing: 'Belum ada', editing: 'Menyunting', draftExists: 'Sudah ada draf untuk gerakan ini. Suntingan Anda akan ditinjau terhadap draf tersebut.',
     fFacing: 'Arah hadap', dirs: ['Utara', 'Timur', 'Selatan', 'Barat'], fSteps: 'Langkah (satu per baris)', fKeys: 'Poin penting (satu per baris)', fMistakes: 'Kesalahan umum (satu per baris)',
-    phSteps: 'mis. Kaki kanan menyusul setengah langkah ke depan…', reviewNote: 'Disimpan sebagai revisi baru. Moderator akan meninjaunya, dan kontributor yang mengikuti rangkaian ini menerima email.',
+    phSteps: 'mis. Kaki kanan menyusul setengah langkah ke depan…', reviewNote: 'Disimpan sebagai revisi baru. Moderator akan meninjaunya, dan kontributor yang mengikuti rangkaian ini menerima email. Konten yang diterbitkan berlisensi CC BY-SA 4.0.',
     submitReview: 'Kirim untuk ditinjau', viewInRoutine: 'Lihat di rangkaian', cSent: 'Terkirim untuk ditinjau', cSentBody: 'Revisi Anda menunggu moderator. Anda akan menerima email saat diterima atau jika perlu perubahan.', another: 'Kontribusi lagi',
-    vRoutine: 'Rangkaian', vView: 'Sudut kamera', views: ['Depan', 'Samping', 'Belakang'], vPerformer: 'Peraga (opsional)', vFile: 'Berkas video', vRights: 'Saya berhak membagikan video ini untuk tujuan edukasi',
+    vRoutine: 'Rangkaian', vView: 'Sudut kamera', views: ['Depan', 'Samping', 'Belakang'], vPerformer: 'Peraga (opsional)', vFile: 'Berkas video', vRights: 'Saya berhak membagikan video ini dan setuju menerbitkannya di bawah lisensi CC BY-SA 4.0',
     vNext: 'Setelah mengunggah, Anda menandai awal setiap gerakan di garis waktu, sehingga klik gerakan langsung melompat ke sana.', upload: 'Unggah video',
     trIntro: 'Bahasa Tionghoa dan pinyin adalah sumber dan tidak diterjemahkan. Periksa nama dalam bahasa Inggris dan Indonesia.', colMove: 'Gerakan', submitTr: 'Kirim terjemahan',
     libTitle: 'Rangkaian wajib', libLead: 'Referensi belajar terbuka yang dikelola komunitas untuk rangkaian standar wushu. Nama selalu ditulis dalam bahasa Tionghoa beserta pinyin; terjemahan dalam bahasa Inggris atau Bahasa Indonesia.',

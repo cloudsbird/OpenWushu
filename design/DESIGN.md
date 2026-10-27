@@ -18,7 +18,16 @@ Sample content: **二十四式简化太极拳 (24-Form Simplified Taijiquan)**, 
 | Languages | **Chinese (characters + pinyin) is always shown** — it is the source. The switcher only changes the translation: English ↔ Bahasa Indonesia. Chinese terms stay inline in descriptions, e.g. 左虚步 zuǒ xūbù |
 | Colors | Blue `#50A0FF` + white. Navy `#06152B` text on the blue (white on `#50A0FF` is only ~2.6:1). Deeper `#1766C7` for blue text on white. Light tint `#F5F9FF` background. Amber only for warning badges, red only for error labels |
 | Type | Noto Serif SC (Chinese display), Noto Sans SC + Inter (body) |
-| Footer | Educational disclaimer is always pinned to the bottom of the screen |
+| Footer | Educational disclaimer + "Content licensed CC BY-SA 4.0" link, always pinned to the bottom of the screen |
+| License | Code: MIT (`LICENSE`). Content — descriptions, translations, carpet paths, threads and uploaded videos: **CC BY-SA 4.0** (`LICENSE-CONTENT`) |
+
+## Licensing in the product
+
+- **Sign up**: the community-guidelines checkbox states that contributions are published under CC BY-SA 4.0.
+- **Upload video**: the rights checkbox reads "I have the right to share this video and agree to publish it under CC BY-SA 4.0". Uploaders keep their copyright and grant the license.
+- **Contribute**: the note under every submit button says published content is licensed CC BY-SA 4.0.
+- **Attribution**: each movement/routine page credits its contributors (revision history), which satisfies the license's attribution requirement for reusers.
+- **Sources**: contributors write descriptions in their own words and cite the source; text copied from official books or rulebooks is not accepted, since it is copyrighted by its publisher.
 
 ## Screens
 
