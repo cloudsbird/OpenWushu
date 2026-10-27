@@ -40,7 +40,7 @@ sudo -u postgres createuser -s "$USER" # lets Rails connect as you, without a pa
 To use another server, set `PGHOST`, `PGPORT`, `PGUSER` and `PGPASSWORD`.
 
 ```sh
-# Ruby 3.4.4 (see .ruby-version)
+# Ruby 4.0.9 (see .ruby-version)
 bundle install
 bin/rails db:prepare db:seed   # 42-form Taijiquan plus the other routines from the reference book
 bin/dev                        # http://localhost:3000
