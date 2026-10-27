@@ -1,0 +1,13 @@
+<% content_for :why, t(".why") %>
+<% movement = @revision.movement %>
+<h1 style="margin: 0 0 16px; font-family: Alegreya, Georgia, serif; font-size: 26px; line-height: 1.25"><%= t(".heading.#{@revision.status}") %></h1>
+<p style="margin: 0 0 16px"><%= t(".body.#{@revision.status}", name: @revision.author.display_name, movement: "#{movement.number} #{movement.name_zh} #{movement.name_pinyin}", reviewer: person(@revision.reviewer)) %></p>
+<div style="margin: 0 0 16px; padding: 16px 18px; border: 1px solid #D3DEEC; background: #F5F8FC">
+  <p style="margin: 0; font-family: Alegreya, Georgia, serif; font-size: 18px; font-weight: 700"><%= @revision.summary %></p>
+  <% if @revision.note %><p style="margin: 6px 0 0; font-size: 15px"><%= t(".note") %>: <%= @revision.note %></p><% end %>
+</div>
+<% if @revision.published? %>
+  <%= render "shared/mail_button", url: routine_url(movement.routine, m: movement.number), label: t(".cta_published") %>
+<% else %>
+  <%= render "shared/mail_button", url: contributions_url, label: t(".cta_other") %>
+<% end %>

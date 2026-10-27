@@ -1,0 +1,10 @@
+<%= t(".heading") %>
+
+<%= t(".body", author: person(@revision.author), movement: "#{@revision.movement.number} #{@revision.movement.name_zh} #{@revision.movement.name_pinyin}") %>
+
+<%= @revision.summary %>
+<%= t(".source", source: @revision.source) %>
+
+<%= t(".cta") %>: <%= review_url(@revision) %>
+
+<%= t(".why") %>

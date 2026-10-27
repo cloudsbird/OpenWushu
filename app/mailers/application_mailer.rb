@@ -1,6 +1,7 @@
 class ApplicationMailer < ActionMailer::Base
   default from: -> { Setting.current.mail_from || ENV.fetch("MAIL_FROM", "OpenWushu <notifications@example.com>") }
   layout "mailer"
+  helper :revisions
 
   after_action :use_saved_smtp_settings
 

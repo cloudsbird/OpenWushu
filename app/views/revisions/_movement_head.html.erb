@@ -1,0 +1,15 @@
+<p class="breadcrumb">
+  <%= link_to t("layout.library"), root_path %> /
+  <%= link_to @routine.name_zh, routine_path(@routine) %> /
+  <%= link_to "#{@movement.number} #{@movement.name_zh}", routine_path(@routine, m: @movement.number) %>
+</p>
+<div class="routine-head">
+  <div class="routine-head__title">
+    <span class="vtitle" lang="zh"><%= zh %></span>
+    <div>
+      <h1><%= @movement.name_zh %></h1>
+      <p><span class="py"><%= @movement.name_pinyin %></span> · <strong><%= @movement.name_tr %></strong></p>
+      <p><%= title %></p>
+    </div>
+  </div>
+</div>

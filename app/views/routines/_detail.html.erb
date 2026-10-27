@@ -87,7 +87,15 @@
       <div class="pending">
         <h3 style="font-family: var(--font-body)"><%= t("routines.detail.pending_title") %></h3>
         <p><%= t("routines.detail.pending_body") %></p>
+        <% if can_edit %><%= link_to t("routines.detail.write_it"), new_routine_movement_revision_path(movement.routine, movement), class: "btn btn--accent" %><% end %>
       </div>
     <% end %>
+
+    <div class="detail__footer">
+      <%= link_to t("routines.detail.history", count: revision_count), routine_movement_revisions_path(movement.routine, movement) %>
+      <% if can_edit && movement.described? %>
+        <%= link_to t("routines.detail.edit"), new_routine_movement_revision_path(movement.routine, movement), class: "btn" %>
+      <% end %>
+    </div>
   </div>
 </article>

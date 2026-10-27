@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   allow_browser versions: { chrome: 89, safari: 16.4, firefox: 108, opera: 75, ie: false }
 
   around_action :switch_locale
-  helper_method :site_settings
+  helper_method :site_settings, :signed_in_user
 
   private
 
@@ -15,6 +15,12 @@ class ApplicationController < ActionController::Base
     locale ||= cookies[:locale].presence_in(I18n.available_locales.map(&:to_s))
     locale ||= request.headers["Accept-Language"].to_s.match?(/\A\s*(id|ms)\b/i) ? "id" : "en"
     I18n.with_locale(locale, &action)
+  end
+
+  # The signed-in user, also on pages open to visitors: there the session is only loaded on demand,
+  # so Current.user alone would be nil
+  def signed_in_user
+    Current.user if authenticated?
   end
 
   # Read once per request, never cached, so changes in Admin > Settings show at once

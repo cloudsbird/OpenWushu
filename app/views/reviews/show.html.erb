@@ -1,0 +1,44 @@
+<% content_for :title, "审核 · #{@revision.summary}" %>
+<% movement = @revision.movement %>
+<main class="container">
+  <p class="breadcrumb"><%= link_to t("reviews.show.back"), reviews_path %></p>
+  <div class="admin-grid">
+    <section class="panel admin-panel">
+      <h1 class="heading heading--ruled"><span class="heading__zh"><%= movement.name_zh %></span><span class="heading__tr"><%= movement.routine.name_zh %> · <%= movement.number %> · <%= movement.name_tr %></span></h1>
+      <h2 class="history__summary"><%= @revision.summary %></h2>
+      <% if @revision.pending? && @revision.stale? %>
+        <p class="flash flash--alert" role="alert"><%= t("reviews.stale") %></p>
+      <% end %>
+      <%= render "revisions/diff", revision: @revision %>
+    </section>
+
+    <aside class="panel admin-panel admin-side">
+      <dl class="facts">
+        <dt><%= t("reviews.index.author") %></dt><dd><%= person(@revision.author) %><% if @revision.author %> · <%= t("admin.roles.#{@revision.author.role}") %><% end %></dd>
+        <dt><%= t("reviews.index.submitted") %></dt><dd><%= l(@revision.created_at, format: :long) %></dd>
+        <dt><%= t("reviews.show.source") %></dt><dd><%= @revision.source || "—" %></dd>
+        <dt><%= t("reviews.show.status") %></dt><dd><%= render "contributions/status", revision: @revision %></dd>
+        <% if @revision.reviewer %><dt><%= t("reviews.show.reviewer") %></dt><dd><%= person(@revision.reviewer) %></dd><% end %>
+        <% if @revision.note %><dt><%= t("reviews.show.note") %></dt><dd><%= @revision.note %></dd><% end %>
+      </dl>
+
+      <% if @revision.pending? && @revision.author != Current.user %>
+        <%= button_to t("reviews.show.approve"), approve_review_path(@revision), class: "btn btn--accent", disabled: @revision.stale? %>
+        <%= form_with url: request_changes_review_path(@revision), class: "form", id: "decide-form" do |form| %>
+          <div class="field">
+            <%= form.label :note, t("reviews.show.note_label") %>
+            <%= form.text_area :note, class: "input input--area", rows: 4, maxlength: 2000, required: true, "aria-describedby": "note-hint" %>
+            <span id="note-hint" class="field__hint"><%= t("reviews.show.note_hint") %></span>
+          </div>
+          <div class="admin-actions admin-actions--row">
+            <%= form.submit t("reviews.show.request_changes"), class: "btn", name: nil %>
+            <%= form.submit t("reviews.show.reject"), class: "btn btn--danger", name: nil, formaction: reject_review_path(@revision) %>
+          </div>
+        <% end %>
+      <% elsif @revision.pending? %>
+        <p class="muted"><%= t("reviews.own") %></p>
+      <% end %>
+      <%= link_to t("reviews.show.open_movement"), routine_path(movement.routine, m: movement.number), class: "btn" %>
+    </aside>
+  </div>
+</main>

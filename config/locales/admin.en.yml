@@ -19,7 +19,8 @@ en:
       settings: Settings
     roles:
       member: Member
-      maintainer: Maintainer (reserved)
+      contributor: Contributor
+      maintainer: Maintainer
       admin: Admin
     users:
       stats:
@@ -34,6 +35,7 @@ en:
         all: Everyone
         admin: Admins
         maintainer: Maintainers
+        contributor: Contributors
         unverified: Unverified
         suspended: Suspended
       apply: Apply
@@ -57,7 +59,7 @@ en:
         suspended: Suspended
       back: ← All users
       email_hint: Changing the email asks the member to verify the new address.
-      role_hint: Admins can open this panel. Maintainer is reserved for reviewing contributions and has no extra access yet.
+      role_hint: Contributors suggest changes to movement texts; maintainers review them and edit directly; admins also open this panel.
       verified_at: Email verified
       guidelines_at: Accepted guidelines
       sessions: Signed-in devices
@@ -114,7 +116,7 @@ en:
         open: Allow new sign-ups
         open_help: When off, the Sign up button is hidden and new accounts can’t be created. Existing members can still sign in.
         verification: Require a verified email to post
-        verification_help: Saved now; it takes effect when discussions and contributions are added.
+        verification_help: Contributors must verify their email before suggesting changes. Will also apply to discussions.
         notice_en: Site notice (English)
         notice_id: Site notice (Indonesian)
         notice_help: Shown at the top of every page in the visitor’s translation, e.g. planned maintenance. Leave empty to hide it.

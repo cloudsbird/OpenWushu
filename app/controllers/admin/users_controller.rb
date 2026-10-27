@@ -1,6 +1,6 @@
 class Admin::UsersController < Admin::BaseController
   PER_PAGE = 50
-  FILTERS = %w[admin maintainer unverified suspended].freeze
+  FILTERS = %w[admin maintainer contributor unverified suspended].freeze
 
   before_action :set_user, except: :index
   before_action :protect_self_and_last_admin, only: %i[update suspend destroy]
@@ -73,7 +73,7 @@ class Admin::UsersController < Admin::BaseController
 
   def filtered(users)
     users = case @filter
-    when "admin", "maintainer" then users.where(role: @filter)
+    when "admin", "maintainer", "contributor" then users.where(role: @filter)
     when "unverified" then users.where(verified_at: nil)
     when "suspended" then users.where.not(suspended_at: nil)
     else users

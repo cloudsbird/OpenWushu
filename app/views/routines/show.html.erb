@@ -86,7 +86,8 @@
       </div>
 
       <% @movements.each do |m| %>
-        <%= render "detail", movement: m, total_count: @movements.size, open: m == @selected %>
+        <%= render "detail", movement: m, total_count: @movements.size, open: m == @selected,
+                             revision_count: @revision_counts.fetch(m.id, 0), can_edit: @can_edit %>
       <% end %>
     </aside>
   </div>

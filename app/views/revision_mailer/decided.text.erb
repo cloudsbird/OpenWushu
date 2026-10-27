@@ -1,0 +1,10 @@
+<%= t(".heading.#{@revision.status}") %>
+
+<%= t(".body.#{@revision.status}", name: @revision.author.display_name, movement: "#{@revision.movement.number} #{@revision.movement.name_zh} #{@revision.movement.name_pinyin}", reviewer: person(@revision.reviewer)) %>
+
+<%= @revision.summary %>
+<% if @revision.note %><%= t(".note") %>: <%= @revision.note %>
+<% end %>
+<%= @revision.published? ? routine_url(@revision.movement.routine, m: @revision.movement.number) : contributions_url %>
+
+<%= t(".why") %>

@@ -2,8 +2,13 @@ class Movement < ApplicationRecord
   include Translatable
 
   SECTION_NAMES = { 1 => "第一段", 2 => "第二段", 3 => "第三段", 4 => "第四段" }.freeze
+  # Text contributors can change. Chinese names, pinyin and order are facts from the reference book;
+  # timings, the carpet path and figures get their own editors later.
+  EDITABLE = %w[name_en name_id facing_en facing_id steps key_points mistakes reference].freeze
+  LISTS = %w[steps key_points mistakes].freeze
 
   belongs_to :routine
+  has_many :revisions, dependent: :destroy
 
   translates :name, :facing
   translates_list :steps, :key_points, :mistakes
@@ -13,6 +18,16 @@ class Movement < ApplicationRecord
   validates :end_sec, comparison: { greater_than_or_equal_to: :start_sec }
 
   def described? = steps_tr.any?
+
+  # The editable fields as stored, with lists always shaped { "en" => [...], "id" => [...] }
+  def snapshot
+    EDITABLE.index_with do |field|
+      value = public_send(field)
+      LISTS.include?(field) ? %w[en id].index_with { |lang| Array(value.to_h[lang]) } : value
+    end
+  end
+
+  def to_param = number.to_s
 
   def section_name = SECTION_NAMES.fetch(section, "第#{ChineseNumeral.call(section)}段")
 

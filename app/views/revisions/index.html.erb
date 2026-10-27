@@ -1,0 +1,48 @@
+<% content_for :title, "修订 · #{@movement.name_zh}" %>
+<main class="container">
+  <%= render "revisions/movement_head", zh: "修订", title: t("revisions.index.title", count: @revisions.size) %>
+
+  <section class="panel admin-panel">
+    <p class="muted"><%= t("revisions.index.lead") %></p>
+    <% if signed_in_user&.can_contribute? %>
+      <div class="admin-actions admin-actions--row"><%= link_to t("revisions.index.edit"), new_routine_movement_revision_path(@routine, @movement), class: "btn btn--accent" %></div>
+    <% end %>
+  </section>
+
+  <ol class="history" reversed>
+    <% @revisions.reverse_each.with_index do |revision, index| %>
+      <li class="panel admin-panel history__item">
+        <div class="history__head">
+          <span class="history__num mono">r<%= @revisions.size - index %></span>
+          <div>
+            <h2 class="history__summary"><%= revision.summary %></h2>
+            <p class="muted history__meta">
+              <%= t("revisions.index.by", author: person(revision.author), date: l(revision.reviewed_at, format: :long)) %>
+              <% if revision.reviewer && revision.reviewer != revision.author %> · <%= t("revisions.index.approved_by", reviewer: person(revision.reviewer)) %><% end %>
+              <% if revision.source %> · <%= t("revisions.index.source", source: revision.source) %><% end %>
+            </p>
+          </div>
+          <% if signed_in_user&.can_review? && index.positive? %>
+            <%= button_to t("revisions.index.restore"), restore_routine_movement_revision_path(@routine, @movement, revision), class: "btn", form: { data: { turbo_confirm: t("revisions.index.confirm_restore") } } %>
+          <% end %>
+        </div>
+        <details>
+          <summary><%= t("revisions.index.show_changes", count: revision.changed_fields.size) %></summary>
+          <%= render "revisions/diff", revision: revision %>
+        </details>
+      </li>
+    <% end %>
+    <li class="panel admin-panel history__item history__item--origin">
+      <div class="history__head">
+        <span class="history__num mono">r0</span>
+        <div>
+          <h2 class="history__summary"><%= t("revisions.index.origin") %></h2>
+          <p class="muted history__meta"><%= t("revisions.index.origin_help") %></p>
+        </div>
+        <% if signed_in_user&.can_review? && @revisions.any? %>
+          <%= button_to t("revisions.index.restore"), restore_routine_movement_revision_path(@routine, @movement, @revisions.first, to: "before"), class: "btn", form: { data: { turbo_confirm: t("revisions.index.confirm_restore") } } %>
+        <% end %>
+      </div>
+    </li>
+  </ol>
+</main>

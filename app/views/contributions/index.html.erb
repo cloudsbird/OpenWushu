@@ -1,0 +1,38 @@
+<% content_for :title, "贡献 · #{t("contributions.index.title")}" %>
+<main class="container">
+  <div class="admin-head">
+    <div class="admin-head__title">
+      <h1 class="vtitle" lang="zh">贡献</h1>
+      <div>
+        <p class="py">Gòngxiàn</p>
+        <p class="admin-head__tr"><%= t("contributions.index.title") %></p>
+      </div>
+    </div>
+  </div>
+  <section class="panel admin-panel">
+    <% if @revisions.any? %>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr>
+            <th scope="col"><%= t("reviews.index.movement") %></th>
+            <th scope="col"><%= t("reviews.index.change") %></th>
+            <th scope="col"><%= t("reviews.show.status") %></th>
+            <th scope="col"><%= t("reviews.show.note") %></th>
+          </tr></thead>
+          <tbody>
+            <% @revisions.each do |revision| %>
+              <tr>
+                <td><%= link_to routine_movement_revisions_path(revision.movement.routine, revision.movement) do %><span class="zh"><%= revision.movement.name_zh %></span><% end %><br><span class="muted"><%= revision.movement.routine.name_zh %> · <%= revision.movement.number %></span></td>
+                <td><%= revision.summary %><br><span class="muted mono"><%= l(revision.created_at.to_date) %></span></td>
+                <td><%= render "contributions/status", revision: revision %></td>
+                <td><%= revision.note %><% if revision.note && revision.reviewer %><br><span class="muted">— <%= person(revision.reviewer) %></span><% end %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    <% else %>
+      <p class="muted"><%= t("contributions.index.empty") %></p>
+    <% end %>
+  </section>
+</main>

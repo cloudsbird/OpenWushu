@@ -3,7 +3,23 @@ Rails.application.routes.draw do
 
   resources :routines, only: %i[index show] do
     get :movements, on: :member
+    # A movement's history (修订) and the form to change its text
+    resources :movements, only: [], param: :number do
+      resources :revisions, only: %i[index new create] do
+        post :restore, on: :member
+      end
+    end
   end
+
+  # Review queue (审核) for maintainers and admins, and each contributor's own submissions
+  resources :reviews, only: %i[index show] do
+    member do
+      post :approve
+      post :request_changes
+      post :reject
+    end
+  end
+  resources :contributions, only: :index
 
   # Accounts: reading never needs one; discussing and contributing do
   resource :registration, only: %i[new create]

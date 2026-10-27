@@ -1,0 +1,9 @@
+<% content_for :why, t(".why") %>
+<% movement = @revision.movement %>
+<h1 style="margin: 0 0 16px; font-family: Alegreya, Georgia, serif; font-size: 26px; line-height: 1.25"><%= t(".heading") %></h1>
+<p style="margin: 0 0 16px"><%= t(".body", author: person(@revision.author), movement: "#{movement.number} #{movement.name_zh} #{movement.name_pinyin}") %></p>
+<div style="margin: 0 0 16px; padding: 16px 18px; border: 1px solid #D3DEEC; background: #F5F8FC">
+  <p style="margin: 0; font-family: Alegreya, Georgia, serif; font-size: 18px; font-weight: 700"><%= @revision.summary %></p>
+  <p style="margin: 4px 0 0; font-size: 13px; color: #4E5D72"><%= t(".source", source: @revision.source) %></p>
+</div>
+<%= render "shared/mail_button", url: review_url(@revision), label: t(".cta") %>

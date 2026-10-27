@@ -1,0 +1,59 @@
+<% content_for :title, "审核 · #{t("reviews.index.title")}" %>
+<main class="container">
+  <div class="admin-head">
+    <div class="admin-head__title">
+      <h1 class="vtitle" lang="zh">审核</h1>
+      <div>
+        <p class="py">Shěnhé</p>
+        <p class="admin-head__tr"><%= t("reviews.index.title") %></p>
+      </div>
+    </div>
+  </div>
+
+  <section class="panel admin-panel">
+    <h2 class="heading heading--ruled"><span class="heading__zh">待审</span><span class="heading__tr"><%= t("reviews.index.pending", count: @pending.size) %></span></h2>
+    <% if @pending.any? %>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr>
+            <th scope="col"><%= t("reviews.index.movement") %></th>
+            <th scope="col"><%= t("reviews.index.change") %></th>
+            <th scope="col"><%= t("reviews.index.author") %></th>
+            <th scope="col"><%= t("reviews.index.submitted") %></th>
+          </tr></thead>
+          <tbody>
+            <% @pending.each do |revision| %>
+              <tr>
+                <td><span class="zh"><%= revision.movement.name_zh %></span><br><span class="muted"><%= revision.movement.routine.name_zh %> · <%= revision.movement.number %></span></td>
+                <td><%= link_to revision.summary, review_path(revision) %></td>
+                <td><%= person(revision.author) %></td>
+                <td class="mono"><%= l(revision.created_at.to_date) %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    <% else %>
+      <p class="muted"><%= t("reviews.index.empty") %></p>
+    <% end %>
+  </section>
+
+  <% if @decided.any? %>
+    <section class="panel admin-panel">
+      <h2 class="heading heading--ruled"><span class="heading__zh">已审</span><span class="heading__tr"><%= t("reviews.index.decided") %></span></h2>
+      <div class="table-wrap">
+        <table class="table">
+          <tbody>
+            <% @decided.each do |revision| %>
+              <tr>
+                <td><%= link_to revision.summary, review_path(revision) %><br><span class="muted"><%= revision.movement.name_zh %> · <%= person(revision.author) %></span></td>
+                <td><%= render "contributions/status", revision: revision %></td>
+                <td class="muted"><%= person(revision.reviewer) %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  <% end %>
+</main>

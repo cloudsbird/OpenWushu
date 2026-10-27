@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_10_28_010100) do
+ActiveRecord::Schema[8.1].define(version: 2026_10_28_020000) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -65,6 +65,28 @@ ActiveRecord::Schema[8.1].define(version: 2026_10_28_010100) do
     t.datetime "updated_at", null: false
     t.index ["routine_id", "number"], name: "index_movements_on_routine_id_and_number", unique: true
     t.index ["routine_id"], name: "index_movements_on_routine_id"
+  end
+
+  create_table "revisions", force: :cascade do |t|
+    t.bigint "movement_id", null: false
+    t.bigint "author_id"
+    t.bigint "reviewer_id"
+    t.bigint "restored_from_id"
+    t.string "status", default: "pending", null: false
+    t.string "summary", null: false
+    t.string "source"
+    t.text "note"
+    t.jsonb "before", default: {}, null: false
+    t.jsonb "after", default: {}, null: false
+    t.datetime "reviewed_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["author_id"], name: "index_revisions_on_author_id"
+    t.index ["movement_id", "status"], name: "index_revisions_on_movement_id_and_status"
+    t.index ["movement_id"], name: "index_revisions_on_movement_id"
+    t.index ["restored_from_id"], name: "index_revisions_on_restored_from_id"
+    t.index ["reviewer_id"], name: "index_revisions_on_reviewer_id"
+    t.index ["status", "created_at"], name: "index_revisions_on_status_and_created_at"
   end
 
   create_table "routines", force: :cascade do |t|
@@ -133,5 +155,9 @@ ActiveRecord::Schema[8.1].define(version: 2026_10_28_010100) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "movements", "routines"
+  add_foreign_key "revisions", "movements"
+  add_foreign_key "revisions", "revisions", column: "restored_from_id", on_delete: :nullify
+  add_foreign_key "revisions", "users", column: "author_id", on_delete: :nullify
+  add_foreign_key "revisions", "users", column: "reviewer_id", on_delete: :nullify
   add_foreign_key "sessions", "users"
 end

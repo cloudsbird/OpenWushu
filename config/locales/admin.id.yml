@@ -19,7 +19,8 @@ id:
       settings: Pengaturan
     roles:
       member: Anggota
-      maintainer: Pengelola (dicadangkan)
+      contributor: Kontributor
+      maintainer: Pengelola
       admin: Admin
     users:
       stats:
@@ -34,6 +35,7 @@ id:
         all: Semua
         admin: Admin
         maintainer: Pengelola
+        contributor: Kontributor
         unverified: Belum verifikasi
         suspended: Ditangguhkan
       apply: Terapkan
@@ -57,7 +59,7 @@ id:
         suspended: Ditangguhkan
       back: ← Semua pengguna
       email_hint: Mengganti email membuat anggota harus memverifikasi alamat baru.
-      role_hint: Admin dapat membuka panel ini. Pengelola dicadangkan untuk meninjau kontribusi dan belum punya akses tambahan.
+      role_hint: Kontributor mengusulkan perubahan teks gerakan; pengelola meninjaunya dan bisa menyunting langsung; admin juga membuka panel ini.
       verified_at: Email diverifikasi
       guidelines_at: Menyetujui pedoman
       sessions: Perangkat yang masuk
@@ -114,7 +116,7 @@ id:
         open: Izinkan pendaftaran baru
         open_help: Jika dimatikan, tombol Daftar disembunyikan dan akun baru tidak bisa dibuat. Anggota lama tetap bisa masuk.
         verification: Wajib email terverifikasi untuk memposting
-        verification_help: Disimpan sekarang; berlaku saat fitur diskusi dan kontribusi ditambahkan.
+        verification_help: Kontributor harus memverifikasi email sebelum mengusulkan perubahan. Nantinya juga berlaku untuk diskusi.
         notice_en: Pengumuman situs (Inggris)
         notice_id: Pengumuman situs (Indonesia)
         notice_help: Ditampilkan di atas setiap halaman sesuai terjemahan pengunjung, mis. jadwal pemeliharaan. Kosongkan untuk menyembunyikan.

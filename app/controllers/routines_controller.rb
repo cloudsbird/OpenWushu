@@ -12,6 +12,8 @@ class RoutinesController < ApplicationController
   def show
     @movements = @routine.movements.to_a
     @selected = @movements.find { |m| m.number == params[:m].to_i }
+    @revision_counts = Revision.published.where(movement: @movements).group(:movement_id).count
+    @can_edit = authenticated? && Current.user.can_contribute?
   end
 
   # Movements tab (动作名称): the full list by section, each linking into Learn

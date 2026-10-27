@@ -23,3 +23,21 @@ admin:
   role: admin
   verified_at: <%= 3.days.ago.to_fs(:db) %>
   guidelines_accepted_at: <%= 3.days.ago.to_fs(:db) %>
+
+contributor:
+  email_address: contributor@example.com
+  password_digest: <%= password_digest %>
+  display_name: Coach Lim
+  locale: id
+  role: contributor
+  verified_at: <%= 3.days.ago.to_fs(:db) %>
+  guidelines_accepted_at: <%= 3.days.ago.to_fs(:db) %>
+
+maintainer:
+  email_address: maintainer@example.com
+  password_digest: <%= password_digest %>
+  display_name: Judge Wang
+  locale: en
+  role: maintainer
+  verified_at: <%= 3.days.ago.to_fs(:db) %>
+  guidelines_accepted_at: <%= 3.days.ago.to_fs(:db) %>

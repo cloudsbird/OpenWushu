@@ -48,6 +48,14 @@
           <div class="site-menu" id="site-menu" data-menu-target="panel">
             <nav class="site-nav" aria-label="Main">
               <%= link_to t("layout.library"), root_path, class: "site-nav__link", "aria-current": (controller_path == "routines" ? "page" : nil) %>
+              <% if authenticated? && Current.user.can_review? %>
+                <%= link_to reviews_path, class: "site-nav__link", "aria-current": (controller_path == "reviews" ? "page" : nil) do %>
+                  <%= t("layout.review") %><% if (pending = Revision.pending.count).positive? %>&nbsp;<span class="count-badge"><%= pending %></span><% end %>
+                <% end %>
+              <% end %>
+              <% if authenticated? && Current.user.role_at_least?("contributor") %>
+                <%= link_to t("layout.contributions"), contributions_path, class: "site-nav__link", "aria-current": (controller_path == "contributions" ? "page" : nil) %>
+              <% end %>
               <% if authenticated? && Current.user.admin? %>
                 <%= link_to t("layout.admin"), admin_root_path, class: "site-nav__link", "aria-current": (controller_path.start_with?("admin/") ? "page" : nil) %>
               <% end %>

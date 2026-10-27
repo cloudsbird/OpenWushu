@@ -1,0 +1,16 @@
+<%# Before/after for each changed field: removed lines struck through on red, added lines underlined on blue %>
+<div class="diff">
+  <% revision_changes(revision).each do |label, lines| %>
+    <section class="diff__field">
+      <h4><%= label %></h4>
+      <ol class="diff__lines">
+        <% lines.each do |kind, text| %>
+          <li class="diff__line diff__line--<%= kind %>">
+            <span class="visually-hidden"><%= t("revisions.diff.#{kind}") %></span>
+            <% case kind when :del %><del><%= text %></del><% when :ins %><ins><%= text %></ins><% else %><%= text %><% end %>
+          </li>
+        <% end %>
+      </ol>
+    </section>
+  <% end %>
+</div>

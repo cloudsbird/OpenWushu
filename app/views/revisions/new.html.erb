@@ -1,0 +1,63 @@
+<% content_for :title, "修改 · #{@movement.name_zh}" %>
+<% after = @revision.after %>
+<% list = ->(field, lang) { Array(after.dig(field, lang)).join("\n") } %>
+<main class="container">
+  <%= render "revisions/movement_head", zh: "修改", title: t("revisions.new.title") %>
+
+  <%= form_with url: routine_movement_revisions_path(@routine, @movement), scope: :revision, class: "edit-form" do |form| %>
+    <% if @revision.errors.any? %>
+      <div class="flash flash--alert" role="alert">
+        <% @revision.errors.full_messages.each do |message| %><p><%= message %></p><% end %>
+      </div>
+    <% end %>
+
+    <section class="panel admin-panel">
+      <p class="muted"><%= t("revisions.new.lead") %></p>
+      <p class="note-box"><%= t("revisions.new.own_words") %></p>
+
+      <div class="edit-grid">
+        <span></span>
+        <span class="edit-grid__lang" lang="en">English</span>
+        <span class="edit-grid__lang" lang="id">Bahasa Indonesia</span>
+
+        <span class="edit-grid__label"><%= t("revisions.fields.name") %></span>
+        <%= form.text_field :name_en, value: after["name_en"], class: "input", required: true, maxlength: 120, lang: "en", "aria-label": t("revisions.fields.name_en") %>
+        <%= form.text_field :name_id, value: after["name_id"], class: "input", required: true, maxlength: 120, lang: "id", "aria-label": t("revisions.fields.name_id") %>
+
+        <span class="edit-grid__label"><%= t("revisions.fields.facing") %></span>
+        <%= form.text_field :facing_en, value: after["facing_en"], class: "input", maxlength: 120, lang: "en", "aria-label": t("revisions.fields.facing_en") %>
+        <%= form.text_field :facing_id, value: after["facing_id"], class: "input", maxlength: 120, lang: "id", "aria-label": t("revisions.fields.facing_id") %>
+
+        <% { "steps" => "动作过程", "key_points" => "要点", "mistakes" => "易犯错误" }.each do |field, zh| %>
+          <span class="edit-grid__label"><span lang="zh"><%= zh %></span> <%= t("revisions.fields.#{field}") %><small><%= t("revisions.new.one_per_line") %></small></span>
+          <%= form.text_area "#{field}_en", value: list.(field, "en"), class: "input input--area", rows: 6, lang: "en", "aria-label": t("revisions.fields.#{field}_en") %>
+          <%= form.text_area "#{field}_id", value: list.(field, "id"), class: "input input--area", rows: 6, lang: "id", "aria-label": t("revisions.fields.#{field}_id") %>
+        <% end %>
+      </div>
+
+      <div class="field">
+        <%= form.label :reference, t("revisions.fields.reference") %>
+        <%= form.text_field :reference, value: after["reference"], class: "input", maxlength: 200, "aria-describedby": "reference-hint" %>
+        <span id="reference-hint" class="field__hint"><%= t("revisions.new.reference_hint") %></span>
+      </div>
+    </section>
+
+    <section class="panel admin-panel">
+      <div class="form__pair">
+        <div class="field">
+          <%= form.label :summary, t("revisions.new.summary") %>
+          <%= form.text_field :summary, value: @revision.summary, class: "input", required: true, maxlength: 200, placeholder: t("revisions.new.summary_placeholder") %>
+        </div>
+        <div class="field">
+          <%= form.label :source, t("revisions.new.source") %>
+          <%= form.text_field :source, value: @revision.source, class: "input", required: true, maxlength: 300, placeholder: t("revisions.new.source_placeholder") %>
+        </div>
+      </div>
+      <div class="admin-actions admin-actions--row">
+        <%= form.submit Current.user.can_review? ? t("revisions.new.publish") : t("revisions.new.submit"), class: "btn btn--accent" %>
+        <%= link_to t("revisions.new.cancel"), routine_path(@routine, m: @movement.number), class: "btn" %>
+      </div>
+      <p class="field__hint"><%= Current.user.can_review? ? t("revisions.new.publish_help") : t("revisions.new.submit_help") %> <%= t("revisions.new.license") %></p>
+    </section>
+  <% end %>
+</main>

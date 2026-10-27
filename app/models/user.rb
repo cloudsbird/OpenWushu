@@ -1,10 +1,11 @@
 class User < ApplicationRecord
   LOCALES = %w[en id].freeze
-  # maintainer is reserved for reviewing contributions; it gives no extra access yet
-  ROLES = %w[member maintainer admin].freeze
+  # In order of trust: contributors suggest changes, maintainers review them, admins also run the site
+  ROLES = %w[member contributor maintainer admin].freeze
 
   has_secure_password
   has_many :sessions, dependent: :destroy
+  has_many :revisions, foreign_key: :author_id, inverse_of: :author, dependent: :nullify
 
   normalizes :email_address, with: ->(e) { e.strip.downcase }
   normalizes :display_name, :club, with: ->(s) { s.squish.presence }
@@ -43,6 +44,15 @@ class User < ApplicationRecord
   end
 
   def admin? = role == "admin"
+
+  def role_at_least?(role) = ROLES.index(self.role) >= ROLES.index(role)
+
+  # Writing changes needs the contributor role, and a verified email when the site asks for it
+  def can_contribute?
+    role_at_least?("contributor") && !suspended? && (verified? || !Setting.current.verification_required?)
+  end
+
+  def can_review? = role_at_least?("maintainer") && !suspended?
 
   def suspended? = suspended_at.present?
 

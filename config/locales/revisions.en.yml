@@ -1,0 +1,157 @@
+# Editing movements, their history, the review queue and contributors' own submissions
+en:
+  layout:
+    review: Review
+    contributions: My contributions
+  routines:
+    detail:
+      write_it: Write this description
+      history:
+        zero: History · no revisions yet
+        one: History · 1 revision
+        other: History · %{count} revisions
+      edit: Edit this movement
+  revisions:
+    verify_first: Verify your email before suggesting changes.
+    deleted_account: a deleted account
+    fields:
+      name: Name
+      name_en: Name (English)
+      name_id: Name (Indonesian)
+      facing: Facing
+      facing_en: Facing (English)
+      facing_id: Facing (Indonesian)
+      steps: Steps
+      steps_en: Steps (English)
+      steps_id: Steps (Indonesian)
+      key_points: Key points
+      key_points_en: Key points (English)
+      key_points_id: Key points (Indonesian)
+      mistakes: Common mistakes
+      mistakes_en: Common mistakes (English)
+      mistakes_id: Common mistakes (Indonesian)
+      reference: Reference
+    diff:
+      same: "Unchanged:"
+      del: "Removed:"
+      ins: "Added:"
+    new:
+      title: Edit this movement
+      lead: Chinese names, pinyin and the order of movements come from the reference book and are not edited here. Leave a language empty if you don’t write it; someone else can add it.
+      own_words: Write in your own words. Don’t copy text from books or rulebooks, even translated; their publishers own it. Facts such as directions and the order of actions are fine.
+      one_per_line: one per line
+      reference_hint: Where the facts come from, with page and figure, e.g. “Competition routines collection (scan), Taijiquan, p. 598, 图 I-3”.
+      summary: What did you change?
+      summary_placeholder: e.g. Wrote the steps and key points
+      source: Source
+      source_placeholder: Book and page, video, or your own teaching experience
+      publish: Publish change
+      submit: Submit for review
+      cancel: Cancel
+      publish_help: As a maintainer your change is published at once and recorded in the history.
+      submit_help: A maintainer reviews your change before it is published. You’ll get an email when it’s decided.
+      license: Published content is licensed CC BY-SA 4.0.
+    create:
+      published: Change published.
+      submitted: Thanks! Your change was sent for review.
+    restore:
+      summary: Restored version r%{number}
+      original: Restored the original text (r0)
+      done: Version restored. It is saved as a new revision.
+      same: The movement already matches that version.
+    index:
+      title:
+        one: History · 1 revision
+        other: History · %{count} revisions
+      lead: Every published change to this movement’s text, newest first. This history is also the attribution record for the CC BY-SA licence.
+      edit: Edit this movement
+      by: "%{author} · %{date}"
+      approved_by: approved by %{reviewer}
+      source: "source: %{source}"
+      restore: Restore this version
+      confirm_restore: Restore this version? The current text is kept in the history.
+      show_changes:
+        one: Show the change (1 field)
+        other: Show the changes (%{count} fields)
+      origin: Original text
+      origin_help: Names and order from the reference book; any descriptions written for the first version of OpenWushu.
+  reviews:
+    approved: Change approved and published.
+    stale: The movement was edited after this change was submitted, in the same fields. Ask the contributor to redo it on the current text.
+    own: You can’t review your own change.
+    already_decided: This change has already been decided.
+    note_required: Write a note to the contributor explaining what to change or why it was rejected.
+    changes_requested: Sent back to the contributor with your note.
+    rejected: Change rejected.
+    index:
+      title: Review
+      pending:
+        one: 1 change waiting
+        other: "%{count} changes waiting"
+      movement: Movement
+      change: Change
+      author: Contributor
+      submitted: Submitted
+      empty: Nothing to review.
+      decided: Recently decided
+    show:
+      back: ← Review queue
+      source: Source
+      status: Status
+      reviewer: Reviewed by
+      note: Note
+      approve: Approve and publish
+      note_label: Note to the contributor
+      note_hint: Required to send back or reject.
+      request_changes: Request changes
+      reject: Reject
+      open_movement: Open the movement
+  contributions:
+    statuses:
+      pending: In review
+      published: Published
+      changes_requested: Changes requested
+      rejected: Rejected
+    index:
+      title: My contributions
+      empty: You haven’t suggested any changes yet. Open a movement and choose “Edit this movement”.
+  revision_mailer:
+    submitted:
+      subject: New change to review on OpenWushu
+      heading: A change is waiting for review
+      body: "%{author} suggested a change to %{movement}."
+      source: "Source: %{source}"
+      cta: Review the change
+      why: You received this because you review changes on OpenWushu.
+    decided:
+      subject:
+        published: "Your change to %{movement} was published"
+        changes_requested: "Changes requested on your edit of %{movement}"
+        rejected: "Your change to %{movement} was not accepted"
+      heading:
+        published: Your change is published
+        changes_requested: A reviewer asked for changes
+        rejected: Your change was not accepted
+      body:
+        published: Hi %{name}, %{reviewer} approved your change to %{movement}. It is now live and credited to you in the history.
+        changes_requested: Hi %{name}, %{reviewer} reviewed your change to %{movement} and asked for some changes. You can submit an updated version.
+        rejected: Hi %{name}, %{reviewer} reviewed your change to %{movement} and did not accept it.
+      note: Reviewer’s note
+      cta_published: See the movement
+      cta_other: See your contributions
+      why: You received this because you suggested a change on OpenWushu.
+  activerecord:
+    attributes:
+      revision:
+        summary: Summary
+        source: Source
+        note: Note
+    errors:
+      models:
+        revision:
+          attributes:
+            base:
+              no_changes: Nothing was changed.
+              name_required: The English and Indonesian names can’t be empty.
+              too_many_items: Lists can have at most %{count} lines.
+              item_too_long: Each line can be at most %{count} characters.

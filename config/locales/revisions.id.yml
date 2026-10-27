@@ -1,0 +1,157 @@
+# Menyunting gerakan, riwayatnya, antrean tinjauan, dan kiriman kontributor sendiri
+id:
+  layout:
+    review: Tinjauan
+    contributions: Kontribusi saya
+  routines:
+    detail:
+      write_it: Tulis deskripsi ini
+      history:
+        zero: Riwayat · belum ada revisi
+        one: Riwayat · 1 revisi
+        other: Riwayat · %{count} revisi
+      edit: Sunting gerakan ini
+  revisions:
+    verify_first: Verifikasi email Anda sebelum mengusulkan perubahan.
+    deleted_account: akun yang sudah dihapus
+    fields:
+      name: Nama
+      name_en: Nama (Inggris)
+      name_id: Nama (Indonesia)
+      facing: Arah hadap
+      facing_en: Arah hadap (Inggris)
+      facing_id: Arah hadap (Indonesia)
+      steps: Langkah
+      steps_en: Langkah (Inggris)
+      steps_id: Langkah (Indonesia)
+      key_points: Poin penting
+      key_points_en: Poin penting (Inggris)
+      key_points_id: Poin penting (Indonesia)
+      mistakes: Kesalahan umum
+      mistakes_en: Kesalahan umum (Inggris)
+      mistakes_id: Kesalahan umum (Indonesia)
+      reference: Referensi
+    diff:
+      same: "Tidak berubah:"
+      del: "Dihapus:"
+      ins: "Ditambahkan:"
+    new:
+      title: Sunting gerakan ini
+      lead: Nama Tionghoa, pinyin, dan urutan gerakan berasal dari buku referensi dan tidak disunting di sini. Kosongkan bahasa yang tidak Anda tulis; orang lain bisa menambahkannya.
+      own_words: Tulis dengan kata-kata Anda sendiri. Jangan menyalin teks dari buku atau buku peraturan, meskipun diterjemahkan; hak ciptanya milik penerbit. Fakta seperti arah dan urutan gerakan boleh.
+      one_per_line: satu per baris
+      reference_hint: Sumber faktanya, dengan halaman dan gambar, mis. “Kumpulan rangkaian kompetisi (pindaian), Taijiquan, hlm. 598, 图 I-3”.
+      summary: Apa yang Anda ubah?
+      summary_placeholder: mis. Menulis langkah dan poin penting
+      source: Sumber
+      source_placeholder: Buku dan halaman, video, atau pengalaman mengajar Anda
+      publish: Terbitkan perubahan
+      submit: Kirim untuk ditinjau
+      cancel: Batal
+      publish_help: Sebagai pengelola, perubahan Anda langsung diterbitkan dan dicatat di riwayat.
+      submit_help: Pengelola meninjau perubahan Anda sebelum diterbitkan. Anda akan menerima email saat sudah diputuskan.
+      license: Konten yang diterbitkan berlisensi CC BY-SA 4.0.
+    create:
+      published: Perubahan diterbitkan.
+      submitted: Terima kasih! Perubahan Anda dikirim untuk ditinjau.
+    restore:
+      summary: Memulihkan versi r%{number}
+      original: Memulihkan teks asli (r0)
+      done: Versi dipulihkan dan disimpan sebagai revisi baru.
+      same: Gerakan ini sudah sama dengan versi tersebut.
+    index:
+      title:
+        one: Riwayat · 1 revisi
+        other: Riwayat · %{count} revisi
+      lead: Setiap perubahan teks gerakan ini yang sudah diterbitkan, terbaru di atas. Riwayat ini juga menjadi catatan atribusi untuk lisensi CC BY-SA.
+      edit: Sunting gerakan ini
+      by: "%{author} · %{date}"
+      approved_by: disetujui oleh %{reviewer}
+      source: "sumber: %{source}"
+      restore: Pulihkan versi ini
+      confirm_restore: Pulihkan versi ini? Teks saat ini tetap tersimpan di riwayat.
+      show_changes:
+        one: Tampilkan perubahan (1 bagian)
+        other: Tampilkan perubahan (%{count} bagian)
+      origin: Teks asli
+      origin_help: Nama dan urutan dari buku referensi; deskripsi yang ditulis untuk versi pertama OpenWushu.
+  reviews:
+    approved: Perubahan disetujui dan diterbitkan.
+    stale: Gerakan ini disunting setelah perubahan ini dikirim, di bagian yang sama. Minta kontributor mengulanginya pada teks terbaru.
+    own: Anda tidak bisa meninjau perubahan sendiri.
+    already_decided: Perubahan ini sudah diputuskan.
+    note_required: Tulis catatan untuk kontributor yang menjelaskan apa yang perlu diubah atau alasan ditolak.
+    changes_requested: Dikembalikan ke kontributor dengan catatan Anda.
+    rejected: Perubahan ditolak.
+    index:
+      title: Tinjauan
+      pending:
+        one: 1 perubahan menunggu
+        other: "%{count} perubahan menunggu"
+      movement: Gerakan
+      change: Perubahan
+      author: Kontributor
+      submitted: Dikirim
+      empty: Tidak ada yang perlu ditinjau.
+      decided: Baru diputuskan
+    show:
+      back: ← Antrean tinjauan
+      source: Sumber
+      status: Status
+      reviewer: Ditinjau oleh
+      note: Catatan
+      approve: Setujui dan terbitkan
+      note_label: Catatan untuk kontributor
+      note_hint: Wajib untuk mengembalikan atau menolak.
+      request_changes: Minta perubahan
+      reject: Tolak
+      open_movement: Buka gerakan
+  contributions:
+    statuses:
+      pending: Sedang ditinjau
+      published: Diterbitkan
+      changes_requested: Perlu perubahan
+      rejected: Ditolak
+    index:
+      title: Kontribusi saya
+      empty: Anda belum mengusulkan perubahan. Buka sebuah gerakan lalu pilih “Sunting gerakan ini”.
+  revision_mailer:
+    submitted:
+      subject: Perubahan baru untuk ditinjau di OpenWushu
+      heading: Ada perubahan yang menunggu tinjauan
+      body: "%{author} mengusulkan perubahan pada %{movement}."
+      source: "Sumber: %{source}"
+      cta: Tinjau perubahan
+      why: Anda menerima email ini karena Anda meninjau perubahan di OpenWushu.
+    decided:
+      subject:
+        published: "Perubahan Anda pada %{movement} sudah diterbitkan"
+        changes_requested: "Ada permintaan perubahan untuk suntingan %{movement}"
+        rejected: "Perubahan Anda pada %{movement} tidak diterima"
+      heading:
+        published: Perubahan Anda sudah diterbitkan
+        changes_requested: Peninjau meminta perubahan
+        rejected: Perubahan Anda tidak diterima
+      body:
+        published: Halo %{name}, %{reviewer} menyetujui perubahan Anda pada %{movement}. Perubahan itu sudah tayang dan nama Anda tercantum di riwayat.
+        changes_requested: Halo %{name}, %{reviewer} meninjau perubahan Anda pada %{movement} dan meminta beberapa perubahan. Anda bisa mengirim versi yang diperbarui.
+        rejected: Halo %{name}, %{reviewer} meninjau perubahan Anda pada %{movement} dan tidak menerimanya.
+      note: Catatan peninjau
+      cta_published: Lihat gerakan
+      cta_other: Lihat kontribusi Anda
+      why: Anda menerima email ini karena Anda mengusulkan perubahan di OpenWushu.
+  activerecord:
+    attributes:
+      revision:
+        summary: Ringkasan
+        source: Sumber
+        note: Catatan
+    errors:
+      models:
+        revision:
+          attributes:
+            base:
+              no_changes: Tidak ada yang diubah.
+              name_required: Nama bahasa Inggris dan Indonesia tidak boleh kosong.
+              too_many_items: Daftar maksimal %{count} baris.
+              item_too_long: Setiap baris maksimal %{count} karakter.
