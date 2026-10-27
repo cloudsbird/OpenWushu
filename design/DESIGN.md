@@ -43,6 +43,15 @@ Sample content: **二十四式简化太极拳 (24-Form Simplified Taijiquan)**, 
 6. **Contribute (贡献)** — step 1: choose a routine; step 2: choose a task — write descriptions, upload video (with rights confirmation, then mark movement start times), or check EN/ID translations. Everything is submitted for review.
 7. **Sign in / Sign up / Verify email** — email + password or Google; sign-up asks display name, preferred translation, optional club, and acceptance of community guidelines. Contribute and Report an issue require signing in; reading never does.
 
+8. **Review queue (审核)** — maintainers only (a "Review" tab with a pending count appears in the header). Two tabs:
+   - *Content changes*: list + detail with a **before/after diff** (removed text struck through on red, added text underlined on blue), field and language, contributor badge, source, linked thread. Actions: **Approve and publish**, **Request changes**, **Reject** — the last two require a note to the contributor. Video uploads show a preview with how many movement start times are marked.
+   - *Contributor applications*: Path A shows credential, level, association, expiry and the document; Path B shows school, lineage, founded, city and evidence. A **reviewer checklist** (e.g. "Checked the association's public registry", "Both vouching contributors confirmed"). Actions: **Approve**, **Ask for a video call**, **Reject**. Documents are visible only to admins and deleted on decision.
+   - Maintainers never review their own submissions.
+9. **Revision history (修订)** — opened from "History · n revisions" in the movement detail. Lists every revision (r1 created from the official list … current), each with summary, author + badge, who approved it, field, language, source and a before/after diff. Maintainers can **Restore this version** (saved as a new revision, so nothing is lost). Doubles as the CC BY-SA attribution record.
+10. **Video timings & path editor** — a Contribute task for verified contributors. Play the video (±0.5 s), select a movement, **Set start to [current time]** (must fall between the previous and next movement), then **click on the carpet** where the movement ends; x / y fields give a keyboard alternative, plus facing direction. Shows start times and how many path points are placed; submitted for review.
+11. **Profile (个人)** — seal-style avatar, badge, email; **my contributions** with status (in review / changes requested / published) linking to history; **watched threads** with unwatch; **email notifications** (switches for replies, status changes, reviews, new threads on maintained routines, monthly news), frequency (right away / daily digest) and email language; **your data** (download / delete under UU PDP). The prototype adds a "view as" role switcher (member / verified judge / verified school owner / maintainer).
+12. **Email templates** (separate artboard `prototype/Emails.dc.html`, EN/ID): verify email, new reply in a watched thread (quotes the reply in the thread's language), change published (with reviewer note), contributor approved (badge + documents deleted). Each has a reason line, "Manage email settings" and an unsubscribe/stop link.
+
 ## Content model (draft)
 
 - **Routine**: style, name {zh, pinyin, en, id}, description, videos, carpet size, official source
@@ -80,7 +89,7 @@ Two paths, because many traditional school owners (师父) never took associatio
 - Multiple videos per routine (front/side, different athletes)?
 - Strict invite-only contributors at launch?
 - 讨论 tǎolùn vs 交流 jiāoliú for the Discussions label (avoid confusion with 套路 tàolù)?
-- Next screens: maintainer review queue (applications + content changes), profile & notifications.
+- Still to design: about/landing, community guidelines, privacy policy & terms, empty/error/404/offline states, full search results page.
 
 ## Prototype
 

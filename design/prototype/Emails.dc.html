@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OpenWushu emails</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..800;1,400..700&amp;family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Ma+Shan+Zheng&amp;family=Noto+Serif+SC:wght@600;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1766C7}a:hover{color:#0F4F9E}
+</style>
+</helmet>
+<div style="width: 1344px; height: 1600px; box-sizing: border-box; padding: 48px; display: flex; flex-direction: column; gap: 32px; background: #E9EFF7; color: #0E1A2B; font-family: 'Alegreya Sans', 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.55">
+<div style="display: flex; align-items: flex-end; gap: 20px">
+<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 40px; line-height: 1; letter-spacing: 0.14em; font-weight: 400; padding-left: 14px; border-left: 4px solid #50A0FF">邮件</h1>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; font-family: 'Alegreya', serif; font-size: 34px; font-weight: 600; line-height: 1.15">{{x.title}}</p>
+<p style="margin: 0; max-width: 760px; color: #4E5D72">{{x.lead}}</p>
+</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(2, 600px); gap: 48px; align-items: start">
+<sc-for list="{{emails}}" as="e" hint-placeholder-count="4">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; flex-direction: column; gap: 2px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #4E5D72">
+<span><span style="font-weight: 500; color: #0E1A2B">{{x.subjectL}}:</span> {{e.subject}}</span>
+<span><span style="font-weight: 500; color: #0E1A2B">{{x.fromL}}:</span> OpenWushu &lt;notifications@[your-domain]&gt;</span>
+</div>
+<div style="width: 600px; background: #FFFFFF; border: 1px solid #D3DEEC; border-top: 3px solid #0E1A2B">
+<div style="display: flex; align-items: center; gap: 12px; padding: 20px 32px; border-bottom: 3px double #0E1A2B">
+<span aria-hidden="true" style="display: flex; flex-direction: column; width: 36px; height: 36px; align-items: center; justify-content: center; background: #1766C7; color: #FFFFFF; outline: 2px solid #1766C7; outline-offset: 2px; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 16px; line-height: 1"><span>武</span><span>术</span></span>
+<span style="display: flex; flex-direction: column; line-height: 1.1; margin-left: 4px"><span style="font-family: 'Alegreya', serif; font-weight: 700; font-size: 20px">OpenWushu</span><span style="font-size: 11px; letter-spacing: 0.24em; color: #4E5D72">开放武术</span></span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; padding: 28px 32px 32px">
+<h2 style="margin: 0; font-family: 'Alegreya', serif; font-size: 26px; line-height: 1.25">{{e.heading}}</h2>
+<p style="margin: 0">{{e.body}}</p>
+<sc-if value="{{e.hasBox}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 16px 18px; border: 1px solid #D3DEEC; background: #F5F8FC">
+<sc-if value="{{e.hasBadge}}" hint-placeholder-val="{{ false }}"><span style="align-self: flex-start; padding: 2px 10px; font-size: 12px; font-weight: 600; background: #E3F0FF; color: #1766C7">{{e.badge}}</span></sc-if>
+<sc-if value="{{e.hasBoxTitle}}" hint-placeholder-val="{{ true }}"><span style="font-family: 'Alegreya', serif; font-size: 18px; font-weight: 700">{{e.boxTitle}}</span></sc-if>
+<sc-if value="{{e.hasMeta}}" hint-placeholder-val="{{ true }}"><span style="font-size: 13px; color: #4E5D72">{{e.boxMeta}}</span></sc-if>
+<span style="font-size: 15px">{{e.boxText}}</span>
+</div>
+</sc-if>
+<a href="#" style="align-self: flex-start; display: inline-block; padding: 12px 22px; font-weight: 700; text-decoration: none; background: #50A0FF; color: #06152B">{{e.cta}}</a>
+<p style="margin: 0; font-size: 14px; color: #4E5D72">{{e.small}}</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 18px 32px; font-size: 13px; color: #4E5D72; background: #F5F8FC; border-top: 1px solid #D3DEEC">
+<span>{{e.why}}</span>
+<span><a href="#">{{x.manage}}</a><sc-if value="{{e.hasStop}}" hint-placeholder-val="{{ true }}"> · <a href="#">{{e.stop}}</a></sc-if></span>
+<span>{{x.legal}}</span>
+</div>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"lang":{"editor":"enum","options":["en","id"],"default":"en"},"$preview":{"width":1344,"height":1600}}'>
+// Email templates are sent in the user's chosen email language (Profile > Email language).
+// Thread titles and replies stay in the thread's own language.
+var X = {
+  en: { title: 'Email templates', lead: 'Sent in each user’s email language (set on their profile). Thread titles and replies are quoted in the language they were written in.',
+    subjectL: 'Subject', fromL: 'From', manage: 'Manage email settings', legal: 'OpenWushu · for educational purposes only · Content licensed CC BY-SA 4.0' },
+  id: { title: 'Templat email', lead: 'Dikirim dalam bahasa email pilihan pengguna (diatur di profil). Judul diskusi dan balasan dikutip dalam bahasa aslinya.',
+    subjectL: 'Subjek', fromL: 'Dari', manage: 'Kelola pengaturan email', legal: 'OpenWushu · hanya untuk tujuan edukasi · Konten berlisensi CC BY-SA 4.0' }
+};
+var THREAD_TITLE = 'Tinggi tangan kanan: setinggi mata atau kepala?';
+var REPLY = 'Setinggi mata adalah standarnya. Video direkam sedikit dari bawah, jadi tangan terlihat lebih tinggi. Saya sarankan menambahkan klip tampak samping agar lebih jelas.';
+var EMAILS = {
+  en: [
+    { subject: 'Verify your email for OpenWushu', heading: 'Confirm your email', body: 'Hi Ana, welcome to OpenWushu. Confirm this is your email to start joining discussions and reporting issues.',
+      cta: 'Verify email', small: 'This link expires in 24 hours. If you did not sign up, you can ignore this email.', why: 'You received this because someone signed up with this address.' },
+    { subject: 'coach_sby replied: ' + THREAD_TITLE, heading: 'New reply in a thread you watch', body: 'coach_sby replied in a thread about 第十二式 高探马 Gāo tàn mǎ.',
+      badge: 'Bahasa Indonesia', boxTitle: THREAD_TITLE, boxMeta: 'coach_sby · Maintainer · Judge / coach', boxText: REPLY,
+      cta: 'View thread', small: 'Reply on OpenWushu. Replies to this email are not posted.', why: 'You received this because you watch this thread.', stop: 'Stop watching this thread' },
+    { subject: 'Your change was published: Clarify the hand height in step 4', heading: 'Your change is live', body: 'coach_sby approved your change to 第十二式 高探马 Gāo tàn mǎ. Thank you for improving OpenWushu.',
+      boxTitle: 'Clarify the hand height in step 4', boxMeta: 'Steps · English · revision r6', boxText: 'Reviewer note: “Clear and well sourced. Thanks!”',
+      cta: 'See the movement', small: 'If a reviewer requests changes instead, you get a similar email with their note and a link to edit.', why: 'You received this because you submitted this change.', stop: 'Turn off review emails' },
+    { subject: 'You are now a verified contributor', heading: 'Welcome, verified contributor', body: 'Your application was approved. You can now write movement descriptions, upload demonstration videos and mark video timings.',
+      badge: 'Verified · Judge / coach', boxText: 'Your documents have been deleted. We keep only your badge, its type and the date it was checked.',
+      cta: 'Start contributing', small: 'Your badge appears on your profile and on every contribution you make.', why: 'You received this because you applied to become a contributor.' }
+  ],
+  id: [
+    { subject: 'Verifikasi email Anda untuk OpenWushu', heading: 'Konfirmasi email Anda', body: 'Halo Ana, selamat datang di OpenWushu. Konfirmasi bahwa ini email Anda untuk mulai ikut berdiskusi dan melaporkan masalah.',
+      cta: 'Verifikasi email', small: 'Tautan ini berlaku 24 jam. Jika Anda tidak mendaftar, abaikan email ini.', why: 'Anda menerima email ini karena seseorang mendaftar dengan alamat ini.' },
+    { subject: 'coach_sby membalas: ' + THREAD_TITLE, heading: 'Balasan baru di diskusi yang Anda ikuti', body: 'coach_sby membalas diskusi tentang 第十二式 高探马 Gāo tàn mǎ.',
+      badge: 'Bahasa Indonesia', boxTitle: THREAD_TITLE, boxMeta: 'coach_sby · Pengelola · Juri / pelatih', boxText: REPLY,
+      cta: 'Lihat diskusi', small: 'Balas di OpenWushu. Balasan ke email ini tidak diposting.', why: 'Anda menerima email ini karena mengikuti diskusi ini.', stop: 'Berhenti mengikuti diskusi ini' },
+    { subject: 'Perubahan Anda diterbitkan: Perjelas tinggi tangan di langkah 4', heading: 'Perubahan Anda sudah tayang', body: 'coach_sby menyetujui perubahan Anda pada 第十二式 高探马 Gāo tàn mǎ. Terima kasih telah memperbaiki OpenWushu.',
+      boxTitle: 'Perjelas tinggi tangan di langkah 4', boxMeta: 'Langkah · English · revisi r6', boxText: 'Catatan peninjau: “Jelas dan sumbernya lengkap. Terima kasih!”',
+      cta: 'Lihat gerakan', small: 'Jika peninjau meminta perubahan, Anda menerima email serupa berisi catatannya dan tautan untuk menyunting.', why: 'Anda menerima email ini karena mengirim perubahan ini.', stop: 'Matikan email tinjauan' },
+    { subject: 'Anda sekarang kontributor terverifikasi', heading: 'Selamat datang, kontributor terverifikasi', body: 'Pengajuan Anda disetujui. Sekarang Anda dapat menulis deskripsi gerakan, mengunggah video peragaan, dan menandai waktu video.',
+      badge: 'Terverifikasi · Juri / pelatih', boxText: 'Dokumen Anda telah dihapus. Kami hanya menyimpan lencana, jenisnya, dan tanggal pemeriksaan.',
+      cta: 'Mulai berkontribusi', small: 'Lencana Anda tampil di profil dan di setiap kontribusi Anda.', why: 'Anda menerima email ini karena mengajukan diri sebagai kontributor.' }
+  ]
+};
+class Component extends DCLogic {
+  renderVals() {
+    var lang = this.props.lang === 'id' ? 'id' : 'en';
+    return {
+      x: X[lang],
+      emails: EMAILS[lang].map(function (e) {
+        return Object.assign({ badge: '', boxTitle: '', boxMeta: '', boxText: '', stop: '' }, e, {
+          hasBox: !!(e.boxText || e.boxTitle), hasBadge: !!e.badge, hasBoxTitle: !!e.boxTitle, hasMeta: !!e.boxMeta, hasStop: !!e.stop
+        });
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>

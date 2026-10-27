@@ -30,6 +30,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <button type="button" class="ow-btn" onClick="{{goLibrary}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 500; background: {{navLibBg}}; color: {{navLibFg}}">{{s.library}}</button>
 <button type="button" class="ow-btn" onClick="{{goDiscuss}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 500; background: {{navDisBg}}; color: {{navDisFg}}">{{s.discussions}}</button>
 <button type="button" class="ow-btn" onClick="{{goContribute}}" style="min-height: 44px; padding: 0 14px; border-radius: 0; font-weight: 500; background: {{navConBg}}; color: {{navConFg}}">{{s.contribute}}</button>
+<sc-if value="{{isMaint}}" hint-placeholder-val="{{ false }}"><button type="button" class="ow-btn" onClick="{{goReview}}" style="min-height: 44px; padding: 0 14px; font-weight: 500; display: flex; align-items: center; gap: 8px; background: {{navRevBg}}; color: {{navRevFg}}">{{s.review}} <span style="padding: 0 7px; font-size: 12px; font-weight: 700; background: {{t.accent}}; color: {{t.onAccent}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{rvTotalPending}}</span></button></sc-if>
 </nav>
 <div style="display: flex; align-items: center; gap: 10px">
 <span style="font-size: 13px; color: {{t.muted}}">中文 + {{s.translation}}</span>
@@ -46,8 +47,8 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </sc-if>
 <sc-if value="{{signedIn}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; align-items: center; gap: 10px">
-<span aria-hidden="true" style="width: 36px; height: 36px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{userInitial}}</span>
-<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-weight: 600; font-size: 14px">{{userName}}</span><span style="font-size: 12px; font-weight: 500; color: {{userRoleFg}}">{{userRole}}</span></span>
+<button type="button" class="ow-btn" onClick="{{goProfile}}" aria-label="{{s.profile}}" style="display: flex; align-items: center; gap: 10px; min-height: 44px"><span aria-hidden="true" style="width: 36px; height: 36px; border-radius: 0; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{userInitial}}</span>
+<span style="display: flex; flex-direction: column; line-height: 1.2"><span style="font-weight: 600; font-size: 14px">{{userName}}</span><span style="font-size: 12px; font-weight: 500; color: {{userRoleFg}}">{{userRole}}</span></span></button>
 <button type="button" class="ow-btn" onClick="{{signOut}}" style="min-height: 44px; padding: 0 12px; border-radius: 0; font-size: 14px; font-weight: 600; color: {{t.muted}}">{{s.signOut}}</button>
 </div>
 </sc-if>
@@ -429,6 +430,7 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <span style="align-self: flex-start; padding: 2px 10px; border-radius: 0; font-size: 12px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{s.badgeSchool}} · {{s.sample}}</span>
 </div>
 <p style="margin: 0; display: flex; align-items: center; gap: 8px; font-size: 13px; color: {{t.muted}}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{t.accentInk}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="6.5"></circle><path d="M5 8.2 L7 10.2 L11 6"></path></svg>{{s.verifiedBy}}</p>
+<button type="button" class="ow-btn" onClick="{{openHistory}}" style="align-self: flex-start; min-height: 40px; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: {{t.accentInk}}; text-decoration: underline"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2.5 8 A5.5 5.5 0 1 0 4.2 4"></path><path d="M2 2.5 V5 H4.5"></path><path d="M8 5 V8.3 L10.2 9.6"></path></svg>{{s.history}} · {{histCount}} {{s.revisions}}</button>
 </sc-if>
 
 <sc-if value="{{noDetail}}" hint-placeholder-val="{{ false }}">
@@ -693,6 +695,308 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 <span style="font-size: 14px; color: {{t.muted}}">Qìxiè · {{s.weapons}} · {{s.comingSoon}}</span>
 </div>
 </section>
+</main>
+</sc-if>
+
+<sc-if value="{{isReview}}" hint-placeholder-val="{{ false }}">
+<main style="max-width: 1280px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 24px">
+<section style="display: flex; gap: 24px; align-items: stretch">
+<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 44px; line-height: 1; letter-spacing: 0.14em; font-weight: 400; padding-left: 16px; border-left: 4px solid {{t.accent}}">审核</h1>
+<div style="display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; min-width: 0">
+<p style="margin: 0; font-family: 'Alegreya', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.rvTitle}}</p>
+<p style="margin: 0; font-family: 'Alegreya', serif; font-style: italic; font-size: 18px; color: {{t.muted}}">Shěnhé</p>
+<p style="margin: 8px 0 0; max-width: 640px; color: {{t.muted}}">{{s.rvLead}}</p>
+</div>
+</section>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px">
+<div role="tablist" aria-label="{{s.rvTitle}}" style="display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; background: {{t.chip}}">
+<button type="button" role="tab" class="ow-btn" aria-selected="{{rvIsContent}}" onClick="{{rvTabContent}}" style="min-height: 40px; padding: 0 16px; font-weight: 600; background: {{rvTabCBg}}; color: {{rvTabCFg}}">{{s.rvTabContent}} <span style="font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">({{rvCountContent}})</span></button>
+<button type="button" role="tab" class="ow-btn" aria-selected="{{rvIsApps}}" onClick="{{rvTabApps}}" style="min-height: 40px; padding: 0 16px; font-weight: 600; background: {{rvTabABg}}; color: {{rvTabAFg}}">{{s.rvTabApps}} <span style="font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">({{rvCountApps}})</span></button>
+</div>
+<span style="font-size: 13px; color: {{t.muted}}">{{s.rvSelfNote}}</span>
+</div>
+
+<sc-if value="{{rvIsContent}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<aside style="flex: 1 1 340px; min-width: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<ol style="list-style: none; margin: 0; padding: 0">
+<sc-for list="{{rvItems}}" as="it" hint-placeholder-count="3">
+<li><button type="button" class="ow-btn ow-row" onClick="{{it.pick}}" aria-current="{{it.on}}" style="width: 100%; display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-bottom: 1px solid {{t.line}}; background: {{it.bg}}">
+<span style="display: flex; flex-wrap: wrap; gap: 6px"><span style="padding: 2px 10px; font-size: 12px; font-weight: 600; border: 1px solid {{t.line2}}">{{it.kindLabel}}</span><span style="padding: 2px 10px; font-size: 12px; font-weight: 600; background: {{it.stBg}}; color: {{it.stFg}}">{{it.stLabel}}</span></span>
+<span style="font-weight: 700">{{it.title}}</span>
+<span style="font-size: 13px; color: {{t.muted}}">{{it.target}} · {{it.by}} · {{it.when}}</span>
+</button></li>
+</sc-for>
+</ol>
+</aside>
+<section style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><span style="padding: 2px 10px; font-size: 12px; font-weight: 600; border: 1px solid {{t.line2}}">{{rv.kindLabel}}</span><span style="padding: 2px 10px; font-size: 12px; font-weight: 600; background: {{rv.stBg}}; color: {{rv.stFg}}">{{rv.stLabel}}</span></div>
+<h2 style="margin: 0; font-family: 'Alegreya', serif; font-size: 26px; line-height: 1.25">{{rv.title}}</h2>
+<p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{rv.target}} · {{rv.field}} · {{s.fieldLang}}: {{rv.flang}}</p>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<span aria-hidden="true" style="flex: none; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accent}}; color: {{t.onAccent}}">{{rv.initial}}</span>
+<span style="display: flex; flex-direction: column; line-height: 1.25"><span style="font-weight: 600">{{rv.by}}</span><span style="font-size: 12px; font-weight: 500; color: {{t.accentInk}}">{{rv.badge}}</span></span>
+<span style="flex: 1 1 auto"></span>
+<span style="font-size: 13px; color: {{t.muted}}">{{rv.when}}</span>
+</div>
+<sc-if value="{{rv.isText}}" hint-placeholder-val="{{ true }}">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: {{t.muted}}">{{s.before}}</span>
+<p style="margin: 0; padding: 12px 14px; line-height: 1.75; border: 1px solid {{t.line}}; background: {{t.bg}}"><sc-if value="{{rv.beforeEmpty}}" hint-placeholder-val="{{ false }}"><span style="color: {{t.muted}}">{{s.newContent}}</span></sc-if><sc-for list="{{rv.before}}" as="g" hint-placeholder-count="2"><span style="background: {{g.bg}}; text-decoration: {{g.dec}}">{{g.t}}</span></sc-for></p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: {{t.muted}}">{{s.after}}</span>
+<p style="margin: 0; padding: 12px 14px; line-height: 1.75; border: 1px solid {{t.line}}; background: {{t.bg}}"><sc-for list="{{rv.after}}" as="g" hint-placeholder-count="2"><span style="background: {{g.bg}}; text-decoration: {{g.dec}}">{{g.t}}</span></sc-for></p>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{rv.isVideo}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; aspect-ratio: 16 / 9; max-width: 560px; background: {{t.video}}; color: #DCE6F5">
+<span aria-hidden="true" style="width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: {{t.accent}}; color: {{t.onAccent}}"><svg width="20" height="20" viewBox="0 0 20 20"><path d="M6 3 L17 10 L6 17 Z" fill="currentColor"></path></svg></span>
+<span style="font-size: 14px; text-align: center; padding: 0 16px">{{rv.videoInfo}}</span>
+</div>
+</sc-if>
+<p style="margin: 0; font-size: 14px"><span style="font-weight: 600">{{s.source}}:</span> {{rv.source}}</p>
+<sc-if value="{{rv.hasThread}}" hint-placeholder-val="{{ false }}">
+<button type="button" class="ow-btn" onClick="{{rv.openThread}}" style="align-self: flex-start; min-height: 40px; font-size: 14px; text-decoration: underline; color: {{t.accentInk}}">{{s.rvLinked}}: {{rv.threadTitle}}</button>
+</sc-if>
+<sc-if value="{{rv.pending}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-rvnote" style="font-size: 13px; font-weight: 600">{{s.rvNote}}</label>
+<textarea id="ow-rvnote" class="ow-in" rows="3" value="{{rvNote}}" onChange="{{onRvNote}}" style="padding: 10px 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+</div>
+<sc-if value="{{hasRvErr}}" hint-placeholder-val="{{ false }}"><p role="alert" style="margin: 0; font-size: 14px; color: {{t.red}}">{{rvErrText}}</p></sc-if>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" class="ow-btn" onClick="{{rv.approve}}" style="min-height: 46px; padding: 0 18px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.rvApprove}}</button>
+<button type="button" class="ow-btn" onClick="{{rv.request}}" style="min-height: 46px; padding: 0 16px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}">{{s.rvRequest}}</button>
+<button type="button" class="ow-btn" onClick="{{rv.reject}}" style="min-height: 46px; padding: 0 16px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}; color: {{t.red}}">{{s.rvReject}}</button>
+</div>
+</sc-if>
+<sc-if value="{{rv.decided}}" hint-placeholder-val="{{ false }}">
+<div role="status" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 14px 16px; background: {{rv.resultBg}}; color: {{rv.resultFg}}">
+<span style="flex: 1 1 260px; font-weight: 600">{{rv.resultText}}</span>
+<button type="button" class="ow-btn" onClick="{{rv.undo}}" style="min-height: 40px; padding: 0 12px; font-size: 14px; font-weight: 600; text-decoration: underline">{{s.rvUndo}}</button>
+</div>
+</sc-if>
+</section>
+</div>
+</sc-if>
+
+<sc-if value="{{rvIsApps}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<aside style="flex: 1 1 340px; min-width: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<ol style="list-style: none; margin: 0; padding: 0">
+<sc-for list="{{apItems}}" as="it" hint-placeholder-count="3">
+<li><button type="button" class="ow-btn ow-row" onClick="{{it.pick}}" aria-current="{{it.on}}" style="width: 100%; display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-bottom: 1px solid {{t.line}}; background: {{it.bg}}">
+<span style="display: flex; flex-wrap: wrap; gap: 6px"><span style="padding: 2px 10px; font-size: 12px; font-weight: 600; border: 1px solid {{t.line2}}">{{it.kindLabel}}</span><span style="padding: 2px 10px; font-size: 12px; font-weight: 600; background: {{it.stBg}}; color: {{it.stFg}}">{{it.stLabel}}</span></span>
+<span style="font-weight: 700">{{it.title}}</span>
+<span style="font-size: 13px; color: {{t.muted}}">{{it.target}} · {{it.by}} · {{it.when}}</span>
+</button></li>
+</sc-for>
+</ol>
+</aside>
+<section style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<div style="display: flex; flex-wrap: wrap; gap: 6px"><span style="padding: 2px 10px; font-size: 12px; font-weight: 600; border: 1px solid {{t.line2}}">{{ap2.pathLabel}}</span><span style="padding: 2px 10px; font-size: 12px; font-weight: 600; background: {{ap2.stBg}}; color: {{ap2.stFg}}">{{ap2.stLabel}}</span></div>
+<h2 style="margin: 0; font-family: 'Alegreya', serif; font-size: 26px; line-height: 1.25">{{ap2.name}}</h2>
+<p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{ap2.by}} · {{ap2.when}} · {{s.rvRequested}}: <span style="padding: 2px 10px; font-size: 12px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{ap2.badge}}</span></p>
+<dl style="margin: 0; display: grid; grid-template-columns: minmax(0, 180px) minmax(0, 1fr); gap: 8px 16px; font-size: 14px">
+<sc-for list="{{ap2.rows}}" as="r" hint-placeholder-count="4"><dt style="color: {{t.muted}}">{{r.k}}</dt><dd style="margin: 0; font-weight: 600">{{r.v}}</dd></sc-for>
+</dl>
+<sc-if value="{{ap2.isA}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 12px 14px; border: 1px dashed {{t.line2}}">
+<svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M5 2 H13 L18 7 V20 H5 Z"></path><path d="M13 2 V7 H18"></path></svg>
+<span style="flex: 1 1 200px; font-size: 13px; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{ap2.doc}}</span>
+<button type="button" class="ow-btn" style="min-height: 40px; padding: 0 14px; font-size: 14px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.rvView}}</button>
+</div>
+</sc-if>
+<sc-if value="{{ap2.isB}}" hint-placeholder-val="{{ false }}">
+<h3 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 15px; font-weight: 700">{{s.fEvidence}}</h3>
+<ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; font-size: 14px"><sc-for list="{{ap2.evidence}}" as="e" hint-placeholder-count="3"><li>{{e}}</li></sc-for></ul>
+</sc-if>
+<p style="margin: 0; font-size: 13px; color: {{t.muted}}">{{s.rvDocNote}}</p>
+<h3 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 15px; font-weight: 700">{{s.rvChecklist}}</h3>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px">
+<sc-for list="{{ap2.checks}}" as="c" hint-placeholder-count="3"><li><button type="button" role="checkbox" aria-checked="{{c.on}}" onClick="{{c.toggle}}" class="ow-btn" style="display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px"><span aria-hidden="true" style="flex: none; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; font-weight: 700; border: 1px solid {{t.ink}}; background: {{c.bg}}; color: {{t.onAccent}}">{{c.mark}}</span>{{c.label}}</button></li></sc-for>
+</ul>
+<sc-if value="{{ap2.pending}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="ow-rvnote" style="font-size: 13px; font-weight: 600">{{s.rvNote}}</label>
+<textarea id="ow-rvnote" class="ow-in" rows="3" value="{{rvNote}}" onChange="{{onRvNote}}" style="padding: 10px 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; resize: vertical"></textarea>
+</div>
+<sc-if value="{{hasRvErr}}" hint-placeholder-val="{{ false }}"><p role="alert" style="margin: 0; font-size: 14px; color: {{t.red}}">{{rvErrText}}</p></sc-if>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" class="ow-btn" onClick="{{ap2.approve}}" style="min-height: 46px; padding: 0 18px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.rvApproveApp}}</button>
+<button type="button" class="ow-btn" onClick="{{ap2.call}}" style="min-height: 46px; padding: 0 16px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}">{{s.rvAskCall}}</button>
+<button type="button" class="ow-btn" onClick="{{ap2.reject}}" style="min-height: 46px; padding: 0 16px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}; color: {{t.red}}">{{s.rvReject}}</button>
+</div>
+</sc-if>
+<sc-if value="{{ap2.decided}}" hint-placeholder-val="{{ false }}">
+<div role="status" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 14px 16px; background: {{ap2.resultBg}}; color: {{ap2.resultFg}}">
+<span style="flex: 1 1 260px; font-weight: 600">{{ap2.resultText}}</span>
+<button type="button" class="ow-btn" onClick="{{ap2.undo}}" style="min-height: 40px; padding: 0 12px; font-size: 14px; font-weight: 600; text-decoration: underline">{{s.rvUndo}}</button>
+</div>
+</sc-if>
+</section>
+</div>
+</sc-if>
+</main>
+</sc-if>
+
+<sc-if value="{{isHistory}}" hint-placeholder-val="{{ false }}">
+<main style="max-width: 1180px; margin: 0 auto; padding: 24px 24px 64px; display: flex; flex-direction: column; gap: 24px">
+<nav aria-label="Breadcrumb" style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; color: {{t.muted}}">
+<button type="button" class="ow-btn" onClick="{{goLibrary}}" style="min-height: 32px; text-decoration: underline">{{s.library}}</button><span aria-hidden="true">/</span>
+<button type="button" class="ow-btn" onClick="{{openRoutine}}" style="min-height: 32px; text-decoration: underline">24式</button><span aria-hidden="true">/</span>
+<button type="button" class="ow-btn" onClick="{{hiBackMove}}" style="min-height: 32px; text-decoration: underline">{{hiMoveShort}}</button><span aria-hidden="true">/</span>
+<span style="color: {{t.ink}}">{{s.history}}</span>
+</nav>
+<section style="display: flex; gap: 24px; align-items: stretch">
+<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 44px; line-height: 1; letter-spacing: 0.14em; font-weight: 400; padding-left: 16px; border-left: 4px solid {{t.accent}}">修订</h1>
+<div style="display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; min-width: 0">
+<p style="margin: 0; font-family: 'Alegreya', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.hiTitle}}</p>
+<p style="margin: 0; font-family: 'Alegreya', serif; font-style: italic; font-size: 18px; color: {{t.muted}}">Xiūdìng</p>
+<p style="margin: 8px 0 0; max-width: 640px; color: {{t.muted}}">{{s.hiLead}}</p>
+</div>
+</section>
+<p style="margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px"><span style="font-family: 'Noto Serif SC', serif; font-size: 24px; font-weight: 700">{{hiMoveZh}}</span><span style="font-family: 'Alegreya', serif; font-style: italic; font-size: 18px; color: {{t.muted}}">{{hiMovePy}}</span><span style="font-weight: 600">{{hiMoveTr}}</span></p>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<aside style="flex: 1 1 320px; min-width: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<ol style="list-style: none; margin: 0; padding: 0">
+<sc-for list="{{hiRevs}}" as="r" hint-placeholder-count="5">
+<li><button type="button" class="ow-btn ow-row" onClick="{{r.pick}}" aria-current="{{r.on}}" style="width: 100%; display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-bottom: 1px solid {{t.line}}; background: {{r.bg}}">
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 14px; font-weight: 700; color: {{t.accentInk}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{r.label}}</span><sc-if value="{{r.isCurrent}}" hint-placeholder-val="{{ false }}"><span style="padding: 2px 10px; font-size: 12px; font-weight: 600; background: {{t.green}}; color: #FFFFFF">{{s.hiCurrent}}</span></sc-if></span>
+<span style="font-weight: 700">{{r.summary}}</span>
+<span style="font-size: 13px; color: {{t.muted}}">{{r.by}} · {{r.when}}</span>
+</button></li>
+</sc-for>
+</ol>
+</aside>
+<section style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-size: 15px; font-weight: 700; color: {{t.accentInk}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{hv.label}}</span><sc-if value="{{hv.isCurrent}}" hint-placeholder-val="{{ false }}"><span style="padding: 2px 10px; font-size: 12px; font-weight: 600; background: {{t.green}}; color: #FFFFFF">{{s.hiCurrent}}</span></sc-if></div>
+<h2 style="margin: 0; font-family: 'Alegreya', serif; font-size: 24px; line-height: 1.25">{{hv.summary}}</h2>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<span aria-hidden="true" style="flex: none; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-weight: 700; background: {{t.accent}}; color: {{t.onAccent}}">{{hv.initial}}</span>
+<span style="display: flex; flex-direction: column; line-height: 1.25"><span style="font-weight: 600">{{hv.by}}</span><span style="font-size: 12px; font-weight: 500; color: {{t.accentInk}}">{{hv.badge}}</span></span>
+<span style="flex: 1 1 auto"></span>
+<span style="font-size: 13px; color: {{t.muted}}">{{hv.when}}</span>
+</div>
+<p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{hv.reviewerLine}} · {{hv.field}} · {{s.fieldLang}}: {{hv.flang}}</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: {{t.muted}}">{{s.before}}</span>
+<p style="margin: 0; padding: 12px 14px; line-height: 1.75; border: 1px solid {{t.line}}; background: {{t.bg}}"><sc-if value="{{hv.beforeEmpty}}" hint-placeholder-val="{{ false }}"><span style="color: {{t.muted}}">{{s.newContent}}</span></sc-if><sc-for list="{{hv.before}}" as="g" hint-placeholder-count="2"><span style="background: {{g.bg}}; text-decoration: {{g.dec}}">{{g.t}}</span></sc-for></p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: {{t.muted}}">{{s.after}}</span>
+<p style="margin: 0; padding: 12px 14px; line-height: 1.75; border: 1px solid {{t.line}}; background: {{t.bg}}"><sc-for list="{{hv.after}}" as="g" hint-placeholder-count="2"><span style="background: {{g.bg}}; text-decoration: {{g.dec}}">{{g.t}}</span></sc-for></p>
+</div>
+</div>
+<p style="margin: 0; font-size: 14px"><span style="font-weight: 600">{{s.source}}:</span> {{hv.source}}</p>
+<sc-if value="{{hv.canRestore}}" hint-placeholder-val="{{ false }}"><button type="button" class="ow-btn" onClick="{{hiAskRestore}}" style="align-self: flex-start; min-height: 46px; padding: 0 16px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}">{{s.hiRestore}}</button></sc-if>
+<sc-if value="{{hv.confirming}}" hint-placeholder-val="{{ false }}">
+<div role="group" aria-label="{{s.hiRestore}}" style="display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; border: 1px solid {{t.amber}}; background: {{t.amberSoft}}">
+<p style="margin: 0; font-weight: 600; color: {{t.ink}}">{{s.hiRestoreQ}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><button type="button" class="ow-btn" onClick="{{hiConfirmRestore}}" style="min-height: 46px; padding: 0 18px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.hiConfirm}}</button><button type="button" class="ow-btn" onClick="{{hiCancelRestore}}" style="min-height: 46px; padding: 0 16px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}; background: {{t.surface}}">{{s.cancel}}</button></div>
+</div>
+</sc-if>
+<sc-if value="{{hv.restored}}" hint-placeholder-val="{{ false }}"><p role="status" style="margin: 0; padding: 12px 14px; font-weight: 600; background: {{t.green}}; color: #FFFFFF">{{s.hiRestored}}</p></sc-if>
+<p style="margin: 0; font-size: 13px; color: {{t.muted}}">{{s.hiCredit}}</p>
+</section>
+</div>
+</main>
+</sc-if>
+
+<sc-if value="{{isProfile}}" hint-placeholder-val="{{ false }}">
+<main style="max-width: 1180px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-direction: column; gap: 24px">
+<section style="display: flex; gap: 24px; align-items: stretch">
+<h1 style="margin: 0; writing-mode: vertical-rl; font-family: 'Ma Shan Zheng', 'Noto Serif SC', serif; font-size: 44px; line-height: 1; letter-spacing: 0.14em; font-weight: 400; padding-left: 16px; border-left: 4px solid {{t.accent}}">个人</h1>
+<div style="display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; min-width: 0">
+<p style="margin: 0; font-family: 'Alegreya', serif; font-size: 34px; line-height: 1.15; font-weight: 600">{{s.prTitle}}</p>
+<p style="margin: 0; font-family: 'Alegreya', serif; font-style: italic; font-size: 18px; color: {{t.muted}}">Gèrén</p>
+<p style="margin: 8px 0 0; max-width: 640px; color: {{t.muted}}">{{s.prLead}}</p>
+</div>
+</section>
+<section style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<span aria-hidden="true" style="flex: none; width: 72px; height: 72px; display: flex; align-items: center; justify-content: center; font-family: 'Alegreya', serif; font-size: 36px; font-weight: 700; background: {{t.seal}}; color: #FFFFFF; outline: 2px solid {{t.seal}}; outline-offset: 3px">{{userInitial}}</span>
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Alegreya', serif; font-size: 26px; font-weight: 700">{{userName}}</span>
+<span style="align-self: flex-start; padding: 2px 10px; font-size: 12px; font-weight: 600; background: {{t.accentSoft}}; color: {{t.accentInk}}">{{userRole}}</span>
+<span style="font-size: 14px; color: {{t.muted}}">{{prEmail}} · {{s.prSince}}</span>
+</div>
+<button type="button" class="ow-btn" onClick="{{signOut}}" style="min-height: 46px; padding: 0 16px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}">{{s.signOut}}</button>
+</section>
+
+<section aria-label="{{s.prDemo}}" style="display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; border: 1px dashed {{t.line2}}">
+<span style="font-size: 13px; font-weight: 700">{{s.prDemo}}</span>
+<span style="font-size: 13px; color: {{t.muted}}">{{s.prDemoBody}}</span>
+<div role="group" aria-label="{{s.prDemo}}" style="display: flex; flex-wrap: wrap; gap: 6px">
+<sc-for list="{{prRoles}}" as="r" hint-placeholder-count="4"><button type="button" class="ow-btn" onClick="{{r.pick}}" aria-pressed="{{r.on}}" style="min-height: 40px; padding: 0 12px; font-size: 14px; font-weight: 600; background: {{r.bg}}; color: {{r.fg}}; border: 1px solid {{r.bd}}">{{r.label}}</button></sc-for>
+</div>
+</section>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<section style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<h2 style="margin: 0; font-family: 'Alegreya', 'Noto Serif SC', serif; font-size: 20px; font-weight: 700; padding-bottom: 8px; border-bottom: 1px solid {{t.ink}}">{{s.prContrib}}</h2>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+<sc-for list="{{prContribs}}" as="c" hint-placeholder-count="3">
+<li style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 12px 0; border-bottom: 1px solid {{t.line}}">
+<span style="padding: 2px 10px; font-size: 12px; font-weight: 600; background: {{c.stBg}}; color: {{c.stFg}}">{{c.stLabel}}</span>
+<span style="flex: 1 1 240px; display: flex; flex-direction: column"><span style="font-weight: 600">{{c.title}}</span><span style="font-size: 13px; color: {{t.muted}}">{{c.target}} · {{c.when}}</span></span>
+<button type="button" class="ow-btn" onClick="{{c.view}}" style="min-height: 40px; padding: 0 12px; font-size: 14px; font-weight: 600; color: {{t.accentInk}}; text-decoration: underline">{{s.history}}</button>
+</li>
+</sc-for>
+</ul>
+</section>
+<section style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<h2 style="margin: 0; font-family: 'Alegreya', 'Noto Serif SC', serif; font-size: 20px; font-weight: 700; padding-bottom: 8px; border-bottom: 1px solid {{t.ink}}">{{s.prWatched}}</h2>
+<sc-if value="{{prNoWatched}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; color: {{t.muted}}">{{s.prNoWatched}}</p></sc-if>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+<sc-for list="{{prWatchedList}}" as="w" hint-placeholder-count="1">
+<li style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 12px 0; border-bottom: 1px solid {{t.line}}">
+<span style="padding: 2px 10px; font-size: 12px; font-weight: 600; border: 1px solid {{t.line2}}">{{w.lang}}</span>
+<button type="button" class="ow-btn" onClick="{{w.open}}" style="flex: 1 1 240px; min-height: 40px; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: {{t.line2}}">{{w.title}}</button>
+<button type="button" class="ow-btn" onClick="{{w.unwatch}}" style="min-height: 40px; padding: 0 12px; font-size: 14px; font-weight: 600; border: 1px solid {{t.line2}}">{{s.prUnwatch}}</button>
+</li>
+</sc-for>
+</ul>
+</section>
+</div>
+
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<section style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<h2 style="margin: 0; font-family: 'Alegreya', 'Noto Serif SC', serif; font-size: 20px; font-weight: 700; padding-bottom: 8px; border-bottom: 1px solid {{t.ink}}">{{s.prNotif}}</h2>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+<sc-for list="{{prToggles}}" as="tg" hint-placeholder-count="4">
+<li style="display: flex; align-items: center; gap: 12px; padding: 4px 0; border-bottom: 1px solid {{t.line}}">
+<span id="{{tg.id}}" style="flex: 1 1 auto; font-size: 14px">{{tg.label}}</span>
+<button type="button" role="switch" aria-checked="{{tg.on}}" aria-labelledby="{{tg.id}}" onClick="{{tg.toggle}}" class="ow-btn" style="flex: none; width: 56px; height: 44px; display: flex; align-items: center; justify-content: center">
+<span aria-hidden="true" style="width: 46px; height: 24px; box-sizing: border-box; padding: 2px; display: flex; border: 1px solid {{t.ink}}; justify-content: {{tg.justify}}; background: {{tg.track}}"><span style="width: 18px; height: 18px; box-sizing: border-box; border: 1px solid {{t.ink}}; background: {{t.surface}}"></span></span>
+</button>
+</li>
+</sc-for>
+</ul>
+<span id="ow-prfreq" style="font-size: 13px; font-weight: 600">{{s.prFreq}}</span>
+<div role="group" aria-labelledby="ow-prfreq" style="display: flex; align-self: flex-start; padding: 3px; background: {{t.chip}}">
+<sc-for list="{{prFreqOpts}}" as="f" hint-placeholder-count="2"><button type="button" class="ow-btn" onClick="{{f.pick}}" aria-pressed="{{f.on}}" style="min-height: 38px; padding: 0 12px; font-size: 14px; font-weight: 600; background: {{f.bg}}; color: {{f.fg}}">{{f.label}}</button></sc-for>
+</div>
+<label for="ow-premlang" style="font-size: 13px; font-weight: 600">{{s.prEmailLang}}</label>
+<select id="ow-premlang" class="ow-in" value="{{prEmailLang}}" onChange="{{onPrEmailLang}}" style="min-height: 46px; padding: 0 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}">
+<sc-for list="{{formLangOpts}}" as="o" hint-placeholder-count="3"><option value="{{o.v}}">{{o.label}}</option></sc-for>
+</select>
+</section>
+<section style="display: flex; flex-direction: column; gap: 12px; padding: 20px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<h2 style="margin: 0; font-family: 'Alegreya', 'Noto Serif SC', serif; font-size: 20px; font-weight: 700; padding-bottom: 8px; border-bottom: 1px solid {{t.ink}}">{{s.prPrivacy}}</h2>
+<p style="margin: 0; font-size: 14px; color: {{t.muted}}">{{s.prPrivacyBody}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" class="ow-btn" onClick="{{prDownload}}" style="min-height: 46px; padding: 0 16px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}">{{s.prDownload}}</button>
+<button type="button" class="ow-btn" onClick="{{prDelete}}" style="min-height: 46px; padding: 0 16px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}; color: {{t.red}}; border-color: {{t.red}}">{{s.prDelete}}</button>
+</div>
+<sc-if value="{{hasPrMsg}}" hint-placeholder-val="{{ false }}"><p role="status" style="margin: 0; font-size: 14px; font-weight: 600; color: {{t.accentInk}}">{{prMsgText}}</p></sc-if>
+</section>
+</div>
+</div>
 </main>
 </sc-if>
 
@@ -1055,6 +1359,82 @@ a{color:#1766C7}a:hover{color:#0F4F9E}
 </div>
 </sc-if>
 
+<sc-if value="{{cShowTiming}}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; max-width: 760px; color: {{t.muted}}">{{s.edLead}}</p>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<section aria-label="Video" style="display: flex; flex-direction: column; gap: 10px; padding: 12px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<div style="position: relative; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; background: {{t.video}}">
+<span style="position: absolute; right: 12px; top: 12px; padding: 4px 10px; background: rgba(0,0,0,0.35); color: #F2F6FC; font-size: 13px; font-weight: 600; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{edTime}}</span>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center">
+<span style="font-size: 13px; color: #A9BAD3">第{{edVideoCn}}式</span>
+<span style="font-family: 'Noto Serif SC', serif; font-size: 44px; font-weight: 700; color: #FFFFFF">{{edVideoZh}}</span>
+<span style="font-family: 'Alegreya', serif; font-style: italic; font-size: 18px; color: #DCE6F5">{{edVideoPy}}</span>
+</div>
+</div>
+<div role="group" aria-label="{{s.edStarts}}" style="display: flex; gap: 2px; height: 32px">
+<sc-for list="{{edSegs}}" as="g" hint-placeholder-count="24"><button type="button" class="ow-btn" onClick="{{g.pick}}" aria-label="{{g.aria}}" title="{{g.aria}}" style="flex: {{g.dur}} 1 0px; min-width: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; background: {{g.bg}}; color: {{g.fg}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{g.n}}</button></sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<button type="button" class="ow-btn" onClick="{{togglePlay}}" aria-label="{{playLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: {{t.accent}}; color: {{t.onAccent}}">
+<sc-if value="{{playing}}" hint-placeholder-val="{{ false }}"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="3" width="4" height="14" fill="currentColor"></rect><rect x="12" y="3" width="4" height="14" fill="currentColor"></rect></svg></sc-if>
+<sc-if value="{{paused}}" hint-placeholder-val="{{ true }}"><svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3 L17 10 L6 17 Z" fill="currentColor"></path></svg></sc-if>
+</button>
+<button type="button" class="ow-btn" onClick="{{edBack}}" style="min-height: 44px; padding: 0 12px; font-size: 14px; font-weight: 600; background: {{t.chip}}">{{s.edBack}}</button>
+<button type="button" class="ow-btn" onClick="{{edFwd}}" style="min-height: 44px; padding: 0 12px; font-size: 14px; font-weight: 600; background: {{t.chip}}">{{s.edFwd}}</button>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding-top: 10px; border-top: 1px solid {{t.line}}">
+<span style="flex: 1 1 220px; font-size: 14px"><span style="color: {{t.muted}}">{{s.edSelected}}:</span> <span style="font-family: 'Noto Serif SC', serif; font-weight: 700">{{edSelLabel}}</span> · <span style="font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{edSelStart}}</span></span>
+<button type="button" class="ow-btn" onClick="{{edSetStart}}" style="min-height: 46px; padding: 0 18px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.edSetStart}} <span style="font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{edTime}}</span></button>
+<button type="button" class="ow-btn" onClick="{{edPlayFrom}}" style="min-height: 46px; padding: 0 16px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}">{{s.edPlayFrom}}</button>
+</div>
+<sc-if value="{{hasEdWarn}}" hint-placeholder-val="{{ false }}"><p role="alert" style="margin: 0; font-size: 14px; color: {{t.red}}">{{edWarnText}}</p></sc-if>
+</section>
+
+<section aria-label="{{s.edCarpetH}}" style="display: flex; flex-direction: column; gap: 12px; padding: 16px; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<h2 style="margin: 0; font-family: 'Alegreya', 'Noto Serif SC', serif; font-size: 20px; font-weight: 700; padding-bottom: 8px; border-bottom: 1px solid {{t.ink}}">场地路线 · {{s.edCarpetH}}</h2>
+<div onClick="{{edCarpetClick}}" style="position: relative; aspect-ratio: 14 / 8; cursor: crosshair">
+<svg viewBox="0 0 1400 800" width="100%" height="100%" style="position: absolute; inset: 0; display: block" aria-hidden="true">
+<rect x="0" y="0" width="1400" height="800" fill="{{t.carpet}}"></rect>
+<path d="{{gridD}}" fill="none" stroke="{{t.grid}}" stroke-width="2"></path>
+<rect x="3" y="3" width="1394" height="794" fill="none" stroke="{{t.line2}}" stroke-width="6"></rect>
+<text x="700" y="780" text-anchor="middle" font-size="24" font-weight="600" fill="{{t.muted}}">正面 · {{s.front}}</text>
+<path d="{{edFullD}}" fill="none" stroke="{{t.rest}}" stroke-width="6" stroke-dasharray="14 12" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="{{edSelD}}" fill="none" stroke="{{t.accent}}" stroke-width="14" stroke-linecap="round"></path>
+</svg>
+<sc-for list="{{edPtsView}}" as="p" hint-placeholder-count="24"><span aria-hidden="true" style="position: absolute; width: 22px; height: 22px; margin-left: -11px; margin-top: -11px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; pointer-events: none; left: {{p.left}}; top: {{p.top}}; background: {{p.bg}}; color: {{p.fg}}; border: 1px solid {{p.bd}}">{{p.n}}</span></sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end">
+<div style="flex: 1 1 120px; display: flex; flex-direction: column; gap: 6px"><label for="ow-edx" style="font-size: 13px; font-weight: 600">{{s.edX}}</label><input id="ow-edx" class="ow-in" type="text" inputmode="decimal" value="{{edX}}" onChange="{{onEdX}}" style="min-height: 46px; padding: 0 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums"></div>
+<div style="flex: 1 1 120px; display: flex; flex-direction: column; gap: 6px"><label for="ow-edy" style="font-size: 13px; font-weight: 600">{{s.edY}}</label><input id="ow-edy" class="ow-in" type="text" inputmode="decimal" value="{{edY}}" onChange="{{onEdY}}" style="min-height: 46px; padding: 0 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums"></div>
+<div style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 6px"><label for="ow-edf" style="font-size: 13px; font-weight: 600">{{s.edFacingL}}</label><select id="ow-edf" class="ow-in" value="{{edFacing}}" onChange="{{onEdFacing}}" style="min-height: 46px; padding: 0 12px; border: 1px solid {{t.line2}}; background: {{t.surface}}; color: {{t.ink}}"><sc-for list="{{edFacingOpts}}" as="o" hint-placeholder-count="4"><option value="{{o.v}}">{{o.label}}</option></sc-for></select></div>
+</div>
+<p style="margin: 0; font-size: 13px; color: {{t.muted}}">{{s.edKbd}}</p>
+</section>
+</div>
+
+<aside style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
+<div style="display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-bottom: 1px solid {{t.line}}; font-size: 13px">
+<span><span style="color: {{t.muted}}">{{s.edStarts}}:</span> <span style="font-weight: 700; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">24 / 24</span></span>
+<span><span style="color: {{t.muted}}">{{s.edPoints}}:</span> <span style="font-weight: 700; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{edPlacedCount}} / 24</span></span>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; max-height: 720px; overflow-y: auto">
+<sc-for list="{{edMoves}}" as="m" hint-placeholder-count="24">
+<li><button type="button" class="ow-btn ow-row" onClick="{{m.pick}}" aria-current="{{m.on}}" style="width: 100%; display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 6px 12px; border-bottom: 1px solid {{t.line}}; background: {{m.bg}}">
+<span style="flex: none; width: 40px; text-align: center; font-family: 'Noto Serif SC', serif; font-weight: 900; color: {{t.accentInk}}">{{m.cn}}</span>
+<span style="flex: 1 1 auto; min-width: 0; font-family: 'Noto Serif SC', serif; font-weight: 600">{{m.zh}}</span>
+<span style="flex: none; display: flex; flex-direction: column; align-items: flex-end; font-size: 12px"><span style="font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums">{{m.start}}</span><span style="color: {{m.placedFg}}">{{m.placedLabel}}</span></span>
+</button></li>
+</sc-for>
+</ol>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; padding: 14px 16px">
+<button type="button" class="ow-btn" onClick="{{cSubmit}}" style="flex: 1 1 auto; min-height: 46px; padding: 0 18px; font-weight: 600; font-size: 14px; background: {{t.accent}}; color: {{t.onAccent}}">{{s.edSubmit}}</button>
+<button type="button" class="ow-btn" onClick="{{edReset}}" style="min-height: 46px; padding: 0 16px; font-weight: 600; font-size: 14px; border: 1px solid {{t.line2}}">{{s.edReset}}</button>
+</div>
+</aside>
+</div>
+</sc-if>
+
 <sc-if value="{{cShowVideo}}" hint-placeholder-val="{{ false }}">
 <section aria-label="{{s.tVideo}}" style="display: flex; flex-direction: column; gap: 16px; max-width: 760px; padding: 20px; border-radius: 0; background: {{t.surface}}; border: 1px solid {{t.line}}; border-top: 3px solid {{t.ink}}">
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
@@ -1223,6 +1603,34 @@ var S = {
     library: 'Library', discussions: 'Discussions', contribute: 'Contribute', translation: 'translation',
     dLead: 'Pick a routine to read its threads, ask a question or report a mistake. Each thread is linked to a movement so contributors know exactly what to check.', latest: 'Latest', dPending: 'Discussion opens once the movement list is added.',
     cTitle: 'Contribute', cLead: 'Help build an accurate, open reference. Every edit is saved as a revision and reviewed by a moderator before it is published. To report a mistake instead, open a thread in Discussions.',
+    review: 'Review', profile: 'Profile', history: 'History', revisions: 'revisions', before: 'Before', after: 'After', newContent: '(new)', fieldLang: 'Language', source: 'Source',
+    rvTitle: 'Review queue', rvLead: 'Approve, request changes or reject submitted content and contributor applications. Every decision emails the contributor.',
+    rvTabContent: 'Content changes', rvTabApps: 'Contributor applications', rvSelfNote: 'You never review your own submissions; they go to another maintainer.',
+    rvKindText: 'Text', rvKindVideo: 'Video', rvNote: 'Note to the contributor (required to request changes or reject)',
+    rvApprove: 'Approve and publish', rvRequest: 'Request changes', rvReject: 'Reject', rvUndo: 'Undo (demo)',
+    rvWaiting: 'Waiting', rvPublished: 'Published', rvChangesReq: 'Changes requested', rvRejected: 'Rejected', rvCall: 'Video call',
+    rvApprovedTxt: 'Approved and published. The contributor and watchers were emailed.', rvChangesTxt: 'Changes requested. The contributor was emailed with your note.',
+    rvRejectedTxt: 'Rejected. The contributor was emailed with your note.', rvNeedNote: 'Write a note first so the contributor knows what to fix.',
+    rvLinked: 'Linked thread', rvRequested: 'Badge requested', rvView: 'View', rvChecklist: 'Reviewer checklist',
+    checksA: ['Name matches the account and the certificate', 'Checked the association’s public registry (if available)', 'Certificate is not expired'],
+    checksB: ['At least two pieces of evidence verified', 'Both vouching contributors confirmed', 'Short video call done (if unsure)'],
+    rvApproveApp: 'Approve', rvAskCall: 'Ask for a video call', rvAppApprovedTxt: 'Approved. The badge was granted and the documents were deleted.',
+    rvCallTxt: 'Video call requested. The applicant was emailed to pick a time.', rvDocNote: 'Documents are only visible to admins and are deleted as soon as you decide.',
+    hiTitle: 'Revision history', hiLead: 'Every change is a revision: who changed what, who approved it, and the source. Maintainers can restore an earlier version.',
+    hiReviewed: 'Approved by', hiImport: 'Imported by an admin', hiCurrent: 'Current version', hiRestore: 'Restore this version',
+    hiRestoreQ: 'Restore this version? It is saved as a new revision, so nothing is lost.', hiConfirm: 'Yes, restore', hiRestored: 'Restored as a new revision (demo). Watchers were emailed.',
+    hiCredit: 'Content is licensed CC BY-SA 4.0. Everyone listed here is credited as a contributor.',
+    prTitle: 'Profile', prLead: 'Your badge, contributions, watched threads and email settings.', prSince: 'Member since October 2026',
+    prDemo: 'Prototype only: view as', prDemoBody: 'Switch roles to see what members, verified contributors and maintainers see. The Review tab appears for maintainers.',
+    prContrib: 'My contributions', prInReview: 'In review', prWatched: 'Watched threads', prNoWatched: 'You are not watching any threads yet. Use “Watch thread” to get emails.', prUnwatch: 'Unwatch',
+    prNotif: 'Email notifications', pt_replies: 'Replies in threads I watch', pt_status: 'Status changes on my reports', pt_reviewed: 'My contributions are reviewed',
+    pt_newThreads: 'New threads on routines I maintain', pt_news: 'Monthly OpenWushu news', prFreq: 'How often', prInstant: 'Right away', prDaily: 'Daily digest', prEmailLang: 'Email language',
+    prPrivacy: 'Your data', prPrivacyBody: 'Under Indonesia’s personal data protection law (UU PDP) you can download or delete your data at any time. Published contributions stay, credited to “former contributor”.',
+    prDownload: 'Download my data', prDelete: 'Delete account', prDownloadMsg: 'We will email you a download link within 24 hours (demo).', prDeleteMsg: 'We sent a confirmation email; your account is deleted after you confirm (demo).',
+    tTiming: 'Video timings & path', edLead: 'Play the video, select a movement and mark where it starts. Then click on the carpet where the movement ends.',
+    edSetStart: 'Set start to', edPlayFrom: 'Play from its start', edBack: '−0.5 s', edFwd: '+0.5 s', edSelected: 'Selected', edCarpetH: 'click where this movement ends',
+    edX: 'x (m, from left)', edY: 'y (m, from top)', edFacingL: 'Facing at the end', edWarnOrder: 'The start must come after the previous movement and before the next one.',
+    edStarts: 'Start times', edPoints: 'Path points placed', edSubmit: 'Submit for review', edReset: 'Reset', edKbd: 'Using a keyboard? Type x and y instead of clicking.', placed: 'placed',
     langFilter: 'Thread language', allLangs: 'All languages', fLang: 'Language of the thread', replyIn: 'Reply in',
     howLang: 'Each thread has one language so conversations stay easy to follow. Choose yours with the language filter; maintainers see threads in every language.',
     allThreadsBack: 'All threads', original: 'Original post', acceptedAnswer: 'Accepted answer', maintainerBadge: 'Maintainer · Judge / coach', justNow: 'just now',
@@ -1296,6 +1704,34 @@ var S = {
     library: 'Pustaka', discussions: 'Diskusi', contribute: 'Kontribusi', translation: 'terjemahan',
     dLead: 'Pilih rangkaian untuk membaca diskusinya, bertanya, atau melaporkan kesalahan. Setiap diskusi terhubung ke gerakan agar kontributor tahu persis apa yang perlu diperiksa.', latest: 'Terbaru', dPending: 'Diskusi dibuka setelah daftar gerakan ditambahkan.',
     cTitle: 'Kontribusi', cLead: 'Bantu membangun referensi terbuka yang akurat. Setiap suntingan disimpan sebagai revisi dan ditinjau moderator sebelum diterbitkan. Untuk melaporkan kesalahan, buka diskusi di halaman Diskusi.',
+    review: 'Tinjauan', profile: 'Profil', history: 'Riwayat', revisions: 'revisi', before: 'Sebelum', after: 'Sesudah', newContent: '(baru)', fieldLang: 'Bahasa', source: 'Sumber',
+    rvTitle: 'Antrean tinjauan', rvLead: 'Setujui, minta perubahan, atau tolak konten dan pengajuan kontributor yang masuk. Setiap keputusan dikirim ke kontributor lewat email.',
+    rvTabContent: 'Perubahan konten', rvTabApps: 'Pengajuan kontributor', rvSelfNote: 'Anda tidak pernah meninjau kiriman sendiri; kiriman itu diteruskan ke pengelola lain.',
+    rvKindText: 'Teks', rvKindVideo: 'Video', rvNote: 'Catatan untuk kontributor (wajib untuk minta perubahan atau menolak)',
+    rvApprove: 'Setujui dan terbitkan', rvRequest: 'Minta perubahan', rvReject: 'Tolak', rvUndo: 'Batalkan (demo)',
+    rvWaiting: 'Menunggu', rvPublished: 'Diterbitkan', rvChangesReq: 'Perlu perubahan', rvRejected: 'Ditolak', rvCall: 'Panggilan video',
+    rvApprovedTxt: 'Disetujui dan diterbitkan. Kontributor dan pengikut menerima email.', rvChangesTxt: 'Perubahan diminta. Kontributor menerima email berisi catatan Anda.',
+    rvRejectedTxt: 'Ditolak. Kontributor menerima email berisi catatan Anda.', rvNeedNote: 'Tulis catatan dulu agar kontributor tahu apa yang perlu diperbaiki.',
+    rvLinked: 'Diskusi terkait', rvRequested: 'Lencana diminta', rvView: 'Lihat', rvChecklist: 'Daftar periksa peninjau',
+    checksA: ['Nama sesuai akun dan sertifikat', 'Sudah memeriksa daftar publik asosiasi (jika ada)', 'Sertifikat belum kedaluwarsa'],
+    checksB: ['Minimal dua bukti terverifikasi', 'Kedua kontributor penjamin sudah mengonfirmasi', 'Panggilan video singkat sudah dilakukan (jika ragu)'],
+    rvApproveApp: 'Setujui', rvAskCall: 'Minta panggilan video', rvAppApprovedTxt: 'Disetujui. Lencana diberikan dan dokumen telah dihapus.',
+    rvCallTxt: 'Panggilan video diminta. Pemohon menerima email untuk memilih waktu.', rvDocNote: 'Dokumen hanya terlihat oleh admin dan dihapus segera setelah Anda memutuskan.',
+    hiTitle: 'Riwayat revisi', hiLead: 'Setiap perubahan adalah revisi: siapa yang mengubah apa, siapa yang menyetujui, dan sumbernya. Pengelola dapat memulihkan versi sebelumnya.',
+    hiReviewed: 'Disetujui oleh', hiImport: 'Diimpor oleh admin', hiCurrent: 'Versi saat ini', hiRestore: 'Pulihkan versi ini',
+    hiRestoreQ: 'Pulihkan versi ini? Disimpan sebagai revisi baru, jadi tidak ada yang hilang.', hiConfirm: 'Ya, pulihkan', hiRestored: 'Dipulihkan sebagai revisi baru (demo). Pengikut menerima email.',
+    hiCredit: 'Konten berlisensi CC BY-SA 4.0. Semua yang tercantum di sini dikreditkan sebagai kontributor.',
+    prTitle: 'Profil', prLead: 'Lencana, kontribusi, diskusi yang diikuti, dan pengaturan email Anda.', prSince: 'Anggota sejak Oktober 2026',
+    prDemo: 'Khusus prototipe: lihat sebagai', prDemoBody: 'Ganti peran untuk melihat tampilan anggota, kontributor terverifikasi, dan pengelola. Tab Tinjauan muncul untuk pengelola.',
+    prContrib: 'Kontribusi saya', prInReview: 'Sedang ditinjau', prWatched: 'Diskusi yang diikuti', prNoWatched: 'Anda belum mengikuti diskusi apa pun. Gunakan “Ikuti diskusi” untuk menerima email.', prUnwatch: 'Berhenti mengikuti',
+    prNotif: 'Notifikasi email', pt_replies: 'Balasan di diskusi yang saya ikuti', pt_status: 'Perubahan status laporan saya', pt_reviewed: 'Kontribusi saya ditinjau',
+    pt_newThreads: 'Diskusi baru di rangkaian yang saya kelola', pt_news: 'Kabar bulanan OpenWushu', prFreq: 'Seberapa sering', prInstant: 'Langsung', prDaily: 'Ringkasan harian', prEmailLang: 'Bahasa email',
+    prPrivacy: 'Data Anda', prPrivacyBody: 'Sesuai UU PDP, Anda dapat mengunduh atau menghapus data Anda kapan saja. Kontribusi yang sudah terbit tetap ada, dikreditkan kepada “mantan kontributor”.',
+    prDownload: 'Unduh data saya', prDelete: 'Hapus akun', prDownloadMsg: 'Kami akan mengirim tautan unduhan lewat email dalam 24 jam (demo).', prDeleteMsg: 'Kami mengirim email konfirmasi; akun Anda dihapus setelah Anda mengonfirmasi (demo).',
+    tTiming: 'Waktu video & jalur', edLead: 'Putar video, pilih gerakan, lalu tandai awalnya. Kemudian klik di karpet tempat gerakan itu berakhir.',
+    edSetStart: 'Tetapkan awal ke', edPlayFrom: 'Putar dari awalnya', edBack: '−0,5 dtk', edFwd: '+0,5 dtk', edSelected: 'Dipilih', edCarpetH: 'klik tempat gerakan ini berakhir',
+    edX: 'x (m, dari kiri)', edY: 'y (m, dari atas)', edFacingL: 'Arah hadap di akhir', edWarnOrder: 'Awal harus setelah gerakan sebelumnya dan sebelum gerakan berikutnya.',
+    edStarts: 'Waktu mulai', edPoints: 'Titik jalur ditempatkan', edSubmit: 'Kirim untuk ditinjau', edReset: 'Atur ulang', edKbd: 'Memakai keyboard? Ketik x dan y sebagai ganti klik.', placed: 'ditempatkan',
     langFilter: 'Bahasa diskusi', allLangs: 'Semua bahasa', fLang: 'Bahasa diskusi', replyIn: 'Balas dalam',
     howLang: 'Setiap diskusi memakai satu bahasa agar percakapan mudah diikuti. Pilih bahasa Anda dengan filter bahasa; pengelola melihat diskusi dalam semua bahasa.',
     allThreadsBack: 'Semua diskusi', original: 'Postingan awal', acceptedAnswer: 'Jawaban diterima', maintainerBadge: 'Pengelola · Juri / pelatih', justNow: 'baru saja',
@@ -1383,13 +1819,68 @@ function line(points) { return points.map(function (p, i) { var q = px(p); retur
 var GRID = (function () { var d = ''; for (var x = 100; x < 1400; x += 100) d += 'M' + x + ' 0 V800 '; for (var y = 100; y < 800; y += 100) d += 'M0 ' + y + ' H1400 '; return d; })();
 var FULL = [STARTPT].concat(PTS);
 
+
+// ---- Review queue, revision history, profile: sample data (usernames are fictional) ----
+// Diff segments: [text, kind] where kind -1 = removed, 1 = added, 0 = unchanged
+var CHANGES = [
+  { id: 'c1', kind: 'text', move: 11, field: 'steps', flang: 'en', by: 'dewi_taiji', role: 'judge', thread: 0,
+    when: W('3 hours ago', '3 jam lalu'), title: W('Clarify the hand height in step 4', 'Perjelas tinggi tangan di langkah 4'),
+    source: '[Competition rulebook, Taijiquan section]',
+    before: [['Right palm passes beside the right ear and pushes forward ', 0], ['at eye height', -1], ['; left palm draws back to the left waist, palm up.', 0]],
+    after: [['Right palm passes beside the right ear and pushes forward ', 0], ['with the fingertips at eye level, not higher', 1], ['; left palm draws back to the left waist, palm up.', 0]] },
+  { id: 'c2', kind: 'video', move: 5, field: 'video', flang: 'en', by: 'hendra_wushu', role: 'judge', thread: 1,
+    when: W('1 day ago', '1 hari lalu'), title: W('Side-view video for Repulse the Monkey', 'Video tampak samping untuk Dao Juan Gong'),
+    source: W('Recorded by the contributor at their club', 'Direkam oleh kontributor di klubnya').en,
+    videoInfo: W('Side view · 5:12 · start times marked for 24 of 24 movements', 'Tampak samping · 5:12 · waktu mulai ditandai untuk 24 dari 24 gerakan') },
+  { id: 'c3', kind: 'text', move: 19, field: 'name', flang: 'id', by: 'nadia_id', role: 'member', thread: null,
+    when: W('2 days ago', '2 hari lalu'), title: W('Indonesian name for Fan Through the Back', 'Nama Indonesia untuk Shan Tong Bi'),
+    source: 'English name “Fan Through the Back” (扇通背)',
+    before: [['Lengan', -1], [' Menembus Punggung', 0]], after: [['Kipas', 1], [' Menembus Punggung', 0]] },
+  { id: 'c4', kind: 'text', move: 11, field: 'trad', flang: 'en', by: 'sifu_lim', role: 'school', thread: 0,
+    when: W('1 day ago', '1 hari lalu'), title: W('Traditional note for High Pat on Horse', 'Catatan tradisional untuk Gao Tan Ma'),
+    source: '[Lineage teaching, school notes]',
+    before: [], after: [['In our lineage the hand finishes a little higher, around the eyebrows. For competition, follow eye level.', 1]] }
+];
+var APPS = [
+  { id: 'a1', path: 'a', by: 'rina_coach', name: 'Rina S.', when: W('1 day ago', '1 hari lalu'),
+    cred: W('Coach licence', 'Lisensi pelatih'), level: W('National', 'Nasional'), assoc: '[National wushu association]', valid: '2027-06-30', doc: 'licence-scan.jpg · 1.4 MB' },
+  { id: 'a2', path: 'b', by: 'guru_tan', name: 'Tan W. H.', when: W('2 days ago', '2 hari lalu'),
+    school: '陈氏太极拳馆 · [School name]', lineage: W('Chen-style Taijiquan', 'Taijiquan gaya Chen'), founded: '1998', city: '[City], Indonesia',
+    evidence: [W('School registration permit (photo)', 'Izin pendaftaran sekolah (foto)'), W('Public presence: website and map listing since 2012', 'Keberadaan publik: situs web dan peta sejak 2012'), W('Vouching: sifu_lim confirmed, coach_sby waiting', 'Jaminan: sifu_lim sudah konfirmasi, coach_sby menunggu')] }
+];
+// Revision history of movement 12 (index 11), newest first
+var REVS12 = [
+  { n: 5, summary: W('Added a traditional note', 'Menambahkan catatan tradisional'), by: 'sifu_lim', role: 'school', reviewer: 'coach_sby', when: W('1 day ago', '1 hari lalu'), field: 'trad', flang: 'en', source: '[Lineage teaching, school notes]',
+    before: [], after: [['In our lineage the hand finishes a little higher, around the eyebrows. For competition, follow eye level.', 1]] },
+  { n: 4, summary: W('Corrected the hand height in step 4', 'Mengoreksi tinggi tangan di langkah 4'), by: 'dewi_taiji', role: 'judge', reviewer: 'coach_sby', when: W('5 days ago', '5 hari lalu'), field: 'steps', flang: 'en', source: '[Competition rulebook, Taijiquan section]',
+    before: [['Right palm passes beside the right ear and pushes forward ', 0], ['at head height', -1], ['.', 0]], after: [['Right palm passes beside the right ear and pushes forward ', 0], ['at eye height', 1], ['.', 0]] },
+  { n: 3, summary: W('Indonesian translation of the steps', 'Terjemahan langkah ke Bahasa Indonesia'), by: 'nadia_id', role: 'member', reviewer: 'coach_sby', when: W('2 weeks ago', '2 minggu lalu'), field: 'steps', flang: 'id', source: '—',
+    before: [], after: [['Kaki kanan menyusul setengah langkah ke depan; pindahkan berat badan ke kaki kanan.', 1]] },
+  { n: 2, summary: W('Added key points and common mistakes', 'Menambahkan poin penting dan kesalahan umum'), by: 'coach_sby', role: 'maintainer', reviewer: 'openwushu_admin', when: W('3 weeks ago', '3 minggu lalu'), field: 'keys', flang: 'en', source: '[Coaching notes]',
+    before: [], after: [['Upper body upright, shoulders sunk (沉肩 chén jiān). Do not rise up while shifting the weight.', 1]] },
+  { n: 1, summary: W('Created from the official movement list', 'Dibuat dari daftar gerakan resmi'), by: 'openwushu_admin', role: 'admin', reviewer: null, when: W('1 month ago', '1 bulan lalu'), field: 'name', flang: 'zh', source: '[Official 24-form movement list]',
+    before: [], after: [['高探马 · Gāo tàn mǎ · High Pat on Horse', 1]] }
+];
+var PR_CONTRIB = [
+  { st: 'review', move: 11, when: W('3 hours ago', '3 jam lalu'), title: W('Clarify the hand height in step 4', 'Perjelas tinggi tangan di langkah 4') },
+  { st: 'changes', move: 9, when: W('4 days ago', '4 hari lalu'), title: W('Key points for Cloud Hands', 'Poin penting untuk Tangan Awan') },
+  { st: 'approved', move: 2, when: W('2 weeks ago', '2 minggu lalu'), title: W('Fixed the Indonesian name of White Crane', 'Memperbaiki nama Indonesia Bangau Putih') }
+];
+var PR_TOGGLES = ['replies', 'status', 'reviewed', 'newThreads', 'news'];
+function fmtP(t) { var m = Math.floor(t / 60), sec = t - m * 60; return m + ':' + (sec < 10 ? '0' : '') + sec.toFixed(1); }
+function idxFrom(times, t) { var i = 0; for (var k = 0; k < times.length; k++) { if (times[k] <= t) i = k; } return i; }
+
 class Component extends DCLogic {
   constructor(props) {
     super(props);
     this.state = { screen: 'routine', tab: 'learn', lang: 'en', t: START[11] + 2, playing: false, loop: false, speed: 1, detailOpen: true, q: '', reportOpen: false, submitted: false, formType: 'error', formMove: '11', threadFilter: 'all', cTask: 'describe', cMove: 1, cSubmitted: false, cRoutine: null,
       user: null, authReturn: 'routine', authMsg: null, authErr: null, showPw: false, siEmail: '', suName: '', suEmail: '', suAgree: false, pendingUser: null,
       apStep: 1, apPath: 'a', apEv: [], apName: '', apConsent: false, apErr: null,
-      openThread: null, extra: {}, replyText: '', watch: {}, dLang: null, formLang: null };
+      openThread: null, extra: {}, replyText: '', watch: { 0: true }, dLang: null, formLang: null,
+      rvTab: 'content', rvSel: 0, apSel2: 0, rvDec: {}, rvNote: '', rvErr: null, rvChecks: {},
+      hiMove: 11, hiSel: 0, hiConfirm: false, hiRestored: false,
+      edTimes: START.slice(), edPts: PTS.map(function (q) { return q.slice(); }), edSet: {}, edSel: 11, edFacing: {}, edWarn: null, edRaw: {},
+      prefs: { replies: true, status: true, reviewed: true, newThreads: true, news: false }, prFreq: 'instant', prEmailLang: null, prMsg: null };
   }
   componentDidMount() {
     var self = this;
@@ -1423,6 +1914,14 @@ class Component extends DCLogic {
     else if (r === 'thread') { st.screen = 'routine'; st.tab = 'discuss'; }
     else st.screen = ['library', 'contribute', 'discussions', 'apply'].indexOf(r) >= 0 ? r : 'routine';
     this.setState(st);
+  }
+  placePt(x, y) {
+    var s = this.state, es = s.edSel;
+    x = Math.max(0, Math.min(14, Math.round(x * 10) / 10));
+    y = Math.max(0, Math.min(8, Math.round(y * 10) / 10));
+    var pts = s.edPts.slice(); pts[es] = [x, y];
+    var set = Object.assign({}, s.edSet); set[es] = true;
+    this.setState({ edPts: pts, edSet: set, edRaw: {} });
   }
   openApply() {
     if (this.needAuth('apply', 'gateApply')) return;
@@ -1527,6 +2026,77 @@ class Component extends DCLogic {
     }
 
     var seg = function (on) { return on ? [t.surface, t.ink] : ['transparent', t.muted]; };
+    var isMaint = !!s.user && !!s.user.maint;
+    var stMeta = { pending: [t.amberSoft, t.amber, L.rvWaiting], approved: [t.green, '#FFFFFF', L.rvPublished], changes: [t.blue, '#FFFFFF', L.rvChangesReq],
+      rejected: [t.red, '#FFFFFF', L.rvRejected], call: [t.blue, '#FFFFFF', L.rvCall], review: [t.amberSoft, t.amber, L.prInReview] };
+    var segs = function (arr) { return arr.map(function (x) { return { t: x[0], bg: x[1] < 0 ? t.redSoft : (x[1] > 0 ? t.accentSoft : 'transparent'), dec: x[1] < 0 ? 'line-through' : (x[1] > 0 ? 'underline' : 'none') }; }); };
+    var fieldLabel = function (k) { return k === 'trad' ? L.tradNotes : L.fields[fieldIdx[k]]; };
+    var roleB = { member: L.member, judge: L.badgeJudge, school: L.badgeSchool, maintainer: L.maintainerBadge, admin: 'Admin' };
+    var mvLabel = function (i) { return pad(i + 1) + ' ' + MOVES[i][0] + ' ' + MOVES[i][1]; };
+    var decOf = function (id) { return s.rvDec[id] || 'pending'; };
+    var decide = function (id, d, needNote) {
+      if (needNote && !s.rvNote.trim()) { self.setState({ rvErr: 'rvNeedNote' }); return; }
+      var x = Object.assign({}, s.rvDec); x[id] = d; self.setState({ rvDec: x, rvErr: null, rvNote: '' });
+    };
+    var undo = function (id) { var x = Object.assign({}, s.rvDec); delete x[id]; self.setState({ rvDec: x }); };
+    var rvItems = CHANGES.map(function (c, i) {
+      var d = decOf(c.id), on = i === s.rvSel;
+      return { title: c.title[s.lang], target: mvLabel(c.move), by: c.by, when: c.when[s.lang], kindLabel: c.kind === 'video' ? L.rvKindVideo : L.rvKindText,
+        stLabel: stMeta[d][2], stBg: stMeta[d][0], stFg: stMeta[d][1], on: on, bg: on ? t.accentSoft : 'transparent',
+        pick: function () { self.setState({ rvSel: i, rvNote: '', rvErr: null }); } };
+    });
+    var cs = CHANGES[s.rvSel], cd = decOf(cs.id);
+    var rv = { title: cs.title[s.lang], target: mvLabel(cs.move), field: fieldLabel(cs.field), flang: LANGS[cs.flang], by: cs.by, initial: cs.by.charAt(0).toUpperCase(),
+      badge: roleB[cs.role], when: cs.when[s.lang], kindLabel: rvItems[s.rvSel].kindLabel, stLabel: stMeta[cd][2], stBg: stMeta[cd][0], stFg: stMeta[cd][1],
+      isText: cs.kind === 'text', isVideo: cs.kind === 'video', before: segs(cs.before || []), after: segs(cs.after || []), beforeEmpty: !(cs.before && cs.before.length),
+      videoInfo: cs.videoInfo ? cs.videoInfo[s.lang] : '', source: cs.source, hasThread: cs.thread != null, threadTitle: cs.thread != null ? THREADS[cs.thread].title : '',
+      openThread: function () { self.setState({ screen: 'routine', tab: 'discuss', openThread: cs.thread }); },
+      pending: cd === 'pending', decided: cd !== 'pending', resultText: { approved: L.rvApprovedTxt, changes: L.rvChangesTxt, rejected: L.rvRejectedTxt }[cd] || '',
+      resultBg: stMeta[cd][0], resultFg: stMeta[cd][1],
+      approve: function () { decide(cs.id, 'approved', false); }, request: function () { decide(cs.id, 'changes', true); }, reject: function () { decide(cs.id, 'rejected', true); },
+      undo: function () { undo(cs.id); } };
+    var apItems = APPS.map(function (a, i) {
+      var d = decOf(a.id), on = i === s.apSel2;
+      return { title: a.name, target: a.path === 'a' ? L.pathA : L.pathB, by: a.by, when: a.when[s.lang], kindLabel: 'Path ' + a.path.toUpperCase(),
+        stLabel: stMeta[d][2], stBg: stMeta[d][0], stFg: stMeta[d][1], on: on, bg: on ? t.accentSoft : 'transparent',
+        pick: function () { self.setState({ apSel2: i, rvNote: '', rvErr: null }); } };
+    });
+    var as = APPS[s.apSel2], ad = decOf(as.id), isA = as.path === 'a';
+    var ap2 = { name: as.name, by: as.by, when: as.when[s.lang], pathLabel: isA ? L.pathA : L.pathB, isA: isA, isB: !isA, badge: isA ? L.badgeJudge : L.badgeSchool,
+      stLabel: stMeta[ad][2], stBg: stMeta[ad][0], stFg: stMeta[ad][1],
+      rows: (isA ? [[L.fCred, as.cred[s.lang]], [L.fLevel, as.level[s.lang]], [L.fAssoc, as.assoc], [L.fExpiry, as.valid]]
+                 : [[L.fSchool, as.school], [L.fLineage, as.lineage[s.lang]], [L.fFounded, as.founded], [L.fCity, as.city]]).map(function (r) { return { k: r[0], v: r[1] }; }),
+      doc: as.doc || '', evidence: (as.evidence || []).map(function (e) { return e[s.lang]; }),
+      checks: (isA ? L.checksA : L.checksB).map(function (c, j) {
+        var key = as.id + '-' + j, on = !!s.rvChecks[key];
+        return { label: c, on: on, mark: on ? '✓' : '', bg: on ? t.accent : t.surface, toggle: function () { var x = Object.assign({}, s.rvChecks); x[key] = !on; self.setState({ rvChecks: x }); } };
+      }),
+      pending: ad === 'pending', decided: ad !== 'pending', resultText: { approved: L.rvAppApprovedTxt, rejected: L.rvRejectedTxt, call: L.rvCallTxt }[ad] || '',
+      resultBg: stMeta[ad][0], resultFg: stMeta[ad][1],
+      approve: function () { decide(as.id, 'approved', false); }, call: function () { decide(as.id, 'call', false); }, reject: function () { decide(as.id, 'rejected', true); },
+      undo: function () { undo(as.id); } };
+    var pendingC = CHANGES.filter(function (c) { return decOf(c.id) === 'pending'; }).length;
+    var pendingA = APPS.filter(function (a) { return decOf(a.id) === 'pending'; }).length;
+
+    var hm = s.hiMove;
+    var revs = hm === 11 ? REVS12 : [{ n: 1, summary: REVS12[4].summary, by: 'openwushu_admin', role: 'admin', reviewer: null, when: REVS12[4].when, field: 'name', flang: 'zh',
+      source: REVS12[4].source, before: [], after: [[MOVES[hm][0] + ' · ' + MOVES[hm][1] + ' · ' + MOVES[hm][2], 1]] }];
+    var hsel = Math.min(s.hiSel, revs.length - 1), hr = revs[hsel];
+    var hiRevs = revs.map(function (r, i) { var on = i === hsel; return { label: 'r' + r.n, summary: r.summary[s.lang], by: r.by, when: r.when[s.lang], isCurrent: i === 0, on: on,
+      bg: on ? t.accentSoft : 'transparent', pick: function () { self.setState({ hiSel: i, hiConfirm: false, hiRestored: false }); } }; });
+    var hv = { label: 'r' + hr.n, summary: hr.summary[s.lang], by: hr.by, initial: hr.by.charAt(0).toUpperCase(), badge: roleB[hr.role], when: hr.when[s.lang],
+      reviewerLine: hr.reviewer ? L.hiReviewed + ' ' + hr.reviewer : L.hiImport, field: fieldLabel(hr.field), flang: LANGS[hr.flang],
+      before: segs(hr.before), after: segs(hr.after), beforeEmpty: !hr.before.length, source: hr.source, isCurrent: hsel === 0,
+      canRestore: isMaint && hsel !== 0 && !s.hiConfirm && !s.hiRestored, confirming: s.hiConfirm, restored: s.hiRestored };
+
+    var es = s.edSel, eT = s.edTimes, eP = s.edPts, edIdx = idxFrom(eT, s.t);
+    var edA = es ? eP[es - 1] : STARTPT;
+    var edRawNum = function (str, max, cb) { var ok = /^\d{1,2}(\.\d)?$/.test(str) && parseFloat(str) <= max; if (ok) cb(parseFloat(str)); };
+
+    var prRoleKey = !s.user ? 'member' : (s.user.maint ? 'maint' : (s.user.role === 'verified' ? (s.user.badge === 'school' ? 'school' : 'judge') : 'member'));
+    var prRoleSet = { member: { role: 'member', maint: false }, judge: { role: 'verified', badge: 'judge', maint: false }, school: { role: 'verified', badge: 'school', maint: false }, maint: { role: 'verified', badge: 'judge', maint: true } };
+    var prStMap = { review: stMeta.review, changes: stMeta.changes, approved: [t.green, '#FFFFFF', L.rvPublished] };
+
     var isLib = s.screen === 'library', isRout = s.screen === 'routine', isCon = s.screen === 'contribute', isLearn = s.tab === 'learn', isDisc = s.tab === 'discuss';
     var navLib = isLib ? [t.chip, t.ink] : ['transparent', t.muted];
     var isDiscs = s.screen === 'discussions';
@@ -1546,7 +2116,7 @@ class Component extends DCLogic {
 
     return {
       t: t, s: L,
-      userRole: !s.user ? '' : (isVer ? (s.user.badge === 'school' ? L.badgeSchool : L.badgeJudge) : (role === 'pending' ? L.pending : L.member)),
+      userRole: !s.user ? '' : (isMaint ? L.maintainerBadge : (isVer ? (s.user.badge === 'school' ? L.badgeSchool : L.badgeJudge) : (role === 'pending' ? L.pending : L.member))),
       userRoleFg: isVer ? t.accentInk : (role === 'pending' ? t.amber : t.muted),
       showMemberBanner: !!s.user && !isVer, isPlainMember: role === 'member', isPendingUser: role === 'pending',
       bannerText: role === 'pending' ? L.lockedPending : L.memberBanner,
@@ -1573,6 +2143,73 @@ class Component extends DCLogic {
       apBadge: s.apPath === 'b' ? L.badgeSchool : L.badgeJudge,
       goContribFromApply: function () { self.openContribute(s.cTask); },
       hasApErr: !!s.apErr, apErr: s.apErr ? L[s.apErr] : '',
+
+      isMaint: isMaint, isReview: s.screen === 'review', isHistory: s.screen === 'history', isProfile: s.screen === 'profile',
+      navRevBg: s.screen === 'review' ? t.chip : 'transparent', navRevFg: s.screen === 'review' ? t.ink : t.muted,
+      goReview: function () { self.setState({ screen: 'review', playing: false }); },
+      goProfile: function () { self.setState({ screen: 'profile', playing: false, prMsg: null }); },
+      rvTotalPending: pendingC + pendingA, rvCountContent: pendingC, rvCountApps: pendingA,
+      rvIsContent: s.rvTab === 'content', rvIsApps: s.rvTab === 'apps',
+      rvTabCBg: seg(s.rvTab === 'content')[0], rvTabCFg: seg(s.rvTab === 'content')[1], rvTabABg: seg(s.rvTab === 'apps')[0], rvTabAFg: seg(s.rvTab === 'apps')[1],
+      rvTabContent: function () { self.setState({ rvTab: 'content', rvNote: '', rvErr: null }); }, rvTabApps: function () { self.setState({ rvTab: 'apps', rvNote: '', rvErr: null }); },
+      rvItems: rvItems, rv: rv, apItems: apItems, ap2: ap2,
+      rvNote: s.rvNote, onRvNote: function (e) { self.setState({ rvNote: e.target.value, rvErr: null }); },
+      hasRvErr: !!s.rvErr, rvErrText: s.rvErr ? L[s.rvErr] : '',
+      histCount: ai === 11 ? REVS12.length : 1,
+      openHistory: function () { self.setState({ screen: 'history', hiMove: ai, hiSel: 0, hiConfirm: false, hiRestored: false, playing: false }); },
+      hiRevs: hiRevs, hv: hv, hiMoveShort: mvLabel(hm), hiMoveZh: '第' + cn(hm + 1) + '式 ' + MOVES[hm][0], hiMovePy: MOVES[hm][1], hiMoveTr: tr(MOVES[hm]),
+      hiBackMove: function () { self.select(s.hiMove); },
+      hiAskRestore: function () { self.setState({ hiConfirm: true }); }, hiCancelRestore: function () { self.setState({ hiConfirm: false }); },
+      hiConfirmRestore: function () { self.setState({ hiConfirm: false, hiRestored: true }); },
+      cShowTiming: !s.cSubmitted && s.cTask === 'timing' && isVer,
+      edTime: fmtP(s.t), edVideoCn: cn(edIdx + 1), edVideoZh: MOVES[edIdx][0], edVideoPy: MOVES[edIdx][1],
+      edSegs: MOVES.map(function (m, i) { var end = i < 23 ? eT[i + 1] : TOTAL, on = i === es; return { n: i + 1, dur: Math.max(0.5, end - eT[i]), aria: mvLabel(i),
+        bg: on ? t.accent : (i === edIdx ? t.accentMid : t.chip), fg: on ? t.onAccent : t.muted, pick: function () { self.setState({ edSel: i, t: eT[i], edWarn: null, edRaw: {} }); } }; }),
+      edSelLabel: '第' + cn(es + 1) + '式 ' + MOVES[es][0], edSelStart: fmtP(eT[es]),
+      edSetStart: function () {
+        var tt = Math.round(s.t * 10) / 10, prev = es ? eT[es - 1] : -1, next = es < 23 ? eT[es + 1] : TOTAL + 1;
+        if (tt <= prev || tt >= next) { self.setState({ edWarn: 'edWarnOrder' }); return; }
+        var nt = eT.slice(); nt[es] = tt; self.setState({ edTimes: nt, edWarn: null });
+      },
+      edPlayFrom: function () { self.setState({ t: eT[es], playing: true }); },
+      edBack: function () { self.setState({ t: Math.max(0, s.t - 0.5) }); }, edFwd: function () { self.setState({ t: Math.min(TOTAL - 0.01, s.t + 0.5) }); },
+      hasEdWarn: !!s.edWarn, edWarnText: s.edWarn ? L[s.edWarn] : '',
+      edFullD: line([STARTPT].concat(eP)), edSelD: line([edA, eP[es]]),
+      edPtsView: eP.map(function (q, i) { var on = i === es, set = !!s.edSet[i]; return { n: i + 1, left: (q[0] / 14 * 100) + '%', top: (q[1] / 8 * 100) + '%',
+        bg: on ? t.accent : (set ? t.ink : t.surface), fg: on ? t.onAccent : (set ? t.surface : t.muted), bd: on ? t.accent : (set ? t.ink : t.line2) }; }),
+      edCarpetClick: function (e) { var r = e.currentTarget.getBoundingClientRect(); self.placePt((e.clientX - r.left) / r.width * 14, (e.clientY - r.top) / r.height * 8); },
+      edX: s.edRaw.x != null ? s.edRaw.x : eP[es][0].toFixed(1), edY: s.edRaw.y != null ? s.edRaw.y : eP[es][1].toFixed(1),
+      onEdX: function (e) { var v = e.target.value; self.setState({ edRaw: Object.assign({}, s.edRaw, { x: v }) }); edRawNum(v, 14, function (n) { self.placePt(n, eP[es][1]); }); },
+      onEdY: function (e) { var v = e.target.value; self.setState({ edRaw: Object.assign({}, s.edRaw, { y: v }) }); edRawNum(v, 8, function (n) { self.placePt(eP[es][0], n); }); },
+      edFacing: String(s.edFacing[es] != null ? s.edFacing[es] : 1),
+      onEdFacing: function (e) { var f = Object.assign({}, s.edFacing); f[es] = +e.target.value; self.setState({ edFacing: f }); },
+      edFacingOpts: L.dirs.map(function (d, j) { return { v: String(j), label: d }; }),
+      edPlacedCount: Object.keys(s.edSet).length,
+      edMoves: MOVES.map(function (m, i) { var on = i === es, set = !!s.edSet[i]; return { cn: cn(i + 1), zh: m[0], start: fmtP(eT[i]), placedLabel: set ? '✓ ' + L.placed : '—',
+        placedFg: set ? t.accentInk : t.muted, on: on, bg: on ? t.accentSoft : 'transparent', pick: function () { self.setState({ edSel: i, t: eT[i], edWarn: null, edRaw: {} }); } }; }),
+      edReset: function () { self.setState({ edTimes: START.slice(), edPts: PTS.map(function (q) { return q.slice(); }), edSet: {}, edFacing: {}, edWarn: null, edRaw: {} }); },
+      prEmail: s.user && s.user.email ? s.user.email : '—',
+      prRoles: [['member', L.member], ['judge', L.badgeJudge], ['school', L.badgeSchool], ['maint', L.maintainerBadge]].map(function (r) {
+        var on = prRoleKey === r[0];
+        return { label: r[1], on: on, bg: on ? t.accent : 'transparent', fg: on ? t.onAccent : t.ink, bd: on ? t.accent : t.line2,
+          pick: function () { self.setState({ user: Object.assign({}, s.user, prRoleSet[r[0]]) }); } };
+      }),
+      prContribs: PR_CONTRIB.map(function (c) { var m = prStMap[c.st]; return { title: c.title[s.lang], target: mvLabel(c.move), when: c.when[s.lang], stLabel: m[2], stBg: m[0], stFg: m[1],
+        view: function () { self.setState({ screen: 'history', hiMove: c.move, hiSel: 0, hiConfirm: false, hiRestored: false }); } }; }),
+      prWatchedList: THREADS.map(function (th, k) { return { k: k, th: th }; }).filter(function (x) { return s.watch[x.k]; }).map(function (x) {
+        return { title: x.th.title, lang: LANGS[x.th.lang], open: function () { self.setState({ screen: 'routine', tab: 'discuss', openThread: x.k }); },
+          unwatch: function () { var w = Object.assign({}, s.watch); w[x.k] = false; self.setState({ watch: w }); } };
+      }),
+      prNoWatched: !THREADS.some(function (th, k) { return s.watch[k]; }),
+      prToggles: PR_TOGGLES.filter(function (k) { return k !== 'newThreads' || isMaint; }).map(function (k) {
+        var on = !!s.prefs[k];
+        return { id: 'ow-pt-' + k, label: L['pt_' + k], on: on, justify: on ? 'flex-end' : 'flex-start', track: on ? t.accent : t.chip,
+          toggle: function () { var pf = Object.assign({}, s.prefs); pf[k] = !on; self.setState({ prefs: pf }); } };
+      }),
+      prFreqOpts: [['instant', L.prInstant], ['daily', L.prDaily]].map(function (f) { var on = s.prFreq === f[0]; return { label: f[1], on: on, bg: seg(on)[0], fg: seg(on)[1], pick: function () { self.setState({ prFreq: f[0] }); } }; }),
+      prEmailLang: s.prEmailLang || s.lang, onPrEmailLang: function (e) { self.setState({ prEmailLang: e.target.value }); },
+      prDownload: function () { self.setState({ prMsg: 'prDownloadMsg' }); }, prDelete: function () { self.setState({ prMsg: 'prDeleteMsg' }); },
+      hasPrMsg: !!s.prMsg, prMsgText: s.prMsg ? L[s.prMsg] : '',
       isDiscussions: isDiscs, latestTitle: THREADS[THREADS.length - 1].title, latestLang: LANGS[THREADS[THREADS.length - 1].lang],
       countOpen: countSt('open'), countReview: countSt('review'), countAccepted: countSt('accepted'),
       open24Discuss: function () { self.setState({ screen: 'routine', tab: 'discuss', threadFilter: 'all', reportOpen: false, openThread: null }); },
@@ -1604,14 +2241,14 @@ class Component extends DCLogic {
         self.setState({ screen: 'verify', authErr: null, authMsg: null, pendingUser: { name: s.suName.trim(), email: s.suEmail.trim() } });
       },
       verifyDemo: function () { self.finishAuth(s.pendingUser); },
-      signOut: function () { self.setState({ user: null, screen: s.screen === 'contribute' ? 'library' : s.screen, reportOpen: false }); },
+      signOut: function () { self.setState({ user: null, screen: ['contribute', 'profile', 'review', 'apply'].indexOf(s.screen) >= 0 ? 'library' : s.screen, reportOpen: false }); },
       cNoRoutine: !s.cRoutine, cHasRoutine: !!s.cRoutine,
       step1Bg: s.cRoutine ? t.accentSoft : t.accent, step1Fg: s.cRoutine ? t.accentInk : t.onAccent,
       step2Bg: s.cRoutine ? t.accent : t.chip, step2Fg: s.cRoutine ? t.onAccent : t.muted, step2Text: s.cRoutine ? t.ink : t.muted,
       descDone: Object.keys(DETAILS).length, descPct: (Object.keys(DETAILS).length / 24 * 100) + '%',
       pick24: function () { self.setState({ cRoutine: '24', cSubmitted: false }); },
       changeRoutine: function () { self.setState({ cRoutine: null, cSubmitted: false }); },
-      cTabs: [['describe', L.tDescribe], ['video', L.tVideo], ['translate', L.tTranslate]].map(function (x) { var on = s.cTask === x[0]; return { label: x[1], on: on, bg: seg(on)[0], fg: seg(on)[1], pick: function () { self.openContribute(x[0]); } }; }),
+      cTabs: [['describe', L.tDescribe], ['timing', L.tTiming], ['video', L.tVideo], ['translate', L.tTranslate]].map(function (x) { var on = s.cTask === x[0]; return { label: x[1], on: on, bg: seg(on)[0], fg: seg(on)[1], pick: function () { self.openContribute(x[0]); } }; }),
       cSubmitted: s.cSubmitted,
       cShowDescribe: !s.cSubmitted && s.cTask === 'describe' && isVer, cShowVideo: !s.cSubmitted && s.cTask === 'video' && isVer,
       cLocked: !s.cSubmitted && s.cTask !== 'translate' && !isVer, cShowTranslate: !s.cSubmitted && s.cTask === 'translate',
