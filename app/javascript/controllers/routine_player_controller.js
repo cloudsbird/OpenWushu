@@ -18,7 +18,8 @@ export default class extends Controller {
     this.loop = false
     this.playing = false
     this.active = -1
-    this.points = [this.startValue, ...this.movesValue.map((m) => m.x == null ? null : [m.x * 100, m.y * 100])]
+    // Routines whose carpet path is not measured yet have no start point and no end points
+    this.points = [this.startValue.length ? this.startValue : null, ...this.movesValue.map((m) => m.x == null ? null : [m.x * 100, m.y * 100])]
 
     if (this.hasVideoTarget) {
       this.onTime = () => this.tick(this.videoTarget.currentTime)
@@ -179,7 +180,7 @@ export default class extends Controller {
     this.active = i
     const m = this.movesValue[i]
 
-    this.nowCnTarget.textContent = this.chinese(m.n)
+    this.nowCnTarget.textContent = m.cn
     this.nowNumTarget.textContent = m.n
     this.nowZhTarget.textContent = m.zh
     this.nowPyTarget.textContent = m.py
@@ -252,12 +253,6 @@ export default class extends Controller {
     return `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, "0")}`
   }
 
-  chinese(n) {
-    const d = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
-    if (n <= 10) return d[n]
-    if (n < 20) return "十" + d[n % 10]
-    return d[Math.floor(n / 10)] + "十" + (n % 10 ? d[n % 10] : "")
-  }
 
   updateUrl(n) {
     const url = new URL(window.location.href)

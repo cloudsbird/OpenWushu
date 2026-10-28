@@ -1,0 +1,1531 @@
+{
+  "routine": {
+    "slug": "taiji-sword-42",
+    "style": "taiji",
+    "name_zh": "四十二式太极剑",
+    "name_pinyin": "Sìshí'èr shì tàijíjiàn",
+    "name_en": "42-Form Competition Taiji Sword",
+    "name_id": "42 Jurus Pedang Taiji Kompetisi",
+    "card_zh": "剑",
+    "reference_page": 660,
+    "reference_figure": "J",
+    "position": 2,
+    "status": "in_progress"
+  },
+  "movements": [
+    {
+      "number": 1,
+      "section": -1,
+      "book_number": null,
+      "name_zh": "预备势",
+      "name_pinyin": "Yùbèishì",
+      "name_en": "Ready Stance",
+      "name_id": "Sikap Siap",
+      "steps": {
+        "en": [
+          "Stand upright with the feet together, toes forward, chest and back relaxed; the arms hang naturally, the right hand forming sword fingers, palm in, and the left hand holding the sword, palm back, the blade upright behind the left arm, tip up; look ahead."
+        ],
+        "id": [
+          "Berdiri tegak dengan kaki rapat, ujung kaki ke depan, dada dan punggung rileks; lengan tergantung alami, tangan kanan membentuk jari pedang, telapak ke dalam, dan tangan kiri memegang pedang, telapak ke belakang, bilah tegak di belakang lengan kiri, ujung ke atas; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Head and neck naturally upright, chin slightly in, trunk natural without pushing the chest out; shoulders and arms relaxed and sunk; keep the edges off the body; concentrate."
+        ],
+        "id": [
+          "Kepala dan leher tegak alami, dagu sedikit ditarik, badan alami tanpa membusungkan dada; bahu dan lengan rileks dan turun; mata pedang tidak menyentuh badan; berkonsentrasi."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 662, 图 J-1",
+      "start_sec": 0.0,
+      "end_sec": 3.0
+    },
+    {
+      "number": 2,
+      "section": 1,
+      "book_number": 1,
+      "name_zh": "起势",
+      "name_pinyin": "Qǐshì",
+      "name_en": "Commencing Form",
+      "name_id": "Sikap Pembuka",
+      "steps": {
+        "en": [
+          "Step the left foot half a step to the left, shoulder-width, weight between the legs; bend and rotate the arms in slightly, hands about 10 cm from the body; look ahead.",
+          "Raise both straight arms to the left front at shoulder height, palms down, and turn slightly right; the sword fingers swing right, then bend down in an arc to the belly, palm up, while the sword hand swings right and bends in front, wrist at shoulder height, palm down, the palms facing; shift left into a half squat and draw the right foot in beside the left without touching down; look to the right front.",
+          "Step the right foot to the right front (about 45°) into right gongbu; the sword fingers swing under the left arm forward and up, wrist at shoulder height, the sword hand resting inside the right forearm; then bring the left foot up behind the right, toes down, and extend the sword fingers to the right front, the sword hand folding to the right chest; look along the sword fingers.",
+          "Shift left, turn the right toes in and turn about 90° left, stepping the left foot to the left front into left gongbu; the sword hand brushes past the knee to beside the left hip, blade upright and tip up, while the sword fingers come past the right ear and point forward, wrist at shoulder height; look ahead."
+        ],
+        "id": [
+          "Langkahkan kaki kiri setengah langkah ke kiri, selebar bahu, berat di antara kedua kaki; tekuk dan putar lengan sedikit ke dalam, tangan sekitar 10 cm dari badan; pandangan ke depan.",
+          "Angkat kedua lengan lurus ke depan kiri setinggi bahu, telapak ke bawah, dan putar sedikit ke kanan; jari pedang berayun ke kanan, lalu menekuk turun melengkung ke depan perut, telapak ke atas, sementara tangan pedang berayun ke kanan dan menekuk di depan, pergelangan setinggi bahu, telapak ke bawah, kedua telapak berhadapan; geser ke kiri setengah jongkok dan tarik kaki kanan ke samping kaki kiri tanpa menyentuh lantai; pandangan ke depan kanan.",
+          "Langkahkan kaki kanan ke depan kanan (sekitar 45°) menjadi gongbu kanan; jari pedang berayun di bawah lengan kiri ke depan atas, pergelangan setinggi bahu, tangan pedang menempel di sisi dalam lengan bawah kanan; lalu bawa kaki kiri ke belakang kaki kanan, ujung kaki di lantai, dan julurkan jari pedang ke depan kanan, tangan pedang terlipat ke dada kanan; pandangan searah jari pedang.",
+          "Geser ke kiri, putar ujung kaki kanan ke dalam dan putar sekitar 90° ke kiri, langkahkan kaki kiri ke depan kiri menjadi gongbu kiri; tangan pedang menyapu melewati lutut ke samping pinggul kiri, bilah tegak dan ujung ke atas, sementara jari pedang lewat samping telinga kanan dan menunjuk ke depan, pergelangan setinggi bahu; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The arm changes match the weight shifts; the trunk stays centred and at ease without swaying or tilting; relaxed shoulders, arms not stiff; in gongbu keep the feet 20–30 cm apart sideways, not on one line."
+        ],
+        "id": [
+          "Perubahan lengan serasi dengan perpindahan berat; badan tetap di tengah dan nyaman tanpa bergoyang atau miring; bahu rileks, lengan tidak kaku; pada gongbu jaga jarak kaki ke samping 20–30 cm, tidak segaris."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 662–664, 图 J-2 to J-7",
+      "start_sec": 3.0,
+      "end_sec": 13.0
+    },
+    {
+      "number": 3,
+      "section": 1,
+      "book_number": 2,
+      "name_zh": "并步点剑",
+      "name_pinyin": "Bìngbù diǎnjiàn",
+      "name_en": "Bingbu, Peck",
+      "name_id": "Bingbu, Patuk",
+      "steps": {
+        "en": [
+          "Step the right foot past the left to the right front (about 45°) into right gongbu; thread the sword hand forward over the chest to above the right wrist, hilt against it; then draw the left foot in beside the right as both hands swing out to the sides and bend down in arcs beside the hips, palms down; look ahead.",
+          "Step the left foot to the left front (about 45°) into left gongbu; the hands swing out a little above the shoulders and arc in to meet in front at chest height, left hand outside with the blade along the forearm, tip slanting back, the right tiger's mouth facing the hilt ready to take it; look ahead.",
+          "Shift forward and bring the right foot to the left in a half squat; the right hand takes the hilt and, with the wrist as the axis, circles the tip from behind over the top and forward, then lifts the wrist at chest height to peck down and forward, the left hand becoming sword fingers at the inside of the right wrist; look toward the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kanan melewati kaki kiri ke depan kanan (sekitar 45°) menjadi gongbu kanan; tusukkan tangan pedang ke depan melewati dada ke atas pergelangan kanan, gagang menempel padanya; lalu tarik kaki kiri ke samping kaki kanan sementara kedua tangan berayun ke samping dan menekuk turun melengkung di samping pinggul, telapak ke bawah; pandangan ke depan.",
+          "Langkahkan kaki kiri ke depan kiri (sekitar 45°) menjadi gongbu kiri; kedua tangan berayun ke samping sedikit di atas bahu lalu melengkung ke dalam bertemu di depan setinggi dada, tangan kiri di luar dengan bilah di sepanjang lengan bawah, ujung miring ke belakang, hukou kanan menghadap gagang siap menerimanya; pandangan ke depan.",
+          "Geser ke depan dan rapatkan kaki kanan ke kaki kiri dalam setengah jongkok; tangan kanan mengambil gagang dan, dengan pergelangan sebagai poros, memutar ujung dari belakang melewati atas ke depan, lalu mengangkat pergelangan setinggi dada untuk mematuk ke depan bawah, tangan kiri menjadi jari pedang di sisi dalam pergelangan kanan; pandangan ke arah ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The parting arm swings match gongbu; arms not stiff; take the sword naturally without stopping; peck with relaxed shoulders and an upright trunk, no shrugging, arching or sticking out the hips, power in the tip; turn the waist with each 45° step."
+        ],
+        "id": [
+          "Ayunan lengan berpisah serasi dengan gongbu; lengan tidak kaku; terima pedang secara alami tanpa berhenti; patuk dengan bahu rileks dan badan tegak, tanpa mengangkat bahu, membungkuk atau menonjolkan pinggul, tenaga di ujung; putar pinggang pada setiap langkah 45°."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 664–666, 图 J-8 to J-11",
+      "start_sec": 13.0,
+      "end_sec": 20.5
+    },
+    {
+      "number": 4,
+      "section": 1,
+      "book_number": 3,
+      "name_zh": "弓步削剑",
+      "name_pinyin": "Gōngbù xiāojiàn",
+      "name_en": "Gongbu, Slicing Cut",
+      "name_id": "Gongbu, Potongan Menyerut",
+      "steps": {
+        "en": [
+          "Shift onto the left leg, right heel up; sink the wrist and turn the palm up so the tip draws a small arc to the lower left, the sword fingers at the inside of the right forearm; look toward the tip.",
+          "Step the right foot back to the right rear, heel first, shift right into right gongbu and turn about 90° right; slice the sword diagonally up to the right with the turn, wrist at shoulder height, the sword fingers swinging left to beside the hip; look toward the tip."
+        ],
+        "id": [
+          "Pindahkan berat ke kaki kiri, tumit kanan terangkat; turunkan pergelangan dan balik telapak ke atas sehingga ujung membentuk busur kecil ke kiri bawah, jari pedang di sisi dalam lengan bawah kanan; pandangan ke arah ujung pedang.",
+          "Mundurkan kaki kanan ke kanan belakang, tumit dulu, geser ke kanan menjadi gongbu kanan dan putar sekitar 90° ke kanan; serut pedang serong ke kanan atas mengikuti putaran, pergelangan setinggi bahu, jari pedang berayun ke kiri ke samping pinggul; pandangan ke arah ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slice with the waist turn and gongbu, the waist driving the arm so power reaches the front of the edge; trunk centred. Sink the shoulders, drop the elbow and loosen the wrist as the tip circles."
+        ],
+        "id": [
+          "Serut bersama putaran pinggang dan gongbu, pinggang menggerakkan lengan agar tenaga sampai ke bagian depan mata pedang; badan di tengah. Turunkan bahu, siku dan longgarkan pergelangan saat ujung berputar."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 666–667, 图 J-12 to J-13",
+      "start_sec": 20.5,
+      "end_sec": 25.5
+    },
+    {
+      "number": 5,
+      "section": 1,
+      "book_number": 4,
+      "name_zh": "提膝劈剑",
+      "name_pinyin": "Tíxī pījiàn",
+      "name_en": "Knee Lift, Chop",
+      "name_id": "Angkat Lutut, Bacok",
+      "steps": {
+        "en": [
+          "Bend the left knee and shift back, turning slightly right with the right toes raised and turned out; bend the arm and arc the sword right and back to the right rear, palm up, wrist a little above the waist, while the sword fingers arc forward and right to the right shoulder; the eyes follow the tip.",
+          "Turn slightly left and shift forward onto the naturally straight right leg, lifting the left knee into right dulibu; chop the sword forward with sword and arm level, the sword fingers arcing down and left to shoulder height, palm out; watch the tip."
+        ],
+        "id": [
+          "Tekuk lutut kiri dan geser ke belakang, putar sedikit ke kanan dengan ujung kaki kanan terangkat dan ke luar; tekuk lengan dan lengkungkan pedang ke kanan lalu ke kanan belakang, telapak ke atas, pergelangan sedikit di atas pinggang, sementara jari pedang melengkung ke depan dan ke kanan ke depan bahu kanan; mata mengikuti ujung pedang.",
+          "Putar sedikit ke kiri dan geser ke depan ke kaki kanan yang lurus alami, angkat lutut kiri menjadi dulibu kanan; bacokkan pedang ke depan dengan pedang dan lengan mendatar, jari pedang melengkung ke bawah dan ke kiri setinggi bahu, telapak ke luar; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Body turns and arm actions coordinated; the knee lift and the chop finish together, power along the lower edge; keep the trunk centred on one leg."
+        ],
+        "id": [
+          "Putaran badan dan gerakan lengan terkoordinasi; angkat lutut dan bacokan selesai bersamaan, tenaga di sepanjang mata pedang bawah; badan tetap di tengah di atas satu kaki."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 667–668, 图 J-14 to J-15",
+      "start_sec": 25.5,
+      "end_sec": 30.5
+    },
+    {
+      "number": 6,
+      "section": 1,
+      "book_number": 5,
+      "name_zh": "左弓步拦",
+      "name_pinyin": "Zuǒ gōngbù lán",
+      "name_en": "Left Gongbu, Parry",
+      "name_id": "Gongbu Kiri, Halau",
+      "steps": {
+        "en": [
+          "Half squat on the right leg, turn slightly left and set the left foot down to the left, heel first; with the wrist as the axis circle the tip clockwise in front, the sword fingers on the right forearm; look toward the tip.",
+          "Turn about 90° left, shift forward and turn the right heel out into left gongbu; arc the sword down and parry to the left front, palm slanting up, wrist at chest height, while the sword fingers arc down, left and up to above the front of the head, arm rounded; look toward the tip."
+        ],
+        "id": [
+          "Setengah jongkok di kaki kanan, putar sedikit ke kiri dan turunkan kaki kiri ke kiri, tumit dulu; dengan pergelangan sebagai poros putar ujung searah jarum jam di depan, jari pedang di lengan bawah kanan; pandangan ke arah ujung pedang.",
+          "Putar sekitar 90° ke kiri, geser ke depan dan putar tumit kanan ke luar menjadi gongbu kiri; lengkungkan pedang ke bawah dan halau ke depan kiri, telapak miring ke atas, pergelangan setinggi dada, sementara jari pedang melengkung ke bawah, ke kiri dan ke atas ke depan atas kepala, lengan membulat; pandangan ke arah ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The body turn and the sword circle are coordinated; don't lean forward in gongbu; feet 20–30 cm apart sideways; the parry focuses on the rear middle of the little-finger edge."
+        ],
+        "id": [
+          "Putaran badan dan putaran pedang terkoordinasi; jangan condong ke depan pada gongbu; jarak kaki ke samping 20–30 cm; halauan berfokus pada bagian tengah belakang mata pedang sisi kelingking."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 668–669, 图 J-16 to J-17",
+      "start_sec": 30.5,
+      "end_sec": 35.5
+    },
+    {
+      "number": 7,
+      "section": 1,
+      "book_number": 6,
+      "name_zh": "左虚步撩",
+      "name_pinyin": "Zuǒ xūbù liāo",
+      "name_en": "Left Xubu, Upward Slice",
+      "name_id": "Xubu Kiri, Sabetan ke Atas",
+      "steps": {
+        "en": [
+          "Bend the right knee and shift slightly back, raising and turning the left toes out and turning left; then shift forward onto the left foot, turn slightly right and step the right foot to the right front, heel first; bend the arm and arc the sword up and left to beside the right hip, palm in, tip slanting up behind, the sword fingers at the right wrist; look toward the tip.",
+          "Turn right, set the right foot down turned out and half squat on it, stepping the left foot to the left front into left xubu; edge leading, slice the sword back, down and up to the left front in a vertical circle, finishing in a block above the front of the head, palm out, tip slightly below the hand; look to the left front."
+        ],
+        "id": [
+          "Tekuk lutut kanan dan geser sedikit ke belakang, angkat dan putar ujung kaki kiri ke luar dan putar ke kiri; lalu geser ke depan ke kaki kiri, putar sedikit ke kanan dan langkahkan kaki kanan ke depan kanan, tumit dulu; tekuk lengan dan lengkungkan pedang ke atas dan ke kiri ke samping pinggul kanan, telapak ke dalam, ujung miring ke atas di belakang, jari pedang di pergelangan kanan; pandangan ke arah ujung pedang.",
+          "Putar ke kanan, turunkan kaki kanan dengan ujung ke luar dan setengah jongkok di atasnya, langkahkan kaki kiri ke depan kiri menjadi xubu kiri; dengan mata pedang memimpin, sabet pedang ke belakang, ke bawah lalu ke depan kiri atas dalam lingkaran vertikal, berakhir dalam tangkisan di depan atas kepala, telapak ke luar, ujung sedikit di bawah tangan; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The sword circles back with the body turn and slices forward with the left step, linked and round; keep empty and full clear and let the waist drive the slice."
+        ],
+        "id": [
+          "Pedang berputar ke belakang bersama putaran badan dan menyabet ke depan bersama langkah kiri, bersambung dan bulat; kosong dan penuh tetap jelas dan biarkan pinggang menggerakkan sabetan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 669–671, 图 J-18 to J-19",
+      "start_sec": 35.5,
+      "end_sec": 40.5
+    },
+    {
+      "number": 8,
+      "section": 1,
+      "book_number": 7,
+      "name_zh": "右弓步撩",
+      "name_pinyin": "Yòu gōngbù liāo",
+      "name_en": "Right Gongbu, Upward Slice",
+      "name_id": "Gongbu Kanan, Sabetan ke Atas",
+      "steps": {
+        "en": [
+          "Turn slightly right and step the left foot to the left, heel first; arc the sword up and right to the upper right, wrist slightly below the shoulder, tip to the upper right, the sword fingers folding to the right shoulder; look toward the tip.",
+          "Turn left and shift onto the left leg, setting the toes down turned out, then step the right foot forward into right gongbu; slice the upright blade down and forward, wrist at shoulder height, palm slanting up, tip slanting down, the sword fingers arcing to above the head, arm rounded; look toward the tip."
+        ],
+        "id": [
+          "Putar sedikit ke kanan dan langkahkan kaki kiri ke kiri, tumit dulu; lengkungkan pedang ke atas dan ke kanan ke kanan atas, pergelangan sedikit di bawah bahu, ujung ke kanan atas, jari pedang terlipat ke depan bahu kanan; pandangan ke arah ujung pedang.",
+          "Putar ke kiri dan pindahkan berat ke kaki kiri, turunkan ujung kaki dengan ke luar, lalu langkahkan kaki kanan ke depan menjadi gongbu kanan; sabet bilah tegak ke bawah dan ke depan, pergelangan setinggi bahu, telapak miring ke atas, ujung miring ke bawah, jari pedang melengkung ke atas kepala, lengan membulat; pandangan ke arah ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slice in a wide vertical circle close to the body, the spirit following the movement; step with the weight level, arms travelling in arcs."
+        ],
+        "id": [
+          "Sabet dalam lingkaran vertikal lebar dekat badan, semangat mengikuti gerakan; melangkah dengan berat rata, lengan bergerak melengkung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 671–672, 图 J-20 to J-21",
+      "start_sec": 40.5,
+      "end_sec": 45.5
+    },
+    {
+      "number": 9,
+      "section": 1,
+      "book_number": 8,
+      "name_zh": "提膝捧剑",
+      "name_pinyin": "Tíxī pěngjiàn",
+      "name_en": "Knee Lift, Hold the Sword in Both Hands",
+      "name_id": "Angkat Lutut, Pedang Ditadah Dua Tangan",
+      "steps": {
+        "en": [
+          "Half squat on the left leg and shift back, turning slightly left; draw the sword level to the left with the turn, palm up, wrist at chest height, tip forward, the sword fingers at the right wrist; look toward the tip.",
+          "Turn slightly right and step the right foot back into left xubu; turn the palm down and draw the sword level across to beside the right hip, tip forward, the sword fingers arcing down to the left hip; look toward the tip.",
+          "Shuffle the left foot forward and stand on it, lifting the right knee; turn both palms up and bring them together in front of the chest as the knee rises, the sword fingers supporting the back of the right hand, tip forward and slightly above the wrist; look ahead."
+        ],
+        "id": [
+          "Setengah jongkok di kaki kiri dan geser ke belakang, putar sedikit ke kiri; tarik pedang datar ke kiri mengikuti putaran, telapak ke atas, pergelangan setinggi dada, ujung ke depan, jari pedang di pergelangan kanan; pandangan ke arah ujung pedang.",
+          "Putar sedikit ke kanan dan mundurkan kaki kanan menjadi xubu kiri; balik telapak ke bawah dan tarik pedang datar melintang ke samping pinggul kanan, ujung ke depan, jari pedang melengkung turun ke pinggul kiri; pandangan ke arah ujung pedang.",
+          "Geser kaki kiri sedikit ke depan dan berdiri di atasnya, angkat lutut kanan; balik kedua telapak ke atas dan satukan di depan dada saat lutut naik, jari pedang menopang punggung tangan kanan, ujung ke depan dan sedikit di atas pergelangan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The left and right draws are linked; the two-handed hold and the knee lift coincide, the knee no lower than the waist, the trunk centred."
+        ],
+        "id": [
+          "Tarikan kiri dan kanan bersambung; tadahan dua tangan dan angkat lutut bersamaan, lutut tidak lebih rendah dari pinggang, badan di tengah."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 672–673, 图 J-22 to J-24",
+      "start_sec": 45.5,
+      "end_sec": 53.0
+    },
+    {
+      "number": 10,
+      "section": 1,
+      "book_number": 9,
+      "name_zh": "蹬脚前刺",
+      "name_pinyin": "Dēngjiǎo qiáncì",
+      "name_en": "Heel Kick, Forward Thrust",
+      "name_id": "Tendangan Tumit, Tusukan ke Depan",
+      "steps": {
+        "en": [
+          "Stand on the straight left leg and drive the right heel forward, toes pulled back; with both hands holding the sword, draw it back slightly and thrust level forward; look toward the tip."
+        ],
+        "id": [
+          "Berdiri di kaki kiri yang lurus dan dorong tumit kanan ke depan, ujung kaki ditarik; dengan kedua tangan memegang pedang, tarik sedikit ke belakang lalu tusuk datar ke depan; pandangan ke arah ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Don't lean forward or push the belly out; the kick is no lower than the waist; keep the arms relaxed on the thrust."
+        ],
+        "id": [
+          "Jangan condong ke depan atau membusungkan perut; tendangan tidak lebih rendah dari pinggang; lengan tetap rileks saat menusuk."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 673, 图 J-25",
+      "start_sec": 53.0,
+      "end_sec": 56.0
+    },
+    {
+      "number": 11,
+      "section": 1,
+      "book_number": 10,
+      "name_zh": "跳步平刺",
+      "name_pinyin": "Tiàobù píngcì",
+      "name_en": "Tiaobu, Level Thrust",
+      "name_id": "Tiaobu, Tusukan Datar",
+      "steps": {
+        "en": [
+          "Set the right foot down forward and, shifting forward, hop off it, the left foot swinging forward and landing with the knee slightly bent; the right foot closes in beside the left just before the left lands, without touching down; thrust level forward with both hands as the right foot lands, then, as the left lands, rotate the wrists in and draw both hands back to the hips, palms down; look ahead.",
+          "Step the right foot forward into right gongbu; thrust the sword level forward past the waist, wrist at chest height, palm up, power in the tip, while the sword fingers arc left, up and forward to above the head; look toward the tip."
+        ],
+        "id": [
+          "Turunkan kaki kanan ke depan dan, sambil bergeser ke depan, lompat darinya, kaki kiri berayun ke depan dan mendarat dengan lutut sedikit ditekuk; kaki kanan merapat ke samping kaki kiri tepat sebelum kaki kiri mendarat, tanpa menyentuh lantai; tusuk datar ke depan dengan kedua tangan saat kaki kanan mendarat, lalu, saat kaki kiri mendarat, putar pergelangan ke dalam dan tarik kedua tangan ke pinggul, telapak ke bawah; pandangan ke depan.",
+          "Langkahkan kaki kanan ke depan menjadi gongbu kanan; tusukkan pedang datar ke depan melewati pinggang, pergelangan setinggi dada, telapak ke atas, tenaga di ujung, sementara jari pedang melengkung ke kiri, ke atas dan ke depan ke atas kepala; pandangan ke arah ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Right foot landing with the thrust, left hop with the hands drawing back; pause a split second after the left lands before stepping into the thrust; land on the ball of the foot and keep from leaning forward."
+        ],
+        "id": [
+          "Kaki kanan mendarat bersama tusukan, lompatan kiri bersama tangan yang ditarik; berhenti sesaat setelah kaki kiri mendarat sebelum melangkah ke tusukan; mendarat dengan telapak depan dan jangan condong ke depan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 673–674, 图 J-26 to J-28",
+      "start_sec": 56.0,
+      "end_sec": 61.0
+    },
+    {
+      "number": 12,
+      "section": 1,
+      "book_number": 11,
+      "name_zh": "转身下刺",
+      "name_pinyin": "Zhuǎnshēn xiàcì",
+      "name_en": "Turn, Low Thrust",
+      "name_id": "Berbalik, Tusukan Rendah",
+      "steps": {
+        "en": [
+          "Bend the left knee and shift back, right leg straight with the toes raised; draw the sword level left and back to the chest, palm up, the sword fingers at the chest with the blade flat under the left forearm, palms slanting toward each other; look to the left front.",
+          "Turn the right toes in and set them down, shift onto the right leg and pivot on the right ball to turn about 270° back to the left, drawing the bent left leg in beside the right without touching down; the hands stay together at the chest; look to the left front.",
+          "Set the left foot down to the left front into left gongbu; thrust the flat sword down to the left front, palm up, while the sword fingers arc to above the front of the head; look toward the tip."
+        ],
+        "id": [
+          "Tekuk lutut kiri dan geser ke belakang, kaki kanan lurus dengan ujung kaki terangkat; tarik pedang datar ke kiri dan ke belakang ke depan dada, telapak ke atas, jari pedang di dada dengan bilah mendatar di bawah lengan bawah kiri, telapak miring saling berhadapan; pandangan ke depan kiri.",
+          "Putar ujung kaki kanan ke dalam dan turunkan, pindahkan berat ke kaki kanan dan berporos pada telapak depan kanan untuk berbalik sekitar 270° ke kiri, tarik kaki kiri yang ditekuk ke samping kaki kanan tanpa menyentuh lantai; kedua tangan tetap bersama di dada; pandangan ke depan kiri.",
+          "Turunkan kaki kiri ke depan kiri menjadi gongbu kiri; tusukkan pedang mendatar ke depan kiri bawah, telapak ke atas, sementara jari pedang melengkung ke depan atas kepala; pandangan ke arah ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Turn steadily and naturally without dropping the head or bending the waist, the waist leading the turn; gongbu and the thrust coincide."
+        ],
+        "id": [
+          "Berputar dengan mantap dan alami tanpa menunduk atau membungkuk, pinggang memimpin putaran; gongbu dan tusukan bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 674–676, 图 J-29 to J-31",
+      "start_sec": 61.0,
+      "end_sec": 68.5
+    },
+    {
+      "number": 13,
+      "section": 1,
+      "book_number": 12,
+      "name_zh": "弓步平斩",
+      "name_pinyin": "Gōngbù píngzhǎn",
+      "name_en": "Gongbu, Level Chop",
+      "name_id": "Gongbu, Tebasan Datar",
+      "steps": {
+        "en": [
+          "Shift forward and draw the right foot in beside the left without touching down; sink the wrist, palm slanting up, the sword fingers on the right forearm; watch the tip.",
+          "Step the right foot back to the right rear and pivot the left foot in into right hengdangbu, turning about 90° right; chop the sword level to the right while the sword fingers open to the left, a little below chest height; watch the tip."
+        ],
+        "id": [
+          "Geser ke depan dan tarik kaki kanan ke samping kaki kiri tanpa menyentuh lantai; turunkan pergelangan, telapak miring ke atas, jari pedang di lengan bawah kanan; pandangan ke ujung pedang.",
+          "Mundurkan kaki kanan ke kanan belakang dan putar kaki kiri ke dalam menjadi hengdangbu kanan, berputar sekitar 90° ke kanan; tebas pedang datar ke kanan sementara jari pedang terbuka ke kiri, sedikit di bawah tinggi dada; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Shoulders and elbows loose, the waist driving the arm, eyes following the sword, power steady and unbroken; the chop finishes with the step back into hengdangbu."
+        ],
+        "id": [
+          "Bahu dan siku longgar, pinggang menggerakkan lengan, mata mengikuti pedang, tenaga mantap dan tak terputus; tebasan selesai bersama langkah mundur ke hengdangbu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 676–677, 图 J-32 to J-33",
+      "start_sec": 68.5,
+      "end_sec": 73.5
+    },
+    {
+      "number": 14,
+      "section": 1,
+      "book_number": 13,
+      "name_zh": "弓步崩剑",
+      "name_pinyin": "Gōngbù bēngjiàn",
+      "name_en": "Gongbu, Snap the Sword",
+      "name_id": "Gongbu, Sentak Pedang",
+      "steps": {
+        "en": [
+          "Shift left and turn slightly left, leading with the hilt to bring the sword in front of the face, palm back, the sword fingers arcing to the left hip; then shift right and cross the left leg behind the right; draw the sword slightly left, rotate the palm down and block it across to the right, arm naturally straight, tip forward at shoulder height, the sword fingers swinging out to the left; look right.",
+          "Shift onto the left leg and lift the right knee; both forearms arc in to meet at the belly, palms up, tip forward, the sword fingers supporting the back of the right hand; look ahead.",
+          "Set the right foot down to the right into right gongbu, turning slightly right; snap the sword to the right, power in the front of the blade, wrist at shoulder height, tip above the wrist, palm up, the sword fingers opening to the left hip; watch the tip."
+        ],
+        "id": [
+          "Geser ke kiri dan putar sedikit ke kiri, dengan gagang memimpin bawa pedang ke depan wajah, telapak ke belakang, jari pedang melengkung ke pinggul kiri; lalu geser ke kanan dan silangkan kaki kiri di belakang kaki kanan; tarik pedang sedikit ke kiri, balik telapak ke bawah dan tangkis melintang ke kanan, lengan lurus alami, ujung ke depan setinggi bahu, jari pedang berayun ke kiri; pandangan ke kanan.",
+          "Pindahkan berat ke kaki kiri dan angkat lutut kanan; kedua lengan bawah melengkung ke dalam bertemu di depan perut, telapak ke atas, ujung ke depan, jari pedang menopang punggung tangan kanan; pandangan ke depan.",
+          "Turunkan kaki kanan ke kanan menjadi gongbu kanan, putar sedikit ke kanan; sentakkan pedang ke kanan, tenaga di bagian depan bilah, pergelangan setinggi bahu, ujung di atas pergelangan, telapak ke atas, jari pedang terbuka ke pinggul kiri; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The two-handed hold goes with the knee lift and the snap with gongbu; the snap is an explosive release: turn the waist, sink the hips and let the power spring out loosely; keep it all linked."
+        ],
+        "id": [
+          "Tadahan dua tangan serempak dengan angkat lutut dan sentakan dengan gongbu; sentakan adalah pelepasan tenaga eksplosif: putar pinggang, turunkan pinggul dan biarkan tenaga memantul keluar dengan longgar; semuanya bersambung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 677–679, 图 J-34 to J-37",
+      "start_sec": 73.5,
+      "end_sec": 81.0
+    },
+    {
+      "number": 15,
+      "section": 1,
+      "book_number": 14,
+      "name_zh": "歇步压剑",
+      "name_pinyin": "Xiēbù yājiàn",
+      "name_en": "Xiebu, Press the Sword",
+      "name_id": "Xiebu, Tekan Pedang",
+      "steps": {
+        "en": [
+          "Turn left and shift onto the left leg, crossing the right foot behind the left onto the ball; arc the sword over the top to the left, turning the palm down; then squat into xiebu and press the sword down, arm slightly bent, wrist at knee height, while the sword fingers arc up to above the head, arm rounded; watch the tip."
+        ],
+        "id": [
+          "Putar ke kiri dan pindahkan berat ke kaki kiri, silangkan kaki kanan di belakang kaki kiri bertumpu pada telapak depan; lengkungkan pedang melewati atas ke kiri, balik telapak ke bawah; lalu jongkok menjadi xiebu dan tekan pedang ke bawah, lengan sedikit ditekuk, pergelangan setinggi lutut, sementara jari pedang melengkung naik ke atas kepala, lengan membulat; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Shoulders and elbows sunk, the arm not straight; the blade about 10 cm off the floor; the stance and the press happen together."
+        ],
+        "id": [
+          "Bahu dan siku turun, lengan tidak lurus; bilah sekitar 10 cm dari lantai; kuda-kuda dan tekanan dilakukan bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 679–680, 图 J-38 to J-39",
+      "start_sec": 81.0,
+      "end_sec": 84.0
+    },
+    {
+      "number": 16,
+      "section": 1,
+      "book_number": 15,
+      "name_zh": "进步绞剑",
+      "name_pinyin": "Jìnbù jiǎojiàn",
+      "name_en": "Jinbu, Twisting Sword",
+      "name_id": "Jinbu, Pedang Memilin",
+      "steps": {
+        "en": [
+          "Turn slightly right, straighten the legs a little, bend the left knee and step the right foot forward into right xubu; lift the upright sword, tiger's mouth forward-up, wrist at shoulder height, tip slightly below the wrist, the sword fingers arcing over to the right forearm; look forward and down.",
+          "Step the right foot forward and twist the sword, the sword fingers arcing down and out to the left a little above the shoulder, arm rounded; look toward the tip.",
+          "Step the left foot forward and twist again; watch the tip.",
+          "Step the right foot forward into right gongbu, twisting once more and sending the sword forward, the sword fingers coming over onto the right forearm; watch the tip."
+        ],
+        "id": [
+          "Putar sedikit ke kanan, luruskan kaki sedikit, tekuk lutut kiri dan langkahkan kaki kanan ke depan menjadi xubu kanan; angkat pedang tegak, hukou ke depan atas, pergelangan setinggi bahu, ujung sedikit di bawah pergelangan, jari pedang melengkung melewati atas ke lengan bawah kanan; pandangan ke depan bawah.",
+          "Langkahkan kaki kanan ke depan dan pilin pedang, jari pedang melengkung ke bawah lalu ke kiri sedikit di atas bahu, lengan membulat; pandangan ke arah ujung pedang.",
+          "Langkahkan kaki kiri ke depan dan pilin lagi; pandangan ke ujung pedang.",
+          "Langkahkan kaki kanan ke depan menjadi gongbu kanan, pilin sekali lagi dan kirim pedang ke depan, jari pedang datang melewati atas ke lengan bawah kanan; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Light, level steps; one twist per step, three steps in all, the tip turning in an anticlockwise spiral, the waist turning with the twist; land each step heel first."
+        ],
+        "id": [
+          "Langkah ringan dan rata; satu pilinan setiap langkah, tiga langkah seluruhnya, ujung berputar dalam spiral berlawanan arah jarum jam, pinggang ikut berputar; setiap langkah mendarat tumit dulu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 680–681, 图 J-40 to J-43",
+      "start_sec": 84.0,
+      "end_sec": 94.0
+    },
+    {
+      "number": 17,
+      "section": 1,
+      "book_number": 16,
+      "name_zh": "提膝上刺",
+      "name_pinyin": "Tíxī shàngcì",
+      "name_en": "Knee Lift, Upward Thrust",
+      "name_id": "Angkat Lutut, Tusukan ke Atas",
+      "steps": {
+        "en": [
+          "Shift back, turning slightly left, half squat on the left leg with the right knee slightly bent; bend the arm and draw the sword back to the left belly, palm up, blade level, tip right, the sword fingers on the hilt; look level toward the tip.",
+          "Shift forward, turn slightly right and stand on the naturally straight right leg, lifting the left knee into right dulibu; thrust the sword forward and up, palm up, the sword fingers at the inside of the right forearm; watch the tip."
+        ],
+        "id": [
+          "Geser ke belakang, putar sedikit ke kiri, setengah jongkok di kaki kiri dengan lutut kanan sedikit ditekuk; tekuk lengan dan tarik pedang kembali ke perut kiri, telapak ke atas, bilah mendatar, ujung ke kanan, jari pedang di gagang; pandangan datar ke arah ujung pedang.",
+          "Geser ke depan, putar sedikit ke kanan dan berdiri di kaki kanan yang lurus alami, angkat lutut kiri menjadi dulibu kanan; tusukkan pedang ke depan atas, telapak ke atas, jari pedang di sisi dalam lengan bawah kanan; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The knee lift and the thrust coincide, the knee no lower than the waist, the trunk upright and natural, shoulders sunk, power in the tip."
+        ],
+        "id": [
+          "Angkat lutut dan tusukan bersamaan, lutut tidak lebih rendah dari pinggang, badan tegak dan alami, bahu turun, tenaga di ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 681–683, 图 J-44 to J-45",
+      "start_sec": 94.0,
+      "end_sec": 99.0
+    },
+    {
+      "number": 18,
+      "section": 1,
+      "book_number": 17,
+      "name_zh": "虚步下截",
+      "name_pinyin": "Xūbù xiàjié",
+      "name_en": "Xubu, Low Cut",
+      "name_id": "Xubu, Potongan Bawah",
+      "steps": {
+        "en": [
+          "Half squat on the right leg and set the left foot down to the left, heel first, turning slightly left; bend the arm and rotate it out to carry the sword up to the upper left, palm in, wrist at head height, tip right, the sword fingers arcing down to the left hip; look right.",
+          "Shift left and half squat on the left leg, turning right; move the right foot half a step left onto the toes in right xubu; draw the sword slightly left, then cut down to the right to beside the right hip, tip to the left front at knee height, power along the lower edge, while the sword fingers rise to above the head, arm rounded; look right."
+        ],
+        "id": [
+          "Setengah jongkok di kaki kanan dan turunkan kaki kiri ke kiri, tumit dulu, putar sedikit ke kiri; tekuk lengan dan putar ke luar membawa pedang ke kiri atas, telapak ke dalam, pergelangan setinggi kepala, ujung ke kanan, jari pedang melengkung turun ke pinggul kiri; pandangan ke kanan.",
+          "Geser ke kiri dan setengah jongkok di kaki kiri, putar ke kanan; pindahkan kaki kanan setengah langkah ke kiri bertumpu pada ujung kaki dalam xubu kanan; tarik pedang sedikit ke kiri, lalu potong ke kanan bawah ke samping pinggul kanan, ujung ke depan kiri setinggi lutut, tenaga di sepanjang mata pedang bawah, sementara jari pedang naik ke atas kepala, lengan membulat; pandangan ke kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Xubu and the cut coincide, the right arm not stiff; power along the lower (little-finger) edge; shift smoothly, the weight on the left leg in xubu."
+        ],
+        "id": [
+          "Xubu dan potongan bersamaan, lengan kanan tidak kaku; tenaga di sepanjang mata pedang bawah (sisi kelingking); geser dengan luwes, berat di kaki kiri pada xubu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 683–684, 图 J-46 to J-47",
+      "start_sec": 99.0,
+      "end_sec": 104.0
+    },
+    {
+      "number": 19,
+      "section": 1,
+      "book_number": 18,
+      "name_zh": "右左平带",
+      "name_pinyin": "Yòu zuǒ píngdài",
+      "name_en": "Level Draws Right and Left",
+      "name_id": "Tarikan Datar Kanan dan Kiri",
+      "steps": {
+        "en": [
+          "Bend the left knee slightly and lift the right knee, toes hanging; send the upright blade forward to chest height, arm naturally straight, tip slightly below the hand, the sword fingers coming over onto the right forearm; then set the right foot down to the right front into right gongbu, turning slightly right, and, reaching forward, turn the palm down and draw the sword back to the right ribs, tip forward; watch the tip.",
+          "Shift forward and step the left foot to the left front into left gongbu; as the tip extends, rotate the forearm out until the palm faces up, then bend the elbow slightly to draw the sword left to the left ribs, tip forward, while the sword fingers arc down and left to above the head, arm rounded; look ahead."
+        ],
+        "id": [
+          "Tekuk lutut kiri sedikit dan angkat lutut kanan, ujung kaki menggantung; kirim bilah tegak ke depan setinggi dada, lengan lurus alami, ujung sedikit di bawah tangan, jari pedang datang melewati atas ke lengan bawah kanan; lalu turunkan kaki kanan ke depan kanan menjadi gongbu kanan, putar sedikit ke kanan, dan, sambil menjulur ke depan, balik telapak ke bawah dan tarik pedang kembali ke rusuk kanan, ujung ke depan; pandangan ke ujung pedang.",
+          "Geser ke depan dan langkahkan kaki kiri ke depan kiri menjadi gongbu kiri; saat ujung memanjang, putar lengan bawah ke luar hingga telapak menghadap atas, lalu tekuk siku sedikit untuk menarik pedang ke kiri ke rusuk kiri, ujung ke depan, sementara jari pedang melengkung ke bawah dan ke kiri ke atas kepala, lengan membulat; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Gongbu and draw coincide; don't lean forward or stick out the hips; feet not on one line in gongbu."
+        ],
+        "id": [
+          "Gongbu dan tarikan bersamaan; jangan condong ke depan atau menonjolkan pinggul; kaki tidak segaris pada gongbu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 684–685, 图 J-48 to J-50",
+      "start_sec": 104.0,
+      "end_sec": 109.0
+    },
+    {
+      "number": 20,
+      "section": 1,
+      "book_number": 19,
+      "name_zh": "弓步劈剑",
+      "name_pinyin": "Gōngbù pījiàn",
+      "name_en": "Gongbu, Chop",
+      "name_id": "Gongbu, Bacok",
+      "steps": {
+        "en": [
+          "Shift forward and swing-step the right foot forward, half squatting on it with the left leg naturally straight and heel up, turning right; cut the sword down to the right rear, the sword fingers folding to the front of the right shoulder; watch the tip.",
+          "Turn left and step the left foot forward into left gongbu; chop the sword over the top and forward at shoulder height, tip slightly above the wrist, while the sword fingers arc down and up to above the head, arm rounded; look ahead."
+        ],
+        "id": [
+          "Geser ke depan dan langkahkan kaki kanan berayun ke depan, setengah jongkok di atasnya dengan kaki kiri lurus alami dan tumit terangkat, putar ke kanan; potong pedang ke kanan belakang bawah, jari pedang terlipat ke depan bahu kanan; pandangan ke ujung pedang.",
+          "Putar ke kiri dan langkahkan kaki kiri ke depan menjadi gongbu kiri; bacokkan pedang melewati atas ke depan setinggi bahu, ujung sedikit di atas pergelangan, sementara jari pedang melengkung ke bawah lalu naik ke atas kepala, lengan membulat; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The right step with the backward cut, gongbu with the chop, all linked; turn the waist right as you cut, keep the weight on the right leg as the left foot steps, then shift; chop with power along the little-finger edge."
+        ],
+        "id": [
+          "Langkah kanan bersama potongan ke belakang, gongbu bersama bacokan, semuanya bersambung; putar pinggang ke kanan saat memotong, tahan berat di kaki kanan saat kaki kiri melangkah, lalu geser; bacok dengan tenaga di mata pedang sisi kelingking."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 685–686, 图 J-51 to J-52",
+      "start_sec": 109.0,
+      "end_sec": 114.0
+    },
+    {
+      "number": 21,
+      "section": 1,
+      "book_number": 20,
+      "name_zh": "丁步托剑",
+      "name_pinyin": "Dīngbù tuōjiàn",
+      "name_en": "Dingbu, Lift the Sword",
+      "name_id": "Dingbu, Angkat Pedang",
+      "steps": {
+        "en": [
+          "Shift forward and lift the right knee into dulibu, turning right and leaning slightly forward; cut the sword to the right rear, the sword fingers swinging to the front of the right shoulder; watch the tip.",
+          "Set the right foot down forward in a half squat and bring the left foot up beside it, toes down, in left dingbu; bend the arm and lift the sword up in front, tip to the right, the sword fingers at the inside of the right wrist, palm forward; look right."
+        ],
+        "id": [
+          "Geser ke depan dan angkat lutut kanan menjadi dulibu, putar ke kanan dan sedikit condong ke depan; potong pedang ke kanan belakang, jari pedang berayun ke depan bahu kanan; pandangan ke ujung pedang.",
+          "Turunkan kaki kanan ke depan dalam setengah jongkok dan bawa kaki kiri ke sampingnya, ujung kaki di lantai, dalam dingbu kiri; tekuk lengan dan angkat pedang ke atas di depan, ujung ke kanan, jari pedang di sisi dalam pergelangan kanan, telapak ke depan; pandangan ke kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Knee lift with the backward low cut, dingbu with the upward lift; power along the upper edge as it lifts, the blade level; all linked."
+        ],
+        "id": [
+          "Angkat lutut bersama potongan rendah ke belakang, dingbu bersama angkatan ke atas; tenaga di sepanjang mata pedang atas saat mengangkat, bilah mendatar; semuanya bersambung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 686–687, 图 J-53 to J-54",
+      "start_sec": 114.0,
+      "end_sec": 119.0
+    },
+    {
+      "number": 22,
+      "section": 1,
+      "book_number": 21,
+      "name_zh": "分脚后点",
+      "name_pinyin": "Fēnjiǎo hòudiǎn",
+      "name_en": "Separate Kick, Peck Behind",
+      "name_id": "Tendangan Pisah, Patuk ke Belakang",
+      "steps": {
+        "en": [
+          "Step the left foot to the left front, toes in, knee slightly bent, and turn about 90° right, pivoting on the right ball; circle the tip right and down until the wrist is at shoulder height, tip slanting down, the sword fingers still at the right wrist; watch the tip.",
+          "Step the right foot back, leg naturally straight, pivot the left foot in on its heel into a half squat and turn about 90° right; lead with the tip down and back in an arc, threading the sword to the belly, palm out, tip right and slightly below the wrist; look toward the tip.",
+          "Shift forward, pressing the right knee into right gongbu and turning slightly right; thread the sword forward along the inside of the right leg to shoulder height, the sword fingers arcing out to the left rear at shoulder height; watch the tip.",
+          "Shift forward and bring the left foot to the right in a squat, turning slightly left; hilt leading, draw the sword up and left in an arc to beside the left hip, tip to the upper left, the sword fingers meeting the right hand overhead and then folding down to the right wrist; look left.",
+          "Straighten the left leg and lift the right knee, toes hanging, turning about 90° right; circle the tip vertically at the left side, and when it reaches the lower rear lift the hilt, rotating the forearm in, to above the front of the head, tip pointing forward and down, while the sword fingers rotate out and reach forward and down to in front of the inside of the right ankle; look toward the tip.",
+          "Kick the right foot forward in a separate kick, turning slightly right; peck the sword over the top to the right rear, wrist at shoulder height, while the sword fingers swing up to above the head, arm rounded; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan kiri, ujung kaki ke dalam, lutut sedikit ditekuk, dan putar sekitar 90° ke kanan, berporos pada telapak depan kanan; putar ujung ke kanan dan ke bawah hingga pergelangan setinggi bahu, ujung miring ke bawah, jari pedang tetap di pergelangan kanan; pandangan ke ujung pedang.",
+          "Mundurkan kaki kanan, kaki lurus alami, putar kaki kiri ke dalam berporos pada tumit menjadi setengah jongkok dan putar sekitar 90° ke kanan; dengan ujung memimpin ke bawah dan ke belakang melengkung, tusukkan pedang ke depan perut, telapak ke luar, ujung ke kanan dan sedikit di bawah pergelangan; pandangan ke arah ujung pedang.",
+          "Geser ke depan, dorong lutut kanan menjadi gongbu kanan dan putar sedikit ke kanan; tusukkan pedang ke depan menyusuri sisi dalam kaki kanan hingga setinggi bahu, jari pedang melengkung ke kiri belakang setinggi bahu; pandangan ke ujung pedang.",
+          "Geser ke depan dan rapatkan kaki kiri ke kaki kanan dalam jongkok, putar sedikit ke kiri; dengan gagang memimpin, tarik pedang ke atas dan ke kiri melengkung ke samping pinggul kiri, ujung ke kiri atas, jari pedang bertemu tangan kanan di atas kepala lalu terlipat turun ke pergelangan kanan; pandangan ke kiri.",
+          "Luruskan kaki kiri dan angkat lutut kanan, ujung kaki menggantung, putar sekitar 90° ke kanan; putar ujung secara vertikal di sisi kiri, dan saat sampai di belakang bawah angkat gagang, sambil memutar lengan bawah ke dalam, ke depan atas kepala, ujung mengarah ke depan bawah, sementara jari pedang berputar ke luar dan menjulur ke depan bawah ke depan sisi dalam pergelangan kaki kanan; pandangan ke arah ujung pedang.",
+          "Tendang kaki kanan ke depan dalam tendangan pisah, putar sedikit ke kanan; patukkan pedang melewati atas ke kanan belakang, pergelangan setinggi bahu, sementara jari pedang berayun naik ke atas kepala, lengan membulat; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Knee lift with the sword lift, the kick with the backward peck; the whole movement is linked, round and lively, in one breath."
+        ],
+        "id": [
+          "Angkat lutut bersama angkatan pedang, tendangan bersama patukan ke belakang; seluruh gerakan bersambung, bulat dan hidup, dalam satu tarikan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 687–689, 图 J-55 to J-60",
+      "start_sec": 119.0,
+      "end_sec": 134.0
+    },
+    {
+      "number": 23,
+      "section": 1,
+      "book_number": 22,
+      "name_zh": "仆步穿剑（右）",
+      "name_pinyin": "Pūbù chuānjiàn (yòu)",
+      "name_en": "Pubu, Thread the Sword (Right)",
+      "name_id": "Pubu, Tusuk Menyusur (Kanan)",
+      "steps": {
+        "en": [
+          "Half squat on the left leg and set the right leg down behind into left gongbu, turning left; swing the sword in an arc to the front at chest height, palm up, blade level and tip forward, the sword fingers at the inside of the right forearm; watch the tip.",
+          "Shift back, pivot both feet on the balls and turn about 90° right into right hengdangbu; bend the arm past the chest and swing-chop the sword to the right, palm up, tip slightly above the wrist, the sword fingers opening to the left at waist height; watch the tip.",
+          "Shift left into left hengdangbu, turning slightly left; bend the arm and lift the sword to above the front of the head, palm in, blade level, tip right, the sword fingers rising to the inside of the right wrist; look toward the tip.",
+          "Squat fully on the left leg into right pubu, turning slightly right; lower the sword in front of the crotch, palm out, so the upright blade drops along the inside of the right leg, tip right; look toward the tip.",
+          "Shift right, right toes out and left toes in, into right gongbu, turning about 90° right; thread the upright blade forward along the inside of the right leg to chest height, arm naturally straight, palm left; look ahead."
+        ],
+        "id": [
+          "Setengah jongkok di kaki kiri dan turunkan kaki kanan ke belakang menjadi gongbu kiri, putar ke kiri; ayunkan pedang melengkung ke depan setinggi dada, telapak ke atas, bilah mendatar dan ujung ke depan, jari pedang di sisi dalam lengan bawah kanan; pandangan ke ujung pedang.",
+          "Geser ke belakang, putar kedua kaki berporos pada telapak depan dan putar sekitar 90° ke kanan menjadi hengdangbu kanan; tekuk lengan melewati dada dan tebaskan pedang berayun ke kanan, telapak ke atas, ujung sedikit di atas pergelangan, jari pedang terbuka ke kiri setinggi pinggang; pandangan ke ujung pedang.",
+          "Geser ke kiri menjadi hengdangbu kiri, putar sedikit ke kiri; tekuk lengan dan angkat pedang ke depan atas kepala, telapak ke dalam, bilah mendatar, ujung ke kanan, jari pedang naik ke sisi dalam pergelangan kanan; pandangan ke arah ujung pedang.",
+          "Jongkok penuh di kaki kiri menjadi pubu kanan, putar sedikit ke kanan; turunkan pedang di depan selangkangan, telapak ke luar, sehingga bilah tegak turun menyusuri sisi dalam kaki kanan, ujung ke kanan; pandangan ke arah ujung pedang.",
+          "Geser ke kanan, ujung kaki kanan ke luar dan kiri ke dalam, menjadi gongbu kanan, putar sekitar 90° ke kanan; tusukkan bilah tegak ke depan menyusuri sisi dalam kaki kanan hingga setinggi dada, lengan lurus alami, telapak menghadap kiri; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Steady weight changes without the trunk swaying; the body carries the arm and the sword, linked and round, shoulders sunk, the waist as the axis."
+        ],
+        "id": [
+          "Perpindahan berat stabil tanpa badan bergoyang; badan membawa lengan dan pedang, bersambung dan bulat, bahu turun, pinggang sebagai poros."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 689–691, 图 J-61 to J-65",
+      "start_sec": 134.0,
+      "end_sec": 146.5
+    },
+    {
+      "number": 24,
+      "section": 1,
+      "book_number": 23,
+      "name_zh": "蹬脚架剑（左）",
+      "name_pinyin": "Dēngjiǎo jiàjiàn (zuǒ)",
+      "name_en": "Heel Kick, Block Overhead (Left)",
+      "name_id": "Tendangan Tumit, Tangkisan Atas Kepala (Kiri)",
+      "steps": {
+        "en": [
+          "Turn the right toes out and turn slightly right; carry the sword up to the right to above the front of the head, wrist about 10 cm from the right forehead, palm out and tip forward, the sword fingers at the inside of the right forearm; look toward the tip.",
+          "Stand on the naturally straight right leg and lift the bent left knee past the right ankle, toes hanging; draw the sword slightly right; look toward the tip.",
+          "Drive the left heel out to the left side; block the sword up overhead, arm slightly bent, while the sword fingers point out to the left, arm naturally straight, wrist at shoulder height, palm forward and fingers up; look along the sword fingers."
+        ],
+        "id": [
+          "Putar ujung kaki kanan ke luar dan putar sedikit ke kanan; bawa pedang ke kanan atas ke depan atas kepala, pergelangan sekitar 10 cm dari dahi kanan, telapak ke luar dan ujung ke depan, jari pedang di sisi dalam lengan bawah kanan; pandangan ke arah ujung pedang.",
+          "Berdiri di kaki kanan yang lurus alami dan angkat lutut kiri yang ditekuk melewati pergelangan kaki kanan, ujung kaki menggantung; tarik pedang sedikit ke kanan; pandangan ke arah ujung pedang.",
+          "Dorong tumit kiri ke sisi kiri; tangkis pedang ke atas di atas kepala, lengan sedikit ditekuk, sementara jari pedang menunjuk ke kiri, lengan lurus alami, pergelangan setinggi bahu, telapak ke depan dan jari ke atas; pandangan searah jari pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Sword fingers, tip and foot point the same way; the kick, block and finger point coincide; stand steady on the right leg, the kick no lower than the waist. A balance posture."
+        ],
+        "id": [
+          "Jari pedang, ujung pedang dan kaki mengarah sama; tendangan, tangkisan dan tunjukan jari bersamaan; berdiri mantap di kaki kanan, tendangan tidak lebih rendah dari pinggang. Ini sikap keseimbangan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 691–692, 图 J-66 to J-68",
+      "start_sec": 146.5,
+      "end_sec": 154.0
+    },
+    {
+      "number": 25,
+      "section": 1,
+      "book_number": 24,
+      "name_zh": "提膝点剑（左）",
+      "name_pinyin": "Tíxī diǎnjiàn (zuǒ)",
+      "name_en": "Knee Lift, Peck (Left)",
+      "name_id": "Angkat Lutut, Patuk (Kiri)",
+      "steps": {
+        "en": [
+          "Bend the left knee into right dulibu, turning slightly right; peck the sword over the top to the lower right front, tip at knee height, the sword fingers swinging right to the inside of the right forearm; look toward the tip."
+        ],
+        "id": [
+          "Tekuk lutut kiri menjadi dulibu kanan, putar sedikit ke kanan; patukkan pedang melewati atas ke depan kanan bawah, ujung setinggi lutut, jari pedang berayun ke kanan ke sisi dalam lengan bawah kanan; pandangan ke arah ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The knee bend with the foot tucked and the peck coincide; stand firm on the right leg."
+        ],
+        "id": [
+          "Tekukan lutut dengan kaki terlipat dan patukan bersamaan; berdiri kokoh di kaki kanan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 693, 图 J-69",
+      "start_sec": 154.0,
+      "end_sec": 157.0
+    },
+    {
+      "number": 26,
+      "section": 1,
+      "book_number": 25,
+      "name_zh": "仆步横扫（左）",
+      "name_pinyin": "Pūbù héngsǎo (zuǒ)",
+      "name_en": "Pubu, Horizontal Sweep (Left)",
+      "name_id": "Pubu, Sapuan Mendatar (Kiri)",
+      "steps": {
+        "en": [
+          "Squat fully on the right leg and set the left foot down to the left rear into left pubu, turning slightly left; the sword fingers bend, rotate in and thrust back past the left ribs to the outside of the left leg, palm out, while the sword sinks with the wrist to above the front of the right knee, palm up; watch the tip.",
+          "Shift left and turn about 90° left, bending the left knee with the toes out and pivoting the right heel out into left gongbu; sweep the sword level to the left at waist height, palm up, arm slightly bent, tip slightly below the wrist, while the sword fingers arc left and up to above the head; watch the tip."
+        ],
+        "id": [
+          "Jongkok penuh di kaki kanan dan turunkan kaki kiri ke kiri belakang menjadi pubu kiri, putar sedikit ke kiri; jari pedang ditekuk, diputar ke dalam dan menusuk ke belakang melewati rusuk kiri ke sisi luar kaki kiri, telapak ke luar, sementara pedang turun dengan pergelangan ke depan atas lutut kanan, telapak ke atas; pandangan ke ujung pedang.",
+          "Geser ke kiri dan putar sekitar 90° ke kiri, tekuk lutut kiri dengan ujung kaki ke luar dan putar tumit kanan ke luar menjadi gongbu kiri; sapukan pedang datar ke kiri setinggi pinggang, telapak ke atas, lengan sedikit ditekuk, ujung sedikit di bawah pergelangan, sementara jari pedang melengkung ke kiri dan ke atas ke atas kepala; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Don't lean forward or stick out the hips going from pubu to gongbu; turn the waist left as the sword fingers thrust back."
+        ],
+        "id": [
+          "Jangan condong ke depan atau menonjolkan pinggul saat berpindah dari pubu ke gongbu; putar pinggang ke kiri saat jari pedang menusuk ke belakang."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 694, 图 J-70 to J-71",
+      "start_sec": 157.0,
+      "end_sec": 162.0
+    },
+    {
+      "number": 27,
+      "section": 1,
+      "book_number": 26,
+      "name_zh": "弓步下截（右、左）",
+      "name_pinyin": "Gōngbù xiàjié (yòu, zuǒ)",
+      "name_en": "Gongbu, Low Cut (Right and Left)",
+      "name_id": "Gongbu, Potongan Bawah (Kanan dan Kiri)",
+      "steps": {
+        "en": [
+          "Shift forward and bring the right foot in beside the left without touching down; rotate the hand in and deflect the sword in an arc, wrist at waist height, palm down, tip to the lower left front, the sword fingers at the inside of the right wrist; watch the tip.",
+          "Step the right foot to the right front into right gongbu, turning slightly right; cut the sword in an arc to the right front, arm slightly bent, wrist at chest height, tiger's mouth down, tip forward-down; watch the tip.",
+          "Shift onto the right leg and bring the left foot in beside the right without touching down, turning right; rotate the hand out and deflect the sword in an arc to beside the right hip, palm up, tip to the lower right front; watch the tip.",
+          "Step the left foot to the left front into left gongbu, turning about 45° left; cut the sword in an arc to the left front, wrist at chest height, palm up, tip forward-down, while the sword fingers arc up to above the front of the head; watch the tip."
+        ],
+        "id": [
+          "Geser ke depan dan bawa kaki kanan ke samping kaki kiri tanpa menyentuh lantai; putar tangan ke dalam dan tepis pedang melengkung, pergelangan setinggi pinggang, telapak ke bawah, ujung ke depan kiri bawah, jari pedang di sisi dalam pergelangan kanan; pandangan ke ujung pedang.",
+          "Langkahkan kaki kanan ke depan kanan menjadi gongbu kanan, putar sedikit ke kanan; potong pedang melengkung ke depan kanan, lengan sedikit ditekuk, pergelangan setinggi dada, hukou ke bawah, ujung ke depan bawah; pandangan ke ujung pedang.",
+          "Pindahkan berat ke kaki kanan dan bawa kaki kiri ke samping kaki kanan tanpa menyentuh lantai, putar ke kanan; putar tangan ke luar dan tepis pedang melengkung ke samping pinggul kanan, telapak ke atas, ujung ke depan kanan bawah; pandangan ke ujung pedang.",
+          "Langkahkan kaki kiri ke depan kiri menjadi gongbu kiri, putar sekitar 45° ke kiri; potong pedang melengkung ke depan kiri, pergelangan setinggi dada, telapak ke atas, ujung ke depan bawah, sementara jari pedang melengkung naik ke depan atas kepala; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Deflect on the wrist with a loose wrist so the tip makes a small arc; the body carries the sword and turns with the steps; soft, linked, eyes following the sword; power in the rear part of the edge."
+        ],
+        "id": [
+          "Tepis pada pergelangan dengan pergelangan longgar sehingga ujung membuat busur kecil; badan membawa pedang dan berputar bersama langkah; lembut, bersambung, mata mengikuti pedang; tenaga di bagian belakang mata pedang."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 694–696, 图 J-72 to J-75",
+      "start_sec": 162.0,
+      "end_sec": 172.0
+    },
+    {
+      "number": 28,
+      "section": 1,
+      "book_number": 27,
+      "name_zh": "弓步下刺",
+      "name_pinyin": "Gōngbù xiàcì",
+      "name_en": "Gongbu, Low Thrust",
+      "name_id": "Gongbu, Tusukan Rendah",
+      "steps": {
+        "en": [
+          "Shift forward and stamp the right foot behind the left in a half squat, left heel up, turning slightly right; bend the arm and draw the sword back to the right ribs, palm up, tip forward and slightly low, the sword fingers reaching forward first and then folding back to the right wrist; watch the tip.",
+          "Shift forward and step the left foot to the left front into left gongbu, turning slightly left; thrust the sword down to the left front at waist height, palm up, the sword fingers at the right wrist; watch the tip."
+        ],
+        "id": [
+          "Geser ke depan dan hentakkan kaki kanan di belakang kaki kiri dalam setengah jongkok, tumit kiri terangkat, putar sedikit ke kanan; tekuk lengan dan tarik pedang kembali ke rusuk kanan, telapak ke atas, ujung ke depan dan sedikit rendah, jari pedang menjulur ke depan dulu lalu terlipat kembali ke pergelangan kanan; pandangan ke ujung pedang.",
+          "Geser ke depan dan langkahkan kaki kiri ke depan kiri menjadi gongbu kiri, putar sedikit ke kiri; tusukkan pedang ke depan kiri bawah setinggi pinggang, telapak ke atas, jari pedang di pergelangan kanan; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Both the stamp and the thrust release power: turn the waist to draw back and store it, then turn the waist and sink the hips to thrust, power in the tip, loose and springy; the power rises from the foot through the waist to the tip."
+        ],
+        "id": [
+          "Hentakan dan tusukan sama-sama melepaskan tenaga: putar pinggang untuk menarik dan menyimpannya, lalu putar pinggang dan turunkan pinggul untuk menusuk, tenaga di ujung, longgar dan memantul; tenaga naik dari kaki melalui pinggang ke ujung pedang."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 696–697, 图 J-76 to J-77",
+      "start_sec": 172.0,
+      "end_sec": 177.0
+    },
+    {
+      "number": 29,
+      "section": 1,
+      "book_number": 28,
+      "name_zh": "右左云抹",
+      "name_pinyin": "Yòu zuǒ yúnmǒ",
+      "name_en": "Cloud and Wipe, Right and Left",
+      "name_id": "Putar dan Usap, Kanan dan Kiri",
+      "steps": {
+        "en": [
+          "Shift forward and bring the right foot in beside the left without touching down, turning slightly left; sink the wrist and draw slightly left, palm up, the sword fingers drawing left and arcing past the chest to above the right arm; then step the right foot to the right into right hengdangbu and slice up to the right, the sword fingers opening to the left front at chest height; watch the tip.",
+          "Turn slightly right and shift right, then turn slightly left and step the left foot in gaibu to the right; just before it lands, push off the right foot and raise it bent behind the left calf, toes hanging about 10 cm off the floor; cloud the sword anticlockwise in front of the face to in front of the body, palm down, the sword fingers joining the right wrist; then step the right foot to the right into right gongbu and wipe the sword to the right front, palm down; look toward the tip.",
+          "Shift right and bring the left foot in beside the right without touching down, turning slightly right; draw the sword slightly right, tip to the left front; then step the left foot to the left into left gongbu and send the sword forward and wipe it back to the left, palm down, the sword fingers arcing out to the left side; watch the tip.",
+          "Shift left and step the right foot in gaibu to the left; as it lands, push off the left foot and raise it bent behind the right calf, toes about 10 cm off the floor, turning slightly right; cloud the sword clockwise in front of the face, palm up, tip to the right front, the sword fingers joining the right wrist; then step the left foot to the left into left gongbu and wipe the sword to the left, palm up, the sword fingers arcing to above the front of the head; watch the tip."
+        ],
+        "id": [
+          "Geser ke depan dan bawa kaki kanan ke samping kaki kiri tanpa menyentuh lantai, putar sedikit ke kiri; turunkan pergelangan dan tarik sedikit ke kiri, telapak ke atas, jari pedang menarik ke kiri lalu melengkung melewati dada ke atas lengan kanan; lalu langkahkan kaki kanan ke kanan menjadi hengdangbu kanan dan serut ke kanan atas, jari pedang terbuka ke depan kiri setinggi dada; pandangan ke ujung pedang.",
+          "Putar sedikit ke kanan dan geser ke kanan, lalu putar sedikit ke kiri dan langkahkan kaki kiri secara gaibu ke kanan; tepat sebelum mendarat, tolak dengan kaki kanan dan angkat tertekuk di belakang betis kiri, ujung kaki menggantung sekitar 10 cm dari lantai; putar pedang berlawanan arah jarum jam di depan wajah ke depan badan, telapak ke bawah, jari pedang bergabung di pergelangan kanan; lalu langkahkan kaki kanan ke kanan menjadi gongbu kanan dan usap pedang ke depan kanan, telapak ke bawah; pandangan ke arah ujung pedang.",
+          "Geser ke kanan dan bawa kaki kiri ke samping kaki kanan tanpa menyentuh lantai, putar sedikit ke kanan; tarik pedang sedikit ke kanan, ujung ke depan kiri; lalu langkahkan kaki kiri ke kiri menjadi gongbu kiri dan kirim pedang ke depan lalu usap kembali ke kiri, telapak ke bawah, jari pedang melengkung ke sisi kiri; pandangan ke ujung pedang.",
+          "Geser ke kiri dan langkahkan kaki kanan secara gaibu ke kiri; saat mendarat, tolak dengan kaki kiri dan angkat tertekuk di belakang betis kanan, ujung kaki sekitar 10 cm dari lantai, putar sedikit ke kanan; putar pedang searah jarum jam di depan wajah, telapak ke atas, ujung ke depan kanan, jari pedang bergabung di pergelangan kanan; lalu langkahkan kaki kiri ke kiri menjadi gongbu kiri dan usap pedang ke kiri, telapak ke atas, jari pedang melengkung ke depan atas kepala; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Light, nimble gaibu; the body carries the sword so the clouds are linked and round; do the right and left cloud-wipes as one sequence, relaxed, with the waist as the axis."
+        ],
+        "id": [
+          "Gaibu ringan dan lincah; badan membawa pedang agar putaran bersambung dan bulat; lakukan putar-usap kanan dan kiri sebagai satu rangkaian, rileks, dengan pinggang sebagai poros."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 697–700, 图 J-78 to J-85",
+      "start_sec": 177.0,
+      "end_sec": 187.0
+    },
+    {
+      "number": 30,
+      "section": 1,
+      "book_number": 29,
+      "name_zh": "右弓步劈",
+      "name_pinyin": "Yòu gōngbù pī",
+      "name_en": "Right Gongbu, Chop",
+      "name_id": "Gongbu Kanan, Bacok",
+      "steps": {
+        "en": [
+          "Shift forward and bring the right foot in beside the left without touching down, turning slightly left; edge leading, arc the sword down and back to the left belly, arm slightly bent, palm slanting up, tip to the lower left rear at hip height, the sword fingers dropping onto the right forearm; watch the tip.",
+          "Step the right foot to the right into right gongbu, turning slightly right; chop the sword over the top to the right in an arc, wrist at chest height, sword and arm in one line, while the sword fingers arc down and left to above the head; watch the tip."
+        ],
+        "id": [
+          "Geser ke depan dan bawa kaki kanan ke samping kaki kiri tanpa menyentuh lantai, putar sedikit ke kiri; dengan mata pedang memimpin, lengkungkan pedang ke bawah dan ke belakang ke perut kiri, lengan sedikit ditekuk, telapak miring ke atas, ujung ke kiri belakang bawah setinggi pinggul, jari pedang turun ke lengan bawah kanan; pandangan ke ujung pedang.",
+          "Langkahkan kaki kanan ke kanan menjadi gongbu kanan, putar sedikit ke kanan; bacokkan pedang melewati atas ke kanan melengkung, pergelangan setinggi dada, pedang dan lengan satu garis, sementara jari pedang melengkung ke bawah dan ke kiri ke atas kepala; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Gongbu and the chop coincide at a slow, even speed; round, linked, power through the blade."
+        ],
+        "id": [
+          "Gongbu dan bacokan bersamaan dengan kecepatan lambat dan rata; bulat, bersambung, tenaga mengalir di bilah."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 700–701, 图 J-86 to J-87",
+      "start_sec": 187.0,
+      "end_sec": 192.0
+    },
+    {
+      "number": 31,
+      "section": 1,
+      "book_number": 30,
+      "name_zh": "后举腿架剑",
+      "name_pinyin": "Hòu jǔtuǐ jiàjiàn",
+      "name_en": "Rear Leg Raise, Block Overhead",
+      "name_id": "Angkat Kaki ke Belakang, Tangkisan Atas Kepala",
+      "steps": {
+        "en": [
+          "Shift forward and swing-step the left foot forward in a half squat, right heel up, turning slightly left; hook the sword to the left at waist height, tip left, the sword fingers dropping onto the right forearm; look down to the left.",
+          "Stand on the straight left leg and raise the bent right shin behind, instep flat at hip height, turning slightly right; block the sword up overhead about 10 cm from the head, tip left, while the sword fingers swing past the face to the left, arm slightly bent, fingers up; look along the sword fingers."
+        ],
+        "id": [
+          "Geser ke depan dan langkahkan kaki kiri berayun ke depan dalam setengah jongkok, tumit kanan terangkat, putar sedikit ke kiri; kaitkan pedang ke kiri setinggi pinggang, ujung ke kiri, jari pedang turun ke lengan bawah kanan; pandangan ke kiri bawah.",
+          "Berdiri di kaki kiri yang lurus dan angkat tungkai bawah kanan yang ditekuk ke belakang, punggung kaki rata setinggi pinggul, putar sedikit ke kanan; tangkis pedang ke atas di atas kepala sekitar 10 cm dari kepala, ujung ke kiri, sementara jari pedang berayun melewati wajah ke kiri, lengan sedikit ditekuk, jari ke atas; pandangan searah jari pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Sword fingers and tip point the same way; the leg raise, the block and the finger point coincide; stand steady, toes gripping the floor, crown lifted lightly. A balance posture."
+        ],
+        "id": [
+          "Jari pedang dan ujung pedang mengarah sama; angkat kaki, tangkisan dan tunjukan jari bersamaan; berdiri mantap, jari kaki mencengkeram lantai, ubun-ubun terangkat ringan. Ini sikap keseimbangan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 701–702, 图 J-88 to J-89",
+      "start_sec": 192.0,
+      "end_sec": 197.0
+    },
+    {
+      "number": 32,
+      "section": 1,
+      "book_number": 31,
+      "name_zh": "丁步点剑",
+      "name_pinyin": "Dīngbù diǎnjiàn",
+      "name_en": "Dingbu, Peck",
+      "name_id": "Dingbu, Patuk",
+      "steps": {
+        "en": [
+          "Bend the left knee, turn slightly right and set the right foot down to the right, heel first, leg naturally straight; swing the sword slightly right so the tip rises above the right wrist; look to the left front.",
+          "Shift right and turn right, settling the right foot in a half squat and bringing the left foot in beside it, toes down, in left dingbu; peck to the right, wrist at chest height, the sword fingers arcing across to the inside of the right wrist; watch the tip."
+        ],
+        "id": [
+          "Tekuk lutut kiri, putar sedikit ke kanan dan turunkan kaki kanan ke kanan, tumit dulu, kaki lurus alami; ayunkan pedang sedikit ke kanan sehingga ujung naik di atas pergelangan kanan; pandangan ke depan kiri.",
+          "Geser ke kanan dan putar ke kanan, mantapkan kaki kanan dalam setengah jongkok dan bawa kaki kiri ke sampingnya, ujung kaki di lantai, dalam dingbu kiri; patuk ke kanan, pergelangan setinggi dada, jari pedang melengkung melintang ke sisi dalam pergelangan kanan; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Dingbu and the peck coincide, power in the tip; keep balanced and upright, shoulders and hips sunk."
+        ],
+        "id": [
+          "Dingbu dan patukan bersamaan, tenaga di ujung; jaga keseimbangan dan tegak, bahu dan pinggul turun."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 702–703, 图 J-90 to J-91",
+      "start_sec": 197.0,
+      "end_sec": 202.0
+    },
+    {
+      "number": 33,
+      "section": 1,
+      "book_number": 32,
+      "name_zh": "马步推剑",
+      "name_pinyin": "Mǎbù tuījiàn",
+      "name_en": "Mabu, Push the Sword",
+      "name_id": "Mabu, Dorong Pedang",
+      "steps": {
+        "en": [
+          "Step the left foot back to the left rear and bend the right knee; shifting back, slide the right foot half a step back on its ball, heel up and knee slightly bent, twisting right; bend the arm and bring the sword under the right ribs, tiger's mouth up, blade vertical and tip up, the sword fingers on the right wrist; look right.",
+          "Push off the left foot and, shifting forward, step the right foot to the right front, toes in, the left heel sliding half a step, into mabu, turning left; push the upright sword level to the right front, wrist at chest height, tip up, power along the front edge, while the sword fingers push past the chest out to the left at shoulder height, palm out; look right."
+        ],
+        "id": [
+          "Mundurkan kaki kiri ke kiri belakang dan tekuk lutut kanan; sambil bergeser ke belakang, geser kaki kanan setengah langkah ke belakang dengan telapak depannya, tumit terangkat dan lutut sedikit ditekuk, memutar ke kanan; tekuk lengan dan bawa pedang ke bawah rusuk kanan, hukou ke atas, bilah tegak dan ujung ke atas, jari pedang di pergelangan kanan; pandangan ke kanan.",
+          "Tolak dengan kaki kiri dan, sambil bergeser ke depan, langkahkan kaki kanan ke depan kanan, ujung kaki ke dalam, tumit kiri meluncur setengah langkah, menjadi mabu, putar ke kiri; dorong pedang tegak datar ke depan kanan, pergelangan setinggi dada, ujung ke atas, tenaga di sepanjang mata pedang depan, sementara jari pedang mendorong melewati dada ke kiri setinggi bahu, telapak ke luar; pandangan ke kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A power release: mabu and the push coincide; turn the waist and sink the hips so the power flows smoothly."
+        ],
+        "id": [
+          "Pelepasan tenaga: mabu dan dorongan bersamaan; putar pinggang dan turunkan pinggul agar tenaga mengalir luwes."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 703–704, 图 J-92 to J-93",
+      "start_sec": 202.0,
+      "end_sec": 207.0
+    },
+    {
+      "number": 34,
+      "section": 1,
+      "book_number": 33,
+      "name_zh": "独立上托",
+      "name_pinyin": "Dúlì shàngtuō",
+      "name_en": "Dulibu, Lift Up",
+      "name_id": "Dulibu, Angkat ke Atas",
+      "steps": {
+        "en": [
+          "Shift left, cross the right foot behind to the left and turn right; with the wrist as the axis rotate out so the tip circles down, back and up in a vertical circle at the right side to beside the head, tip to the upper right, wrist at chest height, the sword fingers swinging slightly forward; look to the right front.",
+          "Shift back and squat, pivoting on the left heel and right ball to turn about 180° back to the right; rotate the forearm in and, hilt leading, swing the sword down and back to the right to above the front of the right knee, tip forward, the sword fingers at the right wrist; watch the tip.",
+          "Turn slightly right, stand on the naturally straight right leg and lift the left knee; rotate the arm in and lift the sword up to about 10 cm above the right forehead, blade level and tip left, the sword fingers at the inside of the right forearm; look left."
+        ],
+        "id": [
+          "Geser ke kiri, silangkan kaki kanan ke belakang ke kiri dan putar ke kanan; dengan pergelangan sebagai poros putar ke luar sehingga ujung berputar ke bawah, ke belakang dan ke atas dalam lingkaran vertikal di sisi kanan ke samping kepala, ujung ke kanan atas, pergelangan setinggi dada, jari pedang berayun sedikit ke depan; pandangan ke depan kanan.",
+          "Geser ke belakang dan jongkok, berporos pada tumit kiri dan telapak depan kanan untuk berbalik sekitar 180° ke kanan; putar lengan bawah ke dalam dan, dengan gagang memimpin, ayunkan pedang ke bawah dan ke kanan belakang ke depan atas lutut kanan, ujung ke depan, jari pedang di pergelangan kanan; pandangan ke ujung pedang.",
+          "Putar sedikit ke kanan, berdiri di kaki kanan yang lurus alami dan angkat lutut kiri; putar lengan ke dalam dan angkat pedang ke atas sekitar 10 cm di atas dahi kanan, bilah mendatar dan ujung ke kiri, jari pedang di sisi dalam lengan bawah kanan; pandangan ke kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Don't lean far forward or stick out the hips in the chabu turn; the knee lift and the lift of the sword coincide. A balance posture: sink the shoulders and the breath for stability."
+        ],
+        "id": [
+          "Jangan terlalu condong ke depan atau menonjolkan pinggul pada putaran chabu; angkat lutut dan angkatan pedang bersamaan. Sikap keseimbangan: turunkan bahu dan napas agar stabil."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 704–705, 图 J-94 to J-96",
+      "start_sec": 207.0,
+      "end_sec": 214.5
+    },
+    {
+      "number": 35,
+      "section": 1,
+      "book_number": 34,
+      "name_zh": "进步挂剑",
+      "name_pinyin": "Jìnbù guàjiàn",
+      "name_en": "Jinbu, Hook the Sword",
+      "name_id": "Jinbu, Kait Pedang",
+      "steps": {
+        "en": [
+          "Swing-step the left foot to the left and shift forward, right heel up, turning slightly left; hook the sword down to the left, palm in, the sword fingers at the inside of the right upper arm; look toward the tip.",
+          "Shift forward and swing-step the right foot forward, turning slightly right; arc the sword over the top and forward, rotating the forearm out, palm up, tip forward and below the wrist; look toward the tip.",
+          "Shift forward onto the right foot, left heel up, turning slightly right; thread-hook the sword in an arc to the right, palm out, the sword fingers rising to above the head; look toward the tip.",
+          "Shift forward and swing-step the left foot forward, heel first, turning slightly left; reach the sword out to the right, palm up, wrist at waist height, tip to the lower right, the sword fingers dropping to shoulder height; look along the sword fingers.",
+          "Shift forward and half squat on the left leg, stepping the right foot to the right front into right xubu, turning about 90° left; peck the sword over the top to the lower right front while the sword fingers arc down and left to above the head; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kiri berayun ke kiri dan geser ke depan, tumit kanan terangkat, putar sedikit ke kiri; kaitkan pedang ke kiri bawah, telapak ke dalam, jari pedang di sisi dalam lengan atas kanan; pandangan ke arah ujung pedang.",
+          "Geser ke depan dan langkahkan kaki kanan berayun ke depan, putar sedikit ke kanan; lengkungkan pedang melewati atas ke depan, putar lengan bawah ke luar, telapak ke atas, ujung ke depan dan di bawah pergelangan; pandangan ke arah ujung pedang.",
+          "Geser ke depan ke kaki kanan, tumit kiri terangkat, putar sedikit ke kanan; tusuk-kaitkan pedang melengkung ke kanan, telapak ke luar, jari pedang naik ke atas kepala; pandangan ke arah ujung pedang.",
+          "Geser ke depan dan langkahkan kaki kiri berayun ke depan, tumit dulu, putar sedikit ke kiri; julurkan pedang ke kanan, telapak ke atas, pergelangan setinggi pinggang, ujung ke kanan bawah, jari pedang turun setinggi bahu; pandangan searah jari pedang.",
+          "Geser ke depan dan setengah jongkok di kaki kiri, langkahkan kaki kanan ke depan kanan menjadi xubu kanan, putar sekitar 90° ke kiri; patukkan pedang melewati atas ke depan kanan bawah sementara jari pedang melengkung ke bawah dan ke kiri ke atas kepala; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Left and right hooks in vertical circles close to the body, linked and round, the left hook with a left turn and the right with a right turn; steady weight, each step heel first; xubu and the peck coincide."
+        ],
+        "id": [
+          "Kaitan kiri dan kanan dalam lingkaran vertikal dekat badan, bersambung dan bulat, kaitan kiri bersama putaran ke kiri dan kanan bersama putaran ke kanan; berat stabil, setiap langkah tumit dulu; xubu dan patukan bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 705–707, 图 J-97 to J-101",
+      "start_sec": 214.5,
+      "end_sec": 227.0
+    },
+    {
+      "number": 36,
+      "section": 1,
+      "book_number": 35,
+      "name_zh": "歇步崩剑",
+      "name_pinyin": "Xiēbù bēngjiàn",
+      "name_en": "Xiebu, Snap the Sword",
+      "name_id": "Xiebu, Sentak Pedang",
+      "steps": {
+        "en": [
+          "Turn the right heel in and settle it in a half squat, left heel up, shifting forward and turning right; cock the wrist and draw the sword back beside the right hip, palm in, tip to the upper left slightly below the shoulder, the sword fingers on the right wrist; look to the lower right front.",
+          "Shift slightly left, bend the right knee and step the left foot to the left into right gongbu, turning slightly right; slice the sword back-handed down and up to the right, wrist at chest height, palm back, tip right, the sword fingers swinging down and out to the left at shoulder height; watch the tip.",
+          "Shift back and step the right foot behind the left into xiebu, turning slightly right; turn the tiger's mouth up and sink the wrist to snap the sword, wrist at waist height, the sword fingers rising to the upper left, arm rounded; look to the right front."
+        ],
+        "id": [
+          "Putar tumit kanan ke dalam dan mantapkan dalam setengah jongkok, tumit kiri terangkat, geser ke depan dan putar ke kanan; tekuk pergelangan dan tarik pedang ke samping pinggul kanan, telapak ke dalam, ujung ke kiri atas sedikit di bawah bahu, jari pedang di pergelangan kanan; pandangan ke depan kanan bawah.",
+          "Geser sedikit ke kiri, tekuk lutut kanan dan langkahkan kaki kiri ke kiri menjadi gongbu kanan, putar sedikit ke kanan; sabet pedang terbalik ke bawah lalu ke kanan atas, pergelangan setinggi dada, telapak ke belakang, ujung ke kanan, jari pedang berayun ke bawah lalu ke kiri setinggi bahu; pandangan ke ujung pedang.",
+          "Geser ke belakang dan langkahkan kaki kanan ke belakang kaki kiri menjadi xiebu, putar sedikit ke kanan; balik hukou ke atas dan turunkan pergelangan untuk menyentak pedang, pergelangan setinggi pinggang, jari pedang naik ke kiri atas, lengan membulat; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Xiebu and the snap coincide; sink the wrist so power reaches the tip; don't shift forward until the right heel has settled."
+        ],
+        "id": [
+          "Xiebu dan sentakan bersamaan; turunkan pergelangan agar tenaga sampai ke ujung; jangan bergeser ke depan sebelum tumit kanan mantap."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 708–709, 图 J-102 to J-104",
+      "start_sec": 227.0,
+      "end_sec": 234.5
+    },
+    {
+      "number": 37,
+      "section": 1,
+      "book_number": 36,
+      "name_zh": "弓步反刺",
+      "name_pinyin": "Gōngbù fǎncì",
+      "name_en": "Gongbu, Backhand Thrust",
+      "name_id": "Gongbu, Tusukan Terbalik",
+      "steps": {
+        "en": [
+          "Settle the right foot and stand up straight on it, lifting the left knee, toes hanging, leaning slightly left; bend the arm and raise it to the side, wrist below chest height, so the blade lies slanting above the right shoulder, palm forward, tip to the upper left, the sword fingers dropping to shoulder height; look to the right front.",
+          "Set the left foot down to the left into left gongbu, leaning slightly left; reach the sword forward and up in a probing thrust, the sword fingers meeting the right arm in front at the inside of the right forearm; watch the tip."
+        ],
+        "id": [
+          "Mantapkan kaki kanan dan berdiri tegak di atasnya, angkat lutut kiri, ujung kaki menggantung, sedikit condong ke kiri; tekuk lengan dan angkat ke samping, pergelangan di bawah tinggi dada, sehingga bilah miring di atas bahu kanan, telapak ke depan, ujung ke kiri atas, jari pedang turun setinggi bahu; pandangan ke depan kanan.",
+          "Turunkan kaki kiri ke kiri menjadi gongbu kiri, sedikit condong ke kiri; julurkan pedang ke depan atas dalam tusukan menjulur, jari pedang bertemu lengan kanan di depan di sisi dalam lengan bawah kanan; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Extended and open; gongbu and the thrust coincide; bend the right knee slightly and land the left heel first as the weight sinks."
+        ],
+        "id": [
+          "Memanjang dan terbuka; gongbu dan tusukan bersamaan; tekuk lutut kanan sedikit dan daratkan tumit kiri dulu saat berat turun."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 709, 图 J-105 to J-106",
+      "start_sec": 234.5,
+      "end_sec": 239.5
+    },
+    {
+      "number": 38,
+      "section": 1,
+      "book_number": 37,
+      "name_zh": "转身下刺",
+      "name_pinyin": "Zhuǎnshēn xiàcì",
+      "name_en": "Turn, Low Thrust",
+      "name_id": "Berbalik, Tusukan Rendah",
+      "steps": {
+        "en": [
+          "Shift back and turn right, left toes in; bend the arm and draw the sword back to the left shoulder, palm in, tip right, the sword fingers at the right wrist; look right.",
+          "Shift left and lift the right knee, toes hanging, pivoting on the left ball and turning right; swing the sword right to the front of the right shoulder so the tip arcs down to outside the right knee, palm back, tip slanting down; watch the tip.",
+          "Turning right about 180°, pivot the left heel and set the right foot down to the right rear into right gongbu; thrust the sword forward and down at waist height, palm up, the sword fingers on the right wrist; watch the tip."
+        ],
+        "id": [
+          "Geser ke belakang dan putar ke kanan, ujung kaki kiri ke dalam; tekuk lengan dan tarik pedang kembali ke depan bahu kiri, telapak ke dalam, ujung ke kanan, jari pedang di pergelangan kanan; pandangan ke kanan.",
+          "Geser ke kiri dan angkat lutut kanan, ujung kaki menggantung, berporos pada telapak depan kiri dan berputar ke kanan; ayunkan pedang ke kanan ke depan bahu kanan sehingga ujung melengkung turun ke luar lutut kanan, telapak ke belakang, ujung miring ke bawah; pandangan ke ujung pedang.",
+          "Sambil berputar sekitar 180° ke kanan, putar tumit kiri dan turunkan kaki kanan ke kanan belakang menjadi gongbu kanan; tusukkan pedang ke depan bawah setinggi pinggang, telapak ke atas, jari pedang di pergelangan kanan; pandangan ke ujung pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Linked and round without leaning too far forward; gongbu and the thrust coincide; the waist leads the arms throughout."
+        ],
+        "id": [
+          "Bersambung dan bulat tanpa terlalu condong ke depan; gongbu dan tusukan bersamaan; pinggang memimpin lengan sepanjang gerakan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 710–711, 图 J-107 to J-109",
+      "start_sec": 239.5,
+      "end_sec": 247.0
+    },
+    {
+      "number": 39,
+      "section": 1,
+      "book_number": 38,
+      "name_zh": "提膝提剑",
+      "name_pinyin": "Tíxī tíjiàn",
+      "name_en": "Knee Lift, Raise the Sword",
+      "name_id": "Angkat Lutut, Angkat Pedang",
+      "steps": {
+        "en": [
+          "Shift back and turn left, left toes out, half squatting on the left leg with the right leg naturally straight; hilt leading, bend and rotate the arm out to carry the sword up to the upper left about 20 cm from the head, palm in, tip right, the sword fingers at the forearm; watch the tip.",
+          "Shift right, bending the right knee with the left leg naturally straight and left heel out, turning slightly right; hilt leading, rotate the forearm in, palm down, and swing past the belly to about 30 cm in front of the right chest, the tip arcing over to the right front below the wrist; watch the tip.",
+          "Lift the left knee into right dulibu, turning slightly right and leaning slightly forward; hilt leading, raise the sword in an arc right and up so the arm is rounded at the right front, wrist at forehead height, tiger's mouth slanting down, the tip by the outside of the left knee, while the sword fingers arc past the belly out to the left at waist height; look to the lower left front."
+        ],
+        "id": [
+          "Geser ke belakang dan putar ke kiri, ujung kaki kiri ke luar, setengah jongkok di kaki kiri dengan kaki kanan lurus alami; dengan gagang memimpin, tekuk dan putar lengan ke luar membawa pedang ke kiri atas sekitar 20 cm dari kepala, telapak ke dalam, ujung ke kanan, jari pedang di lengan bawah; pandangan ke ujung pedang.",
+          "Geser ke kanan, tekuk lutut kanan dengan kaki kiri lurus alami dan tumit kiri ke luar, putar sedikit ke kanan; dengan gagang memimpin, putar lengan bawah ke dalam, telapak ke bawah, dan ayunkan melewati perut ke sekitar 30 cm di depan dada kanan, ujung melengkung melewati atas ke depan kanan di bawah pergelangan; pandangan ke ujung pedang.",
+          "Angkat lutut kiri menjadi dulibu kanan, putar sedikit ke kanan dan condong sedikit ke depan; dengan gagang memimpin, angkat pedang melengkung ke kanan dan ke atas sehingga lengan membulat di depan kanan, pergelangan setinggi dahi, hukou miring ke bawah, ujung di samping luar lutut kiri, sementara jari pedang melengkung melewati perut ke kiri setinggi pinggang; pandangan ke depan kiri bawah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The knee lift and the raise of the sword coincide; keep from tilting forward or back, the shoulder relaxed and the crown lifted."
+        ],
+        "id": [
+          "Angkat lutut dan angkatan pedang bersamaan; jangan miring ke depan atau ke belakang, bahu rileks dan ubun-ubun terangkat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 711–712, 图 J-110 to J-112",
+      "start_sec": 247.0,
+      "end_sec": 254.5
+    },
+    {
+      "number": 40,
+      "section": 1,
+      "book_number": 39,
+      "name_zh": "行步穿剑",
+      "name_pinyin": "Xíngbù chuānjiàn",
+      "name_en": "Xingbu, Thread the Sword",
+      "name_id": "Xingbu, Tusuk Menyusur",
+      "steps": {
+        "en": [
+          "Bend the right knee and set the left foot down to the left, heel first, turning left; turn the palm up and, tip leading, thread the sword under the left ribs to the left and forward, wrist at waist height, tip forward, the sword fingers arcing to the front of the right shoulder; watch the tip.",
+          "Shift forward onto the slightly bent left leg and swing-step the right foot out to the right, turning right; tip leading, thread the sword forward and round to the right at chest height, the sword fingers opening past the chest out to the left, arm rounded; watch the tip.",
+          "Shift forward and hook the left foot in to the right, turning slightly right, the hands unchanged; then take one more step each with the right and left feet."
+        ],
+        "id": [
+          "Tekuk lutut kanan dan turunkan kaki kiri ke kiri, tumit dulu, putar ke kiri; balik telapak ke atas dan, dengan ujung memimpin, tusukkan pedang di bawah rusuk kiri ke kiri lalu ke depan, pergelangan setinggi pinggang, ujung ke depan, jari pedang melengkung ke depan bahu kanan; pandangan ke ujung pedang.",
+          "Geser ke depan ke kaki kiri yang sedikit ditekuk dan langkahkan kaki kanan berayun ke kanan, putar ke kanan; dengan ujung memimpin, tusukkan pedang ke depan lalu memutar ke kanan setinggi dada, jari pedang terbuka melewati dada ke kiri, lengan membulat; pandangan ke ujung pedang.",
+          "Geser ke depan dan kaitkan kaki kiri ke dalam ke kanan, putar sedikit ke kanan, kedua tangan tidak berubah; lalu ambil satu langkah lagi masing-masing dengan kaki kanan dan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Sink and twist the waist slightly to store power as you thread; toe the left foot in and the right foot out, walking steadily without bobbing, five steps in all on a circular path, not leaning forward."
+        ],
+        "id": [
+          "Turunkan dan putar pinggang sedikit untuk menyimpan tenaga saat menusuk; ujung kaki kiri ke dalam dan kanan ke luar, berjalan stabil tanpa naik turun, lima langkah seluruhnya di jalur melingkar, tanpa condong ke depan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 713–714, 图 J-113 to J-115",
+      "start_sec": 254.5,
+      "end_sec": 262.0
+    },
+    {
+      "number": 41,
+      "section": 1,
+      "book_number": 40,
+      "name_zh": "摆腿架剑",
+      "name_pinyin": "Bǎituǐ jiàjiàn",
+      "name_en": "Outside Leg Swing, Block Overhead",
+      "name_id": "Ayunan Kaki Luar, Tangkisan Atas Kepala",
+      "steps": {
+        "en": [
+          "Rotate the forearm in so the tip circles anticlockwise in front of the head, then bend the arm and swing the sword to the left ribs, tip to the upper left; as the sword passes the face, swing the right leg outward and, at level, fold the shin; the sword fingers meet the right hand in front of the face and rest on the right wrist; look ahead.",
+          "Bend the left knee and set the right foot down to the right front, turning slightly right; wipe the sword forward and round to the right in an arc, wrist at chest height, palm down, tip left; watch the front of the blade.",
+          "Half squat on the right leg and turn the left heel out into right gongbu, turning slightly left; lift the sword up to block overhead, tip forward, while the sword fingers rise with the right hand and then point forward past the face, fingers up, at nose height; look along the sword fingers."
+        ],
+        "id": [
+          "Putar lengan bawah ke dalam sehingga ujung berputar berlawanan arah jarum jam di depan kepala, lalu tekuk lengan dan ayunkan pedang ke rusuk kiri, ujung ke kiri atas; saat pedang lewat di depan wajah, ayunkan kaki kanan ke luar dan, saat mendatar, lipat tungkai bawah; jari pedang bertemu tangan kanan di depan wajah dan menempel di pergelangan kanan; pandangan ke depan.",
+          "Tekuk lutut kiri dan turunkan kaki kanan ke depan kanan, putar sedikit ke kanan; usap pedang ke depan lalu memutar ke kanan melengkung, pergelangan setinggi dada, telapak ke bawah, ujung ke kiri; pandangan ke bagian depan bilah.",
+          "Setengah jongkok di kaki kanan dan putar tumit kiri ke luar menjadi gongbu kanan, putar sedikit ke kiri; angkat pedang menangkis di atas kepala, ujung ke depan, sementara jari pedang naik bersama tangan kanan lalu menunjuk ke depan melewati wajah, jari ke atas, setinggi hidung; pandangan searah jari pedang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The leg swing is no lower than the chest and works closely with the sword and sword fingers; gongbu, wipe and block coincide; sword fingers and sword point the same way. Practise the swing empty-handed for control."
+        ],
+        "id": [
+          "Ayunan kaki tidak lebih rendah dari dada dan bekerja rapat dengan pedang dan jari pedang; gongbu, usapan dan tangkisan bersamaan; jari pedang dan pedang mengarah sama. Latih ayunan tanpa senjata untuk kendali."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 714–715, 图 J-116 to J-119",
+      "start_sec": 262.0,
+      "end_sec": 269.5
+    },
+    {
+      "number": 42,
+      "section": 1,
+      "book_number": 41,
+      "name_zh": "弓步直刺",
+      "name_pinyin": "Gōngbù zhícì",
+      "name_en": "Gongbu, Straight Thrust",
+      "name_id": "Gongbu, Tusukan Lurus",
+      "steps": {
+        "en": [
+          "Shift onto the right foot and draw the left foot in beside the right leg without touching down; bring the sword down past the right to beside the right hip, tiger's mouth forward, tip forward, the sword fingers coming down past the left to the left hip, palm down; look to the lower left front.",
+          "Step the left foot forward into left gongbu, turning slightly left; thrust the upright blade level forward, the sword fingers meeting the right hand at the chest, resting on the right wrist and reaching forward, palm slanting down; look ahead."
+        ],
+        "id": [
+          "Pindahkan berat ke kaki kanan dan tarik kaki kiri ke samping kaki kanan tanpa menyentuh lantai; bawa pedang turun melewati kanan ke samping pinggul kanan, hukou ke depan, ujung ke depan, jari pedang turun melewati kiri ke pinggul kiri, telapak ke bawah; pandangan ke depan kiri bawah.",
+          "Langkahkan kaki kiri ke depan menjadi gongbu kiri, putar sedikit ke kiri; tusukkan bilah tegak datar ke depan, jari pedang bertemu tangan kanan di depan dada, menempel di pergelangan kanan dan menjulur ke depan, telapak miring ke bawah; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Gongbu and thrust coincide; the trunk stands naturally upright without pushing out the belly or hips; the feet not on one line; look straight ahead."
+        ],
+        "id": [
+          "Gongbu dan tusukan bersamaan; badan berdiri tegak alami tanpa membusungkan perut atau pinggul; kaki tidak segaris; pandangan lurus ke depan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 715, 图 J-120 to J-121",
+      "start_sec": 269.5,
+      "end_sec": 274.5
+    },
+    {
+      "number": 43,
+      "section": 1,
+      "book_number": 42,
+      "name_zh": "收势",
+      "name_pinyin": "Shōushì",
+      "name_en": "Closing Form",
+      "name_id": "Sikap Penutup",
+      "steps": {
+        "en": [
+          "Shift back, bend the right knee and turn right; bend the arm and draw the sword back to the right chest, the sword fingers moving with the wrist so the palms face each other ready to pass the sword, the blade lightly against the outside of the left forearm; look forward and down.",
+          "Turn left, shift forward and step the right foot up into pingxingbu; the left hand opens and takes the sword in a reverse grip, swinging it past the belly to beside the left hip, palm back, blade vertical and tip up, while the right hand becomes sword fingers and arcs down and back to the right, then bends up beside the right ear, palm in, fingers up at head height; look ahead.",
+          "Straighten the legs naturally while the sword fingers come down past the chest to the right side; then bring the left foot to the right and stand naturally, arms at the sides; look ahead."
+        ],
+        "id": [
+          "Geser ke belakang, tekuk lutut kanan dan putar ke kanan; tekuk lengan dan tarik pedang kembali ke dada kanan, jari pedang ikut bergerak dengan pergelangan sehingga telapak saling berhadapan siap menyerahkan pedang, bilah menempel ringan di sisi luar lengan bawah kiri; pandangan ke depan bawah.",
+          "Putar ke kiri, geser ke depan dan langkahkan kaki kanan menjadi pingxingbu; tangan kiri membuka dan mengambil pedang dengan pegangan terbalik, mengayunkannya melewati perut ke samping pinggul kiri, telapak ke belakang, bilah tegak dan ujung ke atas, sementara tangan kanan menjadi jari pedang dan melengkung turun ke kanan belakang, lalu menekuk naik ke samping telinga kanan, telapak ke dalam, jari ke atas setinggi kepala; pandangan ke depan.",
+          "Luruskan kaki dengan alami sementara jari pedang turun melewati dada ke sisi kanan; lalu rapatkan kaki kiri ke kaki kanan dan berdiri alami, lengan di samping; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Linked, round and slow; when standing with the feet together relax the whole body, breathe out deeply and let the spirit and breath return to the centre; pass the sword accurately, shoulders sunk and breathing even."
+        ],
+        "id": [
+          "Bersambung, bulat dan pelan; saat berdiri dengan kaki rapat rilekskan seluruh badan, buang napas dalam dan biarkan semangat dan napas kembali ke pusat; serahkan pedang dengan tepat, bahu turun dan napas teratur."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taiji Sword, p. 716–717, 图 J-122 to J-125",
+      "start_sec": 274.5,
+      "end_sec": 282.0
+    }
+  ]
+}

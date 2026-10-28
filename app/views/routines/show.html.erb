@@ -8,7 +8,7 @@
        data-routine-player-moves-value="<%= @movements.map(&:player_data).to_json %>"
        data-routine-player-total-value="<%= total %>"
        data-routine-player-selected-value="<%= @selected&.number.to_i %>"
-       data-routine-player-start-value="<%= carpet_points(@routine, []).first.to_json %>"
+       data-routine-player-start-value="<%= (carpet_points(@routine, []).first || []).to_json %>"
        data-routine-player-play-label-value="<%= t("routines.player.play") %>"
        data-routine-player-pause-label-value="<%= t("routines.player.pause") %>"
        data-action="figure-viewer:seek->routine-player#seekTo keydown.left@window->routine-player#prevKey keydown.right@window->routine-player#nextKey">
@@ -22,7 +22,7 @@
           <span class="stage__tag"><%= t("routines.player.sample_video") %></span>
           <span class="stage__clock mono"><span data-routine-player-target="clock">0:00</span> / <%= clock(total) %></span>
           <div class="stage__now" aria-live="polite">
-            <span class="stage__count">第<span data-routine-player-target="nowCn"><%= first.cn_number %></span>式 · <span data-routine-player-target="nowNum"><%= first.number %></span> / <%= @movements.size %></span>
+            <span class="stage__count"><span data-routine-player-target="nowCn"><%= first.cn_label %></span> · <span data-routine-player-target="nowNum"><%= first.number %></span> / <%= @movements.size %></span>
             <span class="stage__zh" data-routine-player-target="nowZh"><%= first.name_zh %></span>
             <span class="stage__py" data-routine-player-target="nowPy"><%= first.name_pinyin %></span>
             <span class="stage__tr" data-routine-player-target="nowTr"><%= first.name_tr %></span>

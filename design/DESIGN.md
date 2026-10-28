@@ -58,20 +58,22 @@ Sample content: **四十二式太极拳 (42-Form Competition Taijiquan)** from t
 
 ## Sources and illustrations
 
-OpenWushu uses **one modern wushu reference as its only source**: a collection of **competition routines (竞赛套路)**, available to the project only as a 720-page scan (PDF created July 2008). The scan has no title page or 版权页, so the title, publisher, year and ISBN are unknown; cite it as **"Competition routines collection (scan)"** with routine, page and figure. Each routine has 动作名称 (movement names), 动作说明 (steps with 要点 and 教法提示) and line-drawing figures numbered by a routine letter:
+OpenWushu uses **one modern wushu reference as its only source**: the **IWUF 1st compulsory routines**, a collection of **competition routines (竞赛套路)** known to the project as *B Junior* and available only as a 720-page scan (PDF created July 2008). The scan has no title page or 版权页, so the publisher, year and ISBN are unknown; cite it as **"IWUF 1st Compulsory Routines (B Junior)"** with routine, page and figure (citations made before the title was known, "Competition routines collection (scan)", are renamed by `db/seeds.rb`). Each routine has 动作名称 (movement names), 动作说明 (steps with 要点 and 教法提示) and line-drawing figures numbered by a routine letter:
 
 | Book page | Routine | Figures |
 |---|---|---|
-| 1 | 长拳 Changquan (58 movements + 起势/收势, 4 sections) | 图 A-… |
-| 69 | 刀术 Broadsword | 图 B-… |
-| 153 | 剑术 Straight sword | 图 C-… |
-| 233 | 棍术 Staff | 图 D-… |
-| 325 | 枪术 Spear | 图 E-… |
-| 420 | 南拳 Southern fist | 图 F-… |
-| 482 | 南刀 Southern broadsword | 图 G-… |
-| 535 | 南棍 Southern staff | 图 H-… |
-| 596 | 太极拳 42-form competition Taijiquan (4 sections) | 图 I-… |
-| 660 | 太极剑 Taiji sword | 图 J-… |
+| 1 | 长拳 Northern Fist (Tinju Utara): 起势 （一）（二）, 58 movements in 4 sections, 收势 （一）（二） | 图 A-1 – A-174 |
+| 69 | 刀术 Broadsword: 58 movements in 4 sections | 图 B-1 – B-174 |
+| 153 | 剑术 Straight sword: 起势, 51 movements in 4 sections, 收势 | 图 C-1 – C-147 |
+| 233 | 棍术 Staff: 起势, 48 movements in 4 sections, 收势 | 图 D-1 – D-187 |
+| 325 | 枪术 Spear: 53 movements in 4 sections (起势 and 收势 are （一） and （五十三）) | 图 E-1 – E-201 |
+| 420 | 南拳 Southern fist: 64 movements in 4 sections, 收势 | 图 F-1 – F-190 |
+| 482 | 南刀 Southern broadsword: 起势, 66 movements in 4 sections, 收势 | 图 G-1 – G-138 |
+| 535 | 南棍 Southern staff: 起势, 66 movements in 4 sections, 收势 | 图 H-1 – H-128 |
+| 596 | 太极拳 42-form competition Taijiquan: 42 movements in 4 sections | 图 I-1 – I-194 |
+| 660 | 太极剑 42-form Taiji sword: 预备势, then 42 movements with no 段 | 图 J-1 – J-125 |
+
+Each routine is seeded from `db/seeds/routines/<slug>.json`. A movement's `number` is its position in the routine (used in URLs and the timeline); `book_number` is the numeral the book prints, which restarts inside 起势 and 收势. Groups outside the numbered 段 use section −1 (预备势), 0 (起势) and 99 (收势), and a movement the book leaves unnumbered shows its own name instead of 第N式. Where the book's name list and its description heading disagree (剑术 （三十七）, （四十九）; 枪术 （三十八）), the heading is used and the citation notes the list's variant. Stance and step names stay as pinyin terms in both English and Indonesian rather than being translated: mabu, banmabu, gongbu, hengdangbu, xubu, pubu, xiebu, qilongbu, dingbu, dandiebu, guibu, zuopan, qiandianbu, houdianbu, dulibu, bingbu, chabu, gaibu, guaibu, qilinbu, genbu, shangbu, tuibu, tiaobu and so on ("left gongbu", "gongbu kiri"). Classic Taijiquan movement names (Brush Knee and Twist Step, Step Up to Seven Stars…) keep their established translations. Timings in the seeds are an even practice clock, not measured from a video, and the carpet path is left empty until it is measured.
 
 Book page *n* is PDF page *n + 1*. The scan itself is never committed (`*.pdf` is in `.gitignore`). It is a modern publication and must be treated as copyrighted, so:
 

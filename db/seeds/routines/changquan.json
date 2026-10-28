@@ -1,0 +1,2243 @@
+{
+  "routine": {
+    "slug": "changquan",
+    "style": "chang",
+    "name_zh": "长拳",
+    "name_pinyin": "Chángquán",
+    "name_en": "Northern Fist",
+    "name_id": "Tinju Utara",
+    "card_zh": "长",
+    "reference_page": 1,
+    "reference_figure": "A",
+    "position": 10,
+    "status": "awaiting"
+  },
+  "movements": [
+    {
+      "number": 1,
+      "section": 0,
+      "book_number": 1,
+      "name_zh": "预备势",
+      "name_pinyin": "Yùbèishì",
+      "name_en": "Ready Stance",
+      "name_id": "Sikap Siap",
+      "steps": {
+        "en": [
+          "Stand with the feet together, arms hanging at the sides, fingers together against the outer thighs; look ahead.",
+          "Turn the body 45° to the right, feet still together; look ahead."
+        ],
+        "id": [
+          "Berdiri dengan kaki rapat, lengan tergantung di samping badan, jari rapat menempel di sisi luar paha; pandangan ke depan.",
+          "Putar badan 45° ke kanan, kaki tetap rapat; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Tuck the chin slightly and lift the crown of the head; chest open, waist upright, abdomen drawn in."
+        ],
+        "id": [
+          "Dagu sedikit ditarik dan ubun-ubun terangkat; dada terbuka, pinggang tegak, perut ditarik."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 3–4, 图 A-1 to A-2",
+      "start_sec": 0.0,
+      "end_sec": 5.0
+    },
+    {
+      "number": 2,
+      "section": 0,
+      "book_number": 2,
+      "name_zh": "并步按掌",
+      "name_pinyin": "Bìngbù ànzhǎng",
+      "name_en": "Bingbu, Press Palms",
+      "name_id": "Bingbu, Tekan Telapak",
+      "steps": {
+        "en": [
+          "Swing both arms out and up overhead, palms facing forward; watch the right hand.",
+          "Bend the elbows and press both palms down past the chest to the sides of the hips, palms slightly turned in and fingers pointing diagonally forward; look to the left front."
+        ],
+        "id": [
+          "Ayunkan kedua lengan ke samping lalu ke atas kepala, telapak menghadap depan; pandangan ke tangan kanan.",
+          "Tekuk siku dan tekan kedua telapak turun melewati dada ke samping pinggul, telapak sedikit menghadap ke dalam dan jari ke depan serong; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Chest open and waist upright; the palm press and the head turn to the left happen together."
+        ],
+        "id": [
+          "Dada terbuka dan pinggang tegak; tekanan telapak dan tolehan kepala ke kiri dilakukan bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 4–5, 图 A-3 to A-4",
+      "start_sec": 5.0,
+      "end_sec": 10.0
+    },
+    {
+      "number": 3,
+      "section": 1,
+      "book_number": 1,
+      "name_zh": "并步撩掌",
+      "name_pinyin": "Bìngbù liāozhǎng",
+      "name_en": "Bingbu, Swing Palms Up",
+      "name_id": "Bingbu, Ayun Telapak ke Atas",
+      "steps": {
+        "en": [
+          "Rotate the arms outward, tiger's mouths up, and swing them out and up to shoulder level; watch the left palm."
+        ],
+        "id": [
+          "Putar lengan ke luar, hukou (sela ibu jari) menghadap atas, lalu ayunkan ke samping dan ke atas setinggi bahu; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Swing the palms up a little slowly, the eyes following the left hand."
+        ],
+        "id": [
+          "Ayunkan telapak agak pelan, mata mengikuti tangan kiri."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 5, 图 A-5",
+      "start_sec": 10.0,
+      "end_sec": 13.0
+    },
+    {
+      "number": 4,
+      "section": 1,
+      "book_number": 2,
+      "name_zh": "歇步挑掌",
+      "name_pinyin": "Xiēbù tiǎozhǎng",
+      "name_en": "Xiebu, Flick Palm Up",
+      "name_id": "Xiebu, Cungkil Telapak",
+      "steps": {
+        "en": [
+          "Step the right foot out to the right and turn slightly left; swing the right palm low then forward to level, palm up, while the left hand comes to the right chest as a standing palm; watch the right palm.",
+          "Cross the left foot behind the right and sink into xiebu, turning right; bend the right arm up to block above the head while the left palm drops beside the right ribs; watch the left palm.",
+          "Swing the left palm low then forward and up; at shoulder height bend the wrist back and flick it up into a standing palm; watch the left palm."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke kanan dan putar sedikit ke kiri; ayunkan telapak kanan dari bawah ke depan setinggi datar, telapak menghadap atas, sementara tangan kiri ke depan dada kanan sebagai telapak tegak; pandangan ke telapak kanan.",
+          "Silangkan kaki kiri di belakang kaki kanan dan turun ke xiebu (歇步), badan berputar ke kanan; tekuk lengan kanan ke atas menangkis di atas kepala, telapak kiri turun ke samping rusuk kanan; pandangan ke telapak kiri.",
+          "Ayunkan telapak kiri dari bawah ke depan atas; setinggi bahu tekuk pergelangan ke belakang dan cungkil ke atas menjadi telapak tegak; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The wrist flick is crisp and strong.",
+          "Beginners can learn it in three parts, then join them."
+        ],
+        "id": [
+          "Cungkilan pergelangan tegas dan bertenaga.",
+          "Pemula boleh mempelajarinya dalam tiga bagian, lalu menyambungnya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 5–6, 图 A-6 to A-8",
+      "start_sec": 13.0,
+      "end_sec": 20.5
+    },
+    {
+      "number": 5,
+      "section": 1,
+      "book_number": 3,
+      "name_zh": "上步拍脚",
+      "name_pinyin": "Shàngbù pāijiǎo",
+      "name_en": "Shangbu, Slap Foot",
+      "name_id": "Shangbu, Tepuk Kaki",
+      "steps": {
+        "en": [
+          "Step the left foot forward and straighten both legs; lower the straight right arm to shoulder level, tiger's mouth up; look ahead.",
+          "Turn slightly left and shift forward, left knee slightly bent; swing both hands up in front of the head and strike the left palm with the back of the right hand.",
+          "Swing the straight right leg up with the instep flat and meet the instep with the right palm in front of the face; the left palm rises to the upper left; watch the right foot.",
+          "Set the right foot down forward and lower both hands to flat palms, palms down; watch the right hand."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan dan luruskan kedua kaki; turunkan lengan kanan yang lurus setinggi bahu, hukou menghadap atas; pandangan ke depan.",
+          "Putar sedikit ke kiri dan geser berat badan ke depan, lutut kiri sedikit ditekuk; ayunkan kedua tangan ke atas depan kepala dan pukul telapak kiri dengan punggung tangan kanan.",
+          "Ayunkan kaki kanan lurus ke atas dengan punggung kaki rata dan sambut punggung kaki dengan telapak kanan di depan wajah; telapak kiri naik ke kiri atas; pandangan ke kaki kanan.",
+          "Turunkan kaki kanan ke depan dan turunkan kedua tangan menjadi telapak datar, telapak menghadap bawah; pandangan ke tangan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The slaps are loud and crisp, the hand clap and foot slap linked and quick."
+        ],
+        "id": [
+          "Tepukan nyaring dan tegas; tepuk tangan dan tepuk kaki bersambung dan cepat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 6–8, 图 A-9 to A-12",
+      "start_sec": 20.5,
+      "end_sec": 30.5
+    },
+    {
+      "number": 6,
+      "section": 1,
+      "book_number": 4,
+      "name_zh": "弓步推掌",
+      "name_pinyin": "Gōngbù tuīzhǎng",
+      "name_en": "Gongbu, Push Palm",
+      "name_id": "Gongbu, Dorong Telapak",
+      "steps": {
+        "en": [
+          "Turn back to the right, stand on the straight right leg and lift the left knee; the left palm swings up to a flashing palm overhead while the right palm swings back to the right at shoulder level, fingers up; watch the right palm.",
+          "Step the left foot down to the left into banmabu; press the left palm down above the left knee, little-finger edge forward, and draw the right palm to the right waist; look to the left front.",
+          "Shift forward and straighten the right leg into left gongbu while pushing the right palm forward from the waist, fingers up; watch the right palm."
+        ],
+        "id": [
+          "Putar badan ke kanan belakang, berdiri di kaki kanan lurus dan angkat lutut kiri; telapak kiri diayun ke atas kepala menjadi telapak kilat (亮掌), telapak kanan ke kanan belakang setinggi bahu, jari ke atas; pandangan ke telapak kanan.",
+          "Turunkan kaki kiri ke kiri menjadi banmabu; tekan telapak kiri ke atas lutut kiri, sisi kelingking ke depan, dan tarik telapak kanan ke pinggang kanan; pandangan ke depan kiri.",
+          "Geser berat badan ke depan dan luruskan kaki kanan menjadi gongbu kiri sambil mendorong telapak kanan dari pinggang ke depan, jari ke atas; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Twist the waist and extend the shoulder as you push, fast and strong; leg, waist, shoulder and palm finish together."
+        ],
+        "id": [
+          "Pinggang memutar dan bahu menjulur saat mendorong, cepat dan kuat; kaki, pinggang, bahu dan telapak selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 8, 图 A-13 to A-15",
+      "start_sec": 30.5,
+      "end_sec": 38.0
+    },
+    {
+      "number": 7,
+      "section": 1,
+      "book_number": 5,
+      "name_zh": "弓步刁手",
+      "name_pinyin": "Gōngbù diāoshǒu",
+      "name_en": "Gongbu, Hooking Grab",
+      "name_id": "Gongbu, Tangkap Kait",
+      "steps": {
+        "en": [
+          "Rotate the right arm outward and bend the elbow as the right hand hooks and grabs into a fist; the left palm becomes a fist and returns to the left waist; watch the right fist."
+        ],
+        "id": [
+          "Putar lengan kanan ke luar dan tekuk siku sambil tangan kanan mengait dan menangkap menjadi kepalan; telapak kiri menjadi kepalan dan kembali ke pinggang kiri; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Grab with the wrist as the axis, quick and strong."
+        ],
+        "id": [
+          "Tangkap dengan pergelangan sebagai poros, cepat dan kuat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 9, 图 A-16",
+      "start_sec": 38.0,
+      "end_sec": 41.0
+    },
+    {
+      "number": 8,
+      "section": 1,
+      "book_number": 6,
+      "name_zh": "弹踢推掌",
+      "name_pinyin": "Tántī tuīzhǎng",
+      "name_en": "Snap Kick, Push Palm",
+      "name_id": "Tendangan Lenting, Dorong Telapak",
+      "steps": {
+        "en": [
+          "Shift forward and stand on the left leg; lift the right knee and snap the foot forward, instep flat, striking with the toes at hip height, while pushing the left palm forward and drawing the right fist to the waist; watch the left palm."
+        ],
+        "id": [
+          "Geser ke depan dan berdiri di kaki kiri; angkat lutut kanan dan lentingkan kaki ke depan, punggung kaki rata, ujung kaki sebagai titik tenaga setinggi pinggul, sambil mendorong telapak kiri ke depan dan menarik kepalan kanan ke pinggang; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Chest open and waist upright; the kick is crisp and strong and lands with the palm push.",
+          "Lift the thigh to about level before snapping the lower leg out."
+        ],
+        "id": [
+          "Dada terbuka dan pinggang tegak; tendangan tegas dan kuat serta selesai bersama dorongan telapak.",
+          "Angkat paha hingga kira-kira datar sebelum melentingkan tungkai bawah."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 9, 图 A-17",
+      "start_sec": 41.0,
+      "end_sec": 44.0
+    },
+    {
+      "number": 9,
+      "section": 1,
+      "book_number": 7,
+      "name_zh": "弓步冲拳",
+      "name_pinyin": "Gōngbù chōngquán",
+      "name_en": "Gongbu, Punch",
+      "name_id": "Gongbu, Pukulan Lurus",
+      "steps": {
+        "en": [
+          "Step the right foot back, straight, into left gongbu and punch the right fist forward from the waist; the left palm becomes a fist at the left waist; watch the right fist.",
+          "Turn slightly right and punch the left fist forward, fist flat, while the right fist returns to the waist; watch the left fist."
+        ],
+        "id": [
+          "Mundurkan kaki kanan, lurus, menjadi gongbu kiri dan pukulkan kepalan kanan dari pinggang ke depan; telapak kiri menjadi kepalan di pinggang kiri; pandangan ke kepalan kanan.",
+          "Putar sedikit ke kanan dan pukulkan kepalan kiri ke depan, kepalan datar, sementara kepalan kanan kembali ke pinggang; pandangan ke kepalan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Turn the waist and extend the shoulder; punch, pull back and twist all at once."
+        ],
+        "id": [
+          "Putar pinggang dan julurkan bahu; memukul, menarik dan memutar dilakukan serentak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 9–10, 图 A-18 to A-19",
+      "start_sec": 44.0,
+      "end_sec": 49.0
+    },
+    {
+      "number": 10,
+      "section": 1,
+      "book_number": 8,
+      "name_zh": "并步砸拳",
+      "name_pinyin": "Bìngbù záquán",
+      "name_en": "Bingbu, Pound Fist",
+      "name_id": "Bingbu, Hantam Kepalan",
+      "steps": {
+        "en": [
+          "Shift back into right gongbu (right toes out, left toes in); open both fists, lowering the left palm and lifting the bent right arm; watch the left palm.",
+          "Circle the left palm in a full vertical circle while the right hand crosses in front of the belly and circles back and up to a raised fist; turn left, stand on the left leg and lift the right knee; look ahead.",
+          "Stamp the right foot beside the left and half squat; turn the left palm up in front of the belly and pound it with the back of the right fist; watch the right fist."
+        ],
+        "id": [
+          "Geser berat badan ke belakang menjadi gongbu kanan (ujung kaki kanan ke luar, kiri ke dalam); buka kedua kepalan, turunkan telapak kiri dan angkat lengan kanan yang ditekuk; pandangan ke telapak kiri.",
+          "Putar telapak kiri satu lingkaran vertikal penuh sementara tangan kanan menyilang di depan perut lalu berputar ke belakang dan ke atas menjadi kepalan terangkat; putar ke kiri, berdiri di kaki kiri dan angkat lutut kanan; pandangan ke depan.",
+          "Hentakkan kaki kanan di samping kaki kiri dan setengah jongkok; telapak kiri menghadap atas di depan perut dan hantam dengan punggung kepalan kanan; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The stamp and the pound are fast, strong and simultaneous.",
+          "Beginners can practise the arm crossing, knee lift and stamp-pound separately first."
+        ],
+        "id": [
+          "Hentakan kaki dan hantaman kepalan cepat, kuat dan serentak.",
+          "Pemula boleh melatih silang lengan, angkat lutut dan hentak-hantam secara terpisah dulu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 10–11, 图 A-20 to A-22",
+      "start_sec": 49.0,
+      "end_sec": 56.5
+    },
+    {
+      "number": 11,
+      "section": 1,
+      "book_number": 9,
+      "name_zh": "上步拍脚",
+      "name_pinyin": "Shàngbù pāijiǎo",
+      "name_en": "Shangbu, Slap Foot",
+      "name_id": "Shangbu, Tepuk Kaki",
+      "steps": {
+        "en": [
+          "Step the left foot forward and turn slightly right; open the right fist and swing it up to the right rear while the left palm swings up to the left; watch the left palm.",
+          "Turn slightly left; bring the left hand above the head and strike it with the back of the right hand swung up from below; look ahead.",
+          "Swing the right leg up, instep flat, and meet the instep with the right palm; the left palm rises to the upper left; watch the right foot."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan dan putar sedikit ke kanan; buka kepalan kanan dan ayunkan ke kanan belakang atas sementara telapak kiri diayun ke kiri atas; pandangan ke telapak kiri.",
+          "Putar sedikit ke kiri; bawa tangan kiri ke atas kepala dan pukul dengan punggung tangan kanan yang diayun dari bawah; pandangan ke depan.",
+          "Ayunkan kaki kanan ke atas, punggung kaki rata, dan sambut punggung kaki dengan telapak kanan; telapak kiri naik ke kiri atas; pandangan ke kaki kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The slaps are fast, linked and loud."
+        ],
+        "id": [
+          "Tepukan cepat, bersambung dan nyaring."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 11–12, 图 A-23 to A-25",
+      "start_sec": 56.5,
+      "end_sec": 64.0
+    },
+    {
+      "number": 12,
+      "section": 1,
+      "book_number": 10,
+      "name_zh": "提膝冲拳",
+      "name_pinyin": "Tíxī chōngquán",
+      "name_en": "Knee Lift, Punch",
+      "name_id": "Angkat Lutut, Pukulan Lurus",
+      "steps": {
+        "en": [
+          "Set the right foot down to the right front, toes turned in; press the left palm down to shoulder height and draw the right fist to the waist; watch the left palm.",
+          "Turn left, stand on the straight right leg and lift the left knee; punch the right fist out to the right while the left palm comes to the front of the right shoulder; watch the right fist."
+        ],
+        "id": [
+          "Turunkan kaki kanan ke depan kanan, ujung kaki ke dalam; tekan telapak kiri setinggi bahu dan tarik kepalan kanan ke pinggang; pandangan ke telapak kiri.",
+          "Putar ke kiri, berdiri di kaki kanan lurus dan angkat lutut kiri; pukulkan kepalan kanan ke kanan sementara telapak kiri ke depan bahu kanan; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Chest open, waist upright; extend the shoulder into a fast, strong punch, with knee lift and punch finishing together."
+        ],
+        "id": [
+          "Dada terbuka, pinggang tegak; bahu menjulur dalam pukulan cepat dan kuat, angkat lutut dan pukulan selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 12–13, 图 A-26 to A-27",
+      "start_sec": 64.0,
+      "end_sec": 69.0
+    },
+    {
+      "number": 13,
+      "section": 1,
+      "book_number": 11,
+      "name_zh": "腾空转身摆莲",
+      "name_pinyin": "Téngkōng zhuǎnshēn bǎilián",
+      "name_en": "Jumping Turn, Lotus Kick",
+      "name_id": "Lompat Berputar, Tendangan Teratai",
+      "steps": {
+        "en": [
+          "Step the left foot down to the left and turn left, pushing the left palm forward while the right fist returns to the waist.",
+          "Step the right foot to the left front.",
+          "Swing the left knee up and hop off the right foot, pushing the right palm to the upper right and swinging the left arm out to the side.",
+          "Land right then left to the right front, the right palm dropping to shoulder level at the side.",
+          "Step the right foot forward in an arc, toes out, hands down at the sides.",
+          "Swing the left leg up to the right and take off from the right foot, clapping the hands above the head.",
+          "In the air sweep the right leg up and out in an arc, instep flat, slapping it with the left then right hand in front of the face.",
+          "Land on both feet together, bend into a squat and slap the floor with both palms."
+        ],
+        "id": [
+          "Turunkan kaki kiri ke kiri dan putar ke kiri, dorong telapak kiri ke depan sementara kepalan kanan kembali ke pinggang.",
+          "Langkahkan kaki kanan ke depan kiri.",
+          "Ayunkan lutut kiri ke atas dan melompat dari kaki kanan, dorong telapak kanan ke kanan atas dan ayunkan lengan kiri ke samping.",
+          "Mendarat kanan lalu kiri ke depan kanan, telapak kanan turun setinggi bahu di samping.",
+          "Langkahkan kaki kanan ke depan melengkung, ujung kaki ke luar, tangan turun di samping.",
+          "Ayunkan kaki kiri ke kanan atas dan lompat dari kaki kanan, tepukkan tangan di atas kepala.",
+          "Di udara sapukan kaki kanan ke atas dan ke luar melengkung, punggung kaki rata, tepuk dengan tangan kiri lalu kanan di depan wajah.",
+          "Mendarat dengan kedua kaki bersamaan, jongkok dan tepuk lantai dengan kedua telapak."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Get real height; the two slaps are linked and crisp.",
+          "Keep the run-up relaxed and its rhythm from fast to slow; take off quickly and strongly."
+        ],
+        "id": [
+          "Lompatan benar-benar melayang; dua tepukan bersambung dan nyaring.",
+          "Ancang-ancang rileks dengan irama dari cepat ke lambat; tolakan cepat dan kuat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 13–15, 图 A-28 to A-35",
+      "start_sec": 69.0,
+      "end_sec": 89.0
+    },
+    {
+      "number": 14,
+      "section": 1,
+      "book_number": 12,
+      "name_zh": "上步弹踢",
+      "name_pinyin": "Shàngbù tántī",
+      "name_en": "Shangbu, Snap Kick",
+      "name_id": "Shangbu, Tendangan Lenting",
+      "steps": {
+        "en": [
+          "Step the left foot forward; swing the right palm up, palm up, and draw the left palm to the left waist; watch the right palm.",
+          "Shift forward onto the straight left leg and snap-kick the right foot forward; punch the left fist out as a vertical fist while the right fist returns to the waist; look ahead."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan; ayunkan telapak kanan ke atas, telapak menghadap atas, dan tarik telapak kiri ke pinggang kiri; pandangan ke telapak kanan.",
+          "Geser ke depan ke kaki kiri yang lurus dan lentingkan kaki kanan ke depan; pukulkan kepalan kiri sebagai kepalan tegak sementara kepalan kanan kembali ke pinggang; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The kick is crisp and strong, power reaching the toes; bend then extend clearly so it is not a straight-leg swing."
+        ],
+        "id": [
+          "Tendangan tegas dan kuat, tenaga sampai ke ujung kaki; tekuk lalu luruskan dengan jelas agar tidak menjadi ayunan kaki lurus."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 16–17, 图 A-36 to A-37",
+      "start_sec": 89.0,
+      "end_sec": 94.0
+    },
+    {
+      "number": 15,
+      "section": 1,
+      "book_number": 13,
+      "name_zh": "侧身举腿平衡",
+      "name_pinyin": "Cèshēn jǔtuǐ pínghéng",
+      "name_en": "Side Body, Leg-Raise Balance",
+      "name_id": "Badan Menyamping, Keseimbangan Angkat Kaki",
+      "steps": {
+        "en": [
+          "Step the right foot forward and bring the left foot beside it on the ball of the foot (dingbu); press the left palm down in front of the belly and open the right fist at the waist; look ahead.",
+          "Stand on the straight right leg, turn left and tilt the trunk sideways, extending the straight left leg up and back with the instep flat; stretch the palms out front and back; watch the right palm."
+        ],
+        "id": [
+          "Turunkan kaki kanan ke depan dan bawa kaki kiri ke sampingnya bertumpu pada telapak depan (dingbu); tekan telapak kiri di depan perut dan buka kepalan kanan di pinggang; pandangan ke depan.",
+          "Berdiri di kaki kanan lurus, putar ke kiri dan miringkan badan, julurkan kaki kiri lurus ke belakang atas dengan punggung kaki rata; rentangkan telapak ke depan dan ke belakang; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Head up, chest open, lower back hollowed, right toes slightly in.",
+          "Extend the leg straight back and up rather than swinging it; arms and leg reach out together for a steady balance."
+        ],
+        "id": [
+          "Kepala terangkat, dada terbuka, pinggang melengkung, ujung kaki kanan sedikit ke dalam.",
+          "Julurkan kaki lurus ke belakang atas, bukan diayun; lengan dan kaki menjulur bersamaan agar seimbang."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 17, 图 A-38 to A-39",
+      "start_sec": 94.0,
+      "end_sec": 99.0
+    },
+    {
+      "number": 16,
+      "section": 1,
+      "book_number": 14,
+      "name_zh": "并步砸拳",
+      "name_pinyin": "Bìngbù záquán",
+      "name_en": "Bingbu, Pound Fist",
+      "name_id": "Bingbu, Hantam Kepalan",
+      "steps": {
+        "en": [
+          "Lower the left foot and bend the right knee into right gongbu, both palms pressing down; look to the left front.",
+          "Circle the left palm in a vertical circle while the right hand crosses outside it in front of the belly and circles back and up to a raised fist; turn left, stand on the left leg and lift the right knee; look ahead.",
+          "Stamp the right foot beside the left and half squat, pounding the face of the right fist into the upturned left palm in front of the belly; watch the right fist."
+        ],
+        "id": [
+          "Turunkan kaki kiri dan tekuk lutut kanan menjadi gongbu kanan, kedua telapak menekan ke bawah; pandangan ke depan kiri.",
+          "Putar telapak kiri satu lingkaran vertikal sementara tangan kanan menyilang di luarnya di depan perut lalu berputar ke belakang dan ke atas menjadi kepalan terangkat; putar ke kiri, berdiri di kaki kiri dan angkat lutut kanan; pandangan ke depan.",
+          "Hentakkan kaki kanan di samping kaki kiri dan setengah jongkok, hantamkan muka kepalan kanan ke telapak kiri yang menghadap atas di depan perut; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Stamp and pound are fast, strong and simultaneous."
+        ],
+        "id": [
+          "Hentakan dan hantaman cepat, kuat dan serentak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 18–19, 图 A-40 to A-42",
+      "start_sec": 99.0,
+      "end_sec": 106.5
+    },
+    {
+      "number": 17,
+      "section": 1,
+      "book_number": 15,
+      "name_zh": "马步冲拳",
+      "name_pinyin": "Mǎbù chōngquán",
+      "name_en": "Mabu, Punch",
+      "name_id": "Mabu, Pukulan Lurus",
+      "steps": {
+        "en": [
+          "Step the left foot out into mabu, both fists at the waist, fist-hearts up; look ahead.",
+          "Punch both fists out to the left and right at shoulder height, fist-hearts up; watch the left fist."
+        ],
+        "id": [
+          "Buka kaki kiri ke samping menjadi mabu (马步), kedua kepalan di pinggang, telapak kepalan menghadap atas; pandangan ke depan.",
+          "Pukulkan kedua kepalan ke kiri dan kanan setinggi bahu, telapak kepalan menghadap atas; pandangan ke kepalan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Chest open, lower back hollowed, feet turned slightly in; the punches are crisp and strong, linked with the head turn."
+        ],
+        "id": [
+          "Dada terbuka, pinggang melengkung, kaki sedikit ke dalam; pukulan tegas dan kuat, bersambung dengan tolehan kepala."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 19–20, 图 A-43 to A-44",
+      "start_sec": 106.5,
+      "end_sec": 111.5
+    },
+    {
+      "number": 18,
+      "section": 1,
+      "book_number": 16,
+      "name_zh": "弓步推掌",
+      "name_pinyin": "Gōngbù tuīzhǎng",
+      "name_en": "Gongbu, Push Palms",
+      "name_id": "Gongbu, Dorong Telapak",
+      "steps": {
+        "en": [
+          "Open the fists and draw both palms to the waist; look straight ahead.",
+          "Turn left and straighten the right leg into left gongbu, pushing the palms out to the left and right, arms level, little-finger edges outward; watch the right palm."
+        ],
+        "id": [
+          "Buka kepalan dan tarik kedua telapak ke pinggang; pandangan lurus ke depan.",
+          "Putar ke kiri dan luruskan kaki kanan menjadi gongbu kiri, dorong telapak ke kiri dan kanan, lengan datar, sisi kelingking ke luar; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The push and gongbu finish as one."
+        ],
+        "id": [
+          "Dorongan dan gongbu selesai sebagai satu kesatuan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 20–21, 图 A-45 to A-46",
+      "start_sec": 111.5,
+      "end_sec": 116.5
+    },
+    {
+      "number": 19,
+      "section": 1,
+      "book_number": 17,
+      "name_zh": "击响外摆腿",
+      "name_pinyin": "Jīxiǎng wàibǎituǐ",
+      "name_en": "Outside Crescent Kick with Slaps",
+      "name_id": "Tendangan Sabit Luar dengan Tepukan",
+      "steps": {
+        "en": [
+          "Shift back and cross the left foot behind the right; the right palm blocks above the head and the left palm comes under the right armpit; look to the right front.",
+          "Step the left foot to the left, knee slightly bent; swing the left palm up to the left front while the right palm drops behind; look to the left front.",
+          "Turn slightly left and strike the left palm above the head with the back of the right hand.",
+          "Stand on the straight left leg and swing the right leg in an outward arc past the face, instep flat, slapping it with the right then left hand; watch the right foot.",
+          "Set the right foot down to the right, arms lowered to shoulder level at the sides; look right."
+        ],
+        "id": [
+          "Geser ke belakang dan silangkan kaki kiri di belakang kaki kanan; telapak kanan menangkis di atas kepala dan telapak kiri ke bawah ketiak kanan; pandangan ke depan kanan.",
+          "Langkahkan kaki kiri ke kiri, lutut sedikit ditekuk; ayunkan telapak kiri ke depan kiri atas sementara telapak kanan turun ke belakang; pandangan ke depan kiri.",
+          "Putar sedikit ke kiri dan pukul telapak kiri di atas kepala dengan punggung tangan kanan.",
+          "Berdiri di kaki kiri lurus dan ayunkan kaki kanan melengkung ke luar melewati wajah, punggung kaki rata, tepuk dengan tangan kanan lalu kiri; pandangan ke kaki kanan.",
+          "Turunkan kaki kanan ke kanan, lengan turun setinggi bahu di samping; pandangan ke kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The slaps are fast and both ring clearly.",
+          "Relax the hip for a wide arc and speed up as the foot passes the left shoulder."
+        ],
+        "id": [
+          "Tepukan cepat dan keduanya terdengar jelas.",
+          "Rilekskan pinggul agar ayunan lebar dan percepat saat kaki melewati bahu kiri."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 21–22, 图 A-47 to A-51",
+      "start_sec": 116.5,
+      "end_sec": 129.0
+    },
+    {
+      "number": 20,
+      "section": 1,
+      "book_number": 18,
+      "name_zh": "前点步劈拳",
+      "name_pinyin": "Qiándiǎnbù pīquán",
+      "name_en": "Qiandianbu, Chop Fist",
+      "name_id": "Qiandianbu, Bacok Kepalan",
+      "steps": {
+        "en": [
+          "Turn left and shift left; the right palm becomes a fist and swings low then forward, the left palm coming to the inside of the right upper arm; watch the right fist.",
+          "Turn right, stand on the straight right leg and point the left toes on the floor in front, instep stretched; chop the right fist over the head out to the right, little-finger side down, and flash the left palm above the head; watch the right fist."
+        ],
+        "id": [
+          "Putar ke kiri dan geser berat badan ke kiri; telapak kanan menjadi kepalan dan diayun dari bawah ke depan, telapak kiri ke sisi dalam lengan atas kanan; pandangan ke kepalan kanan.",
+          "Putar ke kanan, berdiri di kaki kanan lurus dan tutulkan ujung kaki kiri di depan, punggung kaki diluruskan; bacokkan kepalan kanan melewati atas kepala ke kanan, sisi kelingking ke bawah, dan kilatkan telapak kiri di atas kepala; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The chop is crisp; chop, flashing palm and toe point finish together.",
+          "Shift the weight right before straightening the right leg so you stay stable."
+        ],
+        "id": [
+          "Bacokan tegas; bacokan, telapak kilat dan tutulan kaki selesai bersamaan.",
+          "Pindahkan berat badan ke kanan sebelum meluruskan kaki kanan agar tetap stabil."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 22–23, 图 A-52 to A-53",
+      "start_sec": 129.0,
+      "end_sec": 134.0
+    },
+    {
+      "number": 21,
+      "section": 1,
+      "book_number": 19,
+      "name_zh": "腾空飞脚",
+      "name_pinyin": "Téngkōng fēijiǎo",
+      "name_en": "Flying Front Kick",
+      "name_id": "Tendangan Terbang",
+      "steps": {
+        "en": [
+          "Shift left and cross the right foot in front of the left; cross the arms in front, right arm inside, both palms out; look ahead.",
+          "Step the left foot to the left front, swinging both palms down and out to shoulder level; look to the left front.",
+          "Push off the left foot and knock the right foot against it in the air, palms flicking up.",
+          "Land right then left.",
+          "Turn left and step the right foot forward, hands down at the sides.",
+          "Swing the left leg up and take off from the right foot, striking the left palm above the head with the back of the right hand.",
+          "In the air kick the right foot up, instep flat, and slap it with the right palm; the left palm rises to the upper left.",
+          "Land on both feet together."
+        ],
+        "id": [
+          "Geser ke kiri dan silangkan kaki kanan di depan kaki kiri; silangkan lengan di depan, lengan kanan di dalam, kedua telapak menghadap luar; pandangan ke depan.",
+          "Langkahkan kaki kiri ke depan kiri, ayunkan kedua telapak ke bawah lalu ke samping setinggi bahu; pandangan ke depan kiri.",
+          "Tolak dengan kaki kiri dan benturkan kaki kanan ke kaki kiri di udara, telapak dicungkil ke atas.",
+          "Mendarat kanan lalu kiri.",
+          "Putar ke kiri dan langkahkan kaki kanan ke depan, tangan turun di samping.",
+          "Ayunkan kaki kiri ke atas dan lompat dari kaki kanan, pukul telapak kiri di atas kepala dengan punggung tangan kanan.",
+          "Di udara tendang kaki kanan ke atas, punggung kaki rata, dan tepuk dengan telapak kanan; telapak kiri naik ke kiri atas.",
+          "Mendarat dengan kedua kaki bersamaan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The jump has real height; the clap and slap are crisp and loud.",
+          "Build the run-up from slow to fast and short to long steps, keeping the weight back on the last step."
+        ],
+        "id": [
+          "Lompatan benar-benar melayang; tepuk tangan dan tepuk kaki tegas dan nyaring.",
+          "Ancang-ancang dari lambat ke cepat dan dari langkah pendek ke panjang, berat badan tetap di belakang pada langkah terakhir."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 23–26, 图 A-54 to A-61",
+      "start_sec": 134.0,
+      "end_sec": 154.0
+    },
+    {
+      "number": 22,
+      "section": 1,
+      "book_number": 20,
+      "name_zh": "提膝推掌",
+      "name_pinyin": "Tíxī tuīzhǎng",
+      "name_en": "Knee Lift, Push Palm",
+      "name_id": "Angkat Lutut, Dorong Telapak",
+      "steps": {
+        "en": [
+          "Step the left foot forward, toes out, and turn left; the right palm circles down past the belly and up to the upper left while the left palm crosses it and swings down to the lower left; look to the left front.",
+          "Step the right foot to the right, toes in, turning slightly left; arms level at the sides; look to the left front.",
+          "Shift right and turn back to the left, pivoting on the right foot and standing up on the straight right leg; push the right palm out to the right front from the waist while the left palm comes to the right chest as a standing palm; watch the right palm."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan, ujung kaki ke luar, dan putar ke kiri; telapak kanan berputar turun melewati perut lalu naik ke kiri atas sementara telapak kiri menyilangnya dan berayun ke kiri bawah; pandangan ke depan kiri.",
+          "Langkahkan kaki kanan ke kanan, ujung kaki ke dalam, putar sedikit ke kiri; lengan datar di samping; pandangan ke depan kiri.",
+          "Geser ke kanan dan putar badan ke kiri belakang, berporos pada kaki kanan dan berdiri di kaki kanan lurus; dorong telapak kanan dari pinggang ke depan kanan sementara telapak kiri ke depan dada kanan sebagai telapak tegak; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The crossed arms circle in true vertical rounds; knee lift and push finish together."
+        ],
+        "id": [
+          "Lengan yang menyilang berputar dalam lingkaran vertikal yang bulat; angkat lutut dan dorongan selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 26, 图 A-62 to A-64",
+      "start_sec": 154.0,
+      "end_sec": 161.5
+    },
+    {
+      "number": 23,
+      "section": 1,
+      "book_number": 21,
+      "name_zh": "上步旋风脚",
+      "name_pinyin": "Shàngbù xuànfēngjiǎo",
+      "name_en": "Shangbu, Whirlwind Kick",
+      "name_id": "Shangbu, Tendangan Angin Puyuh",
+      "steps": {
+        "en": [
+          "Step the left foot down to the left and push the left palm out to the left; look to the left front.",
+          "Step the right foot forward, toes in, turning left; the right palm swings to the upper right and the left palm drops to the lower right front.",
+          "Shift right and spin back to the left, swinging the left leg up behind and jumping off the right foot, both arms circling up.",
+          "In the air sweep the right leg inward across the front and meet the sole with the left palm in front of the face."
+        ],
+        "id": [
+          "Turunkan kaki kiri ke kiri dan dorong telapak kiri ke kiri; pandangan ke depan kiri.",
+          "Langkahkan kaki kanan ke depan, ujung kaki ke dalam, sambil berputar ke kiri; telapak kanan diayun ke kanan atas dan telapak kiri turun ke depan kanan bawah.",
+          "Geser ke kanan dan berputar ke kiri belakang, ayunkan kaki kiri ke belakang atas dan lompat dari kaki kanan, kedua lengan berputar ke atas.",
+          "Di udara sapukan kaki kanan ke dalam melintasi depan badan dan sambut telapak kaki dengan telapak kiri di depan wajah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The inside crescent kick passes shoulder height and the slap lands cleanly and loudly; speed up as the foot nears the face."
+        ],
+        "id": [
+          "Tendangan sabit dalam melewati tinggi bahu dan tepukan tepat serta nyaring; percepat saat kaki mendekati wajah."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 27–28, 图 A-65 to A-68",
+      "start_sec": 161.5,
+      "end_sec": 171.5
+    },
+    {
+      "number": 24,
+      "section": 1,
+      "book_number": 22,
+      "name_zh": "马步砸拳",
+      "name_pinyin": "Mǎbù záquán",
+      "name_en": "Mabu, Pound Fist",
+      "name_id": "Mabu, Hantam Kepalan",
+      "steps": {
+        "en": [
+          "Keep turning left in the air and land on both feet at once, sinking into mabu; the left fist returns to the waist and the right fist pounds down, elbow bent, back of the fist down, forearm about level; watch the right fist."
+        ],
+        "id": [
+          "Terus berputar ke kiri di udara dan mendarat dengan kedua kaki serentak, turun ke mabu; kepalan kiri kembali ke pinggang dan kepalan kanan menghantam ke bawah, siku ditekuk, punggung kepalan ke bawah, lengan bawah kira-kira datar; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Landing in mabu and the pound finish as one."
+        ],
+        "id": [
+          "Mendarat di mabu dan hantaman selesai sebagai satu kesatuan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 28–29, 图 A-69",
+      "start_sec": 171.5,
+      "end_sec": 174.5
+    },
+    {
+      "number": 25,
+      "section": 1,
+      "book_number": 23,
+      "name_zh": "盖步双摆掌",
+      "name_pinyin": "Gàibù shuāngbǎizhǎng",
+      "name_en": "Gaibu, Double Swing Palms",
+      "name_id": "Gaibu, Ayunan Dua Telapak",
+      "steps": {
+        "en": [
+          "Shift right and bring the left foot beside the right in a half squat; the right fist opens at the waist and the left palm pushes out to the left; watch the left palm.",
+          "Step the left foot to the left front, toes out, and turn left; the right palm circles back and up almost a full vertical round and settles in front of the left waist while the left palm swings back to shoulder level; watch the left palm.",
+          "Step the right foot in gaibu across in front of the left into chabu, both palms swinging over the top to the right: right palm at the right side, left palm inside the right upper arm; watch the right palm."
+        ],
+        "id": [
+          "Geser ke kanan dan bawa kaki kiri ke samping kaki kanan dalam setengah jongkok; kepalan kanan dibuka di pinggang dan telapak kiri didorong ke kiri; pandangan ke telapak kiri.",
+          "Langkahkan kaki kiri ke depan kiri, ujung kaki ke luar, dan putar ke kiri; telapak kanan berputar ke belakang dan ke atas hampir satu lingkaran vertikal lalu berhenti di depan pinggang kiri sementara telapak kiri berayun ke belakang setinggi bahu; pandangan ke telapak kiri.",
+          "Langkahkan kaki kanan secara gaibu di depan kaki kiri menjadi chabu, kedua telapak diayun melewati atas ke kanan: telapak kanan di sisi kanan, telapak kiri di sisi dalam lengan atas kanan; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Relax the shoulders so the arms circle in true vertical rounds; steps and swings are coordinated."
+        ],
+        "id": [
+          "Bahu rileks agar lengan berputar dalam lingkaran vertikal yang bulat; langkah dan ayunan terkoordinasi."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 29–30, 图 A-70 to A-72",
+      "start_sec": 174.5,
+      "end_sec": 182.0
+    },
+    {
+      "number": 26,
+      "section": 1,
+      "book_number": 24,
+      "name_zh": "上步拍脚",
+      "name_pinyin": "Shàngbù pāijiǎo",
+      "name_en": "Shangbu, Slap Foot",
+      "name_id": "Shangbu, Tepuk Kaki",
+      "steps": {
+        "en": [
+          "Step the left foot to the left, swinging the left palm up to the left; the right hand forms a hook and drops diagonally down; watch the left palm.",
+          "Step the right foot forward and open the right hook into a palm.",
+          "Step the left foot forward; swing the left palm above the head and strike it with the back of the right hand.",
+          "Swing the straight right leg up, instep flat, and slap it with the right palm in front of the face; the left palm rises to the upper left; watch the right foot."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke kiri, ayunkan telapak kiri ke kiri atas; tangan kanan membentuk kait dan turun serong ke bawah; pandangan ke telapak kiri.",
+          "Langkahkan kaki kanan ke depan dan buka kait kanan menjadi telapak.",
+          "Langkahkan kaki kiri ke depan; ayunkan telapak kiri ke atas kepala dan pukul dengan punggung tangan kanan.",
+          "Ayunkan kaki kanan lurus ke atas, punggung kaki rata, dan tepuk dengan telapak kanan di depan wajah; telapak kiri naik ke kiri atas; pandangan ke kaki kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Clap and slap are linked, crisp and loud."
+        ],
+        "id": [
+          "Tepuk tangan dan tepuk kaki bersambung, tegas dan nyaring."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 30–31, 图 A-73 to A-76",
+      "start_sec": 182.0,
+      "end_sec": 192.0
+    },
+    {
+      "number": 27,
+      "section": 1,
+      "book_number": 25,
+      "name_zh": "仆步抡拍掌",
+      "name_pinyin": "Pūbù lūnpāizhǎng",
+      "name_en": "Pubu, Swing and Slap Palm",
+      "name_id": "Pubu, Putar dan Tepuk Telapak",
+      "steps": {
+        "en": [
+          "Turn left and set the right foot down to the right, toes in; both palms drop to shoulder level at the sides; look ahead.",
+          "Turn left into left gongbu, the right palm circling low then forward and up, the left palm circling back; watch the right palm.",
+          "Turn right into right gongbu, continuing both vertical circles so the left hand comes round to the left front; watch the left hand.",
+          "Shift back to the left into a full squat on the left leg with the straight right leg laid flat (pubu); the right palm circles down to slap the floor inside the right shin while the left palm circles to the upper left rear; watch the right palm."
+        ],
+        "id": [
+          "Putar ke kiri dan turunkan kaki kanan ke kanan, ujung kaki ke dalam; kedua telapak turun setinggi bahu di samping; pandangan ke depan.",
+          "Putar ke kiri menjadi gongbu kiri, telapak kanan berputar dari bawah ke depan atas, telapak kiri berputar ke belakang; pandangan ke telapak kanan.",
+          "Putar ke kanan menjadi gongbu kanan, lanjutkan kedua lingkaran vertikal sehingga tangan kiri berputar ke depan kiri; pandangan ke tangan kiri.",
+          "Geser ke kiri belakang menjadi jongkok penuh di kaki kiri dengan kaki kanan lurus rebah rata (仆步); telapak kanan berputar turun menepuk lantai di sisi dalam tulang kering kanan sementara telapak kiri berputar ke kiri belakang atas; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The arm circles are round, smooth, quick and vertical; the waist drives them for size and speed."
+        ],
+        "id": [
+          "Putaran lengan bulat, luwes, cepat dan vertikal; pinggang menggerakkannya agar lebar dan cepat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 31–33, 图 A-77 to A-80",
+      "start_sec": 192.0,
+      "end_sec": 202.0
+    },
+    {
+      "number": 28,
+      "section": 1,
+      "book_number": 26,
+      "name_zh": "抡臂砸拳",
+      "name_pinyin": "Lūnbì záquán",
+      "name_en": "Swing Arms, Pound Fist",
+      "name_id": "Putar Lengan, Hantam Kepalan",
+      "steps": {
+        "en": [
+          "Shift right into right gongbu; raise the bent right arm at the right side, elbow above the shoulder, wrist hooked, while the left palm presses slightly down; look to the left front.",
+          "Circle the left palm in a full vertical round while the right hand crosses in front of the belly and circles back and up to a raised fist; turn left, stand on the left leg and lift the right knee; look ahead.",
+          "Stamp the right foot beside the left and half squat, pounding the back of the right fist into the upturned left palm in front of the belly; watch the right fist."
+        ],
+        "id": [
+          "Geser ke kanan menjadi gongbu kanan; angkat lengan kanan yang ditekuk di sisi kanan, siku di atas bahu, pergelangan ditekuk, sementara telapak kiri sedikit menekan ke bawah; pandangan ke depan kiri.",
+          "Putar telapak kiri satu lingkaran vertikal penuh sementara tangan kanan menyilang di depan perut lalu berputar ke belakang dan ke atas menjadi kepalan terangkat; putar ke kiri, berdiri di kaki kiri dan angkat lutut kanan; pandangan ke depan.",
+          "Hentakkan kaki kanan di samping kaki kiri dan setengah jongkok, hantamkan punggung kepalan kanan ke telapak kiri yang menghadap atas di depan perut; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Stamp and pound are fast, strong and simultaneous."
+        ],
+        "id": [
+          "Hentakan dan hantaman cepat, kuat dan serentak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 33–34, 图 A-81 to A-83",
+      "start_sec": 202.0,
+      "end_sec": 209.5
+    },
+    {
+      "number": 29,
+      "section": 1,
+      "book_number": 27,
+      "name_zh": "并步推掌",
+      "name_pinyin": "Bìngbù tuīzhǎng",
+      "name_en": "Bingbu, Push Palms",
+      "name_id": "Bingbu, Dorong Telapak",
+      "steps": {
+        "en": [
+          "Straighten both legs; the left palm becomes a fist and both fists rest at the waist; look ahead.",
+          "Push both palms out to the sides from the waist, arms level; look ahead."
+        ],
+        "id": [
+          "Luruskan kedua kaki; telapak kiri menjadi kepalan dan kedua kepalan di pinggang; pandangan ke depan.",
+          "Dorong kedua telapak dari pinggang ke samping, lengan datar; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Push fast, strong and level, power reaching the outer edge of the palms."
+        ],
+        "id": [
+          "Dorongan cepat, kuat dan datar, tenaga sampai ke sisi luar telapak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 35, 图 A-84 to A-85",
+      "start_sec": 209.5,
+      "end_sec": 214.5
+    },
+    {
+      "number": 30,
+      "section": 1,
+      "book_number": 28,
+      "name_zh": "上步正踢腿",
+      "name_pinyin": "Shàngbù zhèngtītuǐ",
+      "name_en": "Shangbu, Front Kick",
+      "name_id": "Shangbu, Tendangan Depan Lurus",
+      "steps": {
+        "en": [
+          "Step the left foot forward.",
+          "Kick the straight right leg forward and up."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan.",
+          "Tendangkan kaki kanan lurus ke depan atas."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Supporting leg straight, kicking leg straight with the toes pulled back, trunk upright, kick quick."
+        ],
+        "id": [
+          "Kaki tumpu lurus, kaki penendang lurus dengan ujung kaki ditarik, badan tegak, tendangan cepat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 35, 图 A-86 to A-87",
+      "start_sec": 214.5,
+      "end_sec": 219.5
+    },
+    {
+      "number": 31,
+      "section": 1,
+      "book_number": 29,
+      "name_zh": "虚步勾手",
+      "name_pinyin": "Xūbù gōushǒu",
+      "name_en": "Xubu, Hook Hand",
+      "name_id": "Xubu, Tangan Kait",
+      "steps": {
+        "en": [
+          "Step the right foot back into left gongbu; thrust the right palm forward past the waist, palm up, while the left palm hooks down and back; watch the right palm.",
+          "Thread the left palm forward over the right palm, the right palm returning to the waist; watch the left palm.",
+          "Shift back and draw the left foot in half a step; the left palm swings down and back into a hook while the right palm swings back and up above the head.",
+          "Sink into left xubu; the left hook swings forward and up to shoulder level, hook tip down, and the right palm drops to the inside of the left forearm; watch the left hand."
+        ],
+        "id": [
+          "Mundurkan kaki kanan menjadi gongbu kiri; tusukkan telapak kanan ke depan melewati pinggang, telapak menghadap atas, sementara telapak kiri mengait ke bawah dan ke belakang; pandangan ke telapak kanan.",
+          "Tusukkan telapak kiri ke depan di atas telapak kanan, telapak kanan kembali ke pinggang; pandangan ke telapak kiri.",
+          "Geser ke belakang dan tarik kaki kiri setengah langkah; telapak kiri berayun ke bawah belakang menjadi kait sementara telapak kanan berayun ke belakang lalu ke atas kepala.",
+          "Turun ke xubu kiri; kait kiri diayun ke depan atas setinggi bahu, ujung kait ke bawah, dan telapak kanan turun ke sisi dalam lengan bawah kiri; pandangan ke tangan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The hook swings up as xubu forms; the left instep is stretched and the toes touch down lightly."
+        ],
+        "id": [
+          "Kait diayun ke atas bersamaan terbentuknya xubu; punggung kaki kiri diluruskan dan ujung kaki menyentuh lantai ringan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 35–36, 图 A-88 to A-91",
+      "start_sec": 219.5,
+      "end_sec": 229.5
+    },
+    {
+      "number": 32,
+      "section": 1,
+      "book_number": 30,
+      "name_zh": "提膝亮掌",
+      "name_pinyin": "Tíxī liàngzhǎng",
+      "name_en": "Knee Lift, Flash Palm",
+      "name_id": "Angkat Lutut, Telapak Kilat",
+      "steps": {
+        "en": [
+          "Bend the left arm and bring it to the front of the right shoulder as a palm, the right palm swinging under the left armpit.",
+          "Stand on the straight right leg and lift the left knee; the hands part downward and out: left hand a level hook, right palm flashed above the head; look ahead."
+        ],
+        "id": [
+          "Tekuk lengan kiri dan bawa ke depan bahu kanan sebagai telapak, telapak kanan diayun ke bawah ketiak kiri.",
+          "Berdiri di kaki kanan lurus dan angkat lutut kiri; tangan berpisah ke bawah lalu ke samping: tangan kiri kait datar, telapak kanan dikilatkan di atas kepala; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Knee straight, waist upright, chest open; the left shin tucked in tight."
+        ],
+        "id": [
+          "Lutut lurus, pinggang tegak, dada terbuka; tulang kering kiri dirapatkan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 37, 图 A-92 to A-93",
+      "start_sec": 229.5,
+      "end_sec": 234.5
+    },
+    {
+      "number": 33,
+      "section": 2,
+      "book_number": 31,
+      "name_zh": "仆步穿掌",
+      "name_pinyin": "Pūbù chuānzhǎng",
+      "name_en": "Pubu, Thread Palm",
+      "name_id": "Pubu, Tusuk Telapak",
+      "steps": {
+        "en": [
+          "Turn right and set the left foot down behind to the left into right gongbu; the right palm returns to the waist and the left palm presses forward at shoulder height; watch the left palm.",
+          "Thread the right palm forward and up over the back of the left palm, turning slightly left; the left palm goes under the right armpit.",
+          "Squat fully on the right leg with the left leg laid flat (left pubu) and thread the left palm along the inside of the left leg and over the foot; watch the left palm."
+        ],
+        "id": [
+          "Putar ke kanan dan turunkan kaki kiri ke kiri belakang menjadi gongbu kanan; telapak kanan kembali ke pinggang dan telapak kiri menekan ke depan setinggi bahu; pandangan ke telapak kiri.",
+          "Tusukkan telapak kanan ke depan atas di atas punggung telapak kiri, putar sedikit ke kiri; telapak kiri ke bawah ketiak kanan.",
+          "Jongkok penuh di kaki kanan dengan kaki kiri rebah rata (仆步 kiri) dan tusukkan telapak kiri menyusuri sisi dalam kaki kiri hingga melewati kaki; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Lean forward, keep the palm close to the inside of the leg and lead with the fingertips; the eyes follow the threading hand."
+        ],
+        "id": [
+          "Badan condong ke depan, telapak dekat sisi dalam kaki dan ujung jari memimpin; mata mengikuti tangan yang menusuk."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 37–38, 图 A-94 to A-96",
+      "start_sec": 234.5,
+      "end_sec": 242.0
+    },
+    {
+      "number": 34,
+      "section": 2,
+      "book_number": 32,
+      "name_zh": "推掌蹬腿",
+      "name_pinyin": "Tuīzhǎng dēngtuǐ",
+      "name_en": "Push Palms, Heel Kick",
+      "name_id": "Dorong Telapak, Tendangan Tumit",
+      "steps": {
+        "en": [
+          "Shift forward with the threading palm into left gongbu.",
+          "Step the right foot forward and flick both palms up into standing palms.",
+          "Step the left foot forward, toes out, turning slightly left; cross the bent arms in front of the chest, right arm outside, palms in.",
+          "Stand up on the straight left leg, lift the right foot and drive the heel out to the right front, toes pulled back, while pushing both palms out to the sides; watch the right palm."
+        ],
+        "id": [
+          "Geser ke depan mengikuti tusukan telapak menjadi gongbu kiri.",
+          "Langkahkan kaki kanan ke depan dan cungkil kedua telapak ke atas menjadi telapak tegak.",
+          "Langkahkan kaki kiri ke depan, ujung kaki ke luar, putar sedikit ke kiri; silangkan lengan yang ditekuk di depan dada, lengan kanan di luar, telapak menghadap dalam.",
+          "Berdiri di kaki kiri lurus, angkat kaki kanan dan dorong tumit ke depan kanan, ujung kaki ditarik, sambil mendorong kedua telapak ke samping; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The heel kick and the palm push finish together."
+        ],
+        "id": [
+          "Tendangan tumit dan dorongan telapak selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 38–39, 图 A-97 to A-100",
+      "start_sec": 242.0,
+      "end_sec": 252.0
+    },
+    {
+      "number": 35,
+      "section": 2,
+      "book_number": 33,
+      "name_zh": "大跃步前穿",
+      "name_pinyin": "Dàyuèbù qiánchuān",
+      "name_en": "Big Leap Forward",
+      "name_id": "Lompatan Jauh ke Depan",
+      "steps": {
+        "en": [
+          "Set the right foot down forward; the right palm swings over to the front of the left chest as a standing palm and the left hand hooks down behind; look ahead.",
+          "Step the left foot forward and swing the right palm low then up to the right front; watch the right palm.",
+          "Swing the right leg forward and leap off the left foot, the left shin swinging back naturally; the right palm circles up and behind the body while the left hand circles forward to a flashing palm above the head; watch the right palm."
+        ],
+        "id": [
+          "Turunkan kaki kanan ke depan; telapak kanan diayun melewati atas ke depan dada kiri sebagai telapak tegak dan tangan kiri mengait ke bawah belakang; pandangan ke depan.",
+          "Langkahkan kaki kiri ke depan dan ayunkan telapak kanan dari bawah ke depan kanan atas; pandangan ke telapak kanan.",
+          "Ayunkan kaki kanan ke depan dan melompat dari kaki kiri, tungkai bawah kiri berayun ke belakang secara alami; telapak kanan berputar ke atas dan ke belakang badan sementara tangan kiri berputar ke depan menjadi telapak kilat di atas kepala; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "In the air open the chest and stretch the belly; the run and take-off are linked."
+        ],
+        "id": [
+          "Di udara dada terbuka dan perut meregang; langkah dan tolakan bersambung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 39–40, 图 A-101 to A-103",
+      "start_sec": 252.0,
+      "end_sec": 259.5
+    },
+    {
+      "number": 36,
+      "section": 2,
+      "book_number": 34,
+      "name_zh": "仆步双拍掌",
+      "name_pinyin": "Pūbù shuāngpāizhǎng",
+      "name_en": "Pubu, Double Palm Slap",
+      "name_id": "Pubu, Tepuk Dua Telapak",
+      "steps": {
+        "en": [
+          "Land right then left, squatting fully on the right leg with the left leg laid flat, and slap the floor with both palms inside the left leg; watch the left palm."
+        ],
+        "id": [
+          "Mendarat kanan lalu kiri, jongkok penuh di kaki kanan dengan kaki kiri rebah rata, dan tepuk lantai dengan kedua telapak di sisi dalam kaki kiri; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Landing into pubu and the slap are linked and quick."
+        ],
+        "id": [
+          "Mendarat ke pubu dan tepukan bersambung dan cepat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 41, 图 A-104",
+      "start_sec": 259.5,
+      "end_sec": 262.5
+    },
+    {
+      "number": 37,
+      "section": 2,
+      "book_number": 35,
+      "name_zh": "推掌侧踹",
+      "name_pinyin": "Tuīzhǎng cèchuài",
+      "name_en": "Push Palms, Side Kick",
+      "name_id": "Dorong Telapak, Tendangan Samping",
+      "steps": {
+        "en": [
+          "Shift left and rise, pushing both palms out to the sides past the chest; watch the left palm.",
+          "Cross the right foot behind the left; cross the palms in front of the chest, right arm outside, palms in; look left.",
+          "Shift slightly left, stand on the straight right leg and lift the left knee.",
+          "Lean the body to the right and drive the left foot out to the upper left, foot flexed, while pushing both palms out to the sides; watch the left foot."
+        ],
+        "id": [
+          "Geser ke kiri dan berdiri, dorong kedua telapak ke samping melewati dada; pandangan ke telapak kiri.",
+          "Silangkan kaki kanan di belakang kaki kiri; silangkan telapak di depan dada, lengan kanan di luar, telapak menghadap dalam; pandangan ke kiri.",
+          "Geser sedikit ke kiri, berdiri di kaki kanan lurus dan angkat lutut kiri.",
+          "Condongkan badan ke kanan dan dorong kaki kiri ke kiri atas, kaki ditekuk (flex), sambil mendorong kedua telapak ke samping; pandangan ke kaki kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The side kick and the palm push finish together, fast and strong."
+        ],
+        "id": [
+          "Tendangan samping dan dorongan telapak selesai bersamaan, cepat dan kuat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 41–42, 图 A-105 to A-108",
+      "start_sec": 262.5,
+      "end_sec": 272.5
+    },
+    {
+      "number": 38,
+      "section": 2,
+      "book_number": 36,
+      "name_zh": "抓肩马步架打",
+      "name_pinyin": "Zhuājiān mǎbù jiàdǎ",
+      "name_en": "Grab Shoulder, Mabu Block and Strike",
+      "name_id": "Cengkeram Bahu, Mabu Tangkis dan Pukul",
+      "steps": {
+        "en": [
+          "Set the left foot down to the left and stand with the legs apart.",
+          "Cross the right foot behind the left; the right palm comes over the top and grips down on the left shoulder while the left hand hooks back behind the body; look left.",
+          "Step the left foot out to the left; the left hook becomes a fist and comes from behind over the top, elbow pressing down; watch the left fist.",
+          "Sink into mabu, the left elbow pressing on down until the left fist reaches the waist; the right palm becomes a fist at the right waist; look left.",
+          "Turn left and straighten the right leg into left gongbu, punching the right fist forward; watch the right fist.",
+          "Turn right back into mabu; the right fist blocks above the head and the left fist punches out to the left as a vertical fist; watch the left fist."
+        ],
+        "id": [
+          "Turunkan kaki kiri ke kiri dan berdiri dengan kaki terbuka.",
+          "Silangkan kaki kanan di belakang kaki kiri; telapak kanan datang dari atas dan mencengkeram bahu kiri sementara tangan kiri mengait ke belakang badan; pandangan ke kiri.",
+          "Langkahkan kaki kiri ke kiri; kait kiri menjadi kepalan dan datang dari belakang melewati atas, siku menekan ke bawah; pandangan ke kepalan kiri.",
+          "Turun ke mabu, siku kiri terus menekan hingga kepalan kiri sampai di pinggang; telapak kanan menjadi kepalan di pinggang kanan; pandangan ke kiri.",
+          "Putar ke kiri dan luruskan kaki kanan menjadi gongbu kiri, pukulkan kepalan kanan ke depan; pandangan ke kepalan kanan.",
+          "Putar ke kanan kembali ke mabu; kepalan kanan menangkis di atas kepala dan kepalan kiri memukul ke kiri sebagai kepalan tegak; pandangan ke kepalan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Every part is crisp and clean, with nothing dragged out."
+        ],
+        "id": [
+          "Setiap bagian tegas dan bersih, tidak diseret-seret."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 43–44, 图 A-109 to A-114",
+      "start_sec": 272.5,
+      "end_sec": 287.5
+    },
+    {
+      "number": 39,
+      "section": 2,
+      "book_number": 37,
+      "name_zh": "马步格肘",
+      "name_pinyin": "Mǎbù gézhǒu",
+      "name_en": "Mabu, Elbow Block",
+      "name_id": "Mabu, Tangkisan Siku",
+      "steps": {
+        "en": [
+          "Rotate the left arm outward and bend the elbow, swinging the upright forearm inward to block; the right fist returns to the waist; watch the left fist."
+        ],
+        "id": [
+          "Putar lengan kiri ke luar dan tekuk siku, ayunkan lengan bawah yang tegak ke dalam untuk menangkis; kepalan kanan kembali ke pinggang; pandangan ke kepalan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The bent, upright forearm swings inward on a level arc."
+        ],
+        "id": [
+          "Lengan bawah yang ditekuk dan tegak berayun ke dalam dalam busur datar."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 45, 图 A-115",
+      "start_sec": 287.5,
+      "end_sec": 290.5
+    },
+    {
+      "number": 40,
+      "section": 2,
+      "book_number": 38,
+      "name_zh": "弓步架打",
+      "name_pinyin": "Gōngbù jiàdǎ",
+      "name_en": "Gongbu, Block and Punch",
+      "name_id": "Gongbu, Tangkis dan Pukul",
+      "steps": {
+        "en": [
+          "Turn left and straighten the right leg into left gongbu; rotate the left arm in to block above the head and punch the right fist forward from the waist; watch the right fist."
+        ],
+        "id": [
+          "Putar ke kiri dan luruskan kaki kanan menjadi gongbu kiri; putar lengan kiri ke dalam untuk menangkis di atas kepala dan pukulkan kepalan kanan dari pinggang ke depan; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Twist the waist and extend the shoulder as you block and punch."
+        ],
+        "id": [
+          "Pinggang memutar dan bahu menjulur saat menangkis dan memukul."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 45, 图 A-116",
+      "start_sec": 290.5,
+      "end_sec": 293.5
+    },
+    {
+      "number": 41,
+      "section": 2,
+      "book_number": 39,
+      "name_zh": "横裆步亮掌",
+      "name_pinyin": "Héngdāngbù liàngzhǎng",
+      "name_en": "Hengdangbu, Flash Palm",
+      "name_id": "Hengdangbu, Telapak Kilat",
+      "steps": {
+        "en": [
+          "Turn left and open the fists, folding both arms in front of the chest, left arm outside.",
+          "Keep turning left: lift the right foot, hop off the left, land the right foot where the left was and hold the left foot by the right calf; look right.",
+          "Slide the left foot out to the left close to the floor into hengdangbu; both palms circle down and out in vertical circles: the left becomes a level hook at the side, the right flashes above the head; look ahead."
+        ],
+        "id": [
+          "Putar ke kiri dan buka kepalan, lipat kedua lengan di depan dada, lengan kiri di luar.",
+          "Terus berputar ke kiri: angkat kaki kanan, lompat dari kaki kiri, daratkan kaki kanan di tempat kaki kiri dan tahan kaki kiri di samping betis kanan; pandangan ke kanan.",
+          "Julurkan kaki kiri ke kiri dekat lantai menjadi hengdangbu (横裆步); kedua telapak berputar ke bawah dan ke samping dalam lingkaran vertikal: kiri menjadi kait datar di samping, kanan dikilatkan di atas kepala; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The hook, the flashing palm and the stance finish together."
+        ],
+        "id": [
+          "Kait, telapak kilat dan kuda-kuda selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 46–47, 图 A-117 to A-119",
+      "start_sec": 293.5,
+      "end_sec": 301.0
+    },
+    {
+      "number": 42,
+      "section": 3,
+      "book_number": 40,
+      "name_zh": "贯拳弓步顶肘",
+      "name_pinyin": "Guànquán gōngbù dǐngzhǒu",
+      "name_en": "Swing Punch, Gongbu Elbow Thrust",
+      "name_id": "Pukulan Ayun, Gongbu Dorongan Siku",
+      "steps": {
+        "en": [
+          "Shift left into left gongbu; the right hand becomes a fist and swings across to the upper left, where the left palm meets the back of the fist; watch the right fist.",
+          "Lift and stamp the right foot, turn right and hold the left foot by the right calf; both bent arms drop and swing right, the right palm against the face of the left fist; watch the right palm.",
+          "Step the left foot to the left front into left gongbu and drive the left elbow out to the left front; watch the left elbow."
+        ],
+        "id": [
+          "Geser ke kiri menjadi gongbu kiri; tangan kanan menjadi kepalan dan diayun melintang ke kiri atas, di mana telapak kiri menyambut punggung kepalan; pandangan ke kepalan kanan.",
+          "Angkat dan hentakkan kaki kanan, putar ke kanan dan tahan kaki kiri di samping betis kanan; kedua lengan yang ditekuk turun dan berayun ke kanan, telapak kanan menempel di muka kepalan kiri; pandangan ke telapak kanan.",
+          "Langkahkan kaki kiri ke depan kiri menjadi gongbu kiri dan dorongkan siku kiri ke depan kiri; pandangan ke siku kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The swing punch lands with the face of the fist; the elbow thrust with the point of the elbow."
+        ],
+        "id": [
+          "Pukulan ayun mengenai dengan muka kepalan; dorongan siku dengan ujung siku."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 47–48, 图 A-120 to A-122",
+      "start_sec": 301.0,
+      "end_sec": 308.5
+    },
+    {
+      "number": 43,
+      "section": 3,
+      "book_number": 41,
+      "name_zh": "扣腿冲拳",
+      "name_pinyin": "Kòutuǐ chōngquán",
+      "name_en": "Hooked Leg, Punch",
+      "name_id": "Kaki Mengait, Pukulan Lurus",
+      "steps": {
+        "en": [
+          "Shift back to the right and turn right; the right palm becomes a fist at the waist and the left fist opens and swings low then forward and up; watch the left palm.",
+          "Shift forward into a half squat on the right leg with the left foot hooked behind the right knee; the left hand grips into a fist and pulls level to the left shoulder while the right fist punches level to the right; watch the right fist."
+        ],
+        "id": [
+          "Geser ke kanan belakang dan putar ke kanan; telapak kanan menjadi kepalan di pinggang dan kepalan kiri dibuka lalu diayun dari bawah ke depan atas; pandangan ke telapak kiri.",
+          "Geser ke depan setengah jongkok di kaki kanan dengan kaki kiri mengait di belakang lutut kanan; tangan kiri menggenggam menjadi kepalan dan ditarik datar ke depan bahu kiri sementara kepalan kanan memukul datar ke kanan; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Pull, punch and leg hook finish together."
+        ],
+        "id": [
+          "Tarikan, pukulan dan kaitan kaki selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 48–49, 图 A-123 to A-124",
+      "start_sec": 308.5,
+      "end_sec": 313.5
+    },
+    {
+      "number": 44,
+      "section": 3,
+      "book_number": 42,
+      "name_zh": "歇步亮掌",
+      "name_pinyin": "Xiēbù liàngzhǎng",
+      "name_en": "Xiebu, Flash Palm",
+      "name_id": "Xiebu, Telapak Kilat",
+      "steps": {
+        "en": [
+          "Set the left foot down behind to the left; the right fist returns to the waist and the left hand opens and threads out to the right front past the waist; watch the left palm.",
+          "Cross the right foot behind the left and sink into xiebu; the left palm hooks back into a hook hand and the right palm swings up from the waist to flash above the head; look to the left front."
+        ],
+        "id": [
+          "Turunkan kaki kiri ke kiri belakang; kepalan kanan kembali ke pinggang dan tangan kiri dibuka lalu menusuk ke depan kanan melewati pinggang; pandangan ke telapak kiri.",
+          "Silangkan kaki kanan di belakang kaki kiri dan turun ke xiebu; telapak kiri mengait ke belakang menjadi tangan kait dan telapak kanan diayun dari pinggang ke atas kepala sebagai telapak kilat; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Chabu flows into xiebu; flashing palm, hook and stance finish together."
+        ],
+        "id": [
+          "Chabu mengalir ke xiebu; telapak kilat, kait dan kuda-kuda selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 49, 图 A-125 to A-126",
+      "start_sec": 313.5,
+      "end_sec": 318.5
+    },
+    {
+      "number": 45,
+      "section": 3,
+      "book_number": 43,
+      "name_zh": "插步穿抹掌",
+      "name_pinyin": "Chābù chuānmǒzhǎng",
+      "name_en": "Chabu, Thread and Wipe Palms",
+      "name_id": "Chabu, Tusuk dan Sapu Telapak",
+      "steps": {
+        "en": [
+          "Step the left foot back to the left into right gongbu; the left hook opens and threads forward past the waist while the right palm returns to the waist; watch the left palm.",
+          "Cross the right foot behind the left; the left arm rotates in and sweeps back to the left on a level arc while the right palm wipes level around to the front; watch the right palm."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke kiri belakang menjadi gongbu kanan; kait kiri dibuka dan menusuk ke depan melewati pinggang sementara telapak kanan kembali ke pinggang; pandangan ke telapak kiri.",
+          "Silangkan kaki kanan di belakang kaki kiri; lengan kiri berputar ke dalam dan menyapu ke kiri belakang dalam busur datar sementara telapak kanan menyapu datar ke depan; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The thread and the wipe flow together."
+        ],
+        "id": [
+          "Tusukan dan sapuan mengalir menjadi satu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 49–50, 图 A-127 to A-128",
+      "start_sec": 318.5,
+      "end_sec": 323.5
+    },
+    {
+      "number": 46,
+      "section": 3,
+      "book_number": 44,
+      "name_zh": "半马步挑掌",
+      "name_pinyin": "Bànmǎbù tiǎozhǎng",
+      "name_en": "Banmabu, Flick Palm Up",
+      "name_id": "Banmabu, Cungkil Telapak",
+      "steps": {
+        "en": [
+          "Step the left foot to the left front into banmabu; the right palm becomes a fist at the waist and the left palm swings low then up, flicking the wrist up at shoulder level; watch the left palm."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan kiri menjadi banmabu; telapak kanan menjadi kepalan di pinggang dan telapak kiri diayun dari bawah ke atas, pergelangan dicungkil setinggi bahu; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The stance and the flick finish together."
+        ],
+        "id": [
+          "Kuda-kuda dan cungkilan selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 50, 图 A-129",
+      "start_sec": 323.5,
+      "end_sec": 326.5
+    },
+    {
+      "number": 47,
+      "section": 3,
+      "book_number": 45,
+      "name_zh": "冲拳弹腿",
+      "name_pinyin": "Chōngquán tántuǐ",
+      "name_en": "Punch, Snap Kick",
+      "name_id": "Pukulan Lurus, Tendangan Lenting",
+      "steps": {
+        "en": [
+          "Bring the right foot up to the left and straighten both legs; punch the right fist forward as a vertical fist, the left palm coming to the inside of the right upper arm; watch the right fist.",
+          "Step the right foot forward.",
+          "Step the left foot forward at once.",
+          "Lift the right knee and snap the foot forward, instep flat; the right fist returns to the waist and the left palm pushes forward; watch the left palm."
+        ],
+        "id": [
+          "Bawa kaki kanan ke samping kaki kiri dan luruskan kedua kaki; pukulkan kepalan kanan ke depan sebagai kepalan tegak, telapak kiri ke sisi dalam lengan atas kanan; pandangan ke kepalan kanan.",
+          "Langkahkan kaki kanan ke depan.",
+          "Segera langkahkan kaki kiri ke depan.",
+          "Angkat lutut kanan dan lentingkan kaki ke depan, punggung kaki rata; kepalan kanan kembali ke pinggang dan telapak kiri mendorong ke depan; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Push and pull back together, and push and kick together; lift the thigh to about level, then whip the shin out, power in the toes."
+        ],
+        "id": [
+          "Dorong dan tarik bersamaan, dorong dan tendang bersamaan; angkat paha hingga kira-kira datar, lalu lecutkan tungkai bawah, tenaga di ujung kaki."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 50–52, 图 A-130 to A-133",
+      "start_sec": 326.5,
+      "end_sec": 336.5
+    },
+    {
+      "number": 48,
+      "section": 3,
+      "book_number": 46,
+      "name_zh": "插步冲拳",
+      "name_pinyin": "Chābù chōngquán",
+      "name_en": "Chabu, Punch",
+      "name_id": "Chabu, Pukulan Lurus",
+      "steps": {
+        "en": [
+          "Set the right foot down forward, toes out, turn slightly left and cross the left foot behind the right; the left palm swings to flash above the head while the right fist punches out to the right as a vertical fist; watch the right fist."
+        ],
+        "id": [
+          "Turunkan kaki kanan ke depan, ujung kaki ke luar, putar sedikit ke kiri dan silangkan kaki kiri di belakang kaki kanan; telapak kiri diayun menjadi telapak kilat di atas kepala sementara kepalan kanan memukul ke kanan sebagai kepalan tegak; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Block, punch and chabu finish as one."
+        ],
+        "id": [
+          "Tangkisan, pukulan dan chabu selesai sebagai satu kesatuan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 52, 图 A-134",
+      "start_sec": 336.5,
+      "end_sec": 339.5
+    },
+    {
+      "number": 49,
+      "section": 3,
+      "book_number": 47,
+      "name_zh": "弧形步击响里合腿",
+      "name_pinyin": "Húxíngbù jīxiǎng lǐhétuǐ",
+      "name_en": "Huxingbu, Inside Crescent Kick with Slap",
+      "name_id": "Huxingbu, Tendangan Sabit Dalam dengan Tepukan",
+      "steps": {
+        "en": [
+          "Step the left foot to the left front; the left palm drops past the face to the right shoulder and pushes out to the left; watch the left hand.",
+          "Step the right foot to the left front.",
+          "Step the left foot to the left front, turning left.",
+          "Shift forward onto the straight left leg and swing the right leg from below out to the right, up and across to the left in an arc, turning left; the left palm meets the sole in front of the shoulder.",
+          "Keep turning left and set the right foot down, both palms swinging level with the turn."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan kiri; telapak kiri turun melewati wajah ke bahu kanan lalu didorong ke kiri; pandangan ke tangan kiri.",
+          "Langkahkan kaki kanan ke depan kiri.",
+          "Langkahkan kaki kiri ke depan kiri, sambil berputar ke kiri.",
+          "Geser ke depan ke kaki kiri lurus dan ayunkan kaki kanan dari bawah ke kanan, ke atas lalu melintang ke kiri dalam busur, sambil berputar ke kiri; telapak kiri menyambut telapak kaki di depan bahu.",
+          "Terus berputar ke kiri dan turunkan kaki kanan, kedua telapak berayun datar mengikuti putaran."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Huxingbu flow; the slap is loud. Keep the weight back a moment before kicking so the leg can rise easily."
+        ],
+        "id": [
+          "Huxingbu mengalir; tepukan nyaring. Tahan berat badan sejenak sebelum menendang agar kaki mudah naik."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 52–54, 图 A-135 to A-139",
+      "start_sec": 339.5,
+      "end_sec": 352.0
+    },
+    {
+      "number": 50,
+      "section": 3,
+      "book_number": 48,
+      "name_zh": "上步拍地",
+      "name_pinyin": "Shàngbù pāidì",
+      "name_en": "Shangbu, Slap the Floor",
+      "name_id": "Shangbu, Tepuk Lantai",
+      "steps": {
+        "en": [
+          "Turn left, bring the right foot in beside the left and squat fully; the right palm circles up in a vertical round and slaps the floor in front and below, while the left palm circles up and behind into a hook; watch the right hand."
+        ],
+        "id": [
+          "Putar ke kiri, bawa kaki kanan ke samping kaki kiri dan jongkok penuh; telapak kanan berputar ke atas dalam lingkaran vertikal lalu menepuk lantai di depan bawah, sementara telapak kiri berputar ke atas dan ke belakang menjadi kait; pandangan ke tangan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Both arms swing in round vertical circles."
+        ],
+        "id": [
+          "Kedua lengan berayun dalam lingkaran vertikal yang bulat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 54, 图 A-140",
+      "start_sec": 352.0,
+      "end_sec": 355.0
+    },
+    {
+      "number": 51,
+      "section": 3,
+      "book_number": 49,
+      "name_zh": "仆步横切掌",
+      "name_pinyin": "Pūbù héngqiēzhǎng",
+      "name_en": "Pubu, Horizontal Cutting Palm",
+      "name_id": "Pubu, Tebasan Telapak Mendatar",
+      "steps": {
+        "en": [
+          "Turn left 180° and step the left foot forward into left gongbu; thrust the right palm forward and down as a standing palm while the left hook opens to the inside of the right arm; watch the right palm.",
+          "Shift back into a full squat on the right leg with the left leg straight (left pubu); the right hand becomes a fist at the waist and the left palm, facing obliquely down, cuts across to the lower left front; watch the left palm."
+        ],
+        "id": [
+          "Putar ke kiri 180° dan langkahkan kaki kiri ke depan menjadi gongbu kiri; tusukkan telapak kanan ke depan bawah sebagai telapak tegak sementara kait kiri dibuka ke sisi dalam lengan kanan; pandangan ke telapak kanan.",
+          "Geser ke belakang menjadi jongkok penuh di kaki kanan dengan kaki kiri lurus (仆步 kiri); tangan kanan menjadi kepalan di pinggang dan telapak kiri, menghadap serong ke bawah, menebas melintang ke depan kiri bawah; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Pull back, cut and drop into the stance all at once, in one breath."
+        ],
+        "id": [
+          "Tarik, tebas dan turun ke kuda-kuda serentak, dalam satu tarikan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 55, 图 A-141 to A-142",
+      "start_sec": 355.0,
+      "end_sec": 360.0
+    },
+    {
+      "number": 52,
+      "section": 4,
+      "book_number": 50,
+      "name_zh": "抡臂砸拳",
+      "name_pinyin": "Lūnbì záquán",
+      "name_en": "Swing Arms, Pound Fist",
+      "name_id": "Putar Lengan, Hantam Kepalan",
+      "steps": {
+        "en": [
+          "Rise, left leg straight and right leg slightly bent; the left palm swings up a little and the right fist opens as the bent right arm lifts; watch the left palm.",
+          "Circle the left palm in a full vertical round while the right hand crosses in front of the belly and circles back and up to a raised fist; turn left, stand on the left leg and lift the right knee; look ahead.",
+          "Stamp the right foot beside the left and half squat, pounding the back of the right fist into the upturned left palm in front of the belly; watch the right fist."
+        ],
+        "id": [
+          "Berdiri, kaki kiri lurus dan kaki kanan sedikit ditekuk; telapak kiri diayun sedikit ke atas dan kepalan kanan dibuka saat lengan kanan yang ditekuk terangkat; pandangan ke telapak kiri.",
+          "Putar telapak kiri satu lingkaran vertikal penuh sementara tangan kanan menyilang di depan perut lalu berputar ke belakang dan ke atas menjadi kepalan terangkat; putar ke kiri, berdiri di kaki kiri dan angkat lutut kanan; pandangan ke depan.",
+          "Hentakkan kaki kanan di samping kaki kiri dan setengah jongkok, hantamkan punggung kepalan kanan ke telapak kiri yang menghadap atas di depan perut; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in movement （二十六）: stamp and pound are fast, strong and simultaneous."
+        ],
+        "id": [
+          "Sama seperti gerakan （二十六）: hentakan dan hantaman cepat, kuat dan serentak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 55, 图 A-143 to A-145",
+      "start_sec": 360.0,
+      "end_sec": 367.5
+    },
+    {
+      "number": 53,
+      "section": 4,
+      "book_number": 51,
+      "name_zh": "提膝抄拳",
+      "name_pinyin": "Tíxī chāoquán",
+      "name_en": "Knee Lift, Uppercut",
+      "name_id": "Angkat Lutut, Pukulan Sauk ke Atas",
+      "steps": {
+        "en": [
+          "Step the right foot back; the left palm goes to the waist and the right fist opens and pushes forward; watch the right palm.",
+          "Step the left foot back; the right palm goes to the waist and the left palm pushes forward; watch the left palm.",
+          "Step the left foot forward, toes out, turning left; the right palm circles back and up to the front of the left shoulder and the left palm goes under the right armpit, arms folded at the chest, right arm outside; watch the right palm.",
+          "Step the right foot to the right front, toes in; the right palm circles up and right while the left palm circles down and left, both vertical; watch the left palm.",
+          "Turn left, pivot on and stand up on the right leg and lift the left knee; the right hand becomes a fist and scoops from the right, down and up in a vertical arc, fist face to the upper right, while the left palm presses on the right forearm; watch the right fist."
+        ],
+        "id": [
+          "Mundurkan kaki kanan; telapak kiri ke pinggang dan kepalan kanan dibuka lalu didorong ke depan; pandangan ke telapak kanan.",
+          "Mundurkan kaki kiri; telapak kanan ke pinggang dan telapak kiri didorong ke depan; pandangan ke telapak kiri.",
+          "Langkahkan kaki kiri ke depan, ujung kaki ke luar, putar ke kiri; telapak kanan berputar ke belakang dan ke atas ke depan bahu kiri dan telapak kiri ke bawah ketiak kanan, lengan terlipat di dada, lengan kanan di luar; pandangan ke telapak kanan.",
+          "Langkahkan kaki kanan ke depan kanan, ujung kaki ke dalam; telapak kanan berputar ke atas dan ke kanan sementara telapak kiri berputar ke bawah dan ke kiri, keduanya vertikal; pandangan ke telapak kiri.",
+          "Putar ke kiri, berporos dan berdiri di kaki kanan lalu angkat lutut kiri; tangan kanan menjadi kepalan dan menyauk dari kanan, ke bawah lalu ke atas dalam busur vertikal, muka kepalan ke kanan atas, sementara telapak kiri menekan lengan bawah kanan; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Power reaches the face of the fist; the uppercut and the knee lift finish together."
+        ],
+        "id": [
+          "Tenaga sampai ke muka kepalan; pukulan sauk dan angkat lutut selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 56–57, 图 A-146 to A-150",
+      "start_sec": 367.5,
+      "end_sec": 380.0
+    },
+    {
+      "number": 54,
+      "section": 4,
+      "book_number": 52,
+      "name_zh": "垫步旋子",
+      "name_pinyin": "Diànbù xuànzi",
+      "name_en": "Dianbu, Butterfly",
+      "name_id": "Dianbu, Kupu-kupu (Xuanzi)",
+      "steps": {
+        "en": [
+          "Set the left foot down behind to the left; the left palm swings a little to the left and the right fist opens; watch the left palm.",
+          "Step the right foot past the left, toes in, turning left, arms swinging level with the turn.",
+          "Turn left, lift the left foot a little and hop to the left off the right foot.",
+          "Land right then left.",
+          "Bend the trunk forward and twist back to the left; swing the right leg up to the left and kick off the left foot so both legs sweep round, arms swinging level, the body turning flat in the air.",
+          "Land on the right foot.",
+          "Land the left foot and turn left, arms raised diagonally."
+        ],
+        "id": [
+          "Turunkan kaki kiri ke kiri belakang; telapak kiri diayun sedikit ke kiri dan kepalan kanan dibuka; pandangan ke telapak kiri.",
+          "Langkahkan kaki kanan melewati kaki kiri, ujung kaki ke dalam, berputar ke kiri, lengan berayun datar mengikuti putaran.",
+          "Putar ke kiri, angkat sedikit kaki kiri dan lompat kecil ke kiri dari kaki kanan.",
+          "Mendarat kanan lalu kiri.",
+          "Bungkukkan badan ke depan dan putar ke kiri belakang; ayunkan kaki kanan ke kiri atas dan tolak dengan kaki kiri sehingga kedua kaki menyapu berputar, lengan berayun datar, badan berputar mendatar di udara.",
+          "Mendarat dengan kaki kanan.",
+          "Daratkan kaki kiri dan putar ke kiri, lengan terangkat serong."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Jump high and keep the body flat in the air.",
+          "The run-up is relaxed and linked; the final twist and take-off are strong; arm swing, leg swing and push-off are quick and continuous."
+        ],
+        "id": [
+          "Lompat tinggi dan jaga badan tetap mendatar di udara.",
+          "Ancang-ancang rileks dan bersambung; putaran badan dan tolakan akhir kuat; ayunan lengan, ayunan kaki dan tolakan cepat dan berkesinambungan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 59–60, 图 A-151 to A-157",
+      "start_sec": 380.0,
+      "end_sec": 397.5
+    },
+    {
+      "number": 55,
+      "section": 4,
+      "book_number": 53,
+      "name_zh": "上步拍脚",
+      "name_pinyin": "Shàngbù pāijiǎo",
+      "name_en": "Shangbu, Slap Foot",
+      "name_id": "Shangbu, Tepuk Kaki",
+      "steps": {
+        "en": [
+          "Turn slightly left and step forward; the right arm lowers a little; watch the left palm.",
+          "Step the left foot forward; swing the right hand from behind, down and up to strike the left palm above the head with its back.",
+          "On the straight left leg swing the straight right leg up, instep flat, and slap it with the right palm in front of the face; the left palm rises to the upper left; watch the right palm."
+        ],
+        "id": [
+          "Putar sedikit ke kiri dan melangkah ke depan; lengan kanan sedikit turun; pandangan ke telapak kiri.",
+          "Langkahkan kaki kiri ke depan; ayunkan tangan kanan dari belakang, ke bawah lalu ke atas memukul telapak kiri di atas kepala dengan punggungnya.",
+          "Di atas kaki kiri lurus ayunkan kaki kanan lurus ke atas, punggung kaki rata, dan tepuk dengan telapak kanan di depan wajah; telapak kiri naik ke kiri atas; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The slaps are crisp and loud and meet above shoulder height; speed up as the foot passes the chest."
+        ],
+        "id": [
+          "Tepukan tegas dan nyaring serta bertemu di atas tinggi bahu; percepat saat kaki melewati dada."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 62–63, 图 A-158 to A-160",
+      "start_sec": 397.5,
+      "end_sec": 405.0
+    },
+    {
+      "number": 56,
+      "section": 4,
+      "book_number": 54,
+      "name_zh": "弓步挑掌",
+      "name_pinyin": "Gōngbù tiǎozhǎng",
+      "name_en": "Gongbu, Flick Palm Up",
+      "name_id": "Gongbu, Cungkil Telapak",
+      "steps": {
+        "en": [
+          "Set the right foot down forward and turn slightly left into banmabu; the left palm scoops back, down and up to the front of the right shoulder while the right palm chops down; watch the right palm.",
+          "Shift forward and straighten the left leg into right gongbu; flick the right palm up to the upper right while the left palm swings down to the lower left rear; watch the right palm."
+        ],
+        "id": [
+          "Turunkan kaki kanan ke depan dan putar sedikit ke kiri menjadi banmabu; telapak kiri menyauk ke belakang, ke bawah lalu ke atas ke depan bahu kanan sementara telapak kanan membacok ke bawah; pandangan ke telapak kanan.",
+          "Geser ke depan dan luruskan kaki kiri menjadi gongbu kanan; cungkil telapak kanan ke kanan atas sementara telapak kiri berayun ke kiri belakang bawah; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Power is on the thumb side; flick and gongbu finish as one."
+        ],
+        "id": [
+          "Tenaga di sisi ibu jari; cungkilan dan gongbu selesai sebagai satu kesatuan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 63–64, 图 A-161 to A-162",
+      "start_sec": 405.0,
+      "end_sec": 410.0
+    },
+    {
+      "number": 57,
+      "section": 4,
+      "book_number": 55,
+      "name_zh": "弓步盘肘",
+      "name_pinyin": "Gōngbù pánzhǒu",
+      "name_en": "Gongbu, Coiling Elbow",
+      "name_id": "Gongbu, Siku Melingkar",
+      "steps": {
+        "en": [
+          "Turn left and shift into left gongbu; the right hand becomes a fist and the bent right arm swings level to the left in front of the body as a coiling elbow; the left hand becomes a fist at the waist; look to the right front."
+        ],
+        "id": [
+          "Putar ke kiri dan geser menjadi gongbu kiri; tangan kanan menjadi kepalan dan lengan kanan yang ditekuk berayun datar ke kiri di depan badan sebagai siku melingkar; tangan kiri menjadi kepalan di pinggang; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The elbow and gongbu finish as one."
+        ],
+        "id": [
+          "Siku dan gongbu selesai sebagai satu kesatuan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 64, 图 A-163",
+      "start_sec": 410.0,
+      "end_sec": 413.0
+    },
+    {
+      "number": 58,
+      "section": 4,
+      "book_number": 56,
+      "name_zh": "扶地后扫腿",
+      "name_pinyin": "Fúdì hòusǎotuǐ",
+      "name_en": "Hands on Floor, Back Sweep",
+      "name_id": "Tangan di Lantai, Sapuan Belakang",
+      "steps": {
+        "en": [
+          "Open both fists and reach the palms forward; look ahead.",
+          "Squat fully on the left leg, toes in, with the right leg laid flat; plant both palms on the floor under the right knee, bending forward and twisting to the right; watch the right palm.",
+          "Without stopping, sweep the right foot a full circle along the floor, pivoting on the ball of the left foot; push off the floor with both palms and let them rise diagonally back; watch the palms."
+        ],
+        "id": [
+          "Buka kedua kepalan dan julurkan telapak ke depan; pandangan ke depan.",
+          "Jongkok penuh di kaki kiri, ujung kaki ke dalam, dengan kaki kanan rebah rata; tumpukan kedua telapak di lantai di bawah lutut kanan, badan membungkuk dan berputar ke kanan; pandangan ke telapak kanan.",
+          "Tanpa berhenti, sapukan kaki kanan satu lingkaran penuh menyusuri lantai, berporos pada telapak depan kaki kiri; dorong lantai dengan kedua telapak lalu biarkan terangkat serong ke belakang; pandangan ke telapak."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The sweep is fast, goes a full circle and brushes the floor."
+        ],
+        "id": [
+          "Sapuan cepat, satu lingkaran penuh dan menyentuh lantai."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 64–65, 图 A-164 to A-166",
+      "start_sec": 413.0,
+      "end_sec": 420.5
+    },
+    {
+      "number": 59,
+      "section": 4,
+      "book_number": 57,
+      "name_zh": "抡臂砸拳",
+      "name_pinyin": "Lūnbì záquán",
+      "name_en": "Swing Arms, Pound Fist",
+      "name_id": "Putar Lengan, Hantam Kepalan",
+      "steps": {
+        "en": [
+          "Shift right and turn the left toes in into right gongbu, lifting the bent right arm; look to the left front.",
+          "Circle the left palm in a full vertical round while the right hand crosses in front of the belly and circles back and up to a raised fist; turn left, stand on the left leg and lift the right knee; look ahead.",
+          "Stamp the right foot beside the left and half squat, pounding the back of the right fist into the upturned left palm in front of the belly; watch the right fist."
+        ],
+        "id": [
+          "Geser ke kanan dan putar ujung kaki kiri ke dalam menjadi gongbu kanan, angkat lengan kanan yang ditekuk; pandangan ke depan kiri.",
+          "Putar telapak kiri satu lingkaran vertikal penuh sementara tangan kanan menyilang di depan perut lalu berputar ke belakang dan ke atas menjadi kepalan terangkat; putar ke kiri, berdiri di kaki kiri dan angkat lutut kanan; pandangan ke depan.",
+          "Hentakkan kaki kanan di samping kaki kiri dan setengah jongkok, hantamkan punggung kepalan kanan ke telapak kiri yang menghadap atas di depan perut; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in movement （二十六）."
+        ],
+        "id": [
+          "Sama seperti gerakan （二十六）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 65–66, 图 A-167 to A-169",
+      "start_sec": 420.5,
+      "end_sec": 428.0
+    },
+    {
+      "number": 60,
+      "section": 4,
+      "book_number": 58,
+      "name_zh": "虚步亮掌",
+      "name_pinyin": "Xūbù liàngzhǎng",
+      "name_en": "Xubu, Flash Palm",
+      "name_id": "Xubu, Telapak Kilat",
+      "steps": {
+        "en": [
+          "Step the right foot back and shift onto it in a half squat, left knee slightly bent and the left toes touching down lightly; the right fist opens and swings up to the upper right while the left palm reaches to the lower left; look to the left front."
+        ],
+        "id": [
+          "Mundurkan kaki kanan dan pindahkan berat badan ke sana dalam setengah jongkok, lutut kiri sedikit ditekuk dan ujung kaki kiri menyentuh lantai ringan; kepalan kanan dibuka dan diayun ke kanan atas sementara telapak kiri menjulur ke kiri bawah; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Xubu and the parting palms finish together."
+        ],
+        "id": [
+          "Xubu dan telapak yang berpisah selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 67, 图 A-170",
+      "start_sec": 428.0,
+      "end_sec": 431.0
+    },
+    {
+      "number": 61,
+      "section": 99,
+      "book_number": 1,
+      "name_zh": "前点步抱拳",
+      "name_pinyin": "Qiándiǎnbù bàoquán",
+      "name_en": "Qiandianbu, Fist-and-Palm Salute",
+      "name_id": "Qiandianbu, Salam Kepalan",
+      "steps": {
+        "en": [
+          "Step the left foot back one step and clap the palms together in front of the chest; watch the right palm.",
+          "Step the right foot back diagonally to the right, turning slightly right, and part the palms to the sides; watch the right palm.",
+          "Shift right and stand on the straight right leg, drawing the left foot in front with the instep stretched and the toes touching down; the right hand makes a fist at the right chest and the left palm covers the face of the fist; look to the left front."
+        ],
+        "id": [
+          "Mundurkan kaki kiri satu langkah dan tepukkan kedua telapak di depan dada; pandangan ke telapak kanan.",
+          "Mundurkan kaki kanan serong ke kanan belakang, putar sedikit ke kanan, dan pisahkan telapak ke samping; pandangan ke telapak kanan.",
+          "Geser ke kanan dan berdiri di kaki kanan lurus, tarik kaki kiri ke depan dengan punggung kaki diluruskan dan ujung kaki menyentuh lantai; tangan kanan mengepal di depan dada kanan dan telapak kiri menutup muka kepalan; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The toe point, the salute and the head turn happen together."
+        ],
+        "id": [
+          "Tutulan kaki, salam dan tolehan kepala dilakukan bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 67, 图 A-171 to A-173",
+      "start_sec": 431.0,
+      "end_sec": 438.5
+    },
+    {
+      "number": 62,
+      "section": 99,
+      "book_number": 2,
+      "name_zh": "还原",
+      "name_pinyin": "Huányuán",
+      "name_en": "Return to Start",
+      "name_id": "Kembali ke Posisi Awal",
+      "steps": {
+        "en": [
+          "Step the left foot half a step forward and bring the right foot beside it; stand with straight legs, arms at the sides; look ahead."
+        ],
+        "id": [
+          "Langkahkan kaki kiri setengah langkah ke depan dan bawa kaki kanan ke sampingnya; berdiri dengan kaki lurus, lengan di samping; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Chest open, waist upright, abdomen in, crown of the head lifted."
+        ],
+        "id": [
+          "Dada terbuka, pinggang tegak, perut ditarik, ubun-ubun terangkat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Northern Fist, p. 68, 图 A-174",
+      "start_sec": 438.5,
+      "end_sec": 441.5
+    }
+  ]
+}

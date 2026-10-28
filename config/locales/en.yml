@@ -14,6 +14,7 @@ en:
   routines:
     index:
       title: Compulsory routines
+      collection: IWUF 1st Compulsory Routines
       lead: An open, community-maintained study reference for standard wushu routines. Names are always kept in Chinese with pinyin; translations in English or Bahasa Indonesia.
       search: Search routines and movements
       search_placeholder: Try “lan que wei”, 揽雀尾 or “bird’s tail”
@@ -26,16 +27,19 @@ en:
       competition_routine: 竞赛套路
     styles:
       taiji: Taijiquan
-      chang: Changquan & weapons
+      chang: Northern Fist & weapons
       nan: Southern styles
     header:
       breadcrumb: Breadcrumb
       sections: Routine sections
-      summary: "%{count} movements · %{duration} · Competition routine · %{sections} sections"
+      summary: "%{count} movements · %{duration} · IWUF 1st compulsory routine · %{sections}"
       learn: Learn
       movements: Movements
     count:
       movements: "%{count} movements"
+      sections:
+        one: "%{count} section"
+        other: "%{count} sections"
     player:
       video: Video
       sample_video: No video uploaded yet · practice clock

@@ -14,7 +14,7 @@ commencing:
   key_points: <%= { en: ["Head held up."], id: ["Kepala tegak."] }.to_json %>
   mistakes: <%= { en: ["Raising the shoulders."], id: ["Bahu terangkat."] }.to_json %>
   figures: <%= [{ yaw: 0, j: Array.new(17) { [0, 100, 0] } }].to_json %>
-  reference: Competition routines collection (scan), Taijiquan, p. 598
+  reference: IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 598
 
 grasp_right:
   routine: taiji

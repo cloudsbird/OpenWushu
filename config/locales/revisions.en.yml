@@ -40,7 +40,7 @@ en:
       lead: Chinese names, pinyin and the order of movements come from the reference book and are not edited here. Leave a language empty if you don’t write it; someone else can add it.
       own_words: Write in your own words. Don’t copy text from books or rulebooks, even translated; their publishers own it. Facts such as directions and the order of actions are fine.
       one_per_line: one per line
-      reference_hint: Where the facts come from, with page and figure, e.g. “Competition routines collection (scan), Taijiquan, p. 598, 图 I-3”.
+      reference_hint: Where the facts come from, with page and figure, e.g. “IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 598, 图 I-3”.
       summary: What did you change?
       summary_placeholder: e.g. Wrote the steps and key points
       source: Source

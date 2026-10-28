@@ -36,8 +36,11 @@
       </g>
     <% end %>
 
-    <circle data-routine-player-target="halo" cx="<%= start&.first %>" cy="<%= start&.last %>" r="34" fill="var(--accent)" opacity="0.22"/>
-    <circle data-routine-player-target="dot" cx="<%= start&.first %>" cy="<%= start&.last %>" r="16" fill="var(--accent)" stroke="#FFFFFF" stroke-width="5"/>
+    <%# Without a measured start point there is nothing to place the dot on yet %>
+    <%= tag.g(display: ("none" unless start)) do %>
+      <circle data-routine-player-target="halo" cx="<%= start&.first %>" cy="<%= start&.last %>" r="34" fill="var(--accent)" opacity="0.22"/>
+      <circle data-routine-player-target="dot" cx="<%= start&.first %>" cy="<%= start&.last %>" r="16" fill="var(--accent)" stroke="#FFFFFF" stroke-width="5"/>
+    <% end %>
   </svg>
   <div class="legend">
     <span><i style="width: 12px; height: 12px; background: var(--ink)"></i><%= t("routines.carpet.start") %></span>

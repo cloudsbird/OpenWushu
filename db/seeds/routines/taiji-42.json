@@ -1,0 +1,1861 @@
+{
+  "routine": {
+    "slug": "taiji-42",
+    "style": "taiji",
+    "name_zh": "四十二式太极拳",
+    "name_pinyin": "Sìshí'èr shì tàijíquán",
+    "name_en": "42-Form Competition Taijiquan",
+    "name_id": "42 Jurus Taijiquan Kompetisi",
+    "card_zh": "四二",
+    "status": "published",
+    "position": 1,
+    "reference_page": 596,
+    "reference_figure": "I",
+    "start_x": 2.8,
+    "start_y": 4.2
+  },
+  "movements": [
+    {
+      "number": 1,
+      "section": 1,
+      "name_zh": "起势",
+      "name_pinyin": "Qǐshì",
+      "name_en": "Commencing Form",
+      "name_id": "Sikap Pembuka",
+      "start_sec": 0,
+      "end_sec": 8,
+      "end_x": 3,
+      "end_y": 4.7,
+      "facing_en": "South (towards the judges)",
+      "facing_id": "Selatan (menghadap juri)",
+      "steps": {
+        "en": [
+          "Stand naturally with the feet together and the arms relaxed at the sides.",
+          "Step the left foot out lightly to shoulder width, toes pointing forward.",
+          "Raise both arms slowly forward to shoulder height, shoulder-width apart, elbows slightly bent.",
+          "Keep the upper body upright, bend the knees into a half squat and press both palms down in front of the abdomen."
+        ],
+        "id": [
+          "Berdiri wajar dengan kaki rapat dan lengan rileks di samping badan.",
+          "Langkahkan kaki kiri ke samping dengan ringan selebar bahu, ujung kaki ke depan.",
+          "Angkat kedua lengan perlahan ke depan setinggi bahu, selebar bahu, siku sedikit ditekuk.",
+          "Jaga badan atas tetap tegak, tekuk lutut setengah jongkok dan tekan kedua telapak ke bawah di depan perut."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "When stepping out, lift the heel first, then the toes; put the toes down first, then the heel.",
+          "Head held up, chin slightly tucked; breathe naturally."
+        ],
+        "id": [
+          "Saat melangkah, angkat tumit dulu lalu ujung kaki; turunkan ujung kaki dulu lalu tumit.",
+          "Kepala tegak, dagu sedikit ditarik; bernapas secara alami."
+        ]
+      },
+      "mistakes": {
+        "en": [
+          "Raising the shoulders with the arms.",
+          "Leaning forward or sticking the hips out in the squat."
+        ],
+        "id": [
+          "Bahu ikut terangkat bersama lengan.",
+          "Badan condong atau pinggul menonjol saat jongkok."
+        ]
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 598–599, 图 I-1 to I-4",
+      "figures": [
+        {
+          "yaw": 0,
+          "j": [
+            [0, 160, 0],
+            [0, 145, 0],
+            [18, 140, 0],
+            [-18, 140, 0],
+            [21, 112, 0],
+            [-21, 112, 0],
+            [22, 86, 2],
+            [-22, 86, 2],
+            [0, 95, 0],
+            [9, 93, 0],
+            [-9, 93, 0],
+            [8, 51, 2],
+            [-8, 51, 2],
+            [7, 8, 0],
+            [-7, 8, 0],
+            [8, 2, 13],
+            [-8, 2, 13]
+          ]
+        },
+        {
+          "yaw": 0,
+          "j": [
+            [0, 160, 0],
+            [0, 145, 0],
+            [18, 140, 0],
+            [-18, 140, 0],
+            [21, 112, 0],
+            [-21, 112, 0],
+            [22, 86, 2],
+            [-22, 86, 2],
+            [0, 95, 0],
+            [9, 93, 0],
+            [-9, 93, 0],
+            [17, 51, 2],
+            [-8, 51, 2],
+            [19, 8, 0],
+            [-7, 8, 0],
+            [20, 2, 13],
+            [-8, 2, 13]
+          ]
+        },
+        {
+          "yaw": 0,
+          "j": [
+            [0, 160, 0],
+            [0, 145, 0],
+            [18, 140, 0],
+            [-18, 140, 0],
+            [19, 133, 22],
+            [-19, 133, 22],
+            [18, 137, 48],
+            [-18, 137, 48],
+            [0, 95, 0],
+            [9, 93, 0],
+            [-9, 93, 0],
+            [17, 51, 2],
+            [-8, 51, 2],
+            [19, 8, 0],
+            [-7, 8, 0],
+            [20, 2, 13],
+            [-8, 2, 13]
+          ]
+        },
+        {
+          "yaw": 0,
+          "j": [
+            [0, 146, -3],
+            [0, 131, -3],
+            [18, 126, -3],
+            [-18, 126, -3],
+            [22, 106, 12],
+            [-22, 106, 12],
+            [18, 93, 28],
+            [-18, 93, 28],
+            [0, 81, -6],
+            [9, 79, -6],
+            [-9, 79, -6],
+            [18, 43, 12],
+            [-8, 43, 12],
+            [19, 8, 0],
+            [-7, 8, 0],
+            [20, 2, 13],
+            [-8, 2, 13]
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "section": 1,
+      "name_zh": "右揽雀尾",
+      "name_pinyin": "Yòu lǎn què wěi",
+      "name_en": "Grasp the Bird’s Tail (Right)",
+      "name_id": "Menangkap Ekor Burung (Kanan)",
+      "start_sec": 8,
+      "end_sec": 18,
+      "end_x": 3.2,
+      "end_y": 5.3,
+      "facing_en": "[to be filled in from the reference]",
+      "facing_id": "[diisi dari referensi]",
+      "steps": {
+        "en": [
+          "Turn the right toes slightly out and the body slightly right. Bend the right arm in front of the chest, palm down; circle the left hand to the right of the abdomen, palm up, as if holding a ball. Shift the weight onto the right leg and draw the left foot beside the right foot.",
+          "Turn the body slightly left and step the left foot forward to the left, placing the heel down lightly.",
+          "Keep turning left into left gongbu. The left arm wards off forward, left hand at shoulder height; the right hand drops beside the right hip, palm down.",
+          "Turn slightly left and draw the right foot beside the left foot. Bend the left arm in front of the chest, palm down, and circle the right hand to the left of the abdomen, palm up: holding a ball on the left."
+        ],
+        "id": [
+          "Putar ujung kaki kanan sedikit keluar dan badan sedikit ke kanan. Tekuk lengan kanan di depan dada, telapak menghadap bawah; lingkarkan tangan kiri ke sisi kanan perut, telapak menghadap atas, seperti memeluk bola. Pindahkan berat badan ke kaki kanan dan tarik kaki kiri ke samping kaki kanan.",
+          "Putar badan sedikit ke kiri dan langkahkan kaki kiri ke depan kiri, tumit menyentuh lantai dengan ringan.",
+          "Terus berputar ke kiri menjadi gongbu kiri. Lengan kiri menangkis ke depan, tangan kiri setinggi bahu; tangan kanan turun di samping pinggul kanan, telapak menghadap bawah.",
+          "Putar sedikit ke kiri dan tarik kaki kanan ke samping kaki kiri. Tekuk lengan kiri di depan dada, telapak menghadap bawah, dan lingkarkan tangan kanan ke sisi kiri perut, telapak menghadap atas: memeluk bola di kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Turn from the waist; the arms follow the body.",
+          "Keep the shoulders and elbows sunk (沉肩坠肘 chén jiān zhuì zhǒu).",
+          "Shift the weight fully before stepping."
+        ],
+        "id": [
+          "Putar dari pinggang; lengan mengikuti badan.",
+          "Bahu dan siku tetap turun (沉肩坠肘 chén jiān zhuì zhǒu).",
+          "Pindahkan berat badan sepenuhnya sebelum melangkah."
+        ]
+      },
+      "mistakes": {
+        "en": [
+          "Ward-off arm too straight or too low.",
+          "Leaning forward in gongbu.",
+          "Stepping before the weight has shifted."
+        ],
+        "id": [
+          "Lengan menangkis terlalu lurus atau terlalu rendah.",
+          "Badan condong ke depan saat gongbu.",
+          "Melangkah sebelum berat badan berpindah."
+        ]
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 599, 图 I-5 to I-8",
+      "figures": [
+        {
+          "yaw": -30,
+          "j": [
+            [-2, 154, 0],
+            [-2, 139, 0],
+            [16, 134, 0],
+            [-20, 134, 0],
+            [12, 108, 12],
+            [-27, 122, 14],
+            [-6, 100, 22],
+            [-8, 124, 26],
+            [-4, 88, 0],
+            [5, 86, 0],
+            [-13, 86, 0],
+            [0, 48, 10],
+            [-13, 47, 10],
+            [-3, 12, -2],
+            [-12, 8, 0],
+            [-2, 3, 10],
+            [-14, 2, 13]
+          ]
+        },
+        {
+          "yaw": -10,
+          "j": [
+            [-2, 154, 0],
+            [-2, 139, 0],
+            [16, 134, 0],
+            [-20, 134, 0],
+            [12, 108, 12],
+            [-27, 122, 14],
+            [-6, 100, 22],
+            [-8, 124, 26],
+            [-4, 88, 0],
+            [5, 86, 0],
+            [-13, 86, 0],
+            [12, 50, 20],
+            [-13, 47, 10],
+            [17, 10, 36],
+            [-12, 8, 0],
+            [19, 13, 48],
+            [-14, 2, 13]
+          ]
+        },
+        {
+          "yaw": 0,
+          "j": [
+            [4, 145, 14],
+            [4, 130, 14],
+            [22, 126, 14],
+            [-14, 126, 14],
+            [27, 120, 36],
+            [-20, 104, 16],
+            [7, 125, 50],
+            [-18, 84, 22],
+            [4, 84, 14],
+            [13, 82, 14],
+            [-5, 82, 14],
+            [17, 46, 36],
+            [-11, 46, -2],
+            [18, 8, 40],
+            [-18, 8, -20],
+            [20, 2, 53],
+            [-26, 2, -11]
+          ]
+        },
+        {
+          "yaw": 20,
+          "j": [
+            [6, 150, 24],
+            [6, 135, 24],
+            [24, 130, 24],
+            [-12, 130, 24],
+            [30, 120, 38],
+            [-6, 106, 36],
+            [10, 122, 48],
+            [10, 98, 44],
+            [6, 86, 24],
+            [15, 84, 24],
+            [-3, 84, 24],
+            [18, 46, 34],
+            [2, 47, 34],
+            [18, 8, 40],
+            [4, 12, 28],
+            [20, 2, 53],
+            [6, 3, 40]
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "section": 1,
+      "name_zh": "左单鞭",
+      "name_pinyin": "Zuǒ dān biān",
+      "name_en": "Single Whip (Left)",
+      "name_id": "Cambuk Tunggal (Kiri)",
+      "start_sec": 18,
+      "end_sec": 25,
+      "end_x": 3.5,
+      "end_y": 5.8,
+      "steps": {
+        "en": [
+          "Turn slightly left and step the left foot to the left front, heel down; the right palm becomes a hook while the left palm arcs left to in front of the face; watch the left palm.",
+          "Keep turning left and shift forward into left gongbu; rotate the left forearm in and turn the palm over to push forward, palm forward, wrist at shoulder height; watch the left palm."
+        ],
+        "id": [
+          "Putar sedikit ke kiri dan langkahkan kaki kiri ke depan kiri, tumit menyentuh lantai; telapak kanan menjadi tangan kait sementara telapak kiri melengkung ke kiri ke depan wajah; pandangan ke telapak kiri.",
+          "Terus berputar ke kiri dan geser ke depan menjadi gongbu kiri; putar lengan bawah kiri ke dalam dan balik telapak untuk mendorong ke depan, telapak ke depan, pergelangan setinggi bahu; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "After forming the hook, relax the hips and turn to step out, then shift the weight and draw the palm into Single Whip; in the final pose keep the trunk relaxed and upright, both arms raised loosely to the sides."
+        ],
+        "id": [
+          "Setelah membentuk kait, rilekskan pinggul dan berputar untuk melangkah, lalu pindahkan berat dan tarik telapak menjadi Cambuk Tunggal; pada pose akhir badan rileks dan tegak, kedua lengan terangkat longgar ke samping."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 600, 图 I-18 to I-19"
+    },
+    {
+      "number": 4,
+      "section": 1,
+      "name_zh": "提手",
+      "name_pinyin": "Tí shǒu",
+      "name_en": "Raise Hands",
+      "name_id": "Mengangkat Tangan",
+      "start_sec": 25,
+      "end_sec": 31,
+      "end_x": 3.8,
+      "end_y": 6.2,
+      "steps": {
+        "en": [
+          "Sit back and turn right, turning the left toes in; swing the left palm level to the right in an arc; watch the left hand.",
+          "Shift left; the right hook opens into a palm and the left palm draws slightly left.",
+          "Turn slightly right, lift the right foot and set the heel down with the toes raised in right xubu; raise the right palm in front as a side-standing palm, fingertips at eyebrow height, elbow bent, the left palm closing in at the inside of the right elbow; watch the right palm."
+        ],
+        "id": [
+          "Duduk ke belakang dan putar ke kanan, ujung kaki kiri ke dalam; ayunkan telapak kiri datar ke kanan melengkung; pandangan ke tangan kiri.",
+          "Geser ke kiri; kait kanan dibuka menjadi telapak dan telapak kiri sedikit ditarik ke kiri.",
+          "Putar sedikit ke kanan, angkat kaki kanan dan turunkan tumit dengan ujung kaki terangkat dalam xubu kanan; angkat telapak kanan di depan sebagai telapak tegak menyamping, ujung jari setinggi alis, siku ditekuk, telapak kiri merapat di sisi dalam siku kanan; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Open the right hook as the weight begins to move left, then draw the left palm left with the shift; the hands close as the heel touches down, with a closing, forward-bracing feel in the arms."
+        ],
+        "id": [
+          "Buka kait kanan saat berat mulai bergeser ke kiri, lalu tarik telapak kiri ke kiri mengikuti geseran; kedua tangan merapat saat tumit menyentuh lantai, dengan rasa merapat dan menahan ke depan di lengan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 600–604, 图 I-20 to I-22"
+    },
+    {
+      "number": 5,
+      "section": 1,
+      "name_zh": "白鹤亮翅",
+      "name_pinyin": "Báihè liàng chì",
+      "name_en": "White Crane Spreads Its Wings",
+      "name_id": "Bangau Putih Membentangkan Sayap",
+      "start_sec": 31,
+      "end_sec": 37,
+      "end_x": 4.2,
+      "end_y": 6.3,
+      "steps": {
+        "en": [
+          "Turn left and draw the right foot slightly back, toes in; both hands arc down to the left and turn over to hold a ball at the left chest, left hand on top, arms gently curved; watch the left hand.",
+          "Shift right and turn right; the hands close and rise together to the front of the right shoulder; watch the right hand.",
+          "Turn slightly left and draw the left foot in, toes touching down, into left xubu; part the hands, the right rising to the right forehead, palm in, and the left pressing beside the left hip, palm down, arms rounded; look straight ahead."
+        ],
+        "id": [
+          "Putar ke kiri dan tarik kaki kanan sedikit ke belakang, ujung kaki ke dalam; kedua tangan melengkung ke kiri bawah lalu berbalik memeluk bola di depan dada kiri, tangan kiri di atas, lengan melengkung lembut; pandangan ke tangan kiri.",
+          "Geser ke kanan dan putar ke kanan; kedua tangan merapat dan naik bersama ke depan bahu kanan; pandangan ke tangan kanan.",
+          "Putar sedikit ke kiri dan tarik kaki kiri ke dalam, ujung kaki menyentuh lantai, menjadi xubu kiri; pisahkan tangan, kanan naik ke dahi kanan, telapak ke dalam, dan kiri menekan di samping pinggul kiri, telapak ke bawah, lengan membulat; pandangan lurus ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Coordinate the legs and waist: toe in with the hold, turn with the rise, part the hands with xubu, all soft; tuck the buttocks and keep upright without arching the back."
+        ],
+        "id": [
+          "Koordinasikan kaki dan pinggang: ujung kaki ke dalam bersama pelukan, putar bersama angkatan, pisahkan tangan bersama xubu, semuanya lembut; tarik pantat dan tetap tegak tanpa melengkungkan punggung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 605, 图 I-23 to I-25"
+    },
+    {
+      "number": 6,
+      "section": 1,
+      "name_zh": "搂膝拗步",
+      "name_pinyin": "Lōu xī ào bù",
+      "name_en": "Brush Knee and Twist Step",
+      "name_id": "Menyapu Lutut dan Melangkah",
+      "start_sec": 37,
+      "end_sec": 45,
+      "end_x": 4.5,
+      "end_y": 6.1,
+      "steps": {
+        "en": [
+          "Turn slightly left; the right hand arcs left and falls past the front of the head; watch the right hand.",
+          "Turn right; the right hand circles down, right and up to the right front at head height, palm slanting up, while the left hand circles up, right and down to the right ribs, palm down; draw the left foot in beside the right; watch the right hand.",
+          "Turn left and step the left foot forward, heel down lightly; bend the right arm to bring the hand beside the ear, palm slanting forward, the left hand arcing down to the belly; look ahead.",
+          "Shift forward into left gongbu; push the right hand forward as a standing palm, fingertips at nose height, while the left hand brushes past the left knee and presses beside the left hip; watch the right palm.",
+          "Shift slightly back, turn the left toes out and turn left, the right hand arcing left; the left hand circles left and up to the left front at head height, palm slanting up, the right hand swinging to the left ribs, palm down; draw the right foot in beside the left; watch the left hand.",
+          "Turn right and step the right foot forward, heel down lightly; bend the left arm to bring the hand beside the ear, the right hand arcing down to the belly; look ahead.",
+          "Shift forward into right gongbu; push the left hand forward as a standing palm, fingertips at nose height, while the right hand brushes past the right knee and presses beside the right hip; watch the left palm."
+        ],
+        "id": [
+          "Putar sedikit ke kiri; tangan kanan melengkung ke kiri dan turun melewati depan kepala; pandangan ke tangan kanan.",
+          "Putar ke kanan; tangan kanan berputar ke bawah, ke kanan dan ke atas ke depan kanan setinggi kepala, telapak miring ke atas, sementara tangan kiri berputar ke atas, ke kanan dan ke bawah ke rusuk kanan, telapak ke bawah; tarik kaki kiri ke samping kaki kanan; pandangan ke tangan kanan.",
+          "Putar ke kiri dan langkahkan kaki kiri ke depan, tumit turun ringan; tekuk lengan kanan membawa tangan ke samping telinga, telapak miring ke depan, tangan kiri melengkung turun ke depan perut; pandangan ke depan.",
+          "Geser ke depan menjadi gongbu kiri; dorong tangan kanan ke depan sebagai telapak tegak, ujung jari setinggi hidung, sementara tangan kiri menyapu melewati lutut kiri dan menekan di samping pinggul kiri; pandangan ke telapak kanan.",
+          "Geser sedikit ke belakang, putar ujung kaki kiri ke luar dan putar ke kiri, tangan kanan melengkung ke kiri; tangan kiri berputar ke kiri dan ke atas ke depan kiri setinggi kepala, telapak miring ke atas, tangan kanan berayun ke rusuk kiri, telapak ke bawah; tarik kaki kanan ke samping kaki kiri; pandangan ke tangan kiri.",
+          "Putar ke kanan dan langkahkan kaki kanan ke depan, tumit turun ringan; tekuk lengan kiri membawa tangan ke samping telinga, tangan kanan melengkung turun ke depan perut; pandangan ke depan.",
+          "Geser ke depan menjadi gongbu kanan; dorong tangan kiri ke depan sebagai telapak tegak, ujung jari setinggi hidung, sementara tangan kanan menyapu melewati lutut kanan dan menekan di samping pinggul kanan; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The waist turns the arms; keep the trunk relaxed and upright as you draw in the foot and raise the arm; the brushing hand and the pushing palm finish with gongbu."
+        ],
+        "id": [
+          "Pinggang memutar lengan; badan rileks dan tegak saat menarik kaki dan mengangkat lengan; tangan yang menyapu dan telapak yang mendorong selesai bersama gongbu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 605–607, 图 I-26 to I-33"
+    },
+    {
+      "number": 7,
+      "section": 1,
+      "name_zh": "撇身捶",
+      "name_pinyin": "Piē shēn chuí",
+      "name_en": "Turn Body and Strike",
+      "name_id": "Memutar Badan dan Memukul",
+      "start_sec": 45,
+      "end_sec": 52,
+      "end_x": 4.8,
+      "end_y": 5.7,
+      "steps": {
+        "en": [
+          "Shift slightly back, turn the right toes out and turn right; reach the left hand forward, palm down, and rotate the right forearm out so the right hand arcs back to the right; watch the left hand.",
+          "Draw the left foot in beside the right; the left hand makes a fist and drops in front of the lower belly, fist-heart in, while the right hand arcs up and forward to rest inside the left forearm, palm down; look to the left front.",
+          "Turn slightly left and step the left foot to the left front, heel down; raise the left fist to in front of the face.",
+          "Shift forward into left gongbu; turn the left fist over and strike forward with the back of the fist, fist-heart slanting up, at head height, the right hand still inside the left forearm; watch the left fist."
+        ],
+        "id": [
+          "Geser sedikit ke belakang, putar ujung kaki kanan ke luar dan putar ke kanan; julurkan tangan kiri ke depan, telapak ke bawah, dan putar lengan bawah kanan ke luar sehingga tangan kanan melengkung ke kanan belakang; pandangan ke tangan kiri.",
+          "Tarik kaki kiri ke samping kaki kanan; tangan kiri mengepal dan turun di depan perut bawah, telapak kepalan ke dalam, sementara tangan kanan melengkung ke atas dan ke depan menempel di sisi dalam lengan bawah kiri, telapak ke bawah; pandangan ke depan kiri.",
+          "Putar sedikit ke kiri dan langkahkan kaki kiri ke depan kiri, tumit menyentuh lantai; angkat kepalan kiri ke depan wajah.",
+          "Geser ke depan menjadi gongbu kiri; balik kepalan kiri dan pukulkan ke depan dengan punggung kepalan, telapak kepalan miring ke atas, setinggi kepala, tangan kanan tetap di sisi dalam lengan bawah kiri; pandangan ke kepalan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The body carries the arm; rotate out around the shoulder joint and strike with power in the back of the fist."
+        ],
+        "id": [
+          "Badan membawa lengan; putar ke luar berporos pada sendi bahu dan pukul dengan tenaga di punggung kepalan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 607–609, 图 I-34 to I-37"
+    },
+    {
+      "number": 8,
+      "section": 1,
+      "name_zh": "捋挤势",
+      "name_pinyin": "Lǚ jǐ shì",
+      "name_en": "Roll Back and Press",
+      "name_id": "Menarik dan Mendorong",
+      "start_sec": 52,
+      "end_sec": 61,
+      "end_x": 5.2,
+      "end_y": 5.3,
+      "steps": {
+        "en": [
+          "Shift slightly back, turn the left toes in and turn right; the left fist opens and the right palm arcs level to the right, then comes in to the inside of the left forearm.",
+          "Shift forward and keep turning right; the right palm wipes level in an arc from left to the front, palm slanting down, the left palm below the inside of the right elbow, palm slanting up; watch the right palm.",
+          "Roll back: both palms draw down and back together, the left to the left hip and the right to the belly; draw the right foot in beside the left; look to the right front.",
+          "Step the right foot to the right front, heel down; turn the forearms (left in, right out) and lift the bent arms to the chest, left fingers against the inside of the right wrist; look ahead.",
+          "Shift forward into right gongbu and press both arms forward, rounded, the left fingers still at the right wrist, the right palm facing in at shoulder height; watch the right palm.",
+          "Shift back, turn the right toes in and turn left; turn the right palm up and thread the left palm in a small arc over the right forearm.",
+          "Shift forward and keep turning left; the left palm wipes level in an arc from right to the front, the right palm below the inside of the left elbow; watch the left palm.",
+          "Roll back with both palms, the right to the right hip and the left to the belly; draw the left foot in beside the right; look to the left front.",
+          "Step the left foot to the left front, heel down; turn the forearms and lift the bent arms to the chest, right fingers against the inside of the left wrist; look ahead.",
+          "Shift forward into left gongbu and press both rounded arms forward at shoulder height; watch the left palm."
+        ],
+        "id": [
+          "Geser sedikit ke belakang, putar ujung kaki kiri ke dalam dan putar ke kanan; kepalan kiri dibuka dan telapak kanan melengkung datar ke kanan, lalu masuk ke sisi dalam lengan bawah kiri.",
+          "Geser ke depan dan terus berputar ke kanan; telapak kanan mengusap datar melengkung dari kiri ke depan, telapak miring ke bawah, telapak kiri di bawah sisi dalam siku kanan, telapak miring ke atas; pandangan ke telapak kanan.",
+          "Tarik ke belakang (捋): kedua telapak menarik ke bawah dan ke belakang bersamaan, kiri ke pinggul kiri dan kanan ke depan perut; tarik kaki kanan ke samping kaki kiri; pandangan ke depan kanan.",
+          "Langkahkan kaki kanan ke depan kanan, tumit menyentuh lantai; putar lengan bawah (kiri ke dalam, kanan ke luar) dan angkat lengan yang ditekuk ke depan dada, jari kiri menempel di sisi dalam pergelangan kanan; pandangan ke depan.",
+          "Geser ke depan menjadi gongbu kanan dan desak kedua lengan ke depan, membulat, jari kiri tetap di pergelangan kanan, telapak kanan menghadap ke dalam setinggi bahu; pandangan ke telapak kanan.",
+          "Geser ke belakang, putar ujung kaki kanan ke dalam dan putar ke kiri; balik telapak kanan ke atas dan tusukkan telapak kiri dalam busur kecil di atas lengan bawah kanan.",
+          "Geser ke depan dan terus berputar ke kiri; telapak kiri mengusap datar melengkung dari kanan ke depan, telapak kanan di bawah sisi dalam siku kiri; pandangan ke telapak kiri.",
+          "Tarik ke belakang dengan kedua telapak, kanan ke pinggul kanan dan kiri ke depan perut; tarik kaki kiri ke samping kaki kanan; pandangan ke depan kiri.",
+          "Langkahkan kaki kiri ke depan kiri, tumit menyentuh lantai; putar lengan bawah dan angkat lengan yang ditekuk ke depan dada, jari kanan menempel di sisi dalam pergelangan kiri; pandangan ke depan.",
+          "Geser ke depan menjadi gongbu kiri dan desak kedua lengan yang membulat ke depan setinggi bahu; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Coordinate upper and lower body: a small arc of the rear hand as you sit back and raise the toes, thread in gongbu, roll back as the leg draws in, ward off as the foot steps out, press in gongbu."
+        ],
+        "id": [
+          "Koordinasikan tubuh atas dan bawah: busur kecil tangan belakang saat duduk ke belakang dan mengangkat ujung kaki, tusuk pada gongbu, tarik ke belakang saat kaki ditarik, tangkis saat kaki melangkah, desak pada gongbu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 609–612, 图 I-38 to I-47"
+    },
+    {
+      "number": 9,
+      "section": 1,
+      "name_zh": "进步搬拦捶",
+      "name_pinyin": "Jìnbù bān lán chuí",
+      "name_en": "Step Forward, Deflect, Parry and Punch",
+      "name_id": "Maju, Menangkis, Menghadang dan Memukul",
+      "start_sec": 61,
+      "end_sec": 70,
+      "end_x": 5.7,
+      "end_y": 4.9,
+      "steps": {
+        "en": [
+          "Shift back, turn the left toes out and turn left; the left palm arcs down, palm up, the right palm reaching to the right front, palm slanting down; the head turns with the body.",
+          "Shift forward and draw the right foot in beside the left; the left palm arcs left and curls up in front of the body, palm down, while the right palm becomes a fist and arcs down to the belly, fist-heart down; look straight ahead.",
+          "Step the right foot forward, heel down and toes out; the right fist turns over and deflects forward past the inside of the left arm, fist-heart up, at chest height, the left palm pressing down beside the left hip; watch the right fist.",
+          "Shift forward and turn right; rotate the right forearm in so the fist arcs to the right side, and the left palm arcs left and forward to the front; watch the left palm.",
+          "Step the left foot forward past the right, heel down; draw the right fist to the right waist, fist-heart up, and turn the left palm down to parry in front.",
+          "Shift forward into left gongbu and punch the right fist forward, fist-eye turning up, at chest height, the left palm coming to the inside of the right forearm; watch the right fist."
+        ],
+        "id": [
+          "Geser ke belakang, putar ujung kaki kiri ke luar dan putar ke kiri; telapak kiri melengkung ke bawah, telapak ke atas, telapak kanan menjulur ke depan kanan, telapak miring ke bawah; kepala menoleh mengikuti badan.",
+          "Geser ke depan dan tarik kaki kanan ke samping kaki kiri; telapak kiri melengkung ke kiri dan menggulung naik di depan badan, telapak ke bawah, sementara telapak kanan menjadi kepalan dan melengkung turun ke depan perut, telapak kepalan ke bawah; pandangan lurus ke depan.",
+          "Langkahkan kaki kanan ke depan, tumit menyentuh lantai dan ujung kaki ke luar; kepalan kanan berbalik dan menepis ke depan melewati sisi dalam lengan kiri, telapak kepalan ke atas, setinggi dada, telapak kiri menekan di samping pinggul kiri; pandangan ke kepalan kanan.",
+          "Geser ke depan dan putar ke kanan; putar lengan bawah kanan ke dalam sehingga kepalan melengkung ke sisi kanan, dan telapak kiri melengkung ke kiri lalu ke depan; pandangan ke telapak kiri.",
+          "Langkahkan kaki kiri ke depan melewati kaki kanan, tumit menyentuh lantai; tarik kepalan kanan ke pinggang kanan, telapak kepalan ke atas, dan balik telapak kiri ke bawah untuk menghalau di depan.",
+          "Geser ke depan menjadi gongbu kiri dan pukulkan kepalan kanan ke depan, mata kepalan berbalik ke atas, setinggi dada, telapak kiri ke sisi dalam lengan bawah kanan; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As the left toes lift out and the right foot draws in, the arms trace a vertical circle in front, one over the other; then step and deflect, step and parry, and punch in gongbu, upper and lower body as one."
+        ],
+        "id": [
+          "Saat ujung kaki kiri terangkat ke luar dan kaki kanan ditarik, lengan membentuk lingkaran vertikal di depan, satu di atas yang lain; lalu melangkah dan menepis, melangkah dan menghalau, dan memukul dalam gongbu, tubuh atas dan bawah menyatu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 612–613, 图 I-48 to I-53"
+    },
+    {
+      "number": 10,
+      "section": 1,
+      "name_zh": "如封似闭",
+      "name_pinyin": "Rú fēng sì bì",
+      "name_en": "Apparent Close-Up",
+      "name_id": "Seolah Menutup",
+      "start_sec": 70,
+      "end_sec": 77,
+      "end_x": 6.2,
+      "end_y": 4.7,
+      "steps": {
+        "en": [
+          "Thread the left palm out from under the right forearm, palm up, the right fist opening with the palm turning up.",
+          "Sit back with the left toes raised; part the palms, bend the arms and rotate them in to bring them to the chest, shoulder-width apart, palms slanting toward each other.",
+          "Turn the palms down and lower them to the belly; look ahead.",
+          "Shift forward and bring the right foot behind and beside the left, toes down about 10 cm away, in right dingbu; push both palms forward, shoulder-width apart, wrists at shoulder height; watch the palms."
+        ],
+        "id": [
+          "Tusukkan telapak kiri keluar dari bawah lengan bawah kanan, telapak ke atas, kepalan kanan dibuka dengan telapak berbalik ke atas.",
+          "Duduk ke belakang dengan ujung kaki kiri terangkat; pisahkan telapak, tekuk lengan dan putar ke dalam membawanya ke depan dada, selebar bahu, telapak miring saling berhadapan.",
+          "Balik telapak ke bawah dan turunkan ke depan perut; pandangan ke depan.",
+          "Geser ke depan dan bawa kaki kanan ke belakang samping kaki kiri, ujung kaki menyentuh lantai sekitar 10 cm, dalam dingbu kanan; dorong kedua telapak ke depan, selebar bahu, pergelangan setinggi bahu; pandangan ke telapak."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Time the following step: the right foot arrives behind the left as the palms push up and forward."
+        ],
+        "id": [
+          "Atur waktu genbu: kaki kanan tiba di belakang kaki kiri saat telapak mendorong ke atas dan ke depan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 614–615, 图 I-54 to I-57"
+    },
+    {
+      "number": 11,
+      "section": 2,
+      "name_zh": "开合手",
+      "name_pinyin": "Kāi hé shǒu",
+      "name_en": "Open and Close Hands",
+      "name_id": "Tangan Membuka dan Menutup",
+      "start_sec": 77,
+      "end_sec": 83,
+      "end_x": 6.8,
+      "end_y": 4.4,
+      "steps": {
+        "en": [
+          "Pivot on the right ball and left heel to the right and settle both feet; turn the palms to face each other, fingers up, bring them in to the chest and part them shoulder-width; look ahead.",
+          "Shift onto the left leg, right heel up; close the palms to head-width, facing each other; look between the palms."
+        ],
+        "id": [
+          "Berporos pada telapak depan kanan dan tumit kiri ke kanan lalu mantapkan kedua kaki; balik telapak saling berhadapan, jari ke atas, bawa ke depan dada dan pisahkan selebar bahu; pandangan ke depan.",
+          "Pindahkan berat ke kaki kiri, tumit kanan terangkat; rapatkan telapak selebar kepala, saling berhadapan; pandangan ke antara kedua telapak."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Weight on the right leg as the palms open, on the left as they close; breathe in on opening and out on closing, relaxing the hips and tucking the buttocks on the out-breath."
+        ],
+        "id": [
+          "Berat di kaki kanan saat telapak membuka, di kaki kiri saat merapat; tarik napas saat membuka dan buang saat merapat, rilekskan pinggul dan tarik pantat saat membuang napas."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 615, 图 I-58 to I-59"
+    },
+    {
+      "number": 12,
+      "section": 2,
+      "name_zh": "右单鞭",
+      "name_pinyin": "Yòu dān biān",
+      "name_en": "Single Whip (Right)",
+      "name_id": "Cambuk Tunggal (Kanan)",
+      "start_sec": 83,
+      "end_sec": 90,
+      "end_x": 7.5,
+      "end_y": 4.2,
+      "steps": {
+        "en": [
+          "Turn slightly right and step the right foot out to the right, heel down; rotate the arms in, tiger's mouths facing, palms out; watch the left palm.",
+          "Shift right into hengdangbu; part the palms to the sides at shoulder height, palms out and fingers up; watch the left palm."
+        ],
+        "id": [
+          "Putar sedikit ke kanan dan langkahkan kaki kanan ke kanan, tumit menyentuh lantai; putar lengan ke dalam, hukou saling berhadapan, telapak ke luar; pandangan ke telapak kiri.",
+          "Geser ke kanan menjadi hengdangbu; pisahkan telapak ke samping setinggi bahu, telapak ke luar dan jari ke atas; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "In the final hengdangbu with the arms parted, keep the trunk relaxed and upright."
+        ],
+        "id": [
+          "Pada hengdangbu akhir dengan lengan terpisah, badan tetap rileks dan tegak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 615–616, 图 I-60 to I-61"
+    },
+    {
+      "number": 13,
+      "section": 2,
+      "name_zh": "肘底捶",
+      "name_pinyin": "Zhǒu dǐ chuí",
+      "name_en": "Fist Under Elbow",
+      "name_id": "Kepalan di Bawah Siku",
+      "start_sec": 90,
+      "end_sec": 97,
+      "end_x": 8.2,
+      "end_y": 3.9,
+      "steps": {
+        "en": [
+          "Shift left, turn the right toes in and turn slightly left; rotate the right forearm out and wrap the palm in an arc to the right shoulder while the left palm arcs left and down; watch the right palm.",
+          "Shift right and turn right, drawing the left foot in beside the right; the right palm turns down at the right chest and the left palm turns up and arcs past the belly to the right, holding a ball.",
+          "Turn left and swing-step the left foot to the left front, heel down and toes out; the left palm arcs under the right forearm and up to the left at head height, palm in, the right palm falling past the left chest to the right hip; watch the left palm.",
+          "Keep turning left and shift forward, the right foot following half a step to land on the ball behind the left; the left palm arcs left and down to the left side while the right palm arcs right and forward to the front at head height, palm slanting up; look ahead.",
+          "Shift onto the right leg and step the left foot forward, heel down and toes up, in left xubu; the left palm comes past the left waist as a side-standing palm and chops forward over the right wrist, fingertips at eyebrow height, while the right hand makes a fist, fist-eye up, under the inside of the left elbow; watch the left palm."
+        ],
+        "id": [
+          "Geser ke kiri, putar ujung kaki kanan ke dalam dan putar sedikit ke kiri; putar lengan bawah kanan ke luar dan bungkuskan telapak melengkung ke depan bahu kanan sementara telapak kiri melengkung ke kiri dan ke bawah; pandangan ke telapak kanan.",
+          "Geser ke kanan dan putar ke kanan, tarik kaki kiri ke samping kaki kanan; telapak kanan berbalik ke bawah di dada kanan dan telapak kiri berbalik ke atas lalu melengkung melewati perut ke kanan, memeluk bola.",
+          "Putar ke kiri dan langkahkan kaki kiri berayun ke depan kiri, tumit menyentuh lantai dan ujung kaki ke luar; telapak kiri melengkung di bawah lengan bawah kanan lalu naik ke kiri setinggi kepala, telapak ke dalam, telapak kanan turun melewati dada kiri ke pinggul kanan; pandangan ke telapak kiri.",
+          "Terus berputar ke kiri dan geser ke depan, kaki kanan menyusul setengah langkah mendarat dengan telapak depan di belakang kaki kiri; telapak kiri melengkung ke kiri dan ke bawah ke sisi kiri sementara telapak kanan melengkung ke kanan dan ke depan setinggi kepala, telapak miring ke atas; pandangan ke depan.",
+          "Pindahkan berat ke kaki kanan dan langkahkan kaki kiri ke depan, tumit menyentuh lantai dan ujung kaki terangkat, dalam xubu kiri; telapak kiri lewat pinggang kiri sebagai telapak tegak menyamping dan membacok ke depan di atas pergelangan kanan, ujung jari setinggi alis, sementara tangan kanan mengepal, mata kepalan ke atas, di bawah sisi dalam siku kiri; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Shift the weight when turning and wrapping the palms; the swing step, genbu and xubu chop with the fist under the elbow move in step, upper and lower body together."
+        ],
+        "id": [
+          "Pindahkan berat saat membalik dan membungkus telapak; langkah ayun, genbu dan bacokan xubu dengan kepalan di bawah siku bergerak serempak, tubuh atas dan bawah bersama."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 616–617, 图 I-62 to I-66"
+    },
+    {
+      "number": 14,
+      "section": 2,
+      "name_zh": "转身推掌",
+      "name_pinyin": "Zhuǎnshēn tuī zhǎng",
+      "name_en": "Turn and Push Palm",
+      "name_id": "Berbalik dan Mendorong Telapak",
+      "start_sec": 97,
+      "end_sec": 105,
+      "end_x": 8.9,
+      "end_y": 3.5,
+      "steps": {
+        "en": [
+          "Withdraw the left foot behind the right onto the ball; raise the right fist as an open palm, wrist at shoulder height, and lower the left palm to the right chest, palm down; watch the right palm.",
+          "Pivot on the right heel and left ball to turn about 90° left, weight still on the right leg; the right palm curls in slightly and the left drops slightly; look ahead.",
+          "Step the left foot forward slightly to the left, heel down; bend the right arm to bring the palm beside the right ear, the left palm arcing left; look ahead.",
+          "Shift forward, turning the waist and extending the shoulder, and bring the right foot behind the left onto the ball in right dingbu; push the right palm forward, fingertips level with the nose, while the left palm brushes past the left knee and presses beside the left hip; watch the right palm.",
+          "Pivot on the left heel and right ball to turn back to the right, weight still on the left leg; raise the left arm to the left front at head height, palm up, the right palm falling to the left chest; watch the left palm.",
+          "Step the right foot forward slightly to the right, heel down; curl the left palm in beside the left ear, palm slanting forward and down, the right palm falling to the belly; look ahead.",
+          "Shift forward, turning the waist and extending the shoulder, and bring the left foot behind the right in left dingbu; push the left palm forward, fingertips level with the nose, while the right palm brushes past the right knee and presses beside the right hip; watch the left palm."
+        ],
+        "id": [
+          "Tarik kaki kiri ke belakang kaki kanan bertumpu pada telapak depan; angkat kepalan kanan sebagai telapak terbuka, pergelangan setinggi bahu, dan turunkan telapak kiri ke dada kanan, telapak ke bawah; pandangan ke telapak kanan.",
+          "Berporos pada tumit kanan dan telapak depan kiri untuk berputar sekitar 90° ke kiri, berat tetap di kaki kanan; telapak kanan sedikit menggulung dan telapak kiri sedikit turun; pandangan ke depan.",
+          "Langkahkan kaki kiri ke depan sedikit ke kiri, tumit menyentuh lantai; tekuk lengan kanan membawa telapak ke samping telinga kanan, telapak kiri melengkung ke kiri; pandangan ke depan.",
+          "Geser ke depan, putar pinggang dan julurkan bahu, dan bawa kaki kanan ke belakang kaki kiri bertumpu pada telapak depan dalam dingbu kanan; dorong telapak kanan ke depan, ujung jari sejajar hidung, sementara telapak kiri menyapu melewati lutut kiri dan menekan di samping pinggul kiri; pandangan ke telapak kanan.",
+          "Berporos pada tumit kiri dan telapak depan kanan untuk berbalik ke kanan, berat tetap di kaki kiri; angkat lengan kiri ke depan kiri setinggi kepala, telapak ke atas, telapak kanan turun ke dada kiri; pandangan ke telapak kiri.",
+          "Langkahkan kaki kanan ke depan sedikit ke kanan, tumit menyentuh lantai; gulung telapak kiri ke samping telinga kiri, telapak miring ke depan bawah, telapak kanan turun ke depan perut; pandangan ke depan.",
+          "Geser ke depan, putar pinggang dan julurkan bahu, dan bawa kaki kiri ke belakang kaki kanan dalam dingbu kiri; dorong telapak kiri ke depan, ujung jari sejajar hidung, sementara telapak kanan menyapu melewati lutut kanan dan menekan di samping pinggul kanan; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Turning left, shift slightly toward the left leg and then back onto the right; turning right, shift slightly toward the right foot and then back onto the left, so empty and full change smoothly."
+        ],
+        "id": [
+          "Saat berputar ke kiri, geser sedikit ke kaki kiri lalu kembali ke kaki kanan; saat berputar ke kanan, geser sedikit ke kaki kanan lalu kembali ke kaki kiri, agar kosong dan penuh berganti dengan luwes."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 618–619, 图 I-67 to I-74"
+    },
+    {
+      "number": 15,
+      "section": 2,
+      "name_zh": "玉女穿梭",
+      "name_pinyin": "Yùnǚ chuān suō",
+      "name_en": "Fair Lady Works the Shuttles",
+      "name_id": "Gadis Menenun",
+      "start_sec": 105,
+      "end_sec": 115,
+      "end_x": 9.5,
+      "end_y": 3.1,
+      "steps": {
+        "en": [
+          "Turn right and step the left foot half a step back to the left; rotate the left arm out and arc the palm to the right chest, palm up, while the right palm reaches and wipes forward over the left forearm, palm slanting down, wrist at shoulder height; watch the right palm.",
+          "Turn left, shift onto the left leg and draw the right foot in, toes down; both palms roll back down and back, the left to the left hip and the right to the belly; the eyes follow the hands.",
+          "Step the right foot to the right front, heel down; turn the forearms and raise the palms together at the chest, right palm in, left palm out with its fingers at the inside of the right wrist; watch the right palm.",
+          "Shift forward and turn right, the left foot following behind the right onto the ball; the right palm sweeps a level arc from left to front, turning palm up, the left palm following; the eyes follow the right palm.",
+          "Shift back onto the left foot and turn left, then step the right foot again to the right front, heel down; bend and rotate the right arm in to sweep a level arc right and back, then cock the wrist above the front of the right shoulder, palm slanting up, the left palm arcing back to the left waist; look ahead.",
+          "Shift forward into right gongbu and turn right; block the right palm above the right forehead, palm slanting up, and press the left palm forward, fingertips level with the nose; watch the left palm.",
+          "Shift back, raise and turn the right toes in, and turn left; rotate the right forearm out so the palm turns over and drops in front, palm up, wrist at shoulder height, the left palm arcing to the inside of the right elbow; watch the right palm.",
+          "Shift forward and keep turning left; thread the left palm over the right forearm and wipe it in an arc from right to left, the right palm below the left elbow; then draw the left foot in and roll both palms down and back, the right to the right hip and the left to the belly.",
+          "Repeat on the other side: step the left foot to the left front and raise the palms together at the chest; follow with the right foot as the left palm sweeps a level arc forward; sit back, step the left foot again and cock the left wrist above the left shoulder; then shift into left gongbu, block the left palm above the left forehead and press the right palm forward, fingertips level with the nose; watch the right palm."
+        ],
+        "id": [
+          "Putar ke kanan dan mundurkan kaki kiri setengah langkah ke kiri; putar lengan kiri ke luar dan lengkungkan telapak ke dada kanan, telapak ke atas, sementara telapak kanan menjulur dan mengusap ke depan di atas lengan bawah kiri, telapak miring ke bawah, pergelangan setinggi bahu; pandangan ke telapak kanan.",
+          "Putar ke kiri, pindahkan berat ke kaki kiri dan tarik kaki kanan ke dalam, ujung kaki di lantai; kedua telapak menarik ke bawah dan ke belakang, kiri ke pinggul kiri dan kanan ke depan perut; mata mengikuti tangan.",
+          "Langkahkan kaki kanan ke depan kanan, tumit menyentuh lantai; putar lengan bawah dan angkat kedua telapak bersama di depan dada, telapak kanan ke dalam, telapak kiri ke luar dengan jari di sisi dalam pergelangan kanan; pandangan ke telapak kanan.",
+          "Geser ke depan dan putar ke kanan, kaki kiri menyusul ke belakang kaki kanan bertumpu pada telapak depan; telapak kanan menyapu busur datar dari kiri ke depan, berbalik telapak ke atas, telapak kiri mengikuti; mata mengikuti telapak kanan.",
+          "Geser ke belakang ke kaki kiri dan putar ke kiri, lalu langkahkan kaki kanan lagi ke depan kanan, tumit menyentuh lantai; tekuk dan putar lengan kanan ke dalam menyapu busur datar ke kanan dan ke belakang, lalu tekuk pergelangan di atas depan bahu kanan, telapak miring ke atas, telapak kiri melengkung kembali ke pinggang kiri; pandangan ke depan.",
+          "Geser ke depan menjadi gongbu kanan dan putar ke kanan; tangkis dengan telapak kanan di atas dahi kanan, telapak miring ke atas, dan tekan telapak kiri ke depan, ujung jari sejajar hidung; pandangan ke telapak kiri.",
+          "Geser ke belakang, angkat dan putar ujung kaki kanan ke dalam, dan putar ke kiri; putar lengan bawah kanan ke luar sehingga telapak berbalik dan turun di depan, telapak ke atas, pergelangan setinggi bahu, telapak kiri melengkung ke sisi dalam siku kanan; pandangan ke telapak kanan.",
+          "Geser ke depan dan terus berputar ke kiri; tusukkan telapak kiri di atas lengan bawah kanan dan usap melengkung dari kanan ke kiri, telapak kanan di bawah siku kiri; lalu tarik kaki kiri ke dalam dan tarik kedua telapak ke bawah dan ke belakang, kanan ke pinggul kanan dan kiri ke depan perut.",
+          "Ulangi di sisi lain: langkahkan kaki kiri ke depan kiri dan angkat kedua telapak bersama di depan dada; susulkan kaki kanan saat telapak kiri menyapu busur datar ke depan; duduk ke belakang, langkahkan kaki kiri lagi dan tekuk pergelangan kiri di atas bahu kiri; lalu geser menjadi gongbu kiri, tangkis dengan telapak kiri di atas dahi kiri dan tekan telapak kanan ke depan, ujung jari sejajar hidung; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The level swing on the step, the level sweep on genbu, and the block-and-push in gongbu each finish together; keep the trunk upright, not leaning forward, in the final pose."
+        ],
+        "id": [
+          "Ayunan datar saat melangkah, sapuan datar saat genbu, dan tangkis-dorong pada gongbu masing-masing selesai bersamaan; badan tetap tegak, tidak condong ke depan, pada pose akhir."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 620–623, 图 I-74 to I-86"
+    },
+    {
+      "number": 16,
+      "section": 2,
+      "name_zh": "左右蹬脚",
+      "name_pinyin": "Zuǒyòu dēng jiǎo",
+      "name_en": "Left and Right Heel Kicks",
+      "name_id": "Tendangan Tumit Kiri dan Kanan",
+      "start_sec": 115,
+      "end_sec": 125,
+      "end_x": 10.1,
+      "end_y": 2.8,
+      "steps": {
+        "en": [
+          "Shift back, turn the left toes in and turn right; rotate the left arm out so the palm turns over and drops in front, palm up, wrist at shoulder height, the right palm arcing left to the inside of the left elbow; watch the left palm.",
+          "Shift forward and turn left; thread the right palm out over the left forearm and open it up and to the right, the left palm arcing down and left to the waist; the head turns with the body.",
+          "Turn right and draw the right foot in beside the left; the hands circle down and in and cross at the chest, wrists stacked, right hand outside, palms in; look to the right front.",
+          "Stand steady on the slightly bent left leg, lift the right knee and slowly press the heel out to the right front (about 30°), toes pulled back, heel above the waist; part the palms in arcs to the right front and left, palms out, wrists at shoulder height, elbows slightly bent, the right arm above the right leg; watch the right palm.",
+          "Fold the right leg and set the foot down to the right front, heel first; the right palm turns up and draws in slightly while the left palm drops past the waist and arcs forward and up to the inside of the right elbow; watch the right palm.",
+          "Shift forward and turn right; thread the left palm out over the right forearm and open it up and to the left, the right palm arcing down to the waist; then turn left, draw the left foot in and cross the hands at the chest, left hand outside; look to the left front.",
+          "Stand steady on the right leg, lift the left knee and slowly press the heel out to the left front (about 30°), heel above the waist; part the palms to the left front and right, the left arm above the left leg; watch the left palm."
+        ],
+        "id": [
+          "Geser ke belakang, putar ujung kaki kiri ke dalam dan putar ke kanan; putar lengan kiri ke luar sehingga telapak berbalik dan turun di depan, telapak ke atas, pergelangan setinggi bahu, telapak kanan melengkung ke kiri ke sisi dalam siku kiri; pandangan ke telapak kiri.",
+          "Geser ke depan dan putar ke kiri; tusukkan telapak kanan keluar di atas lengan bawah kiri lalu buka ke atas dan ke kanan, telapak kiri melengkung ke bawah dan ke kiri ke pinggang; kepala menoleh mengikuti badan.",
+          "Putar ke kanan dan tarik kaki kanan ke samping kaki kiri; kedua tangan berputar ke bawah dan ke dalam lalu menyilang di depan dada, pergelangan bertumpuk, tangan kanan di luar, telapak ke dalam; pandangan ke depan kanan.",
+          "Berdiri mantap di kaki kiri yang sedikit ditekuk, angkat lutut kanan dan dorong tumit perlahan ke depan kanan (sekitar 30°), ujung kaki ditarik, tumit di atas pinggang; pisahkan telapak melengkung ke depan kanan dan ke kiri, telapak ke luar, pergelangan setinggi bahu, siku sedikit ditekuk, lengan kanan sejajar di atas kaki kanan; pandangan ke telapak kanan.",
+          "Lipat kaki kanan dan turunkan kaki ke depan kanan, tumit dulu; telapak kanan berbalik ke atas dan sedikit ditarik sementara telapak kiri turun melewati pinggang lalu melengkung ke depan atas ke sisi dalam siku kanan; pandangan ke telapak kanan.",
+          "Geser ke depan dan putar ke kanan; tusukkan telapak kiri keluar di atas lengan bawah kanan lalu buka ke atas dan ke kiri, telapak kanan melengkung turun ke pinggang; lalu putar ke kiri, tarik kaki kiri ke dalam dan silangkan tangan di depan dada, tangan kiri di luar; pandangan ke depan kiri.",
+          "Berdiri mantap di kaki kanan, angkat lutut kiri dan dorong tumit perlahan ke depan kiri (sekitar 30°), tumit di atas pinggang; pisahkan telapak ke depan kiri dan ke kanan, lengan kiri sejajar di atas kaki kiri; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The heel kick and the parting palms finish together; keep the rear hand in mind as you kick; breathe out and sink as the foot comes down."
+        ],
+        "id": [
+          "Tendangan tumit dan pisahan telapak selesai bersamaan; ingat tangan belakang saat menendang; buang napas dan turunkan berat saat kaki turun."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 624–626, 图 I-87 to I-94"
+    },
+    {
+      "number": 17,
+      "section": 2,
+      "name_zh": "掩手肱捶",
+      "name_pinyin": "Yǎn shǒu gōng chuí",
+      "name_en": "Hidden-Hand Punch",
+      "name_id": "Pukulan Tangan Tersembunyi",
+      "start_sec": 125,
+      "end_sec": 133,
+      "end_x": 10.6,
+      "end_y": 2.8,
+      "steps": {
+        "en": [
+          "Fold the left shin and set the left foot beside the right; rotate the arms out and close the palms in front of the head, head-width apart, palms in; watch the palms.",
+          "Raise the left toes and slide the heel out to the left along the floor, turning slightly right; rotate the arms in and lower the palms, stacking them at the right of the lower belly, left palm on the back of the right, both palms down; watch the palms.",
+          "Face forward with the weight between the legs; part the palms to the sides at shoulder height, rotating the forearms so the palms face out; look ahead.",
+          "Shift right and turn slightly right; rotate the arms out and close the elbows in, the left palm swinging in front at shoulder height, palm up, while the right hand becomes a fist folded at the chest, fist-heart up; watch the left palm.",
+          "Shift left and turn left, twisting the waist and extending the shoulder into left gongbu; drill the right fist forward, turning the fist-heart down, while the left palm draws back to rest on the left belly, fingers right; watch the right fist."
+        ],
+        "id": [
+          "Lipat tungkai bawah kiri dan turunkan kaki kiri di samping kaki kanan; putar lengan ke luar dan rapatkan telapak di depan kepala, selebar kepala, telapak ke dalam; pandangan ke telapak.",
+          "Angkat ujung kaki kiri dan geser tumit ke kiri di lantai, putar sedikit ke kanan; putar lengan ke dalam dan turunkan telapak, tumpuk di sisi kanan perut bawah, telapak kiri di punggung tangan kanan, kedua telapak ke bawah; pandangan ke telapak.",
+          "Menghadap ke depan dengan berat di antara kedua kaki; pisahkan telapak ke samping setinggi bahu, putar lengan bawah sehingga telapak menghadap luar; pandangan ke depan.",
+          "Geser ke kanan dan putar sedikit ke kanan; putar lengan ke luar dan rapatkan siku ke dalam, telapak kiri berayun di depan setinggi bahu, telapak ke atas, sementara tangan kanan menjadi kepalan terlipat di dada, telapak kepalan ke atas; pandangan ke telapak kiri.",
+          "Geser ke kiri dan putar ke kiri, putar pinggang dan julurkan bahu menjadi gongbu kiri; pukulkan kepalan kanan ke depan sambil memutar, telapak kepalan berbalik ke bawah, sementara telapak kiri ditarik kembali menempel di perut kiri, jari ke kanan; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A typical explosive release (发劲) from Chen-style taijiquan: loose, springy, shaking, releasing, driven by the waist; sink the hips and turn the waist so the power passes from body to arm to hand, soft in form and solid in force."
+        ],
+        "id": [
+          "Pelepasan tenaga eksplosif (发劲) yang khas dari taijiquan gaya Chen: longgar, memantul, menggetar, melepas, digerakkan pinggang; turunkan pinggul dan putar pinggang agar tenaga mengalir dari badan ke lengan ke tangan, lembut bentuknya dan padat tenaganya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 626–628, 图 I-95 to I-99"
+    },
+    {
+      "number": 18,
+      "section": 2,
+      "name_zh": "野马分鬃",
+      "name_pinyin": "Yěmǎ fēn zōng",
+      "name_en": "Part the Wild Horse’s Mane",
+      "name_id": "Membelah Surai Kuda Liar",
+      "start_sec": 133,
+      "end_sec": 142,
+      "end_x": 11,
+      "end_y": 3,
+      "steps": {
+        "en": [
+          "Turn left; the right fist opens and arcs down to the belly, palm down, while the left palm turns its four fingers clockwise down around the thumb.",
+          "Shift right and turn right; rotate the right arm in so the palm turns out and arcs up and right to the front of the right shoulder, thumb down and fingers left, while the left palm turns in with its fingers against the inside of the right forearm, both arms rounded; watch the right palm.",
+          "Shift left and turn left; turn both palms into horizontal palms across the belly, facing the left front, with a springy release from the waist; watch the palms.",
+          "Shift right and turn the waist back right; the palms arc from right to left and face down, left ahead of right, in front of the belly; watch the right palm.",
+          "Shift back and lift the left knee; the left palm circles left, down, right and forward-up, turning palm up above the left knee, while the right palm arcs down and up across the right side, palm out; look ahead.",
+          "Step the left foot forward and shift into left gongbu; thread-lean the left palm forward, palm up, fingers forward, while the right palm braces out to the right, palm out, wrist at shoulder height; watch the left palm.",
+          "Shift back, turn the left toes out and turn left; turn the left palm over to face out and brace with a slightly bent arm, the right palm dropping slightly; then shift forward, lift the right knee and bring the right palm down and forward above the right knee, palm up, the left palm swinging across the left side; watch the right palm.",
+          "Step the right foot forward and shift into right gongbu; thread-lean the right palm forward, palm up, wrist at head height, while the left palm braces out to the left, wrist at shoulder height; watch the right palm."
+        ],
+        "id": [
+          "Putar ke kiri; kepalan kanan dibuka dan melengkung turun ke depan perut, telapak ke bawah, sementara telapak kiri memutar keempat jarinya searah jarum jam ke bawah berporos pada ibu jari.",
+          "Geser ke kanan dan putar ke kanan; putar lengan kanan ke dalam sehingga telapak berbalik ke luar dan melengkung ke atas dan ke kanan ke depan bahu kanan, ibu jari ke bawah dan jari ke kiri, sementara telapak kiri berbalik ke dalam dengan jari menempel sisi dalam lengan bawah kanan, kedua lengan membulat; pandangan ke telapak kanan.",
+          "Geser ke kiri dan putar ke kiri; balik kedua telapak menjadi telapak melintang di depan perut, menghadap depan kiri, dengan pelepasan tenaga memantul dari pinggang; pandangan ke telapak.",
+          "Geser ke kanan dan putar pinggang kembali ke kanan; telapak melengkung dari kanan ke kiri dan menghadap bawah, kiri di depan kanan, di depan perut; pandangan ke telapak kanan.",
+          "Geser ke belakang dan angkat lutut kiri; telapak kiri berputar ke kiri, ke bawah, ke kanan dan ke depan atas, berbalik telapak ke atas di atas lutut kiri, sementara telapak kanan melengkung ke bawah lalu naik melintang di sisi kanan, telapak ke luar; pandangan ke depan.",
+          "Langkahkan kaki kiri ke depan dan geser menjadi gongbu kiri; tusuk-sandarkan telapak kiri ke depan, telapak ke atas, jari ke depan, sementara telapak kanan menahan ke kanan, telapak ke luar, pergelangan setinggi bahu; pandangan ke telapak kiri.",
+          "Geser ke belakang, putar ujung kaki kiri ke luar dan putar ke kiri; balik telapak kiri menghadap luar dan tahan dengan lengan sedikit ditekuk, telapak kanan sedikit turun; lalu geser ke depan, angkat lutut kanan dan bawa telapak kanan turun lalu ke depan di atas lutut kanan, telapak ke atas, telapak kiri berayun melintang di sisi kiri; pandangan ke telapak kanan.",
+          "Langkahkan kaki kanan ke depan dan geser menjadi gongbu kanan; tusuk-sandarkan telapak kanan ke depan, telapak ke atas, pergelangan setinggi kepala, sementara telapak kiri menahan ke kiri, pergelangan setinggi bahu; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Taken from Chen style with small changes: the waist turn that sets the palms across releases a short, sharp burst so the arms rebound and shake; in the gongbu thread, the heel lands first and the weight moves forward gradually."
+        ],
+        "id": [
+          "Diambil dari gaya Chen dengan sedikit perubahan: putaran pinggang yang memalangkan telapak melepaskan tenaga singkat dan tajam sehingga lengan memantul dan bergetar; pada tusukan gongbu, tumit mendarat dulu dan berat berpindah ke depan perlahan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 628–630, 图 I-100 to I-108"
+    },
+    {
+      "number": 19,
+      "section": 3,
+      "name_zh": "云手",
+      "name_pinyin": "Yún shǒu",
+      "name_en": "Cloud Hands",
+      "name_id": "Tangan Awan",
+      "start_sec": 142,
+      "end_sec": 152,
+      "end_x": 11.2,
+      "end_y": 3.4,
+      "steps": {
+        "en": [
+          "Shift toward the left leg, turn the right toes in and turn left; rotate the right forearm in and swing the cocked palm to the front of the right shoulder, the left palm bracing slightly left; watch the right palm.",
+          "Shift toward the right leg and turn right; the right palm turns out and swings across to the right while the left palm arcs down past the belly to the right, palm up; watch the right palm.",
+          "Shift toward the left leg and turn left; the hands cloud to the left, left above at eyebrow height and right below past the belly, turning palm in; the eyes follow the left palm.",
+          "Keep turning left and set the right foot down beside the left, feet parallel and 10–20 cm apart; as the hands reach the left side they turn over, the left palm out and the right at the inside of the left elbow, palm in; watch the left palm.",
+          "Shift right and turn right; the right palm clouds past the face to the right at eyebrow height, the left palm below past the belly; keep turning right and step the left foot out to the left, toes forward, the hands turning over at the right side; watch the right palm.",
+          "Shift left and turn left, clouding the hands to the left again and bringing the right foot in beside the left, feet parallel; watch the left palm.",
+          "Repeat once more; on the last closing step set the right foot down with the toes turned in about 45°."
+        ],
+        "id": [
+          "Geser ke arah kaki kiri, putar ujung kaki kanan ke dalam dan putar ke kiri; putar lengan bawah kanan ke dalam dan ayunkan telapak yang ditekuk ke depan bahu kanan, telapak kiri sedikit menahan ke kiri; pandangan ke telapak kanan.",
+          "Geser ke arah kaki kanan dan putar ke kanan; telapak kanan berbalik ke luar dan berayun melintang ke kanan sementara telapak kiri melengkung turun melewati perut ke kanan, telapak ke atas; pandangan ke telapak kanan.",
+          "Geser ke arah kaki kiri dan putar ke kiri; kedua tangan berputar ke kiri, kiri di atas setinggi alis dan kanan di bawah melewati perut, berbalik telapak ke dalam; mata mengikuti telapak kiri.",
+          "Terus berputar ke kiri dan turunkan kaki kanan di samping kaki kiri, kaki sejajar dan berjarak 10–20 cm; saat tangan sampai di sisi kiri keduanya berbalik, telapak kiri ke luar dan kanan di sisi dalam siku kiri, telapak ke dalam; pandangan ke telapak kiri.",
+          "Geser ke kanan dan putar ke kanan; telapak kanan berputar melewati wajah ke kanan setinggi alis, telapak kiri di bawah melewati perut; terus berputar ke kanan dan langkahkan kaki kiri ke kiri, ujung kaki ke depan, kedua tangan berbalik di sisi kanan; pandangan ke telapak kanan.",
+          "Geser ke kiri dan putar ke kiri, putar kedua tangan ke kiri lagi dan bawa kaki kanan ke samping kaki kiri, kaki sejajar; pandangan ke telapak kiri.",
+          "Ulangi sekali lagi; pada langkah merapat terakhir turunkan kaki kanan dengan ujung kaki ke dalam sekitar 45°."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Big weight shifts at an even, continuous speed; keep the trunk relaxed and upright with the buttocks tucked; the eyes follow the hand passing in front of the face."
+        ],
+        "id": [
+          "Perpindahan berat besar dengan kecepatan rata dan berkesinambungan; badan rileks dan tegak dengan pantat ditarik; mata mengikuti tangan yang lewat di depan wajah."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 630–634, 图 I-109 to I-120"
+    },
+    {
+      "number": 20,
+      "section": 3,
+      "name_zh": "独立打虎",
+      "name_pinyin": "Dúlì dǎ hǔ",
+      "name_en": "Stand on One Leg and Strike the Tiger",
+      "name_id": "Dulibu Memukul Harimau",
+      "start_sec": 152,
+      "end_sec": 160,
+      "end_x": 11.3,
+      "end_y": 4,
+      "steps": {
+        "en": [
+          "Shift right, step the left foot back and bend the right knee forward; the left palm turns up and arcs down to the belly while the right palm turns down and threads forward over the left forearm, wrist at shoulder height; watch the right palm.",
+          "Shift left, turn left and turn the right toes in; both palms arc down past the belly to the left; the eyes follow the turn.",
+          "Gradually make fists: the left rises past the side to above the left forehead, fist-heart out, fist-eye slanting down, and the right folds to the left chest, fist-heart in, fist-eye up; stand steady on the slightly bent left leg and lift the right knee, the foot in front of the crotch with the toes raised and turned in; turn the head to the right front and look straight ahead."
+        ],
+        "id": [
+          "Geser ke kanan, mundurkan kaki kiri dan tekuk lutut kanan ke depan; telapak kiri berbalik ke atas dan melengkung turun ke depan perut sementara telapak kanan berbalik ke bawah dan menusuk ke depan di atas lengan bawah kiri, pergelangan setinggi bahu; pandangan ke telapak kanan.",
+          "Geser ke kiri, putar ke kiri dan putar ujung kaki kanan ke dalam; kedua telapak melengkung turun melewati perut ke kiri; mata mengikuti putaran.",
+          "Kepalkan perlahan: kiri naik lewat samping ke atas dahi kiri, telapak kepalan ke luar, mata kepalan miring ke bawah, dan kanan terlipat ke dada kiri, telapak kepalan ke dalam, mata kepalan ke atas; berdiri mantap di kaki kiri yang sedikit ditekuk dan angkat lutut kanan, kaki di depan selangkangan dengan ujung kaki terangkat dan ke dalam; tolehkan kepala ke depan kanan dan pandang lurus ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Turn the right toes in as the weight moves left and the right knee bends; the left fist rises past the side with an upward bracing feel, which keeps you steady."
+        ],
+        "id": [
+          "Putar ujung kaki kanan ke dalam saat berat bergeser ke kiri dan lutut kanan ditekuk; kepalan kiri naik lewat samping dengan rasa menopang ke atas, yang membuat tetap stabil."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 634, 图 I-121 to I-123"
+    },
+    {
+      "number": 21,
+      "section": 3,
+      "name_zh": "右分脚",
+      "name_pinyin": "Yòu fēn jiǎo",
+      "name_en": "Right Separate Kick",
+      "name_id": "Tendangan Pisah Kanan",
+      "start_sec": 160,
+      "end_sec": 167,
+      "end_x": 11.3,
+      "end_y": 4.6,
+      "steps": {
+        "en": [
+          "Turn slightly right, draw the right foot in with the toes hanging down; open the fists and cross the palms at the chest, right outside, palms in; look to the right front.",
+          "Flatten the right instep and slowly kick the toes out to the upper right front, above the waist; part the palms in arcs to the right front and left, palms out, fingers up, wrists at shoulder height, elbows slightly bent, the right arm above the right leg; watch the right palm."
+        ],
+        "id": [
+          "Putar sedikit ke kanan, tarik kaki kanan dengan ujung kaki menggantung ke bawah; buka kepalan dan silangkan telapak di depan dada, kanan di luar, telapak ke dalam; pandangan ke depan kanan.",
+          "Ratakan punggung kaki kanan dan tendang perlahan ujung kaki ke depan kanan atas, di atas pinggang; pisahkan telapak melengkung ke depan kanan dan ke kiri, telapak ke luar, jari ke atas, pergelangan setinggi bahu, siku sedikit ditekuk, lengan kanan sejajar di atas kaki kanan; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "With the knee bent and foot hanging, hold the right thigh up; relax the knee and let the shin hang naturally for good balance."
+        ],
+        "id": [
+          "Dengan lutut ditekuk dan kaki menggantung, tahan paha kanan tetap terangkat; rilekskan lutut dan biarkan tungkai bawah menggantung alami agar seimbang."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 635, 图 I-124 to I-125"
+    },
+    {
+      "number": 22,
+      "section": 3,
+      "name_zh": "双峰贯耳",
+      "name_pinyin": "Shuāng fēng guàn ěr",
+      "name_en": "Strike the Ears with Both Fists",
+      "name_id": "Dua Puncak Menembus Telinga",
+      "start_sec": 167,
+      "end_sec": 174,
+      "end_x": 11.1,
+      "end_y": 5,
+      "steps": {
+        "en": [
+          "Bend the right knee and draw the shin in, toes hanging; rotate the bent arms out and close them at the chest, then lower the palms in parallel arcs past the face to above the right knee, turning them up; look ahead.",
+          "Step the right foot forward, heel down; lower the palms to the sides of the waist and gradually make fists, fist-hearts up; look ahead.",
+          "Shift forward into right gongbu; strike both fists in arcs from the sides forward and up to ear height, a head-width apart, fist-eyes slanting down, the half-bent arms forming pincers; look ahead."
+        ],
+        "id": [
+          "Tekuk lutut kanan dan tarik tungkai bawah, ujung kaki menggantung; putar lengan yang ditekuk ke luar dan rapatkan di depan dada, lalu turunkan telapak dalam busur sejajar melewati wajah ke atas lutut kanan, berbalik ke atas; pandangan ke depan.",
+          "Langkahkan kaki kanan ke depan, tumit menyentuh lantai; turunkan telapak ke samping pinggang dan kepalkan perlahan, telapak kepalan ke atas; pandangan ke depan.",
+          "Geser ke depan menjadi gongbu kanan; pukulkan kedua kepalan melengkung dari samping ke depan atas setinggi telinga, berjarak selebar kepala, mata kepalan miring ke bawah, lengan setengah ditekuk membentuk capit; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "After bending the right knee, slowly bend the left so the weight lowers into a slight squat before stepping down; strike as the weight moves into gongbu."
+        ],
+        "id": [
+          "Setelah menekuk lutut kanan, tekuk perlahan lutut kiri sehingga berat turun ke jongkok ringan sebelum melangkah; pukul saat berat berpindah ke gongbu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 635–636, 图 I-126 to I-128"
+    },
+    {
+      "number": 23,
+      "section": 3,
+      "name_zh": "左分脚",
+      "name_pinyin": "Zuǒ fēn jiǎo",
+      "name_en": "Left Separate Kick",
+      "name_id": "Tendangan Pisah Kiri",
+      "start_sec": 174,
+      "end_sec": 181,
+      "end_x": 10.9,
+      "end_y": 5.3,
+      "steps": {
+        "en": [
+          "Shift back, turn the right toes out and turn right; open the fists and part the palms left and right, palms out; watch the left palm.",
+          "Shift and draw the left foot in beside the right, turning slightly left; the palms arc down and in, cross at the belly and rise to the chest, left outside, palms in; look to the left front.",
+          "Stand steady on the slightly bent right leg, lift the left knee and slowly kick the toes out to the upper left front (90° from the starting direction), instep flat, above the waist; part the palms to the left front and right, wrists at shoulder height, the left arm above the left leg; watch the left palm."
+        ],
+        "id": [
+          "Geser ke belakang, putar ujung kaki kanan ke luar dan putar ke kanan; buka kepalan dan pisahkan telapak ke kiri dan kanan, telapak ke luar; pandangan ke telapak kiri.",
+          "Geser dan tarik kaki kiri ke samping kaki kanan, putar sedikit ke kiri; telapak melengkung ke bawah dan ke dalam, menyilang di depan perut lalu naik ke dada, kiri di luar, telapak ke dalam; pandangan ke depan kiri.",
+          "Berdiri mantap di kaki kanan yang sedikit ditekuk, angkat lutut kiri dan tendang perlahan ujung kaki ke depan kiri atas (90° dari arah awal), punggung kaki rata, di atas pinggang; pisahkan telapak ke depan kiri dan ke kanan, pergelangan setinggi bahu, lengan kiri sejajar di atas kaki kiri; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The weight changes twice; tuck the buttocks as the left leg draws in so the trunk stays relaxed and upright."
+        ],
+        "id": [
+          "Berat berganti dua kali; tarik pantat saat kaki kiri ditarik agar badan tetap rileks dan tegak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 636–637, 图 I-129 to I-131"
+    },
+    {
+      "number": 24,
+      "section": 3,
+      "name_zh": "转身拍脚",
+      "name_pinyin": "Zhuǎnshēn pāi jiǎo",
+      "name_en": "Turn and Slap Foot",
+      "name_id": "Berbalik dan Menepuk Kaki",
+      "start_sec": 181,
+      "end_sec": 188,
+      "end_x": 10.6,
+      "end_y": 5.4,
+      "steps": {
+        "en": [
+          "Fold the left leg down and pivot on the right ball, turning back to the right, the left toes turning in as they land; lower the palms in arcs to the belly, palms slanting toward each other; the head turns with the body.",
+          "Shift left and keep turning back to the right, the right foot turning straight with the toes touching down; cross the hands at the chest, right outside; look ahead.",
+          "On the left leg kick the right foot up, instep flat; rotate the forearms in, slap the right instep with the right palm at head height and part the left palm back to the left at shoulder height; watch the right palm."
+        ],
+        "id": [
+          "Lipat kaki kiri turun dan berporos pada telapak depan kanan, berbalik ke kanan, ujung kaki kiri berputar ke dalam saat mendarat; turunkan telapak melengkung ke depan perut, telapak miring saling berhadapan; kepala menoleh mengikuti badan.",
+          "Geser ke kiri dan terus berbalik ke kanan, kaki kanan berputar lurus dengan ujung kaki menyentuh lantai; silangkan tangan di depan dada, kanan di luar; pandangan ke depan.",
+          "Di atas kaki kiri tendang kaki kanan ke atas, punggung kaki rata; putar lengan bawah ke dalam, tepuk punggung kaki kanan dengan telapak kanan setinggi kepala dan pisahkan telapak kiri ke kiri belakang setinggi bahu; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Close the hips, bend the knees slightly and join the hands together as you turn; the knee lift-and-snap kick and the parting slap finish together."
+        ],
+        "id": [
+          "Rapatkan pinggul, tekuk lutut sedikit dan satukan tangan saat berputar; angkat lutut dan tendangan lenting serta tepukan selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 637–638, 图 I-132 to I-134"
+    },
+    {
+      "number": 25,
+      "section": 3,
+      "name_zh": "进步栽捶",
+      "name_pinyin": "Jìnbù zāi chuí",
+      "name_en": "Step Forward and Punch Down",
+      "name_id": "Maju dan Memukul ke Bawah",
+      "start_sec": 188,
+      "end_sec": 195,
+      "end_x": 10.3,
+      "end_y": 5.5,
+      "steps": {
+        "en": [
+          "Bend the left knee, draw the right leg in and set the right foot down forward, toes out, turning right and shifting forward; rotate the forearms out, the left palm arcing up and right, palm turning right, the right palm turning over and dropping to the waist, palm up; the head turns with the body.",
+          "Step the left foot forward, heel down, turning slightly left; the right palm arcs right and up and becomes a fist beside the right ear, fist-heart down, the left palm arcing down to the belly; look forward and down.",
+          "Turn left, lean slightly forward and shift into left gongbu; punch the right fist forward and down to belly height, fist face forward-down and fist-eye left, while the left palm brushes over the left knee and presses beside the left hip; watch the right fist."
+        ],
+        "id": [
+          "Tekuk lutut kiri, tarik kaki kanan dan turunkan kaki kanan ke depan, ujung kaki ke luar, putar ke kanan dan geser ke depan; putar lengan bawah ke luar, telapak kiri melengkung ke atas dan ke kanan, telapak berbalik ke kanan, telapak kanan berbalik dan turun ke pinggang, telapak ke atas; kepala menoleh mengikuti badan.",
+          "Langkahkan kaki kiri ke depan, tumit menyentuh lantai, putar sedikit ke kiri; telapak kanan melengkung ke kanan dan ke atas lalu menjadi kepalan di samping telinga kanan, telapak kepalan ke bawah, telapak kiri melengkung turun ke depan perut; pandangan ke depan bawah.",
+          "Putar ke kiri, condong sedikit ke depan dan geser menjadi gongbu kiri; pukulkan kepalan kanan ke depan bawah setinggi perut, muka kepalan ke depan bawah dan mata kepalan ke kiri, sementara telapak kiri menyapu di atas lutut kiri dan menekan di samping pinggul kiri; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The weight shift into gongbu and the downward punch move at the same speed and finish together."
+        ],
+        "id": [
+          "Perpindahan berat ke gongbu dan pukulan ke bawah bergerak dengan kecepatan sama dan selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 638–639, 图 I-135 to I-137"
+    },
+    {
+      "number": 26,
+      "section": 3,
+      "name_zh": "斜飞势",
+      "name_pinyin": "Xié fēi shì",
+      "name_en": "Diagonal Flying",
+      "name_id": "Terbang Menyamping",
+      "start_sec": 195,
+      "end_sec": 203,
+      "end_x": 10,
+      "end_y": 5.7,
+      "steps": {
+        "en": [
+          "Shift back, turn the left toes out and turn left; the right fist opens and arcs up and right while the left palm arcs left, the palms parting.",
+          "Draw the right foot in beside the left; the left palm arcs up and right to the chest, palm slanting down, and the right palm arcs down and left to the belly, palm slanting up, the arms crossed in a hold with the left forearm on top; watch the left palm.",
+          "Turn slightly right and step the right foot out to the right, heel down; watch the left palm.",
+          "Shift right and turn left into right hengdangbu, the right shoulder leaning to the right; spread the palms to the upper right front and lower left front, the right a little above the head, palm slanting up, the left at hip height, palm slanting down; the eyes follow the left palm."
+        ],
+        "id": [
+          "Geser ke belakang, putar ujung kaki kiri ke luar dan putar ke kiri; kepalan kanan dibuka dan melengkung ke atas dan ke kanan sementara telapak kiri melengkung ke kiri, kedua telapak berpisah.",
+          "Tarik kaki kanan ke samping kaki kiri; telapak kiri melengkung ke atas dan ke kanan ke depan dada, telapak miring ke bawah, dan telapak kanan melengkung ke bawah dan ke kiri ke depan perut, telapak miring ke atas, lengan menyilang dalam pelukan dengan lengan bawah kiri di atas; pandangan ke telapak kiri.",
+          "Putar sedikit ke kanan dan langkahkan kaki kanan ke kanan, tumit menyentuh lantai; pandangan ke telapak kiri.",
+          "Geser ke kanan dan putar ke kiri menjadi hengdangbu kanan, bahu kanan condong ke kanan; rentangkan telapak ke depan kanan atas dan depan kiri bawah, kanan sedikit di atas kepala, telapak miring ke atas, kiri setinggi pinggul, telapak miring ke bawah; mata mengikuti telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Lean the right shoulder slightly to the right, the trunk tilting slightly right."
+        ],
+        "id": [
+          "Condongkan bahu kanan sedikit ke kanan, badan sedikit miring ke kanan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 639–640, 图 I-138 to I-141"
+    },
+    {
+      "number": 27,
+      "section": 3,
+      "name_zh": "单鞭下势",
+      "name_pinyin": "Dān biān xià shì",
+      "name_en": "Single Whip, Push Down",
+      "name_id": "Cambuk Tunggal, Sikap Rendah",
+      "start_sec": 203,
+      "end_sec": 212,
+      "end_x": 9.7,
+      "end_y": 5.8,
+      "steps": {
+        "en": [
+          "Shift left and turn left, the right heel turning slightly out; the left palm becomes a hook raised at the left side, wrist at shoulder height, while the right palm arcs left past the front of the head to the inside of the left elbow; the eyes follow the right palm.",
+          "Squat fully on the left leg with the right leg laid straight, turning right into right pubu; the right palm drops past the belly and threads out to the right along the inside of the right leg, palm turning from in to out, fingers right; watch the right palm."
+        ],
+        "id": [
+          "Geser ke kiri dan putar ke kiri, tumit kanan sedikit berputar ke luar; telapak kiri menjadi kait terangkat di sisi kiri, pergelangan setinggi bahu, sementara telapak kanan melengkung ke kiri melewati depan kepala ke sisi dalam siku kiri; mata mengikuti telapak kanan.",
+          "Jongkok penuh di kaki kiri dengan kaki kanan rebah lurus, putar ke kanan menjadi pubu kanan; telapak kanan turun melewati perut dan menusuk ke kanan menyusuri sisi dalam kaki kanan, telapak berbalik dari dalam ke luar, jari ke kanan; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Shift and swing the palm at an even, matching pace; keep the trunk upright in pubu, not leaning forward; bend the wrist and lead with the fingertips so the threading power flows."
+        ],
+        "id": [
+          "Geser dan ayunkan telapak dengan kecepatan rata dan serasi; badan tetap tegak pada pubu, tidak condong ke depan; tekuk pergelangan dan pimpin dengan ujung jari agar tenaga tusukan mengalir."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 640–641, 图 I-142 to I-143"
+    },
+    {
+      "number": 28,
+      "section": 3,
+      "name_zh": "金鸡独立",
+      "name_pinyin": "Jīnjī dúlì",
+      "name_en": "Golden Rooster Stands on One Leg",
+      "name_id": "Ayam Emas Dulibu",
+      "start_sec": 212,
+      "end_sec": 220,
+      "end_x": 9.3,
+      "end_y": 5.9,
+      "steps": {
+        "en": [
+          "Shift right and turn right, right toes out and left toes in, right knee bent and left leg naturally straight; flick the right palm up in front as a side-standing palm, wrist at shoulder height, while the left arm rotates in and drops behind, hook tip up; watch the right palm.",
+          "Shift forward and turn right, lifting the left knee with the toes hanging, standing steady on the slightly bent right leg; the left hook opens and flicks up past the side to the front as a side-standing palm, fingertips at eyebrow height, the right palm turning over and pressing beside the right hip; watch the left palm.",
+          "Bend the right leg slightly, set the left foot down behind and beside the right and shift back; turn left and lift the right knee, toes hanging, standing on the slightly bent left leg; the left palm turns over and presses beside the left hip while the right palm flicks up in front as a side-standing palm, fingertips at eyebrow height; watch the right palm."
+        ],
+        "id": [
+          "Geser ke kanan dan putar ke kanan, ujung kaki kanan ke luar dan ujung kaki kiri ke dalam, lutut kanan ditekuk dan kaki kiri lurus alami; cungkil telapak kanan ke atas di depan sebagai telapak tegak menyamping, pergelangan setinggi bahu, sementara lengan kiri berputar ke dalam dan turun ke belakang, ujung kait ke atas; pandangan ke telapak kanan.",
+          "Geser ke depan dan putar ke kanan, angkat lutut kiri dengan ujung kaki menggantung, berdiri mantap di kaki kanan yang sedikit ditekuk; kait kiri dibuka dan dicungkil ke atas lewat samping ke depan sebagai telapak tegak menyamping, ujung jari setinggi alis, telapak kanan berbalik dan menekan di samping pinggul kanan; pandangan ke telapak kiri.",
+          "Tekuk kaki kanan sedikit, turunkan kaki kiri ke belakang samping kaki kanan dan geser ke belakang; putar ke kiri dan angkat lutut kanan, ujung kaki menggantung, berdiri di kaki kiri yang sedikit ditekuk; telapak kiri berbalik dan menekan di samping pinggul kiri sementara telapak kanan dicungkil ke atas di depan sebagai telapak tegak menyamping, ujung jari setinggi alis; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Right toes out and left toes in to form the gongbu flick; each knee lift goes with its palm flick, while the pressing palm at the hip gives a downward push that keeps you steady."
+        ],
+        "id": [
+          "Ujung kaki kanan ke luar dan kiri ke dalam untuk membentuk cungkilan gongbu; setiap angkat lutut serempak dengan cungkilan telapaknya, sementara telapak yang menekan di pinggul memberi dorongan ke bawah yang membuat tetap stabil."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 641–642, 图 I-144 to I-146"
+    },
+    {
+      "number": 29,
+      "section": 3,
+      "name_zh": "退步穿掌",
+      "name_pinyin": "Tuìbù chuān zhǎng",
+      "name_en": "Step Back and Thread Palm",
+      "name_id": "Mundur dan Menusuk Telapak",
+      "start_sec": 220,
+      "end_sec": 227,
+      "end_x": 9,
+      "end_y": 5.9,
+      "steps": {
+        "en": [
+          "Bend the left leg slightly and step the right foot back, right leg naturally straight and left knee bent, pivoting the left foot straight on its ball into left gongbu; rotate the left arm out, turn the palm up and thread it past the waist over the right forearm, wrist at shoulder height, while the right arm rotates in and presses a horizontal palm down below the left elbow; watch the left palm."
+        ],
+        "id": [
+          "Tekuk kaki kiri sedikit dan mundurkan kaki kanan, kaki kanan lurus alami dan lutut kiri ditekuk, luruskan kaki kiri berporos pada telapak depannya menjadi gongbu kiri; putar lengan kiri ke luar, balik telapak ke atas dan tusukkan lewat pinggang di atas lengan bawah kanan, pergelangan setinggi bahu, sementara lengan kanan berputar ke dalam dan menekan telapak mendatar ke bawah siku kiri; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Bend the left knee and lower the weight slowly; the step back, the right press and the left thread finish together."
+        ],
+        "id": [
+          "Tekuk lutut kiri dan turunkan berat perlahan; langkah mundur, tekanan kanan dan tusukan kiri selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 642–643, 图 I-147"
+    },
+    {
+      "number": 30,
+      "section": 4,
+      "name_zh": "虚步压掌",
+      "name_pinyin": "Xūbù yā zhǎng",
+      "name_en": "Xubu, Press Palm",
+      "name_id": "Xubu, Menekan Telapak",
+      "start_sec": 227,
+      "end_sec": 234,
+      "end_x": 8.5,
+      "end_y": 5.7,
+      "steps": {
+        "en": [
+          "Shift back, turn the left toes in and turn back to the right; bring the right palm to the belly and raise the left palm above the left side of the forehead; look level with the turn.",
+          "Shift onto the left leg, lift the right foot, turn the toes forward and set the ball down in right xubu, the body sinking and leaning slightly forward; press the left palm down across above the front of the right knee, fingers right, the right palm pressing beside the right hip, fingers forward; look forward and down."
+        ],
+        "id": [
+          "Geser ke belakang, putar ujung kaki kiri ke dalam dan berbalik ke kanan; bawa telapak kanan ke depan perut dan angkat telapak kiri di atas sisi kiri dahi; pandangan datar mengikuti putaran.",
+          "Pindahkan berat ke kaki kiri, angkat kaki kanan, arahkan ujung kaki ke depan dan turunkan telapak depan dalam xubu kanan, badan turun dan sedikit condong ke depan; tekan telapak kiri melintang di atas depan lutut kanan, jari ke kanan, telapak kanan menekan di samping pinggul kanan, jari ke depan; pandangan ke depan bawah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Shuffle the right foot slightly forward as you turn; sink with the weight about 30% front and 70% back; the pressing palms at the knee and hip keep you balanced."
+        ],
+        "id": [
+          "Geser kaki kanan sedikit ke depan saat berputar; turun dengan berat sekitar 30% depan dan 70% belakang; telapak yang menekan di lutut dan pinggul menjaga keseimbangan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 643–644, 图 I-148 to I-149"
+    },
+    {
+      "number": 31,
+      "section": 4,
+      "name_zh": "独立托掌",
+      "name_pinyin": "Dúlì tuō zhǎng",
+      "name_en": "Stand on One Leg, Lift Palm",
+      "name_id": "Dulibu, Mengangkat Telapak",
+      "start_sec": 234,
+      "end_sec": 241,
+      "end_x": 8.1,
+      "end_y": 5.3,
+      "steps": {
+        "en": [
+          "Push off the left foot and stand steady on the slightly bent left leg, lifting the right knee with the toes hanging; turn the right palm up and lift it in front at chest height, while the left palm arcs left and up to brace at the side, wrist at shoulder height, palm out; watch the right palm."
+        ],
+        "id": [
+          "Tolak dengan kaki kiri dan berdiri mantap di kaki kiri yang sedikit ditekuk, angkat lutut kanan dengan ujung kaki menggantung; balik telapak kanan ke atas dan angkat di depan setinggi dada, sementara telapak kiri melengkung ke kiri dan ke atas menahan di samping, pergelangan setinggi bahu, telapak ke luar; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Keep the standing knee slightly bent; the right palm's lift and the left palm's outward brace keep you balanced; look at the front hand but keep the rear arm in mind."
+        ],
+        "id": [
+          "Lutut kaki tumpu sedikit ditekuk; angkatan telapak kanan dan tahanan telapak kiri ke luar menjaga keseimbangan; pandang tangan depan tetapi ingat lengan belakang."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 644, 图 I-150"
+    },
+    {
+      "number": 32,
+      "section": 4,
+      "name_zh": "马步靠",
+      "name_pinyin": "Mǎbù kào",
+      "name_en": "Mabu Shoulder Strike",
+      "name_id": "Mabu Menyerang Bahu",
+      "start_sec": 241,
+      "end_sec": 248,
+      "end_x": 7.5,
+      "end_y": 4.7,
+      "steps": {
+        "en": [
+          "Set the right foot down forward, toes out, shift forward and turn right; the right palm turns down and the left arm rotates out, the palm arcing up and right; look ahead.",
+          "Draw the left foot in beside the right, still turning right; the right palm turns up and arcs to the right side at head height, while the left hand makes a fist and drops to the right belly, fist-heart down; watch the right palm.",
+          "Turn left and step the left foot to the left front, shifting slightly forward into banmabu; rotate the left arm in and lean it forward with the fist in front of the left knee, fist face down, while the right palm comes past the ear and helps push the left arm forward, fingers at the inside of the left upper arm; look to the left front."
+        ],
+        "id": [
+          "Turunkan kaki kanan ke depan, ujung kaki ke luar, geser ke depan dan putar ke kanan; telapak kanan berbalik ke bawah dan lengan kiri berputar ke luar, telapak melengkung ke atas dan ke kanan; pandangan ke depan.",
+          "Tarik kaki kiri ke samping kaki kanan, terus berputar ke kanan; telapak kanan berbalik ke atas dan melengkung ke sisi kanan setinggi kepala, sementara tangan kiri mengepal dan turun ke perut kanan, telapak kepalan ke bawah; pandangan ke telapak kanan.",
+          "Putar ke kiri dan langkahkan kaki kiri ke depan kiri, geser sedikit ke depan menjadi banmabu; putar lengan kiri ke dalam dan sandarkan ke depan dengan kepalan di depan lutut kiri, muka kepalan ke bawah, sementara telapak kanan lewat samping telinga dan membantu mendorong lengan kiri ke depan, jari di sisi dalam lengan atas kiri; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The weight stays slightly on the right leg; the sinking body and the pushing right arm make the shoulder-lean to the left front; tuck the buttocks and keep upright."
+        ],
+        "id": [
+          "Berat tetap sedikit di kaki kanan; badan yang turun dan lengan kanan yang mendorong membentuk sandaran bahu ke depan kiri; tarik pantat dan tetap tegak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 644–645, 图 I-151 to I-153"
+    },
+    {
+      "number": 33,
+      "section": 4,
+      "name_zh": "转身大捋",
+      "name_pinyin": "Zhuǎnshēn dà lǚ",
+      "name_en": "Turn and Large Roll Back",
+      "name_id": "Berbalik dan Menarik Besar",
+      "start_sec": 248,
+      "end_sec": 256,
+      "end_x": 6.9,
+      "end_y": 4,
+      "steps": {
+        "en": [
+          "Shift back and raise the left toes, turning them out; the left fist opens, the left arm rotates out and the right in, both palms turning out and drawing slightly back; watch the palms.",
+          "Turn left and shift forward, drawing the right foot in parallel beside the left, weight still mostly on the left and rising slightly; the left palm lifts to the chest as a horizontal palm facing out, the right arm rotating out and rising to the right side at shoulder height, palm up; watch the right palm.",
+          "Pivot on the right ball, turning the heel out and the body left; bend the right knee and step the left leg back, toes out; both palms roll back level to the left in front, the right at head height and the left at the inside of the right elbow; watch the right palm.",
+          "Keep turning left and shift left into left hengdangbu, right heel out; keep rolling back level to the left and make fists: the left arcs left and curls to the waist, fist-heart up, while the bent right forearm rotates out and rolls-presses in front, fist at chest height; watch the right fist."
+        ],
+        "id": [
+          "Geser ke belakang dan angkat ujung kaki kiri, putar ke luar; kepalan kiri dibuka, lengan kiri berputar ke luar dan kanan ke dalam, kedua telapak berbalik ke luar dan sedikit ditarik ke belakang; pandangan ke telapak.",
+          "Putar ke kiri dan geser ke depan, tarik kaki kanan sejajar di samping kaki kiri, berat tetap lebih banyak di kiri dan sedikit naik; telapak kiri naik ke dada sebagai telapak mendatar menghadap luar, lengan kanan berputar ke luar dan naik ke sisi kanan setinggi bahu, telapak ke atas; pandangan ke telapak kanan.",
+          "Berporos pada telapak depan kanan, putar tumit ke luar dan badan ke kiri; tekuk lutut kanan dan mundurkan kaki kiri, ujung kaki ke luar; kedua telapak menarik datar ke kiri di depan, kanan setinggi kepala dan kiri di sisi dalam siku kanan; pandangan ke telapak kanan.",
+          "Terus berputar ke kiri dan geser ke kiri menjadi hengdangbu kiri, tumit kanan ke luar; terus menarik datar ke kiri dan kepalkan: kiri melengkung ke kiri dan menggulung ke pinggang, telapak kepalan ke atas, sementara lengan bawah kanan yang ditekuk berputar ke luar dan menggulung-menekan di depan, kepalan setinggi dada; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Soft and linked through the palm turns and steps; when shifting into hengdangbu, the right forearm rolls and presses steadily with sunk, solid power."
+        ],
+        "id": [
+          "Lembut dan bersambung melalui balikan telapak dan langkah; saat bergeser ke hengdangbu, lengan bawah kanan menggulung dan menekan dengan mantap dan tenaga yang tenggelam serta padat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 645–647, 图 I-154 to I-157"
+    },
+    {
+      "number": 34,
+      "section": 4,
+      "name_zh": "歇步擒打",
+      "name_pinyin": "Xiēbù qín dǎ",
+      "name_en": "Xiebu, Seize and Strike",
+      "name_id": "Xiebu, Menangkap dan Memukul",
+      "start_sec": 256,
+      "end_sec": 264,
+      "end_x": 6.2,
+      "end_y": 3.5,
+      "steps": {
+        "en": [
+          "Turn right and shift right; the right arm rotates in and braces up, fist in front of the right forehead, fist-heart out, while the left arm rotates in and the fist threads to the left rear, fist-heart back; look ahead.",
+          "Turn left, turn the left toes out and shift forward; the right fist drops past the side and curls to the waist, fist-heart up, while the left fist opens and arcs forward, palm turning right; the head turns with the body; look ahead.",
+          "Step the right foot in gaibu across in front of the left to the left front and sink with the legs crossed into xiebu; the left hand grips into a fist at the belly, fist-heart down, while the right fist punches forward and down over the left forearm to belly height, fist-heart up; watch the right fist."
+        ],
+        "id": [
+          "Putar ke kanan dan geser ke kanan; lengan kanan berputar ke dalam dan menahan ke atas, kepalan di depan dahi kanan, telapak kepalan ke luar, sementara lengan kiri berputar ke dalam dan kepalan menusuk ke kiri belakang, telapak kepalan ke belakang; pandangan ke depan.",
+          "Putar ke kiri, putar ujung kaki kiri ke luar dan geser ke depan; kepalan kanan turun lewat samping dan menggulung ke pinggang, telapak kepalan ke atas, sementara kepalan kiri dibuka dan melengkung ke depan, telapak berbalik ke kanan; kepala menoleh mengikuti badan; pandangan ke depan.",
+          "Langkahkan kaki kanan secara gaibu melintas di depan kaki kiri ke depan kiri dan turun dengan kaki menyilang menjadi xiebu; tangan kiri menggenggam menjadi kepalan di depan perut, telapak kepalan ke bawah, sementara kepalan kanan memukul ke depan bawah di atas lengan bawah kiri setinggi perut, telapak kepalan ke atas; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The left hand opens then grips and turns in, like seizing an opponent, before the right strikes from high xiebu, so the attack-and-defence meaning is clear; press the back knee into the hollow of the front knee for stability."
+        ],
+        "id": [
+          "Tangan kiri membuka lalu menggenggam dan memutar ke dalam, seperti menangkap lawan, sebelum tangan kanan memukul dari xiebu tinggi, sehingga makna serang-bela jelas; tekan lutut belakang ke lipatan lutut depan agar stabil."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 647–648, 图 I-158 to I-160"
+    },
+    {
+      "number": 35,
+      "section": 4,
+      "name_zh": "穿掌下势",
+      "name_pinyin": "Chuān zhǎng xià shì",
+      "name_en": "Thread Palm, Push Down",
+      "name_id": "Menusuk Telapak, Sikap Rendah",
+      "start_sec": 264,
+      "end_sec": 272,
+      "end_x": 5.5,
+      "end_y": 3.1,
+      "steps": {
+        "en": [
+          "Turn right and draw the left foot in beside the right; open the fists, the right arm rotating in to lift the palm to the chest, palm out and fingers left, the left arm rotating out and raising the palm at the left side, palm out and fingers left; watch the left palm.",
+          "Turn right, bend the right leg and extend the left leg out to the left; both palms arc up and right past the face to the right side, palms slanting down and fingers slanting up-right, the right at the right front at head height and the left in front of the right shoulder; watch the right palm.",
+          "Squat fully on the right leg with the left leg laid straight, turning left into left pubu; the palms circle so the fingers point left and thread past the belly along the left leg, left palm ahead facing out and right palm behind facing in; watch the left palm."
+        ],
+        "id": [
+          "Putar ke kanan dan tarik kaki kiri ke samping kaki kanan; buka kepalan, lengan kanan berputar ke dalam mengangkat telapak ke dada, telapak ke luar dan jari ke kiri, lengan kiri berputar ke luar mengangkat telapak di sisi kiri, telapak ke luar dan jari ke kiri; pandangan ke telapak kiri.",
+          "Putar ke kanan, tekuk kaki kanan dan julurkan kaki kiri ke kiri; kedua telapak melengkung ke atas dan ke kanan melewati wajah ke sisi kanan, telapak miring ke bawah dan jari miring ke kanan atas, kanan di depan kanan setinggi kepala dan kiri di depan bahu kanan; pandangan ke telapak kanan.",
+          "Jongkok penuh di kaki kanan dengan kaki kiri rebah lurus, putar ke kiri menjadi pubu kiri; telapak berputar sehingga jari mengarah ke kiri dan menusuk melewati perut menyusuri kaki kiri, telapak kiri di depan menghadap luar dan telapak kanan di belakang menghadap dalam; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Thread with the elbows bent, palms slanting toward each other, fingertips leading; in pubu tuck the buttocks and sit the hips without bending the waist or sticking the hips out."
+        ],
+        "id": [
+          "Tusuk dengan siku ditekuk, telapak miring saling berhadapan, ujung jari memimpin; pada pubu tarik pantat dan duduk pinggul tanpa membungkuk atau menonjolkan pinggul."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 648–649, 图 I-161 to I-163"
+    },
+    {
+      "number": 36,
+      "section": 4,
+      "name_zh": "上步七星",
+      "name_pinyin": "Shàngbù qī xīng",
+      "name_en": "Step Up to Seven Stars",
+      "name_id": "Maju ke Tujuh Bintang",
+      "start_sec": 272,
+      "end_sec": 279,
+      "end_x": 4.8,
+      "end_y": 3,
+      "steps": {
+        "en": [
+          "Shift forward and turn left, left toes out and right toes in, right leg straight and left knee bent; flick the left palm forward and up, wrist at shoulder height, palm facing right, the right palm drawing slightly back beside the right hip; watch the left palm.",
+          "Step the right foot forward onto the ball in right xubu; the left hand makes a fist and draws in slightly, fist-heart in, while the right hand makes a fist and blocks forward and up, fist-heart out, the wrists crossed in front at shoulder height, right fist outside, arms rounded; watch the left fist."
+        ],
+        "id": [
+          "Geser ke depan dan putar ke kiri, ujung kaki kiri ke luar dan ujung kaki kanan ke dalam, kaki kanan lurus dan lutut kiri ditekuk; cungkil telapak kiri ke depan atas, pergelangan setinggi bahu, telapak menghadap kanan, telapak kanan sedikit ditarik ke samping pinggul kanan; pandangan ke telapak kiri.",
+          "Langkahkan kaki kanan ke depan bertumpu pada telapak depan dalam xubu kanan; tangan kiri mengepal dan sedikit ditarik ke dalam, telapak kepalan ke dalam, sementara tangan kanan mengepal dan menangkis ke depan atas, telapak kepalan ke luar, pergelangan menyilang di depan setinggi bahu, kepalan kanan di luar, lengan membulat; pandangan ke kepalan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Left toes out, right toes in, trunk upright; place the right foot lightly forward so all the weight is on the left leg, xubu light and relaxed; keep the buttocks tucked and upright as you block."
+        ],
+        "id": [
+          "Ujung kaki kiri ke luar, ujung kaki kanan ke dalam, badan tegak; letakkan kaki kanan ringan ke depan sehingga seluruh berat di kaki kiri, xubu ringan dan rileks; pantat tetap ditarik dan tegak saat menangkis."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 649–650, 图 I-164 to I-165"
+    },
+    {
+      "number": 37,
+      "section": 4,
+      "name_zh": "退步跨虎",
+      "name_pinyin": "Tuìbù kuà hǔ",
+      "name_en": "Step Back to Ride the Tiger",
+      "name_id": "Mundur Menunggang Harimau",
+      "start_sec": 279,
+      "end_sec": 287,
+      "end_x": 4.1,
+      "end_y": 3.1,
+      "steps": {
+        "en": [
+          "Step the right foot back to the right rear, shift back and turn right; the right fist opens and arcs down to the right hip, palm down, the left fist opening and arcing slightly right with the turn, palm right; turn the head slightly right and look to the right front.",
+          "Draw the left foot back slightly, the ball landing in front of the right foot, turning left and sinking slightly; the right palm arcs up past the front of the head, then left and down to the outside of the left leg, palm out; the eyes follow the body, glancing left toward the right hand.",
+          "Push off and stand steady on the right leg, raising the left leg in front, knee slightly bent, instep flat and toes slightly in; flick the right palm forward and up as a side-standing palm, wrist at shoulder height, while the left palm becomes a hook raised to the left at shoulder height, hook tip down, turning left; look to the left front."
+        ],
+        "id": [
+          "Mundurkan kaki kanan ke kanan belakang, geser ke belakang dan putar ke kanan; kepalan kanan dibuka dan melengkung turun ke pinggul kanan, telapak ke bawah, kepalan kiri dibuka dan melengkung sedikit ke kanan mengikuti putaran, telapak ke kanan; tolehkan kepala sedikit ke kanan dan pandang ke depan kanan.",
+          "Tarik kaki kiri sedikit ke belakang, telapak depan mendarat di depan kaki kanan, putar ke kiri dan sedikit turun; telapak kanan melengkung naik melewati depan kepala, lalu ke kiri dan ke bawah ke sisi luar kaki kiri, telapak ke luar; mata mengikuti badan, melirik ke kiri ke arah tangan kanan.",
+          "Tolak dan berdiri mantap di kaki kanan, angkat kaki kiri ke depan, lutut sedikit ditekuk, punggung kaki rata dan ujung kaki sedikit ke dalam; cungkil telapak kanan ke depan atas sebagai telapak tegak menyamping, pergelangan setinggi bahu, sementara telapak kiri menjadi kait terangkat ke kiri setinggi bahu, ujung kait ke bawah, sambil berputar ke kiri; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Open the fists as the right leg steps back; the waist turning right and left drives the arm arcs, so the body carries the arms; the right palm flick and the left leg lift coincide; arms raised to the sides with the right knee slightly bent for a steadier stand."
+        ],
+        "id": [
+          "Buka kepalan saat kaki kanan mundur; pinggang yang berputar ke kanan dan ke kiri menggerakkan busur lengan, sehingga badan membawa lengan; cungkilan telapak kanan dan angkatan kaki kiri bersamaan; lengan terangkat ke samping dengan lutut kanan sedikit ditekuk agar berdiri lebih mantap."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 650–651, 图 I-166 to I-168"
+    },
+    {
+      "number": 38,
+      "section": 4,
+      "name_zh": "转身摆莲",
+      "name_pinyin": "Zhuǎnshēn bǎi lián",
+      "name_en": "Turn and Lotus Kick",
+      "name_id": "Berbalik dan Tendangan Teratai",
+      "start_sec": 287,
+      "end_sec": 296,
+      "end_x": 3.6,
+      "end_y": 3.3,
+      "steps": {
+        "en": [
+          "Set the left foot down forward, heel first, toes in, and turn right; rotate the right arm in, turning the palm down, and draw it level to the right with the elbow bent, while the left hook opens, palm up, and swings level from behind to the side; the head turns with the body; look ahead.",
+          "Pivot on both balls and turn back to the right; the left palm swings in front at head height, palm up, and the right palm turns up and threads past the chest and under the left elbow to the left; look ahead.",
+          "Keep turning right until facing away from the Step Up to Seven Stars direction, sitting on the left leg with the right toes touching down; the right palm arcs up and right, rotating in to a standing palm at the right side, wrist at shoulder height, while the left palm turns over and drops to below the front of the right shoulder; watch the right palm.",
+          "Lift the right foot and swing it left, up and right in a fan-shaped outside crescent, instep flat; turning left, sweep both palms level from right to left and slap the right instep in front of the head, one after the other; watch the palms."
+        ],
+        "id": [
+          "Turunkan kaki kiri ke depan, tumit dulu, ujung kaki ke dalam, dan putar ke kanan; putar lengan kanan ke dalam, balik telapak ke bawah, dan tarik datar ke kanan dengan siku ditekuk, sementara kait kiri dibuka, telapak ke atas, dan berayun datar dari belakang ke samping; kepala menoleh mengikuti badan; pandangan ke depan.",
+          "Berporos pada kedua telapak depan dan berbalik ke kanan; telapak kiri berayun di depan setinggi kepala, telapak ke atas, dan telapak kanan berbalik ke atas lalu menusuk melewati dada dan di bawah siku kiri ke kiri; pandangan ke depan.",
+          "Terus berputar ke kanan hingga membelakangi arah Maju ke Tujuh Bintang, duduk di kaki kiri dengan ujung kaki kanan menyentuh lantai; telapak kanan melengkung ke atas dan ke kanan, berputar ke dalam menjadi telapak tegak di sisi kanan, pergelangan setinggi bahu, sementara telapak kiri berbalik dan turun ke bawah depan bahu kanan; pandangan ke telapak kanan.",
+          "Angkat kaki kanan dan ayunkan ke kiri, ke atas dan ke kanan dalam sabit luar berbentuk kipas, punggung kaki rata; sambil berputar ke kiri, sapukan kedua telapak datar dari kanan ke kiri dan tepuk punggung kaki kanan di depan kepala, satu demi satu; pandangan ke telapak."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "After the turn tuck the buttocks, sit the hips and sink to store power, elbows and wrists relaxed; draw in the belly to lift the leg and swing it back to the right, the hands slapping from right to left with some force but not too fast or fierce: relaxed and steady."
+        ],
+        "id": [
+          "Setelah berputar tarik pantat, duduk pinggul dan turunkan badan untuk menyimpan tenaga, siku dan pergelangan rileks; tarik perut untuk mengangkat kaki dan ayunkan ke kanan belakang, tangan menepuk dari kanan ke kiri dengan tenaga tetapi tidak terlalu cepat atau keras: rileks dan mantap."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 651–652, 图 I-169 to I-172"
+    },
+    {
+      "number": 39,
+      "section": 4,
+      "name_zh": "弯弓射虎",
+      "name_pinyin": "Wān gōng shè hǔ",
+      "name_en": "Bend the Bow to Shoot the Tiger",
+      "name_id": "Melengkungkan Busur Memanah Harimau",
+      "start_sec": 296,
+      "end_sec": 304,
+      "end_x": 3.2,
+      "end_y": 3.4,
+      "steps": {
+        "en": [
+          "Fold the right shin and hold the bent right knee in front, toes hanging, standing steady on the left leg and turning left; keep swinging the palms left, the left to the left side and the right below the front of the left shoulder, palms down at shoulder height; watch the left palm.",
+          "Set the right foot down to the right front and turn right; both palms drop in arcs; watch the palms.",
+          "Shift forward and turn right; the palms arc down and right, closing into fists at the right side, fist-hearts down; watch the right fist.",
+          "Turn left into right gongbu, left leg naturally straight; strike the left fist past the face to the left front at nose height, fist-heart slanting forward and fist-eye slanting down, while the bent right arm strikes to the left front with the fist in front of the right forehead, fist-heart out; watch the left fist."
+        ],
+        "id": [
+          "Lipat tungkai bawah kanan dan tahan lutut kanan yang ditekuk di depan, ujung kaki menggantung, berdiri mantap di kaki kiri dan berputar ke kiri; terus ayunkan telapak ke kiri, kiri ke sisi kiri dan kanan di bawah depan bahu kiri, telapak ke bawah setinggi bahu; pandangan ke telapak kiri.",
+          "Turunkan kaki kanan ke depan kanan dan putar ke kanan; kedua telapak turun melengkung; pandangan ke telapak.",
+          "Geser ke depan dan putar ke kanan; telapak melengkung ke bawah dan ke kanan, mengepal di sisi kanan, telapak kepalan ke bawah; pandangan ke kepalan kanan.",
+          "Putar ke kiri menjadi gongbu kanan, kaki kiri lurus alami; pukulkan kepalan kiri melewati wajah ke depan kiri setinggi hidung, telapak kepalan miring ke depan dan mata kepalan miring ke bawah, sementara lengan kanan yang ditekuk memukul ke depan kiri dengan kepalan di depan dahi kanan, telapak kepalan ke luar; pandangan ke kepalan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Landing the foot, swinging the palms and striking in gongbu are soft and flowing; relax the hips and sink as you strike so the power is solid."
+        ],
+        "id": [
+          "Mendaratkan kaki, mengayun telapak dan memukul dalam gongbu lembut dan mengalir; rilekskan pinggul dan turunkan badan saat memukul agar tenaga padat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 652–654, 图 I-173 to I-176"
+    },
+    {
+      "number": 40,
+      "section": 4,
+      "name_zh": "左揽雀尾",
+      "name_pinyin": "Zuǒ lǎn què wěi",
+      "name_en": "Grasp the Bird’s Tail (Left)",
+      "name_id": "Menangkap Ekor Burung (Kiri)",
+      "start_sec": 304,
+      "end_sec": 314,
+      "end_x": 2.9,
+      "end_y": 3.5,
+      "steps": {
+        "en": [
+          "Shift back, raise and turn the right toes out and turn right; open the fists, the left palm reaching left and the right turning over and arcing down to the waist, palm up; the head turns with the body.",
+          "Shift forward and draw the left foot in beside the right; the right palm arcs right and turns over up, the left arcs down to the right, and the palms hold a ball at the chest and belly, facing each other; watch the right palm.",
+          "Turn slightly left and step the left foot forward, heel down, the palms parting slightly; then shift forward into left gongbu, warding off with the left forearm, palm in, at shoulder height, the right palm pressing beside the right hip; watch the left palm.",
+          "Turn slightly left; the left palm turns down and reaches slightly forward while the right turns up and arcs past the belly to below the inside of the left forearm; then turn right and sit back, rolling both palms down past the belly and up to the right rear, the right at shoulder height and the left folded to the right chest; watch the right palm.",
+          "Turn left to face forward; fold the right palm in with the fingers near the inside of the left wrist, the left arm bent level at the chest; then shift into left gongbu and press both rounded arms forward at shoulder height; watch the left forearm.",
+          "Reach the right palm out over the left and part them shoulder-width, palms turning down; sit back with the left toes raised, bending the arms to bring the palms past the chest down to the belly; then shift into left gongbu and push both palms forward and up, wrists at shoulder height, palms forward, fingers up, wrists settled; look straight ahead."
+        ],
+        "id": [
+          "Geser ke belakang, angkat dan putar ujung kaki kanan ke luar dan putar ke kanan; buka kepalan, telapak kiri menjulur ke kiri dan kanan berbalik lalu melengkung turun ke pinggang, telapak ke atas; kepala menoleh mengikuti badan.",
+          "Geser ke depan dan tarik kaki kiri ke samping kaki kanan; telapak kanan melengkung ke kanan dan berbalik ke atas, kiri melengkung turun ke kanan, dan kedua telapak memeluk bola di depan dada dan perut, saling berhadapan; pandangan ke telapak kanan.",
+          "Putar sedikit ke kiri dan langkahkan kaki kiri ke depan, tumit menyentuh lantai, kedua telapak sedikit berpisah; lalu geser ke depan menjadi gongbu kiri, menangkis dengan lengan bawah kiri, telapak ke dalam, setinggi bahu, telapak kanan menekan di samping pinggul kanan; pandangan ke telapak kiri.",
+          "Putar sedikit ke kiri; telapak kiri berbalik ke bawah dan sedikit menjulur ke depan sementara kanan berbalik ke atas dan melengkung melewati perut ke bawah sisi dalam lengan bawah kiri; lalu putar ke kanan dan duduk ke belakang, menarik kedua telapak ke bawah melewati perut lalu naik ke kanan belakang, kanan setinggi bahu dan kiri terlipat ke dada kanan; pandangan ke telapak kanan.",
+          "Putar ke kiri menghadap depan; lipat telapak kanan dengan jari dekat sisi dalam pergelangan kiri, lengan kiri ditekuk mendatar di depan dada; lalu geser menjadi gongbu kiri dan desak kedua lengan yang membulat ke depan setinggi bahu; pandangan ke lengan bawah kiri.",
+          "Julurkan telapak kanan di atas telapak kiri dan pisahkan selebar bahu, telapak berbalik ke bawah; duduk ke belakang dengan ujung kaki kiri terangkat, tekuk lengan membawa telapak melewati dada turun ke depan perut; lalu geser menjadi gongbu kiri dan dorong kedua telapak ke depan atas, pergelangan setinggi bahu, telapak ke depan, jari ke atas, pergelangan mantap; pandangan lurus ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Link ward-off, roll-back, press and push: after each, relax the hips and sink so the arms extend on from where they are (continuing power); as you sit back for the push, tuck the buttocks, draw in the belly and sit the hips so the trunk stays relaxed and upright and the legs clearly empty and full."
+        ],
+        "id": [
+          "Sambungkan tangkis, tarik, desak dan dorong: setelah masing-masing, rilekskan pinggul dan turunkan badan agar lengan terus memanjang dari posisinya (tenaga bersambung); saat duduk ke belakang untuk dorongan, tarik pantat, tarik perut dan duduk pinggul agar badan tetap rileks dan tegak serta kaki jelas kosong dan penuh."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 654–657, 图 I-177 to I-187"
+    },
+    {
+      "number": 41,
+      "section": 4,
+      "name_zh": "十字手",
+      "name_pinyin": "Shízì shǒu",
+      "name_en": "Cross Hands",
+      "name_id": "Tangan Menyilang",
+      "start_sec": 314,
+      "end_sec": 320,
+      "end_x": 2.7,
+      "end_y": 3.6,
+      "steps": {
+        "en": [
+          "Shift right and turn right, left toes in and right toes out; the right palm swings with the body to in front of the face, palm out, and the left palm parts to the left side, palm out; the eyes follow the right palm.",
+          "Keep turning the right toes out, shifting right and turning right, left leg naturally straight; the right palm swings to the right side so both arms are raised level at the sides, elbows slightly bent, palms forward; the eyes follow the right palm.",
+          "Shift left, turn the right toes in and turn left; both palms arc down and in, cross at the wrists in front of the belly and rise in a hold to the chest, right palm outside, palms in; watch the palms.",
+          "Draw the right foot in so the feet are shoulder-width apart, toes forward, in kailibu; face forward and slowly straighten the legs, the palms crossed in front in a cross at shoulder height, palms in; watch the palms."
+        ],
+        "id": [
+          "Geser ke kanan dan putar ke kanan, ujung kaki kiri ke dalam dan ujung kaki kanan ke luar; telapak kanan berayun mengikuti badan ke depan wajah, telapak ke luar, dan telapak kiri berpisah ke sisi kiri, telapak ke luar; mata mengikuti telapak kanan.",
+          "Terus putar ujung kaki kanan ke luar, geser ke kanan dan putar ke kanan, kaki kiri lurus alami; telapak kanan berayun ke sisi kanan sehingga kedua lengan terangkat mendatar di samping, siku sedikit ditekuk, telapak ke depan; mata mengikuti telapak kanan.",
+          "Geser ke kiri, putar ujung kaki kanan ke dalam dan putar ke kiri; kedua telapak melengkung ke bawah dan ke dalam, menyilang di pergelangan di depan perut lalu naik dalam pelukan ke depan dada, telapak kanan di luar, telapak ke dalam; pandangan ke telapak.",
+          "Tarik kaki kanan sehingga kaki selebar bahu, ujung kaki ke depan, dalam kailibu; hadap ke depan dan perlahan luruskan kaki, telapak menyilang di depan membentuk silang setinggi bahu, telapak ke dalam; pandangan ke telapak."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Mind the weight changes: bend the knees as you shift and keep the trunk upright."
+        ],
+        "id": [
+          "Perhatikan perpindahan berat: tekuk lutut saat bergeser dan badan tetap tegak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 657–658, 图 I-188 to I-191"
+    },
+    {
+      "number": 42,
+      "section": 4,
+      "name_zh": "收势",
+      "name_pinyin": "Shōushì",
+      "name_en": "Closing Form",
+      "name_id": "Sikap Penutup",
+      "start_sec": 320,
+      "end_sec": 328,
+      "end_x": 2.7,
+      "end_y": 3.8,
+      "steps": {
+        "en": [
+          "Rotate the forearms in; turning the palms over, part them level to shoulder width, palms facing forward and down; look ahead.",
+          "Slowly lower the palms to the outsides of the legs, shoulders relaxed and arms hanging, trunk naturally upright; look ahead.",
+          "Draw the left foot in beside the right, feet together and toes forward, standing naturally upright and breathing evenly; look ahead."
+        ],
+        "id": [
+          "Putar lengan bawah ke dalam; sambil membalik telapak, pisahkan mendatar selebar bahu, telapak menghadap depan bawah; pandangan ke depan.",
+          "Turunkan telapak perlahan ke sisi luar kaki, bahu rileks dan lengan tergantung, badan tegak alami; pandangan ke depan.",
+          "Tarik kaki kiri ke samping kaki kanan, kaki rapat dan ujung kaki ke depan, berdiri tegak alami dan bernapas teratur; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Relax the shoulders, drop the elbows and guide the breath down as the hands slowly lower; after closing the feet take a deep breath and let the mind and breath return to the centre."
+        ],
+        "id": [
+          "Rilekskan bahu, turunkan siku dan arahkan napas ke bawah saat tangan turun perlahan; setelah merapatkan kaki tarik napas dalam dan biarkan pikiran dan napas kembali ke pusat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Taijiquan, p. 658–659, 图 I-192 to I-194"
+    }
+  ]
+}

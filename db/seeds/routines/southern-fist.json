@@ -1,0 +1,2251 @@
+{
+  "routine": {
+    "slug": "southern-fist",
+    "style": "nan",
+    "name_zh": "南拳",
+    "name_pinyin": "Nánquán",
+    "name_en": "Southern Fist",
+    "name_id": "Nanquan",
+    "card_zh": "南拳",
+    "reference_page": 420,
+    "reference_figure": "F",
+    "position": 15,
+    "status": "awaiting"
+  },
+  "movements": [
+    {
+      "number": 1,
+      "section": 1,
+      "book_number": 1,
+      "name_zh": "起势",
+      "name_pinyin": "Qǐshì",
+      "name_en": "Commencing Form",
+      "name_id": "Sikap Pembuka",
+      "steps": {
+        "en": [
+          "Face the right front corner of the floor, feet together and hands at the sides; look ahead."
+        ],
+        "id": [
+          "Menghadap sudut depan kanan arena, kaki rapat dan tangan di samping badan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [],
+        "id": []
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 422–423, 图 F-1",
+      "start_sec": 0.0,
+      "end_sec": 3.0
+    },
+    {
+      "number": 2,
+      "section": 1,
+      "book_number": 2,
+      "name_zh": "并步抱拳",
+      "name_pinyin": "Bìngbù bàoquán",
+      "name_en": "Bingbu, Fists at the Waist",
+      "name_id": "Bingbu, Kepalan di Pinggang",
+      "steps": {
+        "en": [
+          "Raise both arms out from the sides to level in front, palms down.",
+          "Close both hands into fists and bend the elbows to bring them to the chest.",
+          "Rotate the arms out; the fists hang over the top, forward and down, then come to the sides of the waist; look to the left front."
+        ],
+        "id": [
+          "Angkat kedua lengan dari samping hingga datar di depan, telapak menghadap bawah.",
+          "Kepalkan kedua tangan dan tekuk siku untuk membawanya ke dada.",
+          "Putar lengan ke luar; kepalan menggantung melewati atas, ke depan dan ke bawah, lalu kembali ke samping pinggang; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Bend the elbows quickly and strongly."
+        ],
+        "id": [
+          "Tekuk siku dengan cepat dan kuat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 423–424, 图 F-2 to F-7",
+      "start_sec": 3.0,
+      "end_sec": 10.5
+    },
+    {
+      "number": 3,
+      "section": 1,
+      "book_number": 3,
+      "name_zh": "抱拳震脚",
+      "name_pinyin": "Bàoquán zhènjiǎo",
+      "name_en": "Fists at the Waist, Stamp",
+      "name_id": "Kepalan di Pinggang, Hentak Kaki",
+      "steps": {
+        "en": [
+          "Bend the knees slightly, hop and land stamping both feet."
+        ],
+        "id": [
+          "Tekuk lutut sedikit, lompat kecil dan mendarat dengan menghentakkan kedua kaki."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "No need to jump high."
+        ],
+        "id": [
+          "Tidak perlu melompat tinggi."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 425, 图 F-8 to F-9",
+      "start_sec": 10.5,
+      "end_sec": 13.5
+    },
+    {
+      "number": 4,
+      "section": 1,
+      "book_number": 4,
+      "name_zh": "左弓步冲拳",
+      "name_pinyin": "Zuǒ gōngbù chōngquán",
+      "name_en": "Left Gongbu, Punch",
+      "name_id": "Gongbu Kiri, Pukulan Lurus",
+      "steps": {
+        "en": [
+          "Step the left foot to the right front; part the fists to the sides, then the left opens and both come to the belly, wrists crossed with the right fist outside.",
+          "Step the right foot in gaibu round in front of the left and step the left foot forward into banmabu; the left palm and right fist arc left, up and right and fold to the right chest, palm facing the face of the fist; the eyes follow the right fist, then the head turns to the left front.",
+          "Bend the left knee into left gongbu and punch the right fist forward as a vertical fist, the left palm guarding inside the right upper arm, palm facing right; look ahead and give a shout (“hei”)."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan kanan; pisahkan kepalan ke samping, lalu kiri dibuka dan keduanya kembali ke depan perut, pergelangan menyilang dengan kepalan kanan di luar.",
+          "Langkahkan kaki kanan secara gaibu memutar di depan kaki kiri dan langkahkan kaki kiri ke depan menjadi banmabu; telapak kiri dan kepalan kanan melengkung ke kiri, ke atas dan ke kanan lalu terlipat ke dada kanan, telapak menghadap muka kepalan; mata mengikuti kepalan kanan, lalu kepala menoleh ke depan kiri.",
+          "Tekuk lutut kiri menjadi gongbu kiri dan pukulkan kepalan kanan ke depan sebagai kepalan tegak, telapak kiri menjaga sisi dalam lengan atas kanan, telapak menghadap kanan; pandangan ke depan dan keluarkan seruan (“hei”)."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The steps are qilinbu (麒麟步), coordinated with the circling arms; gather power in banmabu before punching."
+        ],
+        "id": [
+          "Langkahnya adalah qilinbu (麒麟步), terkoordinasi dengan lengan yang berputar; himpun tenaga di banmabu sebelum memukul."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 425–427, 图 F-10 to F-14",
+      "start_sec": 13.5,
+      "end_sec": 21.0
+    },
+    {
+      "number": 5,
+      "section": 1,
+      "book_number": 5,
+      "name_zh": "左弓步冲拳",
+      "name_pinyin": "Zuǒ gōngbù chōngquán",
+      "name_en": "Left Gongbu, Punch",
+      "name_id": "Gongbu Kiri, Pukulan Lurus",
+      "steps": {
+        "en": [
+          "Shift back into left banmabu; wipe the left palm level forward over the right arm and draw the right fist to the right waist.",
+          "Bend the left knee into left gongbu and punch the right fist forward as a vertical fist, the left palm guarding inside the right upper arm; look ahead."
+        ],
+        "id": [
+          "Geser ke belakang menjadi banmabu kiri; usapkan telapak kiri datar ke depan di atas lengan kanan dan tarik kepalan kanan ke pinggang kanan.",
+          "Tekuk lutut kiri menjadi gongbu kiri dan pukulkan kepalan kanan ke depan sebagai kepalan tegak, telapak kiri menjaga sisi dalam lengan atas kanan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Wipe with power to the little-finger edge, then punch right away."
+        ],
+        "id": [
+          "Usapan dengan tenaga sampai sisi kelingking, lalu segera pukul."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 427, 图 F-15 to F-16",
+      "start_sec": 21.0,
+      "end_sec": 26.0
+    },
+    {
+      "number": 6,
+      "section": 1,
+      "book_number": 6,
+      "name_zh": "高虚步鞭拳",
+      "name_pinyin": "Gāoxūbù biānquán",
+      "name_en": "Gao Xubu, Whip Punch",
+      "name_id": "Gao Xubu, Pukulan Cambuk",
+      "steps": {
+        "en": [
+          "Tread the left foot half a step forward and swing the left palm and right fist level to the left.",
+          "Step the right foot to the right front onto the toes in gao xubu; whip the right fist level to the right, the bent left arm guarding the right chest; look to the right front."
+        ],
+        "id": [
+          "Injak kaki kiri setengah langkah ke depan dan ayunkan telapak kiri dan kepalan kanan datar ke kiri.",
+          "Langkahkan kaki kanan ke depan kanan bertumpu pada ujung kaki dalam gao xubu; cambukkan kepalan kanan datar ke kanan, lengan kiri yang ditekuk menjaga dada kanan; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Right elbow slightly bent; power reaches the back of the fist."
+        ],
+        "id": [
+          "Siku kanan sedikit ditekuk; tenaga sampai ke punggung kepalan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 427–428, 图 F-17 to F-18",
+      "start_sec": 26.0,
+      "end_sec": 31.0
+    },
+    {
+      "number": 7,
+      "section": 1,
+      "book_number": 7,
+      "name_zh": "骑龙步冲拳",
+      "name_pinyin": "Qílóngbù chōngquán",
+      "name_en": "Qilongbu, Punch",
+      "name_id": "Qilongbu, Pukulan Lurus",
+      "steps": {
+        "en": [
+          "Settle the right foot; the left palm becomes a fist and both bent arms bring the fists to the left chest; the eyes follow the fists.",
+          "Turn right into qilongbu (骑龙步); punch the left fist forward as a vertical fist and fold the level right arm, fist at the right chest, fist-eye up; look ahead."
+        ],
+        "id": [
+          "Mantapkan kaki kanan; telapak kiri menjadi kepalan dan kedua lengan yang ditekuk membawa kepalan ke dada kiri; mata mengikuti kepalan.",
+          "Putar ke kanan menjadi qilongbu (骑龙步); pukulkan kepalan kiri ke depan sebagai kepalan tegak dan lipat lengan kanan mendatar, kepalan di dada kanan, mata kepalan ke atas; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Spread the shoulders as wide as possible."
+        ],
+        "id": [
+          "Buka bahu selebar mungkin."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 428–429, 图 F-19 to F-20",
+      "start_sec": 31.0,
+      "end_sec": 36.0
+    },
+    {
+      "number": 8,
+      "section": 1,
+      "book_number": 8,
+      "name_zh": "左弓步冲拳",
+      "name_pinyin": "Zuǒ gōngbù chōngquán",
+      "name_en": "Left Gongbu, Punch",
+      "name_id": "Gongbu Kiri, Pukulan Lurus",
+      "steps": {
+        "en": [
+          "Turn left and step the left foot in gaibu to the right front; the left fist opens and drops slightly while the right fist circles over the top to the right and down.",
+          "Bring the right foot to the left, knees slightly bent; the right fist circles left, up and right while the left palm swings down and up to the left, palms down; look ahead.",
+          "Open the left foot to the left into banmabu; the left palm circles past the face to the right shoulder and the right fist goes to the waist.",
+          "Turn left into left gongbu and punch the right fist out to the right as a vertical fist, the left hand becoming a fist at the waist; look to the right front."
+        ],
+        "id": [
+          "Putar ke kiri dan langkahkan kaki kiri secara gaibu ke depan kanan; kepalan kiri dibuka dan sedikit turun sementara kepalan kanan berputar melewati atas ke kanan lalu ke bawah.",
+          "Rapatkan kaki kanan ke kaki kiri, lutut sedikit ditekuk; kepalan kanan berputar ke kiri, ke atas dan ke kanan sementara telapak kiri berayun ke bawah lalu ke kiri atas, telapak ke bawah; pandangan ke depan.",
+          "Buka kaki kiri ke kiri menjadi banmabu; telapak kiri berputar melewati wajah ke bahu kanan dan kepalan kanan ke pinggang.",
+          "Putar ke kiri menjadi gongbu kiri dan pukulkan kepalan kanan ke kanan sebagai kepalan tegak, tangan kiri menjadi kepalan di pinggang; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Coordinate the arm circles with gaibu into mabu; the punch is in ce gongbu (侧弓步), not hengdangbu (横裆步)."
+        ],
+        "id": [
+          "Koordinasikan putaran lengan dengan gaibu ke kuda-kuda; pukulan dalam ce gongbu (侧弓步), bukan hengdangbu (横裆步)."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 429–430, 图 F-21 to F-24",
+      "start_sec": 36.0,
+      "end_sec": 46.0
+    },
+    {
+      "number": 9,
+      "section": 1,
+      "book_number": 9,
+      "name_zh": "左弓步截桥",
+      "name_pinyin": "Zuǒ gōngbù jiéqiáo",
+      "name_en": "Left Gongbu, Cutting Bridge",
+      "name_id": "Gongbu Kiri, Potongan Lengan",
+      "steps": {
+        "en": [
+          "Turn right and draw the right fist to the waist; the eyes follow the fist.",
+          "Shift left into left gongbu; rotate the right forearm out and cut forward with it (截桥, “cutting bridge”); look to the right front."
+        ],
+        "id": [
+          "Putar ke kanan dan tarik kepalan kanan ke pinggang; mata mengikuti kepalan.",
+          "Geser ke kiri menjadi gongbu kiri; putar lengan bawah kanan ke luar dan potong ke depan dengannya (截桥, “potongan jembatan”); pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Power reaches the forearm bone and the little-finger edge; keep the right elbow bent."
+        ],
+        "id": [
+          "Tenaga sampai ke tulang lengan bawah dan sisi kelingking; siku kanan tetap ditekuk."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 430–431, 图 F-25 to F-26",
+      "start_sec": 46.0,
+      "end_sec": 51.0
+    },
+    {
+      "number": 10,
+      "section": 1,
+      "book_number": 10,
+      "name_zh": "左弓步缠桥标掌",
+      "name_pinyin": "Zuǒ gōngbù chánqiáo biāozhǎng",
+      "name_en": "Left Gongbu, Coiling Bridge, Darting Palm",
+      "name_id": "Gongbu Kiri, Lengan Melilit, Telapak Menusuk",
+      "steps": {
+        "en": [
+          "Open the right fist and circle the hand once anticlockwise around the wrist.",
+          "Turn right; sink the right forearm and bring the palm to the right waist; the eyes follow the palm.",
+          "Turn left into left gongbu and dart the right palm out to the right, palm down; look to the right front."
+        ],
+        "id": [
+          "Buka kepalan kanan dan putar tangan satu kali berlawanan arah jarum jam di sekitar pergelangan.",
+          "Putar ke kanan; turunkan lengan bawah kanan dan bawa telapak ke pinggang kanan; mata mengikuti telapak.",
+          "Putar ke kiri menjadi gongbu kiri dan tusukkan telapak kanan ke kanan, telapak ke bawah; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The coil is no wider than 30 cm, the elbow slightly bent; dart right after sinking, power in the fingertips; the change between bow and mabu is clear."
+        ],
+        "id": [
+          "Lilitan tidak lebih dari 30 cm, siku sedikit ditekuk; tusuk segera setelah menurunkan, tenaga di ujung jari; perubahan antara gongbu dan kuda jelas."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 431–432, 图 F-27 to F-30",
+      "start_sec": 51.0,
+      "end_sec": 58.5
+    },
+    {
+      "number": 11,
+      "section": 1,
+      "book_number": 11,
+      "name_zh": "马步双切掌",
+      "name_pinyin": "Mǎbù shuāng qiēzhǎng",
+      "name_en": "Mabu, Double Cutting Palms",
+      "name_id": "Mabu, Dua Telapak Memotong",
+      "steps": {
+        "en": [
+          "Step the right foot slightly back; the left fist opens and the right palm comes to the left waist; the eyes follow the palm.",
+          "Turn slightly right into mabu; rotate the forearms in and cut both palms forward, palms down, the right at shoulder height and the left no lower than the belly; look ahead."
+        ],
+        "id": [
+          "Mundurkan kaki kanan sedikit; kepalan kiri dibuka dan telapak kanan ke pinggang kiri; mata mengikuti telapak.",
+          "Putar sedikit ke kanan menjadi mabu; putar lengan bawah ke dalam dan potongkan kedua telapak ke depan, telapak ke bawah, kanan setinggi bahu dan kiri tidak lebih rendah dari perut; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Elbows bent; power reaches the little-finger edges."
+        ],
+        "id": [
+          "Siku ditekuk; tenaga sampai ke sisi kelingking."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 432, 图 F-31 to F-32",
+      "start_sec": 58.5,
+      "end_sec": 63.5
+    },
+    {
+      "number": 12,
+      "section": 1,
+      "book_number": 12,
+      "name_zh": "马步左右挑掌",
+      "name_pinyin": "Mǎbù zuǒyòu tiǎozhǎng",
+      "name_en": "Mabu, Flick Palms Up Left and Right",
+      "name_id": "Mabu, Cungkil Telapak Kiri dan Kanan",
+      "steps": {
+        "en": [
+          "Flick the left palm up to the upper left in an arc, then the right palm up to the upper right; look ahead."
+        ],
+        "id": [
+          "Cungkil telapak kiri ke kiri atas dalam busur, lalu telapak kanan ke kanan atas; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The palms flick from below upward, power in the four fingers."
+        ],
+        "id": [
+          "Telapak dicungkil dari bawah ke atas, tenaga di empat jari."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 432, 图 F-33 to F-34",
+      "start_sec": 63.5,
+      "end_sec": 66.5
+    },
+    {
+      "number": 13,
+      "section": 1,
+      "book_number": 13,
+      "name_zh": "马步双推单指",
+      "name_pinyin": "Mǎbù shuāng tuī dānzhǐ",
+      "name_en": "Mabu, Push Twin Single Fingers",
+      "name_id": "Mabu, Dorong Dua Jari Tunggal",
+      "steps": {
+        "en": [
+          "Form single-finger hands (单指) and raise them with bent arms above the shoulders; the eyes sweep to the left elbow.",
+          "Sink the elbows so the hands come down in front of the shoulders, then push them forward slowly with steady, sunk power; the eyes follow the right hand, then look ahead."
+        ],
+        "id": [
+          "Bentuk tangan jari tunggal (单指) dan angkat dengan lengan ditekuk di atas bahu; mata menyapu ke siku kiri.",
+          "Turunkan siku sehingga tangan turun di depan bahu, lalu dorong ke depan perlahan dengan tenaga yang mantap dan tenggelam; mata mengikuti tangan kanan, lalu ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Sink the arms close to the body before pushing, the muscles kept tense."
+        ],
+        "id": [
+          "Turunkan lengan dekat badan sebelum mendorong, otot tetap tegang."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 433, 图 F-35 to F-38",
+      "start_sec": 66.5,
+      "end_sec": 71.5
+    },
+    {
+      "number": 14,
+      "section": 1,
+      "book_number": 14,
+      "name_zh": "马步双推单指",
+      "name_pinyin": "Mǎbù shuāng tuī dānzhǐ",
+      "name_en": "Mabu, Push Twin Single Fingers",
+      "name_id": "Mabu, Dorong Dua Jari Tunggal",
+      "steps": {
+        "en": [
+          "Raise the single-finger hands with bent arms above the shoulders; the eyes sweep to the left elbow.",
+          "Sink the elbows, hands in front of the shoulders, and push forward slowly with steady power; the eyes follow the left hand, then look ahead."
+        ],
+        "id": [
+          "Angkat tangan jari tunggal dengan lengan ditekuk di atas bahu; mata menyapu ke siku kiri.",
+          "Turunkan siku, tangan di depan bahu, dan dorong ke depan perlahan dengan tenaga mantap; mata mengikuti tangan kiri, lalu ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （十三）."
+        ],
+        "id": [
+          "Sama seperti （十三）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 434–435, 图 F-39 to F-41",
+      "start_sec": 71.5,
+      "end_sec": 76.5
+    },
+    {
+      "number": 15,
+      "section": 1,
+      "book_number": 15,
+      "name_zh": "马步双标掌沉桥",
+      "name_pinyin": "Mǎbù shuāng biāozhǎng chénqiáo",
+      "name_en": "Mabu, Double Darting Palms, Sinking Bridges",
+      "name_id": "Mabu, Dua Telapak Menusuk, Lengan Tenggelam",
+      "steps": {
+        "en": [
+          "Raise the single-finger hands above the shoulders, open them into palms, sink the forearms to the waist and dart both palms forward.",
+          "Bend the elbows and sink both forearms; look ahead."
+        ],
+        "id": [
+          "Angkat tangan jari tunggal di atas bahu, buka menjadi telapak, turunkan lengan bawah ke pinggang dan tusukkan kedua telapak ke depan.",
+          "Tekuk siku dan turunkan kedua lengan bawah; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Dart with power to the fingertips, then sink, fingers ending forward and up."
+        ],
+        "id": [
+          "Tusuk dengan tenaga sampai ujung jari, lalu turunkan, jari berakhir ke depan atas."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 435, 图 F-42 to F-45",
+      "start_sec": 76.5,
+      "end_sec": 81.5
+    },
+    {
+      "number": 16,
+      "section": 1,
+      "book_number": 16,
+      "name_zh": "右弓步架桥",
+      "name_pinyin": "Yòu gōngbù jiàqiáo",
+      "name_en": "Right Gongbu, Blocking Bridge",
+      "name_id": "Gongbu Kanan, Tangkisan Lengan",
+      "steps": {
+        "en": [
+          "Make fists and part them to the sides; jump off both feet, turn left in the air and land in banmabu, crossing the fists at the chest, right fist outside; the eyes follow the right fist round.",
+          "Turn right into right gongbu; rotate the forearms in and block both fists up with the turn; look ahead."
+        ],
+        "id": [
+          "Kepalkan dan pisahkan ke samping; lompat dengan kedua kaki, berputar ke kiri di udara dan mendarat dalam banmabu, silangkan kepalan di dada, kepalan kanan di luar; mata mengikuti kepalan kanan berputar.",
+          "Putar ke kanan menjadi gongbu kanan; putar lengan bawah ke dalam dan tangkis kedua kepalan ke atas mengikuti putaran; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Land on both feet together in banmabu; both arms block up at the same time."
+        ],
+        "id": [
+          "Mendarat dengan kedua kaki bersamaan dalam banmabu; kedua lengan menangkis ke atas bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 436–437, 图 F-46 to F-49",
+      "start_sec": 81.5,
+      "end_sec": 86.5
+    },
+    {
+      "number": 17,
+      "section": 1,
+      "book_number": 17,
+      "name_zh": "骑龙步压肘",
+      "name_pinyin": "Qílóngbù yāzhǒu",
+      "name_en": "Qilongbu, Pressing Elbow",
+      "name_id": "Qilongbu, Siku Menekan",
+      "steps": {
+        "en": [
+          "Cross the left foot behind the right; rotate the right forearm out and move it left while the left fist opens, arcs down under the right arm and threads forward and up, the right fist going to the waist; the eyes follow the palm.",
+          "Lift the right foot and set it down to the right on the ball of the foot in qilongbu; raise the bent right arm and press the elbow past the chest onto the inside of the left forearm; watch the point of the right elbow."
+        ],
+        "id": [
+          "Silangkan kaki kiri di belakang kaki kanan; putar lengan bawah kanan ke luar dan gerakkan ke kiri sementara kepalan kiri dibuka, melengkung turun di bawah lengan kanan lalu menusuk ke depan atas, kepalan kanan ke pinggang; mata mengikuti telapak.",
+          "Angkat kaki kanan dan turunkan ke kanan bertumpu pada telapak depan dalam qilongbu; angkat lengan kanan yang ditekuk dan tekan siku melewati dada ke sisi dalam lengan bawah kiri; pandangan ke ujung siku kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The bent right elbow presses back-handed down to the left past the chest, power in the point."
+        ],
+        "id": [
+          "Siku kanan yang ditekuk menekan terbalik ke kiri bawah melewati dada, tenaga di ujung siku."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 437–438, 图 F-50 to F-53",
+      "start_sec": 86.5,
+      "end_sec": 91.5
+    },
+    {
+      "number": 18,
+      "section": 1,
+      "book_number": 18,
+      "name_zh": "开步双虎爪",
+      "name_pinyin": "Kāibù shuāng hǔzhǎo",
+      "name_en": "Kaibu, Double Tiger Claws",
+      "name_id": "Kaibu, Dua Cakar Harimau",
+      "steps": {
+        "en": [
+          "Step the right foot forward, turning right; the left palm becomes a fist and punches forward as a vertical fist, the right fist folding to the right chest; the eyes follow the left fist.",
+          "Step the left foot forward, turning left; punch the right fist forward, the left fist folding to the left chest; the eyes follow the right fist.",
+          "Turn right into kaibu; the fists become tiger claws, the left pushing forward and the right pulling back to the right chest; look to the left front."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan, putar ke kanan; telapak kiri menjadi kepalan dan memukul ke depan sebagai kepalan tegak, kepalan kanan terlipat ke dada kanan; mata mengikuti kepalan kiri.",
+          "Langkahkan kaki kiri ke depan, putar ke kiri; pukulkan kepalan kanan ke depan, kepalan kiri terlipat ke dada kiri; mata mengikuti kepalan kanan.",
+          "Putar ke kanan menjadi kaibu; kepalan menjadi cakar harimau, kiri mendorong ke depan dan kanan menarik ke dada kanan; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Punch with power to the fist face, then push the claw; shoulders open, power in the left palm-heart."
+        ],
+        "id": [
+          "Pukul dengan tenaga sampai muka kepalan, lalu dorong cakar; bahu terbuka, tenaga di pusat telapak kiri."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 438–439, 图 F-54 to F-56",
+      "start_sec": 91.5,
+      "end_sec": 99.0
+    },
+    {
+      "number": 19,
+      "section": 1,
+      "book_number": 19,
+      "name_zh": "骑龙步推掌",
+      "name_pinyin": "Qílóngbù tuīzhǎng",
+      "name_en": "Qilongbu, Push Palm",
+      "name_id": "Qilongbu, Dorong Telapak",
+      "steps": {
+        "en": [
+          "Turn left into qilongbu; the claws become palms, the right pushing forward and the left drawing back to guard inside the right upper arm; look ahead."
+        ],
+        "id": [
+          "Putar ke kiri menjadi qilongbu; cakar menjadi telapak, kanan mendorong ke depan dan kiri menarik kembali menjaga sisi dalam lengan atas kanan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The push and the stance finish together."
+        ],
+        "id": [
+          "Dorongan dan kuda-kuda selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 439, 图 F-57",
+      "start_sec": 99.0,
+      "end_sec": 102.0
+    },
+    {
+      "number": 20,
+      "section": 1,
+      "book_number": 20,
+      "name_zh": "腾空转体里合腿",
+      "name_pinyin": "Téngkōng zhuǎntǐ lǐhétuǐ",
+      "name_en": "Jumping Turn, Inside Crescent Kick",
+      "name_id": "Lompat Berputar, Tendangan Sabit Dalam",
+      "steps": {
+        "en": [
+          "Step the right foot, then the left foot forward; both hands swing down and round to the upper right.",
+          "Step the right foot forward and jump, turning back to the left in the air, the left knee bent with the turn and the right leg sweeping inward; the hands swing naturally."
+        ],
+        "id": [
+          "Langkahkan kaki kanan, lalu kaki kiri ke depan; kedua tangan berayun ke bawah lalu memutar ke kanan atas.",
+          "Langkahkan kaki kanan ke depan dan lompat, berbalik ke kiri di udara, lutut kiri ditekuk mengikuti putaran dan kaki kanan menyapu ke dalam; tangan berayun alami."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Tight steps; once off the floor the right leg sweeps inward fast."
+        ],
+        "id": [
+          "Langkah rapat; begitu lepas dari lantai kaki kanan menyapu ke dalam dengan cepat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 439–441, 图 F-58 to F-61",
+      "start_sec": 102.0,
+      "end_sec": 107.0
+    },
+    {
+      "number": 21,
+      "section": 1,
+      "book_number": 21,
+      "name_zh": "跌扑剪扫侧踹腿",
+      "name_pinyin": "Diēpū jiǎnsǎo cèchuàituǐ",
+      "name_en": "Fall, Scissor Sweep, Side Kick",
+      "name_id": "Jatuh, Sapuan Gunting, Tendangan Samping",
+      "steps": {
+        "en": [
+          "Land on the left side with both hands on the floor, the left leg bent against the floor and the right leg naturally straight; look to the right front.",
+          "Bend the right knee and straighten the left leg in a scissor, then bend the left knee and drive the right leg out to the upper right in a side kick."
+        ],
+        "id": [
+          "Mendarat di sisi kiri dengan kedua tangan di lantai, kaki kiri ditekuk menempel lantai dan kaki kanan lurus alami; pandangan ke depan kanan.",
+          "Tekuk lutut kanan dan luruskan kaki kiri dalam gerakan gunting, lalu tekuk lutut kiri dan dorong kaki kanan ke kanan atas dalam tendangan samping."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Hands, outer left hip and outer left foot touch down together so no single part takes the impact; a clear scissor and a strong kick. Learn from a seated cross-leg fall first, then build up."
+        ],
+        "id": [
+          "Tangan, sisi luar pinggul kiri dan sisi luar kaki kiri menyentuh lantai bersamaan agar tidak ada satu bagian yang menahan benturan; gunting yang jelas dan tendangan kuat. Pelajari dari jatuhan zuopan dulu, lalu bertahap."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 441–442, 图 F-62 to F-64",
+      "start_sec": 107.0,
+      "end_sec": 112.0
+    },
+    {
+      "number": 22,
+      "section": 1,
+      "book_number": 22,
+      "name_zh": "鲤鱼打挺",
+      "name_pinyin": "Lǐyú dǎtǐng",
+      "name_en": "Carp Kip-Up",
+      "name_id": "Ikan Mas Melenting",
+      "steps": {
+        "en": [
+          "Turn right onto the shoulders and back, hips bent and belly drawn in, legs swinging straight; hands on the legs.",
+          "Whip both legs forward and thrust the belly up so the body springs forward and up, then drop into a squat and slap the floor with both hands; the eyes follow the hands."
+        ],
+        "id": [
+          "Putar ke kanan ke bahu dan punggung, pinggul ditekuk dan perut ditarik, kaki berayun lurus; tangan di kaki.",
+          "Lecutkan kedua kaki ke depan dan dorong perut ke atas sehingga badan melenting ke depan atas, lalu turun jongkok dan tepuk lantai dengan kedua tangan; mata mengikuti tangan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Don't push off the floor with the hands; thrust the belly fast, land lightly, then slap."
+        ],
+        "id": [
+          "Jangan menolak lantai dengan tangan; dorong perut dengan cepat, mendarat ringan, lalu tepuk."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 442, 图 F-65 to F-67",
+      "start_sec": 112.0,
+      "end_sec": 117.0
+    },
+    {
+      "number": 23,
+      "section": 1,
+      "book_number": 23,
+      "name_zh": "虚步鹤嘴手",
+      "name_pinyin": "Xūbù hèzuǐshǒu",
+      "name_en": "Xubu, Crane's-Beak Hand",
+      "name_id": "Xubu, Tangan Paruh Bangau",
+      "steps": {
+        "en": [
+          "Rise, step the left foot forward and turn slightly left; thread the right hand to the upper right front, the left palm swinging back; watch the right palm.",
+          "Turn slightly right; circle the right hand once anticlockwise around the wrist and peck down to the lower right as a crane's beak (鹤嘴手); watch the right hand.",
+          "Step the right foot forward into right xubu and turn right; the left hand forms a crane's beak and pecks past the outside of the left shoulder to the upper right front, arm slightly bent, while the right beak comes back to the right shoulder; watch the left hand."
+        ],
+        "id": [
+          "Berdiri, langkahkan kaki kiri ke depan dan putar sedikit ke kiri; tusukkan tangan kanan ke depan kanan atas, telapak kiri berayun ke belakang; pandangan ke telapak kanan.",
+          "Putar sedikit ke kanan; putar tangan kanan satu kali berlawanan arah jarum jam di sekitar pergelangan dan patuk ke kanan bawah sebagai paruh bangau (鹤嘴手); pandangan ke tangan kanan.",
+          "Langkahkan kaki kanan ke depan menjadi xubu kanan dan putar ke kanan; tangan kiri membentuk paruh bangau dan mematuk melewati sisi luar bahu kiri ke depan kanan atas, lengan sedikit ditekuk, sementara paruh kanan kembali ke bahu kanan; pandangan ke tangan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The right hand hooks and pulls back hard; the left beak pecks with a straight wrist."
+        ],
+        "id": [
+          "Tangan kanan mengait dan menarik kuat ke belakang; paruh kiri mematuk dengan pergelangan lurus."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 442–443, 图 F-68 to F-70",
+      "start_sec": 117.0,
+      "end_sec": 124.5
+    },
+    {
+      "number": 24,
+      "section": 1,
+      "book_number": 24,
+      "name_zh": "独立步双虎爪",
+      "name_pinyin": "Dúlìbù shuāng hǔzhǎo",
+      "name_en": "Dulibu, Double Tiger Claws",
+      "name_id": "Dulibu, Dua Cakar Harimau",
+      "steps": {
+        "en": [
+          "Settle the right foot and lift the left knee; the beaks become tiger claws, pass the right waist and push out to both sides; look to the left front."
+        ],
+        "id": [
+          "Mantapkan kaki kanan dan angkat lutut kiri; paruh menjadi cakar harimau, lewat pinggang kanan lalu didorong ke kedua sisi; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Power reaches the palm-hearts and fingers of the claws; the right leg is firm."
+        ],
+        "id": [
+          "Tenaga sampai ke pusat telapak dan jari cakar; kaki kanan kokoh."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 443, 图 F-71 to F-72",
+      "start_sec": 124.5,
+      "end_sec": 127.5
+    },
+    {
+      "number": 25,
+      "section": 1,
+      "book_number": 25,
+      "name_zh": "左弓步双虎爪",
+      "name_pinyin": "Zuǒ gōngbù shuāng hǔzhǎo",
+      "name_en": "Left Gongbu, Double Tiger Claws",
+      "name_id": "Gongbu Kiri, Dua Cakar Harimau",
+      "steps": {
+        "en": [
+          "Turn left and step the left foot down forward; the claws become fists, the right punching forward past the waist as a vertical fist and the left folding to the left chest; the eyes follow the right fist.",
+          "Step the right foot forward, turning right; punch the left fist forward, the right fist folding to the right chest; the eyes follow the left fist.",
+          "Step the left foot in gaibu in front of the right; the fists become tiger claws, the right arcing past the face down to the left as a face-guarding claw and the left going to the waist; the eyes follow the right claw.",
+          "Lift the right leg slightly and jump off the left, both knees bent in the air; the left claw arcs past the face down to the right as a face guard while the right claw circles to the right waist.",
+          "Land on both feet and turn left into left gongbu; push-grab forward with the right claw, the left claw under the right elbow; watch the right claw and give a shout (“wu”)."
+        ],
+        "id": [
+          "Putar ke kiri dan turunkan kaki kiri ke depan; cakar menjadi kepalan, kanan memukul ke depan melewati pinggang sebagai kepalan tegak dan kiri terlipat ke dada kiri; mata mengikuti kepalan kanan.",
+          "Langkahkan kaki kanan ke depan, putar ke kanan; pukulkan kepalan kiri ke depan, kepalan kanan terlipat ke dada kanan; mata mengikuti kepalan kiri.",
+          "Langkahkan kaki kiri secara gaibu di depan kaki kanan; kepalan menjadi cakar harimau, kanan melengkung melewati wajah ke kiri bawah sebagai cakar pelindung wajah dan kiri ke pinggang; mata mengikuti cakar kanan.",
+          "Angkat kaki kanan sedikit dan lompat dari kaki kiri, kedua lutut ditekuk di udara; cakar kiri melengkung melewati wajah ke kanan bawah sebagai pelindung wajah sementara cakar kanan berputar ke pinggang kanan.",
+          "Mendarat dengan kedua kaki dan putar ke kiri menjadi gongbu kiri; dorong-cengkeram ke depan dengan cakar kanan, cakar kiri di bawah siku kanan; pandangan ke cakar kanan dan keluarkan seruan (“wu”)."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Punch with power to the fist face, then leap forward high; land on both feet together; the shout and the claw push coincide."
+        ],
+        "id": [
+          "Pukul dengan tenaga sampai muka kepalan, lalu lompat tinggi ke depan; mendarat dengan kedua kaki bersamaan; seruan dan dorongan cakar bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 444–446, 图 F-73 to F-79",
+      "start_sec": 127.5,
+      "end_sec": 140.0
+    },
+    {
+      "number": 26,
+      "section": 1,
+      "book_number": 26,
+      "name_zh": "转身鞭拳插掌",
+      "name_pinyin": "Zhuǎnshēn biānquán chāzhǎng",
+      "name_en": "Turn, Whip Punch, Thrusting Palm",
+      "name_id": "Berbalik, Pukulan Cambuk, Telapak Menusuk",
+      "steps": {
+        "en": [
+          "Tread the left foot slightly forward; the left claw opens, the right claw becomes a fist, and both swing level to the left.",
+          "Turn right, the right toes touching down in right xubu; whip the right fist level round to the right, the left palm swinging to the right chest; watch the right fist.",
+          "Turn right, step the right foot half a step forward and bend into qilongbu; thrust the left palm straight forward, palm facing right, the right fist folding to the right chest; watch the left palm."
+        ],
+        "id": [
+          "Injak kaki kiri sedikit ke depan; cakar kiri dibuka, cakar kanan menjadi kepalan, dan keduanya berayun datar ke kiri.",
+          "Putar ke kanan, ujung kaki kanan menyentuh lantai dalam xubu kanan; cambukkan kepalan kanan datar memutar ke kanan, telapak kiri berayun ke dada kanan; pandangan ke kepalan kanan.",
+          "Putar ke kanan, langkahkan kaki kanan setengah langkah ke depan dan tekuk menjadi qilongbu; tusukkan telapak kiri lurus ke depan, telapak menghadap kanan, kepalan kanan terlipat ke dada kanan; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The whip reaches the back of the fist, right arm slightly bent; the palm thrusts along the right arm with power in the fingertips."
+        ],
+        "id": [
+          "Cambukan sampai ke punggung kepalan, lengan kanan sedikit ditekuk; telapak menusuk menyusuri lengan kanan dengan tenaga di ujung jari."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 446, 图 F-80 to F-82",
+      "start_sec": 140.0,
+      "end_sec": 147.5
+    },
+    {
+      "number": 27,
+      "section": 1,
+      "book_number": 27,
+      "name_zh": "前蹬腿冲拳",
+      "name_pinyin": "Qián dēngtuǐ chōngquán",
+      "name_en": "Front Heel Kick, Punch",
+      "name_id": "Tendangan Tumit Depan, Pukulan Lurus",
+      "steps": {
+        "en": [
+          "Turn back to the left, lift the left knee and drive the heel forward; the left palm swings down and up to the upper left, then guards inside the right upper arm as the right fist punches forward with the turn; look ahead."
+        ],
+        "id": [
+          "Berbalik ke kiri, angkat lutut kiri dan dorong tumit ke depan; telapak kiri berayun ke bawah lalu ke kiri atas, kemudian menjaga sisi dalam lengan atas kanan saat kepalan kanan memukul ke depan mengikuti putaran; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A clear upward swing of the left palm as you turn; the punch and the kick coincide, power in the fist face and the heel."
+        ],
+        "id": [
+          "Ayunan telapak kiri ke atas yang jelas saat berbalik; pukulan dan tendangan bersamaan, tenaga di muka kepalan dan tumit."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 446–448, 图 F-83 to F-84",
+      "start_sec": 147.5,
+      "end_sec": 150.5
+    },
+    {
+      "number": 28,
+      "section": 1,
+      "book_number": 28,
+      "name_zh": "跪步盖拳",
+      "name_pinyin": "Guìbù gàiquán",
+      "name_en": "Guibu, Covering Punch",
+      "name_id": "Guibu, Pukulan Menutup",
+      "steps": {
+        "en": [
+          "Set the left foot down behind and draw the right foot half a step back into guibu; the right fist and left palm drop and circle up past the sides, then the right fist covers down while the left palm guards inside the right upper arm; the eyes follow the right fist."
+        ],
+        "id": [
+          "Turunkan kaki kiri ke belakang dan tarik kaki kanan setengah langkah ke belakang menjadi guibu; kepalan kanan dan telapak kiri turun lalu berputar ke atas melewati samping, kemudian kepalan kanan menutup ke bawah sementara telapak kiri menjaga sisi dalam lengan atas kanan; mata mengikuti kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Bend into guibu as the foot lands and cover at once, power in the fist-heart."
+        ],
+        "id": [
+          "Tekuk ke guibu saat kaki mendarat dan langsung menutup, tenaga di telapak kepalan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 448, 图 F-85 to F-86",
+      "start_sec": 150.5,
+      "end_sec": 153.5
+    },
+    {
+      "number": 29,
+      "section": 1,
+      "book_number": 29,
+      "name_zh": "骑龙步撞拳",
+      "name_pinyin": "Qílóngbù zhuàngquán",
+      "name_en": "Qilongbu, Ramming Punch",
+      "name_id": "Qilongbu, Pukulan Hantam",
+      "steps": {
+        "en": [
+          "Turn right and step the right foot forward into qilongbu; the right fist drops back and down past the right waist and is thrown forward and up in a ramming punch, the left palm arcing clockwise to guard inside the right upper arm; watch the right fist."
+        ],
+        "id": [
+          "Putar ke kanan dan langkahkan kaki kanan ke depan menjadi qilongbu; kepalan kanan turun ke belakang bawah melewati pinggang kanan lalu dilemparkan ke depan atas dalam pukulan hantam, telapak kiri melengkung searah jarum jam menjaga sisi dalam lengan atas kanan; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Swing the right arm close to the right side; the fist face points up as it rams, power in the face."
+        ],
+        "id": [
+          "Ayunkan lengan kanan dekat sisi kanan; muka kepalan menghadap atas saat menghantam, tenaga di muka kepalan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 448, 图 F-87 to F-88",
+      "start_sec": 153.5,
+      "end_sec": 156.5
+    },
+    {
+      "number": 30,
+      "section": 1,
+      "book_number": 30,
+      "name_zh": "马步劈桥",
+      "name_pinyin": "Mǎbù pīqiáo",
+      "name_en": "Mabu, Chopping Bridge",
+      "name_id": "Mabu, Bacokan Lengan",
+      "steps": {
+        "en": [
+          "Turn slightly right; arc the right arm back to the right and cut the left palm forward; the eyes follow the left palm.",
+          "Turn left into mabu; sweep the straight right arm across from right to left until the fist bends in front of the left shoulder, while the left palm arcs anticlockwise to support at the belly, palm up; turn the head and look left.",
+          "Turn right and chop the right forearm across to the right; turn the head and watch the right fist."
+        ],
+        "id": [
+          "Putar sedikit ke kanan; lengkungkan lengan kanan ke kanan belakang dan potongkan telapak kiri ke depan; mata mengikuti telapak kiri.",
+          "Putar ke kiri menjadi mabu; sapukan lengan kanan yang lurus melintang dari kanan ke kiri hingga kepalan terlipat di depan bahu kiri, sementara telapak kiri melengkung berlawanan arah jarum jam menopang di depan perut, telapak ke atas; tolehkan kepala dan pandang ke kiri.",
+          "Putar ke kanan dan bacokkan lengan bawah kanan melintang ke kanan; tolehkan kepala dan pandang kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Turn the waist quickly to drive the arm; elbow slightly bent, power along the ulna and little-finger edge."
+        ],
+        "id": [
+          "Putar pinggang dengan cepat untuk menggerakkan lengan; siku sedikit ditekuk, tenaga di sepanjang tulang hasta dan sisi kelingking."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 449, 图 F-89 to F-92",
+      "start_sec": 156.5,
+      "end_sec": 164.0
+    },
+    {
+      "number": 31,
+      "section": 2,
+      "book_number": 31,
+      "name_zh": "转身挂盖拳",
+      "name_pinyin": "Zhuǎnshēn guàgàiquán",
+      "name_en": "Turn, Hanging and Covering Punches",
+      "name_id": "Berbalik, Pukulan Menggantung dan Menutup",
+      "steps": {
+        "en": [
+          "Shift left; the left palm becomes a fist and hangs out to the left past the right chest; watch the left fist.",
+          "Turn left; the left fist keeps swinging back to the left as the right fist covers over the top and down forward; look ahead."
+        ],
+        "id": [
+          "Geser ke kiri; telapak kiri menjadi kepalan dan menggantung ke kiri melewati dada kanan; pandangan ke kepalan kiri.",
+          "Putar ke kiri; kepalan kiri terus berayun ke kiri belakang sementara kepalan kanan menutup melewati atas ke depan bawah; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The hanging punch lands with the back of the fist, the cover quick and down with the fist-heart; left arm slightly ahead of the right."
+        ],
+        "id": [
+          "Pukulan menggantung mengenai dengan punggung kepalan, tutupan cepat ke bawah dengan telapak kepalan; lengan kiri sedikit mendahului lengan kanan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 450–451, 图 F-93 to F-94",
+      "start_sec": 164.0,
+      "end_sec": 169.0
+    },
+    {
+      "number": 32,
+      "section": 2,
+      "book_number": 32,
+      "name_zh": "横钉腿右弓步冲拳",
+      "name_pinyin": "Héngdīngtuǐ yòu gōngbù chōngquán",
+      "name_en": "Cross Nail Kick, Right Gongbu Punch",
+      "name_id": "Tendangan Paku Melintang, Gongbu Kanan Pukulan",
+      "steps": {
+        "en": [
+          "Cross the left foot behind the right; bend and rotate the right arm out so the fist circles past the face and blocks to the right, the left fist moving slightly forward; the eyes follow the right fist.",
+          "Turn slightly left; the left arm bends and rotates out, the fist circling past the face to block to the left, the right fist going to the waist; the eyes follow the left fist.",
+          "Step the right foot back and punch the right fist forward as a flat fist, the left fist to the waist; watch the right fist.",
+          "Bend the right knee and nail the foot across from the right to the front; the left fist opens and threads forward and down while the right fist swings behind; watch the right foot.",
+          "Set the right foot down behind and punch the right fist forward as a flat fist, the left hand becoming a fist at the waist; watch the right fist.",
+          "Turn right into right gongbu and punch the left fist forward as a vertical fist, the right fist to the waist; watch the left fist."
+        ],
+        "id": [
+          "Silangkan kaki kiri di belakang kaki kanan; tekuk dan putar lengan kanan ke luar sehingga kepalan berputar melewati wajah dan menangkis ke kanan, kepalan kiri bergerak sedikit ke depan; mata mengikuti kepalan kanan.",
+          "Putar sedikit ke kiri; lengan kiri ditekuk dan diputar ke luar, kepalan berputar melewati wajah menangkis ke kiri, kepalan kanan ke pinggang; mata mengikuti kepalan kiri.",
+          "Mundurkan kaki kanan dan pukulkan kepalan kanan ke depan sebagai kepalan datar, kepalan kiri ke pinggang; pandangan ke kepalan kanan.",
+          "Tekuk lutut kanan dan pakukan kaki melintang dari kanan ke depan; kepalan kiri dibuka dan menusuk ke depan bawah sementara kepalan kanan berayun ke belakang; pandangan ke kaki kanan.",
+          "Turunkan kaki kanan ke belakang dan pukulkan kepalan kanan ke depan sebagai kepalan datar, tangan kiri menjadi kepalan di pinggang; pandangan ke kepalan kanan.",
+          "Putar ke kanan menjadi gongbu kanan dan pukulkan kepalan kiri ke depan sebagai kepalan tegak, kepalan kanan ke pinggang; pandangan ke kepalan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "One block per step back; the nail kick extends from bent to straight, travelling from the right outside toward the left, toes pulled hard back, power in the ball and toes, at hip height, trunk not leaning back."
+        ],
+        "id": [
+          "Satu tangkisan setiap langkah mundur; tendangan paku memanjang dari tertekuk ke lurus, bergerak dari sisi luar kanan ke arah kiri, ujung kaki ditarik kuat, tenaga di telapak depan dan ujung kaki, setinggi pinggul, badan tidak condong ke belakang."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 451–453, 图 F-95 to F-100",
+      "start_sec": 169.0,
+      "end_sec": 184.0
+    },
+    {
+      "number": 33,
+      "section": 2,
+      "book_number": 33,
+      "name_zh": "勒手横踩腿双推掌",
+      "name_pinyin": "Lèshǒu héngcǎituǐ shuāng tuīzhǎng",
+      "name_en": "Reining Hands, Cross Stamping Kick, Double Push",
+      "name_id": "Tangan Mengekang, Injakan Melintang, Dorongan Ganda",
+      "steps": {
+        "en": [
+          "Shift right and slide the left foot slightly forward; the fists become eagle claws and arc to the right front; the eyes follow the claws.",
+          "Lift the left leg and stamp across down to the right front; pull both claws to the left waist; watch the left foot.",
+          "Set the left foot down behind into qilongbu and push both palms forward, left palm up and right palm down; look ahead."
+        ],
+        "id": [
+          "Geser ke kanan dan luncurkan kaki kiri sedikit ke depan; kepalan menjadi cakar elang dan melengkung ke depan kanan; mata mengikuti cakar.",
+          "Angkat kaki kiri dan injak melintang ke depan kanan bawah; tarik kedua cakar ke pinggang kiri; pandangan ke kaki kiri.",
+          "Turunkan kaki kiri ke belakang menjadi qilongbu dan dorong kedua telapak ke depan, telapak kiri ke atas dan telapak kanan ke bawah; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Rein with eagle claws and the arms rotated out; stamp from bent to straight forward and down, power in the sole; the double push reaches the little-finger edges."
+        ],
+        "id": [
+          "Kekang dengan cakar elang dan lengan diputar ke luar; injak dari tertekuk ke lurus ke depan bawah, tenaga di telapak kaki; dorongan ganda sampai ke sisi kelingking."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 453–454, 图 F-101 to F-103",
+      "start_sec": 184.0,
+      "end_sec": 191.5
+    },
+    {
+      "number": 34,
+      "section": 2,
+      "book_number": 34,
+      "name_zh": "单蝶步拍地",
+      "name_pinyin": "Dāndiébù pāidì",
+      "name_en": "Dandiebu, Slap the Floor",
+      "name_id": "Dandiebu, Tepuk Lantai",
+      "steps": {
+        "en": [
+          "Turn left, lift the left knee and leap to the left off the right foot, both palms swinging up past the sides; look ahead.",
+          "Land on both feet and squat into dandiebu, slapping the floor with both hands; the eyes follow the palms."
+        ],
+        "id": [
+          "Putar ke kiri, angkat lutut kiri dan lompat ke kiri dari kaki kanan, kedua telapak berayun ke atas melewati samping; pandangan ke depan.",
+          "Mendarat dengan kedua kaki dan jongkok menjadi dandiebu, tepuk lantai dengan kedua tangan; mata mengikuti telapak."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A low, quick leap to the left; slap without leaning the trunk forward."
+        ],
+        "id": [
+          "Lompatan rendah dan cepat ke kiri; tepuk tanpa mencondongkan badan ke depan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 454–455, 图 F-104 to F-106",
+      "start_sec": 191.5,
+      "end_sec": 196.5
+    },
+    {
+      "number": 35,
+      "section": 2,
+      "book_number": 35,
+      "name_zh": "右弓步叠掌",
+      "name_pinyin": "Yòu gōngbù diézhǎng",
+      "name_en": "Right Gongbu, Stacked Palms",
+      "name_id": "Gongbu Kanan, Telapak Bertumpuk",
+      "steps": {
+        "en": [
+          "Turn right and step the right foot forward into right gongbu; bring both palms past the left waist and push them forward with the step, right fingers up and left fingers down; watch the right fingertips."
+        ],
+        "id": [
+          "Putar ke kanan dan langkahkan kaki kanan ke depan menjadi gongbu kanan; bawa kedua telapak melewati pinggang kiri dan dorong ke depan bersama langkah, jari kanan ke atas dan jari kiri ke bawah; pandangan ke ujung jari kanan."
+        ]
+      },
+      "key_points": {
+        "en": [],
+        "id": []
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 455, 图 F-107",
+      "start_sec": 196.5,
+      "end_sec": 199.5
+    },
+    {
+      "number": 36,
+      "section": 2,
+      "book_number": 36,
+      "name_zh": "麒麟步左弓步叠掌",
+      "name_pinyin": "Qílínbù zuǒ gōngbù diézhǎng",
+      "name_en": "Qilinbu, Left Gongbu, Stacked Palms",
+      "name_id": "Qilinbu, Gongbu Kiri, Telapak Bertumpuk",
+      "steps": {
+        "en": [
+          "Step the left foot in front of the right, toes out, turning left; bring the palms to the left side; the eyes follow the right palm.",
+          "Step the right foot in front of the left, toes out, turning right; rotate the right forearm out and the left in and stack the palms at the right side; the eyes follow the left palm.",
+          "Step the left foot to the left front into left gongbu and push both palms to the left front, left fingers up and right fingers down; watch the left fingertips."
+        ],
+        "id": [
+          "Langkahkan kaki kiri di depan kaki kanan, ujung kaki ke luar, putar ke kiri; bawa telapak ke sisi kiri; mata mengikuti telapak kanan.",
+          "Langkahkan kaki kanan di depan kaki kiri, ujung kaki ke luar, putar ke kanan; putar lengan bawah kanan ke luar dan kiri ke dalam lalu tumpuk telapak di sisi kanan; mata mengikuti telapak kiri.",
+          "Langkahkan kaki kiri ke depan kiri menjadi gongbu kiri dan dorong kedua telapak ke depan kiri, jari kiri ke atas dan jari kanan ke bawah; pandangan ke ujung jari kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The palms change position quickly with qilinbu; push with the palm heels, a fist's width apart."
+        ],
+        "id": [
+          "Telapak berganti posisi dengan cepat mengikuti qilinbu; dorong dengan pangkal telapak, berjarak satu kepalan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 455–456, 图 F-108 to F-111",
+      "start_sec": 199.5,
+      "end_sec": 207.0
+    },
+    {
+      "number": 37,
+      "section": 2,
+      "book_number": 37,
+      "name_zh": "右弓步架冲拳",
+      "name_pinyin": "Yòu gōngbù jià chōngquán",
+      "name_en": "Right Gongbu, Block and Punch",
+      "name_id": "Gongbu Kanan, Tangkis dan Pukul",
+      "steps": {
+        "en": [
+          "Lift the right leg and step it to the right front, turning right into right gongbu; the palms become fists past the left waist, the right arm rotating in to block up while the left fist punches forward; look ahead."
+        ],
+        "id": [
+          "Angkat kaki kanan dan langkahkan ke depan kanan, putar ke kanan menjadi gongbu kanan; telapak menjadi kepalan melewati pinggang kiri, lengan kanan berputar ke dalam menangkis ke atas sementara kepalan kiri memukul ke depan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Twist the waist to the right as you block and punch."
+        ],
+        "id": [
+          "Putar pinggang ke kanan saat menangkis dan memukul."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 456, 图 F-112 to F-113",
+      "start_sec": 207.0,
+      "end_sec": 210.0
+    },
+    {
+      "number": 38,
+      "section": 2,
+      "book_number": 38,
+      "name_zh": "左横裆步右抛拳",
+      "name_pinyin": "Zuǒ héngdāngbù yòu pāoquán",
+      "name_en": "Left Hengdangbu, Right Throwing Punch",
+      "name_id": "Hengdangbu Kiri, Pukulan Lempar Kanan",
+      "steps": {
+        "en": [
+          "Turn left into hengdangbu; throw the right fist from below up to the upper left while the left fist swings down and round to the left; look to the right front and give a shout (“hei”)."
+        ],
+        "id": [
+          "Putar ke kiri menjadi hengdangbu; lemparkan kepalan kanan dari bawah ke kiri atas sementara kepalan kiri berayun ke bawah lalu memutar ke kiri; pandangan ke depan kanan dan keluarkan seruan (“hei”)."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Both arms travel in arcs, arm slightly bent, power at the fist-eye."
+        ],
+        "id": [
+          "Kedua lengan bergerak melengkung, lengan sedikit ditekuk, tenaga di mata kepalan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 457–458, 图 F-114 to F-115",
+      "start_sec": 210.0,
+      "end_sec": 213.0
+    },
+    {
+      "number": 39,
+      "section": 2,
+      "book_number": 39,
+      "name_zh": "右横裆步左抛拳",
+      "name_pinyin": "Yòu héngdāngbù zuǒ pāoquán",
+      "name_en": "Right Hengdangbu, Left Throwing Punch",
+      "name_id": "Hengdangbu Kanan, Pukulan Lempar Kiri",
+      "steps": {
+        "en": [
+          "Turn right into hengdangbu; throw the left fist from below up to the upper right while the right fist drops and swings round to the right; look to the left front."
+        ],
+        "id": [
+          "Putar ke kanan menjadi hengdangbu; lemparkan kepalan kiri dari bawah ke kanan atas sementara kepalan kanan turun lalu berayun memutar ke kanan; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in the previous movement."
+        ],
+        "id": [
+          "Sama seperti gerakan sebelumnya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 458, 图 F-116 to F-117",
+      "start_sec": 213.0,
+      "end_sec": 216.0
+    },
+    {
+      "number": 40,
+      "section": 2,
+      "book_number": 40,
+      "name_zh": "上步挂盖拳",
+      "name_pinyin": "Shàngbù guàgàiquán",
+      "name_en": "Shangbu, Hanging and Covering Punches",
+      "name_id": "Shangbu, Pukulan Menggantung dan Menutup",
+      "steps": {
+        "en": [
+          "Step the left foot forward; rotate the left arm in and swing the fist down from the left, past the right and up, hanging it round to the left; the eyes follow the left fist.",
+          "Turn left into left gongbu; cover the right fist over the top and down forward, the left fist swinging behind; look ahead."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan; putar lengan kiri ke dalam dan ayunkan kepalan dari kiri ke bawah, melewati kanan lalu ke atas, menggantung memutar ke kiri; mata mengikuti kepalan kiri.",
+          "Putar ke kiri menjadi gongbu kiri; tutupkan kepalan kanan melewati atas ke depan bawah, kepalan kiri berayun ke belakang; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （三十一）."
+        ],
+        "id": [
+          "Sama seperti （三十一）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 459, 图 F-118 to F-120",
+      "start_sec": 216.0,
+      "end_sec": 221.0
+    },
+    {
+      "number": 41,
+      "section": 2,
+      "book_number": 41,
+      "name_zh": "插步鞭拳",
+      "name_pinyin": "Chābù biānquán",
+      "name_en": "Chabu, Whip Punch",
+      "name_id": "Chabu, Pukulan Cambuk",
+      "steps": {
+        "en": [
+          "Step the right foot forward, turning left; the left fist opens and swings to the left with the right fist; the eyes follow the left palm.",
+          "Cross the left foot behind the right and whip the right fist level to the right, the left palm guarding the right chest; watch the right fist."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan, putar ke kiri; kepalan kiri dibuka dan berayun ke kiri bersama kepalan kanan; mata mengikuti telapak kiri.",
+          "Silangkan kaki kiri di belakang kaki kanan dan cambukkan kepalan kanan datar ke kanan, telapak kiri menjaga dada kanan; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Chabu and the whip finish together without leaning right; power in the back of the fist."
+        ],
+        "id": [
+          "Chabu dan cambukan selesai bersamaan tanpa condong ke kanan; tenaga di punggung kepalan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 459–460, 图 F-121 to F-122",
+      "start_sec": 221.0,
+      "end_sec": 226.0
+    },
+    {
+      "number": 42,
+      "section": 2,
+      "book_number": 42,
+      "name_zh": "转身挂盖拳",
+      "name_pinyin": "Zhuǎnshēn guàgàiquán",
+      "name_en": "Turn, Hanging and Covering Punches",
+      "name_id": "Berbalik, Pukulan Menggantung dan Menutup",
+      "steps": {
+        "en": [
+          "Turn back to the left; the left palm becomes a fist and hangs over the top to the left with the turn while the right fist swings down to the right.",
+          "Keep turning left; cover the right fist over the top and down forward, the left fist swinging behind; look ahead."
+        ],
+        "id": [
+          "Berbalik ke kiri; telapak kiri menjadi kepalan dan menggantung melewati atas ke kiri mengikuti putaran sementara kepalan kanan berayun ke bawah ke kanan.",
+          "Terus berputar ke kiri; tutupkan kepalan kanan melewati atas ke depan bawah, kepalan kiri berayun ke belakang; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （三十一）, keeping the body stable through the turn."
+        ],
+        "id": [
+          "Sama seperti （三十一）, badan tetap stabil selama berputar."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 460, 图 F-123 to F-124",
+      "start_sec": 226.0,
+      "end_sec": 231.0
+    },
+    {
+      "number": 43,
+      "section": 2,
+      "book_number": 43,
+      "name_zh": "骑龙步抛撞拳",
+      "name_pinyin": "Qílóngbù pāo zhuàngquán",
+      "name_en": "Qilongbu, Throwing Ram Punch",
+      "name_id": "Qilongbu, Pukulan Lempar Hantam",
+      "steps": {
+        "en": [
+          "Step the right foot in beside the left onto the toes; the right fist swings over the top and back with a right turn while the left fist opens and arcs over the top and down forward, the head turning right; the eyes follow the right fist.",
+          "Step the right foot forward, the left foot sliding slightly forward with the heel up into qilongbu; turning left, throw the right fist from below forward and up in a ramming punch, the left palm arcing clockwise to guard inside the right upper arm; look ahead."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke sisi dalam kaki kiri bertumpu pada ujung kaki; kepalan kanan berayun melewati atas ke belakang dengan putaran ke kanan sementara kepalan kiri dibuka dan melengkung melewati atas ke depan bawah, kepala menoleh ke kanan; mata mengikuti kepalan kanan.",
+          "Langkahkan kaki kanan ke depan, kaki kiri meluncur sedikit ke depan dengan tumit terangkat menjadi qilongbu; sambil berputar ke kiri, lemparkan kepalan kanan dari bawah ke depan atas dalam pukulan hantam, telapak kiri melengkung searah jarum jam menjaga sisi dalam lengan atas kanan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A long right step, the left foot dragging half a step along the floor; power in the fist face, elbow bent, trunk not leaning forward."
+        ],
+        "id": [
+          "Langkah kanan panjang, kaki kiri terseret setengah langkah di lantai; tenaga di muka kepalan, siku ditekuk, badan tidak condong ke depan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 460–461, 图 F-125 to F-126",
+      "start_sec": 231.0,
+      "end_sec": 236.0
+    },
+    {
+      "number": 44,
+      "section": 2,
+      "book_number": 44,
+      "name_zh": "马步撑掌",
+      "name_pinyin": "Mǎbù chēngzhǎng",
+      "name_en": "Mabu, Bracing Palm",
+      "name_id": "Mabu, Telapak Menahan",
+      "steps": {
+        "en": [
+          "Shift back into xubu; wipe the left palm forward over the right arm while the right fist opens and folds to the right chest, palm down, the head turning right; the eyes follow the right palm.",
+          "Step the right foot forward and turn left into mabu; rotate the right arm in and brace the palm down to the lower right, the left palm folding to the right chest; watch the right palm."
+        ],
+        "id": [
+          "Geser ke belakang menjadi xubu; usapkan telapak kiri ke depan di atas lengan kanan sementara kepalan kanan dibuka dan terlipat ke dada kanan, telapak ke bawah, kepala menoleh ke kanan; mata mengikuti telapak kanan.",
+          "Langkahkan kaki kanan ke depan dan putar ke kiri menjadi mabu; putar lengan kanan ke dalam dan tahan telapak ke kanan bawah, telapak kiri terlipat ke dada kanan; pandangan ke telapak kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Xubu can be a little high, shoulders open; brace down and to the right, power in the palm heel and outer edge of the fingers."
+        ],
+        "id": [
+          "Xubu boleh agak tinggi, bahu terbuka; tahan ke bawah dan ke kanan, tenaga di pangkal telapak dan sisi luar jari."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 461–462, 图 F-127 to F-128",
+      "start_sec": 236.0,
+      "end_sec": 241.0
+    },
+    {
+      "number": 45,
+      "section": 2,
+      "book_number": 45,
+      "name_zh": "挂盖扫右弓步撞拳",
+      "name_pinyin": "Guà gài sǎo yòu gōngbù zhuàngquán",
+      "name_en": "Hang, Cover, Sweep, Right Gongbu Ram Punch",
+      "name_id": "Gantung, Tutup, Sapu, Gongbu Kanan Pukulan Hantam",
+      "steps": {
+        "en": [
+          "The palms become fists; turning slightly left the right fist swings down to the left and the left fist goes under the right armpit; the eyes follow the right fist.",
+          "Turning slightly right, hang the right fist over the top to the right, the left fist swinging back; the eyes follow the right fist.",
+          "Keep turning right; cover the left fist over the top and down forward, the right fist swinging down behind; the eyes follow the left fist.",
+          "Turning left, sweep the right fist across to the left, the left fist swinging back level.",
+          "Keep turning left; bend the right arm to continue the sweep and fold the fist under the left armpit, the left arm rotating in to block up; the eyes follow the right fist.",
+          "Turn right into right gongbu; scissor the forearms (right rotating out, left dropping), then ram the right fist to the upper right with the turn, the left fist swinging behind; watch the right fist."
+        ],
+        "id": [
+          "Telapak menjadi kepalan; sambil berputar sedikit ke kiri kepalan kanan berayun ke kiri bawah dan kepalan kiri ke bawah ketiak kanan; mata mengikuti kepalan kanan.",
+          "Sambil berputar sedikit ke kanan, gantungkan kepalan kanan melewati atas ke kanan, kepalan kiri berayun ke belakang; mata mengikuti kepalan kanan.",
+          "Terus berputar ke kanan; tutupkan kepalan kiri melewati atas ke depan bawah, kepalan kanan berayun turun ke belakang; mata mengikuti kepalan kiri.",
+          "Sambil berputar ke kiri, sapukan kepalan kanan melintang ke kiri, kepalan kiri berayun datar ke belakang.",
+          "Terus berputar ke kiri; tekuk lengan kanan melanjutkan sapuan dan lipat kepalan di bawah ketiak kiri, lengan kiri berputar ke dalam menangkis ke atas; mata mengikuti kepalan kanan.",
+          "Putar ke kanan menjadi gongbu kanan; guntingkan lengan bawah (kanan berputar ke luar, kiri turun), lalu hantamkan kepalan kanan ke kanan atas mengikuti putaran, kepalan kiri berayun ke belakang; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The hang and cover need only reach chest height; after the sweep fold the arm across the chest; wrap the arms in the scissor before ramming to the upper right, power in the fist face."
+        ],
+        "id": [
+          "Gantungan dan tutupan cukup setinggi dada; setelah sapuan lipat lengan di depan dada; balut lengan pada guntingan sebelum menghantam ke kanan atas, tenaga di muka kepalan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 462–464, 图 F-129 to F-134",
+      "start_sec": 241.0,
+      "end_sec": 256.0
+    },
+    {
+      "number": 46,
+      "section": 2,
+      "book_number": 46,
+      "name_zh": "歇步下冲拳",
+      "name_pinyin": "Xiēbù xià chōngquán",
+      "name_en": "Xiebu, Low Punch",
+      "name_id": "Xiebu, Pukulan Rendah",
+      "steps": {
+        "en": [
+          "Turn right and slide the ball of the left foot forward into xiebu; punch the left fist forward and down past the left waist, the right fist to the waist; watch the left fist."
+        ],
+        "id": [
+          "Putar ke kanan dan luncurkan telapak depan kaki kiri ke depan menjadi xiebu; pukulkan kepalan kiri ke depan bawah melewati pinggang kiri, kepalan kanan ke pinggang; pandangan ke kepalan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A proper xiebu, not just crossed legs; punch forward and down with power in the fist face."
+        ],
+        "id": [
+          "Xiebu yang benar, bukan sekadar kaki menyilang; pukul ke depan bawah dengan tenaga di muka kepalan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 464, 图 F-135 to F-136",
+      "start_sec": 256.0,
+      "end_sec": 259.0
+    },
+    {
+      "number": 47,
+      "section": 2,
+      "book_number": 47,
+      "name_zh": "马步双挂拳",
+      "name_pinyin": "Mǎbù shuāng guàquán",
+      "name_en": "Mabu, Double Hanging Punches",
+      "name_id": "Mabu, Pukulan Menggantung Ganda",
+      "steps": {
+        "en": [
+          "Step the left foot to the left front into mabu; cross the arms in front of the chest, left fist outside, then swing them up and hang them down to both sides; watch the left fist."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan kiri menjadi mabu; silangkan lengan di depan dada, kepalan kiri di luar, lalu ayunkan ke atas dan gantungkan ke bawah ke kedua sisi; pandangan ke kepalan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Power in both forearms and fist faces; elbows slightly bent."
+        ],
+        "id": [
+          "Tenaga di kedua lengan bawah dan muka kepalan; siku sedikit ditekuk."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 464–465, 图 F-137",
+      "start_sec": 259.0,
+      "end_sec": 262.0
+    },
+    {
+      "number": 48,
+      "section": 2,
+      "book_number": 48,
+      "name_zh": "跪步双虎爪",
+      "name_pinyin": "Guìbù shuāng hǔzhǎo",
+      "name_en": "Guibu, Double Tiger Claws",
+      "name_id": "Guibu, Dua Cakar Harimau",
+      "steps": {
+        "en": [
+          "Straighten the left leg and lift the bent right knee; the fists become tiger claws and arc down to the left; the eyes follow the left claw.",
+          "Jump off the left leg and turn back to the right, the bent right leg raised behind; the claws arc over the top with the turn and grab down to the lower right; the eyes follow the right claw.",
+          "Step the left foot forward and turn left into guibu, pushing and grabbing forward with both claws; look ahead."
+        ],
+        "id": [
+          "Luruskan kaki kiri dan angkat lutut kanan yang ditekuk; kepalan menjadi cakar harimau dan melengkung ke kiri bawah; mata mengikuti cakar kiri.",
+          "Lompat dari kaki kiri dan berbalik ke kanan, kaki kanan yang ditekuk terangkat ke belakang; cakar melengkung melewati atas mengikuti putaran dan mencengkeram ke kanan bawah; mata mengikuti cakar kanan.",
+          "Langkahkan kaki kiri ke depan dan putar ke kiri menjadi guibu, dorong dan cengkeram ke depan dengan kedua cakar; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [],
+        "id": []
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 465–466, 图 F-138 to F-140",
+      "start_sec": 262.0,
+      "end_sec": 269.5
+    },
+    {
+      "number": 49,
+      "section": 3,
+      "book_number": 49,
+      "name_zh": "单拍脚半马步冲拳",
+      "name_pinyin": "Dān pāijiǎo bànmǎbù chōngquán",
+      "name_en": "Slap Kick, Banmabu Punch",
+      "name_id": "Tepuk Kaki, Banmabu Pukulan",
+      "steps": {
+        "en": [
+          "Straighten the left leg and snap the right leg up to the upper right; the right claw opens and slaps the instep while the left claw becomes a fist at the waist; watch the right foot.",
+          "Set the right foot down forward into banmabu and punch the left fist forward as a flat fist, the right hand becoming a fist at the waist; look ahead.",
+          "Turn left and punch the right fist out to the right as a flat fist, the left fist to the waist; look to the right front."
+        ],
+        "id": [
+          "Luruskan kaki kiri dan lentingkan kaki kanan ke kanan atas; cakar kanan dibuka dan menepuk punggung kaki sementara cakar kiri menjadi kepalan di pinggang; pandangan ke kaki kanan.",
+          "Turunkan kaki kanan ke depan menjadi banmabu dan pukulkan kepalan kiri ke depan sebagai kepalan datar, tangan kanan menjadi kepalan di pinggang; pandangan ke depan.",
+          "Putar ke kiri dan pukulkan kepalan kanan ke kanan sebagai kepalan datar, kepalan kiri ke pinggang; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A crisp, accurate, loud slap; linked punches, banmabu changing quickly to mabu."
+        ],
+        "id": [
+          "Tepukan tegas, tepat dan nyaring; pukulan bersambung, banmabu cepat berubah menjadi mabu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 466–467, 图 F-141 to F-143",
+      "start_sec": 269.5,
+      "end_sec": 277.0
+    },
+    {
+      "number": 50,
+      "section": 3,
+      "book_number": 50,
+      "name_zh": "单蝶步压肘",
+      "name_pinyin": "Dāndiébù yāzhǒu",
+      "name_en": "Dandiebu, Pressing Elbow",
+      "name_id": "Dandiebu, Siku Menekan",
+      "steps": {
+        "en": [
+          "Step the left foot forward; the left fist opens and threads its forearm forward under the right arm, the right fist to the waist; the eyes follow the left palm.",
+          "Jump off the left foot, lift the right leg and turn a full circle back to the left, landing on both feet in dandiebu; with both arms bent, press the right elbow over the top onto the inside of the left forearm; watch the right elbow."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan; kepalan kiri dibuka dan menusukkan lengan bawahnya ke depan di bawah lengan kanan, kepalan kanan ke pinggang; mata mengikuti telapak kiri.",
+          "Lompat dari kaki kiri, angkat kaki kanan dan berputar satu lingkaran penuh ke kiri belakang, mendarat dengan kedua kaki dalam dandiebu; dengan kedua lengan ditekuk, tekan siku kanan melewati atas ke sisi dalam lengan bawah kiri; pandangan ke siku kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The left palm threads palm down beneath the right arm; leap forward with the turn and press the bent right arm down to the left."
+        ],
+        "id": [
+          "Telapak kiri menusuk dengan telapak menghadap bawah di bawah lengan kanan; lompat ke depan mengikuti putaran dan tekan lengan kanan yang ditekuk ke kiri bawah."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 467–468, 图 F-144 to F-147",
+      "start_sec": 277.0,
+      "end_sec": 282.0
+    },
+    {
+      "number": 51,
+      "section": 3,
+      "book_number": 51,
+      "name_zh": "插步冲拳",
+      "name_pinyin": "Chābù chōngquán",
+      "name_en": "Chabu, Punch",
+      "name_id": "Chabu, Pukulan Lurus",
+      "steps": {
+        "en": [
+          "Rise and whip the right fist forward, the left palm becoming a fist folded at the right chest; the eyes follow the right fist.",
+          "Step the left foot back into chabu and punch the left fist forward as a vertical fist, the right fist folding to the right chest; watch the left fist."
+        ],
+        "id": [
+          "Berdiri dan cambukkan kepalan kanan ke depan, telapak kiri menjadi kepalan terlipat di dada kanan; mata mengikuti kepalan kanan.",
+          "Mundurkan kaki kiri menjadi chabu dan pukulkan kepalan kiri ke depan sebagai kepalan tegak, kepalan kanan terlipat ke dada kanan; pandangan ke kepalan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The right arm whips from bent to straight, power in the back of the fist; chabu and punch together."
+        ],
+        "id": [
+          "Lengan kanan mencambuk dari tertekuk ke lurus, tenaga di punggung kepalan; chabu dan pukulan bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 468, 图 F-148 to F-149",
+      "start_sec": 282.0,
+      "end_sec": 287.0
+    },
+    {
+      "number": 52,
+      "section": 3,
+      "book_number": 52,
+      "name_zh": "上步冲拳转身挂盖拳",
+      "name_pinyin": "Shàngbù chōngquán zhuǎnshēn guàgàiquán",
+      "name_en": "Shangbu Punch, Turn, Hanging and Covering Punches",
+      "name_id": "Shangbu Pukulan, Berbalik, Pukulan Menggantung dan Menutup",
+      "steps": {
+        "en": [
+          "Step right and left forward and turn left; punch the right fist out to the right as a flat fist, the left fist dropping to the belly; the eyes follow the right fist.",
+          "Cross the left foot behind the right and turn back to the left; the left fist hangs over the top and down forward with the turn as the right fist swings down and back; the eyes follow the left fist.",
+          "Keep turning left; cover the right fist over the top and down forward, the left fist swinging down and back; look ahead."
+        ],
+        "id": [
+          "Langkahkan kanan lalu kiri ke depan dan putar ke kiri; pukulkan kepalan kanan ke kanan sebagai kepalan datar, kepalan kiri turun ke depan perut; mata mengikuti kepalan kanan.",
+          "Silangkan kaki kiri di belakang kaki kanan dan berbalik ke kiri; kepalan kiri menggantung melewati atas ke depan bawah mengikuti putaran sementara kepalan kanan berayun ke bawah dan ke belakang; mata mengikuti kepalan kiri.",
+          "Terus berputar ke kiri; tutupkan kepalan kanan melewati atas ke depan bawah, kepalan kiri berayun ke bawah dan ke belakang; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （三十一）."
+        ],
+        "id": [
+          "Sama seperti （三十一）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 469–470, 图 F-150 to F-153",
+      "start_sec": 287.0,
+      "end_sec": 294.5
+    },
+    {
+      "number": 53,
+      "section": 3,
+      "book_number": 53,
+      "name_zh": "马步侧冲拳",
+      "name_pinyin": "Mǎbù cè chōngquán",
+      "name_en": "Mabu, Side Punch",
+      "name_id": "Mabu, Pukulan Samping",
+      "steps": {
+        "en": [
+          "Step the right foot forward onto the toes in xubu; the left fist opens and both wrists cross and flick forward and up; look ahead.",
+          "Step the right foot forward and turn left into mabu; both hands circle over the top to the sides, then the right fist punches out to the right as a vertical fist and the left palm guards inside the right upper arm; watch the right fist."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan bertumpu pada ujung kaki dalam xubu; kepalan kiri dibuka dan kedua pergelangan menyilang lalu dicungkil ke depan atas; pandangan ke depan.",
+          "Langkahkan kaki kanan ke depan dan putar ke kiri menjadi mabu; kedua tangan berputar melewati atas ke samping, lalu kepalan kanan memukul ke kanan sebagai kepalan tegak dan telapak kiri menjaga sisi dalam lengan atas kanan; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Flick up and circle the arms quickly; finish the side punch fully."
+        ],
+        "id": [
+          "Cungkil ke atas dan putar lengan dengan cepat; selesaikan pukulan samping dengan penuh."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 470–471, 图 F-154 to F-155",
+      "start_sec": 294.5,
+      "end_sec": 299.5
+    },
+    {
+      "number": 54,
+      "section": 4,
+      "book_number": 54,
+      "name_zh": "转身挂盖右弓步滚桥",
+      "name_pinyin": "Zhuǎnshēn guàgài yòu gōngbù gǔnqiáo",
+      "name_en": "Turn, Hang and Cover, Right Gongbu Rolling Bridge",
+      "name_id": "Berbalik, Gantung dan Tutup, Gongbu Kanan Lengan Bergulir",
+      "steps": {
+        "en": [
+          "Turn slightly left; the left palm becomes a fist and hangs out to the upper left; the eyes follow the left fist.",
+          "Keep turning left; the right fist covers over the top and down forward while the left fist swings down and back; look ahead.",
+          "Turn slightly right; bend and rotate the right arm out so the fist circles past the face and blocks to the right, the left fist moving slightly forward; the eyes follow the right fist.",
+          "Turn slightly left; the left fist circles past the face and blocks to the left, the right fist to the waist; the eyes follow the left fist.",
+          "Step the right foot back into left gongbu and punch the right fist forward as a flat fist, the left fist to the waist; watch the right fist.",
+          "Turn right into right gongbu; rotate the left forearm in and roll it down to the lower left front while the bent right arm pulls the fist to the right chest, both fist-hearts down; look to the left front."
+        ],
+        "id": [
+          "Putar sedikit ke kiri; telapak kiri menjadi kepalan dan menggantung ke kiri atas; mata mengikuti kepalan kiri.",
+          "Terus berputar ke kiri; kepalan kanan menutup melewati atas ke depan bawah sementara kepalan kiri berayun ke bawah dan ke belakang; pandangan ke depan.",
+          "Putar sedikit ke kanan; tekuk dan putar lengan kanan ke luar sehingga kepalan berputar melewati wajah dan menangkis ke kanan, kepalan kiri bergerak sedikit ke depan; mata mengikuti kepalan kanan.",
+          "Putar sedikit ke kiri; kepalan kiri berputar melewati wajah dan menangkis ke kiri, kepalan kanan ke pinggang; mata mengikuti kepalan kiri.",
+          "Mundurkan kaki kanan menjadi gongbu kiri dan pukulkan kepalan kanan ke depan sebagai kepalan datar, kepalan kiri ke pinggang; pandangan ke kepalan kanan.",
+          "Putar ke kanan menjadi gongbu kanan; putar lengan bawah kiri ke dalam dan gulirkan ke depan kiri bawah sementara lengan kanan yang ditekuk menarik kepalan ke dada kanan, kedua telapak kepalan ke bawah; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Hang and cover as in （三十一）; roll the left forearm in and down so power reaches the ulna side."
+        ],
+        "id": [
+          "Gantung dan tutup seperti （三十一）; gulirkan lengan bawah kiri ke dalam dan ke bawah agar tenaga sampai ke sisi tulang hasta."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 471–473, 图 F-156 to F-161",
+      "start_sec": 299.5,
+      "end_sec": 314.5
+    },
+    {
+      "number": 55,
+      "section": 4,
+      "book_number": 55,
+      "name_zh": "右弓步双推单指",
+      "name_pinyin": "Yòu gōngbù shuāng tuī dānzhǐ",
+      "name_en": "Right Gongbu, Push Twin Single Fingers",
+      "name_id": "Gongbu Kanan, Dorong Dua Jari Tunggal",
+      "steps": {
+        "en": [
+          "The fists become single-finger hands and fold to the chest, then push slowly out to both sides with steady, sunk power; watch the left hand."
+        ],
+        "id": [
+          "Kepalan menjadi tangan jari tunggal dan terlipat ke dada, lalu didorong perlahan ke kedua sisi dengan tenaga mantap dan tenggelam; pandangan ke tangan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Sink the arms with the elbows bent and push down and forward calmly and strongly, keeping a moderate muscle tension; beginners can relax the arms first and add tension later."
+        ],
+        "id": [
+          "Turunkan lengan dengan siku ditekuk dan dorong ke bawah dan ke depan dengan tenang dan kuat, menjaga ketegangan otot sedang; pemula boleh merilekskan lengan dulu lalu menambah ketegangan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 473–474, 图 F-162 to F-164",
+      "start_sec": 314.5,
+      "end_sec": 317.5
+    },
+    {
+      "number": 56,
+      "section": 4,
+      "book_number": 56,
+      "name_zh": "上步挂盖拳",
+      "name_pinyin": "Shàngbù guàgàiquán",
+      "name_en": "Shangbu, Hanging and Covering Punches",
+      "name_id": "Shangbu, Pukulan Menggantung dan Menutup",
+      "steps": {
+        "en": [
+          "Step the left foot forward; the single fingers become fists, the left dropping past the right and swinging up to hang to the left front, the right dropping slightly; the eyes follow the left fist.",
+          "Turn left; cover the right fist over the top and down forward, the left fist swinging naturally back; look ahead."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan; jari tunggal menjadi kepalan, kiri turun melewati kanan lalu berayun naik menggantung ke depan kiri, kanan turun sedikit; mata mengikuti kepalan kiri.",
+          "Putar ke kiri; tutupkan kepalan kanan melewati atas ke depan bawah, kepalan kiri berayun alami ke belakang; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （三十一）."
+        ],
+        "id": [
+          "Sama seperti （三十一）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 474, 图 F-165 to F-166",
+      "start_sec": 317.5,
+      "end_sec": 322.5
+    },
+    {
+      "number": 57,
+      "section": 4,
+      "book_number": 57,
+      "name_zh": "骑龙步抛撞拳",
+      "name_pinyin": "Qílóngbù pāo zhuàngquán",
+      "name_en": "Qilongbu, Throwing Ram Punch",
+      "name_id": "Qilongbu, Pukulan Lempar Hantam",
+      "steps": {
+        "en": [
+          "Step the right foot forward onto the toes in xubu and turn right; the right fist swings over the top to the upper right rear and the left fist opens under the right armpit; the eyes follow the right fist.",
+          "Step the right foot forward, left heel up, into qilongbu; turning left, throw the right fist from below forward and up in a ramming punch, the left palm guarding inside the right upper arm; watch the right fist."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan bertumpu pada ujung kaki dalam xubu dan putar ke kanan; kepalan kanan berayun melewati atas ke kanan belakang atas dan kepalan kiri dibuka di bawah ketiak kanan; mata mengikuti kepalan kanan.",
+          "Langkahkan kaki kanan ke depan, tumit kiri terangkat, menjadi qilongbu; sambil berputar ke kiri, lemparkan kepalan kanan dari bawah ke depan atas dalam pukulan hantam, telapak kiri menjaga sisi dalam lengan atas kanan; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （四十三）."
+        ],
+        "id": [
+          "Sama seperti （四十三）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 475, 图 F-167 to F-168",
+      "start_sec": 322.5,
+      "end_sec": 327.5
+    },
+    {
+      "number": 58,
+      "section": 4,
+      "book_number": 58,
+      "name_zh": "骑龙步冲拳",
+      "name_pinyin": "Qílóngbù chōngquán",
+      "name_en": "Qilongbu, Punch",
+      "name_id": "Qilongbu, Pukulan Lurus",
+      "steps": {
+        "en": [
+          "Shift back into right xubu; wipe the left palm forward over the right forearm and draw the right fist to the waist; the eyes follow the left palm.",
+          "Step the right foot forward, slide the left foot after it with the heel up into qilongbu and turn left; punch the right fist forward as a flat fist, the left palm to the right chest; watch the right fist."
+        ],
+        "id": [
+          "Geser ke belakang menjadi xubu kanan; usapkan telapak kiri ke depan di atas lengan bawah kanan dan tarik kepalan kanan ke pinggang; mata mengikuti telapak kiri.",
+          "Langkahkan kaki kanan ke depan, luncurkan kaki kiri menyusul dengan tumit terangkat menjadi qilongbu dan putar ke kiri; pukulkan kepalan kanan ke depan sebagai kepalan datar, telapak kiri ke dada kanan; pandangan ke kepalan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Right after the step, drag the left foot forward, quickly forming the stance and punching."
+        ],
+        "id": [
+          "Segera setelah melangkah, seret kaki kiri ke depan, cepat membentuk kuda-kuda dan memukul."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 475–476, 图 F-169 to F-170",
+      "start_sec": 327.5,
+      "end_sec": 332.5
+    },
+    {
+      "number": 59,
+      "section": 4,
+      "book_number": 59,
+      "name_zh": "插步鞭拳转身挂盖拳",
+      "name_pinyin": "Chābù biānquán zhuǎnshēn guàgàiquán",
+      "name_en": "Chabu Whip Punch, Turn, Hanging and Covering Punches",
+      "name_id": "Chabu Pukulan Cambuk, Berbalik, Pukulan Menggantung dan Menutup",
+      "steps": {
+        "en": [
+          "Turn left; swing the left palm and right fist level round to the left, the head turning left; the eyes follow the left palm.",
+          "Cross the left foot behind the right; swing-whip the right fist level to the right, the left palm folding to the right chest; watch the right fist.",
+          "Turn back to the left; the left palm becomes a fist and hangs over the top and forward with the turn, the right fist swinging down to the right; the eyes follow the left fist.",
+          "Keep turning left into left gongbu; cover the right fist over the top and down forward, the left fist swinging back; look ahead."
+        ],
+        "id": [
+          "Putar ke kiri; ayunkan telapak kiri dan kepalan kanan datar memutar ke kiri, kepala menoleh ke kiri; mata mengikuti telapak kiri.",
+          "Silangkan kaki kiri di belakang kaki kanan; cambukkan kepalan kanan datar ke kanan, telapak kiri terlipat ke dada kanan; pandangan ke kepalan kanan.",
+          "Berbalik ke kiri; telapak kiri menjadi kepalan dan menggantung melewati atas ke depan mengikuti putaran, kepalan kanan berayun ke bawah ke kanan; mata mengikuti kepalan kiri.",
+          "Terus berputar ke kiri menjadi gongbu kiri; tutupkan kepalan kanan melewati atas ke depan bawah, kepalan kiri berayun ke belakang; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （三十一）."
+        ],
+        "id": [
+          "Sama seperti （三十一）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 476–477, 图 F-171 to F-174",
+      "start_sec": 332.5,
+      "end_sec": 342.5
+    },
+    {
+      "number": 60,
+      "section": 4,
+      "book_number": 60,
+      "name_zh": "弓步架掌",
+      "name_pinyin": "Gōngbù jiàzhǎng",
+      "name_en": "Gongbu, Blocking Palms",
+      "name_id": "Gongbu, Telapak Menangkis",
+      "steps": {
+        "en": [
+          "Step the right foot to the right front into banmabu; the fists open and come to the left waist, palms up; the eyes follow the right palm.",
+          "Turn right into right gongbu; rotate the arms in and block both palms forward and up; look forward and up."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan kanan menjadi banmabu; kepalan dibuka dan ke pinggang kiri, telapak ke atas; mata mengikuti telapak kanan.",
+          "Putar ke kanan menjadi gongbu kanan; putar lengan ke dalam dan tangkiskan kedua telapak ke depan atas; pandangan ke depan atas."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Gather power in banmabu, then turn the waist right and rotate the arms to block."
+        ],
+        "id": [
+          "Himpun tenaga di banmabu, lalu putar pinggang ke kanan dan putar lengan untuk menangkis."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 477, 图 F-175 to F-176",
+      "start_sec": 342.5,
+      "end_sec": 347.5
+    },
+    {
+      "number": 61,
+      "section": 4,
+      "book_number": 61,
+      "name_zh": "转身挂盖退步冲拳",
+      "name_pinyin": "Zhuǎnshēn guàgài tuìbù chōngquán",
+      "name_en": "Turn, Hang and Cover, Tuibu Punch",
+      "name_id": "Berbalik, Gantung dan Tutup, Tuibu Pukulan",
+      "steps": {
+        "en": [
+          "Turn left; the palms become fists, the left hanging over the top and down forward, the right arm rotating out and dropping; the eyes follow the left fist.",
+          "Keep turning left; cover the right fist over the top and down forward, the left fist swinging naturally back; look ahead.",
+          "Turn slightly right and cross the left foot behind the right; bend and rotate the right arm out so the fist circles past the face and blocks to the right; the eyes follow the right fist.",
+          "Bend and rotate the left arm out so the fist circles past the face and blocks to the left, the right fist to the waist; the eyes follow the left fist.",
+          "Step the right foot back and punch the right fist forward as a flat fist, the left fist at the waist; look ahead."
+        ],
+        "id": [
+          "Putar ke kiri; telapak menjadi kepalan, kiri menggantung melewati atas ke depan bawah, lengan kanan berputar ke luar dan turun; mata mengikuti kepalan kiri.",
+          "Terus berputar ke kiri; tutupkan kepalan kanan melewati atas ke depan bawah, kepalan kiri berayun alami ke belakang; pandangan ke depan.",
+          "Putar sedikit ke kanan dan silangkan kaki kiri di belakang kaki kanan; tekuk dan putar lengan kanan ke luar sehingga kepalan berputar melewati wajah dan menangkis ke kanan; mata mengikuti kepalan kanan.",
+          "Tekuk dan putar lengan kiri ke luar sehingga kepalan berputar melewati wajah dan menangkis ke kiri, kepalan kanan ke pinggang; mata mengikuti kepalan kiri.",
+          "Mundurkan kaki kanan dan pukulkan kepalan kanan ke depan sebagai kepalan datar, kepalan kiri di pinggang; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （三十一）."
+        ],
+        "id": [
+          "Sama seperti （三十一）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 478–479, 图 F-177 to F-181",
+      "start_sec": 347.5,
+      "end_sec": 360.0
+    },
+    {
+      "number": 62,
+      "section": 4,
+      "book_number": 62,
+      "name_zh": "左弓步双推掌",
+      "name_pinyin": "Zuǒ gōngbù shuāng tuīzhǎng",
+      "name_en": "Left Gongbu, Double Palm Push",
+      "name_id": "Gongbu Kiri, Dorongan Dua Telapak",
+      "steps": {
+        "en": [
+          "Step the right foot to the left front and turn right; the fists open and come to the right side; look to the left front.",
+          "Step the left foot forward into left gongbu and push both palms forward, fingers up; look ahead and give a shout (“hei”)."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan kiri dan putar ke kanan; kepalan dibuka dan ke sisi kanan; pandangan ke depan kiri.",
+          "Langkahkan kaki kiri ke depan menjadi gongbu kiri dan dorong kedua telapak ke depan, jari ke atas; pandangan ke depan dan keluarkan seruan (“hei”)."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Gongbu, push and shout happen together."
+        ],
+        "id": [
+          "Gongbu, dorongan dan seruan dilakukan bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 479, 图 F-182 to F-184",
+      "start_sec": 360.0,
+      "end_sec": 365.0
+    },
+    {
+      "number": 63,
+      "section": 4,
+      "book_number": 63,
+      "name_zh": "虚步推掌冲拳",
+      "name_pinyin": "Xūbù tuīzhǎng chōngquán",
+      "name_en": "Xubu, Push Palm and Punch",
+      "name_id": "Xubu, Dorong Telapak dan Pukul",
+      "steps": {
+        "en": [
+          "Tread the right foot forward and turn right; the right palm becomes a fist and both bent arms embrace to the right, palm facing the fist face; the eyes follow the left palm.",
+          "Step the left foot to the left front onto the toes in left xubu; punch the right fist and push the left palm forward; look ahead."
+        ],
+        "id": [
+          "Injak kaki kanan ke depan dan putar ke kanan; telapak kanan menjadi kepalan dan kedua lengan yang ditekuk memeluk ke kanan, telapak menghadap muka kepalan; mata mengikuti telapak kiri.",
+          "Langkahkan kaki kiri ke depan kiri bertumpu pada ujung kaki dalam xubu kiri; pukulkan kepalan kanan dan dorong telapak kiri ke depan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The punch, the push and xubu finish together."
+        ],
+        "id": [
+          "Pukulan, dorongan dan xubu selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 480, 图 F-185 to F-186",
+      "start_sec": 365.0,
+      "end_sec": 370.0
+    },
+    {
+      "number": 64,
+      "section": 4,
+      "book_number": 64,
+      "name_zh": "并步抱拳",
+      "name_pinyin": "Bìngbù bàoquán",
+      "name_en": "Bingbu, Fists at the Waist",
+      "name_id": "Bingbu, Kepalan di Pinggang",
+      "steps": {
+        "en": [
+          "Step the left foot back and turn right; the left palm becomes a fist and both fists fold to the right shoulder, fist faces together; the eyes follow the right fist.",
+          "Step the right foot and then the left foot back and close the feet; the fists hang over the top and forward-down, then return to the waist; look ahead."
+        ],
+        "id": [
+          "Mundurkan kaki kiri dan putar ke kanan; telapak kiri menjadi kepalan dan kedua kepalan terlipat ke bahu kanan, muka kepalan berhadapan; mata mengikuti kepalan kanan.",
+          "Mundurkan kaki kanan lalu kaki kiri dan rapatkan kaki; kepalan menggantung melewati atas ke depan bawah, lalu kembali ke pinggang; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Close the feet as the fists come to the waist."
+        ],
+        "id": [
+          "Rapatkan kaki saat kepalan kembali ke pinggang."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 481, 图 F-187 to F-189",
+      "start_sec": 370.0,
+      "end_sec": 375.0
+    },
+    {
+      "number": 65,
+      "section": 99,
+      "book_number": null,
+      "name_zh": "收势",
+      "name_pinyin": "Shōushì",
+      "name_en": "Closing Form",
+      "name_id": "Sikap Penutup",
+      "steps": {
+        "en": [
+          "Open the fists and lower the palms to hang at the sides; look ahead."
+        ],
+        "id": [
+          "Buka kepalan dan turunkan telapak tergantung di samping badan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Open the fists and let the hands drop straight down."
+        ],
+        "id": [
+          "Buka kepalan dan biarkan tangan turun lurus."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Fist, p. 481, 图 F-190",
+      "start_sec": 375.0,
+      "end_sec": 378.0
+    }
+  ]
+}

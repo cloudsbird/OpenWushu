@@ -15,7 +15,7 @@
   </div>
   <div class="detail__body">
     <div class="detail__title">
-      <span class="detail__vnum" aria-hidden="true">第<%= movement.cn_number %>式</span>
+      <span class="detail__vnum" aria-hidden="true"><%= movement.cn_label %></span>
       <div class="detail__names">
         <span class="detail__meta"><%= movement.number %> / <%= total_count %> · <%= clock(movement.start_sec) %>–<%= clock(movement.end_sec) %></span>
         <h2><%= movement.name_zh %></h2>

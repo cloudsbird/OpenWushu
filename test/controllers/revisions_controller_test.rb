@@ -9,7 +9,7 @@ class RevisionsControllerTest < ActionDispatch::IntegrationTest
   def form(**overrides)
     { revision: { name_en: @movement.name_en, name_id: @movement.name_id,
                   steps_en: "Turn the body right.\n\nShift weight forward.", steps_id: "Putar badan ke kanan.",
-                  summary: "Wrote the steps", source: "Competition routines collection (scan), p. 600" }.merge(overrides) }
+                  summary: "Wrote the steps", source: "IWUF 1st Compulsory Routines (B Junior), p. 600" }.merge(overrides) }
   end
 
   test "the history is public and lists published revisions" do

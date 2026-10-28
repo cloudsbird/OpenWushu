@@ -1,0 +1,2081 @@
+{
+  "routine": {
+    "slug": "broadsword",
+    "style": "chang",
+    "name_zh": "刀术",
+    "name_pinyin": "Dāoshù",
+    "name_en": "Broadsword",
+    "name_id": "Golok",
+    "card_zh": "刀",
+    "reference_page": 69,
+    "reference_figure": "B",
+    "position": 11,
+    "status": "awaiting"
+  },
+  "movements": [
+    {
+      "number": 1,
+      "section": 1,
+      "book_number": 1,
+      "name_zh": "预备势",
+      "name_pinyin": "Yùbèishì",
+      "name_en": "Ready Stance",
+      "name_id": "Sikap Siap",
+      "steps": {
+        "en": [
+          "Stand with the feet together; the left hand holds the broadsword against the left side and the right arm hangs naturally; look ahead."
+        ],
+        "id": [
+          "Berdiri dengan kaki rapat; tangan kiri memegang golok di sisi kiri dan lengan kanan tergantung wajar; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Left-hand grip: index and middle fingers either side of the handle, index finger and thumb over the guard, the other fingers under it; the guard rests against the inner arm, edge forward, tip up."
+        ],
+        "id": [
+          "Pegangan tangan kiri: telunjuk dan jari tengah mengapit gagang, telunjuk dan ibu jari di atas pelindung, jari lain di bawahnya; pelindung menempel di sisi dalam lengan, mata golok ke depan, ujung ke atas."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 71, 图 B-1",
+      "start_sec": 0.0,
+      "end_sec": 3.0
+    },
+    {
+      "number": 2,
+      "section": 1,
+      "book_number": 2,
+      "name_zh": "抱刀右冲拳",
+      "name_pinyin": "Bàodāo yòu chōngquán",
+      "name_en": "Hold Sword, Right Punch",
+      "name_id": "Memeluk Golok, Pukulan Kanan",
+      "steps": {
+        "en": [
+          "Swing the left arm with the sword straight forward and up; make a right fist at the right waist, fist-heart up.",
+          "Bend the left arm to bring the sword back to the left waist while punching the right fist out level to the right front at shoulder height; look to the right front."
+        ],
+        "id": [
+          "Ayunkan lengan kiri yang memegang golok lurus ke depan atas; kepalkan tangan kanan di pinggang kanan, telapak kepalan menghadap atas.",
+          "Tekuk lengan kiri membawa golok kembali ke pinggang kiri sambil memukulkan kepalan kanan datar ke depan kanan setinggi bahu; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Sword back and punch out together; twist the waist and extend the shoulder, power reaching the face of the fist."
+        ],
+        "id": [
+          "Golok kembali dan pukulan keluar bersamaan; pinggang memutar dan bahu menjulur, tenaga sampai ke muka kepalan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 72, 图 B-2 to B-3",
+      "start_sec": 3.0,
+      "end_sec": 8.0
+    },
+    {
+      "number": 3,
+      "section": 1,
+      "book_number": 3,
+      "name_zh": "抱刀分手亮掌",
+      "name_pinyin": "Bàodāo fēnshǒu liàngzhǎng",
+      "name_en": "Hold Sword, Part Hands, Flash Palm",
+      "name_id": "Memeluk Golok, Pisah Tangan, Telapak Kilat",
+      "steps": {
+        "en": [
+          "Step the left foot half a step left and swing the sword back to the left; the right fist opens and swings past the belly to below the left upper arm as a standing palm; look to the left front.",
+          "Turn back to the right, weight on the left leg, right toes touching down; both hands arc over the head to the right front, the sword arm level and the right hand inside the left arm; look to the right front.",
+          "Twist right, swinging both hands down and right; hold the sword at the right chest with the right hand on the handle.",
+          "Turn left, swinging the hands up and forward, and hold the sword at the chest.",
+          "Stand on the straight right leg and step the left foot in front into qiandianbu; both hands swing down past the belly and out: the right flashes a palm above the head, the left holds the sword straight along the arm at the left side; turn the head to look to the left front."
+        ],
+        "id": [
+          "Langkahkan kaki kiri setengah langkah ke kiri dan ayunkan golok ke kiri belakang; kepalan kanan dibuka dan diayun melewati perut ke bawah lengan atas kiri sebagai telapak tegak; pandangan ke depan kiri.",
+          "Putar badan ke kanan belakang, berat di kaki kiri, ujung kaki kanan menyentuh lantai; kedua tangan melengkung di atas kepala ke depan kanan, lengan golok datar dan tangan kanan di sisi dalam lengan kiri; pandangan ke depan kanan.",
+          "Putar ke kanan, ayunkan kedua tangan ke bawah dan ke kanan; pegang golok di depan dada kanan dengan tangan kanan di atas gagang.",
+          "Putar ke kiri, ayunkan tangan ke atas dan ke depan, dan pegang golok di depan dada.",
+          "Berdiri di kaki kanan lurus dan langkahkan kaki kiri ke depan menjadi qiandianbu; kedua tangan diayun turun melewati perut lalu ke samping: kanan menjadi telapak kilat di atas kepala, kiri memegang golok lurus sepanjang lengan di sisi kiri; tolehkan kepala ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Know the path of sword and arms; toe point, sword swing, flashing palm and head turn finish together, chest open, abdomen in, waist upright.",
+          "Learn it slowly first; before the final pose the right hand can push the handle to add speed."
+        ],
+        "id": [
+          "Pahami lintasan golok dan lengan; tutulan kaki, ayunan golok, telapak kilat dan tolehan kepala selesai bersamaan, dada terbuka, perut ditarik, pinggang tegak.",
+          "Pelajari pelan-pelan dulu; sebelum pose akhir tangan kanan boleh mendorong gagang untuk menambah kecepatan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 72–74, 图 B-4 to B-8",
+      "start_sec": 8.0,
+      "end_sec": 20.5
+    },
+    {
+      "number": 4,
+      "section": 1,
+      "book_number": 4,
+      "name_zh": "单拍脚",
+      "name_pinyin": "Dān pāijiǎo",
+      "name_en": "Single Slap Kick",
+      "name_id": "Tepuk Kaki Tunggal",
+      "steps": {
+        "en": [
+          "Turn right and step the left foot half a step back to the left; the sword hand drops in front of the left leg and the right hand comes past the face to the left chest as a standing palm; look to the right front.",
+          "Turn left; swing the sword arm straight right, up and over to the left front while the right arm swings straight down past the belly and out to the right; look to the left front.",
+          "Stand on the straight left leg and kick the right leg up; slap the instep with the right hand while the sword hand drops to the left side."
+        ],
+        "id": [
+          "Putar ke kanan dan mundurkan kaki kiri setengah langkah ke kiri belakang; tangan golok turun di depan kaki kiri dan tangan kanan lewat depan wajah ke dada kiri sebagai telapak tegak; pandangan ke depan kanan.",
+          "Putar ke kiri; ayunkan lengan golok lurus ke kanan, ke atas lalu ke depan kiri sementara lengan kanan diayun lurus ke bawah melewati perut lalu ke kanan; pandangan ke depan kiri.",
+          "Berdiri di kaki kiri lurus dan tendangkan kaki kanan ke atas; tepuk punggung kaki dengan tangan kanan sementara tangan golok turun ke sisi kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Tense the right forearm and cup the palm slightly so the slap is accurate and loud; keep the trunk upright and the kicking knee straight, instep stretched."
+        ],
+        "id": [
+          "Tegangkan lengan bawah kanan dan cekungkan sedikit telapak agar tepukan tepat dan nyaring; badan tetap tegak dan lutut kaki penendang lurus, punggung kaki diluruskan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 75–76, 图 B-9 to B-11",
+      "start_sec": 20.5,
+      "end_sec": 28.0
+    },
+    {
+      "number": 5,
+      "section": 1,
+      "book_number": 5,
+      "name_zh": "翻腰拍地",
+      "name_pinyin": "Fānyāo pāidì",
+      "name_en": "Turn Over the Waist, Slap the Floor",
+      "name_id": "Balik Pinggang, Tepuk Lantai",
+      "steps": {
+        "en": [
+          "Set the right foot down behind; swing the sword up and bring the right hand to the inside of the left upper arm as a standing palm.",
+          "Cross the left foot behind the right, half squat and lean forward; both straight arms arc down past the belly to the right, the right hand at the right side and the sword held at the right chest.",
+          "Turn the trunk over to the left, chest and hips open, pivoting both feet; the sword arm circles left and up in a vertical circle as the right arm swings down and left.",
+          "Step the right foot forward, turn 90°, squat fully and lean forward; the sword swings down and back to the left while the right arm circles up, forward and down to slap the floor; look down ahead."
+        ],
+        "id": [
+          "Turunkan kaki kanan ke belakang; ayunkan golok ke atas dan bawa tangan kanan ke sisi dalam lengan atas kiri sebagai telapak tegak.",
+          "Silangkan kaki kiri di belakang kaki kanan, setengah jongkok dan condong ke depan; kedua lengan lurus melengkung turun melewati perut ke kanan, tangan kanan di sisi kanan dan golok di depan dada kanan.",
+          "Balikkan badan ke kiri, dada dan pinggul terbuka, kedua kaki berporos; lengan golok berputar ke kiri dan ke atas dalam lingkaran vertikal sementara lengan kanan berayun ke bawah dan ke kiri.",
+          "Langkahkan kaki kanan ke depan, putar 90°, jongkok penuh dan condong ke depan; golok diayun ke bawah dan ke kiri belakang sementara lengan kanan berputar ke atas, ke depan dan ke bawah menepuk lantai; pandangan ke depan bawah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The arms swing in vertical circles while the waist turns over; smooth, linked and quick.",
+          "Practise the arm swing and waist turn empty-handed first, shoulders relaxed."
+        ],
+        "id": [
+          "Lengan berayun dalam lingkaran vertikal saat pinggang berbalik; luwes, bersambung dan cepat.",
+          "Latih ayunan lengan dan balikan pinggang tanpa senjata dulu, bahu rileks."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 76–77, 图 B-12 to B-15",
+      "start_sec": 28.0,
+      "end_sec": 38.0
+    },
+    {
+      "number": 6,
+      "section": 1,
+      "book_number": 6,
+      "name_zh": "剪腕花左右扎刀",
+      "name_pinyin": "Jiǎnwànhuā zuǒyòu zhādāo",
+      "name_en": "Wrist Flower, Thrust Left and Right",
+      "name_id": "Bunga Pergelangan, Tusuk Kiri dan Kanan",
+      "steps": {
+        "en": [
+          "Straighten up, step the left foot forward and turn back to the right; the sword swings down, forward and up to the right front, where the right hand takes the handle.",
+          "With the wrist as the axis, circle the sword up, right and down along the outside of the right arm one and a half times; the left hand lets go and rests inside the right upper arm.",
+          "Turn left and step the right foot forward; rotate the sword arm in and thrust the upright blade down and out to the right, the left hand coming past the belly to the inside of the right upper arm; look to the right front.",
+          "Turn left and step the left foot back; thrust again in the same way to the right; look to the right front."
+        ],
+        "id": [
+          "Tegakkan badan, langkahkan kaki kiri ke depan dan putar ke kanan belakang; golok diayun ke bawah, ke depan lalu ke depan kanan atas, di mana tangan kanan mengambil gagang.",
+          "Dengan pergelangan sebagai poros, putar golok ke atas, ke kanan dan ke bawah di sisi luar lengan kanan satu setengah kali; tangan kiri melepas dan menempel di sisi dalam lengan atas kanan.",
+          "Putar ke kiri dan langkahkan kaki kanan ke depan; putar lengan golok ke dalam dan tusukkan bilah tegak ke bawah lalu ke kanan, tangan kiri lewat perut ke sisi dalam lengan atas kanan; pandangan ke depan kanan.",
+          "Putar ke kiri dan mundurkan kaki kiri; tusuk lagi dengan cara yang sama ke kanan; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The wrist flower makes vertical circles; thrusts and steps are quick and linked, the arm and sword in one line with power at the tip."
+        ],
+        "id": [
+          "Bunga pergelangan membentuk lingkaran vertikal; tusukan dan langkah cepat dan bersambung, lengan dan golok satu garis dengan tenaga di ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 77–79, 图 B-16 to B-21",
+      "start_sec": 38.0,
+      "end_sec": 48.0
+    },
+    {
+      "number": 7,
+      "section": 1,
+      "book_number": 7,
+      "name_zh": "转身缠头刀",
+      "name_pinyin": "Zhuǎnshēn chántóudāo",
+      "name_en": "Turn, Wrap Sword Around the Head",
+      "name_id": "Berbalik, Golok Membelit Kepala",
+      "steps": {
+        "en": [
+          "Turn left; the sword wraps left past the outside of the left arm and round behind the back, spine of the blade against the body, tip down, the left arm opening straight to the left.",
+          "Turn left and step the right foot forward; sweep the sword level round from behind to the right, the left hand raised at the left side.",
+          "Turn slightly left and wrap the sword round the head again, the left arm folding to the chest and then opening to the left.",
+          "Turn left and step the left foot back; the sword circles to the right, the left hand raised at the left side.",
+          "Shift both feet half a step back together and lean forward; chop diagonally down to the left and stop with the bent arm at the left ribs, edge left and tip to the upper left, the left arm folded to the chest; look down ahead."
+        ],
+        "id": [
+          "Putar ke kiri; golok membelit ke kiri melewati sisi luar lengan kiri dan memutar ke belakang punggung, punggung bilah menempel badan, ujung ke bawah, lengan kiri terbuka lurus ke kiri.",
+          "Putar ke kiri dan langkahkan kaki kanan ke depan; sapukan golok datar dari belakang ke kanan, tangan kiri terangkat di sisi kiri.",
+          "Putar sedikit ke kiri dan belitkan golok mengelilingi kepala lagi, lengan kiri terlipat ke dada lalu terbuka ke kiri.",
+          "Putar ke kiri dan mundurkan kaki kiri; golok berputar ke kanan, tangan kiri terangkat di sisi kiri.",
+          "Geser kedua kaki setengah langkah ke belakang bersamaan dan condong ke depan; bacok serong ke kiri bawah lalu berhenti dengan lengan ditekuk di rusuk kiri, mata golok ke kiri dan ujung ke kiri atas, lengan kiri terlipat ke dada; pandangan ke depan bawah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "In both wraps keep the spine of the blade on the body, lift the right elbow and hold the head upright; sweep with the blade level, fast and strong."
+        ],
+        "id": [
+          "Pada kedua belitan punggung bilah menempel badan, siku kanan terangkat dan kepala tegak; sapuan dengan bilah datar, cepat dan kuat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 79–80, 图 B-22 to B-26",
+      "start_sec": 48.0,
+      "end_sec": 60.5
+    },
+    {
+      "number": 8,
+      "section": 1,
+      "book_number": 8,
+      "name_zh": "撩刀回身平扫",
+      "name_pinyin": "Liāodāo huíshēn píngsǎo",
+      "name_en": "Upward Slice, Turn Back and Sweep Level",
+      "name_id": "Sabetan ke Atas, Berbalik dan Sapuan Datar",
+      "steps": {
+        "en": [
+          "Straighten up and slice the sword forward and up, the left hand dropping to the left side; look up ahead.",
+          "Swing the right leg back and lean back; rotate the arm out and circle the sword back along the outside of the right arm with the wrist as the axis, edge up.",
+          "Set the right foot down behind and half squat, turning first slightly left then right; chop down to the left and then sweep level to the right, the left hand pressing on the right forearm and then opening to the left; watch the blade."
+        ],
+        "id": [
+          "Tegakkan badan dan sabetkan golok ke depan atas, tangan kiri turun ke sisi kiri; pandangan ke depan atas.",
+          "Ayunkan kaki kanan ke belakang dan condongkan badan ke belakang; putar lengan ke luar dan putar golok ke belakang di sisi luar lengan kanan dengan pergelangan sebagai poros, mata golok ke atas.",
+          "Turunkan kaki kanan di belakang dan setengah jongkok, putar sedikit ke kiri lalu ke kanan; bacok ke kiri bawah lalu sapukan datar ke kanan, tangan kiri menekan lengan bawah kanan lalu terbuka ke kiri; pandangan ke bilah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Keep the wrist loose and let the waist lead the arm; the slice is soft with power in the front of the edge, the sweep level, fast and strong."
+        ],
+        "id": [
+          "Pergelangan longgar dan pinggang memimpin lengan; sabetan lembut dengan tenaga di bagian depan mata golok, sapuan datar, cepat dan kuat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 81–83, 图 B-27 to B-30",
+      "start_sec": 60.5,
+      "end_sec": 68.0
+    },
+    {
+      "number": 9,
+      "section": 1,
+      "book_number": 9,
+      "name_zh": "剪腕花分手点刀",
+      "name_pinyin": "Jiǎnwànhuā fēnshǒu diǎndāo",
+      "name_en": "Wrist Flower, Part Hands, Peck with the Tip",
+      "name_id": "Bunga Pergelangan, Pisah Tangan, Patuk dengan Ujung",
+      "steps": {
+        "en": [
+          "Rotate the arm out and flick the sword up, the left hand coming to the inside of the right elbow.",
+          "Shift onto the left leg and circle the sword down along the inside of the right arm with the wrist as the axis.",
+          "Lift the right foot to the inside of the left calf and circle the sword down along the outside of the right arm.",
+          "Stamp the right foot and step the left foot out to the left; peck the tip down to the right while the left arm reaches straight up diagonally to the left."
+        ],
+        "id": [
+          "Putar lengan ke luar dan cungkil golok ke atas, tangan kiri ke sisi dalam siku kanan.",
+          "Pindahkan berat ke kaki kiri dan putar golok ke bawah di sisi dalam lengan kanan dengan pergelangan sebagai poros.",
+          "Angkat kaki kanan ke sisi dalam betis kiri dan putar golok ke bawah di sisi luar lengan kanan.",
+          "Hentakkan kaki kanan dan langkahkan kaki kiri ke kiri; patukkan ujung golok ke kanan bawah sementara lengan kiri menjulur lurus serong ke kiri atas."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The flower turns on the wrist in vertical circles close to the body on both sides of the arm; for the peck lift the wrist and snap the tip down; peck, stamp and parting hands finish together."
+        ],
+        "id": [
+          "Bunga berputar pada pergelangan dalam lingkaran vertikal dekat badan di kedua sisi lengan; untuk patukan angkat pergelangan dan hentakkan ujung ke bawah; patukan, hentakan kaki dan pisah tangan selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 83–84, 图 B-31 to B-34",
+      "start_sec": 68.0,
+      "end_sec": 78.0
+    },
+    {
+      "number": 10,
+      "section": 1,
+      "book_number": 10,
+      "name_zh": "缠头旋风脚",
+      "name_pinyin": "Chántóu xuànfēngjiǎo",
+      "name_en": "Wrap Around the Head, Whirlwind Kick",
+      "name_id": "Belit Kepala, Tendangan Angin Puyuh",
+      "steps": {
+        "en": [
+          "Turn slightly left and wrap the sword round the head, the left arm folding to the chest and opening to the left.",
+          "Turn back through the left and step the right foot to the left; sweep the sword level to the left.",
+          "Keep turning, step the left foot to the left and wrap the sword round the head again, the left arm opening to the left.",
+          "Keep turning, step the right foot to the left on the ball of the foot; the sword circles up and the left hand comes inside the right upper arm.",
+          "Jump off the right foot, swing the left leg up and turn left in the air, sweeping the straight right leg inward; the sword sweeps level down to the left ribs and the left hand slaps the right sole in front of the forehead."
+        ],
+        "id": [
+          "Putar sedikit ke kiri dan belitkan golok mengelilingi kepala, lengan kiri terlipat ke dada lalu terbuka ke kiri.",
+          "Berbalik melalui kiri dan langkahkan kaki kanan ke kiri; sapukan golok datar ke kiri.",
+          "Terus berputar, langkahkan kaki kiri ke kiri dan belitkan golok mengelilingi kepala lagi, lengan kiri terbuka ke kiri.",
+          "Terus berputar, langkahkan kaki kanan ke kiri bertumpu pada telapak depan; golok berputar ke atas dan tangan kiri ke sisi dalam lengan atas kanan.",
+          "Lompat dari kaki kanan, ayunkan kaki kiri ke atas dan berputar ke kiri di udara, sapukan kaki kanan lurus ke dalam; golok menyapu datar ke rusuk kiri dan tangan kiri menepuk telapak kaki kanan di depan dahi."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Wrap with the spine on the body and the trunk upright; arm swing, push-off, turn and inside kick are linked; the slap is accurate and loud."
+        ],
+        "id": [
+          "Belitan dengan punggung bilah di badan dan badan tegak; ayunan lengan, tolakan, putaran dan tendangan dalam bersambung; tepukan tepat dan nyaring."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 85–87, 图 B-35 to B-39",
+      "start_sec": 78.0,
+      "end_sec": 90.5
+    },
+    {
+      "number": 11,
+      "section": 1,
+      "book_number": 11,
+      "name_zh": "马步藏刀",
+      "name_pinyin": "Mǎbù cángdāo",
+      "name_en": "Mabu, Hide the Sword",
+      "name_id": "Mabu, Sembunyikan Golok",
+      "steps": {
+        "en": [
+          "Turning left in the air, land on both feet into mabu; hide the sword under the left armpit, tip to the upper left rear, and flash the left palm above the head; look to the right front."
+        ],
+        "id": [
+          "Sambil berputar ke kiri di udara, mendarat dengan kedua kaki menjadi mabu; sembunyikan golok di bawah ketiak kiri, ujung ke kiri belakang atas, dan kilatkan telapak kiri di atas kepala; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Hiding the sword, flashing the palm and mabu finish together; practise the whirlwind kick into mabu empty-handed first."
+        ],
+        "id": [
+          "Menyembunyikan golok, telapak kilat dan mabu selesai bersamaan; latih tendangan angin puyuh ke mabu tanpa senjata dulu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 88, 图 B-40",
+      "start_sec": 90.5,
+      "end_sec": 93.5
+    },
+    {
+      "number": 12,
+      "section": 1,
+      "book_number": 12,
+      "name_zh": "并步斩刀",
+      "name_pinyin": "Bìngbù zhǎndāo",
+      "name_en": "Bingbu, Level Chop",
+      "name_id": "Bingbu, Tebasan Datar",
+      "steps": {
+        "en": [
+          "Cross the left foot behind the right and sweep the sword level forward and to the right.",
+          "Turn left and step the right foot back; wrap the sword behind the back to the left shoulder, spine on the shoulder, tip back, left hand to the right chest.",
+          "Bring the left foot to the right and stand straight, turning right; chop level forward and to the right, palm down and tip forward, while the left palm blocks above the head; look to the right front."
+        ],
+        "id": [
+          "Silangkan kaki kiri di belakang kaki kanan dan sapukan golok datar ke depan dan ke kanan.",
+          "Putar ke kiri dan mundurkan kaki kanan; belitkan golok di belakang punggung ke bahu kiri, punggung bilah di bahu, ujung ke belakang, tangan kiri ke dada kanan.",
+          "Bawa kaki kiri ke kaki kanan dan berdiri lurus, putar ke kanan; tebas datar ke depan dan ke kanan, telapak menghadap bawah dan ujung ke depan, sementara telapak kiri menangkis di atas kepala; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Keep the blade on the body when wrapping; the chop and closing the feet happen together."
+        ],
+        "id": [
+          "Bilah menempel badan saat membelit; tebasan dan merapatkan kaki dilakukan bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 88–89, 图 B-41 to B-43",
+      "start_sec": 93.5,
+      "end_sec": 101.0
+    },
+    {
+      "number": 13,
+      "section": 1,
+      "book_number": 13,
+      "name_zh": "缠头刀",
+      "name_pinyin": "Chántóudāo",
+      "name_en": "Wrap Sword Around the Head",
+      "name_id": "Golok Membelit Kepala",
+      "steps": {
+        "en": [
+          "Step the left foot to the left and wrap the sword round behind, spine on the body, tip down, the left arm folding to the chest and opening to the left.",
+          "Turn left and bend the left knee; sweep the sword level across the front to the left armpit, edge left and tip to the upper rear, the left hand to the right chest; look ahead."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke kiri dan belitkan golok ke belakang, punggung bilah di badan, ujung ke bawah, lengan kiri terlipat ke dada lalu terbuka ke kiri.",
+          "Putar ke kiri dan tekuk lutut kiri; sapukan golok datar melintasi depan ke ketiak kiri, mata golok ke kiri dan ujung ke belakang atas, tangan kiri ke dada kanan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Let the turning wrist lift the elbow so the spine of the blade slides along the shoulders and back, the left hand working with it."
+        ],
+        "id": [
+          "Biarkan putaran pergelangan mengangkat siku agar punggung bilah meluncur di bahu dan punggung, tangan kiri bekerja bersamanya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 90, 图 B-44 to B-45",
+      "start_sec": 101.0,
+      "end_sec": 106.0
+    },
+    {
+      "number": 14,
+      "section": 1,
+      "book_number": 14,
+      "name_zh": "剪腕花上扎刀",
+      "name_pinyin": "Jiǎnwànhuā shàng zhādāo",
+      "name_en": "Wrist Flower, Thrust Up",
+      "name_id": "Bunga Pergelangan, Tusuk ke Atas",
+      "steps": {
+        "en": [
+          "Turn right and sweep the sword level to the right, the left arm opening straight to the left.",
+          "Shift onto the left leg; circle the sword down inside the right arm and up with the wrist as the axis, ending at the right side with the tip up and edge left; the left hand presses on the right wrist.",
+          "Shift onto the right leg and step the left foot in front into qiandianbu; thrust the sword straight up, edge forward, while the left hand presses beside the left hip and the head turns left; look to the left front."
+        ],
+        "id": [
+          "Putar ke kanan dan sapukan golok datar ke kanan, lengan kiri terbuka lurus ke kiri.",
+          "Pindahkan berat ke kaki kiri; putar golok ke bawah di sisi dalam lengan kanan lalu ke atas dengan pergelangan sebagai poros, berakhir di sisi kanan dengan ujung ke atas dan mata golok ke kiri; tangan kiri menekan pergelangan kanan.",
+          "Pindahkan berat ke kaki kanan dan langkahkan kaki kiri ke depan menjadi qiandianbu; tusukkan golok lurus ke atas, mata golok ke depan, sementara tangan kiri menekan di samping pinggul kiri dan kepala menoleh ke kiri; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Loose wrist in the flower; toe point, upward thrust and head turn finish together; chest open, waist upright, knee straight, left instep stretched."
+        ],
+        "id": [
+          "Pergelangan longgar pada bunga; tutulan kaki, tusukan ke atas dan tolehan kepala selesai bersamaan; dada terbuka, pinggang tegak, lutut lurus, punggung kaki kiri diluruskan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 91–92, 图 B-46 to B-48",
+      "start_sec": 106.0,
+      "end_sec": 113.5
+    },
+    {
+      "number": 15,
+      "section": 1,
+      "book_number": 15,
+      "name_zh": "弓步崩刀",
+      "name_pinyin": "Gōngbù bēngdāo",
+      "name_en": "Gongbu, Snap the Sword Up",
+      "name_id": "Gongbu, Sentak Golok ke Atas",
+      "steps": {
+        "en": [
+          "Swing the sword down and left to the outside of the left upper arm, tip to the upper rear; the left hand presses on the right wrist.",
+          "Turn left and cross the left foot behind the right on the ball of the foot, knees slightly bent; wrap the sword round the left shoulder to behind the back, tip down, the left arm opening straight to the left.",
+          "Step the right foot to the right into right gongbu; the sword circles right and down and, at the left leg, snaps up to the left, tip to the upper left, with the left hand on the right wrist; look right, then to the left front."
+        ],
+        "id": [
+          "Ayunkan golok ke bawah dan ke kiri ke sisi luar lengan atas kiri, ujung ke belakang atas; tangan kiri menekan pergelangan kanan.",
+          "Putar ke kiri dan silangkan kaki kiri di belakang kaki kanan bertumpu pada telapak depan, lutut sedikit ditekuk; belitkan golok melewati bahu kiri ke belakang punggung, ujung ke bawah, lengan kiri terbuka lurus ke kiri.",
+          "Langkahkan kaki kanan ke kanan menjadi gongbu kanan; golok berputar ke kanan dan ke bawah lalu di depan kaki kiri disentakkan ke kiri atas, ujung ke kiri atas, tangan kiri di pergelangan kanan; pandangan ke kanan, lalu ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Gongbu and the snap finish together; sink the wrist and jerk the tip up, power in the tip."
+        ],
+        "id": [
+          "Gongbu dan sentakan selesai bersamaan; turunkan pergelangan dan sentakkan ujung ke atas, tenaga di ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 92–93, 图 B-49 to B-51",
+      "start_sec": 113.5,
+      "end_sec": 121.0
+    },
+    {
+      "number": 16,
+      "section": 2,
+      "book_number": 16,
+      "name_zh": "左挂刀",
+      "name_pinyin": "Zuǒ guàdāo",
+      "name_en": "Hook the Sword Left",
+      "name_id": "Kait Golok ke Kiri",
+      "steps": {
+        "en": [
+          "Turn right and raise the left heel; the sword travels forward, down and back past the outside of the right leg, arm and blade in line, edge up, while the left palm pushes forward; look to the left front.",
+          "Twist back to the left, lift the left knee and step forward, toes out; the sword travels up, forward and down past the outside of the left leg, hooking to the left with the tip pointing left, left hand on the right wrist; look down to the left."
+        ],
+        "id": [
+          "Putar ke kanan dan angkat tumit kiri; golok bergerak ke depan, ke bawah dan ke belakang melewati sisi luar kaki kanan, lengan dan bilah segaris, mata golok ke atas, sementara telapak kiri mendorong ke depan; pandangan ke depan kiri.",
+          "Putar badan ke kiri belakang, angkat lutut kiri dan melangkah ke depan, ujung kaki ke luar; golok bergerak ke atas, ke depan dan ke bawah melewati sisi luar kaki kiri, mengait ke kiri dengan ujung ke kiri, tangan kiri di pergelangan kanan; pandangan ke kiri bawah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slow then fast: push and draw back slowly, hook quickly; the tip hooks from front to down and back close to the body, elbow bent and wrist hooked."
+        ],
+        "id": [
+          "Lambat lalu cepat: dorong dan tarik pelan, kait dengan cepat; ujung mengait dari depan ke bawah lalu ke belakang dekat badan, siku ditekuk dan pergelangan ditekuk."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 93–94, 图 B-52 to B-54",
+      "start_sec": 121.0,
+      "end_sec": 126.0
+    },
+    {
+      "number": 17,
+      "section": 2,
+      "book_number": 17,
+      "name_zh": "上步撩刀",
+      "name_pinyin": "Shàngbù liāodāo",
+      "name_en": "Shangbu, Upward Slice",
+      "name_id": "Shangbu, Sabetan ke Atas",
+      "steps": {
+        "en": [
+          "Turn back through the left, lift the right knee and step across in front of the left leg to the right; the sword slices up past the outside of the right leg, tip forward and edge up, while the left palm blocks above the head; watch the blade."
+        ],
+        "id": [
+          "Berbalik melalui kiri, angkat lutut kanan dan melangkah melintasi depan kaki kiri ke kanan; golok menyabet ke atas melewati sisi luar kaki kanan, ujung ke depan dan mata golok ke atas, sementara telapak kiri menangkis di atas kepala; pandangan ke bilah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Rotate the forearm out and let the waist lead the arm in an arc close to the body, power in the front of the edge; step the right foot a little early."
+        ],
+        "id": [
+          "Putar lengan bawah ke luar dan biarkan pinggang memimpin lengan dalam busur dekat badan, tenaga di bagian depan mata golok; langkah kaki kanan sedikit lebih awal."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 95–96, 图 B-55",
+      "start_sec": 126.0,
+      "end_sec": 129.0
+    },
+    {
+      "number": 18,
+      "section": 2,
+      "book_number": 18,
+      "name_zh": "剪腕花分手扎刀",
+      "name_pinyin": "Jiǎnwànhuā fēnshǒu zhādāo",
+      "name_en": "Wrist Flower, Part Hands, Thrust",
+      "name_id": "Bunga Pergelangan, Pisah Tangan, Tusuk",
+      "steps": {
+        "en": [
+          "Turn left with the legs crossed; the straight arm takes the sword up and left, then the wrist circles it down along the inside of the right arm and the sword is held at the chest, edge up; the left hand circles down the left side and back and presses on the right hand; watch the blade.",
+          "Step the right foot in gaibu across in front of the left, the left foot swinging out to the right; thrust the upright blade to the right while the left hand reaches out to the left; look to the right front."
+        ],
+        "id": [
+          "Putar ke kiri dengan kaki menyilang; lengan lurus membawa golok ke atas dan ke kiri, lalu pergelangan memutarnya ke bawah di sisi dalam lengan kanan dan golok dipegang di depan dada, mata golok ke atas; tangan kiri berputar turun di sisi kiri ke belakang lalu menekan tangan kanan; pandangan ke bilah.",
+          "Langkahkan kaki kanan secara gaibu di depan kaki kiri, kaki kiri berayun ke kanan; tusukkan bilah tegak ke kanan sementara tangan kiri menjulur ke kiri; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The flower circles vertically close to the body with a loose wrist; the thrust reaches the tip."
+        ],
+        "id": [
+          "Bunga berputar vertikal dekat badan dengan pergelangan longgar; tusukan sampai ke ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 96–97, 图 B-56 to B-58",
+      "start_sec": 129.0,
+      "end_sec": 134.0
+    },
+    {
+      "number": 19,
+      "section": 2,
+      "book_number": 19,
+      "name_zh": "回身上撩刀",
+      "name_pinyin": "Huíshēn shàng liāodāo",
+      "name_en": "Turn Back, Upward Slice",
+      "name_id": "Berbalik, Sabetan ke Atas",
+      "steps": {
+        "en": [
+          "Turn left and step the left foot to the left; slice the sword down past the outside of the right leg and up to the upper left, the left hand on the right forearm; watch the blade."
+        ],
+        "id": [
+          "Putar ke kiri dan langkahkan kaki kiri ke kiri; sabetkan golok ke bawah melewati sisi luar kaki kanan lalu ke kiri atas, tangan kiri di lengan bawah kanan; pandangan ke bilah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Forearm rotated out, palm up; the waist leads and the trunk twists left; power in the front of the edge."
+        ],
+        "id": [
+          "Lengan bawah diputar ke luar, telapak menghadap atas; pinggang memimpin dan badan memutar ke kiri; tenaga di bagian depan mata golok."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 97–98, 图 B-59",
+      "start_sec": 134.0,
+      "end_sec": 137.0
+    },
+    {
+      "number": 20,
+      "section": 2,
+      "book_number": 20,
+      "name_zh": "抽身带刀",
+      "name_pinyin": "Chōushēn dàidāo",
+      "name_en": "Draw the Body Back, Pull the Sword",
+      "name_id": "Tarik Badan, Tarik Golok",
+      "steps": {
+        "en": [
+          "Turn right and draw the waist back to the right, weight onto the right leg; rotate the arm in and pull the sword down and back to the right, edge right and tip down, while the left hand thrusts down to the left over the spine of the blade; watch the left hand."
+        ],
+        "id": [
+          "Putar ke kanan dan tarik pinggang ke kanan belakang, berat ke kaki kanan; putar lengan ke dalam dan tarik golok ke bawah dan ke kanan, mata golok ke kanan dan ujung ke bawah, sementara tangan kiri menusuk ke kiri bawah melewati punggung bilah; pandangan ke tangan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Clean and crisp."
+        ],
+        "id": [
+          "Bersih dan tegas."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 98, 图 B-60",
+      "start_sec": 137.0,
+      "end_sec": 140.0
+    },
+    {
+      "number": 21,
+      "section": 2,
+      "book_number": 21,
+      "name_zh": "错步扎刀",
+      "name_pinyin": "Cuòbù zhādāo",
+      "name_en": "Cuobu, Thrust",
+      "name_id": "Cuobu, Tusuk",
+      "steps": {
+        "en": [
+          "Twist the waist back to the left and switch the feet with a small hop; thrust the upright blade to the right front while the left arm reaches straight out to the left; watch the tip."
+        ],
+        "id": [
+          "Putar pinggang ke kiri belakang dan tukar posisi kaki dengan lompatan kecil; tusukkan bilah tegak ke depan kanan sementara lengan kiri menjulur lurus ke kiri; pandangan ke ujung golok."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Switching the feet, thrusting and reaching with the left hand happen together."
+        ],
+        "id": [
+          "Menukar kaki, menusuk dan menjulurkan tangan kiri dilakukan bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 98–99, 图 B-61",
+      "start_sec": 140.0,
+      "end_sec": 143.0
+    },
+    {
+      "number": 22,
+      "section": 2,
+      "book_number": 22,
+      "name_zh": "后推刀",
+      "name_pinyin": "Hòu tuīdāo",
+      "name_en": "Push the Sword Back",
+      "name_id": "Dorong Golok ke Belakang",
+      "steps": {
+        "en": [
+          "Turn right and step the right foot to the right; carry the sword up and right in an arc while the left palm comes onto the spine, edge up, tip left; look to the right front.",
+          "Bend the left knee inward with the heel raised and twist the trunk right as you push; with the left palm on the spine, push the sword down past the chest to the left; look left."
+        ],
+        "id": [
+          "Putar ke kanan dan langkahkan kaki kanan ke kanan; bawa golok ke atas dan ke kanan dalam busur sementara telapak kiri menempel di punggung bilah, mata golok ke atas, ujung ke kiri; pandangan ke depan kanan.",
+          "Tekuk lutut kiri ke dalam dengan tumit terangkat dan putar badan ke kanan saat mendorong; dengan telapak kiri di punggung bilah, dorong golok ke bawah melewati dada ke kiri; pandangan ke kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The left palm stays on the spine as you push; lean forward, left heel up, left knee turned in."
+        ],
+        "id": [
+          "Telapak kiri tetap di punggung bilah saat mendorong; condong ke depan, tumit kiri terangkat, lutut kiri ke dalam."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 99–100, 图 B-62 to B-63",
+      "start_sec": 143.0,
+      "end_sec": 148.0
+    },
+    {
+      "number": 23,
+      "section": 2,
+      "book_number": 23,
+      "name_zh": "纵步下截刀",
+      "name_pinyin": "Zòngbù xià jiédāo",
+      "name_en": "Zongbu, Low Cut",
+      "name_id": "Zongbu, Potongan Bawah",
+      "steps": {
+        "en": [
+          "Step the left foot across to the right; draw the sword flat to the left ribs, tip back, left hand on the right wrist; look to the left front.",
+          "Turn right and sweep the sword level to the right, the left arm opening to the left; look to the right front.",
+          "Turn back to the right and step the right foot to the right front; the sword wraps round behind the back, tip down, and the left hand comes to the right chest.",
+          "Step the left foot forward; the sword circles round to the left shoulder and the left hand drops behind to the left.",
+          "Turn right, drive the right knee forward and leap off the left foot, left leg straight; cut the sword forward and down past the outside of the right leg to the lower right rear, edge back, arm and blade in one line, the left hand to the chest; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kiri melintas ke kanan; tarik golok mendatar ke rusuk kiri, ujung ke belakang, tangan kiri di pergelangan kanan; pandangan ke depan kiri.",
+          "Putar ke kanan dan sapukan golok datar ke kanan, lengan kiri terbuka ke kiri; pandangan ke depan kanan.",
+          "Berbalik ke kanan belakang dan langkahkan kaki kanan ke depan kanan; golok membelit ke belakang punggung, ujung ke bawah, dan tangan kiri ke dada kanan.",
+          "Langkahkan kaki kiri ke depan; golok berputar ke bahu kiri dan tangan kiri turun ke kiri belakang.",
+          "Putar ke kanan, dorong lutut kanan ke depan dan lompat dari kaki kiri, kaki kiri lurus; potong golok ke depan dan ke bawah melewati sisi luar kaki kanan ke kanan belakang bawah, mata golok ke belakang, lengan dan bilah satu garis, tangan kiri ke dada; pandangan ke ujung golok."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Wrap close to the back; step, turn, leap and cut are linked; arm and blade make one slanting line with power in the front of the edge."
+        ],
+        "id": [
+          "Belitan dekat punggung; langkah, putaran, lompatan dan potongan bersambung; lengan dan bilah membentuk satu garis miring dengan tenaga di bagian depan mata golok."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 100–102, 图 B-64 to B-68",
+      "start_sec": 148.0,
+      "end_sec": 160.5
+    },
+    {
+      "number": 24,
+      "section": 2,
+      "book_number": 24,
+      "name_zh": "腾空左右扎刀",
+      "name_pinyin": "Téngkōng zuǒyòu zhādāo",
+      "name_en": "Jumping Thrusts Left and Right",
+      "name_id": "Tusukan Kiri dan Kanan di Udara",
+      "steps": {
+        "en": [
+          "Land the left foot and step the right foot forward, turning the head left; look ahead.",
+          "Step the left foot to the left front and jump, knee drawn up, swinging the right leg forward and up with the knee straight and instep stretched, turning left in the air; thrust the upright blade past the outside of the right leg to the upper right while the left palm pushes left and then comes to the right chest; look to the right front.",
+          "Still in the air, turn the trunk left, the raised left knee swinging left with the shin vertical; rotate the arm in and thrust the upright blade down past the belly to the left front, the left hand inside the right upper arm; look to the left front."
+        ],
+        "id": [
+          "Daratkan kaki kiri dan langkahkan kaki kanan ke depan, kepala menoleh ke kiri; pandangan ke depan.",
+          "Langkahkan kaki kiri ke depan kiri dan lompat, lutut ditarik ke atas, ayunkan kaki kanan ke depan atas dengan lutut lurus dan punggung kaki diluruskan, berputar ke kiri di udara; tusukkan bilah tegak melewati sisi luar kaki kanan ke kanan atas sementara telapak kiri mendorong ke kiri lalu ke dada kanan; pandangan ke depan kanan.",
+          "Masih di udara, putar badan ke kiri, lutut kiri yang terangkat berayun ke kiri dengan tulang kering tegak; putar lengan ke dalam dan tusukkan bilah tegak ke bawah melewati perut ke depan kiri, tangan kiri di sisi dalam lengan atas kanan; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Hold the breath up in the air with the trunk upright and firm; both thrusts are quick and accurate, the right leg tense with the instep stretched, the left knee drawn up with the instep stretched."
+        ],
+        "id": [
+          "Tahan napas di udara dengan badan tegak dan kokoh; kedua tusukan cepat dan tepat, kaki kanan tegang dengan punggung kaki diluruskan, lutut kiri ditarik ke atas dengan punggung kaki diluruskan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 102–105, 图 B-69 to B-72",
+      "start_sec": 160.5,
+      "end_sec": 168.0
+    },
+    {
+      "number": 25,
+      "section": 2,
+      "book_number": 25,
+      "name_zh": "插步下截刀",
+      "name_pinyin": "Chābù xià jiédāo",
+      "name_en": "Chabu, Low Cut",
+      "name_id": "Chabu, Potongan Bawah",
+      "steps": {
+        "en": [
+          "Land left then right.",
+          "Turn right and cross the left foot behind the right leg; cut the sword forward and down to the right, edge back, tip slanting down, the left hand to the right chest; watch the tip."
+        ],
+        "id": [
+          "Mendarat kiri lalu kanan.",
+          "Putar ke kanan dan silangkan kaki kiri di belakang kaki kanan; potong golok ke depan dan ke kanan bawah, mata golok ke belakang, ujung miring ke bawah, tangan kiri ke dada kanan; pandangan ke ujung golok."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Chabu and the cut happen together, arm and blade in one slanting line."
+        ],
+        "id": [
+          "Chabu dan potongan dilakukan bersamaan, lengan dan bilah satu garis miring."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 105–106, 图 B-73 to B-74",
+      "start_sec": 168.0,
+      "end_sec": 173.0
+    },
+    {
+      "number": 26,
+      "section": 2,
+      "book_number": 26,
+      "name_zh": "转身云刀",
+      "name_pinyin": "Zhuǎnshēn yúndāo",
+      "name_en": "Turn, Cloud the Sword",
+      "name_id": "Berbalik, Golok Berputar di Atas Kepala",
+      "steps": {
+        "en": [
+          "Turn half a circle back to the right, pivoting both feet; the left hand first reaches left, palm down, then both arms swing level to the left with the turn, tip right and edge back; look to the right front.",
+          "Lift the right shin behind and turn half a circle back to the left on the left foot, the arms swinging on in the same shape.",
+          "Keep turning left half a circle; swing the sword level forward and, at the left front, place the left palm on the spine, the sword a little above the head; watch the blade.",
+          "Turn left and lean back; with the wrist as the axis, circle the sword level over the head to the left and back half a turn, edge up, tip back, the left hand going with it.",
+          "Turn left and lift the right knee, the right foot by the left knee; finish the level circle and bring the sword to the chest, edge up and tip right, the left hand still on the spine; look to the right front."
+        ],
+        "id": [
+          "Putar setengah lingkaran ke kanan belakang, kedua kaki berporos; tangan kiri menjulur ke kiri dulu, telapak ke bawah, lalu kedua lengan berayun datar ke kiri mengikuti putaran, ujung ke kanan dan mata golok ke belakang; pandangan ke depan kanan.",
+          "Angkat tungkai bawah kanan ke belakang dan putar setengah lingkaran ke kiri belakang di atas kaki kiri, lengan terus berayun dengan bentuk sama.",
+          "Terus berputar ke kiri setengah lingkaran; ayunkan golok datar ke depan dan, di depan kiri, letakkan telapak kiri di punggung bilah, golok sedikit di atas kepala; pandangan ke bilah.",
+          "Putar ke kiri dan condong ke belakang; dengan pergelangan sebagai poros, putar golok mendatar di atas kepala ke kiri dan ke belakang setengah putaran, mata golok ke atas, ujung ke belakang, tangan kiri ikut.",
+          "Putar ke kiri dan angkat lutut kanan, kaki kanan di samping lutut kiri; selesaikan putaran datar dan bawa golok ke dada, mata golok ke atas dan ujung ke kanan, tangan kiri tetap di punggung bilah; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The cloud circle is level, elbow slightly bent, wrist as the axis and fingers relaxed, the head tilting back as the sword passes overhead; turning, swinging, knee lift and cloud flow in one breath."
+        ],
+        "id": [
+          "Putaran awan mendatar, siku sedikit ditekuk, pergelangan sebagai poros dan jari rileks, kepala condong ke belakang saat golok melintas di atas; putaran, ayunan, angkat lutut dan putaran awan mengalir dalam satu tarikan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 106–108, 图 B-75 to B-79",
+      "start_sec": 173.0,
+      "end_sec": 185.5
+    },
+    {
+      "number": 27,
+      "section": 2,
+      "book_number": 27,
+      "name_zh": "弓步分手扎刀",
+      "name_pinyin": "Gōngbù fēnshǒu zhādāo",
+      "name_en": "Gongbu, Part Hands, Thrust",
+      "name_id": "Gongbu, Pisah Tangan, Tusuk",
+      "steps": {
+        "en": [
+          "Push off lightly with the left foot and open both feet apart into right gongbu; thrust the upright blade to the right while the left hand thrusts straight out to the left, palm forward; look to the right front."
+        ],
+        "id": [
+          "Tolak ringan dengan kaki kiri dan buka kedua kaki menjadi gongbu kanan; tusukkan bilah tegak ke kanan sementara tangan kiri menusuk lurus ke kiri, telapak ke depan; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Arm and sword in one line, power in the tip."
+        ],
+        "id": [
+          "Lengan dan golok satu garis, tenaga di ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 108, 图 B-80",
+      "start_sec": 185.5,
+      "end_sec": 188.5
+    },
+    {
+      "number": 28,
+      "section": 3,
+      "book_number": 28,
+      "name_zh": "缠头刀",
+      "name_pinyin": "Chántóudāo",
+      "name_en": "Wrap Sword Around the Head",
+      "name_id": "Golok Membelit Kepala",
+      "steps": {
+        "en": [
+          "Rotate the arm in and wrap the sword left past the outside of the left arm to behind the back, spine on the body, tip down; the left arm folds to the chest and opens straight to the left; look to the left front.",
+          "Turn left into left gongbu; swing the sword right across the front to under the left armpit, edge left and tip to the upper rear, the left hand to the right chest; look ahead."
+        ],
+        "id": [
+          "Putar lengan ke dalam dan belitkan golok ke kiri melewati sisi luar lengan kiri ke belakang punggung, punggung bilah di badan, ujung ke bawah; lengan kiri terlipat ke dada lalu terbuka lurus ke kiri; pandangan ke depan kiri.",
+          "Putar ke kiri menjadi gongbu kiri; ayunkan golok ke kanan melintasi depan ke bawah ketiak kiri, mata golok ke kiri dan ujung ke belakang atas, tangan kiri ke dada kanan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Let the turning wrist lift the elbow so the spine slides along shoulders and back, the left hand working with it."
+        ],
+        "id": [
+          "Biarkan putaran pergelangan mengangkat siku agar punggung bilah meluncur di bahu dan punggung, tangan kiri bekerja bersamanya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 109, 图 B-81 to B-82",
+      "start_sec": 188.5,
+      "end_sec": 193.5
+    },
+    {
+      "number": 29,
+      "section": 3,
+      "book_number": 29,
+      "name_zh": "前点步错刀",
+      "name_pinyin": "Qiándiǎnbù cuòdāo",
+      "name_en": "Qiandianbu, Push the Sword Out",
+      "name_id": "Qiandianbu, Dorong Golok",
+      "steps": {
+        "en": [
+          "Turn right and sweep the sword level to the right, edge back and tip right, the left arm opening straight to the left; look to the right front.",
+          "Turn right; rotate the arm out and draw the sword back flat at the right side, edge forward and tip right, while the left hand makes a fist and swings forward, elbow slightly bent, fist-heart forward and fist-eye down; look ahead.",
+          "Turn left, shift onto the right leg and step the left foot in front into qiandianbu; push the sword straight out to the right while the left fist draws back to the left side at shoulder height; look to the right front."
+        ],
+        "id": [
+          "Putar ke kanan dan sapukan golok datar ke kanan, mata golok ke belakang dan ujung ke kanan, lengan kiri terbuka lurus ke kiri; pandangan ke depan kanan.",
+          "Putar ke kanan; putar lengan ke luar dan tarik golok mendatar di sisi kanan, mata golok ke depan dan ujung ke kanan, sementara tangan kiri mengepal dan berayun ke depan, siku sedikit ditekuk, telapak kepalan ke depan dan mata kepalan ke bawah; pandangan ke depan.",
+          "Putar ke kiri, pindahkan berat ke kaki kanan dan langkahkan kaki kiri ke depan menjadi qiandianbu; dorong golok lurus ke kanan sementara kepalan kiri ditarik ke sisi kiri setinggi bahu; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A wide sweep; toe point, sword push and left-arm pull finish together."
+        ],
+        "id": [
+          "Sapuan lebar; tutulan kaki, dorongan golok dan tarikan lengan kiri selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 109–111, 图 B-83 to B-85",
+      "start_sec": 193.5,
+      "end_sec": 201.0
+    },
+    {
+      "number": 30,
+      "section": 3,
+      "book_number": 30,
+      "name_zh": "左右抡劈刀",
+      "name_pinyin": "Zuǒyòu lūnpīdāo",
+      "name_en": "Swinging Chops Left and Right",
+      "name_id": "Bacokan Berputar Kiri dan Kanan",
+      "steps": {
+        "en": [
+          "Turn right and step the left foot back onto the toes; rotate the arm in and swing the sword up and back behind the right shoulder, tip down, while the left hand drops and comes up to the right chest; look ahead.",
+          "Shift onto the left leg, then onto the right; swing-chop the sword forward, down across the front, left, up and forward in a full vertical circle, the left hand following and ending inside the right elbow; the trunk turns left and right with the chops.",
+          "Turn right and lean forward, swinging the left leg up behind; swing-chop down past the outside of the right leg to the right while the left hand reaches to the upper left; look to the left front."
+        ],
+        "id": [
+          "Putar ke kanan dan mundurkan kaki kiri bertumpu pada ujung kaki; putar lengan ke dalam dan ayunkan golok ke atas dan ke belakang bahu kanan, ujung ke bawah, sementara tangan kiri turun lalu naik ke dada kanan; pandangan ke depan.",
+          "Pindahkan berat ke kaki kiri, lalu ke kaki kanan; bacokkan golok berputar ke depan, ke bawah melintasi depan, ke kiri, ke atas dan ke depan dalam satu lingkaran vertikal penuh, tangan kiri mengikuti dan berakhir di sisi dalam siku kanan; badan berputar kiri dan kanan mengikuti bacokan.",
+          "Putar ke kanan dan condong ke depan, ayunkan kaki kiri ke belakang atas; bacokkan berputar ke bawah melewati sisi luar kaki kanan ke kanan sementara tangan kiri menjulur ke kiri atas; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The waist drives the sword, power in the front of the edge; chops are fierce and quick, in vertical circles close to the body, left and right linked."
+        ],
+        "id": [
+          "Pinggang menggerakkan golok, tenaga di bagian depan mata golok; bacokan keras dan cepat, dalam lingkaran vertikal dekat badan, kiri dan kanan bersambung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 111–112, 图 B-86 to B-88",
+      "start_sec": 201.0,
+      "end_sec": 208.5
+    },
+    {
+      "number": 31,
+      "section": 3,
+      "book_number": 31,
+      "name_zh": "翻身抡劈刀",
+      "name_pinyin": "Fānshēn lūnpīdāo",
+      "name_en": "Turn Over, Swinging Chop",
+      "name_id": "Balik Badan, Bacokan Berputar",
+      "steps": {
+        "en": [
+          "Step the left foot in gaibu across in front of the right, half squat and lean forward; rotate the arm out and swing-chop up and left in a vertical circle to the left side, edge left and tip up, the left hand on the right wrist.",
+          "Turn the trunk over half a circle back to the right, face up, pivoting both feet, the sword turning with the waist.",
+          "Keep turning over another half circle, face down, legs crossed in a half squat; swing-chop down to the lower right, edge up and tip slanting down, the left hand reaching right; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kiri secara gaibu di depan kaki kanan, setengah jongkok dan condong ke depan; putar lengan ke luar dan bacokkan berputar ke atas dan ke kiri dalam lingkaran vertikal ke sisi kiri, mata golok ke kiri dan ujung ke atas, tangan kiri di pergelangan kanan.",
+          "Balikkan badan setengah lingkaran ke kanan belakang, wajah menghadap atas, kedua kaki berporos, golok ikut berputar dengan pinggang.",
+          "Terus berbalik setengah lingkaran lagi, wajah menghadap bawah, kaki menyilang dalam setengah jongkok; bacokkan berputar ke kanan bawah, mata golok ke atas dan ujung miring ke bawah, tangan kiri menjulur ke kanan; pandangan ke ujung golok."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Lean forward and let the waist drive the sword in vertical circles; keep the trunk in the same place as it turns over; quick and linked."
+        ],
+        "id": [
+          "Condong ke depan dan biarkan pinggang menggerakkan golok dalam lingkaran vertikal; badan tetap di tempat yang sama saat berbalik; cepat dan bersambung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 113–114, 图 B-89 to B-91",
+      "start_sec": 208.5,
+      "end_sec": 216.0
+    },
+    {
+      "number": 32,
+      "section": 3,
+      "book_number": 32,
+      "name_zh": "回身上扎刀",
+      "name_pinyin": "Huíshēn shàng zhādāo",
+      "name_en": "Turn Back, Thrust Up",
+      "name_id": "Berbalik, Tusuk ke Atas",
+      "steps": {
+        "en": [
+          "Step the right foot to the right and cross the left foot behind it on the toes; rotate the arm out and swing-chop up, left and down in a full vertical circle, the left hand folding to the chest and reaching to the upper left; the eyes follow the sword.",
+          "Turn left; rotate the arm out and swing-chop up and right in a vertical circle, the left hand to the right chest; watch the tip.",
+          "Turn back to the left; rotate the arm in, lift the elbow and thrust the upright blade down and then up to the upper left front, the left hand swinging down and round to the left rear; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke kanan dan silangkan kaki kiri di belakangnya bertumpu pada ujung kaki; putar lengan ke luar dan bacokkan berputar ke atas, ke kiri dan ke bawah dalam satu lingkaran vertikal penuh, tangan kiri terlipat ke dada lalu menjulur ke kiri atas; mata mengikuti golok.",
+          "Putar ke kiri; putar lengan ke luar dan bacokkan berputar ke atas dan ke kanan dalam lingkaran vertikal, tangan kiri ke dada kanan; pandangan ke ujung golok.",
+          "Berbalik ke kiri belakang; putar lengan ke dalam, angkat siku dan tusukkan bilah tegak ke bawah lalu ke depan kiri atas, tangan kiri berayun ke bawah dan memutar ke kiri belakang; pandangan ke ujung golok."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Swing-chop in vertical circles close to the body and flow quickly into the turning thrust; at the end twist back to the left with both arms in one slanting line."
+        ],
+        "id": [
+          "Bacokan berputar dalam lingkaran vertikal dekat badan dan mengalir cepat ke tusukan berbalik; di akhir putar badan ke kiri belakang dengan kedua lengan satu garis miring."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 114–117, 图 B-92 to B-95",
+      "start_sec": 216.0,
+      "end_sec": 223.5
+    },
+    {
+      "number": 33,
+      "section": 3,
+      "book_number": 33,
+      "name_zh": "旋转格刀",
+      "name_pinyin": "Xuánzhuǎn gédāo",
+      "name_en": "Spinning Block",
+      "name_id": "Tangkisan Berputar",
+      "steps": {
+        "en": [
+          "Turn back to the right onto the right leg, right toes out; rotate the arm in and sweep the sword level to the right, arm and blade in line, edge back and tip right, the left hand folding to the chest then reaching left; look to the right front.",
+          "Twist back to the right and place the left foot across in front of the right at the left front, toes in; rotate the arm out, raise it and wrap the sword round the back of the head to the left front, tip down and edge forward, the left hand dropping to the lower left; look ahead.",
+          "Lift the right foot behind the left knee and spin a full circle to the right on the straight left leg; block with the sword to the right, the left hand swinging level with the turn."
+        ],
+        "id": [
+          "Berbalik ke kanan belakang ke kaki kanan, ujung kaki kanan ke luar; putar lengan ke dalam dan sapukan golok datar ke kanan, lengan dan bilah segaris, mata golok ke belakang dan ujung ke kanan, tangan kiri terlipat ke dada lalu menjulur ke kiri; pandangan ke depan kanan.",
+          "Putar badan ke kanan belakang dan tempatkan kaki kiri melintasi depan kaki kanan di depan kiri, ujung kaki ke dalam; putar lengan ke luar, angkat dan belitkan golok mengelilingi belakang kepala ke depan kiri, ujung ke bawah dan mata golok ke depan, tangan kiri turun ke kiri bawah; pandangan ke depan.",
+          "Angkat kaki kanan ke belakang lutut kiri dan berputar satu lingkaran penuh ke kanan di atas kaki kiri lurus; tangkis dengan golok ke kanan, tangan kiri berayun datar mengikuti putaran."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Wrap close to the back; spin on the ball of the left foot with the right instep pressed behind the left knee, the right hand leading the turn and the trunk upright."
+        ],
+        "id": [
+          "Belitan dekat punggung; berputar di telapak depan kaki kiri dengan punggung kaki kanan menempel di belakang lutut kiri, tangan kanan memimpin putaran dan badan tegak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 117, 图 B-96 to B-98",
+      "start_sec": 223.5,
+      "end_sec": 231.0
+    },
+    {
+      "number": 34,
+      "section": 3,
+      "book_number": 34,
+      "name_zh": "弓步藏刀推掌",
+      "name_pinyin": "Gōngbù cángdāo tuīzhǎng",
+      "name_en": "Gongbu, Hide Sword, Push Palm",
+      "name_id": "Gongbu, Sembunyikan Golok, Dorong Telapak",
+      "steps": {
+        "en": [
+          "Turn right and set the right foot down forward; the left hand comes down past the belly and up to the right chest; look to the right front.",
+          "Bend the right knee into right gongbu; hold the sword in the hidden position and push the left palm out to the left, turning the head; look to the left front."
+        ],
+        "id": [
+          "Putar ke kanan dan turunkan kaki kanan ke depan; tangan kiri turun melewati perut lalu naik ke dada kanan; pandangan ke depan kanan.",
+          "Tekuk lutut kanan menjadi gongbu kanan; pegang golok dalam posisi tersembunyi dan dorong telapak kiri ke kiri, kepala menoleh; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The sword hand hooks the wrist in; the palm push and the head turn happen together."
+        ],
+        "id": [
+          "Tangan golok menekuk pergelangan ke dalam; dorongan telapak dan tolehan kepala dilakukan bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 118, 图 B-99 to B-100",
+      "start_sec": 231.0,
+      "end_sec": 236.0
+    },
+    {
+      "number": 35,
+      "section": 3,
+      "book_number": 35,
+      "name_zh": "插步分手扎刀",
+      "name_pinyin": "Chābù fēnshǒu zhādāo",
+      "name_en": "Chabu, Part Hands, Thrust",
+      "name_id": "Chabu, Pisah Tangan, Tusuk",
+      "steps": {
+        "en": [
+          "Bend the left arm and bring the hand to the right chest.",
+          "Turn left, shift onto the left leg and cross the right foot behind the left; thrust the upright blade to the right while the left arm reaches straight out to the left."
+        ],
+        "id": [
+          "Tekuk lengan kiri dan bawa tangan ke dada kanan.",
+          "Putar ke kiri, pindahkan berat ke kaki kiri dan silangkan kaki kanan di belakang kaki kiri; tusukkan bilah tegak ke kanan sementara lengan kiri menjulur lurus ke kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "An accurate thrust with power in the tip."
+        ],
+        "id": [
+          "Tusukan tepat dengan tenaga di ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 119–120, 图 B-101 to B-102",
+      "start_sec": 236.0,
+      "end_sec": 241.0
+    },
+    {
+      "number": 36,
+      "section": 3,
+      "book_number": 36,
+      "name_zh": "回身点刀",
+      "name_pinyin": "Huíshēn diǎndāo",
+      "name_en": "Turn Back, Peck with the Tip",
+      "name_id": "Berbalik, Patuk dengan Ujung",
+      "steps": {
+        "en": [
+          "Turn back to the right, step the right foot to the right and swing the bent left leg up behind; rotate the arm out and raise the sword, circle it up and left across the front, then peck to the right, while the left hand swings down past the belly and up to the right chest as a standing palm; look to the right front."
+        ],
+        "id": [
+          "Berbalik ke kanan belakang, langkahkan kaki kanan ke kanan dan ayunkan kaki kiri yang ditekuk ke belakang atas; putar lengan ke luar dan angkat golok, putar ke atas dan ke kiri melintasi depan, lalu patuk ke kanan, sementara tangan kiri berayun turun melewati perut lalu naik ke dada kanan sebagai telapak tegak; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Lift the wrist and snap the tip down and forward, power in the tip."
+        ],
+        "id": [
+          "Angkat pergelangan dan hentakkan ujung ke depan bawah, tenaga di ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 120–121, 图 B-103 to B-104",
+      "start_sec": 241.0,
+      "end_sec": 244.0
+    },
+    {
+      "number": 37,
+      "section": 3,
+      "book_number": 37,
+      "name_zh": "扫刀旋子",
+      "name_pinyin": "Sǎodāo xuànzi",
+      "name_en": "Sweeping Sword, Butterfly",
+      "name_id": "Sapuan Golok, Kupu-kupu (Xuanzi)",
+      "steps": {
+        "en": [
+          "Step the left foot to the left; rotate the arm in, raise it and wrap the sword round past the left arm to behind the back, tip down, the left hand swinging level to the left; look to the left front.",
+          "Turn back to the left, step the right foot forward and the left foot back past it to the left rear; sweep the sword level half a circle to the left.",
+          "Lean forward and swing back to the left; take off from the left foot, swinging the straight legs up so the body spins flat in the air, the sword sweeping level half a circle to the left beneath the body.",
+          "Land right foot first, then the left to the left; the sword sweeps level to the right side, edge forward and tip right, the left arm raised straight at the left side."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke kiri; putar lengan ke dalam, angkat dan belitkan golok melewati lengan kiri ke belakang punggung, ujung ke bawah, tangan kiri berayun datar ke kiri; pandangan ke depan kiri.",
+          "Berbalik ke kiri belakang, langkahkan kaki kanan ke depan dan kaki kiri melewatinya ke kiri belakang; sapukan golok datar setengah lingkaran ke kiri.",
+          "Condong ke depan dan berayun ke kiri belakang; tolak dengan kaki kiri, ayunkan kaki lurus ke atas sehingga badan berputar mendatar di udara, golok menyapu datar setengah lingkaran ke kiri di bawah badan.",
+          "Mendarat kaki kanan dulu, lalu kaki kiri ke kiri; golok menyapu datar ke sisi kanan, mata golok ke depan dan ujung ke kanan, lengan kiri terangkat lurus di sisi kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Wrap first, then sweep; in the butterfly keep the legs straight and level with the insteps stretched, the head turning left to lead waist and legs.",
+          "Learners can first practise with a short stick to build confidence."
+        ],
+        "id": [
+          "Belit dulu, lalu sapu; pada kupu-kupu kaki lurus dan mendatar dengan punggung kaki diluruskan, kepala menoleh ke kiri memimpin pinggang dan kaki.",
+          "Pemula boleh berlatih dengan tongkat pendek dulu untuk membangun kepercayaan diri."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 121–124, 图 B-105 to B-110",
+      "start_sec": 244.0,
+      "end_sec": 254.0
+    },
+    {
+      "number": 38,
+      "section": 3,
+      "book_number": 38,
+      "name_zh": "云刀仰身推刀",
+      "name_pinyin": "Yúndāo yǎngshēn tuīdāo",
+      "name_en": "Cloud the Sword, Lean Back and Push",
+      "name_id": "Golok Berputar, Condong ke Belakang dan Dorong",
+      "steps": {
+        "en": [
+          "Step the right foot across to the left and the left foot back to the right, turning left a full circle; the arms swing level so the sword sweeps a full circle to the left.",
+          "Swing the sword forward and up; at the left side place the left palm on the spine; watch the blade.",
+          "Lean back; with the wrist as the axis circle the sword level once over the front of the head, edge left and tip forward, the left palm pressed on the spine.",
+          "Twist left, then back up to the right and tilt left, lifting the left foot behind the right knee; push the sword up past the left side and down to the left front, edge up, the left hand on the spine with the arm straight; watch the blade."
+        ],
+        "id": [
+          "Langkahkan kaki kanan melintas ke kiri dan kaki kiri mundur ke kanan, berputar ke kiri satu lingkaran penuh; lengan berayun datar sehingga golok menyapu satu lingkaran penuh ke kiri.",
+          "Ayunkan golok ke depan atas; di sisi kiri letakkan telapak kiri di punggung bilah; pandangan ke bilah.",
+          "Condong ke belakang; dengan pergelangan sebagai poros putar golok mendatar satu kali di depan atas kepala, mata golok ke kiri dan ujung ke depan, telapak kiri menempel di punggung bilah.",
+          "Putar ke kiri, lalu ke kanan belakang atas dan condong ke kiri, angkat kaki kiri ke belakang lutut kanan; dorong golok ke atas melewati sisi kiri lalu ke depan kiri bawah, mata golok ke atas, tangan kiri di punggung bilah dengan lengan lurus; pandangan ke bilah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Linked transitions, a level cloud circle and a clear direction and height for the push."
+        ],
+        "id": [
+          "Peralihan bersambung, putaran awan mendatar serta arah dan tinggi dorongan yang jelas."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 124–125, 图 B-111 to B-115",
+      "start_sec": 254.0,
+      "end_sec": 264.0
+    },
+    {
+      "number": 39,
+      "section": 3,
+      "book_number": 39,
+      "name_zh": "转身缠头刀",
+      "name_pinyin": "Zhuǎnshēn chántóudāo",
+      "name_en": "Turn, Wrap Sword Around the Head",
+      "name_id": "Berbalik, Golok Membelit Kepala",
+      "steps": {
+        "en": [
+          "Set the left foot down to the left; wrap the sword past the left arm to behind the back, tip down, the left arm folding to the chest and opening straight to the left.",
+          "Turn left and step the right foot outside the left; sweep the sword level to the right, edge forward and tip right.",
+          "Turn left and step the left foot back behind the right; wrap the sword round again, spine on the body, tip down, the left arm folding and opening to the left; look ahead.",
+          "Turn left and half squat; sweep the sword level to the left ribs, edge left and tip back, the left hand on the right arm."
+        ],
+        "id": [
+          "Turunkan kaki kiri ke kiri; belitkan golok melewati lengan kiri ke belakang punggung, ujung ke bawah, lengan kiri terlipat ke dada lalu terbuka lurus ke kiri.",
+          "Putar ke kiri dan langkahkan kaki kanan ke luar kaki kiri; sapukan golok datar ke kanan, mata golok ke depan dan ujung ke kanan.",
+          "Putar ke kiri dan mundurkan kaki kiri di belakang kaki kanan; belitkan golok lagi, punggung bilah di badan, ujung ke bawah, lengan kiri terlipat lalu terbuka ke kiri; pandangan ke depan.",
+          "Putar ke kiri dan setengah jongkok; sapukan golok datar ke rusuk kiri, mata golok ke kiri dan ujung ke belakang, tangan kiri di lengan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Let the turning wrist lift the elbow so the spine slides along shoulders and back; left hand and turn coordinated."
+        ],
+        "id": [
+          "Biarkan putaran pergelangan mengangkat siku agar punggung bilah meluncur di bahu dan punggung; tangan kiri dan putaran terkoordinasi."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 125–127, 图 B-116 to B-119",
+      "start_sec": 264.0,
+      "end_sec": 274.0
+    },
+    {
+      "number": 40,
+      "section": 3,
+      "book_number": 40,
+      "name_zh": "裹脑平抹刀",
+      "name_pinyin": "Guǒnǎo píngmǒdāo",
+      "name_en": "Wrap the Head, Level Wipe",
+      "name_id": "Bungkus Kepala, Usapan Datar",
+      "steps": {
+        "en": [
+          "Sweep the sword level to the right, the left arm opening straight to the left; watch the tip.",
+          "Turn right and step the right foot back; rotate the arm out, raise it and wrap the sword behind the back to the left shoulder, spine on the shoulder, tip back, the left hand to the chest.",
+          "Turn right and wipe the sword level to the right, edge back and tip right; watch the tip."
+        ],
+        "id": [
+          "Sapukan golok datar ke kanan, lengan kiri terbuka lurus ke kiri; pandangan ke ujung golok.",
+          "Putar ke kanan dan mundurkan kaki kanan; putar lengan ke luar, angkat dan belitkan golok di belakang punggung ke bahu kiri, punggung bilah di bahu, ujung ke belakang, tangan kiri ke dada.",
+          "Putar ke kanan dan usapkan golok datar ke kanan, mata golok ke belakang dan ujung ke kanan; pandangan ke ujung golok."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Wrap close along the spine; the wipe goes at an even speed in a straight-armed arc."
+        ],
+        "id": [
+          "Belitan dekat sepanjang tulang belakang; usapan dengan kecepatan rata dalam busur lengan lurus."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 127–129, 图 B-120 to B-122",
+      "start_sec": 274.0,
+      "end_sec": 281.5
+    },
+    {
+      "number": 41,
+      "section": 3,
+      "book_number": 41,
+      "name_zh": "换跳步扎刀",
+      "name_pinyin": "Huàntiàobù zhādāo",
+      "name_en": "Huantiaobu, Thrust",
+      "name_id": "Huantiaobu, Tusuk",
+      "steps": {
+        "en": [
+          "Push off with both feet, turn back to the left in the air and land in right gongbu; rotate the arm in and thrust the upright blade down past the belly and forward, the left hand swinging down and left and folding to the inside of the right upper arm; look to the right front."
+        ],
+        "id": [
+          "Tolak dengan kedua kaki, berputar ke kiri belakang di udara dan mendarat dalam gongbu kanan; putar lengan ke dalam dan tusukkan bilah tegak ke bawah melewati perut lalu ke depan, tangan kiri berayun ke bawah dan ke kiri lalu terlipat ke sisi dalam lengan atas kanan; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "An accurate thrust, arm and blade in line; the jump and thrust finish together."
+        ],
+        "id": [
+          "Tusukan tepat, lengan dan bilah segaris; lompatan dan tusukan selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 129, 图 B-123",
+      "start_sec": 281.5,
+      "end_sec": 284.5
+    },
+    {
+      "number": 42,
+      "section": 4,
+      "book_number": 42,
+      "name_zh": "平分刀",
+      "name_pinyin": "Píngfēndāo",
+      "name_en": "Level Parting Sword",
+      "name_id": "Golok Membelah Datar",
+      "steps": {
+        "en": [
+          "Rotate the arm out and arc the sword back to the right with the wrist as the axis; then rotate the arm in and carry it up, left, forward and level out to the right front, edge back, while the left arm opens straight to the left and the trunk leans forward; look ahead."
+        ],
+        "id": [
+          "Putar lengan ke luar dan lengkungkan golok ke kanan belakang dengan pergelangan sebagai poros; lalu putar lengan ke dalam dan bawa ke atas, ke kiri, ke depan dan mendatar ke depan kanan, mata golok ke belakang, sementara lengan kiri terbuka lurus ke kiri dan badan condong ke depan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Smooth and coordinated; the parting and the forward lean finish together."
+        ],
+        "id": [
+          "Luwes dan terkoordinasi; belahan dan condong ke depan selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 129–131, 图 B-124 to B-126",
+      "start_sec": 284.5,
+      "end_sec": 287.5
+    },
+    {
+      "number": 43,
+      "section": 4,
+      "book_number": 43,
+      "name_zh": "云托按刀",
+      "name_pinyin": "Yún tuō àn dāo",
+      "name_en": "Cloud, Lift and Press the Sword",
+      "name_id": "Putar, Angkat dan Tekan Golok",
+      "steps": {
+        "en": [
+          "Raise the trunk a little; swing the sword across to the front and up, the left palm meeting the spine in front of the head.",
+          "Draw the right foot in half a step, then step it back and lean back; with the wrist as the axis circle the sword level once to the left over the head, edge left and tip forward, the left palm on the spine following it; watch the blade.",
+          "Lean forward and swing the left foot up behind; circle the sword level past the belly to the right, edge right and tip back, the left palm still on the spine; watch the tip.",
+          "Raise the trunk; both hands lift the sword to the right, forward and up, edge up and tip forward.",
+          "Step the left foot forward; with the left palm on the spine, draw a circle to the left at the left front and press the sword down, edge down and tip forward."
+        ],
+        "id": [
+          "Angkat badan sedikit; ayunkan golok melintang ke depan atas, telapak kiri menyambut punggung bilah di depan kepala.",
+          "Tarik kaki kanan setengah langkah, lalu mundurkan dan condong ke belakang; dengan pergelangan sebagai poros putar golok mendatar satu kali ke kiri di atas kepala, mata golok ke kiri dan ujung ke depan, telapak kiri di punggung bilah mengikutinya; pandangan ke bilah.",
+          "Condong ke depan dan ayunkan kaki kiri ke belakang atas; putar golok mendatar melewati perut ke kanan, mata golok ke kanan dan ujung ke belakang, telapak kiri tetap di punggung bilah; pandangan ke ujung golok.",
+          "Tegakkan badan; kedua tangan mengangkat golok ke kanan, ke depan dan ke atas, mata golok ke atas dan ujung ke depan.",
+          "Langkahkan kaki kiri ke depan; dengan telapak kiri di punggung bilah, buat satu lingkaran ke kiri di depan kiri dan tekan golok ke bawah, mata golok ke bawah dan ujung ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A loose wrist; the cloud circles are level, including the one past the belly; the whole movement is linked."
+        ],
+        "id": [
+          "Pergelangan longgar; putaran awan mendatar, termasuk yang melewati perut; seluruh gerakan bersambung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 131–133, 图 B-127 to B-132",
+      "start_sec": 287.5,
+      "end_sec": 300.0
+    },
+    {
+      "number": 44,
+      "section": 4,
+      "book_number": 44,
+      "name_zh": "插步绞刀",
+      "name_pinyin": "Chābù jiǎodāo",
+      "name_en": "Chabu, Twisting Sword",
+      "name_id": "Chabu, Golok Memilin",
+      "steps": {
+        "en": [
+          "Cross the right foot behind the left, then step the left foot to the left front; with the left palm on the spine, twist the sword in a vertical circle to the left at the left front, then carry it slightly right and stop at the chest; the eyes follow the sword."
+        ],
+        "id": [
+          "Silangkan kaki kanan di belakang kaki kiri, lalu langkahkan kaki kiri ke depan kiri; dengan telapak kiri di punggung bilah, pilin golok dalam lingkaran vertikal ke kiri di depan kiri, lalu bawa sedikit ke kanan dan berhenti di depan dada; mata mengikuti golok."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The waist leads the arm; keep the vertical circle small."
+        ],
+        "id": [
+          "Pinggang memimpin lengan; lingkaran vertikal tetap kecil."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 133–134, 图 B-133 to B-134",
+      "start_sec": 300.0,
+      "end_sec": 303.0
+    },
+    {
+      "number": 45,
+      "section": 4,
+      "book_number": 45,
+      "name_zh": "跪步推刀",
+      "name_pinyin": "Guìbù tuīdāo",
+      "name_en": "Guibu, Push the Sword",
+      "name_id": "Guibu, Dorong Golok",
+      "steps": {
+        "en": [
+          "Half squat on the left leg and kneel the right knee down close to the floor; with the left palm on the spine, push the sword level to the left front, edge forward, the trunk leaning forward; look ahead."
+        ],
+        "id": [
+          "Setengah jongkok di kaki kiri dan turunkan lutut kanan mendekati lantai; dengan telapak kiri di punggung bilah, dorong golok datar ke depan kiri, mata golok ke depan, badan condong ke depan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Lean forward to push, but the right knee must not touch the floor."
+        ],
+        "id": [
+          "Condong ke depan untuk mendorong, tetapi lutut kanan tidak boleh menyentuh lantai."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 134, 图 B-135",
+      "start_sec": 303.0,
+      "end_sec": 306.0
+    },
+    {
+      "number": 46,
+      "section": 4,
+      "book_number": 46,
+      "name_zh": "纵步下截刀",
+      "name_pinyin": "Zòngbù xià jiédāo",
+      "name_en": "Zongbu, Low Cut",
+      "name_id": "Zongbu, Potongan Bawah",
+      "steps": {
+        "en": [
+          "Turn left and step the right foot forward; circle the sword left to the left ribs, the left hand on the right forearm; look to the right front.",
+          "Turn right and step the left foot forward, toes in; sweep the sword level to the right, the left arm reaching left.",
+          "Keep turning right and step the right foot to the right front; rotate the arm out, raise it and wrap the sword behind the back, tip down, spine on the body.",
+          "Step the left foot forward; the sword continues round and lies flat on the left shoulder, edge left and tip back, the left hand on the inside of the right forearm.",
+          "Leap off the left foot, lift the right knee and twist back to the right; cut the sword forward and down to the lower right rear while the left arm swings straight up to the upper left; watch the tip."
+        ],
+        "id": [
+          "Putar ke kiri dan langkahkan kaki kanan ke depan; putar golok ke kiri ke rusuk kiri, tangan kiri di lengan bawah kanan; pandangan ke depan kanan.",
+          "Putar ke kanan dan langkahkan kaki kiri ke depan, ujung kaki ke dalam; sapukan golok datar ke kanan, lengan kiri menjulur ke kiri.",
+          "Terus berputar ke kanan dan langkahkan kaki kanan ke depan kanan; putar lengan ke luar, angkat dan belitkan golok di belakang punggung, ujung ke bawah, punggung bilah di badan.",
+          "Langkahkan kaki kiri ke depan; golok terus berputar dan rebah mendatar di bahu kiri, mata golok ke kiri dan ujung ke belakang, tangan kiri di sisi dalam lengan bawah kanan.",
+          "Lompat dari kaki kiri, angkat lutut kanan dan putar ke kanan belakang; potong golok ke depan lalu ke kanan belakang bawah sementara lengan kiri berayun lurus ke kiri atas; pandangan ke ujung golok."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Sweep with a straight arm, wrap close to the back, cut with power in the front of the edge with arm and blade in a slanting line; trunk upright, footwork light.",
+          "Compared with （二十三）, the footwork, the left hand and its upward swing in the jump differ."
+        ],
+        "id": [
+          "Sapuan dengan lengan lurus, belitan dekat punggung, potongan dengan tenaga di bagian depan mata golok dengan lengan dan bilah satu garis miring; badan tegak, langkah ringan.",
+          "Dibandingkan dengan （二十三）, langkah, tangan kiri dan ayunannya ke atas saat melompat berbeda."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 134–137, 图 B-136 to B-140",
+      "start_sec": 306.0,
+      "end_sec": 318.5
+    },
+    {
+      "number": 47,
+      "section": 4,
+      "book_number": 47,
+      "name_zh": "上步扎刀",
+      "name_pinyin": "Shàngbù zhādāo",
+      "name_en": "Shangbu, Thrust",
+      "name_id": "Shangbu, Tusuk",
+      "steps": {
+        "en": [
+          "Turn left, land the left foot and step the right foot forward; thrust the upright blade forward past the outside of the right leg to the right front, the left hand resting inside the right upper arm; look to the left front."
+        ],
+        "id": [
+          "Putar ke kiri, daratkan kaki kiri dan langkahkan kaki kanan ke depan; tusukkan bilah tegak ke depan melewati sisi luar kaki kanan ke depan kanan, tangan kiri di sisi dalam lengan atas kanan; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Arm and blade in one line, power in the tip."
+        ],
+        "id": [
+          "Lengan dan bilah satu garis, tenaga di ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 137, 图 B-141",
+      "start_sec": 318.5,
+      "end_sec": 321.5
+    },
+    {
+      "number": 48,
+      "section": 4,
+      "book_number": 48,
+      "name_zh": "撩腕花跳崩刀",
+      "name_pinyin": "Liāowànhuā tiào bēngdāo",
+      "name_en": "Upward Wrist Flower, Jumping Snap",
+      "name_id": "Bunga Pergelangan ke Atas, Sentakan Melompat",
+      "steps": {
+        "en": [
+          "Turn slightly left and step the left foot to the left front; rotate the arm out and circle the sword up and back along the outside of the right arm with the wrist as the axis, edge up, the left hand raised above the head.",
+          "Step the right foot forward; circle the sword up and left, edge left and tip up, the left hand dropping to the left side.",
+          "Turn slightly right and lift the left knee toward the right front; slice back-handed down past the outside of the left leg and forward, tip down; watch the blade.",
+          "Jump off the right foot, knee drawn up; rotate the arm out and snap the sword up, arm straight and tip slanting up, the left hand to the inside of the right upper arm; watch the tip."
+        ],
+        "id": [
+          "Putar sedikit ke kiri dan langkahkan kaki kiri ke depan kiri; putar lengan ke luar dan putar golok ke atas dan ke belakang di sisi luar lengan kanan dengan pergelangan sebagai poros, mata golok ke atas, tangan kiri terangkat di atas kepala.",
+          "Langkahkan kaki kanan ke depan; putar golok ke atas dan ke kiri, mata golok ke kiri dan ujung ke atas, tangan kiri turun ke sisi kiri.",
+          "Putar sedikit ke kanan dan angkat lutut kiri ke depan kanan; sabet dengan punggung tangan ke bawah melewati sisi luar kaki kiri lalu ke depan, ujung ke bawah; pandangan ke bilah.",
+          "Lompat dari kaki kanan, lutut ditarik ke atas; putar lengan ke luar dan sentakkan golok ke atas, lengan lurus dan ujung miring ke atas, tangan kiri ke sisi dalam lengan atas kanan; pandangan ke ujung golok."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Loose wrist, vertical circles close to the body; for the snap sink the wrist, grip with the whole hand and jerk the tip forward and up."
+        ],
+        "id": [
+          "Pergelangan longgar, lingkaran vertikal dekat badan; untuk sentakan turunkan pergelangan, genggam dengan seluruh tangan dan sentakkan ujung ke depan atas."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 137–138, 图 B-142 to B-145",
+      "start_sec": 321.5,
+      "end_sec": 331.5
+    },
+    {
+      "number": 49,
+      "section": 4,
+      "book_number": 49,
+      "name_zh": "分手点刀",
+      "name_pinyin": "Fēnshǒu diǎndāo",
+      "name_en": "Part Hands, Peck with the Tip",
+      "name_id": "Pisah Tangan, Patuk dengan Ujung",
+      "steps": {
+        "en": [
+          "Land the left foot and step the right foot to the right, the tip swinging back a little.",
+          "Step the left foot forward, toes out; peck the sword forward while the left arm opens straight to the left."
+        ],
+        "id": [
+          "Daratkan kaki kiri dan langkahkan kaki kanan ke kanan, ujung golok berayun sedikit ke belakang.",
+          "Langkahkan kaki kiri ke depan, ujung kaki ke luar; patukkan golok ke depan sementara lengan kiri terbuka lurus ke kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Lift the wrist for the peck, power in the tip; the step and the peck happen together."
+        ],
+        "id": [
+          "Angkat pergelangan untuk patukan, tenaga di ujung; langkah dan patukan dilakukan bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 139–140, 图 B-146 to B-147",
+      "start_sec": 331.5,
+      "end_sec": 336.5
+    },
+    {
+      "number": 50,
+      "section": 4,
+      "book_number": 50,
+      "name_zh": "剪腕花并步扎刀",
+      "name_pinyin": "Jiǎnwànhuā bìngbù zhādāo",
+      "name_en": "Wrist Flower, Bingbu, Thrust",
+      "name_id": "Bunga Pergelangan, Bingbu, Tusuk",
+      "steps": {
+        "en": [
+          "Step the right foot to the left; bend the right arm so the blade swings back, tip back.",
+          "Step the left foot to the left, toes out, and hop a little to the left, the right foot tucked behind the left knee; circle the sword forward and down along the inside of the right arm, then rotate the arm out and hold the sword at the chest, tip right and edge up, the left hand at the right wrist; look to the right front.",
+          "Step the right foot to the right and bring the left foot beside it, standing straight; thrust the upright blade to the right while the left arm reaches straight up diagonally to the left, palm forward; look to the right front."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke kiri; tekuk lengan kanan sehingga bilah berayun ke belakang, ujung ke belakang.",
+          "Langkahkan kaki kiri ke kiri, ujung kaki ke luar, dan lompat kecil ke kiri, kaki kanan diselipkan di belakang lutut kiri; putar golok ke depan dan ke bawah di sisi dalam lengan kanan, lalu putar lengan ke luar dan pegang golok di depan dada, ujung ke kanan dan mata golok ke atas, tangan kiri di pergelangan kanan; pandangan ke depan kanan.",
+          "Langkahkan kaki kanan ke kanan dan bawa kaki kiri ke sampingnya, berdiri lurus; tusukkan bilah tegak ke kanan sementara lengan kiri menjulur lurus serong ke kiri atas, telapak ke depan; pandangan ke depan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Loose wrist, vertical circles close to the body, light footwork and power in the tip."
+        ],
+        "id": [
+          "Pergelangan longgar, lingkaran vertikal dekat badan, langkah ringan dan tenaga di ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 140–141, 图 B-148 to B-151",
+      "start_sec": 336.5,
+      "end_sec": 344.0
+    },
+    {
+      "number": 51,
+      "section": 4,
+      "book_number": 51,
+      "name_zh": "崩刀前点",
+      "name_pinyin": "Bēngdāo qiándiǎn",
+      "name_en": "Snap the Sword, Peck Forward",
+      "name_id": "Sentak Golok, Patuk ke Depan",
+      "steps": {
+        "en": [
+          "Step the left foot to the left; rotate the arm out and circle the sword up and back along the outside of the right arm, edge up and tip right, the left hand above the right elbow.",
+          "Bring the right foot to the inside of the left on the toes (dingbu); snap the sword up, left and across to the right, tip up, while the left hand circles once past the belly and comes to the inside of the right upper arm.",
+          "Step the right foot to the right into right gongbu; peck to the right while the left arm reaches straight to the left; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke kiri; putar lengan ke luar dan putar golok ke atas dan ke belakang di sisi luar lengan kanan, mata golok ke atas dan ujung ke kanan, tangan kiri di atas siku kanan.",
+          "Bawa kaki kanan ke sisi dalam kaki kiri bertumpu pada ujung kaki (dingbu); sentakkan golok ke atas, ke kiri lalu melintang ke kanan, ujung ke atas, sementara tangan kiri berputar satu kali melewati perut lalu ke sisi dalam lengan atas kanan.",
+          "Langkahkan kaki kanan ke kanan menjadi gongbu kanan; patuk ke kanan sementara lengan kiri menjulur lurus ke kiri; pandangan ke ujung golok."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Loose wrist; sink the wrist to snap and lift it to peck, both with power in the tip."
+        ],
+        "id": [
+          "Pergelangan longgar; turunkan pergelangan untuk menyentak dan angkat untuk mematuk, keduanya dengan tenaga di ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 142–144, 图 B-152 to B-154",
+      "start_sec": 344.0,
+      "end_sec": 351.5
+    },
+    {
+      "number": 52,
+      "section": 4,
+      "book_number": 52,
+      "name_zh": "转身缠头刀",
+      "name_pinyin": "Zhuǎnshēn chántóudāo",
+      "name_en": "Turn, Wrap Sword Around the Head",
+      "name_id": "Berbalik, Golok Membelit Kepala",
+      "steps": {
+        "en": [
+          "Turn slightly left; rotate the arm in and wrap the sword past the left arm to behind the back, spine on the body, tip down, the left arm folding to the chest then opening left; look ahead.",
+          "Turn left and step the right foot to the right; sweep the sword level to the right, edge forward and tip right.",
+          "Turn left and step the left foot back to the right; wrap the sword round again in the same way.",
+          "Turn left onto the left leg; sweep the sword across the front to the left ribs, edge left and tip back, the left hand above the right forearm; look ahead."
+        ],
+        "id": [
+          "Putar sedikit ke kiri; putar lengan ke dalam dan belitkan golok melewati lengan kiri ke belakang punggung, punggung bilah di badan, ujung ke bawah, lengan kiri terlipat ke dada lalu terbuka ke kiri; pandangan ke depan.",
+          "Putar ke kiri dan langkahkan kaki kanan ke kanan; sapukan golok datar ke kanan, mata golok ke depan dan ujung ke kanan.",
+          "Putar ke kiri dan mundurkan kaki kiri ke kanan; belitkan golok lagi dengan cara yang sama.",
+          "Putar ke kiri ke kaki kiri; sapukan golok melintasi depan ke rusuk kiri, mata golok ke kiri dan ujung ke belakang, tangan kiri di atas lengan bawah kanan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Let the turning wrist lift the elbow so the spine slides along shoulders and back; sweeps level, fast and strong."
+        ],
+        "id": [
+          "Biarkan putaran pergelangan mengangkat siku agar punggung bilah meluncur di bahu dan punggung; sapuan datar, cepat dan kuat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 144–145, 图 B-155 to B-158",
+      "start_sec": 351.5,
+      "end_sec": 361.5
+    },
+    {
+      "number": 53,
+      "section": 4,
+      "book_number": 53,
+      "name_zh": "仆步下截刀",
+      "name_pinyin": "Pūbù xià jiédāo",
+      "name_en": "Pubu, Low Cut",
+      "name_id": "Pubu, Potongan Bawah",
+      "steps": {
+        "en": [
+          "Turn right onto the right leg and cross the left foot behind the right; sweep the sword level to the right, edge back and tip right, the left arm opening to the left; look to the right front.",
+          "Step the right foot to the right; rotate the arm out and wrap the sword behind the back to lie on the left arm, edge left and tip back, the left hand at the inside of the right wrist; look to the left front.",
+          "Turn left and squat fully on the left leg into right pubu; cut the sword across the front to the lower right, arm and blade in one line, the left arm straight at the left side, palm down; look down to the right."
+        ],
+        "id": [
+          "Putar ke kanan ke kaki kanan dan silangkan kaki kiri di belakang kaki kanan; sapukan golok datar ke kanan, mata golok ke belakang dan ujung ke kanan, lengan kiri terbuka ke kiri; pandangan ke depan kanan.",
+          "Langkahkan kaki kanan ke kanan; putar lengan ke luar dan belitkan golok di belakang punggung hingga rebah di lengan kiri, mata golok ke kiri dan ujung ke belakang, tangan kiri di sisi dalam pergelangan kanan; pandangan ke depan kiri.",
+          "Putar ke kiri dan jongkok penuh di kaki kiri menjadi pubu kanan; potong golok melintasi depan ke kanan bawah, lengan dan bilah satu garis, lengan kiri lurus di sisi kiri, telapak ke bawah; pandangan ke kanan bawah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Straight-arm sweep, fast and strong; wrap close to the shoulders and back; the low cut has power in the front of the edge, the sword hand ending above the right instep."
+        ],
+        "id": [
+          "Sapuan lengan lurus, cepat dan kuat; belitan dekat bahu dan punggung; potongan bawah dengan tenaga di bagian depan mata golok, tangan golok berakhir di atas punggung kaki kanan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 146–147, 图 B-159 to B-161",
+      "start_sec": 361.5,
+      "end_sec": 369.0
+    },
+    {
+      "number": 54,
+      "section": 4,
+      "book_number": 54,
+      "name_zh": "旋转缠脖刀",
+      "name_pinyin": "Xuánzhuǎn chánbódāo",
+      "name_en": "Spinning, Sword Around the Neck",
+      "name_id": "Berputar, Golok Melingkari Leher",
+      "steps": {
+        "en": [
+          "Turn slightly left; bring the sword up and left against the outside of the left arm, tip to the upper rear, the left hand at the inside of the right wrist; look to the left front.",
+          "Turn slightly right onto the right leg; rotate the arm in and circle the sword up, back and right to lie flat on the right shoulder, edge back and tip left, the left hand opening level to the left as a standing palm.",
+          "Stand on the straight left leg with the right foot behind the left knee and spin almost a full circle back to the left, the arms unchanged."
+        ],
+        "id": [
+          "Putar sedikit ke kiri; bawa golok ke atas dan ke kiri menempel di sisi luar lengan kiri, ujung ke belakang atas, tangan kiri di sisi dalam pergelangan kanan; pandangan ke depan kiri.",
+          "Putar sedikit ke kanan ke kaki kanan; putar lengan ke dalam dan putar golok ke atas, ke belakang dan ke kanan hingga rebah mendatar di bahu kanan, mata golok ke belakang dan ujung ke kiri, tangan kiri terbuka datar ke kiri sebagai telapak tegak.",
+          "Berdiri di kaki kiri lurus dengan kaki kanan di belakang lutut kiri dan berputar hampir satu lingkaran penuh ke kiri belakang, lengan tidak berubah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Trunk upright; spin on the ball of the left foot, the head turning first to lead the body."
+        ],
+        "id": [
+          "Badan tegak; berputar di telapak depan kaki kiri, kepala menoleh lebih dulu memimpin badan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 148–149, 图 B-162 to B-164",
+      "start_sec": 369.0,
+      "end_sec": 376.5
+    },
+    {
+      "number": 55,
+      "section": 4,
+      "book_number": 55,
+      "name_zh": "接刀弓步推掌",
+      "name_pinyin": "Jiēdāo gōngbù tuīzhǎng",
+      "name_en": "Take the Sword, Gongbu, Push Palm",
+      "name_id": "Terima Golok, Gongbu, Dorong Telapak",
+      "steps": {
+        "en": [
+          "Bring the sword to the chest; the left hand comes under the handle, palm up and tiger's mouth forward; look ahead.",
+          "The left hand takes the sword and rotates in, circling it up and forward vertically, tip forward and edge right, while the right hand swings down to the right side.",
+          "Turn left, stamp the right foot down into a half squat and hold the left foot behind the right knee; the left hand carries the sword on down and left, edge down and tip to the lower left rear, while the right hand goes to the right waist, palm up; look to the left front.",
+          "Step the left foot to the left front into left gongbu; the left hand holds the sword at the left side, edge down and tip to the lower rear, and the right palm pushes forward."
+        ],
+        "id": [
+          "Bawa golok ke depan dada; tangan kiri ke bawah gagang, telapak menghadap atas dan hukou ke depan; pandangan ke depan.",
+          "Tangan kiri mengambil golok dan berputar ke dalam, memutarnya ke atas dan ke depan secara vertikal, ujung ke depan dan mata golok ke kanan, sementara tangan kanan berayun turun ke sisi kanan.",
+          "Putar ke kiri, hentakkan kaki kanan dalam setengah jongkok dan tahan kaki kiri di belakang lutut kanan; tangan kiri membawa golok terus ke bawah dan ke kiri, mata golok ke bawah dan ujung ke kiri belakang bawah, sementara tangan kanan ke pinggang kanan, telapak menghadap atas; pandangan ke depan kiri.",
+          "Langkahkan kaki kiri ke depan kiri menjadi gongbu kiri; tangan kiri memegang golok di sisi kiri, mata golok ke bawah dan ujung ke belakang bawah, dan telapak kanan mendorong ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "After taking the sword circle it up and forward with a loose wrist; stamp, stance and push are clean; push fast with a straight arm, power to the outer edge of the palm."
+        ],
+        "id": [
+          "Setelah menerima golok putar ke atas dan ke depan dengan pergelangan longgar; hentakan, kuda-kuda dan dorongan bersih; dorong cepat dengan lengan lurus, tenaga ke sisi luar telapak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 149–150, 图 B-165 to B-168",
+      "start_sec": 376.5,
+      "end_sec": 386.5
+    },
+    {
+      "number": 56,
+      "section": 4,
+      "book_number": 56,
+      "name_zh": "左虚步切掌",
+      "name_pinyin": "Zuǒ xūbù qiēzhǎng",
+      "name_en": "Left Xubu, Cutting Palm",
+      "name_id": "Xubu Kiri, Telapak Memotong",
+      "steps": {
+        "en": [
+          "Turn right onto the right leg, the left foot lifted behind the right knee; reach the sword hand to the left front while the right hand swings down and up to the right, palm slanting up; watch the left hand.",
+          "Turn left and set the left foot down to the left front into left xubu; the left hand brings the sword to the chest and the right hand swings up and down forward to the inside of the left wrist as a standing palm; look ahead."
+        ],
+        "id": [
+          "Putar ke kanan ke kaki kanan, kaki kiri terangkat di belakang lutut kanan; julurkan tangan golok ke depan kiri sementara tangan kanan berayun ke bawah lalu ke kanan atas, telapak miring ke atas; pandangan ke tangan kiri.",
+          "Putar ke kiri dan turunkan kaki kiri ke depan kiri menjadi xubu kiri; tangan kiri membawa golok ke dada dan tangan kanan berayun ke atas lalu turun ke depan ke sisi dalam pergelangan kiri sebagai telapak tegak; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Lift the breath as you rise and sink it into xubu; head turn, cutting palm and stance happen together."
+        ],
+        "id": [
+          "Angkat napas saat berdiri dan tenggelamkan saat masuk xubu; tolehan kepala, telapak memotong dan kuda-kuda dilakukan bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 150–151, 图 B-169 to B-170",
+      "start_sec": 386.5,
+      "end_sec": 391.5
+    },
+    {
+      "number": 57,
+      "section": 4,
+      "book_number": 57,
+      "name_zh": "并步按掌",
+      "name_pinyin": "Bìngbù ànzhǎng",
+      "name_en": "Bingbu, Press Palm",
+      "name_id": "Bingbu, Tekan Telapak",
+      "steps": {
+        "en": [
+          "Step the left foot back behind the right and half squat; the right hand circles up and right in a vertical circle to the upper right rear, palm back, the left arm reaching forward.",
+          "Step the right foot back into left gongbu; the right hand circles down and forward to meet the left hand, palm up.",
+          "Shift onto the right leg and bring the left foot beside it, standing straight; the sword drops beside the left hip, edge down and tip to the lower rear, while the right hand circles down, right and up, then bends and presses down at the right side, fingers forward; the eyes follow the right hand, then look to the left front."
+        ],
+        "id": [
+          "Mundurkan kaki kiri ke belakang kaki kanan dan setengah jongkok; tangan kanan berputar ke atas dan ke kanan dalam lingkaran vertikal ke kanan belakang atas, telapak ke belakang, lengan kiri menjulur ke depan.",
+          "Mundurkan kaki kanan menjadi gongbu kiri; tangan kanan berputar ke bawah dan ke depan menyambut tangan kiri, telapak menghadap atas.",
+          "Pindahkan berat ke kaki kanan dan bawa kaki kiri ke sampingnya, berdiri lurus; golok turun di samping pinggul kiri, mata golok ke bawah dan ujung ke belakang bawah, sementara tangan kanan berputar ke bawah, ke kanan dan ke atas, lalu ditekuk dan menekan ke bawah di sisi kanan, jari ke depan; mata mengikuti tangan kanan, lalu ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A big vertical circle with the right arm; closing the feet, pressing the palm, turning the head and lowering the sword finish together."
+        ],
+        "id": [
+          "Lingkaran vertikal besar dengan lengan kanan; merapatkan kaki, menekan telapak, menoleh dan menurunkan golok selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 151–152, 图 B-171 to B-173",
+      "start_sec": 391.5,
+      "end_sec": 399.0
+    },
+    {
+      "number": 58,
+      "section": 4,
+      "book_number": 58,
+      "name_zh": "并步收势",
+      "name_pinyin": "Bìngbù shōushì",
+      "name_en": "Bingbu, Closing Form",
+      "name_id": "Bingbu, Sikap Penutup",
+      "steps": {
+        "en": [
+          "Turn slightly left, step the left foot forward and bring the right foot up beside it, standing straight; the sword hangs naturally at the left side, tip slanting back, and the right hand hangs at the right side, palm in; look ahead."
+        ],
+        "id": [
+          "Putar sedikit ke kiri, langkahkan kaki kiri ke depan dan bawa kaki kanan ke sampingnya, berdiri lurus; golok tergantung wajar di sisi kiri, ujung miring ke belakang, dan tangan kanan tergantung di sisi kanan, telapak ke dalam; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Closing the feet and lowering the arms are coordinated; chest open, abdomen in, waist upright."
+        ],
+        "id": [
+          "Merapatkan kaki dan menurunkan lengan terkoordinasi; dada terbuka, perut ditarik, pinggang tegak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Broadsword, p. 152, 图 B-174",
+      "start_sec": 399.0,
+      "end_sec": 402.0
+    }
+  ]
+}

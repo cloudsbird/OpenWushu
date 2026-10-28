@@ -42,7 +42,7 @@ To use another server, set `PGHOST`, `PGPORT`, `PGUSER` and `PGPASSWORD`.
 ```sh
 # Ruby 4.0.9 (see .ruby-version)
 bundle install
-bin/rails db:prepare db:seed   # 42-form Taijiquan plus the other routines from the reference book
+bin/rails db:prepare db:seed   # the ten IWUF 1st compulsory routines from the reference book
 bin/dev                        # http://localhost:3000
 bin/rails test                 # model and integration tests
 bin/rubocop && bin/brakeman    # style and security checks
@@ -78,7 +78,7 @@ Where things are:
 - `config/locales/{en,id}.yml`: UI strings. Chinese labels stay in the views and are never translated. `auth.{en,id}.yml` holds the account pages and emails.
 - `app/controllers/admin/` and `app/models/setting.rb`: the admin panel and the one-row site settings.
 - Accounts use Rails' built-in authentication plus sign-up and email verification (`RegistrationsController`, `EmailVerificationsController`). Reading never needs an account. Unverified members can sign in but not post (`User#verified?`).
-- `db/seeds/routines.json`: seed content. Movement names and order come from the reference book; descriptions are in our own words and cite its pages.
+- `db/seeds/routines/<slug>.json`: seed content, one file per routine of the IWUF 1st compulsory routines. Movement names and order come from the reference book; descriptions are in our own words and cite its pages. Re-running `db:seed` fills only blank fields.
 
 ## License
 

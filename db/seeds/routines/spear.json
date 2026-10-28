@@ -1,0 +1,1893 @@
+{
+  "routine": {
+    "slug": "spear",
+    "style": "chang",
+    "name_zh": "枪术",
+    "name_pinyin": "Qiāngshù",
+    "name_en": "Spear",
+    "name_id": "Tombak",
+    "card_zh": "枪",
+    "reference_page": 325,
+    "reference_figure": "E",
+    "position": 14,
+    "status": "awaiting"
+  },
+  "movements": [
+    {
+      "number": 1,
+      "section": 1,
+      "book_number": 1,
+      "name_zh": "起势",
+      "name_pinyin": "Qǐshì",
+      "name_en": "Commencing Form",
+      "name_id": "Sikap Pembuka",
+      "steps": {
+        "en": [
+          "Stand with the feet together on the right side of the floor, then turn slightly right; the right hand holds the butt with the spear upright in front of the right chest, the left hand at the side; look ahead."
+        ],
+        "id": [
+          "Berdiri dengan kaki rapat di sisi kanan arena, lalu putar sedikit ke kanan; tangan kanan memegang pangkal dengan tombak tegak di depan dada kanan, tangan kiri di samping; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [],
+        "id": []
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 327, 图 E-1 to E-2",
+      "start_sec": 0.0,
+      "end_sec": 3.0
+    },
+    {
+      "number": 2,
+      "section": 1,
+      "book_number": 2,
+      "name_zh": "并步下扎枪",
+      "name_pinyin": "Bìngbù xià zhāqiāng",
+      "name_en": "Bingbu, Low Thrust",
+      "name_id": "Bingbu, Tusukan Rendah",
+      "steps": {
+        "en": [
+          "Raise the left hand to grip the middle of the shaft and, turning left, lead the spear down so the tip points forward and down; the right hand draws the butt to the right waist.",
+          "Turn the left hand in for a grab (拿), bring the right foot to the left and push the butt to thrust forward and down; the left hand becomes a standing palm guarding inside the right upper arm."
+        ],
+        "id": [
+          "Angkat tangan kiri memegang bagian tengah gagang dan, sambil berputar ke kiri, turunkan tombak sehingga mata tombak mengarah ke depan bawah; tangan kanan menarik pangkal ke pinggang kanan.",
+          "Putar tangan kiri ke dalam untuk menekan (拿), rapatkan kaki kanan ke kaki kiri dan dorong pangkal untuk menusuk ke depan bawah; tangan kiri menjadi telapak tegak menjaga sisi dalam lengan atas kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Turn left on the left heel and right ball; the turn and the tip dropping coincide, as do the feet closing and the thrust."
+        ],
+        "id": [
+          "Putar ke kiri berporos pada tumit kiri dan telapak depan kanan; putaran dan turunnya mata tombak bersamaan, begitu pula merapatkan kaki dan tusukan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 327–329, 图 E-3 to E-6",
+      "start_sec": 3.0,
+      "end_sec": 8.0
+    },
+    {
+      "number": 3,
+      "section": 1,
+      "book_number": 3,
+      "name_zh": "插步亮掌",
+      "name_pinyin": "Chābù liàngzhǎng",
+      "name_en": "Chabu, Flash Palm",
+      "name_id": "Chabu, Telapak Kilat",
+      "steps": {
+        "en": [
+          "Rest the tip on the floor and cross the left foot behind the right; the right hand arcs the butt in, down and out to the right side, arm straight and hand a little above the shoulder, while the left hand arcs down and out to the left into a flashing palm, palm out and fingers forward; look ahead."
+        ],
+        "id": [
+          "Letakkan mata tombak di lantai dan silangkan kaki kiri di belakang kaki kanan; tangan kanan melengkungkan pangkal ke dalam, ke bawah lalu ke sisi kanan, lengan lurus dan tangan sedikit di atas bahu, sementara tangan kiri melengkung ke bawah lalu ke kiri menjadi telapak kilat, telapak ke luar dan jari ke depan; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A big chabu with the hips sunk; chest open, lower back hollowed, shoulders spread."
+        ],
+        "id": [
+          "Chabu lebar dengan pinggul turun; dada terbuka, pinggang melengkung, bahu terbuka."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 329–330, 图 E-7",
+      "start_sec": 8.0,
+      "end_sec": 11.0
+    },
+    {
+      "number": 4,
+      "section": 1,
+      "book_number": 4,
+      "name_zh": "转身弓步扎枪",
+      "name_pinyin": "Zhuǎnshēn gōngbù zhāqiāng",
+      "name_en": "Turn, Gongbu Thrust",
+      "name_id": "Berbalik, Tusukan Gongbu",
+      "steps": {
+        "en": [
+          "Lower both hands; the right hand pushes the butt forward to lift the tip off the floor and the left hand takes the shaft; watch the tip.",
+          "Step the left foot round past the inside of the right to the right front; the loose left hand slides toward the tip and deflects the spear to the left.",
+          "Step the right foot round past the inside of the left to the left front and turn right; the left hand slides toward the butt and pushes the spear right.",
+          "Push the butt toward the left armpit and lean back so the tip clouds round behind to the left.",
+          "Step the left foot slightly forward; the left hand slides to the middle, the right hand turns the butt down to the right waist and the left hand turns in to grab.",
+          "Shift forward into left gongbu and push the butt to thrust forward."
+        ],
+        "id": [
+          "Turunkan kedua tangan; tangan kanan mendorong pangkal ke depan untuk mengangkat mata tombak dari lantai dan tangan kiri memegang gagang; pandangan ke mata tombak.",
+          "Langkahkan kaki kiri memutar melewati sisi dalam kaki kanan ke depan kanan; tangan kiri yang longgar meluncur ke arah mata tombak dan menepis tombak ke kiri.",
+          "Langkahkan kaki kanan memutar melewati sisi dalam kaki kiri ke depan kiri dan putar ke kanan; tangan kiri meluncur ke arah pangkal dan mendorong tombak ke kanan.",
+          "Dorong pangkal ke arah ketiak kiri dan condong ke belakang sehingga mata tombak berputar ke belakang lalu ke kiri.",
+          "Langkahkan kaki kiri sedikit ke depan; tangan kiri meluncur ke tengah, tangan kanan membalik pangkal ke bawah ke pinggang kanan dan tangan kiri berputar ke dalam untuk menekan.",
+          "Geser ke depan menjadi gongbu kiri dan dorong pangkal untuk menusuk ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Keep the left hand loose and sliding; lean back slightly as the shaft passes the head; toe the right foot in before turning."
+        ],
+        "id": [
+          "Tangan kiri longgar dan meluncur; condong sedikit ke belakang saat gagang melewati kepala; putar ujung kaki kanan ke dalam sebelum berbalik."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 330–333, 图 E-8 to E-14",
+      "start_sec": 11.0,
+      "end_sec": 26.0
+    },
+    {
+      "number": 5,
+      "section": 1,
+      "book_number": 5,
+      "name_zh": "弓步拦拿扎枪",
+      "name_pinyin": "Gōngbù lán ná zhāqiāng",
+      "name_en": "Gongbu, Parry, Grab and Thrust",
+      "name_id": "Gongbu, Tangkis, Tekan dan Tusuk",
+      "steps": {
+        "en": [
+          "Shift back into banmabu; draw the butt to the right waist and turn it up, the left hand turning out to parry (拦).",
+          "Turn the butt down to the right waist and turn the left hand in to grab (拿).",
+          "Shift forward into left gongbu and push the butt to thrust (扎) forward. Do the parry-grab-thrust twice."
+        ],
+        "id": [
+          "Geser ke belakang menjadi banmabu; tarik pangkal ke pinggang kanan dan balik ke atas, tangan kiri berputar ke luar untuk menangkis (拦).",
+          "Balik pangkal ke bawah ke pinggang kanan dan putar tangan kiri ke dalam untuk menekan (拿).",
+          "Geser ke depan menjadi gongbu kiri dan dorong pangkal untuk menusuk (扎) ke depan. Lakukan tangkis-tekan-tusuk dua kali."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The rear hand must reach the front hand; back leg straight with the rear foot flat; spear level with the shoulder."
+        ],
+        "id": [
+          "Tangan belakang harus menyentuh tangan depan; kaki belakang lurus dengan telapak kaki belakang rata; tombak setinggi bahu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 333–335, 图 E-15 to E-18",
+      "start_sec": 26.0,
+      "end_sec": 33.5
+    },
+    {
+      "number": 6,
+      "section": 1,
+      "book_number": 6,
+      "name_zh": "后点步扎枪",
+      "name_pinyin": "Hòudiǎnbù zhāqiāng",
+      "name_en": "Houdianbu, Thrust",
+      "name_id": "Houdianbu, Tusuk",
+      "steps": {
+        "en": [
+          "Shift back into banmabu; draw the butt to the right waist, turn it up and parry with the left hand.",
+          "Turn the butt down to the waist and grab with the left hand.",
+          "Straighten the left leg and draw the right foot half a step forward onto the toes; push the butt to thrust forward."
+        ],
+        "id": [
+          "Geser ke belakang menjadi banmabu; tarik pangkal ke pinggang kanan, balik ke atas dan tangkis dengan tangan kiri.",
+          "Balik pangkal ke bawah ke pinggang dan tekan dengan tangan kiri.",
+          "Luruskan kaki kiri dan tarik kaki kanan setengah langkah ke depan bertumpu pada ujung kaki; dorong pangkal untuk menusuk ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Weight on the left leg; thrust at shoulder height."
+        ],
+        "id": [
+          "Berat di kaki kiri; tusuk setinggi bahu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 335–336, 图 E-19 to E-22",
+      "start_sec": 33.5,
+      "end_sec": 41.0
+    },
+    {
+      "number": 7,
+      "section": 1,
+      "book_number": 7,
+      "name_zh": "跨步劈枪",
+      "name_pinyin": "Kuàbù pīqiāng",
+      "name_en": "Kuabu, Chop with the Spear",
+      "name_id": "Kuabu, Bacok dengan Tombak",
+      "steps": {
+        "en": [
+          "Step the right foot forward; the left hand slides to the middle and the tip arcs down to the left.",
+          "Leap the left foot forward and land the right foot in front of it, knees slightly bent and left heel up; chop the spear level forward with both hands, the butt to the right waist."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan; tangan kiri meluncur ke tengah dan mata tombak melengkung ke kiri bawah.",
+          "Lompatkan kaki kiri ke depan dan daratkan kaki kanan di depannya, lutut sedikit ditekuk dan tumit kiri terangkat; bacokkan tombak datar ke depan dengan kedua tangan, pangkal ke pinggang kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A strong chop timed with the leap step."
+        ],
+        "id": [
+          "Bacokan kuat yang serempak dengan langkah lompat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 337–338, 图 E-23 to E-25",
+      "start_sec": 41.0,
+      "end_sec": 46.0
+    },
+    {
+      "number": 8,
+      "section": 1,
+      "book_number": 8,
+      "name_zh": "转身跃起劈枪",
+      "name_pinyin": "Zhuǎnshēn yuèqǐ pīqiāng",
+      "name_en": "Turning Leap, Chop",
+      "name_id": "Lompat Berbalik, Bacok",
+      "steps": {
+        "en": [
+          "Jump off both feet and turn back to the left in the air, legs split left forward and right back; the left hand leads the spear over the top, forward, down and back in a full circle.",
+          "Scissor the legs and land right foot in front, left heel up, chopping the spear forward with both hands."
+        ],
+        "id": [
+          "Lompat dengan kedua kaki dan berbalik ke kiri di udara, kaki terbuka kiri ke depan dan kanan ke belakang; tangan kiri memimpin tombak melewati atas, ke depan, ke bawah dan ke belakang satu lingkaran penuh.",
+          "Gunting kaki dan mendarat dengan kaki kanan di depan, tumit kiri terangkat, bacokkan tombak ke depan dengan kedua tangan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Swing fast and jump high, scissoring in the air; the chop is complete on landing. Beginners may first just jump and land one foot after the other."
+        ],
+        "id": [
+          "Ayun cepat dan lompat tinggi, menggunting di udara; bacokan selesai saat mendarat. Pemula boleh sekadar melompat dan mendarat satu kaki demi satu kaki dulu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 338–340, 图 E-26 to E-28",
+      "start_sec": 46.0,
+      "end_sec": 51.0
+    },
+    {
+      "number": 9,
+      "section": 1,
+      "book_number": 9,
+      "name_zh": "跨步托枪",
+      "name_pinyin": "Kuàbù tuōqiāng",
+      "name_en": "Kuabu, Lift the Spear",
+      "name_id": "Kuabu, Angkat Tombak",
+      "steps": {
+        "en": [
+          "Step the left foot forward, then leap the right foot forward, left heel up; the right hand draws the butt back and turns it up with the elbow bent while the left hand slides to the middle and lifts the spear in an arc to the upper right front; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan, lalu lompatkan kaki kanan ke depan, tumit kiri terangkat; tangan kanan menarik pangkal ke belakang dan membaliknya ke atas dengan siku ditekuk sementara tangan kiri meluncur ke tengah dan mengangkat tombak melengkung ke depan kanan atas; pandangan ke mata tombak."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Lift level at shoulder height, both hands turning up together: send the spear on the first step, lift on the second."
+        ],
+        "id": [
+          "Angkat mendatar setinggi bahu, kedua tangan membalik ke atas bersamaan: kirim tombak pada langkah pertama, angkat pada langkah kedua."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 341, 图 E-29 to E-30",
+      "start_sec": 51.0,
+      "end_sec": 54.0
+    },
+    {
+      "number": 10,
+      "section": 1,
+      "book_number": 10,
+      "name_zh": "上步斜劈枪",
+      "name_pinyin": "Shàngbù xié pīqiāng",
+      "name_en": "Shangbu, Diagonal Chop",
+      "name_id": "Shangbu, Bacokan Serong",
+      "steps": {
+        "en": [
+          "Step the left foot forward; the left hand leads the spear down and back to the left in a half arc, the head turning left; watch the tip.",
+          "Step the right foot forward, left heel up, and chop diagonally down to the right front with both hands."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan; tangan kiri membawa tombak ke bawah lalu ke kiri belakang setengah busur, kepala menoleh ke kiri; pandangan ke mata tombak.",
+          "Langkahkan kaki kanan ke depan, tumit kiri terangkat, dan bacok serong ke depan kanan bawah dengan kedua tangan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slide the left hand to open the grip when leading back; a big diagonal chop timed with the step."
+        ],
+        "id": [
+          "Luncurkan tangan kiri untuk melebarkan pegangan saat menarik ke belakang; bacokan serong yang besar serempak dengan langkah."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 341, 图 E-31 to E-32",
+      "start_sec": 54.0,
+      "end_sec": 59.0
+    },
+    {
+      "number": 11,
+      "section": 1,
+      "book_number": 11,
+      "name_zh": "插步下拨枪",
+      "name_pinyin": "Chābù xià bōqiāng",
+      "name_en": "Chabu, Low Deflection",
+      "name_id": "Chabu, Tepisan Rendah",
+      "steps": {
+        "en": [
+          "Step the left foot diagonally to the left front and cross the right foot behind it; the left hand leads the spear in a deflection down to the left, the head turning left; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kiri serong ke depan kiri dan silangkan kaki kanan di belakangnya; tangan kiri membawa tombak menepis ke kiri bawah, kepala menoleh ke kiri; pandangan ke mata tombak."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slide the left hand; keep the deflection small and timed with chabu."
+        ],
+        "id": [
+          "Luncurkan tangan kiri; tepisan kecil dan serempak dengan chabu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 342, 图 E-33 to E-34",
+      "start_sec": 59.0,
+      "end_sec": 62.0
+    },
+    {
+      "number": 12,
+      "section": 1,
+      "book_number": 12,
+      "name_zh": "并步半蹲下扎枪",
+      "name_pinyin": "Bìngbù bàndūn xià zhāqiāng",
+      "name_en": "Bingbu Half Squat, Low Thrust",
+      "name_id": "Bingbu Setengah Jongkok, Tusukan Rendah",
+      "steps": {
+        "en": [
+          "Step the left foot toward the tip; turn the butt down to the right waist and grab with the left hand.",
+          "Bring the right foot to the left and half squat, pushing the butt to thrust forward and down."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke arah mata tombak; balik pangkal ke bawah ke pinggang kanan dan tekan dengan tangan kiri.",
+          "Rapatkan kaki kanan ke kaki kiri dan setengah jongkok, dorong pangkal untuk menusuk ke depan bawah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Step with the grab, close the feet with the thrust."
+        ],
+        "id": [
+          "Melangkah bersamaan dengan tekanan, merapatkan kaki bersamaan dengan tusukan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 343–344, 图 E-35 to E-36",
+      "start_sec": 62.0,
+      "end_sec": 67.0
+    },
+    {
+      "number": 13,
+      "section": 1,
+      "book_number": 13,
+      "name_zh": "转身劈枪",
+      "name_pinyin": "Zhuǎnshēn pīqiāng",
+      "name_en": "Turn, Chop with the Spear",
+      "name_id": "Berbalik, Bacok dengan Tombak",
+      "steps": {
+        "en": [
+          "Turn the right toes out and turn right, stepping half a step to the right front; draw the butt back and turn it up over the head; look down to the left.",
+          "Keep turning right, the left foot moving slightly left, knees slightly bent; chop the spear level forward, tip at waist height, the butt to the right waist."
+        ],
+        "id": [
+          "Putar ujung kaki kanan ke luar dan putar ke kanan, melangkah setengah langkah ke depan kanan; tarik pangkal ke belakang dan balik ke atas melewati kepala; pandangan ke kiri bawah.",
+          "Terus berputar ke kanan, kaki kiri bergeser sedikit ke kiri, lutut sedikit ditekuk; bacokkan tombak datar ke depan, mata tombak setinggi pinggang, pangkal ke pinggang kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A strong chop with the weight dropping slightly; one quick action."
+        ],
+        "id": [
+          "Bacokan kuat dengan berat badan sedikit turun; satu gerakan cepat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 344, 图 E-37 to E-38",
+      "start_sec": 67.0,
+      "end_sec": 72.0
+    },
+    {
+      "number": 14,
+      "section": 1,
+      "book_number": 14,
+      "name_zh": "转身拿扎枪",
+      "name_pinyin": "Zhuǎnshēn ná zhāqiāng",
+      "name_en": "Turn, Grab and Thrust",
+      "name_id": "Berbalik, Tekan dan Tusuk",
+      "steps": {
+        "en": [
+          "Step the left foot half a step back and bring the right foot in, toes in; hold the spear and swing it level a full circle as you turn back to the left.",
+          "Keep turning left; turn the butt up to the front of the shoulder and parry with the left hand.",
+          "Step the left foot forward into banmabu, turn the butt down to the waist and grab, then shift into left gongbu and push to thrust forward."
+        ],
+        "id": [
+          "Mundurkan kaki kiri setengah langkah dan bawa kaki kanan mendekat, ujung kaki ke dalam; peluk tombak dan ayunkan datar satu lingkaran penuh saat berbalik ke kiri.",
+          "Terus berputar ke kiri; balik pangkal ke atas ke depan bahu dan tangkis dengan tangan kiri.",
+          "Langkahkan kaki kiri ke depan menjadi banmabu, balik pangkal ke bawah ke pinggang dan tekan, lalu geser menjadi gongbu kiri dan dorong untuk menusuk ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A nimble level turn with the right hand never leaving the waist and the spear level; the thrust lands as the right leg straightens."
+        ],
+        "id": [
+          "Putaran datar yang lincah dengan tangan kanan tidak meninggalkan pinggang dan tombak mendatar; tusukan selesai saat kaki kanan lurus."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 344–347, 图 E-39 to E-44",
+      "start_sec": 72.0,
+      "end_sec": 79.5
+    },
+    {
+      "number": 15,
+      "section": 1,
+      "book_number": 15,
+      "name_zh": "弓步拦拿扎枪",
+      "name_pinyin": "Gōngbù lán ná zhāqiāng",
+      "name_en": "Gongbu, Parry, Grab and Thrust",
+      "name_id": "Gongbu, Tangkis, Tekan dan Tusuk",
+      "steps": {
+        "en": [
+          "Shift back into banmabu, drawing the butt to the right waist.",
+          "Keep shifting back into right gongbu; turn the butt up and parry with the left hand.",
+          "Shift left into banmabu; turn the butt down to the waist and grab with the left hand.",
+          "Shift forward into left gongbu and push the butt to thrust forward. Do it twice."
+        ],
+        "id": [
+          "Geser ke belakang menjadi banmabu, tarik pangkal ke pinggang kanan.",
+          "Terus geser ke belakang menjadi gongbu kanan; balik pangkal ke atas dan tangkis dengan tangan kiri.",
+          "Geser ke kiri menjadi banmabu; balik pangkal ke bawah ke pinggang dan tekan dengan tangan kiri.",
+          "Geser ke depan menjadi gongbu kiri dan dorong pangkal untuk menusuk ke depan. Lakukan dua kali."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （五）; note the right hand turning up on the parry and the weight changes."
+        ],
+        "id": [
+          "Sama seperti （五）; perhatikan tangan kanan membalik ke atas saat menangkis dan perpindahan berat badan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 347–349, 图 E-45 to E-48",
+      "start_sec": 79.5,
+      "end_sec": 89.5
+    },
+    {
+      "number": 16,
+      "section": 1,
+      "book_number": 16,
+      "name_zh": "横裆步架枪",
+      "name_pinyin": "Héngdāngbù jiàqiāng",
+      "name_en": "Hengdangbu, Block Up",
+      "name_id": "Hengdangbu, Tangkis ke Atas",
+      "steps": {
+        "en": [
+          "Shift back into right hengdangbu; draw the butt back and turn it up over the head while the left hand turns out and blocks the spear up, the tip slightly lower than the butt; look to the left front."
+        ],
+        "id": [
+          "Geser ke belakang menjadi hengdangbu kanan; tarik pangkal ke belakang dan balik ke atas melewati kepala sementara tangan kiri berputar ke luar dan menangkis tombak ke atas, mata tombak sedikit lebih rendah dari pangkal; pandangan ke depan kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A nimble block with both hands lifting together."
+        ],
+        "id": [
+          "Tangkisan lincah dengan kedua tangan terangkat bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 349–350, 图 E-49",
+      "start_sec": 89.5,
+      "end_sec": 92.5
+    },
+    {
+      "number": 17,
+      "section": 1,
+      "book_number": 17,
+      "name_zh": "转身劈枪",
+      "name_pinyin": "Zhuǎnshēn pīqiāng",
+      "name_en": "Turn, Chop with the Spear",
+      "name_id": "Berbalik, Bacok dengan Tombak",
+      "steps": {
+        "en": [
+          "Turn right and lean slightly forward; draw the butt to the right waist and chop the spear over the top and down forward with the left hand, tip at waist height."
+        ],
+        "id": [
+          "Putar ke kanan dan condong sedikit ke depan; tarik pangkal ke pinggang kanan dan bacokkan tombak melewati atas ke depan bawah dengan tangan kiri, mata tombak setinggi pinggang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （十三）."
+        ],
+        "id": [
+          "Sama seperti （十三）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 350, 图 E-50",
+      "start_sec": 92.5,
+      "end_sec": 95.5
+    },
+    {
+      "number": 18,
+      "section": 1,
+      "book_number": 18,
+      "name_zh": "高虚步拉枪",
+      "name_pinyin": "Gāoxūbù lāqiāng",
+      "name_en": "Gao Xubu, Pull the Spear",
+      "name_id": "Gao Xubu, Tarik Tombak",
+      "steps": {
+        "en": [
+          "Hold the spear and swing it level to the left as you turn left.",
+          "Pivot on the left foot and keep turning left, the right foot sliding right along the floor.",
+          "Keep clouding the spear level to the left rear, the left hand sliding toward the butt and the right hand lifting the butt; lean back slightly.",
+          "The tip clouds round from the right to the front as you lean slightly forward.",
+          "Loosen the left hand and pull the butt to the upper right so the tip deflects to the left rear; move the left foot in front of the right into gao xubu and turn the head left; look left."
+        ],
+        "id": [
+          "Peluk tombak dan ayunkan datar ke kiri saat berputar ke kiri.",
+          "Berporos pada kaki kiri dan terus berputar ke kiri, kaki kanan meluncur ke kanan di lantai.",
+          "Terus putar tombak datar ke kiri belakang, tangan kiri meluncur ke arah pangkal dan tangan kanan mengangkat pangkal; condong sedikit ke belakang.",
+          "Mata tombak berputar dari kanan ke depan saat condong sedikit ke depan.",
+          "Longgarkan tangan kiri dan tarik pangkal ke kanan atas sehingga mata tombak menepis ke kiri belakang; pindahkan kaki kiri ke depan kaki kanan menjadi gao xubu dan tolehkan kepala ke kiri; pandangan ke kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A level swing, nimble footwork, and the toe point timed with the pull. Learn the swing, cloud and pull separately, then join them."
+        ],
+        "id": [
+          "Ayunan mendatar, langkah lincah, dan tutulan kaki serempak dengan tarikan. Pelajari ayunan, putaran dan tarikan terpisah, lalu sambungkan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 350–352, 图 E-51 to E-56",
+      "start_sec": 95.5,
+      "end_sec": 108.0
+    },
+    {
+      "number": 19,
+      "section": 2,
+      "book_number": 19,
+      "name_zh": "后点步扎枪",
+      "name_pinyin": "Hòudiǎnbù zhāqiāng",
+      "name_en": "Houdianbu, Thrust",
+      "name_id": "Houdianbu, Tusuk",
+      "steps": {
+        "en": [
+          "Lift the left leg round behind the right into chabu, turning slightly left; the left hand pushes the shaft right, then the butt turns up and the left hand parries.",
+          "Step the left foot forward into banmabu; turn the butt down to the right waist and grab.",
+          "Stand up on the left leg and draw the right foot half a step forward onto the toes (houdianbu); push the butt to thrust forward."
+        ],
+        "id": [
+          "Angkat kaki kiri memutar ke belakang kaki kanan menjadi chabu, putar sedikit ke kiri; tangan kiri mendorong gagang ke kanan, lalu pangkal dibalik ke atas dan tangan kiri menangkis.",
+          "Langkahkan kaki kiri ke depan menjadi banmabu; balik pangkal ke bawah ke pinggang kanan dan tekan.",
+          "Berdiri di kaki kiri dan tarik kaki kanan setengah langkah ke depan bertumpu pada ujung kaki (houdianbu); dorong pangkal untuk menusuk ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Turn the right hand up to the right chest on the parry; shift onto the left leg as you thrust."
+        ],
+        "id": [
+          "Balik tangan kanan ke atas ke depan dada kanan saat menangkis; pindahkan berat ke kaki kiri saat menusuk."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 352–353, 图 E-57 to E-60",
+      "start_sec": 108.0,
+      "end_sec": 115.5
+    },
+    {
+      "number": 20,
+      "section": 2,
+      "book_number": 20,
+      "name_zh": "上步劈枪",
+      "name_pinyin": "Shàngbù pīqiāng",
+      "name_en": "Shangbu, Chop with the Spear",
+      "name_id": "Shangbu, Bacok dengan Tombak",
+      "steps": {
+        "en": [
+          "Step the right foot forward, turning slightly left; draw the spear up to the right while the left hand slides to the middle so the tip circles down on the left and behind.",
+          "Step the left foot forward, the right foot following half a step, and turn right; raise the spear and chop level forward with both hands."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan, putar sedikit ke kiri; tarik tombak ke kanan atas sementara tangan kiri meluncur ke tengah sehingga mata tombak berputar ke bawah di kiri lalu ke belakang.",
+          "Langkahkan kaki kiri ke depan, kaki kanan mengikuti setengah langkah, dan putar ke kanan; angkat tombak dan bacok datar ke depan dengan kedua tangan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Open the hands wide as you draw back and raise; grip firmly with the left hand on the chop, which is strong."
+        ],
+        "id": [
+          "Lebarkan kedua tangan saat menarik dan mengangkat; genggam kuat dengan tangan kiri saat membacok, yang dilakukan dengan kuat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 354, 图 E-61 to E-63",
+      "start_sec": 115.5,
+      "end_sec": 120.5
+    },
+    {
+      "number": 21,
+      "section": 2,
+      "book_number": 21,
+      "name_zh": "横裆步架枪",
+      "name_pinyin": "Héngdāngbù jiàqiāng",
+      "name_en": "Hengdangbu, Block Up",
+      "name_id": "Hengdangbu, Tangkis ke Atas",
+      "steps": {
+        "en": [
+          "Step the right foot back and turn right into right hengdangbu; draw the butt back and turn it up over the head while the left hand turns out and blocks the spear up, the tip slightly lower than the shaft."
+        ],
+        "id": [
+          "Mundurkan kaki kanan dan putar ke kanan menjadi hengdangbu kanan; tarik pangkal ke belakang dan balik ke atas melewati kepala sementara tangan kiri berputar ke luar dan menangkis tombak ke atas, mata tombak sedikit lebih rendah dari gagang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （十六）: a nimble block with both hands lifting together."
+        ],
+        "id": [
+          "Sama seperti （十六）: tangkisan lincah dengan kedua tangan terangkat bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 356, 图 E-64",
+      "start_sec": 120.5,
+      "end_sec": 123.5
+    },
+    {
+      "number": 22,
+      "section": 2,
+      "book_number": 22,
+      "name_zh": "转身扣腿点枪",
+      "name_pinyin": "Zhuǎnshēn kòutuǐ diǎnqiāng",
+      "name_en": "Turn, Hooked Leg, Peck with the Spear",
+      "name_id": "Berbalik, Kaki Mengait, Patuk dengan Tombak",
+      "steps": {
+        "en": [
+          "Turn right; lower the butt to the right waist and chop forward with the left hand as you turn.",
+          "Hold the spear and swing it level to the left as you turn left, the right foot moving slightly right.",
+          "Move the left foot slightly back and shift back; the left hand slides to the middle so the tip circles down on the left and behind.",
+          "Step the left foot half a step forward and bend the knee, hooking the right foot behind the left knee; peck the spear forward and down with both hands, tip at waist height."
+        ],
+        "id": [
+          "Putar ke kanan; turunkan pangkal ke pinggang kanan dan bacok ke depan dengan tangan kiri saat berputar.",
+          "Peluk tombak dan ayunkan datar ke kiri saat berputar ke kiri, kaki kanan bergeser sedikit ke kanan.",
+          "Geser kaki kiri sedikit ke belakang dan pindahkan berat ke belakang; tangan kiri meluncur ke tengah sehingga mata tombak berputar ke bawah di kiri lalu ke belakang.",
+          "Langkahkan kaki kiri setengah langkah ke depan dan tekuk lutut, kaitkan kaki kanan di belakang lutut kiri; patukkan tombak ke depan bawah dengan kedua tangan, mata tombak setinggi pinggang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Keep the left grip lively during the swing and raise; power reaches the tip, and the peck lands with the leg hook."
+        ],
+        "id": [
+          "Pegangan tangan kiri tetap hidup saat mengayun dan mengangkat; tenaga sampai ke mata tombak, dan patukan selesai bersama kaitan kaki."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 357–359, 图 E-65 to E-68",
+      "start_sec": 123.5,
+      "end_sec": 133.5
+    },
+    {
+      "number": 23,
+      "section": 2,
+      "book_number": 23,
+      "name_zh": "并步崩枪",
+      "name_pinyin": "Bìngbù bēngqiāng",
+      "name_en": "Bingbu, Snap the Spear Up",
+      "name_id": "Bingbu, Sentak Tombak ke Atas",
+      "steps": {
+        "en": [
+          "Step the right foot back, bring the left foot to it and turn slightly right; draw the butt back sharply as the left hand slides to the middle so the tip snaps up to head height."
+        ],
+        "id": [
+          "Mundurkan kaki kanan, rapatkan kaki kiri ke kaki kanan dan putar sedikit ke kanan; tarik pangkal ke belakang dengan tajam sementara tangan kiri meluncur ke tengah sehingga mata tombak tersentak ke atas setinggi kepala."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The left hand slides, then grips suddenly on the snap so the shaft quivers."
+        ],
+        "id": [
+          "Tangan kiri meluncur, lalu menggenggam tiba-tiba saat menyentak sehingga gagang bergetar."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 359–360, 图 E-69 to E-70",
+      "start_sec": 133.5,
+      "end_sec": 136.5
+    },
+    {
+      "number": 24,
+      "section": 2,
+      "book_number": 24,
+      "name_zh": "弧行步缠枪",
+      "name_pinyin": "Húxíngbù chánqiāng",
+      "name_en": "Huxingbu, Coiling the Spear",
+      "name_id": "Huxingbu, Tombak Melilit",
+      "steps": {
+        "en": [
+          "Step the right foot diagonally to the right front, then walk five alternating steps on an arc toward the right front of the floor; the left hand holds the middle loosely while the right hand coils the spear anticlockwise at the chest, four times in a row."
+        ],
+        "id": [
+          "Langkahkan kaki kanan serong ke depan kanan, lalu berjalan lima langkah bergantian di atas busur ke arah depan kanan arena; tangan kiri memegang tengah dengan longgar sementara tangan kanan melilitkan tombak berlawanan arah jarum jam di depan dada, empat kali berturut-turut."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Both hands work together, soft with hidden power; keep the circles small and in time with the steps."
+        ],
+        "id": [
+          "Kedua tangan bekerja sama, lembut dengan tenaga tersembunyi; lingkaran kecil dan serempak dengan langkah."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 360–362, 图 E-71 to E-75",
+      "start_sec": 136.5,
+      "end_sec": 139.5
+    },
+    {
+      "number": 25,
+      "section": 2,
+      "book_number": 25,
+      "name_zh": "插步拦拿扎枪",
+      "name_pinyin": "Chābù lán ná zhāqiāng",
+      "name_en": "Chabu, Parry, Grab and Thrust",
+      "name_id": "Chabu, Tangkis, Tekan dan Tusuk",
+      "steps": {
+        "en": [
+          "Step the left foot to the left front, drawing the butt to the right waist.",
+          "Cross the right foot behind the left; turn the butt up and parry with the left hand.",
+          "Step the left foot forward into banmabu; turn the butt down to the waist and grab.",
+          "Stand on the left leg, the right toes touching down half a step forward; push the butt to thrust forward."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan kiri, tarik pangkal ke pinggang kanan.",
+          "Silangkan kaki kanan di belakang kaki kiri; balik pangkal ke atas dan tangkis dengan tangan kiri.",
+          "Langkahkan kaki kiri ke depan menjadi banmabu; balik pangkal ke bawah ke pinggang dan tekan.",
+          "Berdiri di kaki kiri, ujung kaki kanan menyentuh lantai setengah langkah ke depan; dorong pangkal untuk menusuk ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Parry, grab and thrust fit the footwork."
+        ],
+        "id": [
+          "Tangkis, tekan dan tusuk menyatu dengan langkah."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 362–363, 图 E-76 to E-79",
+      "start_sec": 139.5,
+      "end_sec": 149.5
+    },
+    {
+      "number": 26,
+      "section": 2,
+      "book_number": 26,
+      "name_zh": "盖步拦拿扎枪",
+      "name_pinyin": "Gàibù lán ná zhāqiāng",
+      "name_en": "Gaibu, Parry, Grab and Thrust",
+      "name_id": "Gaibu, Tangkis, Tekan dan Tusuk",
+      "steps": {
+        "en": [
+          "Lower the weight slightly, draw the butt to the right waist and step the right foot in gaibu in front of the left; turn the butt up and parry with the left hand.",
+          "Step the left foot forward into banmabu; turn the butt down to the waist and grab.",
+          "Shift forward into left gongbu and push the butt to thrust forward."
+        ],
+        "id": [
+          "Turunkan berat sedikit, tarik pangkal ke pinggang kanan dan langkahkan kaki kanan secara gaibu di depan kaki kiri; balik pangkal ke atas dan tangkis dengan tangan kiri.",
+          "Langkahkan kaki kiri ke depan menjadi banmabu; balik pangkal ke bawah ke pinggang dan tekan.",
+          "Geser ke depan menjadi gongbu kiri dan dorong pangkal untuk menusuk ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Focus on matching gaibu with the parry."
+        ],
+        "id": [
+          "Fokus menyelaraskan gaibu dengan tangkisan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 363–365, 图 E-80 to E-83",
+      "start_sec": 149.5,
+      "end_sec": 157.0
+    },
+    {
+      "number": 27,
+      "section": 2,
+      "book_number": 27,
+      "name_zh": "弓步拦拿扎枪",
+      "name_pinyin": "Gōngbù lán ná zhāqiāng",
+      "name_en": "Gongbu, Parry, Grab and Thrust",
+      "name_id": "Gongbu, Tangkis, Tekan dan Tusuk",
+      "steps": {
+        "en": [
+          "Shift back into banmabu, drawing the butt to the right waist.",
+          "Lean back; turn the butt up and parry with the left hand.",
+          "Turn the butt down to the waist and grab.",
+          "Shift forward into left gongbu and push the butt to thrust forward."
+        ],
+        "id": [
+          "Geser ke belakang menjadi banmabu, tarik pangkal ke pinggang kanan.",
+          "Condong ke belakang; balik pangkal ke atas dan tangkis dengan tangan kiri.",
+          "Balik pangkal ke bawah ke pinggang dan tekan.",
+          "Geser ke depan menjadi gongbu kiri dan dorong pangkal untuk menusuk ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Do the first two parts as one."
+        ],
+        "id": [
+          "Lakukan dua bagian pertama sebagai satu kesatuan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 365–367, 图 E-84 to E-87",
+      "start_sec": 157.0,
+      "end_sec": 167.0
+    },
+    {
+      "number": 28,
+      "section": 2,
+      "book_number": 28,
+      "name_zh": "反身下扎枪",
+      "name_pinyin": "Fǎnshēn xià zhāqiāng",
+      "name_en": "Turn Around, Low Thrust",
+      "name_id": "Berbalik, Tusukan Rendah",
+      "steps": {
+        "en": [
+          "Shift back; draw the butt back as the left hand slides to the middle and presses slightly, the tip pointing forward and down.",
+          "Push off the right foot, lift the body forward and up and turn over back to the left; the left hand flicks and hooks the spear up to the upper left.",
+          "Lift the right knee, step it down behind to the right and turn left; push the butt to thrust forward and down until the tip touches the floor, the left hand letting go into a standing palm inside the right upper arm."
+        ],
+        "id": [
+          "Geser ke belakang; tarik pangkal ke belakang sementara tangan kiri meluncur ke tengah dan menekan sedikit, mata tombak mengarah ke depan bawah.",
+          "Tolak dengan kaki kanan, angkat badan ke depan atas dan berbalik ke kiri belakang; tangan kiri mencungkil dan mengaitkan tombak ke kiri atas.",
+          "Angkat lutut kanan, turunkan ke kanan belakang dan putar ke kiri; dorong pangkal untuk menusuk ke depan bawah hingga mata tombak menyentuh lantai, tangan kiri melepas menjadi telapak tegak di sisi dalam lengan atas kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Draw, flick-hook and the reverse low thrust with the knee lift flow together."
+        ],
+        "id": [
+          "Tarikan, cungkilan-kaitan dan tusukan rendah terbalik dengan angkat lutut mengalir bersama."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 367–368, 图 E-88 to E-91",
+      "start_sec": 167.0,
+      "end_sec": 174.5
+    },
+    {
+      "number": 29,
+      "section": 2,
+      "book_number": 29,
+      "name_zh": "弓步侧推掌",
+      "name_pinyin": "Gōngbù cè tuīzhǎng",
+      "name_en": "Gongbu, Side Palm Push",
+      "name_id": "Gongbu, Dorongan Telapak ke Samping",
+      "steps": {
+        "en": [
+          "Turn right into right gongbu; bend the right arm to drag the spear back and push the left palm out to the left front; look past the left palm."
+        ],
+        "id": [
+          "Putar ke kanan menjadi gongbu kanan; tekuk lengan kanan untuk menyeret tombak ke belakang dan dorong telapak kiri ke depan kiri; pandangan melewati telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "From the turn to the head turn and push, clean and crisp."
+        ],
+        "id": [
+          "Dari putaran ke tolehan kepala dan dorongan, bersih dan tegas."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 369, 图 E-92 to E-93",
+      "start_sec": 174.5,
+      "end_sec": 177.5
+    },
+    {
+      "number": 30,
+      "section": 3,
+      "book_number": 30,
+      "name_zh": "虚步崩枪",
+      "name_pinyin": "Xūbù bēngqiāng",
+      "name_en": "Xubu, Snap the Spear Up",
+      "name_id": "Xubu, Sentak Tombak ke Atas",
+      "steps": {
+        "en": [
+          "Lower the weight and lean forward; part the hands to the sides and back, the right hand pulling the spear back a little.",
+          "Push off the right foot and rise, heel up; push the butt forward and take the shaft with the left hand in front of the right.",
+          "Settle the right foot and bend the knee, drawing the left foot half a step back into left xubu; draw the butt back sharply as the left hand slides forward to the middle, snapping the tip up to head height."
+        ],
+        "id": [
+          "Turunkan berat dan condong ke depan; pisahkan tangan ke samping belakang, tangan kanan sedikit menarik tombak ke belakang.",
+          "Tolak dengan kaki kanan dan naik, tumit terangkat; dorong pangkal ke depan dan pegang gagang dengan tangan kiri di depan tangan kanan.",
+          "Mantapkan kaki kanan dan tekuk lutut, tarik kaki kiri setengah langkah ke belakang menjadi xubu kiri; tarik pangkal ke belakang dengan tajam sementara tangan kiri meluncur ke depan ke tengah, menyentak mata tombak ke atas setinggi kepala."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Send the spear softly, snap it crisply."
+        ],
+        "id": [
+          "Kirim tombak dengan lembut, sentak dengan tegas."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 370, 图 E-94 to E-96",
+      "start_sec": 177.5,
+      "end_sec": 185.0
+    },
+    {
+      "number": 31,
+      "section": 3,
+      "book_number": 31,
+      "name_zh": "左右舞花枪",
+      "name_pinyin": "Zuǒyòu wǔhuāqiāng",
+      "name_en": "Figure-Eight Spins Left and Right",
+      "name_id": "Putaran Angka Delapan Kiri dan Kanan",
+      "steps": {
+        "en": [
+          "Push off the right foot and step it forward, heel up; the right hand slides to the middle and covers forward with the butt, the left hand loosening and drawing in under the right armpit.",
+          "Turning first left, then right, then left again, spin the spear in vertical figure-eights on both sides, three times."
+        ],
+        "id": [
+          "Tolak dengan kaki kanan dan langkahkan ke depan, tumit terangkat; tangan kanan meluncur ke tengah dan menutup ke depan dengan pangkal, tangan kiri melonggar dan masuk ke bawah ketiak kanan.",
+          "Berputar dulu ke kiri, lalu ke kanan, lalu ke kiri lagi, putar tombak dalam angka delapan vertikal di kedua sisi, tiga kali."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Vertical circles close to the body; weight shifts and trunk twists work with the spear."
+        ],
+        "id": [
+          "Lingkaran vertikal dekat badan; perpindahan berat dan putaran badan bekerja bersama tombak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 371–373, 图 E-97 to E-104",
+      "start_sec": 185.0,
+      "end_sec": 190.0
+    },
+    {
+      "number": 32,
+      "section": 3,
+      "book_number": 32,
+      "name_zh": "舞花过背枪",
+      "name_pinyin": "Wǔhuā guòbèiqiāng",
+      "name_en": "Spin, Pass the Spear over the Back",
+      "name_id": "Putaran, Tombak Melewati Punggung",
+      "steps": {
+        "en": [
+          "Turn right; the left hand on the middle sends the tip down to the right rear.",
+          "Step the left foot half a step forward onto the toes; keep the tip circling over the top and forward, the right hand letting go and regripping with the tiger's mouth toward the butt.",
+          "Let go with the left hand; the right forearm rotates out to spin the spear one vertical circle forward on the right side, then rotates in to bring the shaft under the right armpit; lean forward and flick the wrist to throw the spear up behind so it slides along the back and the butt flips forward over the left shoulder, where the left hand and then the right hand catch it."
+        ],
+        "id": [
+          "Putar ke kanan; tangan kiri di tengah mengirim mata tombak ke kanan belakang bawah.",
+          "Langkahkan kaki kiri setengah langkah ke depan bertumpu pada ujung kaki; teruskan mata tombak berputar melewati atas ke depan, tangan kanan melepas dan memegang kembali dengan hukou ke arah pangkal.",
+          "Lepaskan tangan kiri; lengan bawah kanan berputar ke luar memutar tombak satu lingkaran vertikal ke depan di sisi kanan, lalu berputar ke dalam membawa gagang ke bawah ketiak kanan; condong ke depan dan sentakkan pergelangan untuk melempar tombak ke atas belakang sehingga meluncur di punggung dan pangkal terbalik ke depan melewati bahu kiri, di mana tangan kiri lalu tangan kanan menangkapnya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Mind the changes of grip; keep the spear's momentum and help it up with the right hand as it slides over the back."
+        ],
+        "id": [
+          "Perhatikan pergantian pegangan; jaga momentum tombak dan bantu naik dengan tangan kanan saat meluncur di punggung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 374–377, 图 E-105 to E-110",
+      "start_sec": 190.0,
+      "end_sec": 197.5
+    },
+    {
+      "number": 33,
+      "section": 3,
+      "book_number": 33,
+      "name_zh": "云枪拿扎枪",
+      "name_pinyin": "Yúnqiāng ná zhāqiāng",
+      "name_en": "Cloud the Spear, Grab and Thrust",
+      "name_id": "Putar Tombak, Tekan dan Tusuk",
+      "steps": {
+        "en": [
+          "Step the left foot to the right front; the left hand slides to the middle and swings the spear across to the left while the right hand lifts the butt to the front of the right shoulder; watch the tip.",
+          "Step the right foot round in front of the left to the left front; the left hand slides toward the butt and pushes the spear right while the right hand pushes the butt to the left armpit and you lean back, the tip deflecting level round behind to the left.",
+          "Step the left foot to the left front into banmabu; the left hand slides to the middle, the butt comes to the front of the right shoulder and turns down, and the left hand grabs.",
+          "Shift forward into left gongbu and push to thrust forward."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan kanan; tangan kiri meluncur ke tengah dan mengayunkan tombak melintang ke kiri sementara tangan kanan mengangkat pangkal ke depan bahu kanan; pandangan ke mata tombak.",
+          "Langkahkan kaki kanan memutar di depan kaki kiri ke depan kiri; tangan kiri meluncur ke arah pangkal dan mendorong tombak ke kanan sementara tangan kanan mendorong pangkal ke ketiak kiri dan badan condong ke belakang, mata tombak menepis datar ke belakang lalu ke kiri.",
+          "Langkahkan kaki kiri ke depan kiri menjadi banmabu; tangan kiri meluncur ke tengah, pangkal datang ke depan bahu kanan lalu dibalik ke bawah, dan tangan kiri menekan.",
+          "Geser ke depan menjadi gongbu kiri dan dorong untuk menusuk ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A flat, fast cloud with the body leaning back; coordinate the steps with the cloud."
+        ],
+        "id": [
+          "Putaran datar dan cepat dengan badan condong ke belakang; koordinasikan langkah dengan putaran."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 377–379, 图 E-111 to E-116",
+      "start_sec": 197.5,
+      "end_sec": 207.5
+    },
+    {
+      "number": 34,
+      "section": 3,
+      "book_number": 34,
+      "name_zh": "反手穿梭枪",
+      "name_pinyin": "Fǎnshǒu chuānsuōqiāng",
+      "name_en": "Backhand Shuttle Thrust",
+      "name_id": "Tusukan Ulang-alik Terbalik",
+      "steps": {
+        "en": [
+          "Turn slightly right and shift back into banmabu; loosen the left hand, draw the butt to the right waist and send it back to the chest, rotating the forearm in to regrip the butt backhanded, tiger's mouth toward the butt end.",
+          "Shift forward into left gongbu; loosen the right hand and reach it back backhanded.",
+          "The left hand pushes the shaft hard backward so the spear shoots back and up through the right hand, which grips the neck as it reaches the tassel.",
+          "Push off the right foot and lift the right knee, turning right on the straight left leg; rotate the right forearm out so the tip turns toward the chest, and the left hand takes the shaft in front of the right.",
+          "Step the right foot down behind and turn back to the right into right gongbu, the right hand drawing the spear and ramming it forward and down."
+        ],
+        "id": [
+          "Putar sedikit ke kanan dan geser ke belakang menjadi banmabu; longgarkan tangan kiri, tarik pangkal ke pinggang kanan lalu kirim kembali ke dada, putar lengan bawah ke dalam untuk memegang pangkal secara terbalik, hukou ke arah ujung pangkal.",
+          "Geser ke depan menjadi gongbu kiri; longgarkan tangan kanan dan julurkan ke belakang secara terbalik.",
+          "Tangan kiri mendorong gagang kuat ke belakang sehingga tombak meluncur ke belakang atas melalui tangan kanan, yang menggenggam leher tombak saat sampai di rumbai.",
+          "Tolak dengan kaki kanan dan angkat lutut kanan, berputar ke kanan di atas kaki kiri yang lurus; putar lengan bawah kanan ke luar sehingga mata tombak berbalik ke arah dada, dan tangan kiri memegang gagang di depan tangan kanan.",
+          "Turunkan kaki kanan ke belakang dan berbalik ke kanan menjadi gongbu kanan, tangan kanan menarik tombak dan menghantamkannya ke depan bawah."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Lean left for the backhand thrust; the spear travels straight, parallel and close to the body."
+        ],
+        "id": [
+          "Condong ke kiri untuk tusukan terbalik; tombak bergerak lurus, sejajar dan dekat badan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 379–382, 图 E-117 to E-122",
+      "start_sec": 207.5,
+      "end_sec": 220.0
+    },
+    {
+      "number": 35,
+      "section": 3,
+      "book_number": 35,
+      "name_zh": "回身绕喉穿枪",
+      "name_pinyin": "Huíshēn ràohóu chuānqiāng",
+      "name_en": "Turn Back, Thread Around the Throat",
+      "name_id": "Berbalik, Tusukan Mengitari Leher",
+      "steps": {
+        "en": [
+          "Turn back to the left into left gongbu; the right hand on the neck pushes the spear forward with the turn so the tip points at the throat; watch the tip.",
+          "Loosen the left hand; the right hand bends to bring the tip in toward the throat and, as you turn right with the head tilted slightly back, the tip slides past the neck and the right hand leads the spear out to the lower right; bend into right gongbu.",
+          "Open the right hand and push the shaft hard with the left so the spear shoots forward and down through the right palm; then stretch the left palm out to the left rear; watch the tip."
+        ],
+        "id": [
+          "Berbalik ke kiri menjadi gongbu kiri; tangan kanan di leher tombak mendorong tombak ke depan mengikuti putaran sehingga mata tombak mengarah ke leher; pandangan ke mata tombak.",
+          "Longgarkan tangan kiri; tangan kanan ditekuk membawa mata tombak ke arah leher dan, saat berputar ke kanan dengan kepala sedikit tengadah, mata tombak meluncur melewati leher dan tangan kanan membawa tombak keluar ke kanan bawah; tekuk menjadi gongbu kanan.",
+          "Buka tangan kanan dan dorong gagang kuat dengan tangan kiri sehingga tombak meluncur ke depan bawah melalui telapak kanan; lalu regangkan telapak kiri ke kiri belakang; pandangan ke mata tombak."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Quick changes of grip and a lively thread, parallel and close to the chest and throat."
+        ],
+        "id": [
+          "Pergantian pegangan cepat dan tusukan yang hidup, sejajar dan dekat dada serta leher."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 383–384, 图 E-123 to E-126",
+      "start_sec": 220.0,
+      "end_sec": 227.5
+    },
+    {
+      "number": 36,
+      "section": 3,
+      "book_number": 36,
+      "name_zh": "跟步劈枪",
+      "name_pinyin": "Gēnbù pīqiāng",
+      "name_en": "Genbu, Chop with the Spear",
+      "name_id": "Genbu, Bacok dengan Tombak",
+      "steps": {
+        "en": [
+          "Step the left foot forward; the left hand takes the shaft in front of the right and slides toward the tip so the tip swings down on the left and behind.",
+          "Bring the right foot up behind the left in genbu, half squatting; chop the spear from behind over the top and level forward, the butt at the belly and the spear at hip height."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan; tangan kiri memegang gagang di depan tangan kanan dan meluncur ke arah mata tombak sehingga mata tombak berayun ke bawah di kiri lalu ke belakang.",
+          "Bawa kaki kanan menyusul di belakang kaki kiri, setengah jongkok; bacokkan tombak dari belakang melewati atas lalu datar ke depan, pangkal di depan perut dan tombak setinggi pinggul."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As for the earlier chops."
+        ],
+        "id": [
+          "Sama seperti bacokan sebelumnya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 385, 图 E-127 to E-129",
+      "start_sec": 227.5,
+      "end_sec": 232.5
+    },
+    {
+      "number": 37,
+      "section": 3,
+      "book_number": 37,
+      "name_zh": "回身劈枪",
+      "name_pinyin": "Huíshēn pīqiāng",
+      "name_en": "Turn Back, Chop with the Spear",
+      "name_id": "Berbalik, Bacok dengan Tombak",
+      "steps": {
+        "en": [
+          "Step the right foot slightly back, toes out, and turn right; lift the butt above the head and turn the left palm up to raise the spear.",
+          "Keep turning right and chop the spear over the top and level forward, the butt at the right side and the spear at hip height."
+        ],
+        "id": [
+          "Mundurkan kaki kanan sedikit, ujung kaki ke luar, dan putar ke kanan; angkat pangkal di atas kepala dan balik telapak kiri ke atas untuk mengangkat tombak.",
+          "Terus berputar ke kanan dan bacokkan tombak melewati atas lalu datar ke depan, pangkal di sisi kanan dan tombak setinggi pinggul."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Turning, raising and chopping are quick and strong, joined straight onto the previous movement."
+        ],
+        "id": [
+          "Berputar, mengangkat dan membacok cepat dan kuat, langsung tersambung dengan gerakan sebelumnya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 386–388, 图 E-130 to E-131",
+      "start_sec": 232.5,
+      "end_sec": 237.5
+    },
+    {
+      "number": 38,
+      "section": 3,
+      "book_number": 38,
+      "name_zh": "单手接抛枪",
+      "name_pinyin": "Dānshǒu jiē pāoqiāng",
+      "name_en": "One-Hand Toss and Catch",
+      "name_id": "Lempar dan Tangkap Satu Tangan",
+      "steps": {
+        "en": [
+          "Let go with the left hand and toss the butt forward and up with the right hand so the spear turns half a circle forward; catch the neck with the right hand."
+        ],
+        "id": [
+          "Lepaskan tangan kiri dan lemparkan pangkal ke depan atas dengan tangan kanan sehingga tombak berputar setengah lingkaran ke depan; tangkap leher tombak dengan tangan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Point the tip up first so the spear stands slanted in front of you, then raise and release; toss at the right height with the right amount of spin. Take turns when many people practise."
+        ],
+        "id": [
+          "Arahkan mata tombak ke atas dulu sehingga tombak berdiri miring di depan, lalu angkat dan lepaskan; lempar dengan tinggi dan putaran yang tepat. Bergiliran bila banyak orang berlatih."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 388–390, 图 E-132 to E-134 (the name list on p. 326 reads 单手抛接枪)",
+      "start_sec": 237.5,
+      "end_sec": 240.5
+    },
+    {
+      "number": 39,
+      "section": 3,
+      "book_number": 39,
+      "name_zh": "腾空翻身仆步摔把",
+      "name_pinyin": "Téngkōng fānshēn pūbù shuāibǎ",
+      "name_en": "Jumping Turn-Over, Pubu Butt Slam",
+      "name_id": "Lompat Berbalik, Pubu Membanting Pangkal",
+      "steps": {
+        "en": [
+          "Step the right foot back to the right; the spear keeps travelling down to the right as you turn right, and the left hand takes the middle; watch the left hand.",
+          "Keep turning right and step the left foot in gaibu to the right front.",
+          "Keep turning back to the right; raise the spear with the right hand while the left hand leads the butt down and up to the upper left; look ahead.",
+          "Jump off both feet, knees bent back, chest and belly open, still turning right in the air; look down ahead.",
+          "Land right then left into left pubu, slamming the butt over the top and down forward, the left hand pressing the shaft."
+        ],
+        "id": [
+          "Mundurkan kaki kanan ke kanan; tombak terus bergerak ke kanan bawah saat berputar ke kanan, dan tangan kiri memegang bagian tengah; pandangan ke tangan kiri.",
+          "Terus berputar ke kanan dan langkahkan kaki kiri secara gaibu ke depan kanan.",
+          "Terus berbalik ke kanan; angkat tombak dengan tangan kanan sementara tangan kiri membawa pangkal ke bawah lalu ke kiri atas; pandangan ke depan.",
+          "Lompat dengan kedua kaki, lutut ditekuk ke belakang, dada dan perut terbuka, tetap berputar ke kanan di udara; pandangan ke depan bawah.",
+          "Mendarat kanan lalu kiri menjadi pubu kiri, banting pangkal melewati atas ke depan bawah, tangan kiri menekan gagang."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Keep the spear close to the body in a vertical circle through the step, turn and jump; slam hard as pubu forms."
+        ],
+        "id": [
+          "Tombak tetap dekat badan dalam lingkaran vertikal selama langkah, putaran dan lompatan; banting kuat saat pubu terbentuk."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 390–392, 图 E-135 to E-139",
+      "start_sec": 240.5,
+      "end_sec": 253.0
+    },
+    {
+      "number": 40,
+      "section": 3,
+      "book_number": 40,
+      "name_zh": "抛接枪",
+      "name_pinyin": "Pāojiēqiāng",
+      "name_en": "Toss and Catch the Spear",
+      "name_id": "Lempar dan Tangkap Tombak",
+      "steps": {
+        "en": [
+          "Using the rebound of the slam, toss the spear forward and up with both hands so it turns half a circle in the air, and catch the butt with the right hand."
+        ],
+        "id": [
+          "Memanfaatkan pantulan bantingan, lemparkan tombak ke depan atas dengan kedua tangan sehingga berputar setengah lingkaran di udara, lalu tangkap pangkal dengan tangan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The butt end slants up before the toss; height and spin just right."
+        ],
+        "id": [
+          "Ujung pangkal miring ke atas sebelum dilempar; tinggi dan putaran pas."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 392–393, 图 E-140 to E-142",
+      "start_sec": 253.0,
+      "end_sec": 256.0
+    },
+    {
+      "number": 41,
+      "section": 3,
+      "book_number": 41,
+      "name_zh": "转身坐盘抱枪",
+      "name_pinyin": "Zhuǎnshēn zuòpán bàoqiāng",
+      "name_en": "Turn, Zuopan, Hold the Spear",
+      "name_id": "Berbalik, Zuopan, Memeluk Tombak",
+      "steps": {
+        "en": [
+          "Step the left foot back to the left, heel up; draw the butt to the right waist and reach the left hand forward to take the middle.",
+          "Deflect the spear level to the left as you turn left.",
+          "Step the right foot forward, toes in, and keep deflecting level to the left as you turn back.",
+          "Keep turning left and step the left foot back; cloud-deflect a full circle to the left.",
+          "Keep turning back to the left, deflecting level, then cross the legs and sit into zuopan, holding the spear across the chest."
+        ],
+        "id": [
+          "Mundurkan kaki kiri ke kiri belakang, tumit terangkat; tarik pangkal ke pinggang kanan dan julurkan tangan kiri ke depan memegang bagian tengah.",
+          "Tepis tombak datar ke kiri saat berputar ke kiri.",
+          "Langkahkan kaki kanan ke depan, ujung kaki ke dalam, dan terus menepis datar ke kiri saat berbalik.",
+          "Terus berputar ke kiri dan mundurkan kaki kiri; putar-tepis satu lingkaran penuh ke kiri.",
+          "Terus berbalik ke kiri, menepis datar, lalu silangkan kaki dan duduk menjadi zuopan, memeluk tombak melintang di depan dada."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Level deflections, quick turns, the whole movement in one breath; start slowly and build up speed."
+        ],
+        "id": [
+          "Tepisan datar, putaran cepat, seluruh gerakan dalam satu tarikan; mulai pelan lalu tingkatkan kecepatan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 394–397, 图 E-143 to E-150",
+      "start_sec": 256.0,
+      "end_sec": 268.5
+    },
+    {
+      "number": 42,
+      "section": 4,
+      "book_number": 42,
+      "name_zh": "转身拦拿扎枪",
+      "name_pinyin": "Zhuǎnshēn lán ná zhāqiāng",
+      "name_en": "Turn, Parry, Grab and Thrust",
+      "name_id": "Berbalik, Tangkis, Tekan dan Tusuk",
+      "steps": {
+        "en": [
+          "Stand up and deflect the spear level to the right as you turn back to the right.",
+          "Draw the left foot in behind the right onto the toes; turn the butt up and parry with the left hand.",
+          "Step the left foot forward into banmabu; turn the butt down to the right waist and grab.",
+          "Shift forward into left gongbu and push the butt to thrust forward."
+        ],
+        "id": [
+          "Berdiri dan tepis tombak datar ke kanan saat berbalik ke kanan.",
+          "Tarik kaki kiri ke belakang kaki kanan bertumpu pada ujung kaki; balik pangkal ke atas dan tangkis dengan tangan kiri.",
+          "Langkahkan kaki kiri ke depan menjadi banmabu; balik pangkal ke bawah ke pinggang kanan dan tekan.",
+          "Geser ke depan menjadi gongbu kiri dan dorong pangkal untuk menusuk ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The parry lands with the toe touch, the weight lowered."
+        ],
+        "id": [
+          "Tangkisan selesai bersama tutulan ujung kaki, berat badan diturunkan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 397–398, 图 E-151 to E-155",
+      "start_sec": 268.5,
+      "end_sec": 278.5
+    },
+    {
+      "number": 43,
+      "section": 4,
+      "book_number": 43,
+      "name_zh": "弓步拦拿扎枪",
+      "name_pinyin": "Gōngbù lán ná zhāqiāng",
+      "name_en": "Gongbu, Parry, Grab and Thrust",
+      "name_id": "Gongbu, Tangkis, Tekan dan Tusuk",
+      "steps": {
+        "en": [
+          "Shift back into banmabu, drawing the butt to the right waist.",
+          "Turn the butt up and parry with the left hand.",
+          "Turn the butt down to the waist and grab.",
+          "Shift forward into left gongbu and push the butt to thrust forward."
+        ],
+        "id": [
+          "Geser ke belakang menjadi banmabu, tarik pangkal ke pinggang kanan.",
+          "Balik pangkal ke atas dan tangkis dengan tangan kiri.",
+          "Balik pangkal ke bawah ke pinggang dan tekan.",
+          "Geser ke depan menjadi gongbu kiri dan dorong pangkal untuk menusuk ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （五）."
+        ],
+        "id": [
+          "Sama seperti （五）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 400, 图 E-156 to E-159",
+      "start_sec": 278.5,
+      "end_sec": 288.5
+    },
+    {
+      "number": 44,
+      "section": 4,
+      "book_number": 44,
+      "name_zh": "丁步崩枪",
+      "name_pinyin": "Dīngbù bēngqiāng",
+      "name_en": "Dingbu, Snap the Spear Up",
+      "name_id": "Dingbu, Sentak Tombak ke Atas",
+      "steps": {
+        "en": [
+          "Shift back and draw the left foot in beside the right onto the toes (dingbu); draw the butt back and press it down so the tip snaps up."
+        ],
+        "id": [
+          "Geser ke belakang dan tarik kaki kiri ke samping kaki kanan bertumpu pada ujung kaki (dingbu); tarik pangkal ke belakang dan tekan ke bawah sehingga mata tombak tersentak ke atas."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Snap as before; dingbu is a half squat."
+        ],
+        "id": [
+          "Sentakan seperti sebelumnya; dingbu dalam setengah jongkok."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 401, 图 E-160",
+      "start_sec": 288.5,
+      "end_sec": 291.5
+    },
+    {
+      "number": 45,
+      "section": 4,
+      "book_number": 45,
+      "name_zh": "挑枪盖步戳把",
+      "name_pinyin": "Tiǎoqiāng gàibù chuōbǎ",
+      "name_en": "Flick Up, Gaibu, Jab with the Butt",
+      "name_id": "Cungkil ke Atas, Gaibu, Sodok dengan Pangkal",
+      "steps": {
+        "en": [
+          "Step the left foot forward and flick the spear up with the left hand; look ahead.",
+          "Turn left; the left hand leads the spear down level to the left and the bent right arm holds the butt at the chest, palm down; look to the right front.",
+          "Step the right foot in gaibu round in front of the left to the left front; the left hand pushes the spear right as the right hand slides toward the tip, and both hands jab the butt to the right."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan dan cungkil tombak ke atas dengan tangan kiri; pandangan ke depan.",
+          "Putar ke kiri; tangan kiri membawa tombak turun mendatar ke kiri dan lengan kanan yang ditekuk memegang pangkal di depan dada, telapak ke bawah; pandangan ke depan kanan.",
+          "Langkahkan kaki kanan secara gaibu memutar di depan kaki kiri ke depan kiri; tangan kiri mendorong tombak ke kanan sementara tangan kanan meluncur ke arah mata tombak, dan kedua tangan menyodokkan pangkal ke kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Flick straight up; slide the grip before the jab, spear level, power reaching the end of the butt, timed with gaibu."
+        ],
+        "id": [
+          "Cungkil lurus ke atas; luncurkan pegangan sebelum menyodok, tombak mendatar, tenaga sampai ke ujung pangkal, serempak dengan gaibu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 401–402, 图 E-161 to E-163",
+      "start_sec": 291.5,
+      "end_sec": 299.0
+    },
+    {
+      "number": 46,
+      "section": 4,
+      "book_number": 46,
+      "name_zh": "翻身过背舞花枪",
+      "name_pinyin": "Fānshēn guòbèi wǔhuāqiāng",
+      "name_en": "Turn Over, Spear over the Back, Spin",
+      "name_id": "Balik Badan, Tombak di Punggung, Putaran",
+      "steps": {
+        "en": [
+          "Step the left foot to the left and cross the right foot behind it to the left rear; the left hand slides toward the tip, arms level with the spear against the chest; watch the butt.",
+          "Turn back to the right; the right hand leads the butt over the top to the right and the left hand takes the tip under to the left, so the spear lies across the back of the shoulders; watch the tip.",
+          "Keep turning right; the left hand takes the tip over the top forward and the right hand takes the butt under and back, the middle of the spear resting on the right shoulder.",
+          "Turn left; the left hand takes the tip under to the left and the right hand the butt over to the right, the spear across the chest; watch the tip.",
+          "Keep turning back to the left; the tip goes over the top to the left and the butt under to the right, the head turning with the body; watch the tip.",
+          "Keep turning left, the right toes sliding right along the floor; push the butt to thrust forward, the left hand sliding to in front of the right."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke kiri dan silangkan kaki kanan ke kiri belakang; tangan kiri meluncur ke arah mata tombak, lengan mendatar dengan tombak menempel di dada; pandangan ke pangkal.",
+          "Berbalik ke kanan belakang; tangan kanan membawa pangkal melewati atas ke kanan dan tangan kiri membawa mata tombak lewat bawah ke kiri, sehingga tombak melintang di belakang bahu; pandangan ke mata tombak.",
+          "Terus berputar ke kanan; tangan kiri membawa mata tombak melewati atas ke depan dan tangan kanan membawa pangkal lewat bawah ke belakang, bagian tengah tombak bertumpu di bahu kanan.",
+          "Putar ke kiri; tangan kiri membawa mata tombak lewat bawah ke kiri dan tangan kanan membawa pangkal lewat atas ke kanan, tombak melintang di depan dada; pandangan ke mata tombak.",
+          "Terus berbalik ke kiri; mata tombak melewati atas ke kiri dan pangkal lewat bawah ke kanan, kepala ikut menoleh; pandangan ke mata tombak.",
+          "Terus berputar ke kiri, ujung kaki kanan meluncur ke kanan di lantai; dorong pangkal untuk menusuk ke depan, tangan kiri meluncur ke depan tangan kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slide the hands wide apart so arms and spear form one line over the back; turn the waist roundly so the spear travels in vertical circles; smooth throughout."
+        ],
+        "id": [
+          "Luncurkan tangan lebar terpisah sehingga lengan dan tombak membentuk satu garis di punggung; putar pinggang dengan bulat sehingga tombak bergerak dalam lingkaran vertikal; luwes sepanjang gerakan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 403–405, 图 E-164 to E-170",
+      "start_sec": 299.0,
+      "end_sec": 314.0
+    },
+    {
+      "number": 47,
+      "section": 4,
+      "book_number": 47,
+      "name_zh": "转身提膝下扎枪",
+      "name_pinyin": "Zhuǎnshēn tíxī xià zhāqiāng",
+      "name_en": "Turn, Knee Lift, Low Thrust",
+      "name_id": "Berbalik, Angkat Lutut, Tusukan Rendah",
+      "steps": {
+        "en": [
+          "Turn slightly left and step the right foot forward; the left hand slides to the middle and deflects the spear down to the left rear, the bent right arm holding the butt at the right shoulder.",
+          "Step left then right forward; the left hand flicks the spear forward and up.",
+          "Step the left foot forward, right heel up, and turn back to the left; the left hand brings the spear over the top and down level to the left, the head turning left; watch the tip.",
+          "Lift the right knee and raise the butt slightly.",
+          "Jump off the left foot, turn left in the air and land on the right foot with the left knee lifted; thrust forward and down with the right hand while the left hand lets go and stretches to the left rear, palm up and back; watch the tip."
+        ],
+        "id": [
+          "Putar sedikit ke kiri dan langkahkan kaki kanan ke depan; tangan kiri meluncur ke tengah dan menepis tombak ke kiri belakang bawah, lengan kanan yang ditekuk memegang pangkal di depan bahu kanan.",
+          "Langkahkan kiri lalu kanan ke depan; tangan kiri mencungkil tombak ke depan atas.",
+          "Langkahkan kaki kiri ke depan, tumit kanan terangkat, dan berbalik ke kiri; tangan kiri membawa tombak melewati atas lalu turun mendatar ke kiri, kepala menoleh ke kiri; pandangan ke mata tombak.",
+          "Angkat lutut kanan dan naikkan pangkal sedikit.",
+          "Lompat dari kaki kiri, berputar ke kiri di udara dan mendarat di kaki kanan dengan lutut kiri terangkat; tusuk ke depan bawah dengan tangan kanan sementara tangan kiri melepas dan meregang ke kiri belakang, telapak menghadap belakang atas; pandangan ke mata tombak."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Pull, then flick, then three steps into the turning jump-thrust; thrust in the air and finish as you land."
+        ],
+        "id": [
+          "Tarik, lalu cungkil, lalu tiga langkah ke tusukan lompat berbalik; tusuk di udara dan selesaikan saat mendarat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 406–408, 图 E-171 to E-177",
+      "start_sec": 314.0,
+      "end_sec": 326.5
+    },
+    {
+      "number": 48,
+      "section": 4,
+      "book_number": 48,
+      "name_zh": "云枪拿扎枪",
+      "name_pinyin": "Yúnqiāng ná zhāqiāng",
+      "name_en": "Cloud the Spear, Grab and Thrust",
+      "name_id": "Putar Tombak, Tekan dan Tusuk",
+      "steps": {
+        "en": [
+          "Set the left foot down behind, then step the right foot back; the left hand reaches forward and takes the shaft in front of the right.",
+          "Turn slightly right; draw the butt back as the left hand slides to the middle.",
+          "Step the left foot in gaibu to the right front, then the right foot past it to the left front; push the butt toward the left armpit as the left hand slides toward the butt, clouding the spear a full circle to the right, head tilted back, eyes on the middle of the shaft.",
+          "Step the left foot forward into banmabu; turn the butt down to the right waist and grab.",
+          "Shift forward into left gongbu and push to thrust forward."
+        ],
+        "id": [
+          "Turunkan kaki kiri ke belakang, lalu mundurkan kaki kanan; tangan kiri menjulur ke depan dan memegang gagang di depan tangan kanan.",
+          "Putar sedikit ke kanan; tarik pangkal ke belakang sementara tangan kiri meluncur ke tengah.",
+          "Langkahkan kaki kiri secara gaibu ke depan kanan, lalu kaki kanan melewatinya ke depan kiri; dorong pangkal ke arah ketiak kiri sementara tangan kiri meluncur ke arah pangkal, memutar tombak satu lingkaran penuh ke kanan, kepala tengadah, mata pada bagian tengah gagang.",
+          "Langkahkan kaki kiri ke depan menjadi banmabu; balik pangkal ke bawah ke pinggang kanan dan tekan.",
+          "Geser ke depan menjadi gongbu kiri dan dorong untuk menusuk ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A level cloud, clear gaibu, steps and spear in harmony."
+        ],
+        "id": [
+          "Putaran datar, gaibu yang jelas, langkah dan tombak selaras."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 409–411, 图 E-178 to E-185",
+      "start_sec": 326.5,
+      "end_sec": 339.0
+    },
+    {
+      "number": 49,
+      "section": 4,
+      "book_number": 49,
+      "name_zh": "弓步拦拿扎枪",
+      "name_pinyin": "Gōngbù lán ná zhāqiāng",
+      "name_en": "Gongbu, Parry, Grab and Thrust",
+      "name_id": "Gongbu, Tangkis, Tekan dan Tusuk",
+      "steps": {
+        "en": [
+          "Shift back into banmabu, drawing the butt to the right waist.",
+          "Shift back further; turn the butt up and parry with the left hand.",
+          "Shift forward into banmabu; turn the butt down to the waist and grab.",
+          "Shift forward into left gongbu and push the butt to thrust forward."
+        ],
+        "id": [
+          "Geser ke belakang menjadi banmabu, tarik pangkal ke pinggang kanan.",
+          "Geser lebih ke belakang; balik pangkal ke atas dan tangkis dengan tangan kiri.",
+          "Geser ke depan menjadi banmabu; balik pangkal ke bawah ke pinggang dan tekan.",
+          "Geser ke depan menjadi gongbu kiri dan dorong pangkal untuk menusuk ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （五）."
+        ],
+        "id": [
+          "Sama seperti （五）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 411–414, 图 E-186 to E-189",
+      "start_sec": 339.0,
+      "end_sec": 349.0
+    },
+    {
+      "number": 50,
+      "section": 4,
+      "book_number": 50,
+      "name_zh": "横裆步架枪",
+      "name_pinyin": "Héngdāngbù jiàqiāng",
+      "name_en": "Hengdangbu, Block Up",
+      "name_id": "Hengdangbu, Tangkis ke Atas",
+      "steps": {
+        "en": [
+          "Shift back and turn right into hengdangbu; draw the butt back and turn it up over the head while the left hand turns out and blocks the spear up; watch the tip."
+        ],
+        "id": [
+          "Geser ke belakang dan putar ke kanan menjadi hengdangbu; tarik pangkal ke belakang dan balik ke atas melewati kepala sementara tangan kiri berputar ke luar dan menangkis tombak ke atas; pandangan ke mata tombak."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （十六）."
+        ],
+        "id": [
+          "Sama seperti （十六）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 414, 图 E-190",
+      "start_sec": 349.0,
+      "end_sec": 352.0
+    },
+    {
+      "number": 51,
+      "section": 4,
+      "book_number": 51,
+      "name_zh": "横裆步上扎枪",
+      "name_pinyin": "Héngdāngbù shàng zhāqiāng",
+      "name_en": "Hengdangbu, High Thrust",
+      "name_id": "Hengdangbu, Tusukan Tinggi",
+      "steps": {
+        "en": [
+          "Turn right; draw the butt to the right waist while the left hand pushes and deflects the spear to the upper right front; look ahead.",
+          "Let go with the left hand and thrust the spear to the upper right with the right hand, pushing the left palm out to the left; look left."
+        ],
+        "id": [
+          "Putar ke kanan; tarik pangkal ke pinggang kanan sementara tangan kiri mendorong dan menepis tombak ke depan kanan atas; pandangan ke depan.",
+          "Lepaskan tangan kiri dan tusukkan tombak ke kanan atas dengan tangan kanan, dorong telapak kiri ke kiri; pandangan ke kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A nimble push-deflect; the one-handed high thrust, the head turn and the palm push finish together."
+        ],
+        "id": [
+          "Dorong-tepis yang lincah; tusukan tinggi satu tangan, tolehan kepala dan dorongan telapak selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 414–415, 图 E-191 to E-192",
+      "start_sec": 352.0,
+      "end_sec": 357.0
+    },
+    {
+      "number": 52,
+      "section": 4,
+      "book_number": 52,
+      "name_zh": "并步立枪推掌",
+      "name_pinyin": "Bìngbù lìqiāng tuīzhǎng",
+      "name_en": "Bingbu, Upright Spear, Push Palm",
+      "name_id": "Bingbu, Tombak Tegak, Dorong Telapak",
+      "steps": {
+        "en": [
+          "Turn slightly right; the left hand takes the shaft above the right hand.",
+          "Turn left, stand on the straight right leg and reach the left foot to the right front into gao xubu; the left hand slides up the shaft and the right hand brings the butt to the left waist.",
+          "The left hand leads the spear down behind and the right hand lifts the butt forward and up; watch the tip.",
+          "Step the left foot back; the butt arcs over the top and back while the spear arcs under and forward-up with the left hand; look ahead.",
+          "Step the right foot back; lower the butt and raise the spear with the left hand until it stands vertical.",
+          "Bring the left foot to the right; the left hand sets the butt down on the floor, then lets go and pushes a palm out to the left; watch the left palm."
+        ],
+        "id": [
+          "Putar sedikit ke kanan; tangan kiri memegang gagang di atas tangan kanan.",
+          "Putar ke kiri, berdiri di kaki kanan yang lurus dan julurkan kaki kiri ke depan kanan menjadi gao xubu; tangan kiri meluncur naik di gagang dan tangan kanan membawa pangkal ke pinggang kiri.",
+          "Tangan kiri membawa tombak turun ke belakang dan tangan kanan mengangkat pangkal ke depan atas; pandangan ke mata tombak.",
+          "Mundurkan kaki kiri; pangkal melengkung melewati atas ke belakang sementara tombak melengkung lewat bawah ke depan atas dengan tangan kiri; pandangan ke depan.",
+          "Mundurkan kaki kanan; turunkan pangkal dan angkat tombak dengan tangan kiri hingga berdiri tegak.",
+          "Rapatkan kaki kiri ke kaki kanan; tangan kiri menurunkan pangkal ke lantai, lalu melepas dan mendorong telapak ke kiri; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slide the left hand loosely when leading; the spear makes vertical circles on both sides of the body, coordinated with the steps."
+        ],
+        "id": [
+          "Luncurkan tangan kiri dengan longgar saat memimpin; tombak membentuk lingkaran vertikal di kedua sisi badan, terkoordinasi dengan langkah."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 416–417, 图 E-193 to E-199",
+      "start_sec": 357.0,
+      "end_sec": 372.0
+    },
+    {
+      "number": 53,
+      "section": 4,
+      "book_number": 53,
+      "name_zh": "收势",
+      "name_pinyin": "Shōushì",
+      "name_en": "Closing Form",
+      "name_id": "Sikap Penutup",
+      "steps": {
+        "en": [
+          "Lower the left hand to hang at the left side and turn slightly left; look ahead."
+        ],
+        "id": [
+          "Turunkan tangan kiri tergantung di sisi kiri dan putar sedikit ke kiri; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [],
+        "id": []
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Spear, p. 417–418, 图 E-200 to E-201",
+      "start_sec": 372.0,
+      "end_sec": 375.0
+    }
+  ]
+}

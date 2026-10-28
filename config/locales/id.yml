@@ -12,6 +12,7 @@ id:
   routines:
     index:
       title: Rangkaian wajib
+      collection: Rangkaian Wajib IWUF ke-1
       lead: Referensi belajar terbuka yang dikelola komunitas untuk rangkaian standar wushu. Nama selalu ditulis dalam bahasa Tionghoa beserta pinyin; terjemahan dalam bahasa Inggris atau Bahasa Indonesia.
       search: Cari rangkaian dan gerakan
       search_placeholder: Coba “lan que wei”, 揽雀尾 atau “ekor burung”
@@ -24,16 +25,17 @@ id:
       competition_routine: 竞赛套路
     styles:
       taiji: Taijiquan
-      chang: Changquan & senjata
+      chang: Tinju Utara & senjata
       nan: Gaya selatan
     header:
       breadcrumb: Navigasi
       sections: Bagian rangkaian
-      summary: "%{count} gerakan · %{duration} · Rangkaian kompetisi · %{sections} bagian"
+      summary: "%{count} gerakan · %{duration} · Rangkaian wajib IWUF ke-1 · %{sections}"
       learn: Belajar
       movements: Gerakan
     count:
       movements: "%{count} gerakan"
+      sections: "%{count} bagian"
     player:
       video: Video
       sample_video: Belum ada video · jam latihan

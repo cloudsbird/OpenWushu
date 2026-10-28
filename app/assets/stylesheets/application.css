@@ -132,6 +132,7 @@ h1, h2, h3 { margin: 0; }
 .lib-hero__text { display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; min-width: 0; }
 .lib-hero__text p { margin: 0; }
 .lib-hero__en { font-family: var(--font-head); font-size: 34px; line-height: 1.15; font-weight: 600; }
+.lib-hero__collection { margin-top: 2px !important; color: var(--accent-ink); font-size: 14px; font-weight: 600; letter-spacing: 0.02em; }
 .lib-hero__lead { margin-top: 8px !important; max-width: 560px; color: var(--muted); }
 .search { flex: 1 1 360px; display: flex; flex-direction: column; gap: 6px; }
 .search label { font-size: 13px; font-weight: 600; }

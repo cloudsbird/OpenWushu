@@ -1,0 +1,2305 @@
+{
+  "routine": {
+    "slug": "southern-staff",
+    "style": "nan",
+    "name_zh": "南棍",
+    "name_pinyin": "Nángùn",
+    "name_en": "Southern Staff",
+    "name_id": "Toya Selatan",
+    "card_zh": "南棍",
+    "reference_page": 535,
+    "reference_figure": "H",
+    "position": 17,
+    "status": "awaiting"
+  },
+  "movements": [
+    {
+      "number": 1,
+      "section": 0,
+      "book_number": null,
+      "name_zh": "起势",
+      "name_pinyin": "Qǐshì",
+      "name_en": "Commencing Form",
+      "name_id": "Sikap Pembuka",
+      "steps": {
+        "en": [
+          "Stand with the feet together; the right hand holds the staff a little off its middle, the butt at the right waist and the staff vertical, the left hand at the side; look ahead.",
+          "Lift the staff in front with the right hand, tiger's mouth a little above the shoulder; the left hand grips below the right, tiger's mouth up, the hands about 30 cm apart; look ahead."
+        ],
+        "id": [
+          "Berdiri dengan kaki rapat; tangan kanan memegang toya sedikit di luar bagian tengahnya, pangkal di pinggang kanan dan toya tegak, tangan kiri di samping; pandangan ke depan.",
+          "Angkat toya ke depan dengan tangan kanan, hukou sedikit di atas bahu; tangan kiri memegang di bawah tangan kanan, hukou ke atas, kedua tangan berjarak sekitar 30 cm; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [],
+        "id": []
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 537, 图 H-1 to H-2",
+      "start_sec": 0.0,
+      "end_sec": 5.0
+    },
+    {
+      "number": 2,
+      "section": 1,
+      "book_number": 1,
+      "name_zh": "左虚步盖掌",
+      "name_pinyin": "Zuǒ xūbù gàizhǎng",
+      "name_en": "Left Xubu, Covering Palm",
+      "name_id": "Xubu Kiri, Telapak Menutup",
+      "steps": {
+        "en": [
+          "Step the right foot forward, toes out, knees slightly bent and left heel up, turning slightly right; the right hand opens and swings down and behind; watch the right palm.",
+          "Step the left foot forward into left xubu, turning slightly left; the right palm continues from behind over the top and covers forward, arm rotated in and tiger's mouth down, both arms at shoulder height; look ahead."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan, ujung kaki ke luar, lutut sedikit ditekuk dan tumit kiri terangkat, putar sedikit ke kanan; tangan kanan dibuka dan berayun ke bawah dan ke belakang; pandangan ke telapak kanan.",
+          "Langkahkan kaki kiri ke depan menjadi xubu kiri, putar sedikit ke kiri; telapak kanan berlanjut dari belakang melewati atas dan menutup ke depan, lengan diputar ke dalam dan hukou ke bawah, kedua lengan setinggi bahu; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Turn the right toes out only about 30°; the left hand may push the staff slightly forward on the cover."
+        ],
+        "id": [
+          "Putar ujung kaki kanan ke luar sekitar 30° saja; tangan kiri boleh sedikit mendorong toya ke depan saat menutup."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 538, 图 H-3 to H-4",
+      "start_sec": 5.0,
+      "end_sec": 10.0
+    },
+    {
+      "number": 3,
+      "section": 1,
+      "book_number": 2,
+      "name_zh": "右弓步斜抱棍",
+      "name_pinyin": "Yòu gōngbù xié bàogùn",
+      "name_en": "Right Gongbu, Hold the Staff Slanting",
+      "name_id": "Gongbu Kanan, Memeluk Toya Miring",
+      "steps": {
+        "en": [
+          "Step the left foot half a step to the left, knee slightly bent, turning slightly left; the right hand grips above the left, tiger's mouth up, and the left hand slides to the butt end and draws it left so the tip swings slightly left; look to the left front.",
+          "Bring the right foot in toward the left, turning slightly right; hook the tip in an arc down to the lower right; watch the tip.",
+          "Stride the right foot into right gongbu; raise the right hand to the upper right, palm in, and swing the left hand beside the right hip, palm in, so the staff stands slanting at the right side; look left."
+        ],
+        "id": [
+          "Langkahkan kaki kiri setengah langkah ke kiri, lutut sedikit ditekuk, putar sedikit ke kiri; tangan kanan memegang di atas tangan kiri, hukou ke atas, dan tangan kiri meluncur ke ujung pangkal lalu menariknya ke kiri sehingga ujung toya berayun sedikit ke kiri; pandangan ke depan kiri.",
+          "Bawa kaki kanan mendekati kaki kiri, putar sedikit ke kanan; kaitkan ujung toya melengkung ke kanan bawah; pandangan ke ujung toya.",
+          "Langkahkan kaki kanan lebar menjadi gongbu kanan; angkat tangan kanan ke kanan atas, telapak ke dalam, dan ayunkan tangan kiri ke samping pinggul kanan, telapak ke dalam, sehingga toya berdiri miring di sisi kanan; pandangan ke kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The staff arcs in front of the body, both arms rotated out; the right foot brushes past the left without stopping on the floor."
+        ],
+        "id": [
+          "Toya melengkung di depan badan, kedua lengan diputar ke luar; kaki kanan melewati kaki kiri tanpa berhenti di lantai."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 539–540, 图 H-5 to H-7",
+      "start_sec": 10.0,
+      "end_sec": 17.5
+    },
+    {
+      "number": 4,
+      "section": 1,
+      "book_number": 3,
+      "name_zh": "左弓步劈棍",
+      "name_pinyin": "Zuǒ gōngbù pīgùn",
+      "name_en": "Left Gongbu, Chop with the Staff",
+      "name_id": "Gongbu Kiri, Bacok dengan Toya",
+      "steps": {
+        "en": [
+          "Step the left foot to the left front into left gongbu, turning slightly left; chop the staff from above down to the left until it is level, power in the front section, the right hand above the left thigh and the left hand beside the left hip; look ahead and shout."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan kiri menjadi gongbu kiri, putar sedikit ke kiri; bacokkan toya dari atas ke kiri bawah hingga mendatar, tenaga di bagian depan, tangan kanan di atas paha kiri dan tangan kiri di samping pinggul kiri; pandangan ke depan dan berseru."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The shout may be “hei”, “hai” or “ai”; the chop and the shout come in one breath."
+        ],
+        "id": [
+          "Seruan boleh “hei”, “hai” atau “ai”; bacokan dan seruan dalam satu tarikan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 540, 图 H-8",
+      "start_sec": 17.5,
+      "end_sec": 20.5
+    },
+    {
+      "number": 5,
+      "section": 1,
+      "book_number": 4,
+      "name_zh": "马步戳棍",
+      "name_pinyin": "Mǎbù chuōgùn",
+      "name_en": "Mabu, Jab with the Staff",
+      "name_id": "Mabu, Sodok dengan Toya",
+      "steps": {
+        "en": [
+          "Step the right foot to the right into mabu, turning slightly right; jab the staff level to the right at shoulder height, right arm straight and tiger's mouth to the right, the left hand under the right armpit, palm up; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke kanan menjadi mabu, putar sedikit ke kanan; sodokkan toya datar ke kanan setinggi bahu, lengan kanan lurus dan hukou ke kanan, tangan kiri di bawah ketiak kanan, telapak ke atas; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Lift the arms slightly as you step, then jab level, power at the very end."
+        ],
+        "id": [
+          "Angkat lengan sedikit saat melangkah, lalu sodok datar, tenaga di ujung paling depan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 540–541, 图 H-9",
+      "start_sec": 20.5,
+      "end_sec": 23.5
+    },
+    {
+      "number": 6,
+      "section": 1,
+      "book_number": 5,
+      "name_zh": "马步滚压棍",
+      "name_pinyin": "Mǎbù gǔn yāgùn",
+      "name_en": "Mabu, Rolling Press",
+      "name_id": "Mabu, Tekanan Bergulir",
+      "steps": {
+        "en": [
+          "Rotate the right arm out and the left arm in, pulling the staff down above the thighs, right palm up and left palm down; watch the tip."
+        ],
+        "id": [
+          "Putar lengan kanan ke luar dan lengan kiri ke dalam, tarik toya turun di atas paha, telapak kanan ke atas dan telapak kiri ke bawah; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Roll the staff down so power reaches the middle of the tip section."
+        ],
+        "id": [
+          "Gulirkan toya ke bawah agar tenaga sampai ke tengah bagian ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 541–542, 图 H-10",
+      "start_sec": 23.5,
+      "end_sec": 26.5
+    },
+    {
+      "number": 7,
+      "section": 1,
+      "book_number": 6,
+      "name_zh": "拐步下拨棍",
+      "name_pinyin": "Guǎibù xià bōgùn",
+      "name_en": "Guaibu, Low Deflection",
+      "name_id": "Guaibu, Tepisan Rendah",
+      "steps": {
+        "en": [
+          "Turn slightly left and step the left foot past the front of the right, toes out, into guaibu; deflect the tip anticlockwise down to the front, right arm straight and palm up, the bent left arm in front of the left shoulder, palm out; watch the tip."
+        ],
+        "id": [
+          "Putar sedikit ke kiri dan langkahkan kaki kiri melewati depan kaki kanan, ujung kaki ke luar, menjadi guaibu; tepis ujung toya berlawanan arah jarum jam ke depan bawah, lengan kanan lurus dan telapak ke atas, lengan kiri yang ditekuk di depan bahu kiri, telapak ke luar; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A light, quick deflection, not too wide."
+        ],
+        "id": [
+          "Tepisan ringan dan cepat, tidak terlalu lebar."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 542, 图 H-11",
+      "start_sec": 26.5,
+      "end_sec": 29.5
+    },
+    {
+      "number": 8,
+      "section": 1,
+      "book_number": 7,
+      "name_zh": "马步戳棍",
+      "name_pinyin": "Mǎbù chuōgùn",
+      "name_en": "Mabu, Jab with the Staff",
+      "name_id": "Mabu, Sodok dengan Toya",
+      "steps": {
+        "en": [
+          "Step the right foot forward into mabu; circle the tip clockwise, right arm straight and palm down, the left hand dropping to the waist; watch the tip.",
+          "Jab the staff level to the right, right arm straight and tiger's mouth right, the left hand under the right armpit, palm up; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan menjadi mabu; putar ujung toya searah jarum jam, lengan kanan lurus dan telapak ke bawah, tangan kiri turun ke pinggang; pandangan ke ujung toya.",
+          "Sodokkan toya datar ke kanan, lengan kanan lurus dan hukou ke kanan, tangan kiri di bawah ketiak kanan, telapak ke atas; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A small circle; jab level as soon as it reaches shoulder height."
+        ],
+        "id": [
+          "Lingkaran kecil; sodok datar begitu mencapai tinggi bahu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 542–543, 图 H-12 to H-13",
+      "start_sec": 29.5,
+      "end_sec": 34.5
+    },
+    {
+      "number": 9,
+      "section": 1,
+      "book_number": 8,
+      "name_zh": "马步滚压棍",
+      "name_pinyin": "Mǎbù gǔn yāgùn",
+      "name_en": "Mabu, Rolling Press",
+      "name_id": "Mabu, Tekanan Bergulir",
+      "steps": {
+        "en": [
+          "Rotate the right arm out and pull the bent arm onto the right thigh, palm up, the left hand pulling to the outside of the left thigh, palm down; watch the tip."
+        ],
+        "id": [
+          "Putar lengan kanan ke luar dan tarik lengan yang ditekuk ke atas paha kanan, telapak ke atas, tangan kiri menarik ke sisi luar paha kiri, telapak ke bawah; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （五）."
+        ],
+        "id": [
+          "Sama seperti （五）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 543, 图 H-14",
+      "start_sec": 34.5,
+      "end_sec": 37.5
+    },
+    {
+      "number": 10,
+      "section": 1,
+      "book_number": 9,
+      "name_zh": "转身左弓步下拨棍",
+      "name_pinyin": "Zhuǎnshēn zuǒ gōngbù xià bōgùn",
+      "name_en": "Turn, Left Gongbu, Low Deflection",
+      "name_id": "Berbalik, Gongbu Kiri, Tepisan Rendah",
+      "steps": {
+        "en": [
+          "Move the left foot half a step back and turn left into left gongbu; the right hand changes grip, tiger's mouth in, and the tip deflects left with the turn to in front of the left shin, right arm straight and palm down, the bent left arm above the left shoulder, palm right; look right."
+        ],
+        "id": [
+          "Pindahkan kaki kiri setengah langkah ke belakang dan putar ke kiri menjadi gongbu kiri; tangan kanan berganti pegangan, hukou ke dalam, dan ujung toya menepis ke kiri mengikuti putaran ke depan tulang kering kiri, lengan kanan lurus dan telapak ke bawah, lengan kiri yang ditekuk di atas bahu kiri, telapak ke kanan; pandangan ke kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The left hand slides along the shaft and the right changes grip in one coordinated move, never losing hold."
+        ],
+        "id": [
+          "Tangan kiri meluncur di sepanjang gagang dan tangan kanan berganti pegangan dalam satu gerakan terkoordinasi, tanpa melepas."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 543–544, 图 H-15",
+      "start_sec": 37.5,
+      "end_sec": 40.5
+    },
+    {
+      "number": 11,
+      "section": 1,
+      "book_number": 10,
+      "name_zh": "左弓步盖棍",
+      "name_pinyin": "Zuǒ gōngbù gàigùn",
+      "name_en": "Left Gongbu, Cover with the Staff",
+      "name_id": "Gongbu Kiri, Tutupan Toya",
+      "steps": {
+        "en": [
+          "Turn right and step the right foot forward, toes out, knee slightly bent; hook the tip from left to the lower right rear; watch the tip.",
+          "Step the left foot forward into left gongbu; the tip continues down on the right, up and over to cover down onto the floor in front, right arm forward with tiger's mouth in, the left hand under the right armpit, palm up; watch the tip."
+        ],
+        "id": [
+          "Putar ke kanan dan langkahkan kaki kanan ke depan, ujung kaki ke luar, lutut sedikit ditekuk; kaitkan ujung toya dari kiri ke kanan belakang bawah; pandangan ke ujung toya.",
+          "Langkahkan kaki kiri ke depan menjadi gongbu kiri; ujung toya berlanjut ke bawah di kanan, ke atas lalu menutup turun ke lantai di depan, lengan kanan ke depan dengan hukou ke dalam, tangan kiri di bawah ketiak kanan, telapak ke atas; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The back hook and the forward cover flow with the steps."
+        ],
+        "id": [
+          "Kaitan ke belakang dan tutupan ke depan mengalir bersama langkah."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 544–545, 图 H-16 to H-17",
+      "start_sec": 40.5,
+      "end_sec": 45.5
+    },
+    {
+      "number": 12,
+      "section": 1,
+      "book_number": 11,
+      "name_zh": "左弓步斜击棍",
+      "name_pinyin": "Zuǒ gōngbù xiéjīgùn",
+      "name_en": "Left Gongbu, Slanting Strike",
+      "name_id": "Gongbu Kiri, Pukulan Serong",
+      "steps": {
+        "en": [
+          "Turn right with the knees slightly bent; swing the tip over the top to the right with the turn so the staff lies level in front, hands beside the hips with the tiger's mouths facing; look left.",
+          "Turn left and bend the left knee into left gongbu; strike the tip diagonally up to the left with the turn, right arm forward with tiger's mouth in, the left hand at the waist; watch the tip."
+        ],
+        "id": [
+          "Putar ke kanan dengan lutut sedikit ditekuk; ayunkan ujung toya melewati atas ke kanan mengikuti putaran sehingga toya mendatar di depan, tangan di samping pinggul dengan hukou saling berhadapan; pandangan ke kiri.",
+          "Putar ke kiri dan tekuk lutut kiri menjadi gongbu kiri; pukulkan ujung toya serong ke kiri atas mengikuti putaran, lengan kanan ke depan dengan hukou ke dalam, tangan kiri di pinggang; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Power reaches the tip section, driven by the waist turning left."
+        ],
+        "id": [
+          "Tenaga sampai ke bagian ujung, digerakkan pinggang yang berputar ke kiri."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 545, 图 H-18 to H-19",
+      "start_sec": 45.5,
+      "end_sec": 50.5
+    },
+    {
+      "number": 13,
+      "section": 1,
+      "book_number": 12,
+      "name_zh": "马步挑把",
+      "name_pinyin": "Mǎbù tiǎobǎ",
+      "name_en": "Mabu, Flick Up with the Butt",
+      "name_id": "Mabu, Cungkil dengan Pangkal",
+      "steps": {
+        "en": [
+          "Turn right into mabu; slide the right then the left hand toward the tip and flick the butt from below up to the left with the turn, both palms forward; watch the butt."
+        ],
+        "id": [
+          "Putar ke kanan menjadi mabu; luncurkan tangan kanan lalu tangan kiri ke arah ujung dan cungkil pangkal dari bawah ke kiri atas mengikuti putaran, kedua telapak ke depan; pandangan ke pangkal."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slide both hands as you flick, power at the end of the butt."
+        ],
+        "id": [
+          "Luncurkan kedua tangan saat mencungkil, tenaga di ujung pangkal."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 545–546, 图 H-20",
+      "start_sec": 50.5,
+      "end_sec": 53.5
+    },
+    {
+      "number": 14,
+      "section": 1,
+      "book_number": 13,
+      "name_zh": "左骑龙步斜击棍",
+      "name_pinyin": "Zuǒ qílóngbù xiéjīgùn",
+      "name_en": "Left Qilongbu, Slanting Strike",
+      "name_id": "Qilongbu Kiri, Pukulan Serong",
+      "steps": {
+        "en": [
+          "Turn left, step the left foot half a step forward and drag the right foot after it into left qilongbu; slide the left then the right hand toward the butt and strike the tip from below up to the left, right arm forward, tiger's mouth in, the bent left arm at the left chest, palm out; watch the tip."
+        ],
+        "id": [
+          "Putar ke kiri, langkahkan kaki kiri setengah langkah ke depan dan seret kaki kanan menyusul menjadi qilongbu kiri; luncurkan tangan kiri lalu tangan kanan ke arah pangkal dan pukulkan ujung toya dari bawah ke kiri atas, lengan kanan ke depan, hukou ke dalam, lengan kiri yang ditekuk di dada kiri, telapak ke luar; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slide the hands so the staff strikes out diagonally."
+        ],
+        "id": [
+          "Luncurkan tangan agar toya memukul serong ke luar."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 546, 图 H-21",
+      "start_sec": 53.5,
+      "end_sec": 56.5
+    },
+    {
+      "number": 15,
+      "section": 1,
+      "book_number": 14,
+      "name_zh": "右骑龙步斜击把",
+      "name_pinyin": "Yòu qílóngbù xiéjībǎ",
+      "name_en": "Right Qilongbu, Slanting Strike with the Butt",
+      "name_id": "Qilongbu Kanan, Pukulan Serong dengan Pangkal",
+      "steps": {
+        "en": [
+          "Step the right foot half a step forward and drag the left foot after it into right qilongbu; slide the right then the left hand toward the tip and strike the butt from below up to the right, left arm forward, tiger's mouth in, the bent right arm at the right chest, palm out; watch the butt."
+        ],
+        "id": [
+          "Langkahkan kaki kanan setengah langkah ke depan dan seret kaki kiri menyusul menjadi qilongbu kanan; luncurkan tangan kanan lalu tangan kiri ke arah ujung dan pukulkan pangkal dari bawah ke kanan atas, lengan kiri ke depan, hukou ke dalam, lengan kanan yang ditekuk di dada kanan, telapak ke luar; pandangan ke pangkal."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in the previous movement."
+        ],
+        "id": [
+          "Sama seperti gerakan sebelumnya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 547, 图 H-22",
+      "start_sec": 56.5,
+      "end_sec": 59.5
+    },
+    {
+      "number": 16,
+      "section": 1,
+      "book_number": 15,
+      "name_zh": "上步左格棍",
+      "name_pinyin": "Shàngbù zuǒ gégùn",
+      "name_en": "Shangbu, Block Left",
+      "name_id": "Shangbu, Tangkis Kiri",
+      "steps": {
+        "en": [
+          "Step the left foot forward and push the staff down to the left front with the right hand, butt up, power in the middle; look ahead."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan dan dorong toya ke depan kiri bawah dengan tangan kanan, pangkal ke atas, tenaga di bagian tengah; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Lift the left arm slightly and lower the right so the staff stands vertical."
+        ],
+        "id": [
+          "Angkat lengan kiri sedikit dan turunkan lengan kanan agar toya berdiri tegak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 548, 图 H-23",
+      "start_sec": 59.5,
+      "end_sec": 62.5
+    },
+    {
+      "number": 17,
+      "section": 1,
+      "book_number": 16,
+      "name_zh": "上步右格棍",
+      "name_pinyin": "Shàngbù yòu gégùn",
+      "name_en": "Shangbu, Block Right",
+      "name_id": "Shangbu, Tangkis Kanan",
+      "steps": {
+        "en": [
+          "Step the right foot forward and push the staff down to the right front with the left hand, tip up, power in the middle; look ahead."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan dan dorong toya ke depan kanan bawah dengan tangan kiri, ujung ke atas, tenaga di bagian tengah; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in the previous movement."
+        ],
+        "id": [
+          "Sama seperti gerakan sebelumnya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 548, 图 H-24",
+      "start_sec": 62.5,
+      "end_sec": 65.5
+    },
+    {
+      "number": 18,
+      "section": 1,
+      "book_number": 17,
+      "name_zh": "跳步左弓步斜击棍",
+      "name_pinyin": "Tiàobù zuǒ gōngbù xiéjīgùn",
+      "name_en": "Tiaobu, Left Gongbu Slanting Strike",
+      "name_id": "Tiaobu, Gongbu Kiri Pukulan Serong",
+      "steps": {
+        "en": [
+          "Step the left foot forward; the right hand changes grip, palm up, and swings the staff to the left side, tip forward; look ahead.",
+          "Push off the left foot and swing the right leg up into the air; reach the left hand forward, tiger's mouth in, and pull the right hand to the waist so the tip hooks from front to the lower right rear; look right.",
+          "Land on both feet in banmabu; look left.",
+          "Straighten the right leg into left gongbu; slide the hands slightly toward the butt and push with the right while pulling with the left, striking the tip from behind up to the left; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan; tangan kanan berganti pegangan, telapak ke atas, dan mengayunkan toya ke sisi kiri, ujung ke depan; pandangan ke depan.",
+          "Tolak dengan kaki kiri dan ayunkan kaki kanan ke atas sehingga melayang; julurkan tangan kiri ke depan, hukou ke dalam, dan tarik tangan kanan ke pinggang sehingga ujung toya mengait dari depan ke kanan belakang bawah; pandangan ke kanan.",
+          "Mendarat dengan kedua kaki dalam banmabu; pandangan ke kiri.",
+          "Luruskan kaki kanan menjadi gongbu kiri; luncurkan tangan sedikit ke arah pangkal dan dorong dengan tangan kanan sambil menarik dengan tangan kiri, memukulkan ujung toya dari belakang ke kiri atas; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A quick change of grip; land on both feet together; gather power in banmabu before striking, power at the end of the tip."
+        ],
+        "id": [
+          "Pergantian pegangan cepat; mendarat dengan kedua kaki bersamaan; himpun tenaga di banmabu sebelum memukul, tenaga di ujung toya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 548–549, 图 H-25 to H-28",
+      "start_sec": 65.5,
+      "end_sec": 75.5
+    },
+    {
+      "number": 19,
+      "section": 1,
+      "book_number": 18,
+      "name_zh": "半马步挂劈棍",
+      "name_pinyin": "Bànmǎbù guà pīgùn",
+      "name_en": "Banmabu, Hook and Chop",
+      "name_id": "Banmabu, Kait dan Bacok",
+      "steps": {
+        "en": [
+          "Turn slightly right and lift the right knee; slide the hands slightly toward the tip and hook the tip from the upper left down to the lower right rear; look right.",
+          "Set the right foot down forward and turn slightly left into banmabu; chop the staff over the top and down to the right, power in the front section, the left hand at the waist and the right reaching forward; watch the tip."
+        ],
+        "id": [
+          "Putar sedikit ke kanan dan angkat lutut kanan; luncurkan tangan sedikit ke arah ujung dan kaitkan ujung toya dari kiri atas ke kanan belakang bawah; pandangan ke kanan.",
+          "Turunkan kaki kanan ke depan dan putar sedikit ke kiri menjadi banmabu; bacokkan toya melewati atas ke kanan bawah, tenaga di bagian depan, tangan kiri di pinggang dan tangan kanan menjulur ke depan; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Knee lift with the hook, landing with the chop, no gap between them."
+        ],
+        "id": [
+          "Angkat lutut bersama kaitan, mendarat bersama bacokan, tanpa jeda."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 550, 图 H-29 to H-30",
+      "start_sec": 75.5,
+      "end_sec": 80.5
+    },
+    {
+      "number": 20,
+      "section": 1,
+      "book_number": 19,
+      "name_zh": "半马步戳棍",
+      "name_pinyin": "Bànmǎbù chuōgùn",
+      "name_en": "Banmabu, Jab with the Staff",
+      "name_id": "Banmabu, Sodok dengan Toya",
+      "steps": {
+        "en": [
+          "Advance the right foot half a step to the right and draw the staff back slightly; look right.",
+          "Bring the left foot half a step after the right into banmabu and jab the staff level to the right, right arm straight, tiger's mouth right, the bent left arm at the chest; watch the tip."
+        ],
+        "id": [
+          "Majukan kaki kanan setengah langkah ke kanan dan tarik toya sedikit ke belakang; pandangan ke kanan.",
+          "Bawa kaki kiri setengah langkah menyusul kaki kanan menjadi banmabu dan sodokkan toya datar ke kanan, lengan kanan lurus, hukou ke kanan, lengan kiri yang ditekuk di dada; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The pull back, the jab, the step and genbu are one continuous action."
+        ],
+        "id": [
+          "Tarikan, sodokan, langkah dan genbu adalah satu gerakan yang berkesinambungan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 550–551, 图 H-31 to H-32",
+      "start_sec": 80.5,
+      "end_sec": 85.5
+    },
+    {
+      "number": 21,
+      "section": 1,
+      "book_number": 20,
+      "name_zh": "前跃半马步戳棍",
+      "name_pinyin": "Qiányuè bànmǎbù chuōgùn",
+      "name_en": "Leap Forward, Banmabu Jab",
+      "name_id": "Lompat ke Depan, Banmabu Sodokan",
+      "steps": {
+        "en": [
+          "Bend the left knee and lift it past the front of the right leg, drawing the staff back slightly; look right.",
+          "Leap forward off the right foot and land in banmabu, jabbing the staff level to the right, right arm straight, the bent left arm at the chest; watch the tip."
+        ],
+        "id": [
+          "Tekuk lutut kiri dan angkat melewati depan kaki kanan, tarik toya sedikit ke belakang; pandangan ke kanan.",
+          "Lompat ke depan dari kaki kanan dan mendarat dalam banmabu, sodokkan toya datar ke kanan, lengan kanan lurus, lengan kiri yang ditekuk di dada; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "In the air the staff is drawn back on the left; jab as you land; leap a long way forward."
+        ],
+        "id": [
+          "Di udara toya ditarik ke belakang di sisi kiri; sodok saat mendarat; lompat jauh ke depan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 552, 图 H-33 to H-34",
+      "start_sec": 85.5,
+      "end_sec": 90.5
+    },
+    {
+      "number": 22,
+      "section": 2,
+      "book_number": 21,
+      "name_zh": "盖步左弓步绞压棍",
+      "name_pinyin": "Gàibù zuǒ gōngbù jiǎo yāgùn",
+      "name_en": "Gaibu, Left Gongbu, Twist and Press",
+      "name_id": "Gaibu, Gongbu Kiri, Pilin dan Tekan",
+      "steps": {
+        "en": [
+          "Turn slightly left and step the right foot in gaibu past the front of the left to the left; twist the tip half a circle anticlockwise; watch the tip.",
+          "Stride the left foot to the left into left gongbu; keep twisting the tip from outside in and press it down another half circle, right arm rotated in with tiger's mouth slanting down, the bent left arm at the chest; watch the tip."
+        ],
+        "id": [
+          "Putar sedikit ke kiri dan langkahkan kaki kanan secara gaibu melewati depan kaki kiri ke kiri; pilin ujung toya setengah lingkaran berlawanan arah jarum jam; pandangan ke ujung toya.",
+          "Langkahkan kaki kiri lebar ke kiri menjadi gongbu kiri; terus pilin ujung toya dari luar ke dalam dan tekan turun setengah lingkaran lagi, lengan kanan diputar ke dalam dengan hukou miring ke bawah, lengan kiri yang ditekuk di dada; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Small circles controlled by the right arm; gaibu and stride are linked."
+        ],
+        "id": [
+          "Lingkaran kecil dikendalikan lengan kanan; gaibu dan langkah lebar bersambung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 552–553, 图 H-35 to H-36",
+      "start_sec": 90.5,
+      "end_sec": 95.5
+    },
+    {
+      "number": 23,
+      "section": 2,
+      "book_number": 22,
+      "name_zh": "半马步挑劈棍",
+      "name_pinyin": "Bànmǎbù tiǎo pīgùn",
+      "name_en": "Banmabu, Flick and Chop",
+      "name_id": "Banmabu, Cungkil dan Bacok",
+      "steps": {
+        "en": [
+          "Turn right and shift forward; flick the tip from below upward; look ahead.",
+          "Turn slightly left and bend into banmabu; chop the staff down to waist height, power in the front section; watch the tip and shout."
+        ],
+        "id": [
+          "Putar ke kanan dan geser ke depan; cungkil ujung toya dari bawah ke atas; pandangan ke depan.",
+          "Putar sedikit ke kiri dan tekuk menjadi banmabu; bacokkan toya turun setinggi pinggang, tenaga di bagian depan; pandangan ke ujung toya dan berseru."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Don't lean back on the flick; the chop and the shout finish together."
+        ],
+        "id": [
+          "Jangan condong ke belakang saat mencungkil; bacokan dan seruan selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 553–554, 图 H-37 to H-38",
+      "start_sec": 95.5,
+      "end_sec": 100.5
+    },
+    {
+      "number": 24,
+      "section": 2,
+      "book_number": 23,
+      "name_zh": "回身左弓步戳把",
+      "name_pinyin": "Huíshēn zuǒ gōngbù chuōbǎ",
+      "name_en": "Turn Back, Left Gongbu, Jab with the Butt",
+      "name_id": "Berbalik, Gongbu Kiri, Sodok dengan Pangkal",
+      "steps": {
+        "en": [
+          "Turn left, left toes out, and bend the left knee into left gongbu; jab the butt level forward, left arm forward with tiger's mouth in, the bent right arm at the chest, palm up; watch the butt."
+        ],
+        "id": [
+          "Putar ke kiri, ujung kaki kiri ke luar, dan tekuk lutut kiri menjadi gongbu kiri; sodokkan pangkal datar ke depan, lengan kiri ke depan dengan hukou ke dalam, lengan kanan yang ditekuk di dada, telapak ke atas; pandangan ke pangkal."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Bring the staff close to the waist as you turn into gongbu, then jab level."
+        ],
+        "id": [
+          "Bawa toya dekat pinggang saat berbalik ke gongbu, lalu sodok datar."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 554, 图 H-39",
+      "start_sec": 100.5,
+      "end_sec": 103.5
+    },
+    {
+      "number": 25,
+      "section": 2,
+      "book_number": 24,
+      "name_zh": "左弓步挂劈棍",
+      "name_pinyin": "Zuǒ gōngbù guà pīgùn",
+      "name_en": "Left Gongbu, Hook and Chop",
+      "name_id": "Gongbu Kiri, Kait dan Bacok",
+      "steps": {
+        "en": [
+          "Step the right foot to the right front and turn left, raising the staff with the tip back and up; look ahead.",
+          "Turn left and lift the left knee; rotate the right arm in so the tip hooks from behind past the front to the lower left, arms crossed with the right outside; watch the tip.",
+          "Set the left foot down to the left into left gongbu; left hand down and right hand up, chop the tip over the top and down forward, right arm forward, tiger's mouth forward, the left hand at the waist; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan kanan dan putar ke kiri, angkat toya dengan ujung ke belakang atas; pandangan ke depan.",
+          "Putar ke kiri dan angkat lutut kiri; putar lengan kanan ke dalam sehingga ujung toya mengait dari belakang melewati depan ke kiri bawah, lengan menyilang dengan kanan di luar; pandangan ke ujung toya.",
+          "Turunkan kaki kiri ke kiri menjadi gongbu kiri; tangan kiri ke bawah dan tangan kanan ke atas, bacokkan ujung toya melewati atas ke depan bawah, lengan kanan ke depan, hukou ke depan, tangan kiri di pinggang; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Lift the leg as you hook; the hands may slide, and the chop lands with the step, power in the tip."
+        ],
+        "id": [
+          "Angkat kaki saat mengait; tangan boleh meluncur, dan bacokan selesai bersama langkah, tenaga di ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 554–555, 图 H-40 to H-42",
+      "start_sec": 103.5,
+      "end_sec": 111.0
+    },
+    {
+      "number": 26,
+      "section": 2,
+      "book_number": 25,
+      "name_zh": "跳步跪步右云拨棍",
+      "name_pinyin": "Tiàobù guìbù yòu yúnbōgùn",
+      "name_en": "Tiaobu, Guibu, Cloud and Deflect Right",
+      "name_id": "Tiaobu, Guibu, Putar dan Tepis Kanan",
+      "steps": {
+        "en": [
+          "Straighten the left leg, right heel up; lift the staff overhead with both hands, tip to the right; look right.",
+          "Turn slightly right, jump off both feet and land right foot forward and left back in guibu; the right hand arcs back and the left forward so the tip clouds and deflects anticlockwise, ending forward; watch the tip."
+        ],
+        "id": [
+          "Luruskan kaki kiri, tumit kanan terangkat; angkat toya ke atas kepala dengan kedua tangan, ujung ke kanan; pandangan ke kanan.",
+          "Putar sedikit ke kanan, lompat dengan kedua kaki dan mendarat kaki kanan di depan dan kiri di belakang dalam guibu; tangan kanan melengkung ke belakang dan tangan kiri ke depan sehingga ujung toya berputar dan menepis berlawanan arah jarum jam, berakhir ke depan; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The staff is overhead in the jump and clouds as you land; in guibu the deflection reaches the tip."
+        ],
+        "id": [
+          "Toya di atas kepala saat melompat dan berputar saat mendarat; pada guibu tepisan sampai ke ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 555–556, 图 H-43 to H-44",
+      "start_sec": 111.0,
+      "end_sec": 116.0
+    },
+    {
+      "number": 27,
+      "section": 2,
+      "book_number": 26,
+      "name_zh": "跳步跪步左云拨棍",
+      "name_pinyin": "Tiàobù guìbù zuǒ yúnbōgùn",
+      "name_en": "Tiaobu, Guibu, Cloud and Deflect Left",
+      "name_id": "Tiaobu, Guibu, Putar dan Tepis Kiri",
+      "steps": {
+        "en": [
+          "Stand up; the left hand arcs to the right front and the right to the left rear, raising the staff overhead with the butt forward; look ahead.",
+          "Turn slightly left, jump off both feet and land left foot forward and right back in guibu; the right hand changes grip, then the right arcs forward and the left back so the staff clouds clockwise, butt forward; watch the butt."
+        ],
+        "id": [
+          "Berdiri; tangan kiri melengkung ke depan kanan dan tangan kanan ke kiri belakang, mengangkat toya ke atas kepala dengan pangkal ke depan; pandangan ke depan.",
+          "Putar sedikit ke kiri, lompat dengan kedua kaki dan mendarat kaki kiri di depan dan kanan di belakang dalam guibu; tangan kanan berganti pegangan, lalu tangan kanan melengkung ke depan dan tangan kiri ke belakang sehingga toya berputar searah jarum jam, pangkal ke depan; pandangan ke pangkal."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （二十五）."
+        ],
+        "id": [
+          "Sama seperti （二十五）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 556–557, 图 H-45 to H-46",
+      "start_sec": 116.0,
+      "end_sec": 121.0
+    },
+    {
+      "number": 28,
+      "section": 2,
+      "book_number": 27,
+      "name_zh": "上步撩把",
+      "name_pinyin": "Shàngbù liāobǎ",
+      "name_en": "Shangbu, Upward Swing with the Butt",
+      "name_id": "Shangbu, Ayunan ke Atas dengan Pangkal",
+      "steps": {
+        "en": [
+          "Stand up and flick the butt up, the staff at the left side; look ahead.",
+          "Turn slightly right and step the right foot forward; the left hand slides slightly right and the butt swings from above, down and up to the lower right front, left arm forward with tiger's mouth in, the bent right arm at the chest; watch the butt."
+        ],
+        "id": [
+          "Berdiri dan cungkil pangkal ke atas, toya di sisi kiri; pandangan ke depan.",
+          "Putar sedikit ke kanan dan langkahkan kaki kanan ke depan; tangan kiri meluncur sedikit ke kanan dan pangkal berayun dari atas, ke bawah lalu naik ke depan kanan bawah, lengan kiri ke depan dengan hukou ke dalam, lengan kanan yang ditekuk di dada; pandangan ke pangkal."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Swing close to the body, rising from below with the turn; slide the hands so power reaches the end of the butt."
+        ],
+        "id": [
+          "Ayun dekat badan, naik dari bawah mengikuti putaran; luncurkan tangan agar tenaga sampai ke ujung pangkal."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 557–558, 图 H-47 to H-48",
+      "start_sec": 121.0,
+      "end_sec": 126.0
+    },
+    {
+      "number": 29,
+      "section": 2,
+      "book_number": 28,
+      "name_zh": "上步撩棍",
+      "name_pinyin": "Shàngbù liāogùn",
+      "name_en": "Shangbu, Upward Swing",
+      "name_id": "Shangbu, Ayunan ke Atas",
+      "steps": {
+        "en": [
+          "Step the left foot forward; swing the tip from the upper rear, down and up to the lower left front, right arm forward with tiger's mouth in, the bent left arm at the chest; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan; ayunkan ujung toya dari belakang atas, ke bawah lalu naik ke depan kiri bawah, lengan kanan ke depan dengan hukou ke dalam, lengan kiri yang ditekuk di dada; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （二十七）."
+        ],
+        "id": [
+          "Sama seperti （二十七）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 558, 图 H-49",
+      "start_sec": 126.0,
+      "end_sec": 129.0
+    },
+    {
+      "number": 30,
+      "section": 2,
+      "book_number": 29,
+      "name_zh": "上步撩把",
+      "name_pinyin": "Shàngbù liāobǎ",
+      "name_en": "Shangbu, Upward Swing with the Butt",
+      "name_id": "Shangbu, Ayunan ke Atas dengan Pangkal",
+      "steps": {
+        "en": [
+          "Step the right foot forward; swing the butt from the upper rear, down and up to the lower right front, left arm forward with tiger's mouth in, the bent right arm at the chest; watch the butt."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan; ayunkan pangkal dari belakang atas, ke bawah lalu naik ke depan kanan bawah, lengan kiri ke depan dengan hukou ke dalam, lengan kanan yang ditekuk di dada; pandangan ke pangkal."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "As in （二十七）."
+        ],
+        "id": [
+          "Sama seperti （二十七）."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 558, 图 H-50",
+      "start_sec": 129.0,
+      "end_sec": 132.0
+    },
+    {
+      "number": 31,
+      "section": 2,
+      "book_number": 30,
+      "name_zh": "左弓步斜击棍",
+      "name_pinyin": "Zuǒ gōngbù xiéjīgùn",
+      "name_en": "Left Gongbu, Slanting Strike",
+      "name_id": "Gongbu Kiri, Pukulan Serong",
+      "steps": {
+        "en": [
+          "Step the left foot to the left front into banmabu; the right hand pulls the staff to the waist, palm down; look left.",
+          "Straighten the right leg into left gongbu; push with the right hand and pull the left to the waist so the tip strikes from behind up to the left; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan kiri menjadi banmabu; tangan kanan menarik toya ke pinggang, telapak ke bawah; pandangan ke kiri.",
+          "Luruskan kaki kanan menjadi gongbu kiri; dorong dengan tangan kanan dan tarik tangan kiri ke pinggang sehingga ujung toya memukul dari belakang ke kiri atas; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Gather power in banmabu, then strike with the left turn, power in the tip section."
+        ],
+        "id": [
+          "Himpun tenaga di banmabu, lalu pukul bersama putaran ke kiri, tenaga di bagian ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 559–560, 图 H-51 to H-52",
+      "start_sec": 132.0,
+      "end_sec": 137.0
+    },
+    {
+      "number": 32,
+      "section": 2,
+      "book_number": 31,
+      "name_zh": "钉腿斜击把",
+      "name_pinyin": "Dīngtuǐ xiéjībǎ",
+      "name_en": "Nail Kick, Slanting Strike with the Butt",
+      "name_id": "Tendangan Paku, Pukulan Serong dengan Pangkal",
+      "steps": {
+        "en": [
+          "Stand on the left leg and drive the right leg from bent to straight diagonally up across in a nail kick, toes pulled back and knee straight, power in the ball of the foot; at the same time push with the left hand and pull with the right, striking diagonally forward with the butt; watch the butt."
+        ],
+        "id": [
+          "Berdiri di kaki kiri dan dorong kaki kanan dari tertekuk ke lurus serong ke atas melintang dalam tendangan paku, ujung kaki ditarik dan lutut lurus, tenaga di telapak depan kaki; bersamaan dorong dengan tangan kiri dan tarik dengan tangan kanan, memukul serong ke depan dengan pangkal; pandangan ke pangkal."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A strong kick that doesn't slacken because of the butt strike."
+        ],
+        "id": [
+          "Tendangan kuat yang tidak mengendur karena pukulan pangkal."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 560, 图 H-53",
+      "start_sec": 137.0,
+      "end_sec": 140.0
+    },
+    {
+      "number": 33,
+      "section": 2,
+      "book_number": 32,
+      "name_zh": "左弓步斜击棍",
+      "name_pinyin": "Zuǒ gōngbù xiéjīgùn",
+      "name_en": "Left Gongbu, Slanting Strike",
+      "name_id": "Gongbu Kiri, Pukulan Serong",
+      "steps": {
+        "en": [
+          "Set the right leg down behind into left gongbu; push with the right hand and pull the left to the waist so the tip strikes from behind up to the left, right tiger's mouth in, left palm in; watch the tip."
+        ],
+        "id": [
+          "Turunkan kaki kanan ke belakang menjadi gongbu kiri; dorong dengan tangan kanan dan tarik tangan kiri ke pinggang sehingga ujung toya memukul dari belakang ke kiri atas, hukou kanan ke dalam, telapak kiri ke dalam; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Land the right foot quickly and steady the weight, striking as gongbu forms."
+        ],
+        "id": [
+          "Daratkan kaki kanan dengan cepat dan mantapkan berat, memukul saat gongbu terbentuk."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 560–561, 图 H-54",
+      "start_sec": 140.0,
+      "end_sec": 143.0
+    },
+    {
+      "number": 34,
+      "section": 2,
+      "book_number": 33,
+      "name_zh": "马步挂劈棍",
+      "name_pinyin": "Mǎbù guà pīgùn",
+      "name_en": "Mabu, Hook and Chop",
+      "name_id": "Mabu, Kait dan Bacok",
+      "steps": {
+        "en": [
+          "Stand up with the weight on the left leg; the right hand changes grip and both hands hook the tip down to the lower right rear; look ahead.",
+          "Turn left and step the right foot to the right into mabu; chop the staff from behind over the top down to the right; watch the tip."
+        ],
+        "id": [
+          "Berdiri dengan berat di kaki kiri; tangan kanan berganti pegangan dan kedua tangan mengaitkan ujung toya ke kanan belakang bawah; pandangan ke depan.",
+          "Putar ke kiri dan langkahkan kaki kanan ke kanan menjadi mabu; bacokkan toya dari belakang melewati atas ke kanan bawah; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Hook and chop close to the body, linked, power in the tip."
+        ],
+        "id": [
+          "Kait dan bacok dekat badan, bersambung, tenaga di ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 561, 图 H-55 to H-56",
+      "start_sec": 143.0,
+      "end_sec": 148.0
+    },
+    {
+      "number": 35,
+      "section": 2,
+      "book_number": 34,
+      "name_zh": "上步马步挑棍",
+      "name_pinyin": "Shàngbù mǎbù tiǎogùn",
+      "name_en": "Shangbu, Mabu, Flick Up",
+      "name_id": "Shangbu, Mabu, Cungkil ke Atas",
+      "steps": {
+        "en": [
+          "Turn right and step the left foot forward; reach the left hand forward and bend the right arm back over the top so the tip hooks to the upper rear; look ahead.",
+          "Step the right foot forward and turn left into mabu; flick the tip from the upper rear, down and up to the right, right arm slightly bent and the left hand pulled to the waist; watch the tip."
+        ],
+        "id": [
+          "Putar ke kanan dan langkahkan kaki kiri ke depan; julurkan tangan kiri ke depan dan tekuk lengan kanan ke belakang melewati atas sehingga ujung toya mengait ke belakang atas; pandangan ke depan.",
+          "Langkahkan kaki kanan ke depan dan putar ke kiri menjadi mabu; cungkil ujung toya dari belakang atas, ke bawah lalu naik ke kanan, lengan kanan sedikit ditekuk dan tangan kiri ditarik ke pinggang; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Keep the staff close to the body and flick as you step, power in the tip section."
+        ],
+        "id": [
+          "Toya tetap dekat badan dan cungkil saat melangkah, tenaga di bagian ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 562, 图 H-57 to H-58",
+      "start_sec": 148.0,
+      "end_sec": 153.0
+    },
+    {
+      "number": 36,
+      "section": 2,
+      "book_number": 35,
+      "name_zh": "马步挂劈棍",
+      "name_pinyin": "Mǎbù guà pīgùn",
+      "name_en": "Mabu, Hook and Chop",
+      "name_id": "Mabu, Kait dan Bacok",
+      "steps": {
+        "en": [
+          "Stand up with the weight on the right leg; hold the staff to the right front, tip up; look ahead.",
+          "Lift the left foot and turn left; rotate the right arm in onto the outside of the left arm so the tip hooks down to the left; watch the tip.",
+          "Set the left foot back down in place; the right arm rotates out up and forward and the left arm circles behind so the tip hooks on from below, behind and up to the front; look ahead.",
+          "Lift the right foot and turn right; the right arm swings down and the left circles overhead so the tip hooks down to the right rear; look right.",
+          "Set the right foot down in place and bend into mabu; chop the tip from behind over the top to the front, the left hand at the waist and the right reaching forward, tiger's mouth forward; watch the tip."
+        ],
+        "id": [
+          "Berdiri dengan berat di kaki kanan; pegang toya ke depan kanan, ujung ke atas; pandangan ke depan.",
+          "Angkat kaki kiri dan putar ke kiri; putar lengan kanan ke dalam ke sisi luar lengan kiri sehingga ujung toya mengait ke kiri bawah; pandangan ke ujung toya.",
+          "Turunkan kaki kiri kembali di tempatnya; lengan kanan berputar ke luar ke atas dan ke depan dan lengan kiri berputar ke belakang sehingga ujung toya terus mengait dari bawah, ke belakang lalu naik ke depan; pandangan ke depan.",
+          "Angkat kaki kanan dan putar ke kanan; lengan kanan berayun turun dan lengan kiri berputar di atas kepala sehingga ujung toya mengait ke kanan belakang bawah; pandangan ke kanan.",
+          "Turunkan kaki kanan di tempatnya dan tekuk menjadi mabu; bacokkan ujung toya dari belakang melewati atas ke depan, tangan kiri di pinggang dan tangan kanan menjulur ke depan, hukou ke depan; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The hooks pass close to both sides of the body with each knee lift, unbroken; mabu and the chop coincide, power at the end of the tip."
+        ],
+        "id": [
+          "Kaitan lewat dekat kedua sisi badan setiap kali lutut diangkat, tanpa terputus; mabu dan bacokan bersamaan, tenaga di ujung toya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 562–564, 图 H-59 to H-63",
+      "start_sec": 153.0,
+      "end_sec": 165.5
+    },
+    {
+      "number": 37,
+      "section": 2,
+      "book_number": 36,
+      "name_zh": "回身左弓步斜击棍",
+      "name_pinyin": "Huíshēn zuǒ gōngbù xiéjīgùn",
+      "name_en": "Turn Back, Left Gongbu Slanting Strike",
+      "name_id": "Berbalik, Gongbu Kiri Pukulan Serong",
+      "steps": {
+        "en": [
+          "Move the left foot back and turn left into banmabu; the right hand pulls the staff to the waist, palm up, and the left hand reaches to the left, tiger's mouth in; look left.",
+          "Straighten the right leg into left gongbu; push with the right and pull the left to the waist so the tip strikes from behind up to the left; watch the tip."
+        ],
+        "id": [
+          "Pindahkan kaki kiri ke belakang dan putar ke kiri menjadi banmabu; tangan kanan menarik toya ke pinggang, telapak ke atas, dan tangan kiri menjulur ke kiri, hukou ke dalam; pandangan ke kiri.",
+          "Luruskan kaki kanan menjadi gongbu kiri; dorong dengan tangan kanan dan tarik tangan kiri ke pinggang sehingga ujung toya memukul dari belakang ke kiri atas; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Gather power in banmabu; strike with the turn into gongbu, power in the tip section."
+        ],
+        "id": [
+          "Himpun tenaga di banmabu; pukul bersama putaran ke gongbu, tenaga di bagian ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 564–565, 图 H-64 to H-65",
+      "start_sec": 165.5,
+      "end_sec": 170.5
+    },
+    {
+      "number": 38,
+      "section": 3,
+      "book_number": 37,
+      "name_zh": "右弓步戳棍",
+      "name_pinyin": "Yòu gōngbù chuōgùn",
+      "name_en": "Right Gongbu, Jab with the Staff",
+      "name_id": "Gongbu Kanan, Sodok dengan Toya",
+      "steps": {
+        "en": [
+          "Lower the tip down to the right; watch the tip.",
+          "Lift the bent right knee, toes pulled up; circle the tip once anticlockwise, then pull the right hand to the waist, palm up, the left hand reaching back; watch the tip.",
+          "Turn slightly right and set the right foot down forward into right gongbu; jab the staff level forward, right arm straight at shoulder height, tiger's mouth forward, the left hand gripping the butt end under the right armpit; watch the tip."
+        ],
+        "id": [
+          "Turunkan ujung toya ke kanan bawah; pandangan ke ujung toya.",
+          "Angkat lutut kanan yang ditekuk, ujung kaki ditarik ke atas; putar ujung toya satu kali berlawanan arah jarum jam, lalu tarik tangan kanan ke pinggang, telapak ke atas, tangan kiri menjulur ke belakang; pandangan ke ujung toya.",
+          "Putar sedikit ke kanan dan turunkan kaki kanan ke depan menjadi gongbu kanan; sodokkan toya datar ke depan, lengan kanan lurus setinggi bahu, hukou ke depan, tangan kiri memegang ujung pangkal di bawah ketiak kanan; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A small circle, drawing back as it turns; jab with the right arm straight."
+        ],
+        "id": [
+          "Lingkaran kecil, sambil menarik ke belakang; sodok dengan lengan kanan lurus."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 565–566, 图 H-66 to H-68",
+      "start_sec": 170.5,
+      "end_sec": 178.0
+    },
+    {
+      "number": 39,
+      "section": 3,
+      "book_number": 38,
+      "name_zh": "左虚步下弹棍",
+      "name_pinyin": "Zuǒ xūbù xià tángùn",
+      "name_en": "Left Xubu, Downward Flick",
+      "name_id": "Xubu Kiri, Lentingan ke Bawah",
+      "steps": {
+        "en": [
+          "Shift left and move the right foot slightly back; swing the tip slightly to the right rear; look right.",
+          "Shift right and draw the left foot in into left xubu; push with the right hand so the tip flicks down to the right front, right palm slanting up and left palm slanting down; watch the tip."
+        ],
+        "id": [
+          "Geser ke kiri dan pindahkan kaki kanan sedikit ke belakang; ayunkan ujung toya sedikit ke kanan belakang; pandangan ke kanan.",
+          "Geser ke kanan dan tarik kaki kiri ke dalam menjadi xubu kiri; dorong dengan tangan kanan sehingga ujung toya melenting ke depan kanan bawah, telapak kanan miring ke atas dan telapak kiri miring ke bawah; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The left hand controls the butt while the right snaps forward and down, both hands shaking the staff so the tip whips, power at the end; this is not a push."
+        ],
+        "id": [
+          "Tangan kiri mengendalikan pangkal sementara tangan kanan menyentak ke depan bawah, kedua tangan menggetarkan toya sehingga ujung melecut, tenaga di ujung; ini bukan dorongan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 566–567, 图 H-69 to H-70",
+      "start_sec": 178.0,
+      "end_sec": 183.0
+    },
+    {
+      "number": 40,
+      "section": 3,
+      "book_number": 39,
+      "name_zh": "右弓步拨把",
+      "name_pinyin": "Yòu gōngbù bōbǎ",
+      "name_en": "Right Gongbu, Deflect with the Butt",
+      "name_id": "Gongbu Kanan, Tepis dengan Pangkal",
+      "steps": {
+        "en": [
+          "Turn right, settle the left foot and step the right foot forward; slide the right then the left hand toward the tip; look ahead.",
+          "Step the left foot forward and turn right into right gongbu; deflect the butt up to the right with the turn, the right hand pulled to the right hip, palm out, the left hand at the front of the right shoulder, tiger's mouth slanting down; watch the butt."
+        ],
+        "id": [
+          "Putar ke kanan, mantapkan kaki kiri dan langkahkan kaki kanan ke depan; luncurkan tangan kanan lalu tangan kiri ke arah ujung; pandangan ke depan.",
+          "Langkahkan kaki kiri ke depan dan putar ke kanan menjadi gongbu kanan; tepis pangkal ke kanan atas mengikuti putaran, tangan kanan ditarik ke pinggul kanan, telapak ke luar, tangan kiri di depan bahu kanan, hukou miring ke bawah; pandangan ke pangkal."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slide the hands quickly during the turn, deflecting as you slide; keep the deflection small, just to the right side."
+        ],
+        "id": [
+          "Luncurkan tangan dengan cepat saat berputar, menepis sambil meluncur; tepisan kecil, cukup ke sisi kanan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 567–568, 图 H-71 to H-72",
+      "start_sec": 183.0,
+      "end_sec": 188.0
+    },
+    {
+      "number": 41,
+      "section": 3,
+      "book_number": 40,
+      "name_zh": "左弓步斜击棍",
+      "name_pinyin": "Zuǒ gōngbù xiéjīgùn",
+      "name_en": "Left Gongbu, Slanting Strike",
+      "name_id": "Gongbu Kiri, Pukulan Serong",
+      "steps": {
+        "en": [
+          "Turn left and straighten the right leg into left gongbu; slide the left then the right hand toward the butt, pull the left hand to the waist and reach the right forward so the tip strikes from below up to the left; watch the tip."
+        ],
+        "id": [
+          "Putar ke kiri dan luruskan kaki kanan menjadi gongbu kiri; luncurkan tangan kiri lalu tangan kanan ke arah pangkal, tarik tangan kiri ke pinggang dan julurkan tangan kanan ke depan sehingga ujung toya memukul dari bawah ke kiri atas; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The tip travels from below, forward and up to the left, power at its end."
+        ],
+        "id": [
+          "Ujung toya bergerak dari bawah, ke depan lalu ke kiri atas, tenaga di ujungnya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 568–569, 图 H-73",
+      "start_sec": 188.0,
+      "end_sec": 191.0
+    },
+    {
+      "number": 42,
+      "section": 3,
+      "book_number": 41,
+      "name_zh": "转身马步云拨棍",
+      "name_pinyin": "Zhuǎnshēn mǎbù yúnbōgùn",
+      "name_en": "Turn, Mabu, Cloud and Deflect",
+      "name_id": "Berbalik, Mabu, Putar dan Tepis",
+      "steps": {
+        "en": [
+          "Step the right foot forward, toes out; swing the tip level to the right; look right.",
+          "Step the left foot forward, toes in, turning right; raise the staff, tip to the right; look ahead.",
+          "Keep turning back to the right and step the right foot back into mabu; cloud and deflect the tip one and a half circles to the right, right arm straight and palm down, the left hand under the right armpit, palm up; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan, ujung kaki ke luar; ayunkan ujung toya datar ke kanan; pandangan ke kanan.",
+          "Langkahkan kaki kiri ke depan, ujung kaki ke dalam, putar ke kanan; angkat toya, ujung ke kanan; pandangan ke depan.",
+          "Terus berbalik ke kanan dan mundurkan kaki kanan menjadi mabu; putar dan tepis ujung toya satu setengah lingkaran ke kanan, lengan kanan lurus dan telapak ke bawah, tangan kiri di bawah ketiak kanan, telapak ke atas; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Quick, linked steps; the staff circles flat overhead; mabu and the deflection finish together."
+        ],
+        "id": [
+          "Langkah cepat dan bersambung; toya berputar mendatar di atas kepala; mabu dan tepisan selesai bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 569, 图 H-74 to H-76",
+      "start_sec": 191.0,
+      "end_sec": 198.5
+    },
+    {
+      "number": 43,
+      "section": 3,
+      "book_number": 42,
+      "name_zh": "跳转身左弓步推棍",
+      "name_pinyin": "Tiào zhuǎnshēn zuǒ gōngbù tuīgùn",
+      "name_en": "Jumping Turn, Left Gongbu Push",
+      "name_id": "Lompat Berbalik, Gongbu Kiri Dorongan",
+      "steps": {
+        "en": [
+          "Step the left foot forward; look left.",
+          "Jump off the left foot and turn back to the left; cloud the staff once to the left over the head; look ahead.",
+          "Keep turning and land in left gongbu; the left hand slides to the butt end and both hands cloud-deflect with the turn, then push the staff forward, tip to the right and right palm forward; look ahead and shout."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan; pandangan ke kiri.",
+          "Lompat dari kaki kiri dan berbalik ke kiri; putar toya satu kali ke kiri di atas kepala; pandangan ke depan.",
+          "Terus berputar dan mendarat dalam gongbu kiri; tangan kiri meluncur ke ujung pangkal dan kedua tangan memutar-menepis mengikuti putaran, lalu mendorong toya ke depan, ujung ke kanan dan telapak kanan ke depan; pandangan ke depan dan berseru."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Cloud overhead as you leave the floor; on landing lower the staff to the right side and push as gongbu forms."
+        ],
+        "id": [
+          "Putar di atas kepala saat lepas dari lantai; saat mendarat turunkan toya ke sisi kanan dan dorong saat gongbu terbentuk."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 570–572, 图 H-77 to H-79",
+      "start_sec": 198.5,
+      "end_sec": 206.0
+    },
+    {
+      "number": 44,
+      "section": 3,
+      "book_number": 43,
+      "name_zh": "转身左弓步劈棍",
+      "name_pinyin": "Zhuǎnshēn zuǒ gōngbù pīgùn",
+      "name_en": "Turn, Left Gongbu, Chop",
+      "name_id": "Berbalik, Gongbu Kiri, Bacok",
+      "steps": {
+        "en": [
+          "Turn back to the right and draw the right foot in half a step; hook the tip with the turn to the right rear; look ahead.",
+          "Lift and stamp the right foot, the left foot lifting slightly; look ahead.",
+          "Step the left foot forward into left gongbu; slide the right hand slightly toward the butt and chop the staff from above down to the left, the right hand above the left thigh and the left hand beside the left hip; watch the tip."
+        ],
+        "id": [
+          "Berbalik ke kanan dan tarik kaki kanan setengah langkah; kaitkan ujung toya mengikuti putaran ke kanan belakang; pandangan ke depan.",
+          "Angkat dan hentakkan kaki kanan, kaki kiri sedikit terangkat; pandangan ke depan.",
+          "Langkahkan kaki kiri ke depan menjadi gongbu kiri; luncurkan tangan kanan sedikit ke arah pangkal dan bacokkan toya dari atas ke kiri bawah, tangan kanan di atas paha kiri dan tangan kiri di samping pinggul kiri; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Stamp first, then step into gongbu; stop the chop with both hands at thigh height, never letting the tip dip lower and come back."
+        ],
+        "id": [
+          "Hentak dulu, lalu melangkah ke gongbu; hentikan bacokan dengan kedua tangan setinggi paha, jangan biarkan ujung turun lebih rendah lalu kembali."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 572–573, 图 H-80 to H-82",
+      "start_sec": 206.0,
+      "end_sec": 213.5
+    },
+    {
+      "number": 45,
+      "section": 3,
+      "book_number": 44,
+      "name_zh": "麒麟步马步云拨棍",
+      "name_pinyin": "Qílínbù mǎbù yúnbōgùn",
+      "name_en": "Qilinbu, Mabu, Cloud and Deflect",
+      "name_id": "Qilinbu, Mabu, Putar dan Tepis",
+      "steps": {
+        "en": [
+          "Turn right and step the right foot to the right front, toes out; hold the staff level in front of the chest, tip to the right; look right.",
+          "Keep turning right and step the left foot past the front of the right into guaibu; cloud the tip from the right over to the left, arms crossed with the right on top; look left.",
+          "Stride the right foot to the right into mabu; deflect the tip from the left down onto the floor at the right, right arm straight and palm down, the left hand under the right armpit, palm up; watch the tip."
+        ],
+        "id": [
+          "Putar ke kanan dan langkahkan kaki kanan ke depan kanan, ujung kaki ke luar; pegang toya mendatar di depan dada, ujung ke kanan; pandangan ke kanan.",
+          "Terus berputar ke kanan dan langkahkan kaki kiri melewati depan kaki kanan menjadi guaibu; putar ujung toya dari kanan ke kiri, lengan menyilang dengan kanan di atas; pandangan ke kiri.",
+          "Langkahkan kaki kanan lebar ke kanan menjadi mabu; tepis ujung toya dari kiri turun ke lantai di kanan, lengan kanan lurus dan telapak ke bawah, tangan kiri di bawah ketiak kanan, telapak ke atas; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The steps follow an arc so the body circles to the right; cloud with the steps and deflect into mabu until the tip touches the floor."
+        ],
+        "id": [
+          "Langkah mengikuti busur sehingga badan memutar ke kanan; putar bersama langkah dan tepis ke mabu hingga ujung menyentuh lantai."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 573–574, 图 H-83 to H-85",
+      "start_sec": 213.5,
+      "end_sec": 221.0
+    },
+    {
+      "number": 46,
+      "section": 3,
+      "book_number": 45,
+      "name_zh": "半马步绞崩棍",
+      "name_pinyin": "Bànmǎbù jiǎo bēnggùn",
+      "name_en": "Banmabu, Twist and Snap",
+      "name_id": "Banmabu, Pilin dan Sentak",
+      "steps": {
+        "en": [
+          "Rotate the right arm out and twist the tip once clockwise; watch the tip.",
+          "Shift slightly left into banmabu; pull the right arm back with the elbow sunk while the left hand pushes forward so the tip snaps up to the upper right, the right wrist outside the right knee and the left hand in front of the right shin, leaning slightly forward; watch the tip."
+        ],
+        "id": [
+          "Putar lengan kanan ke luar dan pilin ujung toya satu kali searah jarum jam; pandangan ke ujung toya.",
+          "Geser sedikit ke kiri menjadi banmabu; tarik lengan kanan ke belakang dengan siku turun sementara tangan kiri mendorong ke depan sehingga ujung toya tersentak ke kanan atas, pergelangan kanan di luar lutut kanan dan tangan kiri di depan tulang kering kanan, sedikit condong ke depan; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A small twist; flick the tip up, then snap with both hands, power at the end; banmabu may press down a little, not much."
+        ],
+        "id": [
+          "Pilinan kecil; cungkil ujung ke atas, lalu sentak dengan kedua tangan, tenaga di ujung; banmabu boleh sedikit menekan, tidak banyak."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 574–575, 图 H-86 to H-87",
+      "start_sec": 221.0,
+      "end_sec": 226.0
+    },
+    {
+      "number": 47,
+      "section": 3,
+      "book_number": 46,
+      "name_zh": "右弓步下拨棍",
+      "name_pinyin": "Yòu gōngbù xià bōgùn",
+      "name_en": "Right Gongbu, Low Deflection",
+      "name_id": "Gongbu Kanan, Tepisan Rendah",
+      "steps": {
+        "en": [
+          "Shift left and lift the bent right knee; hold the staff level at the side; look right.",
+          "Set the right foot down to the right into right gongbu; deflect the tip from behind to the left front until it touches the floor, the arms stacked at the chest with the right on top; watch the tip."
+        ],
+        "id": [
+          "Geser ke kiri dan angkat lutut kanan yang ditekuk; pegang toya mendatar di samping; pandangan ke kanan.",
+          "Turunkan kaki kanan ke kanan menjadi gongbu kanan; tepis ujung toya dari belakang ke depan kiri hingga menyentuh lantai, lengan bertumpuk di depan dada dengan kanan di atas; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Lift the right foot briefly and set it down without pausing; deflect forward first, then let the tip touch down; arms stacked tight."
+        ],
+        "id": [
+          "Angkat kaki kanan sebentar dan turunkan tanpa berhenti; tepis ke depan dulu, lalu biarkan ujung menyentuh lantai; lengan bertumpuk rapat."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 575–576, 图 H-88 to H-89",
+      "start_sec": 226.0,
+      "end_sec": 231.0
+    },
+    {
+      "number": 48,
+      "section": 3,
+      "book_number": 47,
+      "name_zh": "上步右虚步崩棍",
+      "name_pinyin": "Shàngbù yòu xūbù bēnggùn",
+      "name_en": "Shangbu, Right Xubu Snap",
+      "name_id": "Shangbu, Xubu Kanan Sentakan",
+      "steps": {
+        "en": [
+          "Turn slightly left and step the left foot forward, pushing the staff forward; watch the tip.",
+          "Starting with the right foot, take three steps forward in a row, ending right foot forward with both knees bent; watch the tip.",
+          "Shift left and raise the right heel into right xubu; pull the right arm back with the elbow sunk while the left hand pushes forward so the tip snaps up to the upper right, right wrist outside the right knee, leaning slightly forward; watch the tip."
+        ],
+        "id": [
+          "Putar sedikit ke kiri dan langkahkan kaki kiri ke depan, dorong toya ke depan; pandangan ke ujung toya.",
+          "Dimulai dengan kaki kanan, ambil tiga langkah ke depan berturut-turut, berakhir kaki kanan di depan dengan kedua lutut ditekuk; pandangan ke ujung toya.",
+          "Geser ke kiri dan angkat tumit kanan menjadi xubu kanan; tarik lengan kanan ke belakang dengan siku turun sementara tangan kiri mendorong ke depan sehingga ujung toya tersentak ke kanan atas, pergelangan kanan di luar lutut kanan, sedikit condong ke depan; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Push the staff forward with the tip touching the floor, leaning slightly; after the steps shift back quickly into xubu (about 40% front, 60% back) as the tip snaps up with both hands."
+        ],
+        "id": [
+          "Dorong toya ke depan dengan ujung menyentuh lantai, sedikit condong; setelah melangkah geser ke belakang dengan cepat ke xubu (sekitar 40% depan, 60% belakang) saat ujung disentak ke atas dengan kedua tangan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 576–577, 图 H-90 to H-92",
+      "start_sec": 231.0,
+      "end_sec": 238.5
+    },
+    {
+      "number": 49,
+      "section": 4,
+      "book_number": 48,
+      "name_zh": "回身提膝上挑棍",
+      "name_pinyin": "Huíshēn tíxī shàng tiǎogùn",
+      "name_en": "Turn Back, Knee Lift, Upward Flick",
+      "name_id": "Berbalik, Angkat Lutut, Cungkilan ke Atas",
+      "steps": {
+        "en": [
+          "Turn back to the left, settle the right foot and lift the left knee; flick the tip from the upper right, down and up to the upper left, right hand forward with palm up and left hand pulled to the waist; watch the tip."
+        ],
+        "id": [
+          "Berbalik ke kiri, mantapkan kaki kanan dan angkat lutut kiri; cungkil ujung toya dari kanan atas, ke bawah lalu naik ke kiri atas, tangan kanan ke depan dengan telapak ke atas dan tangan kiri ditarik ke pinggang; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A settled right foot for balance; slide the right hand slightly forward as you flick."
+        ],
+        "id": [
+          "Kaki kanan mantap untuk keseimbangan; luncurkan tangan kanan sedikit ke depan saat mencungkil."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 578–579, 图 H-93",
+      "start_sec": 238.5,
+      "end_sec": 241.5
+    },
+    {
+      "number": 50,
+      "section": 4,
+      "book_number": 49,
+      "name_zh": "右虚步下拨棍",
+      "name_pinyin": "Yòu xūbù xià bōgùn",
+      "name_en": "Right Xubu, Low Deflection",
+      "name_id": "Xubu Kanan, Tepisan Rendah",
+      "steps": {
+        "en": [
+          "Set the left foot down to the left; watch the tip.",
+          "Shift left and step the right foot into right xubu; pull down with the right hand and push with the left so the tip deflects from the upper left down to the outside of the right leg, right hand outside the right thigh, palm up, and left hand at the chest; watch the tip."
+        ],
+        "id": [
+          "Turunkan kaki kiri ke kiri; pandangan ke ujung toya.",
+          "Geser ke kiri dan langkahkan kaki kanan menjadi xubu kanan; tarik ke bawah dengan tangan kanan dan dorong dengan tangan kiri sehingga ujung toya menepis dari kiri atas turun ke sisi luar kaki kanan, tangan kanan di luar paha kanan, telapak ke atas, dan tangan kiri di depan dada; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Step the right foot as soon as the left lands, without pausing; power at the end on the deflection."
+        ],
+        "id": [
+          "Langkahkan kaki kanan begitu kaki kiri mendarat, tanpa berhenti; tenaga di ujung saat menepis."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 579, 图 H-94 to H-95",
+      "start_sec": 241.5,
+      "end_sec": 246.5
+    },
+    {
+      "number": 51,
+      "section": 4,
+      "book_number": 50,
+      "name_zh": "左弓步抱棍",
+      "name_pinyin": "Zuǒ gōngbù bàogùn",
+      "name_en": "Left Gongbu, Hold the Staff",
+      "name_id": "Gongbu Kiri, Memeluk Toya",
+      "steps": {
+        "en": [
+          "Set the right foot down behind into left gongbu; hold the staff slanting at the left side, the left hand at the waist, palm in, and the right arm rotated out at the left chest, palm slanting up; look right."
+        ],
+        "id": [
+          "Turunkan kaki kanan ke belakang menjadi gongbu kiri; peluk toya miring di sisi kiri, tangan kiri di pinggang, telapak ke dalam, dan lengan kanan diputar ke luar di depan dada kiri, telapak miring ke atas; pandangan ke kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Rotate the right arm out and bend it as you hold."
+        ],
+        "id": [
+          "Putar lengan kanan ke luar dan tekuk saat memeluk."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 579, 图 H-96",
+      "start_sec": 246.5,
+      "end_sec": 249.5
+    },
+    {
+      "number": 52,
+      "section": 4,
+      "book_number": 51,
+      "name_zh": "提膝拄棍",
+      "name_pinyin": "Tíxī zhǔgùn",
+      "name_en": "Knee Lift, Plant the Staff",
+      "name_id": "Angkat Lutut, Tancapkan Toya",
+      "steps": {
+        "en": [
+          "Lift the bent right knee; plant the tip on the floor so the staff stands almost vertical; look right."
+        ],
+        "id": [
+          "Angkat lutut kanan yang ditekuk; tancapkan ujung toya di lantai sehingga toya berdiri hampir tegak; pandangan ke kanan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The tip touches down outside the right side; don't lean your weight on the staff."
+        ],
+        "id": [
+          "Ujung menyentuh lantai di sisi luar kanan; jangan menyandarkan berat badan pada toya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 579, 图 H-97",
+      "start_sec": 249.5,
+      "end_sec": 252.5
+    },
+    {
+      "number": 53,
+      "section": 4,
+      "book_number": 52,
+      "name_zh": "左右舞花棍",
+      "name_pinyin": "Zuǒyòu wǔhuāgùn",
+      "name_en": "Figure-Eight Spins Left and Right",
+      "name_id": "Putaran Angka Delapan Kiri dan Kanan",
+      "steps": {
+        "en": [
+          "Turn right and set the right foot down forward; the left hand slides slightly toward the tip and swings the staff to the right side, butt up; look ahead.",
+          "Turn left; spin the tip from the lower right, behind, up and left in vertical figure-eights, the hands crossing in front with the right outside; look right.",
+          "Turn right; keep spinning the tip from the left over the top to the right in vertical figure-eights, ending with the right hand behind, tiger's mouth out, and the left hand in front, tiger's mouth in; look ahead."
+        ],
+        "id": [
+          "Putar ke kanan dan turunkan kaki kanan ke depan; tangan kiri meluncur sedikit ke arah ujung dan mengayunkan toya ke sisi kanan, pangkal ke atas; pandangan ke depan.",
+          "Putar ke kiri; putar ujung toya dari kanan bawah, ke belakang, ke atas dan ke kiri dalam angka delapan vertikal, tangan menyilang di depan dengan kanan di luar; pandangan ke kanan.",
+          "Putar ke kanan; terus putar ujung toya dari kiri melewati atas ke kanan dalam angka delapan vertikal, berakhir dengan tangan kanan di belakang, hukou ke luar, dan tangan kiri di depan, hukou ke dalam; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "The staff travels close to the body; steps and spins coordinated. Practise the spins in place first, then with the steps."
+        ],
+        "id": [
+          "Toya bergerak dekat badan; langkah dan putaran terkoordinasi. Latih putaran di tempat dulu, lalu bersama langkah."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 579–580, 图 H-98 to H-99",
+      "start_sec": 252.5,
+      "end_sec": 260.0
+    },
+    {
+      "number": 54,
+      "section": 4,
+      "book_number": 53,
+      "name_zh": "跳翻身仆步摔棍",
+      "name_pinyin": "Tiào fānshēn pūbù shuāigùn",
+      "name_en": "Jumping Turn-Over, Pubu Slam",
+      "name_id": "Lompat Berbalik, Pubu Membanting",
+      "steps": {
+        "en": [
+          "Step the left foot forward; look ahead.",
+          "Step the right foot forward and turn left; hold the staff upright at the right side, tip up; look down ahead.",
+          "Jump off the right foot and turn the body over a full circle to the left; look ahead.",
+          "Land on both feet in right pubu, slamming the staff flat on the floor along the inside of the right leg, the right hand loose and the left holding the butt; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan; pandangan ke depan.",
+          "Langkahkan kaki kanan ke depan dan putar ke kiri; pegang toya tegak di sisi kanan, ujung ke atas; pandangan ke depan bawah.",
+          "Lompat dari kaki kanan dan balikkan badan satu lingkaran penuh ke kiri; pandangan ke depan.",
+          "Mendarat dengan kedua kaki dalam pubu kanan, membanting toya mendatar ke lantai di sepanjang sisi dalam kaki kanan, tangan kanan longgar dan tangan kiri memegang pangkal; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Keep the staff close to the body in the air and turn over in a round circle; pubu and the staff land at the same moment, never one after the other."
+        ],
+        "id": [
+          "Toya tetap dekat badan di udara dan berbalik dalam lingkaran yang bulat; pubu dan toya mendarat pada saat yang sama, tidak satu demi satu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 581–583, 图 H-101 to H-104",
+      "start_sec": 260.0,
+      "end_sec": 270.0
+    },
+    {
+      "number": 55,
+      "section": 4,
+      "book_number": 54,
+      "name_zh": "右骑龙步顶棍",
+      "name_pinyin": "Yòu qílóngbù dǐnggùn",
+      "name_en": "Right Qilongbu, Butting Thrust",
+      "name_id": "Qilongbu Kanan, Dorongan Ujung ke Atas",
+      "steps": {
+        "en": [
+          "Rise slightly, shuffle the right foot forward and bring the left foot half a step after it into right qilongbu; thrust the tip forward and up with both hands, the butt touching the floor; watch the tip."
+        ],
+        "id": [
+          "Naik sedikit, geser kaki kanan ke depan dan bawa kaki kiri setengah langkah menyusul menjadi qilongbu kanan; dorong ujung toya ke depan atas dengan kedua tangan, pangkal menyentuh lantai; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Step and genbu without a break; butt forward and up with power at the very tip, not a flick."
+        ],
+        "id": [
+          "Langkah dan genbu tanpa jeda; dorong ke depan atas dengan tenaga di ujung paling depan, bukan cungkilan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 583, 图 H-105",
+      "start_sec": 270.0,
+      "end_sec": 273.0
+    },
+    {
+      "number": 56,
+      "section": 4,
+      "book_number": 55,
+      "name_zh": "盖步绞棍",
+      "name_pinyin": "Gàibù jiǎogùn",
+      "name_en": "Gaibu, Twisting Staff",
+      "name_id": "Gaibu, Toya Memilin",
+      "steps": {
+        "en": [
+          "Turn left and step the right foot in gaibu past the front of the left to the left; twist the tip half a circle anticlockwise; watch the tip.",
+          "Stride the left foot to the left and twist the tip another half circle; watch the tip.",
+          "Draw the right foot to the inside of the left, toes touching down, and pull the staff back; watch the tip."
+        ],
+        "id": [
+          "Putar ke kiri dan langkahkan kaki kanan secara gaibu melewati depan kaki kiri ke kiri; pilin ujung toya setengah lingkaran berlawanan arah jarum jam; pandangan ke ujung toya.",
+          "Langkahkan kaki kiri lebar ke kiri dan pilin ujung toya setengah lingkaran lagi; pandangan ke ujung toya.",
+          "Tarik kaki kanan ke sisi dalam kaki kiri, ujung kaki menyentuh lantai, dan tarik toya ke belakang; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "A small circle; one full twist over gaibu and the left step, upper and lower body coordinated."
+        ],
+        "id": [
+          "Lingkaran kecil; satu pilinan penuh selama gaibu dan langkah kiri, tubuh atas dan bawah terkoordinasi."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 583–584, 图 H-106 to H-108",
+      "start_sec": 273.0,
+      "end_sec": 280.5
+    },
+    {
+      "number": 57,
+      "section": 4,
+      "book_number": 56,
+      "name_zh": "右弓步戳棍",
+      "name_pinyin": "Yòu gōngbù chuōgùn",
+      "name_en": "Right Gongbu, Jab with the Staff",
+      "name_id": "Gongbu Kanan, Sodok dengan Toya",
+      "steps": {
+        "en": [
+          "Turn slightly right and step the right foot forward into right gongbu; jab the staff level forward, right arm straight and tiger's mouth forward, the left hand under the right armpit; watch the tip."
+        ],
+        "id": [
+          "Putar sedikit ke kanan dan langkahkan kaki kanan ke depan menjadi gongbu kanan; sodokkan toya datar ke depan, lengan kanan lurus dan hukou ke depan, tangan kiri di bawah ketiak kanan; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Don't lean forward in gongbu."
+        ],
+        "id": [
+          "Jangan condong ke depan pada gongbu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 584, 图 H-109",
+      "start_sec": 280.5,
+      "end_sec": 283.5
+    },
+    {
+      "number": 58,
+      "section": 4,
+      "book_number": 57,
+      "name_zh": "拖步斜击把",
+      "name_pinyin": "Tuōbù xiéjībǎ",
+      "name_en": "Tuobu, Slanting Strike with the Butt",
+      "name_id": "Tuobu, Pukulan Serong dengan Pangkal",
+      "steps": {
+        "en": [
+          "Shuffle the right foot half a step forward and drag the left foot after it; slide the right then the left hand toward the tip and strike the butt from behind up to the right, the right hand pulled to the waist, palm up, and the left pushing forward, tiger's mouth in; watch the butt."
+        ],
+        "id": [
+          "Geser kaki kanan setengah langkah ke depan dan seret kaki kiri menyusul; luncurkan tangan kanan lalu tangan kiri ke arah ujung dan pukulkan pangkal dari belakang ke kanan atas, tangan kanan ditarik ke pinggang, telapak ke atas, dan tangan kiri mendorong ke depan, hukou ke dalam; pandangan ke pangkal."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slide the hands along the staff."
+        ],
+        "id": [
+          "Luncurkan tangan di sepanjang toya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 585–586, 图 H-110",
+      "start_sec": 283.5,
+      "end_sec": 286.5
+    },
+    {
+      "number": 59,
+      "section": 4,
+      "book_number": 58,
+      "name_zh": "上步斜击棍",
+      "name_pinyin": "Shàngbù xiéjīgùn",
+      "name_en": "Shangbu, Slanting Strike",
+      "name_id": "Shangbu, Pukulan Serong",
+      "steps": {
+        "en": [
+          "Step the left foot forward; strike the tip from behind up to the left, the left hand pulled to the waist, palm in, and the right pushing forward, palm up; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan; pukulkan ujung toya dari belakang ke kiri atas, tangan kiri ditarik ke pinggang, telapak ke dalam, dan tangan kanan mendorong ke depan, telapak ke atas; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Keep the grip lively."
+        ],
+        "id": [
+          "Pegangan tetap hidup."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 586, 图 H-111",
+      "start_sec": 286.5,
+      "end_sec": 289.5
+    },
+    {
+      "number": 60,
+      "section": 4,
+      "book_number": 59,
+      "name_zh": "上步下击把",
+      "name_pinyin": "Shàngbù xià jībǎ",
+      "name_en": "Shangbu, Low Strike with the Butt",
+      "name_id": "Shangbu, Pukulan Rendah dengan Pangkal",
+      "steps": {
+        "en": [
+          "Step the right foot forward; swing the butt from behind forward in an upward-sweeping strike, the right hand pulled to the waist, palm up, and the left pushing down, tiger's mouth in; watch the butt."
+        ],
+        "id": [
+          "Langkahkan kaki kanan ke depan; ayunkan pangkal dari belakang ke depan dalam pukulan menyapu, tangan kanan ditarik ke pinggang, telapak ke atas, dan tangan kiri mendorong ke bawah, hukou ke dalam; pandangan ke pangkal."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slide the hands along the staff."
+        ],
+        "id": [
+          "Luncurkan tangan di sepanjang toya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 586, 图 H-112",
+      "start_sec": 289.5,
+      "end_sec": 292.5
+    },
+    {
+      "number": 61,
+      "section": 4,
+      "book_number": 60,
+      "name_zh": "左弓步劈棍",
+      "name_pinyin": "Zuǒ gōngbù pīgùn",
+      "name_en": "Left Gongbu, Chop with the Staff",
+      "name_id": "Gongbu Kiri, Bacok dengan Toya",
+      "steps": {
+        "en": [
+          "Step the left foot forward into left gongbu; slide the left then the right hand toward the butt and chop from above down to the left, the right hand above the left thigh and the left beside the left hip; watch the tip."
+        ],
+        "id": [
+          "Langkahkan kaki kiri ke depan menjadi gongbu kiri; luncurkan tangan kiri lalu tangan kanan ke arah pangkal dan bacok dari atas ke kiri bawah, tangan kanan di atas paha kiri dan tangan kiri di samping pinggul kiri; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slide the hands; stop the chop with both hands at thigh height."
+        ],
+        "id": [
+          "Luncurkan tangan; hentikan bacokan dengan kedua tangan setinggi paha."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 586, 图 H-113",
+      "start_sec": 292.5,
+      "end_sec": 295.5
+    },
+    {
+      "number": 62,
+      "section": 4,
+      "book_number": 61,
+      "name_zh": "跳转身单蝶步摔棍",
+      "name_pinyin": "Tiào zhuǎnshēn dāndiébù shuāigùn",
+      "name_en": "Jumping Turn, Dandiebu Slam",
+      "name_id": "Lompat Berbalik, Dandiebu Membanting",
+      "steps": {
+        "en": [
+          "Turn slightly right, bend the knees and sink the hips; look ahead.",
+          "Jump off both feet and turn back to the right in the air, raising the staff overhead, tip back; look ahead.",
+          "Land in right dandiebu and slam the staff from above onto the floor, the right hand loose and the left holding the butt end; watch the tip."
+        ],
+        "id": [
+          "Putar sedikit ke kanan, tekuk lutut dan turunkan pinggul; pandangan ke depan.",
+          "Lompat dengan kedua kaki dan berbalik ke kanan di udara, angkat toya ke atas kepala, ujung ke belakang; pandangan ke depan.",
+          "Mendarat dalam dandiebu kanan dan banting toya dari atas ke lantai, tangan kanan longgar dan tangan kiri memegang ujung pangkal; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Swing the staff up to the right as you push off; the stance and the staff land together, never one after the other."
+        ],
+        "id": [
+          "Ayunkan toya ke kanan atas saat menolak; kuda-kuda dan toya mendarat bersamaan, tidak satu demi satu."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 586–588, 图 H-114 to H-116",
+      "start_sec": 295.5,
+      "end_sec": 303.0
+    },
+    {
+      "number": 63,
+      "section": 4,
+      "book_number": 62,
+      "name_zh": "右弓步斜后挂棍",
+      "name_pinyin": "Yòu gōngbù xié hòu guàgùn",
+      "name_en": "Right Gongbu, Hook Diagonally Back",
+      "name_id": "Gongbu Kanan, Kait Serong ke Belakang",
+      "steps": {
+        "en": [
+          "Push off both feet and turn back to the right into mabu; swing the staff to the front with the turn; watch the tip.",
+          "Turn right and straighten the left leg into right gongbu; raise both hands diagonally so the tip hooks from the front to the upper right rear, butt forward."
+        ],
+        "id": [
+          "Tolak dengan kedua kaki dan berbalik ke kanan menjadi mabu; ayunkan toya ke depan mengikuti putaran; pandangan ke ujung toya.",
+          "Putar ke kanan dan luruskan kaki kiri menjadi gongbu kanan; angkat kedua tangan serong sehingga ujung toya mengait dari depan ke kanan belakang atas, pangkal ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "After the feet land, form gongbu and hook back and up, power in the tip section."
+        ],
+        "id": [
+          "Setelah kaki mendarat, bentuk gongbu lalu kait ke belakang atas, tenaga di bagian ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 588–589, 图 H-117 to H-118",
+      "start_sec": 303.0,
+      "end_sec": 308.0
+    },
+    {
+      "number": 64,
+      "section": 4,
+      "book_number": 63,
+      "name_zh": "左弓步劈棍",
+      "name_pinyin": "Zuǒ gōngbù pīgùn",
+      "name_en": "Left Gongbu, Chop with the Staff",
+      "name_id": "Gongbu Kiri, Bacok dengan Toya",
+      "steps": {
+        "en": [
+          "Turn slightly left and step the left foot forward into left gongbu; chop the staff from above forward and down, the right hand above the left thigh and the left beside the left hip; watch the tip."
+        ],
+        "id": [
+          "Putar sedikit ke kiri dan langkahkan kaki kiri ke depan menjadi gongbu kiri; bacokkan toya dari atas ke depan bawah, tangan kanan di atas paha kiri dan tangan kiri di samping pinggul kiri; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Check the chop with both hands at thigh height so the power reaches the tip."
+        ],
+        "id": [
+          "Tahan bacokan dengan kedua tangan setinggi paha agar tenaga sampai ke ujung."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 590, 图 H-119",
+      "start_sec": 308.0,
+      "end_sec": 311.0
+    },
+    {
+      "number": 65,
+      "section": 4,
+      "book_number": 64,
+      "name_zh": "转身左弓步斜击棍",
+      "name_pinyin": "Zhuǎnshēn zuǒ gōngbù xiéjīgùn",
+      "name_en": "Turn, Left Gongbu Slanting Strike",
+      "name_id": "Berbalik, Gongbu Kiri Pukulan Serong",
+      "steps": {
+        "en": [
+          "Shift left and turn back to the right, drawing the right foot in half a step onto the toes; raise the staff, tip forward; look ahead.",
+          "Turn right, lift and stamp the right foot, the left toes touching down; pull the right hand to the waist so the tip points back; look left.",
+          "Step the left foot forward into left gongbu; strike the tip from behind up to the left, the left hand pulled to the waist and the right reaching forward, palm slanting up; watch the tip."
+        ],
+        "id": [
+          "Geser ke kiri dan berbalik ke kanan, tarik kaki kanan setengah langkah bertumpu pada ujung kaki; angkat toya, ujung ke depan; pandangan ke depan.",
+          "Putar ke kanan, angkat dan hentakkan kaki kanan, ujung kaki kiri menyentuh lantai; tarik tangan kanan ke pinggang sehingga ujung toya mengarah ke belakang; pandangan ke kiri.",
+          "Langkahkan kaki kiri ke depan menjadi gongbu kiri; pukulkan ujung toya dari belakang ke kiri atas, tangan kiri ditarik ke pinggang dan tangan kanan menjulur ke depan, telapak miring ke atas; pandangan ke ujung toya."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Keep the weight steady through the draw-in and stamp; a clear path for the staff."
+        ],
+        "id": [
+          "Berat tetap stabil saat menarik kaki dan menghentak; lintasan toya yang jelas."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 591–592, 图 H-120 to H-122",
+      "start_sec": 311.0,
+      "end_sec": 318.5
+    },
+    {
+      "number": 66,
+      "section": 4,
+      "book_number": 65,
+      "name_zh": "左弓步平推棍",
+      "name_pinyin": "Zuǒ gōngbù píng tuīgùn",
+      "name_en": "Left Gongbu, Level Push",
+      "name_id": "Gongbu Kiri, Dorongan Datar",
+      "steps": {
+        "en": [
+          "Turn slightly right and step the right foot in gaibu forward, toes out; pull the right hand to the waist, palm up, and push the left forward, tiger's mouth in; look left.",
+          "Step the left foot to the left into banmabu.",
+          "Straighten the right leg into left gongbu and push the staff level forward with both hands, right palm slanting forward and tip to the right; look ahead and shout."
+        ],
+        "id": [
+          "Putar sedikit ke kanan dan langkahkan kaki kanan secara gaibu ke depan, ujung kaki ke luar; tarik tangan kanan ke pinggang, telapak ke atas, dan dorong tangan kiri ke depan, hukou ke dalam; pandangan ke kiri.",
+          "Langkahkan kaki kiri ke kiri menjadi banmabu.",
+          "Luruskan kaki kanan menjadi gongbu kiri dan dorong toya datar ke depan dengan kedua tangan, telapak kanan miring ke depan dan ujung ke kanan; pandangan ke depan dan berseru."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Gather power in banmabu, then turn and push; the push and the shout coincide."
+        ],
+        "id": [
+          "Himpun tenaga di banmabu, lalu berputar dan dorong; dorongan dan seruan bersamaan."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 592–593, 图 H-123 to H-125",
+      "start_sec": 318.5,
+      "end_sec": 326.0
+    },
+    {
+      "number": 67,
+      "section": 4,
+      "book_number": 66,
+      "name_zh": "左虚步抽棍",
+      "name_pinyin": "Zuǒ xūbù chōugùn",
+      "name_en": "Left Xubu, Draw the Staff",
+      "name_id": "Xubu Kiri, Tarik Toya",
+      "steps": {
+        "en": [
+          "Rotate the right arm in, palm down, so the tip turns forward, the left hand below the right arm; watch the tip.",
+          "Shift right and draw the left foot back half a step into left xubu; the right hand slides slightly toward the butt and draws back to the waist, palm in, while the left hand opens and threads forward along the underside of the staff, fingers up, arm at shoulder height; watch the left palm."
+        ],
+        "id": [
+          "Putar lengan kanan ke dalam, telapak ke bawah, sehingga ujung toya berbalik ke depan, tangan kiri di bawah lengan kanan; pandangan ke ujung toya.",
+          "Geser ke kanan dan tarik kaki kiri setengah langkah ke belakang menjadi xubu kiri; tangan kanan meluncur sedikit ke arah pangkal dan menarik kembali ke pinggang, telapak ke dalam, sementara tangan kiri dibuka dan menusuk ke depan menyusuri sisi bawah toya, jari ke atas, lengan setinggi bahu; pandangan ke telapak kiri."
+        ]
+      },
+      "key_points": {
+        "en": [
+          "Slide the right hand; the left palm pushes forward along the underside of the staff."
+        ],
+        "id": [
+          "Luncurkan tangan kanan; telapak kiri mendorong ke depan menyusuri sisi bawah toya."
+        ]
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 593–594, 图 H-126 to H-127",
+      "start_sec": 326.0,
+      "end_sec": 331.0
+    },
+    {
+      "number": 68,
+      "section": 99,
+      "book_number": null,
+      "name_zh": "收势",
+      "name_pinyin": "Shōushì",
+      "name_en": "Closing Form",
+      "name_id": "Sikap Penutup",
+      "steps": {
+        "en": [
+          "Settle the left foot and bring the right foot beside it; the right hand stands the staff upright at the right side and the left palm drops to the left side; look ahead."
+        ],
+        "id": [
+          "Mantapkan kaki kiri dan rapatkan kaki kanan ke sampingnya; tangan kanan mendirikan toya tegak di sisi kanan dan telapak kiri turun ke sisi kiri; pandangan ke depan."
+        ]
+      },
+      "key_points": {
+        "en": [],
+        "id": []
+      },
+      "mistakes": {
+        "en": [],
+        "id": []
+      },
+      "reference": "IWUF 1st Compulsory Routines (B Junior), Southern Staff, p. 594, 图 H-128",
+      "start_sec": 331.0,
+      "end_sec": 334.0
+    }
+  ]
+}

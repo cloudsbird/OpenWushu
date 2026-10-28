@@ -30,7 +30,8 @@ class Routine < ApplicationRecord
 
   def duration_sec = movements.maximum(:end_sec).to_f
 
-  def section_count = movements.distinct.count(:section)
+  # Numbered 段 only: 起势 and 收势 groups are not counted
+  def section_count = movements.where(section: 1...Movement::CLOSING).distinct.count(:section)
 
   private
 
