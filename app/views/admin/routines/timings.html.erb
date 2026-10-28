@@ -6,23 +6,36 @@
   <section class="panel admin-panel" data-controller="timing-editor" data-action="keydown@window->timing-editor#key">
     <h2 class="heading heading--ruled"><span class="heading__zh">动作时间</span><span class="heading__tr"><%= @routine.name_zh %> · <%= t("admin.routines.timings.title") %></span></h2>
 
-    <% if @routine.video? %>
-      <p><%= t("admin.routines.timings.lead") %></p>
-      <div class="stage has-video timing-stage">
-        <% if @routine.video.attached? %>
-          <video data-timing-editor-target="video" src="<%= rails_storage_proxy_path(@routine.video) %>" preload="metadata" playsinline controls></video>
-        <% else %>
-          <div class="stage__youtube" data-timing-editor-target="youtube" data-video-id="<%= @routine.youtube_id %>"></div>
-        <% end %>
-      </div>
-      <div class="admin-actions admin-actions--row">
-        <button type="button" class="btn btn--accent" data-action="timing-editor#markNext"><%= t("admin.routines.timings.mark_next") %></button>
-        <span class="mono" aria-live="off"><%= t("admin.routines.timings.video_time") %> <span data-timing-editor-target="now">0:00.0</span></span>
-      </div>
-    <% else %>
-      <p class="muted"><%= t("admin.routines.timings.no_video") %></p>
-    <% end %>
+    <div class="timing-layout">
+    <%# The video and its controls stay on screen while the list scrolls %>
+    <div class="timing-player">
+      <% if @routine.video? %>
+        <div class="stage has-video timing-stage">
+          <% if @routine.video.attached? %>
+            <video data-timing-editor-target="video" src="<%= rails_storage_proxy_path(@routine.video) %>" preload="metadata" playsinline controls></video>
+          <% else %>
+            <div class="stage__youtube" data-timing-editor-target="youtube" data-video-id="<%= @routine.youtube_id %>"></div>
+          <% end %>
+        </div>
+        <p class="timing-now">
+          <span class="mono" aria-live="off"><span data-timing-editor-target="now">0:00.0</span></span>
+          <span lang="zh" data-timing-editor-target="playing"></span>
+        </p>
+        <div class="admin-actions admin-actions--row">
+          <button type="button" class="btn btn--accent" data-action="timing-editor#markNext"><%= t("admin.routines.timings.mark_next") %></button>
+          <button type="submit" class="btn" form="timing-form"><%= t("admin.save") %></button>
+          <label class="check"><input type="checkbox" checked data-timing-editor-target="follow"><span><%= t("admin.routines.timings.follow") %></span></label>
+        </div>
+        <details class="timing-help">
+          <summary><%= t("admin.routines.timings.how") %></summary>
+          <p class="field__hint"><%= t("admin.routines.timings.lead") %></p>
+        </details>
+      <% else %>
+        <p class="muted"><%= t("admin.routines.timings.no_video") %></p>
+      <% end %>
+    </div>
 
+    <div class="timing-list">
     <% if @routine.errors.any? %>
       <p class="field__error"><%= @routine.errors.full_messages.to_sentence %></p>
     <% end %>
@@ -40,7 +53,7 @@
       </div>
     </details>
 
-    <%= form_with url: timings_admin_routine_path(@routine), method: :patch, scope: :timings, class: "form" do |form| %>
+    <%= form_with url: timings_admin_routine_path(@routine), method: :patch, scope: :timings, class: "form", id: "timing-form" do |form| %>
       <table class="table timing-table">
         <thead>
           <tr>
@@ -56,7 +69,7 @@
           <% rows.each_with_index do |(name, value, zh, tr, key), i| %>
             <tr data-timing-editor-target="row">
               <td class="mono"><%= i < @movements.size ? @movements[i].number : "—" %></td>
-              <td><span lang="zh"><%= zh %></span><% if tr %> <span class="muted"><%= tr %></span><% end %></td>
+              <td><span lang="zh" data-timing-editor-target="name"><%= zh %></span><% if tr %> <span class="muted"><%= tr %></span><% end %></td>
               <td><%= number_field_tag name, value, step: 0.1, min: 0, required: true, class: "input timing-input", data: { timing_editor_target: "start", key: key }, "aria-label": "#{zh} #{t("admin.routines.timings.start")}" %></td>
               <td class="timing-actions">
                 <% if @routine.video? %>
@@ -73,5 +86,7 @@
         <% if @routine.published? %><%= link_to t("admin.routines.view"), routine_path(@routine), class: "btn" %><% end %>
       </div>
     <% end %>
+    </div>
+    </div>
   </section>
 </main>

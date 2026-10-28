@@ -111,6 +111,8 @@ en:
       video_author_url: Creator link
       timings_link: Set movement timings
       timings:
+        follow: "Follow the video"
+        how: "How to use"
         paste_title: "Paste times"
         paste_hint: "Paste a list with one movement per line, such as “12 34.5” or “12 0:34.5” (movement number, then its start time), and “END 305” for when the routine ends. Lines ending in “?” are marked as guesses to check. Nothing is saved until you press Save."
         paste_fill: "Fill the rows"

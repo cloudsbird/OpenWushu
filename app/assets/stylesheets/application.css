@@ -187,8 +187,23 @@ a.card:hover { color: inherit; filter: brightness(0.97); }
 .player { display: flex; flex-direction: column; gap: 10px; padding: 12px; }
 .stage { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: var(--video); display: flex; align-items: center; justify-content: center; }
 .stage video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; }
-.timing-stage { max-width: 760px; }
+.timing-layout { display: grid; gap: 20px; align-items: start; }
+.timing-player { position: sticky; top: 0; z-index: 2; display: flex; flex-direction: column; gap: 10px; padding: 10px 0; background: var(--surface); }
+.timing-list { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.timing-now { margin: 0; display: flex; gap: 12px; align-items: baseline; font-size: 15px; }
+.timing-now [lang="zh"] { font-family: var(--font-zh); font-size: 18px; font-weight: 700; }
+.timing-help summary { cursor: pointer; font-size: 13px; color: var(--muted); }
+@media (min-width: 1000px) {
+  .timing-layout { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); }
+  .timing-player { top: 12px; padding: 0; }
+}
+@media (max-width: 999px) {
+  /* On narrow screens keep the sticky video small enough to leave room for the list */
+  .timing-stage { max-height: 34vh; aspect-ratio: auto; height: 34vh; }
+}
 .timing-table .is-next { background: var(--accent-soft); }
+.timing-table .is-playing td { font-weight: 700; }
+.timing-table .is-playing td:first-child { box-shadow: inset 4px 0 0 var(--accent); }
 .timing-table .is-unsure td:first-child { box-shadow: inset 4px 0 0 var(--amber, #D98A00); }
 .timing-paste { display: flex; flex-direction: column; gap: 8px; }
 .timing-paste summary { cursor: pointer; font-weight: 600; }

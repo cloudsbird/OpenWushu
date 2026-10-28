@@ -111,6 +111,8 @@ id:
       video_author_url: Tautan pembuat
       timings_link: Atur waktu gerakan
       timings:
+        follow: "Ikuti video"
+        how: "Cara memakai"
         paste_title: "Tempel waktu"
         paste_hint: "Tempel daftar dengan satu gerakan per baris, misalnya “12 34.5” atau “12 0:34.5” (nomor gerakan, lalu waktu mulainya), dan “END 305” untuk akhir rangkaian. Baris yang diakhiri “?” ditandai sebagai perkiraan untuk diperiksa. Belum ada yang tersimpan sampai Anda menekan Simpan."
         paste_fill: "Isi baris"
