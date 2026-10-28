@@ -6,7 +6,7 @@
   <section class="panel admin-panel" data-controller="timing-editor" data-action="keydown@window->timing-editor#key">
     <h2 class="heading heading--ruled"><span class="heading__zh">动作时间</span><span class="heading__tr"><%= @routine.name_zh %> · <%= t("admin.routines.timings.title") %></span></h2>
 
-    <div class="timing-layout">
+    <div class="timing-layout" data-timing-editor-target="layout" data-size="medium">
     <%# The video and its controls stay on screen while the list scrolls %>
     <div class="timing-player">
       <% if @routine.video? %>
@@ -25,6 +25,12 @@
           <button type="button" class="btn btn--accent" data-action="timing-editor#markNext"><%= t("admin.routines.timings.mark_next") %></button>
           <button type="submit" class="btn" form="timing-form"><%= t("admin.save") %></button>
           <label class="check"><input type="checkbox" checked data-timing-editor-target="follow"><span><%= t("admin.routines.timings.follow") %></span></label>
+        </div>
+        <div class="segmented timing-size" role="group" aria-label="<%= t("admin.routines.timings.size") %>">
+          <span class="muted"><%= t("admin.routines.timings.size") %></span>
+          <% %w[small medium large].each do |size| %>
+            <button type="button" class="segmented__item" data-timing-editor-target="sizeButton" data-action="timing-editor#resize" data-timing-editor-size-param="<%= size %>" aria-pressed="<%= size == "medium" %>"><%= t("admin.routines.timings.sizes.#{size}") %></button>
+          <% end %>
         </div>
         <details class="timing-help">
           <summary><%= t("admin.routines.timings.how") %></summary>

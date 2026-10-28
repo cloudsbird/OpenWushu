@@ -111,6 +111,11 @@ en:
       video_author_url: Creator link
       timings_link: Set movement timings
       timings:
+        size: "Video size"
+        sizes:
+          small: "Small"
+          medium: "Medium"
+          large: "Large"
         follow: "Follow the video"
         how: "How to use"
         paste_title: "Paste times"

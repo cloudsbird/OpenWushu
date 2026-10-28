@@ -111,6 +111,11 @@ id:
       video_author_url: Tautan pembuat
       timings_link: Atur waktu gerakan
       timings:
+        size: "Ukuran video"
+        sizes:
+          small: "Kecil"
+          medium: "Sedang"
+          large: "Besar"
         follow: "Ikuti video"
         how: "Cara memakai"
         paste_title: "Tempel waktu"

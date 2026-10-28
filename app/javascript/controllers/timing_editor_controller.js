@@ -4,8 +4,10 @@ import YouTubeMedia from "lib/youtube_media"
 // Admin timing editor: play the routine's video and stamp where each movement starts.
 // "Mark next" (or the M key) writes the video time into the next row and moves on, and a pasted
 // list of times (e.g. from an AI that watched the video) fills every row at once.
+const SIZE_KEY = "openwushu.timing-size"
+
 export default class extends Controller {
-  static targets = ["video", "youtube", "start", "row", "now", "paste", "pasteResult", "playing", "name", "follow"]
+  static targets = ["video", "youtube", "start", "row", "now", "paste", "pasteResult", "playing", "name", "follow", "layout", "sizeButton"]
 
   connect() {
     if (this.hasVideoTarget) this.media = this.videoTarget
@@ -19,6 +21,7 @@ export default class extends Controller {
     }
     this.cursor = 0
     this.highlight()
+    this.applySize(this.savedSize() || "medium")
   }
 
   disconnect() {
@@ -26,6 +29,22 @@ export default class extends Controller {
     this.media.removeEventListener("timeupdate", this.onTime)
     this.media.destroy?.()
     this.media = null
+  }
+
+  // Video size: small, medium or large; remembered in this browser
+  resize(event) {
+    this.applySize(event.params.size)
+    try { localStorage.setItem(SIZE_KEY, event.params.size) } catch {}
+  }
+
+  applySize(size) {
+    if (!this.hasLayoutTarget) return
+    this.layoutTarget.dataset.size = size
+    this.sizeButtonTargets.forEach((el) => el.setAttribute("aria-pressed", String(el.dataset.timingEditorSizeParam === size)))
+  }
+
+  savedSize() {
+    try { return localStorage.getItem(SIZE_KEY) } catch { return null }
   }
 
   markNext() {

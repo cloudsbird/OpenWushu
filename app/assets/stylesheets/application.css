@@ -193,13 +193,25 @@ a.card:hover { color: inherit; filter: brightness(0.97); }
 .timing-now { margin: 0; display: flex; gap: 12px; align-items: baseline; font-size: 15px; }
 .timing-now [lang="zh"] { font-family: var(--font-zh); font-size: 18px; font-weight: 700; }
 .timing-help summary { cursor: pointer; font-size: 13px; color: var(--muted); }
+.timing-size { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+/* Large: use the whole screen width and keep only what is needed for marking in the list */
+.container:has(.timing-layout[data-size="large"]) { max-width: none; }
+.timing-layout[data-size="large"] .timing-name .muted,
+.timing-layout[data-size="large"] .timing-table th:first-child,
+.timing-layout[data-size="large"] .timing-table td:first-child { display: none; }
 @media (min-width: 1000px) {
-  .timing-layout { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); }
+  .timing-layout[data-size="small"] { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
+  .timing-layout[data-size="medium"] { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); }
+  .timing-layout[data-size="large"] { grid-template-columns: minmax(0, 2fr) minmax(360px, 1fr); }
   .timing-player { top: 12px; padding: 0; }
+  /* Keep the whole sticky video within the screen height */
+  .timing-stage { max-height: calc(100vh - 200px); }
 }
 @media (max-width: 999px) {
-  /* On narrow screens keep the sticky video small enough to leave room for the list */
-  .timing-stage { max-height: 34vh; aspect-ratio: auto; height: 34vh; }
+  /* On narrow screens the sticky video takes a share of the screen height and the list scrolls below */
+  .timing-stage { aspect-ratio: auto; height: 34vh; }
+  .timing-layout[data-size="small"] .timing-stage { height: 24vh; }
+  .timing-layout[data-size="large"] .timing-stage { height: 55vh; }
 }
 .timing-table .is-next { background: var(--accent-soft); }
 .timing-table .is-playing td { font-weight: 700; }
