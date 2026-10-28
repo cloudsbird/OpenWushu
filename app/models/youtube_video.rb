@@ -1,3 +1,5 @@
+require "net/http"
+
 # Public details of a YouTube video from its oEmbed endpoint (no API key needed): the title, the
 # channel, and whether the owner allows embedding (oEmbed answers 401 when they don't).
 class YoutubeVideo

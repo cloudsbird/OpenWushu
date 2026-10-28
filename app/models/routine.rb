@@ -19,6 +19,7 @@ class Routine < ApplicationRecord
   validate :acceptable_video, if: -> { video.attached? && attachment_changes["video"] }
   validate :recognised_youtube_url
   validate :embeddable_youtube_video, if: -> { youtube_id_changed? && youtube_id.present? }
+  normalizes :video_title, :video_author, :video_author_url, with: ->(value) { value.strip.presence }
   validates :video_author_url, format: { with: %r{\Ahttps?://\S+\z}i }, allow_blank: true
 
   before_save :clear_video_credit, if: -> { youtube_id_changed? && youtube_id.nil? && !video.attached? }

@@ -21,6 +21,11 @@ class RoutineTest < ActiveSupport::TestCase
     end
   end
 
+  test "video credit is trimmed" do
+    routine = Routine.new(video_title: "  Women's 42 Movements Taijijian ", video_author: " WUSHU TV ", video_author_url: "  ")
+    assert_equal [ "Women's 42 Movements Taijijian", "WUSHU TV", nil ], [ routine.video_title, routine.video_author, routine.video_author_url ]
+  end
+
   test "an uploaded video takes priority over YouTube" do
     routine = routines(:taiji)
     routine.youtube_url = "https://youtu.be/dQw4w9WgXcQ"
