@@ -64,12 +64,17 @@
           </tr>
         </thead>
         <tbody>
-          <% rows = @movements.map { |m| [ "timings[starts][#{m.number}]", @starts&.[](m.number.to_s) || m.start_sec, "#{m.cn_label} #{m.name_zh}", m.name_tr, m.number ] } %>
-          <% rows << [ "timings[finish]", @finish || @movements.last&.end_sec, t("admin.routines.timings.finish"), nil, "end" ] %>
-          <% rows.each_with_index do |(name, value, zh, tr, key), i| %>
+          <%# Unnumbered movements (起势, 收势…) already show their name as their label %>
+          <% rows = @movements.map { |m| [ "timings[starts][#{m.number}]", @starts&.[](m.number.to_s) || m.start_sec, m.numbered? ? "#{m.cn_label} #{m.name_zh}" : m.name_zh, m.name_tr, m.number, m.name_pinyin ] } %>
+          <% rows << [ "timings[finish]", @finish || @movements.last&.end_sec, t("admin.routines.timings.finish"), nil, "end", nil ] %>
+          <% rows.each_with_index do |(name, value, zh, tr, key, py), i| %>
             <tr data-timing-editor-target="row">
               <td class="mono"><%= i < @movements.size ? @movements[i].number : "—" %></td>
-              <td><span lang="zh" data-timing-editor-target="name"><%= zh %></span><% if tr %> <span class="muted"><%= tr %></span><% end %></td>
+              <td class="timing-name">
+                <span lang="zh" data-timing-editor-target="name"><%= zh %></span>
+                <% if py %><span class="py"><%= py %></span><% end %>
+                <% if tr %><span class="muted"><%= tr %></span><% end %>
+              </td>
               <td><%= number_field_tag name, value, step: 0.1, min: 0, required: true, class: "input timing-input", data: { timing_editor_target: "start", key: key }, "aria-label": "#{zh} #{t("admin.routines.timings.start")}" %></td>
               <td class="timing-actions">
                 <% if @routine.video? %>

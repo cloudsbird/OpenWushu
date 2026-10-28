@@ -208,6 +208,8 @@ a.card:hover { color: inherit; filter: brightness(0.97); }
 .timing-paste { display: flex; flex-direction: column; gap: 8px; }
 .timing-paste summary { cursor: pointer; font-weight: 600; }
 .timing-paste__text { min-height: 160px; padding: 10px 12px; font-family: var(--font-mono, monospace); }
+.timing-name { display: flex; flex-direction: column; gap: 2px; }
+.timing-name .py { font-size: 14px; }
 .timing-input { width: 7.5em; min-height: 40px; }
 .timing-actions { display: flex; gap: 6px; flex-wrap: wrap; }
 .video-credit { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
