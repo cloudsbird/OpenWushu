@@ -102,6 +102,27 @@ id:
       video: Video demonstrasi
       current_video: "Video saat ini: %{name} (%{size}). Memilih berkas baru akan menggantinya."
       video_hint: MP4 atau WebM, maksimal %{max} GB. Unggahan disimpan di volume penyimpanan server.
+      youtube_url: Tautan YouTube
+      youtube_hint: Tempel tautan YouTube (watch, youtu.be atau shorts). Dipakai bila tidak ada video yang diunggah; unggahan diutamakan. Kosongkan untuk menghapusnya.
+      credit: Kredit video
+      credit_hint: Ditampilkan di bawah video dengan tautan ke aslinya. Diisi otomatis dari YouTube saat tautan disimpan; untuk unggahan, cantumkan siapa yang merekamnya.
+      video_title: Judul
+      video_author: Pembuat atau kanal
+      video_author_url: Tautan pembuat
+      timings_link: Atur waktu gerakan
+      timings:
+        title: "Waktu gerakan"
+        lead: "Putar video dan tekan “Tandai berikutnya” (atau tombol M) setiap kali sebuah gerakan dimulai. Setiap baris juga bisa ditandai atau diputar sendiri, dan waktu bisa diketik dalam detik. Sebuah gerakan berakhir saat gerakan berikutnya dimulai; baris terakhir adalah akhir rangkaian."
+        mark_next: "Tandai gerakan berikutnya (M)"
+        video_time: "Waktu video"
+        no_video: "Rangkaian ini belum punya video. Tambahkan unggahan atau tautan YouTube dulu, atau ketik waktunya dalam detik."
+        movement: "Gerakan"
+        start: "Mulai pada (detik)"
+        actions: "Tindakan"
+        finish: "Akhir rangkaian"
+        mark: "Tandai"
+        play: "Putar dari sini"
+      timings_saved: "Waktu gerakan %{name} disimpan."
       remove_video: Hapus video
       confirm_remove_video: Hapus video? Tab Belajar akan memakai jam latihan sebagai gantinya.
       saved: "%{name} disimpan."
@@ -156,8 +177,14 @@ id:
       models:
         routine:
           attributes:
+            base:
+              timings_order: "Setiap waktu harus 0 atau lebih dan tidak lebih awal dari baris di atasnya."
             status:
               no_movements: Tambahkan daftar gerakan sebelum menerbitkan rangkaian ini.
+            youtube_url:
+              not_embeddable: "Pemilik video ini tidak mengizinkannya disematkan di situs lain. Pilih video lain atau minta izin pemiliknya."
+              not_found: "YouTube tidak menemukan video ini. Periksa tautannya dan pastikan videonya publik atau tidak publik (unlisted)."
+              youtube: "Tempel tautan video YouTube, misalnya https://www.youtube.com/watch?v=… atau https://youtu.be/…"
             video:
               video_type: Pilih berkas MP4 atau WebM.
               video_size: Ukuran video maksimal %{max} GB.

@@ -20,7 +20,7 @@
               <td><span class="zh"><%= routine.name_zh %></span><br><span class="muted"><%= routine.name_tr %></span></td>
               <td><%= render "admin/routines/status", routine: routine %></td>
               <td class="mono"><%= routine.movements.size %></td>
-              <td><%= routine.video.attached? ? number_to_human_size(routine.video.blob.byte_size) : "—" %></td>
+              <td><%= routine.video.attached? ? number_to_human_size(routine.video.blob.byte_size) : routine.youtube_id ? "YouTube" : "—" %></td>
               <td><%= link_to t("admin.routines.edit"), edit_admin_routine_path(routine), class: "btn" %></td>
             </tr>
           <% end %>

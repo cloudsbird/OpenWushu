@@ -1,11 +1,12 @@
 import { Controller } from "@hotwired/stimulus"
+import YouTubeMedia from "lib/youtube_media"
 
 // Keeps the video, the movement timeline, the carpet path and the movement list in sync.
 // Selecting a movement seeks to its start; playing moves the active movement along.
-// Without an uploaded video it runs a practice clock, so the routine can still be followed.
+// The video is an upload or a YouTube embed; without either it runs a practice clock, so the routine can still be followed.
 export default class extends Controller {
   static targets = [
-    "video", "clock", "playButton", "playIcon", "pauseIcon", "playhead", "segment", "loopButton", "speed",
+    "video", "youtube", "clock", "playButton", "playIcon", "pauseIcon", "playhead", "segment", "loopButton", "speed",
     "nowCn", "nowNum", "nowZh", "nowPy", "nowTr", "legendNow",
     "donePath", "activePath", "label", "halo", "dot",
     "list", "row", "detail"
@@ -21,12 +22,15 @@ export default class extends Controller {
     // Routines whose carpet path is not measured yet have no start point and no end points
     this.points = [this.startValue.length ? this.startValue : null, ...this.movesValue.map((m) => m.x == null ? null : [m.x * 100, m.y * 100])]
 
-    if (this.hasVideoTarget) {
-      this.onTime = () => this.tick(this.videoTarget.currentTime)
-      this.onPlayState = () => this.showPlaying(!this.videoTarget.paused)
-      this.videoTarget.addEventListener("timeupdate", this.onTime)
-      this.videoTarget.addEventListener("play", this.onPlayState)
-      this.videoTarget.addEventListener("pause", this.onPlayState)
+    // Both media expose the same small API: play(), pause(), currentTime, playbackRate and events
+    if (this.hasVideoTarget) this.media = this.videoTarget
+    else if (this.hasYoutubeTarget) this.media = new YouTubeMedia(this.youtubeTarget, this.youtubeTarget.dataset.videoId)
+    if (this.media) {
+      this.onTime = () => this.tick(this.media.currentTime)
+      this.onPlayState = () => this.showPlaying(!this.media.paused)
+      this.media.addEventListener("timeupdate", this.onTime)
+      this.media.addEventListener("play", this.onPlayState)
+      this.media.addEventListener("pause", this.onPlayState)
     }
 
     // The URL wins over the server value: ?m= changes as you browse, and Turbo restores old snapshots on Back
@@ -44,10 +48,12 @@ export default class extends Controller {
 
   disconnect() {
     this.stopClock()
-    if (this.hasVideoTarget) {
-      this.videoTarget.removeEventListener("timeupdate", this.onTime)
-      this.videoTarget.removeEventListener("play", this.onPlayState)
-      this.videoTarget.removeEventListener("pause", this.onPlayState)
+    if (this.media) {
+      this.media.removeEventListener("timeupdate", this.onTime)
+      this.media.removeEventListener("play", this.onPlayState)
+      this.media.removeEventListener("pause", this.onPlayState)
+      this.media.destroy?.()
+      this.media = null
     }
   }
 
@@ -97,7 +103,7 @@ export default class extends Controller {
 
   setSpeed(event) {
     this.rate = Number(event.currentTarget.dataset.rate)
-    if (this.hasVideoTarget) this.videoTarget.playbackRate = this.rate
+    if (this.media) this.media.playbackRate = this.rate
     this.speedTargets.forEach((el) => el.setAttribute("aria-pressed", String(el === event.currentTarget)))
   }
 
@@ -110,8 +116,8 @@ export default class extends Controller {
 
   play() {
     if (this.time >= this.totalValue) this.seek(0)
-    if (this.hasVideoTarget) {
-      this.videoTarget.play().catch(() => this.showPlaying(false))
+    if (this.media) {
+      this.media.play().catch(() => this.showPlaying(false))
     } else {
       this.last = performance.now()
       this.frame = requestAnimationFrame(this.advance)
@@ -120,8 +126,8 @@ export default class extends Controller {
   }
 
   pause() {
-    if (this.hasVideoTarget) {
-      this.videoTarget.pause()
+    if (this.media) {
+      this.media.pause()
     } else {
       this.stopClock()
       this.showPlaying(false)
@@ -146,7 +152,7 @@ export default class extends Controller {
   }
 
   seek(t) {
-    if (this.hasVideoTarget) this.videoTarget.currentTime = t
+    if (this.media) this.media.currentTime = t
     this.tick(t)
   }
 

@@ -62,7 +62,7 @@ smtp:
 
 ### Admin panel
 
-`/admin` manages users (search, edit, role, verify, suspend, password reset, delete), routines (status and demonstration video) and site settings (sign-ups, site notice, site information, SMTP). Only accounts with the admin role can open it. Make the first admin from an existing account:
+`/admin` manages users (search, edit, role, verify, suspend, password reset, delete), routines (status and demonstration video: an uploaded MP4/WebM or a YouTube link; an upload takes priority) and site settings (sign-ups, site notice, site information, SMTP). Only accounts with the admin role can open it. Make the first admin from an existing account:
 
 ```sh
 bin/rails "admin:grant[you@example.com]"

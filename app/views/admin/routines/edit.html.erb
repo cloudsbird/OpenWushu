@@ -25,8 +25,28 @@
         <% @routine.errors.messages_for(:video).each do |message| %><span class="field__error"><%= message %></span><% end %>
       </div>
 
+      <div class="field">
+        <%= form.label :youtube_url, t("admin.routines.youtube_url") %>
+        <%= form.url_field :youtube_url, class: "input", placeholder: "https://www.youtube.com/watch?v=…", "aria-describedby": "youtube-hint" %>
+        <span id="youtube-hint" class="field__hint"><%= t("admin.routines.youtube_hint") %></span>
+        <% @routine.errors.messages_for(:youtube_url).each do |message| %><span class="field__error"><%= message %></span><% end %>
+      </div>
+
+      <fieldset class="field">
+        <legend><%= t("admin.routines.credit") %></legend>
+        <span class="field__hint"><%= t("admin.routines.credit_hint") %></span>
+        <%= form.label :video_title, t("admin.routines.video_title") %>
+        <%= form.text_field :video_title, class: "input", maxlength: 200 %>
+        <%= form.label :video_author, t("admin.routines.video_author") %>
+        <%= form.text_field :video_author, class: "input", maxlength: 200 %>
+        <%= form.label :video_author_url, t("admin.routines.video_author_url") %>
+        <%= form.url_field :video_author_url, class: "input", maxlength: 500, placeholder: "https://" %>
+        <% @routine.errors.messages_for(:video_author_url).each do |message| %><span class="field__error"><%= message %></span><% end %>
+      </fieldset>
+
       <div class="admin-actions admin-actions--row">
         <%= form.submit t("admin.save"), class: "btn btn--accent" %>
+        <%= link_to t("admin.routines.timings_link"), timings_admin_routine_path(@routine), class: "btn" %>
         <% if @routine.status_was == "published" %><%= link_to t("admin.routines.view"), routine_path(@routine), class: "btn" %><% end %>
       </div>
     <% end %>

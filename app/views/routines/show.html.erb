@@ -15,9 +15,11 @@
 
     <div class="grid4__main">
       <section class="panel player" aria-label="<%= t("routines.player.video") %>">
-        <div class="stage <%= "has-video" if @routine.video.attached? %>">
+        <div class="stage <%= "has-video" if @routine.video? %>">
           <% if @routine.video.attached? %>
             <video data-routine-player-target="video" src="<%= rails_storage_proxy_path(@routine.video) %>" preload="metadata" playsinline></video>
+          <% elsif @routine.youtube? %>
+            <div class="stage__youtube" data-routine-player-target="youtube" data-video-id="<%= @routine.youtube_id %>"></div>
           <% end %>
           <span class="stage__tag"><%= t("routines.player.sample_video") %></span>
           <span class="stage__clock mono"><span data-routine-player-target="clock">0:00</span> / <%= clock(total) %></span>
@@ -32,6 +34,19 @@
             <svg data-routine-player-target="pauseIcon" hidden width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="3" width="4" height="14" fill="currentColor"/><rect x="12" y="3" width="4" height="14" fill="currentColor"/></svg>
           </button>
         </div>
+
+        <% if @routine.video? && (@routine.video_title.present? || @routine.video_author.present?) %>
+          <p class="video-credit">
+            <%= t("routines.player.credit") %>:
+            <% if @routine.video_title.present? %>
+              <%= @routine.youtube? ? link_to("“#{@routine.video_title}”", @routine.youtube_url, target: "_blank", rel: "noopener") : "“#{@routine.video_title}”" %>
+            <% end %>
+            <% if @routine.video_author.present? %>
+              · <%= @routine.video_author_url.present? ? link_to(@routine.video_author, @routine.video_author_url, target: "_blank", rel: "noopener nofollow") : @routine.video_author %>
+            <% end %>
+            <% if @routine.youtube? %>· <%= link_to t("routines.player.on_youtube"), @routine.youtube_url, target: "_blank", rel: "noopener" %><% end %>
+          </p>
+        <% end %>
 
         <div class="timeline">
           <div class="timeline__segs" role="group" aria-label="<%= t("routines.player.timeline") %>">

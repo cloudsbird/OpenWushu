@@ -42,6 +42,8 @@ Rails.application.routes.draw do
     end
     resources :routines, only: %i[index edit update] do
       delete :video, on: :member, action: :destroy_video
+      get :timings, on: :member
+      patch :timings, on: :member, action: :update_timings
     end
     resource :settings, only: %i[show update] do
       post :test_email

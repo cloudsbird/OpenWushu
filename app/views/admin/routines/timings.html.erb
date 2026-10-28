@@ -1,0 +1,64 @@
+<% content_for :title, "#{@routine.name_zh} · #{t("admin.routines.timings.title")}" %>
+<main class="container">
+  <%= render "admin/shared/header", tab: :routines %>
+  <p class="breadcrumb"><%= link_to t("admin.routines.back"), admin_routines_path %> · <%= link_to @routine.name_zh, edit_admin_routine_path(@routine) %></p>
+
+  <section class="panel admin-panel" data-controller="timing-editor" data-action="keydown@window->timing-editor#key">
+    <h2 class="heading heading--ruled"><span class="heading__zh">动作时间</span><span class="heading__tr"><%= @routine.name_zh %> · <%= t("admin.routines.timings.title") %></span></h2>
+
+    <% if @routine.video? %>
+      <p><%= t("admin.routines.timings.lead") %></p>
+      <div class="stage has-video timing-stage">
+        <% if @routine.video.attached? %>
+          <video data-timing-editor-target="video" src="<%= rails_storage_proxy_path(@routine.video) %>" preload="metadata" playsinline controls></video>
+        <% else %>
+          <div class="stage__youtube" data-timing-editor-target="youtube" data-video-id="<%= @routine.youtube_id %>"></div>
+        <% end %>
+      </div>
+      <div class="admin-actions admin-actions--row">
+        <button type="button" class="btn btn--accent" data-action="timing-editor#markNext"><%= t("admin.routines.timings.mark_next") %></button>
+        <span class="mono" aria-live="off"><%= t("admin.routines.timings.video_time") %> <span data-timing-editor-target="now">0:00.0</span></span>
+      </div>
+    <% else %>
+      <p class="muted"><%= t("admin.routines.timings.no_video") %></p>
+    <% end %>
+
+    <% if @routine.errors.any? %>
+      <p class="field__error"><%= @routine.errors.full_messages.to_sentence %></p>
+    <% end %>
+
+    <%= form_with url: timings_admin_routine_path(@routine), method: :patch, scope: :timings, class: "form" do |form| %>
+      <table class="table timing-table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col"><%= t("admin.routines.timings.movement") %></th>
+            <th scope="col"><%= t("admin.routines.timings.start") %></th>
+            <th scope="col"><span class="visually-hidden"><%= t("admin.routines.timings.actions") %></span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% rows = @movements.map { |m| [ "timings[starts][#{m.number}]", @starts&.[](m.number.to_s) || m.start_sec, "#{m.cn_label} #{m.name_zh}", m.name_tr ] } %>
+          <% rows << [ "timings[finish]", @finish || @movements.last&.end_sec, t("admin.routines.timings.finish"), nil ] %>
+          <% rows.each_with_index do |(name, value, zh, tr), i| %>
+            <tr data-timing-editor-target="row">
+              <td class="mono"><%= i < @movements.size ? @movements[i].number : "—" %></td>
+              <td><span lang="zh"><%= zh %></span><% if tr %> <span class="muted"><%= tr %></span><% end %></td>
+              <td><%= number_field_tag name, value, step: 0.1, min: 0, required: true, class: "input timing-input", data: { timing_editor_target: "start" }, "aria-label": "#{zh} #{t("admin.routines.timings.start")}" %></td>
+              <td class="timing-actions">
+                <% if @routine.video? %>
+                  <button type="button" class="btn" data-action="timing-editor#mark" data-timing-editor-index-param="<%= i %>"><%= t("admin.routines.timings.mark") %></button>
+                  <button type="button" class="btn" data-action="timing-editor#jump" data-timing-editor-index-param="<%= i %>"><%= t("admin.routines.timings.play") %></button>
+                <% end %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <div class="admin-actions admin-actions--row">
+        <%= form.submit t("admin.save"), class: "btn btn--accent" %>
+        <% if @routine.published? %><%= link_to t("admin.routines.view"), routine_path(@routine), class: "btn" %><% end %>
+      </div>
+    <% end %>
+  </section>
+</main>

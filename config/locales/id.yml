@@ -38,6 +38,8 @@ id:
       sections: "%{count} bagian"
     player:
       video: Video
+      credit: Video
+      on_youtube: di YouTube
       sample_video: Belum ada video · jam latihan
       play: Putar
       pause: Jeda

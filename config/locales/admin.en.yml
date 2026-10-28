@@ -102,6 +102,27 @@ en:
       video: Demonstration video
       current_video: "Current video: %{name} (%{size}). Choosing a new file replaces it."
       video_hint: MP4 or WebM, up to %{max} GB. Uploads are kept on the server’s storage volume.
+      youtube_url: YouTube link
+      youtube_hint: Paste a YouTube link (watch, youtu.be or shorts). It is used when no video is uploaded; an upload takes priority. Leave empty to remove it.
+      credit: Video credit
+      credit_hint: Shown under the video with a link to the original. Filled in from YouTube when you save a link; for an upload, credit whoever filmed it.
+      video_title: Title
+      video_author: Creator or channel
+      video_author_url: Creator link
+      timings_link: Set movement timings
+      timings:
+        title: "Movement timings"
+        lead: "Play the video and press “Mark next” (or the M key) each time a movement begins. Each row can also be marked or played on its own, and times can be typed in seconds. A movement ends where the next one starts; the last row is where the routine ends."
+        mark_next: "Mark next movement (M)"
+        video_time: "Video time"
+        no_video: "This routine has no video yet. Add an upload or a YouTube link first, or type the times in seconds."
+        movement: "Movement"
+        start: "Starts at (seconds)"
+        actions: "Actions"
+        finish: "Routine ends"
+        mark: "Mark"
+        play: "Play from here"
+      timings_saved: "Timings for %{name} saved."
       remove_video: Remove video
       confirm_remove_video: Remove the video? The Learn tab will use the practice clock instead.
       saved: "%{name} saved."
@@ -156,8 +177,14 @@ en:
       models:
         routine:
           attributes:
+            base:
+              timings_order: "Each time must be 0 or more and not earlier than the one above it."
             status:
               no_movements: Add the movement list before publishing this routine.
+            youtube_url:
+              not_embeddable: "The owner of this video does not allow it to be embedded on other sites. Choose another video or ask the owner."
+              not_found: "YouTube could not find this video. Check that the link is right and the video is public or unlisted."
+              youtube: "Paste a YouTube video link, such as https://www.youtube.com/watch?v=… or https://youtu.be/…"
             video:
               video_type: Choose an MP4 or WebM file.
               video_size: The video must be %{max} GB or smaller.

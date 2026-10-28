@@ -11,6 +11,7 @@ module ActiveSupport
     # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
     fixtures :all
 
-    # Add more helper methods to be used by all tests here...
+    # Never look YouTube videos up over the network in tests
+    setup { Routine.youtube_lookup = ->(_id) { nil } }
   end
 end

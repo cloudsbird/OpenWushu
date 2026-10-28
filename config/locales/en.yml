@@ -42,6 +42,8 @@ en:
         other: "%{count} sections"
     player:
       video: Video
+      credit: Video
+      on_youtube: on YouTube
       sample_video: No video uploaded yet · practice clock
       play: Play
       pause: Pause
