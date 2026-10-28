@@ -111,6 +111,12 @@ en:
       video_author_url: Creator link
       timings_link: Set movement timings
       timings:
+        paste_title: "Paste times"
+        paste_hint: "Paste a list with one movement per line, such as “12 34.5” or “12 0:34.5” (movement number, then its start time), and “END 305” for when the routine ends. Lines ending in “?” are marked as guesses to check. Nothing is saved until you press Save."
+        paste_fill: "Fill the rows"
+        paste_filled: "%{count} rows filled."
+        paste_missing: "Not in the list: %{list}."
+        paste_unsure: "Marked as guesses: %{list}."
         title: "Movement timings"
         lead: "Play the video and press “Mark next” (or the M key) each time a movement begins. Each row can also be marked or played on its own, and times can be typed in seconds. A movement ends where the next one starts; the last row is where the routine ends."
         mark_next: "Mark next movement (M)"

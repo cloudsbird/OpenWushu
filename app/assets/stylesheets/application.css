@@ -189,6 +189,10 @@ a.card:hover { color: inherit; filter: brightness(0.97); }
 .stage video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; }
 .timing-stage { max-width: 760px; }
 .timing-table .is-next { background: var(--accent-soft); }
+.timing-table .is-unsure td:first-child { box-shadow: inset 4px 0 0 var(--amber, #D98A00); }
+.timing-paste { display: flex; flex-direction: column; gap: 8px; }
+.timing-paste summary { cursor: pointer; font-weight: 600; }
+.timing-paste__text { min-height: 160px; padding: 10px 12px; font-family: var(--font-mono, monospace); }
 .timing-input { width: 7.5em; min-height: 40px; }
 .timing-actions { display: flex; gap: 6px; flex-wrap: wrap; }
 .video-credit { margin: 8px 0 0; font-size: 13px; color: var(--muted); }

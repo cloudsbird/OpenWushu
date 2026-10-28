@@ -27,6 +27,19 @@
       <p class="field__error"><%= @routine.errors.full_messages.to_sentence %></p>
     <% end %>
 
+    <details class="timing-paste">
+      <summary><%= t("admin.routines.timings.paste_title") %></summary>
+      <p class="field__hint"><%= t("admin.routines.timings.paste_hint") %></p>
+      <textarea class="input timing-paste__text" rows="8" data-timing-editor-target="paste" aria-label="<%= t("admin.routines.timings.paste_title") %>" placeholder="1 12.0&#10;2 14.5&#10;…&#10;END 305.0"></textarea>
+      <div class="admin-actions admin-actions--row">
+        <button type="button" class="btn btn--accent" data-action="timing-editor#fill"><%= t("admin.routines.timings.paste_fill") %></button>
+        <span class="muted" role="status" data-timing-editor-target="pasteResult"
+              data-filled="<%= t("admin.routines.timings.paste_filled") %>"
+              data-missing="<%= t("admin.routines.timings.paste_missing") %>"
+              data-unsure="<%= t("admin.routines.timings.paste_unsure") %>"></span>
+      </div>
+    </details>
+
     <%= form_with url: timings_admin_routine_path(@routine), method: :patch, scope: :timings, class: "form" do |form| %>
       <table class="table timing-table">
         <thead>
@@ -38,13 +51,13 @@
           </tr>
         </thead>
         <tbody>
-          <% rows = @movements.map { |m| [ "timings[starts][#{m.number}]", @starts&.[](m.number.to_s) || m.start_sec, "#{m.cn_label} #{m.name_zh}", m.name_tr ] } %>
-          <% rows << [ "timings[finish]", @finish || @movements.last&.end_sec, t("admin.routines.timings.finish"), nil ] %>
-          <% rows.each_with_index do |(name, value, zh, tr), i| %>
+          <% rows = @movements.map { |m| [ "timings[starts][#{m.number}]", @starts&.[](m.number.to_s) || m.start_sec, "#{m.cn_label} #{m.name_zh}", m.name_tr, m.number ] } %>
+          <% rows << [ "timings[finish]", @finish || @movements.last&.end_sec, t("admin.routines.timings.finish"), nil, "end" ] %>
+          <% rows.each_with_index do |(name, value, zh, tr, key), i| %>
             <tr data-timing-editor-target="row">
               <td class="mono"><%= i < @movements.size ? @movements[i].number : "—" %></td>
               <td><span lang="zh"><%= zh %></span><% if tr %> <span class="muted"><%= tr %></span><% end %></td>
-              <td><%= number_field_tag name, value, step: 0.1, min: 0, required: true, class: "input timing-input", data: { timing_editor_target: "start" }, "aria-label": "#{zh} #{t("admin.routines.timings.start")}" %></td>
+              <td><%= number_field_tag name, value, step: 0.1, min: 0, required: true, class: "input timing-input", data: { timing_editor_target: "start", key: key }, "aria-label": "#{zh} #{t("admin.routines.timings.start")}" %></td>
               <td class="timing-actions">
                 <% if @routine.video? %>
                   <button type="button" class="btn" data-action="timing-editor#mark" data-timing-editor-index-param="<%= i %>"><%= t("admin.routines.timings.mark") %></button>

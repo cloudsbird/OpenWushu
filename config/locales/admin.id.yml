@@ -111,6 +111,12 @@ id:
       video_author_url: Tautan pembuat
       timings_link: Atur waktu gerakan
       timings:
+        paste_title: "Tempel waktu"
+        paste_hint: "Tempel daftar dengan satu gerakan per baris, misalnya “12 34.5” atau “12 0:34.5” (nomor gerakan, lalu waktu mulainya), dan “END 305” untuk akhir rangkaian. Baris yang diakhiri “?” ditandai sebagai perkiraan untuk diperiksa. Belum ada yang tersimpan sampai Anda menekan Simpan."
+        paste_fill: "Isi baris"
+        paste_filled: "%{count} baris terisi."
+        paste_missing: "Tidak ada di daftar: %{list}."
+        paste_unsure: "Ditandai sebagai perkiraan: %{list}."
         title: "Waktu gerakan"
         lead: "Putar video dan tekan “Tandai berikutnya” (atau tombol M) setiap kali sebuah gerakan dimulai. Setiap baris juga bisa ditandai atau diputar sendiri, dan waktu bisa diketik dalam detik. Sebuah gerakan berakhir saat gerakan berikutnya dimulai; baris terakhir adalah akhir rangkaian."
         mark_next: "Tandai gerakan berikutnya (M)"

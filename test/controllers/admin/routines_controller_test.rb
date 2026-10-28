@@ -84,7 +84,9 @@ class Admin::RoutinesControllerTest < ActionDispatch::IntegrationTest
     routine = routines(:taiji)
     get timings_admin_routine_path(routine)
     assert_select "input[name='timings[starts][1]']"
-    assert_select "input[name='timings[finish]']"
+    assert_select "input[name='timings[finish]'][data-key=end]"
+    assert_select "input[name='timings[starts][1]'][data-key='1']"
+    assert_select "textarea[data-timing-editor-target=paste]"
 
     patch timings_admin_routine_path(routine), params: { timings: { starts: { "1" => "2.5", "2" => "11" }, finish: "20.4" } }
     assert_redirected_to timings_admin_routine_path(routine)
